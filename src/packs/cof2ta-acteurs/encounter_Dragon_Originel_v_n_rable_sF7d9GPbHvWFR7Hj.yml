@@ -1,0 +1,1489 @@
+folder: G2yuu7LVCS3wnDO7
+name: Dragon Originel vénérable
+type: encounter
+img: >-
+  modules/cof2ta/assets/cof2ta_bestiaire/creatures/dragon_originel_venerable.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 15
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 15
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 18
+    hp:
+      base: 260
+      value: 260
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 11
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 32
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 6
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: colossal
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: "<p>Cette appellation générique regroupe en vérité\_de nombreuses variétés de grandes créatures\_reptiliennes ailées qu'on peut cependant\_regrouper en deux catégories principales: les\_dragons communs et les dragons originels.</p>"
+      public: "<p>L'aspic est un cousin du dragon d'Akrähyng. </p><p>Plus grand, plus rapide et plus robuste, il est\_dépourvu de souffle enflammé mais sa queue\_se termine par un dard venimeux.</p>"
+    languages: []
+    properties: ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Dragon Originel vénérable
+  displayName: 30
+  actorLink: false
+  width: 4
+  height: 4
+  texture:
+    src: >-
+      modules/cof2ta/assets/cof2ta_bestiaire/creatures/dragon_originel_venerable_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.COFYjOegbk2IvTag.Item.hMuAlfybhV1y4i6L
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '27'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 4d6+21
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Morsure et griffes
+    img: icons/svg/sword.svg
+    _id: hMuAlfybhV1y4i6L
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.hMuAlfybhV1y4i6L'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Agripper
+    type: capacity
+    img: icons/creatures/claws/claw-talons-glowing-orange.webp
+    system:
+      description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> en attaque, la créature agrippe sa proie\_et ne la lâche plus.</p><p>Il obtient un bonus de <strong>+5\_en attaque et +1d6 aux DM contre la cible qu'il\_agrippe</strong> et celle-ci est <strong>immobilisée</strong> si elle est de\_taille inférieure.</p><p>La victime peut essayer de se\_libérer au prix d'une action de mouvement en\_réussissant un test de FOR opposé.</p>"
+      source: ''
+      origin: Livre du Meneur p.68
+      slug: ''
+      inGame: <p>Action pour réaliser l'attaque contre la cible agrippée.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.NLWxZLUaBf1c6ear
+          indice: 0
+          label: vs Cible agrippée
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+32'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 4d6+21+1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - immobilized
+                duration: '1'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: NLWxZLUaBf1c6ear
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.NLWxZLUaBf1c6ear'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Vol rapide
+    type: capacity
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
+    _id: cvmoW74BoShtDdMT
+    system:
+      description: "<p>La créature a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol.</p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p>"
+      source: ''
+      origin: Livre du Meneur p.68
+      slug: ''
+      inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.cvmoW74BoShtDdMT
+          indice: 0
+          label: Première Attaque
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '32'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 4d6+21+1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.cvmoW74BoShtDdMT'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Vision dans le noir
+    type: capacity
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
+    system:
+      description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.TrxU9H9VsCawq6o5
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.sF7d9GPbHvWFR7Hj.Item.TrxU9H9VsCawq6o5
+              subtype: state
+              target: darkvision
+              value: '30'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: TrxU9H9VsCawq6o5
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.TrxU9H9VsCawq6o5'
+  - type: attack
+    system:
+      subtype: magic
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: null
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.quoUu7ZwpdYEGHCA.Item.WC2OEDxHCs4gMs8y
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Attaque magique
+    img: icons/svg/sword.svg
+    _id: WC2OEDxHCs4gMs8y
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.WC2OEDxHCs4gMs8y'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Coup de queue
+    type: capacity
+    img: icons/creatures/abilities/tail-strike-bone-orange.webp
+    _id: SebwkQQjzMaYKD98
+    system:
+      description: "<p>A chaque fois qu'un adversaire\_attaque le dragon originel dans le dos, il subit\_<strong>une attaque de queue gratuite</strong> équivalente à une\_attaque avec <strong>un malus de -5 et des DM divisés\_par deux</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>L'action permet de réaliser l'attaque de queue.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.SebwkQQjzMaYKD98
+          indice: 0
+          label: Si attaquer de dos
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: (4d6+21)/2
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.SebwkQQjzMaYKD98'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Effroi
+    type: capacity
+    img: icons/magic/control/fear-fright-mask-orange.webp
+    _id: sh3EYqtHE7EcXoGJ
+    system:
+      description: "<p>Lorsque le dragon originel <strong>attaque pour\_la première fois</strong>, toutes les créatures <strong>à moins de\_50 mètres</strong> doivent réussir un test de <strong>SAG difficulté\_17 ou être submergées par la peur et ralenties\_pendant 1d4 tours</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde de PER et
+        d'appliquer le statut Ralenti uniquement pour 1d4 tour. Il faudra gérer
+        manuellement le statut apeuré.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.sh3EYqtHE7EcXoGJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '20'
+              target:
+                type: multiple
+                number: 50
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - slowed
+                duration: 1d4
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.sh3EYqtHE7EcXoGJ'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Emporter dans les airs
+    type: capacity
+    img: icons/creatures/claws/claw-talons-glowing-purple.webp
+    _id: NVBhXU6M65QHbqmp
+    system:
+      description: "<p>Le dragon originel peut\_emporter dans les airs <strong>une victime agrippée de\_taille inférieure</strong> à la sienne <strong>au prix d'une action de\_mouvement</strong>. </p><p>Au premier tour, <strong>si la victime se libère</strong>\_(test de FOR opposé), elle subit, <strong>5d6 DM de chute</strong>. </p><p>Au tour suivant, si la créature décide de prendre\_de l'altitude, les DM <strong>passent à 10d6</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>L'action permet de jeter les Dommages de la chute si la cible se
+        libère au premier tour.</p><p>Utiliser cette action deux fois si la
+        cible se libère à plus haute altitude.</p>
+      subtype: ''
+      actionType: m
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.NVBhXU6M65QHbqmp
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 5d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.NVBhXU6M65QHbqmp'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Fauchage
+    type: capacity
+    img: icons/creatures/claws/claw-bear-paw-swipe-red.webp
+    _id: HG0A3YcwVX07JsCO
+    system:
+      description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 22 ou être renversée</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
+        soit la FOR soit l'AGI.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.HG0A3YcwVX07JsCO
+          indice: 0
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '22'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: unlimited
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.HG0A3YcwVX07JsCO
+          indice: 1
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '22'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                duration: '0'
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.HG0A3YcwVX07JsCO'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Souflle enflammé
+    type: capacity
+    img: icons/magic/fire/projectile-wave-arrow.webp
+    system:
+      description: "<p>Le souffle est une attaque\_de zone affectant toutes les créatures dans <strong>un cône\_de 30 mètres de long sur 15 de large</strong>.</p><p>L'attaque\_inflige automatiquement (pas de test d'attaque) <strong>10d6 + 30 DM</strong>.</p><p>Les DM sont divisés par deux si\_la victime réussit un <strong>test de DEX difficulté 13</strong>.</p><p>La\_créature doit attendre après chaque utilisation\_1d4 tours avant d'utiliser à nouveau son souffle.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de jeter les DM du souflle.</p><p>La
+        deuxième action permet de réaliser le test de sauvegarde pour subir que
+        la moitié des DM.</p>
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.Rq0NXwM9XKQvTSjz
+          indice: 0
+          label: cône de 30x15m
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 10d6+30
+              target:
+                type: multiple
+                number: 50
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.Rq0NXwM9XKQvTSjz
+          indice: 1
+          label: demi DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '13'
+              target:
+                type: multiple
+                number: 30
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: Rq0NXwM9XKQvTSjz
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.Rq0NXwM9XKQvTSjz'
+  - folder: 1vOwdMVxwTj93J9X
+    name: Injonction
+    type: capacity
+    img: icons/magic/control/debuff-energy-hold-blue-yellow.webp
+    system:
+      description: "<p>Le PJ <strong>donne à une cible un ordre simple</strong> (mais\_pas dangereux pour elle) que cette dernière\_doit pouvoir comprendre.</p><p>Il doit réussir <strong>un test\_d’attaque magique opposé</strong> contre la cible (si la\_créature n’a pas d’attaque magique, on utilise\_alors son attaque au contact en appliquant un\_malus de -3) à une portée de 20 mètres.</p><p>En cas\_d’échec, la cible exécutera l’ordre pendant son\_prochain tour.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ bénéficie d’un bonus\_de +2 à son test d’attaque magique.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.134
+      slug: ''
+      inGame: >-
+        <p>L'action permet d'effectuer le test opposé d'attaque
+        magique.</p><p>Si le PJ obtient la capacité avancée, ajoutez "+2" à la
+        Formule de Compétence dans la Résolution de
+        l'action.</p><blockquote><p><strong>Note : Pour utiliser la
+        "concentration" faites SHIFT+CLIC sur
+        l'action</strong></p></blockquote><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.Zar04GW6YXP95QJO
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: true
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: Zar04GW6YXP95QJO
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.Zar04GW6YXP95QJO'
+  - folder: 1vOwdMVxwTj93J9X
+    name: Sommeil
+    type: capacity
+    img: icons/magic/control/sleep-bubble-purple.webp
+    system:
+      description: "<p><strong>[1d6 + Mod. d’INT] cibles vivantes dans une\_zone de 10 m de diamètre</strong> (portée: 20 m) et\_dont le <strong>score actuel de PV ne dépasse pas le\_score d’attaque magique du PJ*</strong> sombrent dans\_<strong>l’inconscience</strong> <strong>pendant [5 + Mod. de SAG]\_minutes</strong>.</p><p>Il est possible de les réveiller en les\_giflant (action d’attaque).</p><blockquote><p>* Les créatures dont les PV sont compris entre\_le score d’attaque magique du PJ et le double de\_celui-ci peuvent faire un test de SAG difficulté\_[10 + Mod. d’INT] pour résister au sort. Les\_créatures avec des PV supérieurs ne sont pas\_affectées</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span>  la difficulté du test de SAG\_pour résister au sort passe à [12 + Mod. INT].</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.134
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: iVIGWPw2tPnp8cuj
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.iVIGWPw2tPnp8cuj'
+  - folder: 1vOwdMVxwTj93J9X
+    name: Confusion
+    type: capacity
+    img: icons/magic/control/fear-fright-white.webp
+    system:
+      description: "<p>En réussissant <strong>un test d’attaque magique\_opposée</strong> (portée: 20 m), le PJ <strong>désoriente sa cible\_pendant [3 + Mod. de SAG] tours</strong>.</p><p>Chaque\_tour, <strong>lancez 1d6</strong> : <strong>de 1 à 3 la victime n’agit pas</strong> ;\_<strong>de 4 à 6 elle attaque la créature la plus proche\_d’elle</strong>.</p><p>À chaque fin de tour, elle fait un test de\_SAG difficulté [10 + Mod. d’INT] pour mettre\_fin au sort.</p>"
+      source: ''
+      origin: Livre du Joueur p.134
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque magique opposée et d'appliquer
+        l'Effet Confus en cas de succès pendant 3 + PER rounds. Fonctionne
+        uniquement en Mode Combat.</p><blockquote><p><strong>Note : Pour
+        utiliser la "concentration" faites SHIFT+CLIC sur
+        l'action</strong></p></blockquote><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.DRDdbn1CV355WO0F
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: true
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - confused
+                duration: 3 + @per
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: DRDdbn1CV355WO0F
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.DRDdbn1CV355WO0F'
+  - folder: 1vOwdMVxwTj93J9X
+    name: Amitié
+    type: capacity
+    img: icons/skills/social/thumbsup-approval-like.webp
+    system:
+      description: "<p>Si le PJ réussit <strong>un test d’attaque magique</strong>\_(portée: 10 m) <strong>contre le score maximal de PV\_d’une cible humanoïde</strong>, celle-ci se <strong>comporte\_comme un ami</strong> de longue date tant qu’elle n’est\_pas attaquée. </p><p>Elle peut résister au sort avec un\_test de SAG difficulté [12 + Mod. d’INT],\_renouvelable une fois par jour.</p>"
+      source: ''
+      origin: Livre du Joueur p.135
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque magique sans Difficulté
+        définie. C'est au MJ d'interpréter le résultat de
+        l'attaque.</p><blockquote><p><strong>Note : Pour utiliser la
+        "concentration" faites SHIFT+CLIC sur
+        l'action</strong></p></blockquote><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.2zwVexEsXUWARj9c
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: true
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: ''
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: 2zwVexEsXUWARj9c
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.2zwVexEsXUWARj9c'
+  - folder: 1vOwdMVxwTj93J9X
+    name: Domination
+    type: capacity
+    img: icons/magic/control/control-influence-puppet.webp
+    system:
+      description: "<p>En réussissant <strong>un test d’attaque magique</strong>\_(portée: 20 m) <strong>en opposition contre un test\_d’attaque magique</strong> de la cible (si la créature\_n’a pas d’attaque magique, on utilise alors son\_attaque au contact en appliquant un malus\_de -3), le PJ <strong>prend contrôle de son esprit pendant [1d4 + Mod. de SAG] minutes</strong>.\_Son propre\_corps devient inactif.</p><p>La victime peut <strong>résister au\_sort avec un test de SAG difficulté [10 + Mod.\_d’INT]</strong> à chaque fois qu’elle subit des DM.</p><p>Si\_la créature meurt pendant la domination, le PJ\_réintègre son corps et subit 1d6 DM.</p>"
+      source: ''
+      origin: Livre du Joueur p.135
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque magique opposée. La durée et
+        les effets du sorts sont à interpréter par le
+        MJ.</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
+        faites SHIFT+CLIC sur l'action</strong></p></blockquote><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.sF7d9GPbHvWFR7Hj.Item.UPwMhRALc5tAATIQ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: true
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '22'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: UPwMhRALc5tAATIQ
+    ownership:
+      default: 0
+    _key: '!actors.items!sF7d9GPbHvWFR7Hj.UPwMhRALc5tAATIQ'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: sF7d9GPbHvWFR7Hj
+ownership:
+  default: 0
+sort: 0
+_key: '!actors!sF7d9GPbHvWFR7Hj'

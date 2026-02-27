@@ -1,0 +1,69 @@
+folder: iUmDDqOwMKC5bQ0F
+name: Parade croisée
+type: capacity
+img: icons/skills/melee/swords-parry-block-yellow.webp
+system:
+  description: "<p>Au cours d’un tour complet, le PJ obtient un\_bonus en <strong>DEF de +2</strong>. Il ne réalise qu’une attaque\_à ce tour. Si le résultat du dé d’attaque est pair,\_la main principale porte le coup; si le résultat\_est impair, c’est la main secondaire.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de <strong>DEF passe à +4</strong>.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.121
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent en DEF.</p><p>Si le PJ obtient la capacité avancée,
+    modifiez la valeur du Modificateur par 4.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.PMmwzPWrrEgcCMkH
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.PMmwzPWrrEgcCMkH
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: kvwvN8XdpWwhbtja
+ownership:
+  default: 0
+sort: 0
+_key: '!items!kvwvN8XdpWwhbtja'

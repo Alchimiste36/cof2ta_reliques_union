@@ -1,0 +1,78 @@
+folder: Xju3wioBS7IbVYJY
+name: Élixir de guérison
+type: capacity
+img: icons/consumables/potions/bottle-round-corked-orante-red.webp
+system:
+  description: "<p>Le PJ peut préparer un élixir qui <strong>soigne [3d6\_+ Mod. d’INT] PV</strong>, un <strong>empoisonnement</strong> ou\_une <strong>hémorragie</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.133
+  slug: ''
+  inGame: "<p>L'action permet de réaliser le test de soin sur une cible.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">ATTENTION :</span></strong></span> Les Elixirs dépendent des statistiques de d'Alchimiste. Si le PJ décide de confier ses élixirs à une autre personne, c'est tout de même l'Alchimiste qui devra faire l'action. Vous pouvez aussi utiliser l'Équipement :\_@UUID[Item.1Mtx1sSWxBB8IczU]{Élixir de guérison}</p></blockquote>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.Yy40awBcrX0JfTTc
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 3d6 +@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: uL7x6FryQtS5KEkP
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!uL7x6FryQtS5KEkP'

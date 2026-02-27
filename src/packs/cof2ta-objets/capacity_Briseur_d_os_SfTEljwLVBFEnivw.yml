@@ -1,0 +1,145 @@
+folder: lVzsmxyYnGl3mGnJ
+name: Briseur d’os
+type: capacity
+img: icons/skills/wounds/bone-broken-marrow-red.webp
+system:
+  description: "<p>Les coups critiques du PJ sont terribles et\_provoquent des handicaps durables. </p><p>Le PJ\_obtient <strong>un critique sur 19 ou 20</strong> au résultat du\_d20 en attaque au contact. </p><p><strong><span style=\"text-decoration:underline\">Lorsqu’il obtient un\_critique</span></strong>, en plus des DM doublés, il inflige une\_pénalité de <strong>-2 à tous les tests d’attaque, de FOR\_et de DEX</strong> de sa victime. Cette pénalité affecte la\_cible jusqu’à ce qu’elle soit complètement guérie.</p>"
+  source: ''
+  origin: Livre du Joueur p.125
+  slug: ''
+  inGame: >-
+    <p>La première action activable permet d'obtenir une plage de critique
+    améliorée lorsque le PJ attaque au contact.</p><p>La deuxième action permet
+    d'appliquer, pendant 20 round, les Modificateurs sur des cibles
+    sélectionnées. Cette action fonctionne uniquement en Mode Combat.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.SfTEljwLVBFEnivw
+      indice: 0
+      label: Utilisation d'arme de contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: combat
+          target: crit
+          value: '1'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.SfTEljwLVBFEnivw
+      indice: 1
+      label: Pénalités si critique
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: combat
+          target: melee
+          value: '-2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: combat
+          target: ranged
+          value: '-2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: combat
+          target: magic
+          value: '-2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: skill
+          target: for
+          value: '-2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SfTEljwLVBFEnivw
+          subtype: skill
+          target: agi
+          value: '-2'
+          apply: others
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '20'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: SfTEljwLVBFEnivw
+ownership:
+  default: 0
+sort: 0
+_key: '!items!SfTEljwLVBFEnivw'

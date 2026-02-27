@@ -1,0 +1,67 @@
+folder: xsJFndR7inLiaMJ7
+name: Solide comme un roc
+type: capacity
+img: icons/magic/earth/strike-fist-stone.webp
+system:
+  description: "<p><strong>Le PJ réduit tous les DM subis de 1 point</strong> (mais\_il subit toujours au moins 1 point de DM par\_attaque reçue). Ce <strong>bonus est cumulable</strong> avec\_d’autres sources de réduction des DM.</p>"
+  source: ''
+  origin: Livre du Joueur p.79
+  slug: ''
+  inGame: <p>Bonus permanent ajoutant une RD 1.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.caeqqAQgdVSSmFuu
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.caeqqAQgdVSSmFuu
+          subtype: combat
+          target: dr
+          value: '1'
+          apply: self
+          additionalInfos: Toujours
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: iBW4FZ87RdMm2upe
+ownership:
+  default: 0
+sort: 0
+_key: '!items!iBW4FZ87RdMm2upe'

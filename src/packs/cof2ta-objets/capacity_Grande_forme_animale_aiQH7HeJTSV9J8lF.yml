@@ -1,0 +1,73 @@
+folder: XAyRaPkY7W0Th2Ay
+name: Grande forme animale
+type: capacity
+img: icons/creatures/claws/claw-scaled-red.webp
+system:
+  description: "<p>Le PJ <strong>peut prendre la forme d’un animal\_de grande taille</strong> (ours, bison, tigre, griffon,\_shargren, etc.).</p><h5>Forme animale grande :</h5><p>FOR +8* DEX +0 CON +8.</p><p>DEF 18 Init. 10. Attaque +10 DM 2d6+8</p><p>Sous cette forme, le PJ gagne un bonus de <strong>+5 à\_tous les tests pour impressionner ou intimider</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.154
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir le bonus aux tests de compétences et
+    dépenser les PM.</p><p>L'action permet uniquement de dépenser les
+    PM.</p><p>Le MJ donne les droits "Propriétaire" du Compagnon :
+    @UUID[Actor.dciiMEMVNhngnZ9M]{Forme Animale Grande} au PJ.</p><p>Modifiez
+    les valeurs du Compagnon par les votres et ajoutez les capacités de
+    rencontre sur les Compagnons en fonction de l'animal choisi.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.aiQH7HeJTSV9J8lF
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.aiQH7HeJTSV9J8lF
+          subtype: skill
+          target: cha
+          value: '5'
+          apply: self
+          additionalInfos: Impressionner / Intimider
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: aiQH7HeJTSV9J8lF
+ownership:
+  default: 0
+sort: 0
+_key: '!items!aiQH7HeJTSV9J8lF'

@@ -1,0 +1,74 @@
+folder: 2Gmt5WIDdS4zlCii
+name: Surveillance
+type: capacity
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
+system:
+  description: "<p>Le loup est constamment sur ses gardes.\_Le PJ\_a donc un temps d’avance quand des ennemis\_essaient de l’attaquer par surprise. </p><p>Il obtient un\_bonus de <strong>+5 pour les tests de surprise (SAG)\_ainsi qu’en initiative</strong>. </p><p><strong><span style=\"text-decoration:underline\">Lorsqu’il n’est pas surpris</span></strong>,\_il peut <strong>faire une attaque simple à distance</strong> avant\_que ne débute le premier tour de combat.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ne peut plus être\_surpris.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.130
+  slug: ''
+  inGame: <p>L'action donne le bonus permanent en PER et en Initiative.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.aDymGMCXh8OlgFYJ
+          subtype: skill
+          target: per
+          value: '5'
+          apply: self
+          additionalInfos: Test de surprise
+        - type: capacity
+          source: Item.vIrXIdlBVi6Aj6hj
+          subtype: combat
+          target: init
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: vIrXIdlBVi6Aj6hj
+ownership:
+  default: 0
+sort: 0
+_key: '!items!vIrXIdlBVi6Aj6hj'

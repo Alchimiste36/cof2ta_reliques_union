@@ -1,0 +1,93 @@
+folder: SMlGirGnIOghDlt9
+name: Attaque kamikaze
+type: capacity
+img: icons/skills/melee/strike-sword-dagger-runes-red.webp
+system:
+  description: "<p>Le PJ saute littéralement sur sa cible pour la\_rouer de coups au corps-à-corps. </p><p><strong>Plutôt qu’un\_test d’attaque</strong>, il réalise <strong>un test de DEX</strong> dont la\_<strong>difficulté est égale à la moitié de la DEF de la\_créature</strong>. </p><p><strong><span style=\"text-decoration:underline\">En cas de réussite</span></strong>, il <strong>inflige des DM\_normaux</strong> et <strong>reçoit un bonus qui dépend de la\_taille de la créature\_</strong>: </p><ul><li><p>moyenne +1d6 DM, </p></li><li><p>grande\_+2d6, </p></li><li><p>très grande +3d6, </p></li><li><p>gigantesque +4d6</p></li><li><p>colossale +5d6. </p></li></ul><p>Il ne reçoit aucun bonus aux\_DM pour les petites créatures. </p><p><strong><span style=\"text-decoration:underline\">À la suite de\_cette attaque</span></strong>, il <strong>perd 5 points en DEF pour\_une durée de 1 tour</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.144
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet de réaliser une attaque avec AGI contre DEF/2.
+    Les DM reprenne les DM de la première arme équipée + 1d6. Dans la fenêtre
+    d'attaque modifiez le "1d6" par la bonne formule de DM en fonction de la
+    taille de la cible.</p><p>L'action reste activée pour appliquer le malus de
+    DEF. Il faudra penser à désactiver l'action au début du prochain tour du
+    PJ.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.eua3pLz4PRjQ57yF
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.siVUKBGiB7vxE9Iu
+          subtype: combat
+          target: def
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@agi'
+            crit: ''
+            difficulty: '@cible.def/2'
+          dmg:
+            formula: '@arme.dmg + 1d6'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: siVUKBGiB7vxE9Iu
+ownership:
+  default: 0
+sort: 0
+_key: '!items!siVUKBGiB7vxE9Iu'

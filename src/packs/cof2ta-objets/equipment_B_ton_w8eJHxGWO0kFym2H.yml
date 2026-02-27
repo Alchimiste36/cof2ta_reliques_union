@@ -1,0 +1,89 @@
+folder: OBPli02oRaBQq6Ee
+name: Bâton
+type: equipment
+img: icons/weapons/staves/staff-simple-brown.webp
+system:
+  description: >-
+    <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
+    le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
+    au combat, plus lourd et généralement couvert de métal aux extrémités (bien
+    que les druides utilisent des bâtons de bois noueux avec le même
+    effet).</p><p> </p><p><strong>DM temporaires possibles</strong></p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: baton
+  tags:
+    - dmtemporairespossibles
+  subtype: weapon
+  martialCategory: staff
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.gB34g3RhEaN2Zhr3
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isEquipped
+      resolvers: []
+      modifiers: []
+  damagetype: impact
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: w8eJHxGWO0kFym2H
+ownership:
+  default: 0
+sort: 0
+_key: '!items!w8eJHxGWO0kFym2H'

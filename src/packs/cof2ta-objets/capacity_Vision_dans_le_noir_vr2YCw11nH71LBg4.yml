@@ -1,0 +1,67 @@
+folder: uvHtoSiBBvs1nfqu
+name: Vision dans le noir
+type: capacity
+img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
+system:
+  description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: ''
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ZTsMzg64xAAQ9TQ5
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.ZTsMzg64xAAQ9TQ5
+          subtype: state
+          target: darkvision
+          value: '30'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: vr2YCw11nH71LBg4
+ownership:
+  default: 0
+sort: 0
+_key: '!items!vr2YCw11nH71LBg4'

@@ -1,0 +1,82 @@
+folder: pdQQTQ02SRaePPZe
+name: Hausser le ton
+type: capacity
+img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
+system:
+  description: "<p>Lorsqu'il passe <strong>sous la moitié\_de sa valeur maximale de PV</strong>, le champion gagne\_un bonus de <strong>+5 à ses tests d'attaque et +1d6 aux\_DM</strong> et réduit tous les DM subis de 5 points par\_attaque <strong>(RD 5)</strong>.</p>"
+  source: ''
+  origin: Livre du meneur p122
+  slug: ''
+  inGame: <p>L'action activable/désactivable donne les bonus.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.WXTzbRA7t1I7aLvq
+      indice: 0
+      label: Si PV < 50%
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.WXTzbRA7t1I7aLvq
+          subtype: combat
+          target: melee
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WXTzbRA7t1I7aLvq
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WXTzbRA7t1I7aLvq
+          subtype: combat
+          target: dr
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: bDCB0ZBSesWT8wMf
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!bDCB0ZBSesWT8wMf'

@@ -1,0 +1,84 @@
+folder: uvHtoSiBBvs1nfqu
+name: Vermine
+type: capacity
+img: icons/environment/creatures/bug-centipede-brown.webp
+_id: MjqYaIvzIwUOguou
+system:
+  description: "<p><strong><span style=\"text-decoration:underline\">Lorsque vous créez un insecte géant</span></strong>,\_il obtient des bonus par rapport à un archétype\_normal.</p><p> Si vous utilisez un profil d'insecte décrit\_ci-dessous, ignorez cette capacité car elle n'est\_destinée qu'aux MJ souhaitant concevoir ce\_type de créature. </p><p>Dans ce cas, augmentez les\_<strong>PV de +10</strong> et le <strong>Mod. de FOR et de CON de\_+3</strong> par rapport à une créature de cette taille.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>L'action permet d'obtenir les PV supplémentaires et les bonus permanents
+    en FOR et CON.</p><p>Si vous voulez créer un insecte géant, glissez-déposez
+    cette capacité sur la rencontre.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.MjqYaIvzIwUOguou
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.MjqYaIvzIwUOguou
+          subtype: ability
+          target: for
+          value: '3'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.MjqYaIvzIwUOguou
+          subtype: ability
+          target: con
+          value: '3'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.MjqYaIvzIwUOguou
+          subtype: attribute
+          target: hp
+          value: '10'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!MjqYaIvzIwUOguou'

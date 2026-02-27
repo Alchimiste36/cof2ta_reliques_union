@@ -1,0 +1,81 @@
+folder: n5FCdQaLirfGR17h
+name: Attaque tourbillon
+type: capacity
+img: icons/skills/melee/blood-slash-foam-red.webp
+system:
+  description: "<p>Une fois par combat, le PJ tourne sur lui-même\_en assénant <strong>des attaques à toutes les cibles au\_contact</strong>. Il inflige <strong>automatiquement des DM</strong>\_correspondant à l’arme utilisée (+ tous les bonus\_habituels) à toutes les cibles dans <strong>un rayon de\_5 m autour de lui.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.123
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser une attaque automatique reprennant les DM de
+    la première arme équipée.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.oFPsrb2ONP6TVkmu
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: lKRSGtZD9uvsJL2H
+ownership:
+  default: 0
+sort: 0
+_key: '!items!lKRSGtZD9uvsJL2H'

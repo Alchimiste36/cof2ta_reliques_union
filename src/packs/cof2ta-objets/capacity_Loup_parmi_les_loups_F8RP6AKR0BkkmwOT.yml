@@ -1,0 +1,83 @@
+folder: TM2vZsQjVMSGf4wH
+name: Loup parmi les loups
+type: capacity
+img: icons/skills/melee/hand-grip-sword-orange.webp
+system:
+  description: "<p>Le PJ gagne <strong>+1 aux DM lorsqu’il combat un\_adversaire humanoïde</strong>. Ce bonus passe à <strong>+2 au\_rang 4</strong> de cette voie.</p>"
+  source: ''
+  origin: Livre du Joueur p.87
+  slug: ''
+  inGame: >-
+    <p>L'action est activable lorsque le personnage combat un adversaire
+    humanoïde.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.437MUjJt0zuIF2Fd
+      indice: 0
+      label: Contre un humanoïde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.437MUjJt0zuIF2Fd
+          subtype: combat
+          target: damMelee
+          value: '@rang[0,1,1,2,2]'
+          apply: self
+          additionalInfos: Après un test raté
+        - type: capacity
+          source: Item.F8RP6AKR0BkkmwOT
+          subtype: combat
+          target: damRanged
+          value: '@rang[0,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.F8RP6AKR0BkkmwOT
+          subtype: combat
+          target: damMagic
+          value: '@rang[0,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: F8RP6AKR0BkkmwOT
+ownership:
+  default: 0
+sort: 0
+_key: '!items!F8RP6AKR0BkkmwOT'

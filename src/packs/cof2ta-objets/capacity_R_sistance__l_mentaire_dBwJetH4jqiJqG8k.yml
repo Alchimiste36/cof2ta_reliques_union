@@ -1,0 +1,70 @@
+folder: KQcNpOxbD92w47LQ
+name: Résistance élémentaire
+type: capacity
+img: icons/magic/defensive/shield-barrier-flaming-pentagon-blue.webp
+system:
+  description: "<p>Le lien qui unit le PJ et sa monture est plus\_fort. Il <strong>retranche 5 points à tous les DM de son\_élément subis</strong> (donc RD (feu) pour les dragons,\_(foudre) pour les griffons, etc.). </p><p>Cette réduction\_passe <strong>à 10 au rang 5</strong> atteint dans cette voie.</p>"
+  source: ''
+  origin: Livre du Joueur p.141
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir la RD pour le type de DM choisis. Le
+    PJ doit changer le Label de l'action en fonction du type de DM
+    élémentaire.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.E7vicLnxuCkjIOY8
+      indice: 0
+      label: RD contre [élément]
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.LLWbXPJYGboW9ZHs
+          subtype: combat
+          target: dr
+          value: '@rang[0,0,5,5,10]'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: dBwJetH4jqiJqG8k
+ownership:
+  default: 0
+sort: 0
+_key: '!items!dBwJetH4jqiJqG8k'

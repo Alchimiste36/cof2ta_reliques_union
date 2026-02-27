@@ -1,0 +1,106 @@
+folder: zy1Hc7TsVBsLhiBp
+name: Attaque à outrance
+type: capacity
+img: icons/skills/melee/strike-axe-energy-pink.webp
+system:
+  description: "<p>Le PJ peut choisir une pénalité en <strong>-2 DEF</strong> pour\_gagner un bonus de <strong>+1d6 aux DM</strong> ou un bonus\_de <strong>-5 en DEF</strong> pour gagner un bonus de <strong>+2d6\_aux DM</strong>. </p><p>Ce bonus n’est pas multiplié en cas\_de critique.</p>"
+  source: ''
+  origin: Livre du Joueur p.140
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir le bonus de DEF.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.E7vicLnxuCkjIOY8
+      indice: 0
+      label: '-2 -> +1d6'
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.E7vicLnxuCkjIOY8
+          subtype: combat
+          target: def
+          value: '-2'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.D1ll6mZYDJnIW4WX
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.D1ll6mZYDJnIW4WX
+      indice: 1
+      label: '-5 -> +2d6'
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.D1ll6mZYDJnIW4WX
+          subtype: combat
+          target: def
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.D1ll6mZYDJnIW4WX
+          subtype: combat
+          target: damMelee
+          value: 2d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: D1ll6mZYDJnIW4WX
+ownership:
+  default: 0
+sort: 0
+_key: '!items!D1ll6mZYDJnIW4WX'

@@ -1,0 +1,94 @@
+{
+  "id": "cof2ta_reliques_union",
+  "title": "COF2TA : Les Reliques de l'Union Campagne",
+  "description": "Campagne pour le JdR COF2 - Terres d'Arran",
+  "url": "#{URL}#",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "13",
+    "maximum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "co2",
+        "type": "system"
+      }
+    ],
+    "requires": [],
+    "optional": []
+  },
+  "authors": [
+    {
+      "name": "L'alchimiste"
+    },
+    {
+      "name": "kristov"
+    }
+  ],
+
+  "esmodules": ["cof2ta_reliques_union.mjs"],
+  "styles": ["cof2ta_reliques_union.css"],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "COF2TA Reliques de l'Union",
+      "sorting": "m",
+      "color": "#b37a19",
+      "packs": ["cof2ta-guide-du-module", "cof2ta-objets", "cof2ta-acteurs"]
+    }
+  ],
+  "packs": [
+    {
+      "label": "COF2-TA Guide du Module",
+      "type": "JournalEntry",
+      "name": "cof2ta-guide-du-module",
+      "path": "packs/cof2ta-guide-du-module",
+      "system": "co2",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2-TA Objets",
+      "type": "Item",
+      "name": "cof2ta-objets",
+      "path": "packs/cof2ta-objets",
+      "system": "co2",
+      "banner": "modules/cof2ta/assets/cof2ta_icones/cof2ta_nain2.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2-TA Acteurs",
+      "type": "Actor",
+      "name": "cof2ta-acteurs",
+      "path": "packs/cof2ta-acteurs",
+      "system": "co2",
+      "banner": "modules/cof2ta/assets/cof2ta_bestiaire/creatures/pegase.webp",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": false,
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/cof2ta_reliques_union/assets/.webp"
+    }
+  ],
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#"
+}

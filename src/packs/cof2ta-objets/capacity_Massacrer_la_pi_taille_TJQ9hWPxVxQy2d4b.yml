@@ -1,0 +1,67 @@
+folder: ooA6Rk9MSgmpk2rl
+name: Massacrer la piétaille
+type: capacity
+img: icons/creatures/claws/claw-bear-paw-swipe-red.webp
+system:
+  description: "<p>Lorsqu’il est en selle, le PJ ajoute <strong>+1d6 aux\_DM contre la piétaille</strong>. </p><p>S’il y a <strong>au moins quatre\_créatures aux statistiques semblables</strong> impliquées\_dans le combat, elles sont assimilées à de la\_piétaille (même si leur nombre est par la suite\_réduit à moins de quatre au cours du combat).</p><p>Les grandes créatures et les cavaliers ne sont\_jamais considérés comme de la piétaille.</p>"
+  source: ''
+  origin: Livre du Joueur p.122
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir le bonus de Dommages de contact.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.oq1bK8DxQMyGVKWx
+      indice: 0
+      label: En selle
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.oq1bK8DxQMyGVKWx
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: TJQ9hWPxVxQy2d4b
+ownership:
+  default: 0
+sort: 0
+_key: '!items!TJQ9hWPxVxQy2d4b'

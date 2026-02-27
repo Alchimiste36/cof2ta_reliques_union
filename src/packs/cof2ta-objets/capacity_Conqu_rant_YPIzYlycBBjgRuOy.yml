@@ -1,0 +1,74 @@
+folder: 90k1Mhah1Lbfgk4O
+name: Conquérant
+type: capacity
+img: icons/environment/people/cavalry-heavy.webp
+system:
+  description: "<p>Le PJ augmente ses valeurs de <strong>DEX et CON\_de +2</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.88
+  slug: ''
+  inGame: <p>Bonus permanent en AGI et CON.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.YPIzYlycBBjgRuOy
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.YPIzYlycBBjgRuOy
+          subtype: ability
+          target: agi
+          value: '2'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.YPIzYlycBBjgRuOy
+          subtype: ability
+          target: con
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: YPIzYlycBBjgRuOy
+ownership:
+  default: 0
+sort: 0
+_key: '!items!YPIzYlycBBjgRuOy'

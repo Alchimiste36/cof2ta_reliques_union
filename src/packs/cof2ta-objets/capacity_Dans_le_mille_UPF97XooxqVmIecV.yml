@@ -1,0 +1,76 @@
+folder: lf3tHiZeN0M56s5z
+name: Dans le mille
+type: capacity
+img: icons/skills/ranged/target-bullseye-arrow-blue.webp
+system:
+  description: "<p><strong>Pour une attaque à distance</strong>, le PJ peut <strong>choisir\_d’utiliser 1d12</strong> en attaque au lieu du d20\_habituel (et il ajoute normalement son score\_d’attaque à distance). Si l’attaque est réussie,\_il ajoute <strong>2d6 aux DM</strong>. </p><p>Cette capacité peut par\_exemple être utilisée avec\_@UUID[Item.DIBwIDRbgytaExZ6]{Tir rapide} ou  @UUID[Item.I9xtdTQ6CM6vB63X]{Flèche de mort} (le bonus de 2d6 aux DM n’est pas\_doublé).</p>"
+  source: ''
+  origin: Livre du Joueur p.127
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'appliquer un Dé Malus à l'attaque à distance
+    et un bonus de 2d6 aux DM.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.I9xtdTQ6CM6vB63X
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.UPF97XooxqVmIecV
+          subtype: malusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.UPF97XooxqVmIecV
+          subtype: combat
+          target: damRanged
+          value: 2d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: UPF97XooxqVmIecV
+ownership:
+  default: 0
+sort: 0
+_key: '!items!UPF97XooxqVmIecV'

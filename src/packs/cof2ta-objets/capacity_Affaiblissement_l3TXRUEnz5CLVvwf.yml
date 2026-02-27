@@ -1,0 +1,84 @@
+folder: uvHtoSiBBvs1nfqu
+name: Affaiblissement
+type: capacity
+img: icons/magic/death/undead-ghosts-trio-blue.webp
+_id: l3TXRUEnz5CLVvwf
+system:
+  description: "<p>A chaque fois qu'une\_créature subit les DM du contact corrupteur du\_fantôme, elle doit réussir un test de CON difficulté 15 ou être affaiblie pendant 1d6 minutes.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+    statut Affaibli pendant la durée de l'effet.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.l3TXRUEnz5CLVvwf
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - weakened
+            duration: 1d6*10
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!l3TXRUEnz5CLVvwf'

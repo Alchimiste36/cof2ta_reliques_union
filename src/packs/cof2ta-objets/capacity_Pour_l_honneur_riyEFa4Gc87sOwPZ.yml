@@ -1,0 +1,67 @@
+folder: BF5UormkBEDrCFHs
+name: Pour l’honneur
+type: capacity
+img: icons/sundries/flags/banner-standard-moon.webp
+_id: riyEFa4Gc87sOwPZ
+system:
+  description: "<p>Les Peaux vertes sont des parias aux yeux des\_autres peuples des Terres d’Arran mais, au sein\_de leurs clans, leurs victoires et leurs faits d’armes\_forgent leurs légendes. </p><p>Le PJ gagne un bonus\_de <strong>+5 aux tests de Carac. pour toute interaction\_sociale avec d’autres Peaux vertes</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.93
+  slug: ''
+  inGame: <p>Bonus permanent aux tests de CHA.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.riyEFa4Gc87sOwPZ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.riyEFa4Gc87sOwPZ
+          subtype: skill
+          target: cha
+          value: '5'
+          apply: self
+          additionalInfos: Interaction sociale avec Peaux Vertes
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!riyEFa4Gc87sOwPZ'

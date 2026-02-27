@@ -1,0 +1,67 @@
+folder: PeyEhL8AkHtHxqN3
+name: Détecter les pièges
+type: capacity
+img: icons/environment/traps/trap-jaw-steel.webp
+system:
+  description: "<p>En réussissant <strong>un test d’INT difficulté 10</strong>, le PJ\_peut détecter (et ensuite contourner sans danger)\_<strong>les pièges</strong> (avant qu’ils ne se déclenchent bien\_entendu). </p><p>Les pièges magiques exigent <strong>un test\_d’INT de difficulté 15.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> la détection des pièges non\_magiques est réussie de façon automatique.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.131
+  slug: ''
+  inGame: <p>Pas d'effet automatique.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.aDymGMCXh8OlgFYJ
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Précision (crochetage, désamorçage, escamotage…)
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: kjQDYYtyGJmDeapF
+ownership:
+  default: 0
+sort: 0
+_key: '!items!kjQDYYtyGJmDeapF'

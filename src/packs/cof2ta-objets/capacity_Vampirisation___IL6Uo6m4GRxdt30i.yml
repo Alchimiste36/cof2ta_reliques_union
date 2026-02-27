@@ -1,0 +1,84 @@
+folder: K3qjHErURx9yMEIR
+name: Vampirisation ¤
+type: capacity
+img: icons/magic/death/mouth-bite-fangs-vampire.webp
+_id: IL6Uo6m4GRxdt30i
+system:
+  description: "<p>Le nécromancien doit\_réussir une <strong>attaque magique sur une cible vivante\_à une distance maximale de 30 mètres</strong>.</p><p>En cas\_de réussite, la cible <strong>subit [1d6 x NC/2] DM</strong> et la\_créature <strong>régénère autant de PV que de DM</strong>\_<strong>infligés</strong>.</p><p>De plus, à chaque fois qu'une <strong>créature</strong>\_<strong>meurt à moins de 20 mètres d'elle</strong>, la créature\_siphonne son énergie et <strong>gagne [1d6 + NC] PV</strong>.</p>"
+  source: ''
+  origin: Livre du meneur p150
+  slug: ''
+  inGame: >-
+    <p>La première action permet de réaliser l'attaque magique. Les DM seront
+    appliqués sur la cible et en soin sur le mystique grâce aux boutons du
+    message de chat.</p><p>La deuxième action permet de se soigner
+    automatiquement.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.IL6Uo6m4GRxdt30i
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6*(@niv/2)
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!IL6Uo6m4GRxdt30i'

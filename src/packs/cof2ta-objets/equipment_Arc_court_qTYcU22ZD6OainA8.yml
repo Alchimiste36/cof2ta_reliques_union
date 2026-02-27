@@ -1,0 +1,103 @@
+folder: srnxqMuZEh5AAU86
+name: Arc court
+type: equipment
+img: icons/weapons/bows/shortbow-arrows-black.webp
+_id: qTYcU22ZD6OainA8
+system:
+  description: ''
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: arc-court
+  tags: []
+  subtype: weapon
+  martialCategory: shortBow
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: 20
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 4
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 30
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1770255757417
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+sort: 900000
+_key: '!items!qTYcU22ZD6OainA8'

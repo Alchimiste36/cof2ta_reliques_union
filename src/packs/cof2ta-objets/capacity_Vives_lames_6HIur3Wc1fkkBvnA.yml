@@ -1,0 +1,76 @@
+folder: leyCTV1UrX2tMGuW
+name: Vives lames
+type: capacity
+img: icons/weapons/daggers/dagger-straight-cracked.webp
+_id: 6HIur3Wc1fkkBvnA
+system:
+  description: "<p>Le PJ peut utiliser son <strong>Mod. de DEX au choix\_en attaque au contact ou aux DM</strong> (mais pas les\_deux) <strong>au lieu du Mod. de FOR</strong> lorsqu’il utilise\_une arme de duel ou une épée.</p>"
+  source: ''
+  origin: Livre du Joueur p.145
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir +AGI -FOR pour les attaques et les DM
+    de contact.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.6HIur3Wc1fkkBvnA
+      indice: 0
+      label: Utilisation arme duel et épée
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.6HIur3Wc1fkkBvnA
+          subtype: combat
+          target: melee
+          value: '@agi -@for'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.6HIur3Wc1fkkBvnA
+          subtype: combat
+          target: damMelee
+          value: '@agi -@for'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!6HIur3Wc1fkkBvnA'

@@ -1,0 +1,110 @@
+folder: dw1wsjpfSmQ7VrDt
+name: Ombre mouvante
+type: capacity
+img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
+system:
+  description: "<p>En réussissant <strong>un test de DEX difficulté 10</strong>, le\_PJ peut se déplacer (sur une distance maximale\_de 20 m) jusqu’à une zone ténébreuse ou à l’abri\_des regards (derrière un mur, dans un buisson\_ou sous une calèche par exemple, du moment\_que personne ne peut voir précisément la zone)\_et disparaître à son tour. Il ne réapparaît qu’au\_tour suivant, au cours de sa phase d’initiative.</p><p>Aucun adversaire ne peut l’attaquer pendant\_qu’il a disparu dans les ombres, mais il peut\_subir des DM de zone. Le Gobelin <strong>réapparaît à\_une distance maximale de 10 m</strong> de sa position\_initiale.</p><p><strong><span style=\"text-decoration:underline\">S’il a l’initiative sur un adversaire</span></strong> qu’il\_prend pour cible au contact, il bénéficie d’un\_bonus de <strong>+2d6 DM à son attaque</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.96
+  slug: ''
+  inGame: >-
+    <p>La première action permet de réaliser le test d'AGI difficulté
+    10.</p><p>La deuxième action activable ajoute les DM bonus sur
+    l'attaque.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 3
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.h4kHkDuzZdgeSDlV
+      indice: 0
+      label: Test AGI
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@agi'
+            crit: ''
+            difficulty: '10'
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.h4kHkDuzZdgeSDlV
+      indice: 1
+      label: Si initiative
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.h4kHkDuzZdgeSDlV
+          subtype: combat
+          target: damMelee
+          value: +2d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: h4kHkDuzZdgeSDlV
+ownership:
+  default: 0
+sort: 0
+_key: '!items!h4kHkDuzZdgeSDlV'

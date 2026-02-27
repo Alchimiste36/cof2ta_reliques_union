@@ -1,0 +1,90 @@
+folder: PeyEhL8AkHtHxqN3
+name: Attaque paralysante
+type: capacity
+img: icons/skills/wounds/injury-pain-body-orange.webp
+system:
+  description: "<p><strong>Une fois par combat</strong>, le PJ peut, <strong>en réussissant\_une attaque de contact</strong>, paralyser un adversaire\_de douleur. </p><p>Ce dernier n’encaisse <strong>pas de DM</strong>,\_mais <strong>ne peut plus attaquer ni se déplacer\_pendant 1d4 tours.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.131
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser une attaque de contact sans DM mais avec un
+    effet supplémentaire infligeant le statut "Paralysé" à la cible pendant 1d4
+    round. Fonctionne uniquement en Mode Combat.</p><p>Il faut faire une
+    Récupération Rapide pour pouvoir réutiliser cette capacité.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 4
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - paralysis
+            duration: 1d4
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: VsbhOYaymdwSmYSX
+ownership:
+  default: 0
+sort: 0
+_key: '!items!VsbhOYaymdwSmYSX'

@@ -1,0 +1,103 @@
+folder: OBPli02oRaBQq6Ee
+name: Grande hache de bucheron
+type: equipment
+img: icons/weapons/axes/axe-double-engraved-blue.webp
+system:
+  description: <p>Nécessite une capacité pour être maîtrisée.</p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: hache
+  tags: []
+  subtype: weapon
+  martialCategory: axe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 10
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d4 + @for
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 2KZ3gv45uJFLl5OI
+ownership:
+  default: 0
+sort: 0
+_key: '!items!2KZ3gv45uJFLl5OI'

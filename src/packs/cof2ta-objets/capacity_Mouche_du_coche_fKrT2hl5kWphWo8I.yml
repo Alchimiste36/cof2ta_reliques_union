@@ -1,0 +1,94 @@
+folder: SMlGirGnIOghDlt9
+name: Mouche du coche
+type: capacity
+img: icons/magic/control/silhouette-hold-change-green.webp
+system:
+  description: "<p>Le PJ peut <strong>choisir de sacrifier une action de\_mouvement</strong> à ce tour pour gagner <strong>+3 en DEF</strong>\_jusqu’à son prochain tour. </p><p>S’il <strong>sacrifie deux\_actions de mouvement, il gagne +6 en DEF</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.144
+  slug: ''
+  inGame: >-
+    <p>Les actions activables permettent d'obtenir les bonus en fonction du
+    nombre d'actions de mouvement sacrifiées.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.eua3pLz4PRjQ57yF
+      indice: 0
+      label: Sacrifier 1 Mouvement
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.eua3pLz4PRjQ57yF
+          subtype: combat
+          target: def
+          value: '3'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.fKrT2hl5kWphWo8I
+      indice: 1
+      label: Sacrifier 2 Mouvements
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.fKrT2hl5kWphWo8I
+          subtype: combat
+          target: def
+          value: '6'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: fKrT2hl5kWphWo8I
+ownership:
+  default: 0
+sort: 0
+_key: '!items!fKrT2hl5kWphWo8I'
