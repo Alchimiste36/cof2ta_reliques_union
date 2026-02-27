@@ -1,0 +1,113 @@
+folder: fkaQ5zi2WGOp22kb
+name: Hache à deux mains sanglante +3
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/weapons/axes/axe-double-brown.webp
+system:
+  description: >-
+    <p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de
+    +3 à l'Attaque et aux DM.</p></li><li><p>L'arme augmente la plage de
+    critique de 1.</p></li><li><p>Lorsqu'un coup critique est infligé, un
+    saignement de 2d4° est appliqué à la cible pendant 2d4 rounds.</p></li></ul>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: hache-a-deux-mains
+  tags: []
+  subtype: weapon
+  martialCategory: greatAxe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 3
+    unit: kg
+  price:
+    value: 1750
+    unit: pa
+  rarity: veryRare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Actor.AUMVOCux3piDen0C.Item.iKWWnrUex1n7P2D1
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: ' @atc +3'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d6 + @for +3
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: 2d4°
+            elementType: ''
+            statuses:
+              - bleeding
+            duration: 2d4
+            unit: round
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771885698522
+  modifiedTime: 1771885712175
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: X5eh3URauOSQqqHE
+sort: 700000
+_key: '!items!X5eh3URauOSQqqHE'

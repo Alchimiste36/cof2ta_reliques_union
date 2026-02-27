@@ -1,0 +1,95 @@
+folder: wOgzhTJ8yrdWVmOR
+name: "Je\_suis déjà venu"
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/environment/settlement/house-farmland.webp
+_id: l6X5UwgGeombuAuG
+system:
+  description: "<p>Lorsque le personnage arrive dans une localité, le joueur peut <strong>dépenser au choix 1\_ DR\_ou 1\_PC pour y être déjà venu</strong>. Dans ce cas, le\_MJ lui <strong>indique les lieux les plus connus et lui\_fournit un contact de confiance</strong> dans la place.\_</p><p>De\_plus, lorsqu’il fait du commerce dans cette\_localité, il <strong>réduit d’un niveau la rareté des objets\_qu’il recherche</strong> (par exemple, un objet très rare\_devient seulement rare). </p><p>La\_dépense du DR ou\_du PC est valable pour toute l’aventure en cours.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p180
+  slug: ''
+  inGame: >-
+    <p>Les deux actions permettent de diminuer de 1 les DR ou les PC du PJ de
+    façon permanente en ajoutant la Condition "est appris" dessus. A la fin de
+    l'aventure, supprimez la Condition pour regagner la ressource.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.l6X5UwgGeombuAuG
+      indice: 0
+      label: Perte de 1 DR
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.l6X5UwgGeombuAuG
+          subtype: resource
+          target: rp
+          value: '-1'
+          apply: self
+          additionalInfos: ''
+      conditions: []
+      resolvers: []
+    - source: Item.l6X5UwgGeombuAuG
+      indice: 1
+      label: Perte de 1 PC
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.l6X5UwgGeombuAuG
+          subtype: resource
+          target: fp
+          value: '-1'
+          apply: self
+          additionalInfos: ''
+      conditions: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!l6X5UwgGeombuAuG'

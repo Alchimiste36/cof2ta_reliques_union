@@ -1,0 +1,69 @@
+folder: qekQTvOQw99SYnLZ
+name: Expert en rixes
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/environment/settlement/tavern.webp
+_id: vTaq7hPcjcmbAe2t
+system:
+  description: "<p>Le personnage obtient un bonus de <strong>+1d4°\_DM\_lorsqu’il inflige des DM temporaires à une créature humanoïde</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p173
+  slug: ''
+  inGame: <p>Bonus activable/désactivable.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.vTaq7hPcjcmbAe2t
+      indice: 0
+      label: DM temporaires sur humanoïde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.vTaq7hPcjcmbAe2t
+          subtype: combat
+          target: damMelee
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1770076929664
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 500000
+_key: '!items!vTaq7hPcjcmbAe2t'

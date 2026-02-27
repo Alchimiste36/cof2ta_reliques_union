@@ -1,0 +1,82 @@
+folder: FNo8CFxv0sbyFxOb
+name: Au-dessus des lois
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/sundries/survival/cuffs-shackles-steel.webp
+_id: Rcmrf5ppxOtUHwZ6
+system:
+  description: "<p>L’argent permet bien des excentricités, parfois même ignorer la loi. </p><p><strong>Lorsque le personnage\_commet une action illégale</strong>, il peut faire un <strong>test\_de CHA pour échapper à la justice</strong>, avec une difficulté de <strong>10 pour un délit</strong>, <strong>15 pour un crime</strong> et <strong>20\_pour un acte odieux</strong>. </p><ul><li><p>Si\_l’action contrarie un puissant, la difficulté augmente de 5. </p></li><li><p>Si\_la victime du\_crime ou du délit est un personnage important,\_cette capacité est inefficace.</p></li><li><p> Si\_ le personnage\_utilise cette capacité plusieurs fois dans la même\_semaine, la difficulté du test de CHA augmente\_de 10 à chaque fois. </p></li></ul><p>Il\_n’est pas possible d’utiliser\_Pot-de-vin pour améliorer le résultat de ce test.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p180
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser un test de sauvegarde de CHA de difficulté
+    10. Interprétez le résultat en fonction de la difficulté réelle du test.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.Rcmrf5ppxOtUHwZ6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: cha
+          saveDifficulty: '10'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!Rcmrf5ppxOtUHwZ6'

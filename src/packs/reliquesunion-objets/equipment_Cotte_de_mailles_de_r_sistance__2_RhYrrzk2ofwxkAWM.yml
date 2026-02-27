@@ -1,0 +1,86 @@
+folder: fkaQ5zi2WGOp22kb
+name: Cotte de mailles de résistance +2
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/equipment/chest/breastplate-rivited-red.webp
+system:
+  description: >-
+    <p><strong>Armure magique de Centaure - Kaihoko</strong></p><ul><li><p>Bonus
+    de +2 à la DEF magique</p></li><li><p>Obtroie une RD 2</p></li></ul>
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: cotte-de-mailles
+  tags: []
+  subtype: armor
+  martialCategory: chainMail
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 20
+    unit: pa
+  rarity: common
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Actor.hf1UN77UaRB6Yuqb.Item.SE7gZCa0zHRIANH5
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: true
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Actor.hf1UN77UaRB6Yuqb.Item.SE7gZCa0zHRIANH5
+          subtype: combat
+          target: dr
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  defense: 5
+  range: null
+  magicalDefense: 2
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771886326228
+  modifiedTime: 1771886326228
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: RhYrrzk2ofwxkAWM
+sort: 0
+_key: '!items!RhYrrzk2ofwxkAWM'

@@ -1,0 +1,76 @@
+folder: FdIJXCjKMyFaJqvl
+name: Érudition
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/sundries/books/book-open-brown.webp
+_id: dT6phNCbsLq2q8JA
+system:
+  description: "<p>L’érudit <strong>sait parler, lire et écrire une langue supplémentaire par rang</strong> atteint dans la voie.</p><p> Il\_gagne\_un bonus égal son <strong>rang +\_2 dans un domaine de son\_choix</strong> parmi <strong>histoire et géographie, occultisme et\_magie, sciences et techniques, plantes et créatures</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p176
+  slug: ''
+  inGame: <p>Bonus permanent aux jets de compétences.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.dT6phNCbsLq2q8JA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.dT6phNCbsLq2q8JA
+          subtype: skill
+          target: int
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Domaine d'érudition choisi
+        - type: capacity
+          source: Item.dT6phNCbsLq2q8JA
+          subtype: skill
+          target: cha
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Domaine d'érudition choisi
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!dT6phNCbsLq2q8JA'

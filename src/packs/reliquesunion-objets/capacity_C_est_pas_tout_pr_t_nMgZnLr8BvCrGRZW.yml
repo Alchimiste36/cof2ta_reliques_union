@@ -1,0 +1,83 @@
+folder: 8ynAj80DStwN0uT8
+name: C’est pas tout prêt
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/commodities/tech/claw-mechanical.webp
+_id: nMgZnLr8BvCrGRZW
+system:
+  description: "<p>Le personnage obtient un bonus de <strong>+5 à tous\_les tests pour réparer quelque chose et pour\_travailler dur</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p172
+  slug: ''
+  inGame: <p>Bonus aux jets de compétences.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.nMgZnLr8BvCrGRZW
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.nMgZnLr8BvCrGRZW
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Réparer des choses
+        - type: capacity
+          source: Item.nMgZnLr8BvCrGRZW
+          subtype: skill
+          target: int
+          value: '5'
+          apply: self
+          additionalInfos: Réparer des choses
+        - type: capacity
+          source: Item.nMgZnLr8BvCrGRZW
+          subtype: skill
+          target: con
+          value: '5'
+          apply: self
+          additionalInfos: Travailler dur
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!nMgZnLr8BvCrGRZW'

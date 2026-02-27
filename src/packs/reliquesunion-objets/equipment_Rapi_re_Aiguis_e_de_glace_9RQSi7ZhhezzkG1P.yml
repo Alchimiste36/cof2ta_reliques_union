@@ -1,0 +1,112 @@
+folder: fkaQ5zi2WGOp22kb
+name: Rapière Aiguisée de glace
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/weapons/swords/scimitar-worn-blue.webp
+system:
+  description: >-
+    <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée, à
+    la lame flexible, destinée essentiellement aux coups
+    d'estoc.</p><p><strong>Arme légère, seuil de critique 19-20</strong></p><hr
+    /><p><strong>Arme magique de Centaure - Maamaa</strong></p><ul><li><p>Bonus
+    de +1d4° DM de glace</p></li><li><p>Augmentation de la plage de critique de
+    1</p></li></ul>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: rapiere
+  tags:
+    - legere
+  subtype: weapon
+  martialCategory: rapier
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 450
+    unit: pa
+  rarity: rare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Actor.h7x0EB6tAL2BuJkZ.Item.pHZ8Tb97XUyvWSrb
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: '18'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +1d4°
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771635825226
+  modifiedTime: 1771885712175
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: 9RQSi7ZhhezzkG1P
+sort: 2500000
+_key: '!items!9RQSi7ZhhezzkG1P'

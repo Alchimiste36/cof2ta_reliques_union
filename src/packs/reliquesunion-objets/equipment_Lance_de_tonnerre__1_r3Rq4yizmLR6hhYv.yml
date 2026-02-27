@@ -1,0 +1,221 @@
+folder: fkaQ5zi2WGOp22kb
+name: Lance de tonnerre +1
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/weapons/polearms/spear-hooked-simple.webp
+system:
+  description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Miihini</strong></p><ul><li><p>Bonus de +1 en Attaque et DM.</p></li><li><p>L'attaque inflige +2d4° DM de foudre. La cible réalise un test de CON difficulté 15 ou être étourdi pendant 1d4+1 rounds.</p></li></ul>"
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: lance
+  tags: []
+  subtype: weapon
+  martialCategory: lance
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 3
+    unit: kg
+  price:
+    value: 6
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
+  actions:
+    - source: Actor.gWWGE6tcGj7MOU2j.Item.dZSYEdpF0esgSonu
+      indice: 0
+      label: 1 main
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +2d4° +1
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Actor.gWWGE6tcGj7MOU2j.Item.dZSYEdpF0esgSonu
+      indice: 1
+      label: 2 mains
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d10 + @for +2d4° +1
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Actor.gWWGE6tcGj7MOU2j.Item.dZSYEdpF0esgSonu
+      indice: 2
+      label: A distance
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd -2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +2d4° +1
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Actor.gWWGE6tcGj7MOU2j.Item.dZSYEdpF0esgSonu
+      indice: 3
+      label: Sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: 1d4+1
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771636191874
+  modifiedTime: 1771885712175
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: r3Rq4yizmLR6hhYv
+sort: 3000000
+_key: '!items!r3Rq4yizmLR6hhYv'

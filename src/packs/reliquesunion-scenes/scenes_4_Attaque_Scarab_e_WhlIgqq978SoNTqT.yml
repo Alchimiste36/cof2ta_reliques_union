@@ -1,0 +1,2892 @@
+folder: GNkNA2SyDc6hNvjw
+name: 4.Attaque Scarabée
+_id: WhlIgqq978SoNTqT
+navigation: true
+navOrder: 1000000
+navName: ''
+background:
+  src: >-
+    https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/02.LIEUX/BATTLEMAPS/zAutres%20Battlemap/route%20dans%20les%20montagnes04.jpg
+  scaleX: 1
+  scaleY: 1
+  offsetX: 0
+  offsetY: 0
+  rotation: 0
+  anchorX: 0
+  anchorY: 0
+  fit: fill
+  tint: '#ffffff'
+  alphaThreshold: 0
+foregroundElevation: 6
+width: 1540
+height: 2310
+padding: 0.25
+initial:
+  x: null
+  'y': null
+  scale: null
+backgroundColor: '#999999'
+grid:
+  type: 1
+  size: 70
+  color: '#000000'
+  alpha: 0.5
+  distance: 2
+  units: m
+  style: solidLines
+  thickness: 1
+tokenVision: true
+drawings: []
+tokens:
+  - texture:
+      src: >-
+        https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/ANIMAUX/TOKEN.Scarab%C3%A9e.G%C3%A9ant.png
+      scaleX: 1.2
+      scaleY: 1.2
+      offsetX: 0
+      offsetY: 0
+      rotation: 0
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    name: Scarabée des Crocs d'Acier
+    displayName: 30
+    actorLink: false
+    width: 2
+    height: 2
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 0
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.fp
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 15
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes:
+      - id: basicSight
+        range: 1
+        enabled: true
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: default
+      healthEstimate:
+        dontMarkDead: false
+        hideHealthEstimate: false
+        hideName: false
+      wall-height:
+        tokenHeight: 2
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+      conversation-hud:
+        excludeFromBeingPulled: false
+        linkedConversation: ''
+      core: {}
+      autorotate:
+        enabled: null
+        offset: null
+    actorId: uvlReDo6JKZ9b3C6
+    x: 1400
+    'y': 1540
+    hidden: false
+    _id: z0fBzXLsR4goPIRB
+    delta:
+      _id: 9x5cedoOOgFh5uKH
+      system:
+        archetype: fast
+        category: living
+        attacks:
+          ranged:
+            base: 7
+            mod: 7
+        weapons:
+          '0':
+            dmg: 1d6
+        attributes:
+          hp:
+            value: 0
+      items:
+        - name: Vision dans le Noir
+          type: capacity
+          img: >-
+            https://assets.forge-vtt.com/bazaar/core/icons/magic/perception/eye-ringed-glow-angry-large-teal.webp
+          system:
+            key: vision-dans-le-noir
+            description: >-
+              <p>&nbsp;La cr&eacute;ature voit dans le noir comme en plein jour
+              jusqu'&agrave; une distance de 30 m&egrave;tres.</p>
+            source: Terres d'Arran
+            moduleData:
+              cota:
+                scalable: false
+                advanced: false
+                scalableCapacities:
+                  profilePaths: []
+            type: null
+            summary: ''
+            rank: null
+            path: ''
+            checked: false
+            limited: false
+            spell: false
+            ranged: false
+            limitedUsage: false
+            save: false
+            activable: false
+            heal: false
+            attack: false
+            useMacro: false
+            buff: false
+            noXpCost: false
+            properties:
+              ranged:
+                range: ''
+                radius: ''
+              limitedUsage:
+                use: 0
+                maxUse: 0
+              save:
+                stat: ''
+                difficulty: ''
+                text: ''
+              heal:
+                formula: null
+              attack:
+                skill: ''
+                skillBonus: ''
+                difficulty: null
+                dmgBase: ''
+                dmgStat: ''
+              macro:
+                name: null
+                id: null
+                pack: null
+              buff:
+                activated: false
+          effects: []
+          folder: rRp6Kvu5fmLlI7zQ
+          sort: 3125
+          flags:
+            core: {}
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            exportSource: null
+            coreVersion: '13.351'
+            systemId: cof
+            systemVersion: 13.348.2
+            lastModifiedBy: null
+          _id: hXjBwAf6oH1Iny2D
+          ownership:
+            default: 0
+          _key: >-
+            !scenes.tokens.delta.items!WhlIgqq978SoNTqT.z0fBzXLsR4goPIRB.9x5cedoOOgFh5uKH.hXjBwAf6oH1Iny2D
+      effects:
+        - name: Mort
+          img: icons/svg/skull.svg
+          changes:
+            - key: data.attributes.hp.value
+              mode: 5
+              value: '0'
+              priority: null
+          statuses:
+            - dead
+          _id: 8KVuLVZCLeNN2HEh
+          type: base
+          system: {}
+          disabled: false
+          duration:
+            startTime: -15940800
+            seconds: null
+            combat: null
+            rounds: null
+            turns: null
+            startRound: 3
+            startTurn: 5
+          description: ''
+          origin: null
+          tint: '#ffffff'
+          transfer: false
+          sort: 0
+          flags:
+            core:
+              overlay: true
+          _stats:
+            compendiumSource: null
+            duplicateSource: null
+            exportSource: null
+            coreVersion: '13.351'
+            systemId: cof
+            systemVersion: 13.348.2
+            lastModifiedBy: null
+          _key: >-
+            !scenes.tokens.delta.effects!WhlIgqq978SoNTqT.z0fBzXLsR4goPIRB.9x5cedoOOgFh5uKH.8KVuLVZCLeNN2HEh
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!WhlIgqq978SoNTqT.z0fBzXLsR4goPIRB.9x5cedoOOgFh5uKH'
+    elevation: 0
+    sort: 0
+    locked: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _key: '!scenes.tokens!WhlIgqq978SoNTqT.z0fBzXLsR4goPIRB'
+  - name: Ava
+    displayName: 30
+    actorLink: true
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/JOUEURS/TOKENFlorian01.png
+      scaleX: 1
+      scaleY: 1
+      offsetX: 0
+      offsetY: 0
+      rotation: 0
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.fp
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 15
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes:
+      - id: basicSight
+        range: 15
+        enabled: true
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: default
+        movement: null
+      healthEstimate:
+        dontMarkDead: false
+        hideHealthEstimate: false
+        hideName: false
+      wall-height:
+        tokenHeight: 2
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+        CheckPilotedCollisionFlag: false
+      conversation-hud:
+        excludeFromBeingPulled: false
+        linkedConversation: ''
+      core: {}
+      autorotate:
+        enabled: null
+        offset: null
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 0
+      subject:
+        scale: 1
+        texture: null
+    actorId: n3VvdQvrMzFjc1iG
+    hidden: false
+    sort: 1
+    _id: xYBx7CTxBt3GMSOF
+    delta:
+      _id: tUzaUSilaI6HaT9Z
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!WhlIgqq978SoNTqT.xYBx7CTxBt3GMSOF.tUzaUSilaI6HaT9Z'
+    x: 1610
+    'y': 1680
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _key: '!scenes.tokens!WhlIgqq978SoNTqT.xYBx7CTxBt3GMSOF'
+  - name: Drakk'o
+    displayName: 30
+    actorLink: true
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/JOUEURS/Drakk%27o02.png
+      scaleX: 1
+      scaleY: 1
+      offsetX: 0
+      offsetY: 0
+      rotation: 0
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 20
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.fp
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 15
+      angle: 360
+      visionMode: basic
+      color: null
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+    detectionModes:
+      - id: basicSight
+        range: 1
+        enabled: true
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: include
+        movement: null
+      healthEstimate:
+        dontMarkDead: false
+        hideHealthEstimate: false
+        hideName: false
+      wall-height:
+        tokenHeight: 2
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+      core: {}
+      autorotate:
+        enabled: null
+        offset: null
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    actorId: 2krJW4kb7PyLdrU2
+    hidden: false
+    sort: 2
+    _id: yoK5hFyJPgOAHnCP
+    delta:
+      _id: utlfEl74Zqj9tmrI
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!WhlIgqq978SoNTqT.yoK5hFyJPgOAHnCP.utlfEl74Zqj9tmrI'
+    x: 1540
+    'y': 1680
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _key: '!scenes.tokens!WhlIgqq978SoNTqT.yoK5hFyJPgOAHnCP'
+  - name: Ramiel
+    displayName: 30
+    actorLink: true
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/JOUEURS/TOKENRamiel02.png
+      scaleX: 1
+      scaleY: 1
+      offsetX: 0
+      offsetY: 0
+      rotation: 0
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: false
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.fp
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 15
+      angle: 360
+      visionMode: basic
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+      color: null
+    detectionModes: []
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: include
+        movement: null
+      healthEstimate:
+        dontMarkDead: false
+        hideHealthEstimate: false
+        hideName: false
+      wall-height:
+        tokenHeight: 0
+      core: {}
+      autorotate:
+        enabled: null
+        offset: null
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    actorId: 3KbxDgFESHAfo8pr
+    hidden: false
+    sort: 3
+    _id: SEgAowuqtSv5GoPW
+    delta:
+      _id: 2WAajLL9rxM5QPHD
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!WhlIgqq978SoNTqT.SEgAowuqtSv5GoPW.2WAajLL9rxM5QPHD'
+    x: 1610
+    'y': 1610
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _key: '!scenes.tokens!WhlIgqq978SoNTqT.SEgAowuqtSv5GoPW'
+  - name: Grim le Cogneur
+    displayName: 30
+    actorLink: true
+    texture:
+      src: >-
+        https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/JOUEURS/TOKEN-Fabien.png
+      scaleX: 1
+      scaleY: 1
+      offsetX: 0
+      offsetY: 0
+      rotation: 0
+      tint: '#ffffff'
+      anchorX: 0.5
+      anchorY: 0.5
+      fit: contain
+      alphaThreshold: 0.75
+    width: 1
+    height: 1
+    lockRotation: true
+    rotation: 0
+    alpha: 1
+    disposition: 1
+    displayBars: 30
+    bar1:
+      attribute: attributes.hp
+    bar2:
+      attribute: attributes.fp
+    light:
+      alpha: 0.5
+      angle: 360
+      bright: 0
+      coloration: 1
+      dim: 0
+      attenuation: 0.5
+      luminosity: 0.5
+      saturation: 0
+      contrast: 0
+      shadows: 0
+      animation:
+        type: null
+        speed: 5
+        intensity: 5
+        reverse: false
+      darkness:
+        min: 0
+        max: 1
+      color: null
+      negative: false
+      priority: 0
+    sight:
+      enabled: true
+      range: 15
+      angle: 360
+      visionMode: basic
+      attenuation: 0.1
+      brightness: 0
+      saturation: 0
+      contrast: 0
+      color: null
+    detectionModes: []
+    flags:
+      monks-enhanced-journal:
+        chatbubble: ''
+      monks-tokenbar:
+        include: include
+        movement: null
+      healthEstimate:
+        dontMarkDead: false
+        hideHealthEstimate: false
+        hideName: false
+      wall-height:
+        tokenHeight: 0
+      core: {}
+      autorotate:
+        enabled: false
+        offset: null
+      Rideable:
+        issetRideableFlag: false
+        MountonEnterFlag: false
+        AutoMountBlackListFlag: ''
+        AutoMountWhiteListFlag: ''
+        MaxRiderFlag: null
+        CustomRidingheightFlag: null
+        UseRidingHeightFlag: true
+        RidersScaleFlag: 1
+        RiderPositioningFlag: RowPlacement
+        RiderOffsetFlag:
+          - 0
+          - 0
+        TokenFormFlag: TokenFormCircle
+        InsideMovementFlag: false
+        SpawnRidersFlag: ''
+        canbeGrappledFlag: true
+        CanbePilotedFlag: false
+        PilotedbyDefaultFlag: false
+    occludable:
+      radius: 0
+    ring:
+      enabled: false
+      colors:
+        ring: null
+        background: null
+      effects: 1
+      subject:
+        scale: 1
+        texture: null
+    actorId: 8Zutd0Hjm5eCpCHP
+    hidden: false
+    sort: 4
+    _id: TxFh8dSbFeNgWFQ4
+    delta:
+      _id: 6XcdqMU3hhZG6Xq5
+      system: {}
+      items: []
+      effects: []
+      flags: {}
+      name: null
+      type: null
+      img: null
+      ownership: null
+      _key: '!scenes.tokens.delta!WhlIgqq978SoNTqT.TxFh8dSbFeNgWFQ4.6XcdqMU3hhZG6Xq5'
+    x: 1330
+    'y': 1470
+    elevation: 0
+    locked: false
+    _regions: []
+    shape: 4
+    turnMarker:
+      mode: 1
+      animation: null
+      src: null
+      disposition: false
+    movementAction: null
+    _movementHistory: []
+    _key: '!scenes.tokens!WhlIgqq978SoNTqT.TxFh8dSbFeNgWFQ4'
+lights: []
+notes: []
+sounds: []
+templates: []
+tiles: []
+walls:
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 420
+      - 630
+      - 1960
+      - 630
+    _id: EkIX7FydI6RNFxuf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.EkIX7FydI6RNFxuf'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1960
+      - 630
+      - 1960
+      - 2940
+    _id: lBFQkIv2UczjrW8u
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.lBFQkIv2UczjrW8u'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 1960
+      - 2940
+      - 420
+      - 2940
+    _id: guNaffU28w7sq1dT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.guNaffU28w7sq1dT'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 420
+      - 2940
+      - 420
+      - 630
+    _id: 3Ww1JnFu416ll0YV
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.3Ww1JnFu416ll0YV'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1952
+      - 1414
+      - 1904
+      - 1410
+    _id: w5U2tJAIIANEFknD
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.w5U2tJAIIANEFknD'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1904
+      - 1410
+      - 1876
+      - 1445
+    _id: S8YOrROGBKAJfwNq
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.S8YOrROGBKAJfwNq'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1876
+      - 1445
+      - 1877
+      - 1479
+    _id: eLwPp5zwAWnwF8Nw
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.eLwPp5zwAWnwF8Nw'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1877
+      - 1479
+      - 1857
+      - 1510
+    _id: gfYYDXIaPjVwbkID
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.gfYYDXIaPjVwbkID'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1857
+      - 1510
+      - 1831
+      - 1555
+    _id: Qjs1PZ72KtgkkkUB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.Qjs1PZ72KtgkkkUB'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1831
+      - 1555
+      - 1803
+      - 1596
+    _id: ysOPpR9413qNbHBk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.ysOPpR9413qNbHBk'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1803
+      - 1596
+      - 1811
+      - 1635
+    _id: OfwbfoKLWxgEAcdP
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.OfwbfoKLWxgEAcdP'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1811
+      - 1635
+      - 1811
+      - 1697
+    _id: oU6ONmUcZAYoUJwS
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.oU6ONmUcZAYoUJwS'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1811
+      - 1697
+      - 1813
+      - 1731
+    _id: pWkroA2Aq6RTezl9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.pWkroA2Aq6RTezl9'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1813
+      - 1731
+      - 1790
+      - 1761
+    _id: OYkU1hdphBAkfGPr
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.OYkU1hdphBAkfGPr'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1790
+      - 1761
+      - 1786
+      - 1798
+    _id: pjC7Dd1FAi71VXYu
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.pjC7Dd1FAi71VXYu'
+  - light: 20
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 1786
+      - 1798
+      - 1799
+      - 1824
+    _id: XBSCrcAVNFL7Kdle
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.XBSCrcAVNFL7Kdle'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 526
+      - 1102
+      - 548
+      - 1138
+    _id: HMvPsj8To362Gyb2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.HMvPsj8To362Gyb2'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 548
+      - 1138
+      - 597
+      - 1207
+    _id: D9dLMOIzmi6cHYsU
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.D9dLMOIzmi6cHYsU'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 597
+      - 1207
+      - 649
+      - 1269
+    _id: yRLHTZZz6zaA49kf
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.yRLHTZZz6zaA49kf'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 649
+      - 1269
+      - 703
+      - 1333
+    _id: oUDm9Rc8uLCRmvZy
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.oUDm9Rc8uLCRmvZy'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 703
+      - 1333
+      - 713
+      - 1402
+    _id: Nx5PLdocDEUd9aEK
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.Nx5PLdocDEUd9aEK'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 713
+      - 1402
+      - 772
+      - 1478
+    _id: nt8BJAxXnIPL6Qzq
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.nt8BJAxXnIPL6Qzq'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 772
+      - 1478
+      - 833
+      - 1528
+    _id: ac9ltcQ2W1EQ4EA9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.ac9ltcQ2W1EQ4EA9'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 833
+      - 1528
+      - 880
+      - 1605
+    _id: LXpHzJgebbSdQruh
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.LXpHzJgebbSdQruh'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 880
+      - 1605
+      - 903
+      - 1674
+    _id: i2ce9kQCKYEXgqPz
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.i2ce9kQCKYEXgqPz'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 903
+      - 1674
+      - 862
+      - 1758
+    _id: cX76ekB70d3GpmbI
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.cX76ekB70d3GpmbI'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 862
+      - 1758
+      - 807
+      - 1829
+    _id: pR46mJYhe90RodAg
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.pR46mJYhe90RodAg'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 807
+      - 1829
+      - 802
+      - 1906
+    _id: HATs5fAieMVDtMU0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.HATs5fAieMVDtMU0'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 802
+      - 1906
+      - 790
+      - 1952
+    _id: 8oL25PqHEPMmmjI0
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.8oL25PqHEPMmmjI0'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 790
+      - 1952
+      - 763
+      - 2020
+    _id: Qp0i75jHWfKPtRlT
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.Qp0i75jHWfKPtRlT'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 20
+    c:
+      - 763
+      - 2020
+      - 746
+      - 2101
+    _id: BtOMXPU9Wk3hIQII
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.BtOMXPU9Wk3hIQII'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 539
+      - 747
+      - 578
+      - 781
+    _id: bOHfVc1vu84Ug1cB
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.bOHfVc1vu84Ug1cB'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 578
+      - 781
+      - 646
+      - 820
+    _id: jkQIY5JVhvPjT7aH
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.jkQIY5JVhvPjT7aH'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 646
+      - 820
+      - 744
+      - 822
+    _id: 2ww8sp5BttTYtv4C
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.2ww8sp5BttTYtv4C'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 744
+      - 822
+      - 846
+      - 796
+    _id: RLrXyiTfHnR8jK5T
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.RLrXyiTfHnR8jK5T'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 846
+      - 796
+      - 921
+      - 764
+    _id: K58HDbGISWc4ODCf
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.K58HDbGISWc4ODCf'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 921
+      - 764
+      - 989
+      - 711
+    _id: pLW0bla8qUVaJXWH
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.pLW0bla8qUVaJXWH'
+  - light: 20
+    sight: 20
+    sound: 20
+    move: 20
+    c:
+      - 989
+      - 711
+      - 1011
+      - 684
+    _id: c4B0JXsfVN8bcBuu
+    dir: 2
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.c4B0JXsfVN8bcBuu'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 862
+      - 1758
+      - 945
+      - 1813
+    _id: NMdZg2wy7YJUeDJM
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.NMdZg2wy7YJUeDJM'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 945
+      - 1813
+      - 997
+      - 1874
+    _id: iCEhKFwmVuXQYYms
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.iCEhKFwmVuXQYYms'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 997
+      - 1874
+      - 1075
+      - 1951
+    _id: i2aoIC6lN0ubptou
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.i2aoIC6lN0ubptou'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1075
+      - 1951
+      - 1131
+      - 2003
+    _id: 2RGbgmNVIJJqZuPo
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.2RGbgmNVIJJqZuPo'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1131
+      - 2003
+      - 1160
+      - 2046
+    _id: HP6ONKlbL1k7v9IY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.HP6ONKlbL1k7v9IY'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1160
+      - 2046
+      - 1183
+      - 2083
+    _id: ZjuzbnTn0wouoCU1
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.ZjuzbnTn0wouoCU1'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1183
+      - 2083
+      - 1170
+      - 2125
+    _id: t5Af8X4X1iEzuDdY
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.t5Af8X4X1iEzuDdY'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1170
+      - 2125
+      - 1117
+      - 2149
+    _id: c6Lyps1Hfim8tNRO
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.c6Lyps1Hfim8tNRO'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1117
+      - 2149
+      - 1073
+      - 2118
+    _id: DB3xuPt3PI3yOIlk
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.DB3xuPt3PI3yOIlk'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1073
+      - 2118
+      - 1026
+      - 2077
+    _id: zrPY5Pl3lvFNGNwb
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.zrPY5Pl3lvFNGNwb'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 1026
+      - 2077
+      - 964
+      - 2017
+    _id: OOl8zgm6W1xGE8yO
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.OOl8zgm6W1xGE8yO'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 964
+      - 2017
+      - 906
+      - 1943
+    _id: m3H447aUNR7Xe1tC
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.m3H447aUNR7Xe1tC'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 906
+      - 1943
+      - 867
+      - 1912
+    _id: UplLx9d8LZb3dCA2
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.UplLx9d8LZb3dCA2'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 20
+    c:
+      - 867
+      - 1912
+      - 801
+      - 1906
+    _id: bRASCecc2RRiIjx5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags: {}
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.bRASCecc2RRiIjx5'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1904
+      - 1410
+      - 1832
+      - 1437
+    _id: VjXTjPsHFJlp0c25
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.VjXTjPsHFJlp0c25'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1832
+      - 1437
+      - 1788
+      - 1489
+    _id: hsRQfU1HylxAzkcN
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.hsRQfU1HylxAzkcN'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1788
+      - 1489
+      - 1747
+      - 1506
+    _id: DSxD71cVMd6UITzy
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.DSxD71cVMd6UITzy'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1691
+      - 1598
+      - 1692
+      - 1642
+    _id: 2jxI2h3PeEldhZw9
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.2jxI2h3PeEldhZw9'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1692
+      - 1642
+      - 1718
+      - 1677
+    _id: W4Xs6MVTRdstyT01
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.W4Xs6MVTRdstyT01'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1718
+      - 1677
+      - 1731
+      - 1707
+    _id: sbJ0YFlH65iCC1oB
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.sbJ0YFlH65iCC1oB'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1731
+      - 1707
+      - 1763
+      - 1733
+    _id: SKy96Pf8CSZ2plLR
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.SKy96Pf8CSZ2plLR'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1763
+      - 1733
+      - 1785
+      - 1744
+    _id: ygPGofj0VzFVUXtL
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.ygPGofj0VzFVUXtL'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1785
+      - 1744
+      - 1813
+      - 1730
+    _id: xM89vEjGiU2jbNpt
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.xM89vEjGiU2jbNpt'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1747
+      - 1506
+      - 1727
+      - 1540
+    _id: Uego5F6KEifArhlS
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.Uego5F6KEifArhlS'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1727
+      - 1540
+      - 1710
+      - 1555
+    _id: jSCYSXLn9hRd4lrH
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.jSCYSXLn9hRd4lrH'
+  - light: 10
+    sight: 10
+    sound: 10
+    move: 0
+    c:
+      - 1710
+      - 1555
+      - 1691
+      - 1600
+    _id: hVpa3aqWPcNOqzom
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: null
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.hVpa3aqWPcNOqzom'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 928
+      - 1228
+      - 887
+      - 1291
+    _id: KK0Vg2Do8oOUcSWA
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.KK0Vg2Do8oOUcSWA'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 887
+      - 1291
+      - 866
+      - 1355
+    _id: SMZ20elzjDJw1GUi
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.SMZ20elzjDJw1GUi'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 866
+      - 1355
+      - 870
+      - 1413
+    _id: TtZPG32vH4o14Gzs
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.TtZPG32vH4o14Gzs'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 870
+      - 1413
+      - 854
+      - 1464
+    _id: IXtxfqL907Wufbu5
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.IXtxfqL907Wufbu5'
+  - light: 0
+    sight: 30
+    sound: 20
+    move: 0
+    c:
+      - 854
+      - 1464
+      - 770
+      - 1477
+    _id: 1LTaaKbh07pVnHRp
+    dir: 0
+    door: 0
+    ds: 0
+    threshold:
+      light: null
+      sight: 4
+      sound: null
+      attenuation: false
+    flags:
+      wall-height:
+        top: null
+        bottom: null
+      monks-active-tiles:
+        entity: {}
+        open: false
+        close: false
+        lock: false
+        checklock: false
+        secret: false
+    animation: null
+    _key: '!scenes.walls!WhlIgqq978SoNTqT.1LTaaKbh07pVnHRp'
+playlist: null
+playlistSound: null
+journal: null
+journalEntryPage: null
+flags:
+  levels:
+    backgroundElevation: 0
+    lightMasking: false
+    weatherElevation: null
+  wall-height:
+    advancedVision: true
+  conversation-hud:
+    sceneConversation: ''
+    sceneConversationVisibilityOff: false
+  token-attacher: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: cof
+  systemVersion: 13.348.2
+  createdTime: 1769893664107
+  modifiedTime: 1769893664107
+  lastModifiedBy: B2lHEMirhf4eAR4i
+foreground: null
+thumb: worlds/cota-v13/assets/scenes/WhlIgqq978SoNTqT-thumb.webp
+weather: ''
+regions: []
+environment:
+  globalLight:
+    luminosity: 0
+    enabled: true
+    darkness:
+      max: 1
+      min: 0
+    alpha: 0.5
+    bright: false
+    color: null
+    coloration: 1
+    saturation: 0
+    contrast: 0
+    shadows: 0
+  darknessLevel: 0.7
+  darknessLock: false
+  cycle: true
+  base:
+    hue: 0
+    intensity: 0
+    luminosity: 0
+    saturation: 0
+    shadows: 0
+  dark:
+    hue: 0.7138888888888889
+    intensity: 0
+    luminosity: -0.25
+    saturation: 0
+    shadows: 0
+fog:
+  exploration: true
+  reset: 1721591589792
+  overlay: null
+  colors:
+    explored: null
+    unexplored: null
+ownership:
+  default: 0
+  B2lHEMirhf4eAR4i: 3
+active: false
+sort: 0
+_key: '!scenes!WhlIgqq978SoNTqT'

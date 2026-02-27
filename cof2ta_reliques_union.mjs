@@ -159,7 +159,7 @@ Hooks.on("renderJournalEntrySheet", (application, element, context, options) => 
 /*
  * Hook renderCOSidebarMenu
  */
-Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
+/*Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
   console.log("COF2TA Les Reliques de l'Union | Ajout du menu dans la barre latérale")
   let element = html.querySelector(".co.support")
   //if (!element) element = html.querySelector(".co.system")
@@ -172,5 +172,5 @@ Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
     if (renderedHtml !== "") {
       element.insertAdjacentHTML("afterend", renderedHtml)
     }
-  }
-})
+  
+})*/

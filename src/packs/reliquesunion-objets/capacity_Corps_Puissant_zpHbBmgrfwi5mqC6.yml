@@ -1,0 +1,76 @@
+folder: R5rFF6hGTI3aMtD1
+name: Corps Puissant
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/magic/earth/strike-fist-stone.webp
+_id: zpHbBmgrfwi5mqC6
+system:
+  description: <p>Les Centaures augmentent leur FORCE et leur CONSTITUTION de +2</p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>Bonus permanent aux caractéristiques.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.zpHbBmgrfwi5mqC6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.zpHbBmgrfwi5mqC6
+          subtype: ability
+          target: for
+          value: '2'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.zpHbBmgrfwi5mqC6
+          subtype: ability
+          target: con
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769993459159
+  modifiedTime: 1769993459159
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!zpHbBmgrfwi5mqC6'

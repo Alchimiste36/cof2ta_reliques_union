@@ -1,0 +1,83 @@
+folder: P05BJNw3dpDQlWjD
+name: Adversaire des plaines
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+_id: 1qJ8sutYDrfxsZFU
+system:
+  description: "<p>Le personnage inflige <strong>+1d4°\_ DM aux créatures volantes</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p175
+  slug: ''
+  inGame: <p>Action activable/désactivable pour obtenir le bonus aux DM.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.1qJ8sutYDrfxsZFU
+      indice: 0
+      label: vs Créatures volantes
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.1qJ8sutYDrfxsZFU
+          subtype: combat
+          target: damMelee
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.1qJ8sutYDrfxsZFU
+          subtype: combat
+          target: damRanged
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.1qJ8sutYDrfxsZFU
+          subtype: combat
+          target: damMagic
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!1qJ8sutYDrfxsZFU'

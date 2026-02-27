@@ -1,0 +1,84 @@
+folder: VyNRXsube2QUbqAA
+name: Gambison de voyage
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/les-reliques-de-lunion/assets/ru_objets/objets_autres/gambison1.webp
+system:
+  description: "<p>Cette tenue matelassée et confortable est portée par\_@UUID[Actor.tvKYvTtecsyhg5eW]{Zagrenn Fredfisk}, le frère du désespoir.</p><p>Grâce à conception intelligente et aux runes estampillées sur les sangles en cuir, la tenur est plus résistante qu'elle n'y parait.\_</p><p>Les différents accessoires du gambison permet d'adapter la tenue à la météo et à la température.</p><p>En plus d'un bonus magique de +2 à la DEF, cette armure matelassée donne une RD de 5 contre le froid et la chaleur naturel.</p>"
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: tissus-matelasses-fourrures
+  tags: []
+  subtype: armor
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 600
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Actor.tvKYvTtecsyhg5eW.Item.ywZuqP4wJmG16XHU
+      indice: 0
+      label: RD contre froid et chaleur naturel
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Actor.tvKYvTtecsyhg5eW.Item.ywZuqP4wJmG16XHU
+          subtype: combat
+          target: dr
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  defense: 1
+  range: null
+  magicalDefense: 2
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1770684864080
+  modifiedTime: 1770684864192
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: Z8OedjZZcQhCWBiy
+sort: 200000
+_key: '!items!Z8OedjZZcQhCWBiy'

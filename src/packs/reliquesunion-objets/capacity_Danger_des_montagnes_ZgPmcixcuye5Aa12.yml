@@ -1,0 +1,90 @@
+folder: LPxrkWVMAcgYA4Bm
+name: Danger des montagnes
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/environment/wilderness/statue-hound-horned.webp
+_id: ZgPmcixcuye5Aa12
+system:
+  description: "<p>Le personnage obtient un bonus de <strong>+2 en DEF\_contre les attaques des géants et +1d4° aux DM\_de ses attaques</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p174
+  slug: ''
+  inGame: <p>Action activable/désactivable pour obtenir le bonus aux DM et en DEF.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.ZgPmcixcuye5Aa12
+      indice: 0
+      label: vs Géants
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.ZgPmcixcuye5Aa12
+          subtype: combat
+          target: damMelee
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.ZgPmcixcuye5Aa12
+          subtype: combat
+          target: damRanged
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.ZgPmcixcuye5Aa12
+          subtype: combat
+          target: damMagic
+          value: 1d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.ZgPmcixcuye5Aa12
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!ZgPmcixcuye5Aa12'

@@ -1,0 +1,72 @@
+folder: FNo8CFxv0sbyFxOb
+name: Garde du corps
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/environment/people/infantry-armored.webp
+_id: TnhwE8faZyNM0QCk
+system:
+  description: "<p>Tant de richesse finit par attirer la convoitise,\_et le nanti doit à présent être protégé par un\_garde.\_Celui-ci offre un bonus de <strong>+2 en DEF à son\_employeur lorsqu’il est à son contact</strong>.</p><p> Le\_garde\_est <strong>totalement loyal au personnage</strong>. S’il vient\_à mourir, il est possible d’en engager un nouveau en dépensant 500\_pa lors du passage au\_niveau suivant.</p><p>LE GARDE DU CORPS</p><ul><li><p>AGI +0 / CON +2 / FOR +2 / PER +0 / CHA +0 / INT +0 / VOL +1</p></li><li><p>DEF 16 / PV [niveau x\_4] / Init. [Init.\_du\_personnage]</p></li><li><p>Attaque [Niveau du PJ] · DM 1d4°+2</p></li></ul>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p180
+  slug: ''
+  inGame: >-
+    <p>Créez une rencontre représentant le Garde du corps et donnez les droits
+    propriétaire au PJ.</p><p>L'action activable/désactivable permet d'obtenir
+    le bonus de DEF.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.TnhwE8faZyNM0QCk
+      indice: 0
+      label: Garde du corps au contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.TnhwE8faZyNM0QCk
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!TnhwE8faZyNM0QCk'

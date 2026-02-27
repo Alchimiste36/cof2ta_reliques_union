@@ -1,0 +1,98 @@
+folder: 5d7tVcp9sM4JEah5
+name: Arc équilibré de Duhann
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/65df8afbb461b8edb28b1d27/worlds/les-reliques-de-lunion/assets/ru_objets/objets_campagne/arc_equilibre_du_val_rouge.webp
+_id: TziZHv4JW38M94W6
+system:
+  description: "<p>Ce bel arc elfique, tout droit venu de la Forêt de Duhann, est une merveille\_de précision. Sa précision permet d’infliger de lourd dégâts aux ennemis.</p><p>L’utilisateur ajoute son Modificateur d'AGI au DM de l’arc. L’attaque et les DM obtiennent un bonus de +1.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  subtype: weapon
+  tags: []
+  martialCategory: longBow
+  damagetype: piercing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+    current: null
+    max: 0
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 350
+    unit: pa
+  rarity: precious
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  range:
+    value: null
+    unit: ''
+  actions:
+    - source: Compendium.world.reliquesunion-objets.Item.TziZHv4JW38M94W6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 +@agi +1
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1770435706385
+  modifiedTime: 1770437295456
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: '!items!TziZHv4JW38M94W6'

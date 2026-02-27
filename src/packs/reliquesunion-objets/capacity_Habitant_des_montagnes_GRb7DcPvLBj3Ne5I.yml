@@ -1,0 +1,76 @@
+folder: LPxrkWVMAcgYA4Bm
+name: Habitant des montagnes
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/environment/wilderness/terrain-rocky-ground.webp
+_id: GRb7DcPvLBj3Ne5I
+system:
+  description: "<p>Le personnage obtient un bonus de <strong>+3 aux\_tests de discrétion et de survie en montagne</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p174
+  slug: ''
+  inGame: <p>Bonus aux jets de compétences.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.GRb7DcPvLBj3Ne5I
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.GRb7DcPvLBj3Ne5I
+          subtype: skill
+          target: agi
+          value: '3'
+          apply: self
+          additionalInfos: Discrétion en montagne
+        - type: capacity
+          source: Item.GRb7DcPvLBj3Ne5I
+          subtype: skill
+          target: con
+          value: '3'
+          apply: self
+          additionalInfos: Survie en montagne
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!GRb7DcPvLBj3Ne5I'

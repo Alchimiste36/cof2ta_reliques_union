@@ -1,0 +1,97 @@
+folder: 5ojbyXZoovvJFBF8
+name: Épée runique +1 affutée
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/weapons/swords/sword-guard-red.webp
+_id: T7qXFR82hb2K3ZUC
+system:
+  description: "<p>Épée de\_Kaspirionuratanokali, l'Aîné de la tribu des Mangeurs des Plaines.</p><h4>Niveau de magie : 2</h4>"
+  source: ''
+  origin: ''
+  slug: ''
+  subtype: weapon
+  tags:
+    - legere
+  martialCategory: shortSword
+  damagetype: slashing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 400
+    unit: pa
+  rarity: precious
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+  actions:
+    - source: Compendium.world.reliquesunion-objets.Item.T7qXFR82hb2K3ZUC
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +1
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1770341829256
+  modifiedTime: 1770342087013
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: '!items!T7qXFR82hb2K3ZUC'

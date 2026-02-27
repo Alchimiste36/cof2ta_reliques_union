@@ -1,0 +1,69 @@
+folder: ExucDfoNSZyOeonR
+name: "La\_vie est dure"
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/skills/trades/woodcutting-logging-axe-stump.webp
+_id: 2ruJzy7TY5EgXztA
+system:
+  description: "<p>Le personnage gagne un bonus de <strong>+3 pour\_tous les tests concernant la résistance physique et l’endurance</strong>.</p><p><strong>Au\_rang 4, il gagne 1\_DR</strong>\_supplémentaire.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p178
+  slug: ''
+  inGame: <p>Bonus permanent aux jets de compétences.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.2ruJzy7TY5EgXztA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.2ruJzy7TY5EgXztA
+          subtype: skill
+          target: con
+          value: '3'
+          apply: self
+          additionalInfos: Résistance physique / Endurance
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!2ruJzy7TY5EgXztA'

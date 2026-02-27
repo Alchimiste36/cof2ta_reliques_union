@@ -1,0 +1,71 @@
+folder: bbhLR63kC0zCsWTW
+name: Seconde peau
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/equipment/chest/breastplate-layered-leather-studded-brown.webp
+_id: NlTT7EPkmoQxqhUH
+system:
+  description: "<p>L’homme d’armes a passé tant d’heures dans\_son armure qu’il n’y fait plus attention.</p><p> <strong>Réduisez\_de 1 point la pénalité d’une armure de votre\_choix</strong> (armure de cuir, chemise de mailles, etc.), qui\_devient votre armure de prédilection (vous faites\_aussi l’acquisition de la maîtrise de cette armure).</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p178
+  slug: ''
+  inGame: >-
+    <p>Action activable/désactivable quand le PJ porte son armure de
+    rpédilection ajoutant un bonus de +1 aux tests d'AGI.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.NlTT7EPkmoQxqhUH
+      indice: 0
+      label: Portant son armure de prédilection
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.NlTT7EPkmoQxqhUH
+          subtype: skill
+          target: agi
+          value: '1'
+          apply: self
+          additionalInfos: Diminue de 1 le malus d'armure
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!NlTT7EPkmoQxqhUH'

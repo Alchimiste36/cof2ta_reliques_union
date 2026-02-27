@@ -1,0 +1,71 @@
+folder: P05BJNw3dpDQlWjD
+name: "Œil\_de faucon"
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/creatures/eyes/humanoid-single-blue.webp
+_id: mW4XHPjwlQxA7ccA
+system:
+  description: "<p>Le personnage possède une vue qui porte\_loin, il gagne un bonus d<strong>e +5 sur tous les tests\_d’observation et de détection qui concernent\_des détails lointains</strong> (au moins 100 m de distance)\_et <strong>+10 m à la portée de ses attaques à distance</strong>.</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p175
+  slug: ''
+  inGame: >-
+    <p>Bonus aux jets de compétences.</p><p>Le bonus à la portée doit être
+    changé manuellement dans les Détails des armes à distance.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.mW4XHPjwlQxA7ccA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.mW4XHPjwlQxA7ccA
+          subtype: skill
+          target: per
+          value: '5'
+          apply: self
+          additionalInfos: Observation et détection lointaines (+100m)
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!mW4XHPjwlQxA7ccA'

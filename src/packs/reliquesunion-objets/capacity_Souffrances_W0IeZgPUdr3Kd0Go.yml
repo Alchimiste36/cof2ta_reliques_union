@@ -1,0 +1,66 @@
+folder: lDxeo77mNAWMtUbR
+name: Souffrances
+type: capacity
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/skills/wounds/injury-face-impact-orange.webp
+_id: W0IeZgPUdr3Kd0Go
+system:
+  description: >-
+    <p>Les Mâles Exsangues des Cavernes peuvent <strong>utliser leurs PR par une
+    action limitée</strong> plutôt qu'en attendant 5 minutes.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>Pas d'effet automatiques. Action prévue pour affichée la capacité dans la
+    liste des actions.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.W0IeZgPUdr3Kd0Go
+      indice: 0
+      label: Récupération rapide en Limité
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769993459159
+  modifiedTime: 1769993459159
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!W0IeZgPUdr3Kd0Go'

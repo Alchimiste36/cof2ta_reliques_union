@@ -1,0 +1,88 @@
+folder: fkaQ5zi2WGOp22kb
+name: Tissus matelassés +1 d'autorité
+type: equipment
+img: >-
+  https://assets.forge-vtt.com/bazaar/core/icons/equipment/chest/coat-collared-studded-red.webp
+system:
+  description: >-
+    <p><strong>Armure magique de Centaure - Tumuaki</strong></p><ul><li><p>Bonus
+    de DEF magique de +1</p></li><li><p>Si le porteur est capable de parler et
+    de se faire comprendre, l'armure lui donne un bonus de +3 à tous les tests
+    de CHA.</p></li></ul>
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: tissus-matelasses-fourrures
+  tags: []
+  subtype: armor
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 1100
+    unit: pa
+  rarity: veryRare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Actor.EhKag5p5a4F31dar.Item.IqxJXvEp3OmZw972
+      indice: 0
+      label: Bonus en CHA si compris
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Actor.EhKag5p5a4F31dar.Item.IqxJXvEp3OmZw972
+          subtype: skill
+          target: cha
+          value: '3'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  defense: 1
+  range: null
+  magicalDefense: 1
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771708810557
+  modifiedTime: 1771885712175
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: 2ySLpprQ9eewCseW
+sort: 900000
+_key: '!items!2ySLpprQ9eewCseW'

@@ -1,0 +1,82 @@
+folder: Eu8QRYlaHNQJ8tiM
+name: "Le\_diable est dans les détails"
+type: capacity
+img: https://assets.forge-vtt.com/bazaar/core/icons/sundries/misc/pipe-elegant.webp
+_id: Rs7Lc5nCcKIzKBrh
+system:
+  description: "<p>Le courtisan est à l’affût du moindre détail.</p><p>Il\_obtient un bonus égal à <strong>rang +\_2 pour tous\_les tests de perception visuelle</strong> et pour ceux\_visant à <strong>percer un mensonge ou décoder le langage corporel</strong> d’une personne.</p><p>Il\_<strong>se rappelle\_toujours précisément ce que les gens lui ont\_dit</strong> (le MJ devra lui répéter si le joueur en fait\_la demande).</p>"
+  source: ''
+  origin: Atlas d'Osgild et Règles Optionnelles p176
+  slug: ''
+  inGame: <p>Bonus permanent aux jets de compétences.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.Rs7Lc5nCcKIzKBrh
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.Rs7Lc5nCcKIzKBrh
+          subtype: skill
+          target: per
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Perception visuelle
+        - type: capacity
+          source: Item.Rs7Lc5nCcKIzKBrh
+          subtype: skill
+          target: cha
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Percer un mensonge ou décoder le langage corporel
+        - type: capacity
+          source: Item.Rs7Lc5nCcKIzKBrh
+          subtype: skill
+          target: int
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Percer un mensonge ou décoder le langage corporel
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: '!items!Rs7Lc5nCcKIzKBrh'

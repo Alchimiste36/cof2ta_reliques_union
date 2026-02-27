@@ -1,0 +1,142 @@
+type: equipment
+system:
+  subtype: weapon
+  description: >-
+    <p><strong>Arme magique de Centaure - Te'Riri</strong></p><ul><li><p>Bonus
+    de +3 en Attaque et DM.</p></li><li><p>Bonus de +1d4° DM de
+    force</p></li></ul>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  martialCategory: unarmed
+  damagetype: impact
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 650
+    unit: pa
+  rarity: rare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: Actor.LKvlCv4BVu6hBg0p.Item.x1Zw2cM0z7oWVjKt
+      indice: 0
+      label: Poings avec Contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +3'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[1d6,1d6,1d8,1d8,1d10] +@for +1d4° +3'
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Actor.LKvlCv4BVu6hBg0p.Item.x1Zw2cM0z7oWVjKt
+      indice: 1
+      label: Poings avec Distance
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +3'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[1d6,1d6,1d8,1d8,1d10] +@for +1d4° +3'
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+name: Gants de force +3
+img: icons/svg/item-bag.svg
+effects: []
+folder: fkaQ5zi2WGOp22kb
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1771638278003
+  modifiedTime: 1771885712175
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: qhzWZNfZI82PXFjX
+sort: 2900000
+_key: '!items!qhzWZNfZI82PXFjX'
