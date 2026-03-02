@@ -5,15 +5,15 @@ img: icons/magic/fire/explosion-mushroom-nuke-orange.webp
 _id: Np1nlRb3h30QeZab
 system:
   description: "<p>Lorsque le corps du prince-démon\_est détruit, il explose violemment en <strong>infligeant\_[7d6+30] DM de feu dans un rayon qui dépend de\_20 m</strong>. </p><p>Un <strong>test de DEX difficulté 13 permet de diviser\_les DM par 2</strong>. La difficulté passe à 18 pour les créatures\_en combat au contact au moment de l'explosion.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>La première action permet de jeter les DM de l'explosion
     initiale.</p><p>La deuxième action permet de réaliser le test de sauvegarde
     pour les cibles au contact.</p><p>La troisième action permet de réaliser le
     test de sauvegarde pour les cibles à distance.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.Np1nlRb3h30QeZab
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Np1nlRb3h30QeZab
       indice: 0
       label: Lorsque détruit (20m)
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -53,17 +53,17 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.Np1nlRb3h30QeZab
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Np1nlRb3h30QeZab
       indice: 1
       label: demi DM au contact
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -79,7 +79,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '18'
+          saveDifficulty: "18"
           target:
             type: multiple
             number: 20
@@ -88,7 +88,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -96,10 +96,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.Np1nlRb3h30QeZab
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Np1nlRb3h30QeZab
       indice: 2
       label: demi DM à distance
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -115,7 +115,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '13'
+          saveDifficulty: "13"
           target:
             type: multiple
             number: 30
@@ -124,7 +124,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -141,13 +141,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!Np1nlRb3h30QeZab'
+_key: "!items!Np1nlRb3h30QeZab"

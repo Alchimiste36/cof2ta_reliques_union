@@ -4,15 +4,15 @@ type: capacity
 img: icons/magic/life/cross-flared-green.webp
 system:
   description: "<p>La cible touchée par le PJ <strong>guérit 3 PV par tour\_pendant [niveau du PJ + Mod. de SAG] tours</strong>.\_</p><p>Ce sort ne peut pas affecter <strong>une créature plus\_d’une fois par jour</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.134
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de soigner 3 PV sur une cible et de lui donner un Effet
     pendant Niveau + PER round qui la soigne de 3 PV à chaque
     tour.</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
     faites SHIFT+CLIC sur l'action</strong></p></blockquote>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -45,7 +45,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: '3'
+            formula: "3"
           target:
             type: single
             scope: all
@@ -54,10 +54,10 @@ system:
             active: true
             applyOn: always
             formulaType: heal
-            formula: '3'
-            elementType: ''
+            formula: "3"
+            elementType: ""
             statuses: []
-            duration: '@niv + @per'
+            duration: "@niv + @per"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -73,9 +73,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -83,4 +83,4 @@ _id: dudR0O7Jn8VpKBfP
 ownership:
   default: 0
 sort: 0
-_key: '!items!dudR0O7Jn8VpKBfP'
+_key: "!items!dudR0O7Jn8VpKBfP"

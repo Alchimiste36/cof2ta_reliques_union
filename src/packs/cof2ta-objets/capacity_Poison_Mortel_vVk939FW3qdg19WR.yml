@@ -4,14 +4,14 @@ type: capacity
 img: icons/magic/acid/dissolve-arm-flesh.webp
 system:
   description: "<p>le poison <strong>inflige [Mod. de FOR d6]\_DM à la victime</strong>, <strong>la moitié si elle réussit un test\_de CON difficulté 10</strong>. Répartissez les DM au\_rythme de <strong>1d6 par tour</strong> à partir du moment\_de l'empoisonnement.</p><blockquote><p>De nombreux insectes empoisonnent leurs\_victimes ; selon l'insecte, choisissez le poison\_qui convient : par exemple, une araignée utilise\_du poison affaiblissant et un scorpion ou une\_guêpe un poison mortel.</p><p>Un insecte capable\_d'empoisonner ses victimes augmente son\_NC de +1.</p></blockquote>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>La première action permet de réaliser le test de sauvegarde et de subir
     les DM si le test est raté.</p><p>La deuxième action permet d'appliquer les
     DM sur une cible si le test de sauvagarde est réussi.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.skkzFgYQtv2xiBJu
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.skkzFgYQtv2xiBJu
       indice: 0
       label: Attaque initiale
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: '10'
+          saveDifficulty: "10"
           target:
             type: single
             scope: all
@@ -54,7 +54,7 @@ system:
             formula: 1d6
             elementType: poison
             statuses: []
-            duration: '@for'
+            duration: "@for"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -62,10 +62,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.vVk939FW3qdg19WR
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.vVk939FW3qdg19WR
       indice: 1
       label: 1/2 DM
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -81,7 +81,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: none
             number: 0
@@ -93,7 +93,7 @@ system:
             formula: 1d6/2
             elementType: poison
             statuses: []
-            duration: '@for'
+            duration: "@for"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -109,9 +109,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -119,4 +119,4 @@ _id: vVk939FW3qdg19WR
 ownership:
   default: 0
 sort: 0
-_key: '!items!vVk939FW3qdg19WR'
+_key: "!items!vVk939FW3qdg19WR"

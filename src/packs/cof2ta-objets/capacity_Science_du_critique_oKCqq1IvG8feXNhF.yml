@@ -4,15 +4,15 @@ type: capacity
 img: icons/skills/wounds/bone-broken-knee-beam.webp
 system:
   description: "<p>Le PJ <strong>inflige des critiques sur un résultat de 19\_ou 20</strong> (18 à 20 lorsqu’il emploie une rapière).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ obtient un bonus de\_+1d6 aux DM lorsqu’il inflige un coup critique.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.124
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Bonus permanent qui augmente la plage de critique.</p><p>Si le PJ obtient
     la capacité avancée, ajoutez la Condition "est appris" sur la deuxième
     action. Elle permet de réaliser un jet de 1d6 DM utilisée lorsque le PJ fait
     une attaque critique.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.IsG15wQbsqXAygIw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -42,17 +42,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.IsG15wQbsqXAygIw
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
           subtype: combat
           target: crit
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.oKCqq1IvG8feXNhF
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oKCqq1IvG8feXNhF
       indice: 1
       label: Jet 1d6 DM
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -75,7 +75,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -92,9 +92,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -102,4 +102,4 @@ _id: oKCqq1IvG8feXNhF
 ownership:
   default: 0
 sort: 0
-_key: '!items!oKCqq1IvG8feXNhF'
+_key: "!items!oKCqq1IvG8feXNhF"

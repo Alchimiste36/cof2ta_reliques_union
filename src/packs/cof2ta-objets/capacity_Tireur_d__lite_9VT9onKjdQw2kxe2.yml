@@ -5,13 +5,13 @@ img: icons/skills/ranged/target-bullseye-arrow-green.webp
 _id: 9VT9onKjdQw2kxe2
 system:
   description: "<p>Le tireur peut réaliser <strong>deux\_attaques à distance dans le même tour</strong>. </p><p>Il <strong>ignore\_les pénalités</strong> normalement appliquées lorsque la\_cible est <strong>à couvert</strong> (-2 à -5) et peut lancer <strong>1d12\_au lieu de 1d20 pour bénéficier d'un bonus de\_+2d6 DM</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p136
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable/désactivable permet d'obtenir un Dé Malus en attaque à
     distance et le bonus aux DM.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.9VT9onKjdQw2kxe2
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9VT9onKjdQw2kxe2
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,19 +41,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.9VT9onKjdQw2kxe2
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9VT9onKjdQw2kxe2
           subtype: malusDice
           target: ranged
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.9VT9onKjdQw2kxe2
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9VT9onKjdQw2kxe2
           subtype: combat
           target: damRanged
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -64,13 +64,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!9VT9onKjdQw2kxe2'
+_key: "!items!9VT9onKjdQw2kxe2"

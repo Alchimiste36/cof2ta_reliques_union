@@ -5,11 +5,11 @@ img: icons/skills/trades/farming-wheat-circle-yellow.webp
 _id: OB8BCYFbQGeQBRYc
 system:
   description: "<p>Le PJ subit un malus de <strong>-5 aux tests d’interaction\_sociale avec les gens de la bonne société</strong>, quel\_qu’en soit le peuple. </p><p>En revanche, il gagne un Bonus de <strong>+5 aux tests auprès des miséreux,</strong>\_là aussi quelle qu’en soit le peuple. </p><p>Il obtient\_également un bonus de <strong>+5 aux tests de discrétion</strong>\_et on ne se rappelle généralement pas de lui.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.85
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent aux test de CHA et d'AGI.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.OB8BCYFbQGeQBRYc
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OB8BCYFbQGeQBRYc
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -39,24 +39,24 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.OB8BCYFbQGeQBRYc
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OB8BCYFbQGeQBRYc
           subtype: skill
           target: cha
-          value: '-5'
+          value: "-5"
           apply: self
           additionalInfos: Interaction avec la bonne société
         - type: capacity
-          source: Item.OB8BCYFbQGeQBRYc
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OB8BCYFbQGeQBRYc
           subtype: skill
           target: cha
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Interaction avec les miséreux
         - type: capacity
-          source: Item.OB8BCYFbQGeQBRYc
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OB8BCYFbQGeQBRYc
           subtype: skill
           target: agi
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Discrétion
       resolvers: []
@@ -69,13 +69,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!OB8BCYFbQGeQBRYc'
+_key: "!items!OB8BCYFbQGeQBRYc"

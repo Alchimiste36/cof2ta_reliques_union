@@ -5,13 +5,13 @@ img: icons/creatures/abilities/stinger-poison-scorpion-brown.webp
 _id: ljv43n8qalfa6S5j
 system:
   description: "<p>En cas d'échec d'un test de CON\_(difficulté 15), la victime est affaiblie pendant\_1d6 heures. Si la victime subit un nouvel\_empoisonnement du même type durant cette\_période, elle sombre dans l'inconscience pour\_1d6 heures.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>La première action permet de réaliser l'attaque.</p><p>La deuxième action
     permet de réaliser le test de sauvegarde pour résister au venin.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.ljv43n8qalfa6S5j
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ljv43n8qalfa6S5j
       indice: 0
       label: Attaque de Dard
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -44,9 +44,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '10'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "10"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6
           target:
@@ -57,14 +57,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.ljv43n8qalfa6S5j
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ljv43n8qalfa6S5j
       indice: 1
       label: Sauvegarde du venin
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -80,7 +80,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: '15'
+          saveDifficulty: "15"
           target:
             type: single
             scope: all
@@ -89,11 +89,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - weakened
-            duration: '0'
+            duration: "0"
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -110,13 +110,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!ljv43n8qalfa6S5j'
+_key: "!items!ljv43n8qalfa6S5j"

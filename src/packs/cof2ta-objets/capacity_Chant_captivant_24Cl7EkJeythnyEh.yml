@@ -5,11 +5,11 @@ img: icons/skills/trades/music-singing-voice-blue.webp
 _id: 24Cl7EkJeythnyEh
 system:
   description: "<p>En chantant, une harpie\_peut fasciner une créature. </p><p>Toutes les créatures\_humanoïdes dans un <strong>rayon de 30 mètres</strong>\_(sauf les harpies) doivent réussir un <strong>test de\_SAG difficulté 10 ou succomber à la magie.</strong>\_</p><p>Le chant affecte l'esprit, aussi <strong>se boucher les\_oreilles apporte-t-il un bonus de +5 au test de\_SAG</strong> mais n'immunise pas contre le pouvoir (se\_boucher les oreilles avec les mains remplace\_une action d'attaque à chaque tour). </p><p>Une\_créature fascinée s'approche de la harpie et\_reste sans défense tant que la harpie chante\_et pendant encore un tour complet après la\_fin du chant. Une créature qui résiste au chant\_des harpies y est immunisée pour une durée\_de 1 heure.</p>"
-  source: ''
-  origin: ''
-  slug: ''
-  inGame: ''
-  subtype: ''
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: ""
+  subtype: ""
   actionType: l
   learned: false
   rank: 0
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.24Cl7EkJeythnyEh
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.24Cl7EkJeythnyEh
       indice: 0
       label: rayon 30m
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -40,7 +40,7 @@ system:
       resolvers:
         - type: save
           saveAbility: per
-          saveDifficulty: '10'
+          saveDifficulty: "10"
           target:
             type: multiple
             number: 30
@@ -49,10 +49,10 @@ system:
             active: false
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -69,13 +69,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!24Cl7EkJeythnyEh'
+_key: "!items!24Cl7EkJeythnyEh"

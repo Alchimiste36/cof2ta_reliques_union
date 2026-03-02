@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/ranged/projectile-explosion-black-orange.webp
 system:
   description: "<p>Le PJ <strong>lance deux d20 pour son attaque</strong> et\_conserve le meilleur résultat. Les <strong>dégâts de la\_flèche sont doublés</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser une attaque à distance avec un Dé Bonus
     reprenant les valeurs <strong>de la première arme équipée</strong>.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 4
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.I9xtdTQ6CM6vB63X
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.I9xtdTQ6CM6vB63X
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -43,9 +43,9 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: '@arme.skill'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@arme.skill"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: (@arme.dmg)*2
           target:
@@ -56,7 +56,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -69,9 +69,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -79,4 +79,4 @@ _id: I9xtdTQ6CM6vB63X
 ownership:
   default: 0
 sort: 0
-_key: '!items!I9xtdTQ6CM6vB63X'
+_key: "!items!I9xtdTQ6CM6vB63X"

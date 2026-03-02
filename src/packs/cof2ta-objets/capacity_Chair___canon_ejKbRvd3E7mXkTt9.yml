@@ -5,11 +5,11 @@ img: icons/magic/death/undead-skeleton-deformed-red.webp
 _id: ejKbRvd3E7mXkTt9
 system:
   description: "<p>Une fois par tour, la créature\_peut décider qu'<strong>une attaque qui le visait touche\_à la place l'un de ses sous-fifres</strong>, situé à moins\_de 3 m et venu s'interposer (ou derrière lequel\_il s'est mis à couvert). </p><p>La créature gagne <strong>un\_bonus de +5 en DEF</strong> tant que des sous-fifres\_sont positionnés à moins de 3 mètres de lui.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: <p>L'action activable permet d'obtenir le bonus de DEF.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.ejKbRvd3E7mXkTt9
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ejKbRvd3E7mXkTt9
       indice: 0
       label: Si protéger par un sous-fifre
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -39,12 +39,12 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.ejKbRvd3E7mXkTt9
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ejKbRvd3E7mXkTt9
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -55,9 +55,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -65,4 +65,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!ejKbRvd3E7mXkTt9'
+_key: "!items!ejKbRvd3E7mXkTt9"

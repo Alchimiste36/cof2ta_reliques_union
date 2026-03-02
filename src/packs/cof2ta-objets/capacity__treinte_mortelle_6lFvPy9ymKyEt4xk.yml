@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/unholy/hand-claw-glow-orange.webp
 system:
   description: "<p><strong>Une fois par combat</strong>, le personnage <strong>peut se saisir\_d’un adversaire d’une taille inférieure ou égale</strong> à\_la sienne et <strong>l’écraser entre ses bras</strong> puissants. </p><p>Sur\_<strong>un test d’attaque au contact</strong> réussi, le PJ <strong>inflige\_[2d6 + Mod. de FOR] DM</strong> à sa cible (+ son\_éventuel bonus de rage) <strong>et</strong> <strong>l’immobilise</strong> entre ses\_bras, causant pour son adversaire une pénalité\_de <strong>-5 en DEF</strong>. </p><p>À son tour, <strong>la victime peut tenter\_de se libérer avec un test de FOR en opposition</strong> ;\_en cas d’échec, elle ne peut faire aucune action. </p><p>À chacun des tours suivants, tant que l’étreinte\_est maintenue, le PJ inflige à nouveau des DM\_sans avoir à réaliser son test d’attaque.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.142
-  slug: ''
-  inGame: "<p>La capacité possède la capacité liée :\_@UUID[Item.FrKhGqQ0ZJxxdvuq]{Rage du berserk}.</p><p>Si le PJ a ou obtient cette capacité d'une autre façon, ajoutez la Condition 'Est appris\" aux deux actions de cette capacité et supprimez la capacité liée.</p>"
-  subtype: ''
+  slug: ""
+  inGame: "<p>La capacité possède la capacité liée :\_@UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.FrKhGqQ0ZJxxdvuq]{Rage du berserk}.</p><p>Si le PJ a ou obtient cette capacité d'une autre façon, ajoutez la Condition 'Est appris\" aux deux actions de cette capacité et supprimez la capacité liée.</p>"
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.6lFvPy9ymKyEt4xk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.6lFvPy9ymKyEt4xk
       indice: 0
       label: Attaque initiale
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -43,9 +43,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 2d6 +@for
           target:
@@ -56,18 +56,18 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - immobilized
-            duration: '1'
+            duration: "1"
             unit: combat
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.6lFvPy9ymKyEt4xk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.6lFvPy9ymKyEt4xk
       indice: 1
       label: DM sur créature étreinte
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -92,17 +92,17 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.6lFvPy9ymKyEt4xk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.6lFvPy9ymKyEt4xk
       indice: 2
       label: Test pour se libérer
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -120,11 +120,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@for'
-            crit: ''
-            difficulty: '@oppose.for'
+            formula: "@for"
+            crit: ""
+            difficulty: "@oppose.for"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             number: 0
@@ -133,7 +133,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -146,9 +146,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -156,4 +156,4 @@ _id: 6lFvPy9ymKyEt4xk
 ownership:
   default: 0
 sort: 0
-_key: '!items!6lFvPy9ymKyEt4xk'
+_key: "!items!6lFvPy9ymKyEt4xk"

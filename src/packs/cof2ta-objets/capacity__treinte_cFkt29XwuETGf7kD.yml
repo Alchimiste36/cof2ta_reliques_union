@@ -5,14 +5,14 @@ img: icons/creatures/reptiles/snake-fangs-bite-green.webp
 _id: cFkt29XwuETGf7kD
 system:
   description: "<p>A chaque fois que le serpent <strong>réussit\_une attaque</strong> il peut faire un <strong>test de FOR opposé</strong>\_contre sa victime (toutefois celle-ci peut choisir\_de résister par un test de DEX). </p><p>En cas de\_succès, il s'enroule autour d'elle et commence\_à l'étouffer, infligeant <strong>automatiquement 1d6\_DM supplémentaires par tour</strong>. La victime est\_<strong>immobilisée</strong>. Elle peut tenter de <strong>se libérer au\_prix d'une action de mouvement</strong> à chaque\_tour, en réussissant <strong>un test de FOR difficulté 15</strong>.\_</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>La première action permet d'infliger les DM et le statut Immobilisé sur
     les cible.</p><p>La deuxième action permet de réaliser le test de sauvegarde
     pour se libérer.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.cFkt29XwuETGf7kD
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.cFkt29XwuETGf7kD
       indice: 0
       label: Sur cible étreinte
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -53,20 +53,20 @@ system:
             applyOn: always
             formulaType: damage
             formula: 1d6
-            elementType: ''
+            elementType: ""
             statuses:
               - immobilized
             unit: combat
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.cFkt29XwuETGf7kD
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.cFkt29XwuETGf7kD
       indice: 1
       label: Se libérer
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -82,7 +82,7 @@ system:
       resolvers:
         - type: save
           saveAbility: for
-          saveDifficulty: '15'
+          saveDifficulty: "15"
           target:
             type: single
             number: 0
@@ -91,7 +91,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -108,13 +108,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!cFkt29XwuETGf7kD'
+_key: "!items!cFkt29XwuETGf7kD"

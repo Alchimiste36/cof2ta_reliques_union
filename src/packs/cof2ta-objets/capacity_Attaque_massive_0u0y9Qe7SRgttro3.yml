@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/melee/strike-axe-blood-red.webp
 system:
   description: "<p>Le PJ réalise <strong>une attaque de contact</strong> de tout\_son poids.</p><p>Il bénéficie d’<strong>un bonus au DM\_égal à son [Mod. de CON]</strong> et subit en retour\_un <strong>malus de DEF égal à son [Mod. de CON]</strong>\_pendant un tour.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.94
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir le bonus au DM et le malus en DEF. Le
     PJ doit l'activer avant de réaliser l'attaque et la désactiver seulement au
     début de son prochain tour.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.0u0y9Qe7SRgttro3
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0u0y9Qe7SRgttro3
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -41,19 +41,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.0u0y9Qe7SRgttro3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0u0y9Qe7SRgttro3
           subtype: combat
           target: def
-          value: '@con'
+          value: "@con"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.0u0y9Qe7SRgttro3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0u0y9Qe7SRgttro3
           subtype: combat
           target: damMelee
-          value: '@con'
+          value: "@con"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -64,9 +64,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -74,4 +74,4 @@ _id: 0u0y9Qe7SRgttro3
 ownership:
   default: 0
 sort: 0
-_key: '!items!0u0y9Qe7SRgttro3'
+_key: "!items!0u0y9Qe7SRgttro3"

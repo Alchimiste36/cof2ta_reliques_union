@@ -4,15 +4,15 @@ type: capacity
 img: icons/skills/melee/strike-flail-destructive-yellow.webp
 system:
   description: "<p>Le PJ réalise <strong>une attaque au contact</strong> avec une\_pénalité de <strong>-2 en attaque et +1d6 au DM</strong>.</p><p> <strong>Au\_rang 5</strong> atteint dans cette voie, il peut choisir\_de subir une pénalité de <strong>-5</strong> pour obtenir <strong>+2d6\_aux DM</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.125
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action activable permet d'obtenir le malus en Attaque et le
     bonus aux DM.</p><p>A partir du rang 5, ajoutez une Condition "est appris"
     sur la deuxième action activable pour pouvoir obtenir les valeurs
     supérieures.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.IsG15wQbsqXAygIw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
-      label: '-2 => +1d6 DM'
-      chatFlavor: ''
+      label: "-2 => +1d6 DM"
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -44,24 +44,24 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.xcZmDYv8YY56H05S
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
           subtype: combat
           target: melee
-          value: '-2'
+          value: "-2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.ClCR4ecHyUz0wcyy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ClCR4ecHyUz0wcyy
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.xcZmDYv8YY56H05S
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
       indice: 1
-      label: '-5 => +2d6 DM'
-      chatFlavor: ''
+      label: "-5 => +2d6 DM"
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -74,23 +74,23 @@ system:
         noManaCost: false
       modifiers:
         - type: capacity
-          source: Item.xcZmDYv8YY56H05S
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
           subtype: combat
           target: damMelee
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.ClCR4ecHyUz0wcyy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ClCR4ecHyUz0wcyy
           subtype: combat
           target: melee
-          value: '-5'
+          value: "-5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers:
         - type: heal
           skill:
-            formula: '-2d4'
+            formula: "-2d4"
           target:
             type: self
             number: 0
@@ -99,7 +99,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -115,9 +115,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -125,4 +125,4 @@ _id: ClCR4ecHyUz0wcyy
 ownership:
   default: 0
 sort: 0
-_key: '!items!ClCR4ecHyUz0wcyy'
+_key: "!items!ClCR4ecHyUz0wcyy"

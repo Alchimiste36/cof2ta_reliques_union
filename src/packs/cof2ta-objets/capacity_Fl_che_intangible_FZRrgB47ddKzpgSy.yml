@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/ranged/arrows-flying-salvo-yellow.webp
 system:
   description: "<p>Le PJ enchante sa flèche pour lui permettre de\_passer au travers des obstacles physiques.</p><p> Le\_joueur réalise <strong>un test d’attaque normal</strong> mais\_<strong>remplace la DEF par le score de DEX de la\_cible pour fixer sa Difficulté</strong>. </p><p>De surcroît, il\_<strong>ignore toutes les pénalités de couverture</strong>. S’il\_<strong>sait précisément où se situe sa cible</strong>, il peut\_même tirer au travers d’un mur ou une porte.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.144
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser l'attaque en utilisant les statistqiues de la
     première arme équipée contre une difficulté de 10 + AGi de la cible. Le
     reste est à gérer manuellement.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 5
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.me1B5vVGVlnDu0Ih
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -46,11 +46,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@arme.skill'
-            crit: ''
-            difficulty: '@cible.agi'
+            formula: "@arme.skill"
+            crit: ""
+            difficulty: "@cible.agi"
           dmg:
-            formula: '@arme.dmg'
+            formula: "@arme.dmg"
           target:
             type: single
             scope: all
@@ -59,7 +59,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -72,9 +72,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -82,4 +82,4 @@ _id: FZRrgB47ddKzpgSy
 ownership:
   default: 0
 sort: 0
-_key: '!items!FZRrgB47ddKzpgSy'
+_key: "!items!FZRrgB47ddKzpgSy"

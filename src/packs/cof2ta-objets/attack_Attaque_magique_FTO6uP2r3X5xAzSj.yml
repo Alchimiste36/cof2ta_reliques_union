@@ -3,9 +3,9 @@ name: Attaque magique
 type: attack
 img: icons/svg/sword.svg
 system:
-  description: ''
-  source: ''
-  origin: ''
+  description: ""
+  source: ""
+  origin: ""
   slug: attaque-magique
   subtype: magic
   learned: false
@@ -16,10 +16,10 @@ system:
     spell: false
     reloadable: false
   actions:
-    - source: Item.G6UydTG623qmFF2z
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.G6UydTG623qmFF2z
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -34,9 +34,9 @@ system:
       resolvers:
         - type: attack
           skill:
-            formula: '10'
-            crit: '20'
-            difficulty: '@cible.def'
+            formula: "10"
+            crit: "20"
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4 + 2
           target:
@@ -49,14 +49,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
       actionType: none
   range:
     value: null
-    unit: ''
+    unit: ""
     base: 0
     ability: null
     details: null
@@ -71,9 +71,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -81,4 +81,4 @@ _id: FTO6uP2r3X5xAzSj
 ownership:
   default: 0
 sort: 0
-_key: '!items!FTO6uP2r3X5xAzSj'
+_key: "!items!FTO6uP2r3X5xAzSj"

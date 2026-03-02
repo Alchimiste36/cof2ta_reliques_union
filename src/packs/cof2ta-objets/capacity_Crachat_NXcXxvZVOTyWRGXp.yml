@@ -5,11 +5,11 @@ img: icons/magic/unholy/projectile-missile-green.webp
 _id: NXcXxvZVOTyWRGXp
 system:
   description: "<p>Certains serpents crachent leur venin dans les yeux de leur adversaire pour\_l'aveugler. La victime doit réussir un test de DEX\_difficulté 12 ou être aveuglée pour 1d6 tours.</p>"
-  source: ''
-  origin: ''
-  slug: ''
-  inGame: ''
-  subtype: ''
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: ""
+  subtype: ""
   actionType: l
   learned: false
   rank: 0
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.NXcXxvZVOTyWRGXp
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.NXcXxvZVOTyWRGXp
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -40,7 +40,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '12'
+          saveDifficulty: "12"
           target:
             type: single
             scope: all
@@ -49,8 +49,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - blind
             duration: 1d6
@@ -70,13 +70,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!NXcXxvZVOTyWRGXp'
+_key: "!items!NXcXxvZVOTyWRGXp"

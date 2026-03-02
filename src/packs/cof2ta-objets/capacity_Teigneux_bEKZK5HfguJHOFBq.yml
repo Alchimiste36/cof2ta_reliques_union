@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/death/skull-horned-worn-fire-blue.webp
 system:
   description: "<p>Le PJ augmente ses valeurs de <strong>DEX et de INT\_de +2</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.96
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent en AGI et INT.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.bEKZK5HfguJHOFBq
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.bEKZK5HfguJHOFBq
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.bEKZK5HfguJHOFBq
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.bEKZK5HfguJHOFBq
           subtype: ability
           target: agi
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.bEKZK5HfguJHOFBq
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.bEKZK5HfguJHOFBq
           subtype: ability
           target: int
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: bEKZK5HfguJHOFBq
 ownership:
   default: 0
 sort: 0
-_key: '!items!bEKZK5HfguJHOFBq'
+_key: "!items!bEKZK5HfguJHOFBq"

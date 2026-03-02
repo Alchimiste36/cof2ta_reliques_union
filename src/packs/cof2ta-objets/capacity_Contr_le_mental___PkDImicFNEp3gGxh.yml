@@ -5,16 +5,16 @@ img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
 _id: PkDImicFNEp3gGxh
 system:
   description: "<p>Si l'arcaniste réussit\_un <strong>test d'attaque magique opposé contre une\_cible à moins 20 mètres</strong>, il en <strong>prend le contrôle\_pendant [1d4] tours</strong>. L'arcaniste peut continuer\_à agir tout en maintenant le contrôle mental.\_</p><p>Pendant toute la durée du sort, <strong>l'arcaniste et sa\_cible subissent un malus de -2 à tous leurs tests.</strong>\_</p><p>Une victime d'un contrôle mental peut tenter de\_<strong>se libérer à chaque tour</strong> en réussissant un test\_de <strong>SAG difficulté [15 + bonus universel].</strong> Le sort\_ne peut affecter une cible qu'une fois par jour.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p150
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action permet de réaliser le test d'attaque magique opposée
     et d'appliquer sur la cible le statut Asservi pendant 1d4 rounds.</p><p>La
     deuxième action permet de réaliser le test de sauvegarde pour se libérer du
     contrôle mental.</p><p>La troisième action permet d'appliquer le malus sur
     une cible et le jeteur de sort.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.PkDImicFNEp3gGxh
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -47,11 +47,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '+4'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "+4"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             scope: all
@@ -61,17 +61,17 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - enslaved
             duration: 1d4
             unit: round
       modifiers: []
-    - source: Item.PkDImicFNEp3gGxh
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
       indice: 1
       label: Se libérer
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -96,7 +96,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -104,10 +104,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.PkDImicFNEp3gGxh
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
       indice: 2
       label: Malus
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -122,33 +122,33 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.PkDImicFNEp3gGxh
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
           subtype: combat
           target: melee
-          value: '-2'
+          value: "-2"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PkDImicFNEp3gGxh
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
           subtype: combat
           target: melee
-          value: '-2'
+          value: "-2"
           apply: both
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PkDImicFNEp3gGxh
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
           subtype: combat
           target: melee
-          value: '-2'
+          value: "-2"
           apply: both
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PkDImicFNEp3gGxh
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PkDImicFNEp3gGxh
           subtype: skill
           target: all
-          value: '-2'
+          value: "-2"
           apply: both
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -159,11 +159,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -178,13 +178,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!PkDImicFNEp3gGxh'
+_key: "!items!PkDImicFNEp3gGxh"

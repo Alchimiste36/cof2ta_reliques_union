@@ -4,9 +4,9 @@ type: capacity
 img: icons/skills/wounds/blood-drip-droplet-red.webp
 system:
   description: "<p>La noirceur qui coule dans les veines\_de l’Elfe noir est un fardeau, mais peut\_aussi se révéler salvatrice dans les pires\_moments.</p><p><strong><span style=\"text-decoration:underline\">Une fois par combat</span></strong>, <strong>lorsqu’il\_tombe à 0 PV</strong>, le PJ peut continuer à agir\_normalement mais une nouvelle attaque\_réussie infligeant au moins 1 point de DM\_finira par l’achever.</p><p><strong>Tant qu’il reste à 0 PV</strong>, il\_bénéficie d’un bonus de <strong>+2 à tous ses tests</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.75
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'ajouter le bonus de +2 à tous les jets de
     compétence et aux jets d'attaques. La capacité est utilisable une fois entre
@@ -14,7 +14,7 @@ system:
     donne droit à une capacité liée pour l'effet de la capacité de rang 2
     @UUID[Item.anXZdiZNM2Ize63Q]{Apprenti de Slurce}. Glissez-déposez la
     capacité choisie sous cette capacité.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -28,10 +28,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.CgjjjJvkBOYx7ZaD
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.CgjjjJvkBOYx7ZaD
       indice: 0
       label: Activation à 0 PV
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -46,33 +46,33 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.CgjjjJvkBOYx7ZaD
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.CgjjjJvkBOYx7ZaD
           subtype: skill
           target: all
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.l2XKISES1LV4kBm5
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.l2XKISES1LV4kBm5
           subtype: combat
           target: melee
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.l2XKISES1LV4kBm5
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.l2XKISES1LV4kBm5
           subtype: combat
           target: ranged
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.l2XKISES1LV4kBm5
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.l2XKISES1LV4kBm5
           subtype: combat
           target: magic
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: true
   linkedCapacity: null
@@ -83,9 +83,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -93,4 +93,4 @@ _id: l2XKISES1LV4kBm5
 ownership:
   default: 0
 sort: 0
-_key: '!items!l2XKISES1LV4kBm5'
+_key: "!items!l2XKISES1LV4kBm5"

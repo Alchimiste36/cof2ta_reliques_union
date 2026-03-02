@@ -4,15 +4,15 @@ type: capacity
 img: icons/equipment/head/mask-tiger-silver.webp
 system:
   description: "<p>Lorsqu’il est sous l’effet de ce sort, le PJ <strong>prend\_les traits d’un fauve ou d’un loup</strong>. </p><p>Il gagne son\_<strong>Mod. d’INT en initiative, en attaque et aux\_DM</strong> et peut <strong>voir dans la nuit</strong> (comme un Elfe)\_<strong>pendant [5 + Mod. de SAG] tours</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.133
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir tous les bonus et la vision dans le
     noir. Cette dernière peut être activée depuis la barre latérale de la
     feuille du Personnage.</p><blockquote><p><strong>Note : Pour utiliser la
     "concentration" faites SHIFT+CLIC sur l'action</strong></p></blockquote>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -42,47 +42,47 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: combat
           target: init
-          value: '@int'
+          value: "@int"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: combat
           target: melee
-          value: '@int'
+          value: "@int"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: combat
           target: ranged
-          value: '@int'
+          value: "@int"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: combat
           target: magic
-          value: '@int'
+          value: "@int"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: combat
           target: def
-          value: '@int'
+          value: "@int"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Wf41djCfe2uxUztl
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Wf41djCfe2uxUztl
           subtype: state
           target: darkvision
-          value: '30'
+          value: "30"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -93,9 +93,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -103,4 +103,4 @@ _id: Wf41djCfe2uxUztl
 ownership:
   default: 0
 sort: 0
-_key: '!items!Wf41djCfe2uxUztl'
+_key: "!items!Wf41djCfe2uxUztl"

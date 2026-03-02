@@ -4,13 +4,13 @@ type: capacity
 img: icons/weapons/hammers/hammer-double-glowing-yellow.webp
 system:
   description: "<p>Le PJ gagne un bonus de <strong>+1 en attaque et aux\_DM</strong> lorsqu’il manie un <strong>bâton ferré</strong>, un <strong>marteau\_de guerre</strong> ou un <strong>marteau à deux mains</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.80
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action est à activer lorsque le personnage utilise l'une des armes
     définies.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KDV0q6MPzbE8H5oL
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KDV0q6MPzbE8H5oL
       indice: 0
       label: Utilisation Bâton ferré, Marteaux
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.KDV0q6MPzbE8H5oL
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KDV0q6MPzbE8H5oL
           subtype: combat
           target: melee
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.KDV0q6MPzbE8H5oL
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KDV0q6MPzbE8H5oL
           subtype: combat
           target: damMelee
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: KDV0q6MPzbE8H5oL
 ownership:
   default: 0
 sort: 0
-_key: '!items!KDV0q6MPzbE8H5oL'
+_key: "!items!KDV0q6MPzbE8H5oL"

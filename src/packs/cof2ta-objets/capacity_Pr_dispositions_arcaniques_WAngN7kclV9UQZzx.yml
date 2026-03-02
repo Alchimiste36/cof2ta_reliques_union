@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/symbols/runes-star-orange.webp
 system:
   description: "<p>À force d’études et d’expérimentations, le PJ\_dispose de ressources arcaniques plus\_ importantes. </p><p>Il ajoute son <strong>Mod. de CHA à son total\_de PM</strong> (ce bonus n’est pas doublé pour la classe\_des mystiques).</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.90
-  slug: ''
+  slug: ""
   inGame: "<p>Bonus permanent en PM.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.y6eFg74aySX2oPTk]{Études arcaniques}</p>"
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.z4ldkLMvzOa7XVZD
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.z4ldkLMvzOa7XVZD
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,12 +38,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.z4ldkLMvzOa7XVZD
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.z4ldkLMvzOa7XVZD
           subtype: resource
           target: mp
-          value: '@cha'
+          value: "@cha"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: true
   linkedCapacity: null
@@ -54,9 +54,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -64,4 +64,4 @@ _id: WAngN7kclV9UQZzx
 ownership:
   default: 0
 sort: 0
-_key: '!items!WAngN7kclV9UQZzx'
+_key: "!items!WAngN7kclV9UQZzx"

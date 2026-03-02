@@ -4,16 +4,16 @@ type: capacity
 img: icons/environment/creatures/horse-brown.webp
 system:
   description: "<p>Lorsqu’il est en selle, le PJ gagne un bonus de\_<strong>+2 en attaque au contact</strong> et <strong>partage sa DEF avec\_celle de sa monture</strong> – on garde le meilleur score\_des deux. </p><p><strong>Monter ou descendre de monture est\_désormais une action gratuite</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> en selle, le PJ gagne également un bonus de <strong>+2 aux DM</strong>.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.122
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir le bonus de +2 en
     Attaque.</p><p>Garder le meilleur score de DEF doit être géré manuellement
     par le PJ.</p><p>Si le PJ obtient la capacité avancée, ajoutez sur l'action
     un Modificateur "<strong>Combat</strong>" - "<strong>Dommages de
     contact</strong>" - "<strong>2</strong>"</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.oq1bK8DxQMyGVKWx
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oq1bK8DxQMyGVKWx
       indice: 0
       label: En selle
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,12 +43,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.oq1bK8DxQMyGVKWx
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oq1bK8DxQMyGVKWx
           subtype: combat
           target: melee
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -59,9 +59,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1770062012758
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -69,4 +69,4 @@ _id: oq1bK8DxQMyGVKWx
 ownership:
   default: 0
 sort: 0
-_key: '!items!oq1bK8DxQMyGVKWx'
+_key: "!items!oq1bK8DxQMyGVKWx"

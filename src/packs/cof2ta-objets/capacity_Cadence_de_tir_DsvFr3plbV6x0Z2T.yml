@@ -4,14 +4,14 @@ type: capacity
 img: icons/weapons/crossbows/handcrossbow-black.webp
 system:
   description: "<p>Recharger une <strong>arbalète lourde</strong> devient une <strong>action\_de mouvement</strong>. </p><p>Dans le cas d’une <strong>arbalète de\_poing ou d’une arbalète légère</strong>, l’action <strong>devient\_gratuite</strong>. </p><p><strong><span style=\"text-decoration:underline\">À partir du rang 5</span></strong> atteint dans cette\_voie, le PJ peut <strong>recharger deux armes en une\_seule action.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> si son arme est prête (chargée\_et tenue en main), le PJ peut tirer à son rang\_d’initiative +5.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Pas d'effet automatique.</p><p>Si le PJ obtient la capacité avancée,
     ajoutez simplement la Condition "est appris" sur l'action pour obtenir
     l'action activable donnant le bonus à l'Initiative.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
       label: Si arme chargée
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,12 +41,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.hqMCp45eYAu0vome
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
           subtype: combat
           target: init
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -57,9 +57,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -67,4 +67,4 @@ _id: DsvFr3plbV6x0Z2T
 ownership:
   default: 0
 sort: 0
-_key: '!items!DsvFr3plbV6x0Z2T'
+_key: "!items!DsvFr3plbV6x0Z2T"

@@ -5,13 +5,13 @@ img: icons/creatures/claws/claw-bear-paw-swipe-red.webp
 _id: juAZxhzxD5aGgFas
 system:
   description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 22 ou être renversée</strong>.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>Les deux actions permettent de réaliser les tests de sauvegarde avec soit
     la FOR soit l'AGI.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.juAZxhzxD5aGgFas
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.juAZxhzxD5aGgFas
       indice: 0
-      label: 'sI 15+ : FOR'
-      chatFlavor: ''
+      label: "sI 15+ : FOR"
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: for
-          saveDifficulty: '22'
+          saveDifficulty: "22"
           target:
             type: single
             scope: all
@@ -51,22 +51,22 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.juAZxhzxD5aGgFas
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.juAZxhzxD5aGgFas
       indice: 1
-      label: 'sI 15+ : AGI'
-      chatFlavor: ''
+      label: "sI 15+ : AGI"
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -82,7 +82,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '22'
+          saveDifficulty: "22"
           target:
             type: single
             scope: all
@@ -91,11 +91,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
-            duration: '0'
+            duration: "0"
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -112,13 +112,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!juAZxhzxD5aGgFas'
+_key: "!items!juAZxhzxD5aGgFas"

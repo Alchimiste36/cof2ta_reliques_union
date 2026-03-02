@@ -4,14 +4,14 @@ type: capacity
 img: icons/equipment/head/helm-spangen-horned-gold.webp
 system:
   description: "<p>La brute parcourt une distance\_maximale de 30 mètres et porte une attaque :\_lancez <strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si\_l'attaque est réussie, en plus des DM normaux,\_une victime de <strong>taille inférieure ou égale</strong> à la brute\_doit faire un <strong>test opposé de FOR ou être renversée</strong>.\_Dans ce cas, la brute embroche sa victime et <strong>les\_DM sont doublés</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p120
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action activable/désactivable donne le dé bonus aux attaques
     de contact.</p><p>La deuxième attaque permet de réaliser le test opposé de
     FOR et d'appliquer le statut Renversé si il est réussi.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 4
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.0t3tE1cEPQ6dWPrj
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0t3tE1cEPQ6dWPrj
       indice: 0
       label: Dé bonus
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,17 +41,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.0t3tE1cEPQ6dWPrj
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0t3tE1cEPQ6dWPrj
           subtype: bonusDice
           target: melee
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.0t3tE1cEPQ6dWPrj
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.0t3tE1cEPQ6dWPrj
       indice: 1
       label: Si taille inférieure ou égale
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -69,11 +69,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@for'
-            crit: ''
-            difficulty: '@oppose.for'
+            formula: "@for"
+            crit: ""
+            difficulty: "@oppose.for"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             scope: all
@@ -83,11 +83,11 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -99,9 +99,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -110,4 +110,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!ofMtcLOps8Vu7yu2'
+_key: "!items!ofMtcLOps8Vu7yu2"

@@ -5,13 +5,13 @@ img: icons/magic/air/fog-gas-smoke-dense-green.webp
 _id: 5AcAkBfG6Gz5novX
 system:
   description: "<p>Toutes les créatures\_dans un <strong>rayon de 3 mètres</strong> autour du golem\_de pierre doivent réussir un <strong>test de CON\_difficulté 14 chaque tour ou être affaiblie et\_ralentie pendant un tour</strong>.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer les
     statuts pendant 1 round.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.5AcAkBfG6Gz5novX
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5AcAkBfG6Gz5novX
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: '14'
+          saveDifficulty: "14"
           target:
             type: single
             scope: all
@@ -51,12 +51,12 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - weakened
               - slowed
-            duration: '1'
+            duration: "1"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -73,13 +73,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!5AcAkBfG6Gz5novX'
+_key: "!items!5AcAkBfG6Gz5novX"

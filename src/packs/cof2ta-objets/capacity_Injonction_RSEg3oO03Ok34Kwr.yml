@@ -4,16 +4,16 @@ type: capacity
 img: icons/magic/control/debuff-energy-hold-blue-yellow.webp
 system:
   description: "<p>Le PJ <strong>donne à une cible un ordre simple</strong> (mais\_pas dangereux pour elle) que cette dernière\_doit pouvoir comprendre.</p><p>Il doit réussir <strong>un test\_d’attaque magique opposé</strong> contre la cible (si la\_créature n’a pas d’attaque magique, on utilise\_alors son attaque au contact en appliquant un\_malus de -3) à une portée de 20 mètres.</p><p>En cas\_d’échec, la cible exécutera l’ordre pendant son\_prochain tour.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ bénéficie d’un bonus\_de +2 à son test d’attaque magique.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.134
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet d'effectuer le test opposé d'attaque magique.</p><p>Si le
     PJ obtient la capacité avancée, ajoutez "+2" à la Formule de Compétence dans
     la Résolution de l'action.</p><blockquote><p><strong>Note : Pour utiliser la
     "concentration" faites SHIFT+CLIC sur
     l'action</strong></p></blockquote><p></p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -46,11 +46,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             scope: all
@@ -59,7 +59,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -72,9 +72,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -82,4 +82,4 @@ _id: RSEg3oO03Ok34Kwr
 ownership:
   default: 0
 sort: 0
-_key: '!items!RSEg3oO03Ok34Kwr'
+_key: "!items!RSEg3oO03Ok34Kwr"

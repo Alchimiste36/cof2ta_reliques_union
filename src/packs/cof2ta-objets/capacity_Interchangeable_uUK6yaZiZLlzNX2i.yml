@@ -4,11 +4,11 @@ type: capacity
 img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
 system:
   description: "<p>Tant que <strong>l'assassin et ses\_alliées sont plus nombreux que la cible</strong>, ils se\_relaient pour esquiver ses attaques et obtiennent\_un bonus de <strong>+5 en DEF</strong>. </p><p>Si plusieurs assassins\_semblables sont au contact du PJ, le MJ a toute\_latitude pour <strong>infliger les DM d'une attaque sur la\_créature de son choix</strong>, le personnage ne sachant\_jamais laquelle il blesse.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p136
-  slug: ''
+  slug: ""
   inGame: <p>L'action activable/désactivable donne le bonus à la DEF.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.paT2bJIymmwUXPnx
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.paT2bJIymmwUXPnx
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,12 +38,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.paT2bJIymmwUXPnx
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.paT2bJIymmwUXPnx
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -54,9 +54,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -65,4 +65,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!uUK6yaZiZLlzNX2i'
+_key: "!items!uUK6yaZiZLlzNX2i"

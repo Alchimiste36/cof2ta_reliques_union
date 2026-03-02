@@ -5,14 +5,14 @@ img: icons/magic/control/fear-fright-mask-orange.webp
 _id: CKWMSaTxqjpXUB9D
 system:
   description: "<p>Lorsque le dragon originel <strong>attaque pour\_la première fois</strong>, toutes les créatures <strong>à moins de\_50 mètres</strong> doivent réussir un test de <strong>SAG difficulté\_17 ou être submergées par la peur et ralenties\_pendant 1d4 tours</strong>.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde de PER et d'appliquer
     le statut Ralenti uniquement pour 1d4 tour. Il faudra gérer manuellement le
     statut apeuré.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.CKWMSaTxqjpXUB9D
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.CKWMSaTxqjpXUB9D
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -43,7 +43,7 @@ system:
       resolvers:
         - type: save
           saveAbility: per
-          saveDifficulty: '17'
+          saveDifficulty: "17"
           target:
             type: multiple
             number: 50
@@ -52,8 +52,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - slowed
             duration: 1d4
@@ -73,13 +73,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!CKWMSaTxqjpXUB9D'
+_key: "!items!CKWMSaTxqjpXUB9D"

@@ -5,13 +5,13 @@ img: icons/creatures/abilities/stinger-poison-green.webp
 _id: pj468zWIJvgif0Yy
 system:
   description: "<p>La morsure du wampür\_inocule un poison : la victime doit réussir un <strong>test\_de CON difficulté 12 ou être affaiblie pendant\_1d6 tours</strong>. </p><p><strong>Si elle est affectée une seconde fois\_par le poison</strong> alors qu'elle est déjà sous son\_effet, elle sombre à la place dans <strong>l'inconscience\_pour 1d6 tours</strong>.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer l'effet
     affaibli pendant 1d6 rounds.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.pj468zWIJvgif0Yy
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.pj468zWIJvgif0Yy
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: '12'
+          saveDifficulty: "12"
           target:
             type: single
             scope: all
@@ -51,8 +51,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - weakened
             duration: 1d6
@@ -72,13 +72,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!pj468zWIJvgif0Yy'
+_key: "!items!pj468zWIJvgif0Yy"

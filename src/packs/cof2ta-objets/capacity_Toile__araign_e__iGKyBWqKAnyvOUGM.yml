@@ -4,14 +4,14 @@ type: capacity
 img: icons/creatures/webs/web-spider-pink.webp
 system:
   description: "<p>L’araignée gagne la capacité\_de <strong>lancer (portée: 10 mètres) une toile gluante\_et collante sur un ennemi</strong>. </p><p>Si elle réussit une\_<strong>attaque à distance</strong> [niveau du PJ + 3], la cible\_est <strong>immobilisée</strong> (pas de déplacement, utilisez\_le d12 : voir «États préjudiciables») <strong>pour 1d6\_tours.</strong> </p><p>Au début de son tour, la créature engluée\_doit faire <strong>un test de FOR difficulté 13\_</strong>: en cas\_de succès, elle réussit à se libérer, sinon elle reste\_immobilisée.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.155
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser une attaque à distance qui applique, en cas
     de succès, le statut Immobilisé pendant 1d6 round sur une cible
     sélectionnée.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.nNhiyfz6KBedvkUk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.nNhiyfz6KBedvkUk
       indice: 0
       label: Portée 10m
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -45,10 +45,10 @@ system:
           malusDiceAdd: false
           skill:
             formula: 9 + 3
-            crit: ''
-            difficulty: '@cible.def'
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             scope: all
@@ -57,8 +57,8 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - immobilized
             duration: 1d6
@@ -74,9 +74,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -84,4 +84,4 @@ _id: iGKyBWqKAnyvOUGM
 ownership:
   default: 0
 sort: 0
-_key: '!items!iGKyBWqKAnyvOUGM'
+_key: "!items!iGKyBWqKAnyvOUGM"

@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/melee/blade-tip-smoke-green.webp
 system:
   description: "<p>Le PJ peut remplacer le poison rapide par un\_poison affaiblissant : les effets ne sont alors\_appliqués que lors de la première attaque réussie\_avec cette arme. </p><p>Si elle ne réussit pas un <strong>test de\_CON difficulté 15, la victime est affaiblie pour\_le reste du combat</strong> (voir «États préjudiciables»).</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.147
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet d'appliquer le statut Affaibli à une cible sélectionnée
     pour tout le combat.</p><p>Le test de CON pour résister est à gérer
     manuellement.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.LoCOyY1titfiPqzZ
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LoCOyY1titfiPqzZ
       indice: 0
       label: Première attaque réussie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             scope: all
@@ -51,11 +51,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - weakened
-            duration: '1'
+            duration: "1"
             unit: combat
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -71,9 +71,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -81,4 +81,4 @@ _id: mPyI6EJhqE6SWTbp
 ownership:
   default: 0
 sort: 0
-_key: '!items!mPyI6EJhqE6SWTbp'
+_key: "!items!mPyI6EJhqE6SWTbp"

@@ -5,11 +5,11 @@ img: icons/environment/wilderness/terrain-rocky-ground.webp
 _id: 4rfRp24pdPEHNJZN
 system:
   description: "<p>Le PJ ne fait qu’un avec la terre. </p><p>Il <strong>ne peut plus\_être renversé et détecte automatiquement tous\_les pièges creusés</strong> dans le sol (trappes, fosses).\_</p><p>Il gagne un bonus de <strong>+5 à tous les tests pour\_détecter des pièges ou des passages secrets</strong>\_dissimulés dans les murs de pierre ou au sol.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.152
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent aux test de PER.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.4rfRp24pdPEHNJZN
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.4rfRp24pdPEHNJZN
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -39,10 +39,10 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.4rfRp24pdPEHNJZN
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.4rfRp24pdPEHNJZN
           subtype: skill
           target: per
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Détecter pièges et passages dans de la pierre
       resolvers: []
@@ -55,13 +55,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!4rfRp24pdPEHNJZN'
+_key: "!items!4rfRp24pdPEHNJZN"

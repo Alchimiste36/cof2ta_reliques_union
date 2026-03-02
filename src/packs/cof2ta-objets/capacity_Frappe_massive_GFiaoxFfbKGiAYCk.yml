@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/melee/strike-hammer-destructive-orange.webp
 system:
   description: "<p>Pour une action limitée, le PJ réalise <strong>une attaque\_contre une cible</strong>. Elle subit <strong>1d6 DM en plus</strong> des\_DM classiques de l’attaque et doit réussir un\_<strong>test opposé de FOR sous peine d’être renversée</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.140
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action permet d'obtenir les DM supplémentaires.</p><p>La
     deuxième action permet de réaliser le test opposé de FOR.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 2
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.E7vicLnxuCkjIOY8
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.E7vicLnxuCkjIOY8
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,17 +40,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.E7vicLnxuCkjIOY8
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.E7vicLnxuCkjIOY8
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.GFiaoxFfbKGiAYCk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.GFiaoxFfbKGiAYCk
       indice: 1
       label: Test opposé
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -68,11 +68,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@for'
-            crit: ''
-            difficulty: '@oppose.for'
+            formula: "@for"
+            crit: ""
+            difficulty: "@oppose.for"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: single
             number: 0
@@ -81,7 +81,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -94,9 +94,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -104,4 +104,4 @@ _id: GFiaoxFfbKGiAYCk
 ownership:
   default: 0
 sort: 0
-_key: '!items!GFiaoxFfbKGiAYCk'
+_key: "!items!GFiaoxFfbKGiAYCk"

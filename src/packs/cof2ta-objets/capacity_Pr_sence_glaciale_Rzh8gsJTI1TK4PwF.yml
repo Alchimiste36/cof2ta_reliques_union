@@ -4,13 +4,13 @@ type: capacity
 img: icons/magic/water/elemental-water.webp
 system:
   description: "<p>Le PJ transforme son corps en glace vivante.</p><p>Il gagne <strong>+4 en DEF</strong>, est <strong>immunisé au froid</strong> et\_<strong>divise les DM de feu par deux</strong>. </p><p><strong>Les créatures qui\_le touchent</strong> ou l’attaquent avec des armes de\_contact <strong>subissent 1d6 DM</strong>.</p><p> Lorsqu’il marche,\_<strong>il gèle le sol et peut se déplacer sur l’eau</strong> en la\_transformant en glace. </p><p>Le sort a <strong>une durée de\_[1d6 + Mod. de SAG] minutes</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.153
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet d'obtenir le bonus DEF et de faire apparaitre une action
     permettant de jeter 1d6 DM.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.BorFOsgQe3bEAMxz
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.BorFOsgQe3bEAMxz
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,17 +40,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Rzh8gsJTI1TK4PwF
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Rzh8gsJTI1TK4PwF
           subtype: combat
           target: def
-          value: '4'
+          value: "4"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.Rzh8gsJTI1TK4PwF
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Rzh8gsJTI1TK4PwF
       indice: 1
       label: Si touché au contact
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -64,7 +64,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       resolvers:
         - type: auto
           dmg:
@@ -77,7 +77,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -93,9 +93,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -103,4 +103,4 @@ _id: Rzh8gsJTI1TK4PwF
 ownership:
   default: 0
 sort: 0
-_key: '!items!Rzh8gsJTI1TK4PwF'
+_key: "!items!Rzh8gsJTI1TK4PwF"

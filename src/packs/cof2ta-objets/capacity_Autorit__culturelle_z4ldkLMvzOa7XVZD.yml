@@ -4,11 +4,11 @@ type: capacity
 img: icons/sundries/flags/banner-yellow.webp
 system:
   description: "<p>Le PJ dégage une impression de confiance, de\_sagesse et une force de caractère peu\_ communes. </p><p>Il obtient un bonus de <strong>+2 en Initiative et en\_DEF</strong>. </p><p>À la place de cette capacité, le joueur\_peut, s’il le veut, <strong>choisir un nouveau\_ domaine\_d’érudition pour son PJ</strong> (capacité du rang 1 de\_cette voie).</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.90
-  slug: ''
-  inGame: "<p>Bonus permanent en INIT et DEF.</p><p>Si le joueur choisi un nouveau Domaine d'érudition, supprimez l'action de cette capacité et ajouter sur la capacité\_@UUID[Item.HLxxs5A2wGT99fnY]{Érudition} le nouveau domaine choisi dans le champs Notes du Modificateur de l'action.</p>"
-  subtype: ''
+  slug: ""
+  inGame: "<p>Bonus permanent en INIT et DEF.</p><p>Si le joueur choisi un nouveau Domaine d'érudition, supprimez l'action de cette capacité et ajouter sur la capacité\_@UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.HLxxs5A2wGT99fnY]{Érudition} le nouveau domaine choisi dans le champs Notes du Modificateur de l'action.</p>"
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.z4ldkLMvzOa7XVZD
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.z4ldkLMvzOa7XVZD
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,19 +38,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.z4ldkLMvzOa7XVZD
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.z4ldkLMvzOa7XVZD
           subtype: combat
           target: init
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.z4ldkLMvzOa7XVZD
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.z4ldkLMvzOa7XVZD
           subtype: combat
           target: def
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -61,9 +61,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -71,4 +71,4 @@ _id: z4ldkLMvzOa7XVZD
 ownership:
   default: 0
 sort: 0
-_key: '!items!z4ldkLMvzOa7XVZD'
+_key: "!items!z4ldkLMvzOa7XVZD"

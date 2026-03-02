@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/perception/third-eye-blue-red.webp
 system:
   description: "<p>Le PJ augmente ses valeurs de <strong>SAG et d’INT de\_+2</strong>. Il peut désormais <strong>lancer deux d20</strong> à chaque\_fois qu’un test de SAG ou d’INT lui est demandé\_et garder le meilleur résultat</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.134
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent et Dé Bonus en INT et PER.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.Nd4nORpPlmbiw5U3
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,33 +40,33 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Nd4nORpPlmbiw5U3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
           subtype: ability
           target: int
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Nd4nORpPlmbiw5U3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
           subtype: ability
           target: per
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.cwyW8Qz2Jba2bmpR
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.cwyW8Qz2Jba2bmpR
           subtype: bonusDice
           target: int
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.cwyW8Qz2Jba2bmpR
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.cwyW8Qz2Jba2bmpR
           subtype: bonusDice
           target: per
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -77,9 +77,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -87,4 +87,4 @@ _id: cwyW8Qz2Jba2bmpR
 ownership:
   default: 0
 sort: 0
-_key: '!items!cwyW8Qz2Jba2bmpR'
+_key: "!items!cwyW8Qz2Jba2bmpR"

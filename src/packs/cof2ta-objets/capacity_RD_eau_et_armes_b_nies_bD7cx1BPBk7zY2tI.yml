@@ -6,11 +6,11 @@ system:
   description: >-
     <p>Une réduction de Dommages sauf pour les dommages de l'eau bénie ou des
     armes bénies.</p>
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: <p>L'action activable permet d'obtenir la RD.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.SrNWChKtify62RzG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.SrNWChKtify62RzG
       indice: 0
       label: RD sauf magie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,12 +40,12 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.SrNWChKtify62RzG
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.SrNWChKtify62RzG
           subtype: combat
           target: dr
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -56,9 +56,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -66,4 +66,4 @@ _id: bD7cx1BPBk7zY2tI
 ownership:
   default: 0
 sort: 0
-_key: '!items!bD7cx1BPBk7zY2tI'
+_key: "!items!bD7cx1BPBk7zY2tI"

@@ -4,14 +4,14 @@ type: capacity
 img: icons/creatures/abilities/bear-roar-bite-brown-green.webp
 system:
   description: "<p>Le PJ se <strong>déplace en ligne droite d’au moins\_5 mètres</strong> (20 mètres au maximum) et effectue\_<strong>une attaque au contact</strong> avec un bonus de <strong>+2 en\_attaque et +1d6 aux DM</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ gagne un bonus\_supplémentaire de +1 en attaque et aux DM.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.123
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir les bonus en Attaque et aux
     DM.</p><p>Si le PJ obtient la capacité avancée, ajouter +1 à la valeur des
     Modificateurs configurées sur l'action.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 2
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.oFPsrb2ONP6TVkmu
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oFPsrb2ONP6TVkmu
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -43,19 +43,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.oFPsrb2ONP6TVkmu
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oFPsrb2ONP6TVkmu
           subtype: combat
           target: melee
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.oFPsrb2ONP6TVkmu
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oFPsrb2ONP6TVkmu
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -66,9 +66,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -77,4 +77,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!oFPsrb2ONP6TVkmu'
+_key: "!items!oFPsrb2ONP6TVkmu"

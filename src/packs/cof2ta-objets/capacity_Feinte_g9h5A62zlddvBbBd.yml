@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/melee/strikes-sword-scimitar.webp
 system:
   description: "<p>Le PJ effectue une attaque fictive pour déséquilibrer son adversaire et réaliser ensuite une attaque\_mortelle. </p><p>Faites <strong>un test d’attaque normal lors\_de ce tour</strong> mais <strong>n’infligez aucun DM</strong>. </p><p>Au tour\_suivant, <strong><span style=\"text-decoration:underline\">si vous attaquez le même adversaire</span></strong>,\_vous profiterez d’un bonus de <strong>+5 en attaque</strong> et,\_si votre feinte était réussie, de <strong>+2d6 aux DM</strong>. </p><p><strong><span style=\"text-decoration:underline\">Au\_rang 5</span></strong> atteint dans cette voie, le bonus d’attaque\_de la feinte passe à <strong>+10</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.131
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet, après une feinte réussie, obtenir le bonus à
     l'attaque et aux DM de contact.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
       label: Si feinte réussie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.aDymGMCXh8OlgFYJ
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.aDymGMCXh8OlgFYJ
           subtype: combat
           target: melee
-          value: '@rang[0,0,5,5,10]'
+          value: "@rang[0,0,5,5,10]"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.9oQ5tqLQ3gSJ1NpK
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9oQ5tqLQ3gSJ1NpK
           subtype: combat
           target: damMelee
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: g9h5A62zlddvBbBd
 ownership:
   default: 0
 sort: 0
-_key: '!items!g9h5A62zlddvBbBd'
+_key: "!items!g9h5A62zlddvBbBd"

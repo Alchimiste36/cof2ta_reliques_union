@@ -4,9 +4,9 @@ type: capacity
 img: icons/skills/wounds/blood-drip-droplet-red.webp
 system:
   description: "<p>Le PJ doit réussir <strong>un test d’attaque magique</strong>\_(portée: 10 m). </p><p>Du sang s’écoule de la bouche,\_du nez, des oreilles et même des yeux de la\_victime, qui subit <strong>1d6 DM par tour pendant\_[rang atteint dans la voie] tours</strong>. </p><p>Ce sort <strong>ignore\_la RD</strong> d’une cible mais les créatures qui ne\_saignent pas y sont immunisées (telles que les\_créatures non vivantes, les goules ou encore\_les dryades). </p><p>Les DM passent à <strong>1d8 au rang 4\_atteint</strong> dans cette voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la durée du sort devient\_[rang atteint dans la voie + Mod. SAG] tours.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.138
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser l'attaque magique contre la DEF d'une cible
     sélectionnée. En cas de réussite elle applique un effet de saignement
@@ -14,7 +14,7 @@ system:
     Combat.</p><p>Si le PJ obtient la capacité avancée, remplacez le champs
     Durée de l'Effet supplémentaire de la Résolution de l'action par "@rang +
     @per".</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.kVfhIYZXfuJyKxmW
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.kVfhIYZXfuJyKxmW
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -47,11 +47,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@rang[1d6,1d6,1d6,1d8,1d8]'
+            formula: "@rang[1d6,1d6,1d6,1d8,1d8]"
           target:
             type: single
             number: 0
@@ -60,10 +60,10 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: '@rang[1d6,1d6,1d6,1d8,1d8]'
-            elementType: ''
+            formula: "@rang[1d6,1d6,1d6,1d8,1d8]"
+            elementType: ""
             statuses: []
-            duration: '@rang'
+            duration: "@rang"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -76,9 +76,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -86,4 +86,4 @@ _id: GICPQXWJFwiOAD0d
 ownership:
   default: 0
 sort: 0
-_key: '!items!GICPQXWJFwiOAD0d'
+_key: "!items!GICPQXWJFwiOAD0d"

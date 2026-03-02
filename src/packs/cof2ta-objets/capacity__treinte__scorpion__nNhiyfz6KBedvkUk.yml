@@ -5,14 +5,14 @@ img: icons/creatures/claws/pincer-crab-brown.webp
 _id: nNhiyfz6KBedvkUk
 system:
   description: "<p>Le scorpion peut désormais\_tenter d’attraper une créature entre ses pinces,\_si elle n’est pas d’une taille supérieure à la\_sienne. </p><p><strong>Lorsqu’il obtient un résultat de 15 à\_20 sur son dé d’attaque, le scorpion attrape\_son adversaire</strong>. </p><p>Au début de son tour, la cible\_saisie doit faire <strong>un test de FOR en opposition</strong>\_avec le scorpion, en cas de succès, elle réussit à\_se libérer, sinon elle est <strong>étourdie</strong> (pas d’action\_et -5 en DEF) et le scorpion maintient l’étreinte.\_</p><p>Lorsqu’il maintient une étreinte, le scorpion ne\_peut rien faire pendant son tour, mais il <strong>inflige\_automatiquement [1d6+3] DM</strong> à la créature\_prisonnière. Le scorpion peut lâcher son étreinte\_quand il le veut.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.155
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de FOR en opposition. En cas de
     réussite du PJ, l'attaque inflige 1d6+3 Dm et applique sur la cible le
     statut Étroudi pendant 1 round.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.nNhiyfz6KBedvkUk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.nNhiyfz6KBedvkUk
       indice: 0
       label: Sur 15-20
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -45,9 +45,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@for'
-            crit: ''
-            difficulty: '@oppose.for'
+            formula: "@for"
+            crit: ""
+            difficulty: "@oppose.for"
           dmg:
             formula: 1d6+3
           target:
@@ -58,11 +58,11 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - stun
-            duration: '1'
+            duration: "1"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -75,13 +75,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!nNhiyfz6KBedvkUk'
+_key: "!items!nNhiyfz6KBedvkUk"

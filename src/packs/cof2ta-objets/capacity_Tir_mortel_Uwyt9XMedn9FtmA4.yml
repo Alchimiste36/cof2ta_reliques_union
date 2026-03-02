@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/ranged/target-bullseye-arrow-glowing.webp
 system:
   description: "<p>Pour une attaque à distance, le PJ <strong>peut choisir\_d’utiliser un d12</strong> pour son attaque au lieu du\_d20 habituel (et il ajoute normalement son\_score d’attaque). Si l’attaque est réussie, il ajoute\_<strong>+2d6 aux DM</strong>.</p><p>Cette capacité peut être utilisée avec @UUID[Item.2Xk4YBIb9sRaX5TC]{Tir double} et @UUID[Item.5ahFJyW71QpPVpJc]{As de la gâchette}.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'appliquer un Dé Malus à l'attaque à distance
     et un bonus de 2d6 aux DM.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Uwyt9XMedn9FtmA4
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Uwyt9XMedn9FtmA4
           subtype: malusDice
           target: ranged
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Uwyt9XMedn9FtmA4
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Uwyt9XMedn9FtmA4
           subtype: combat
           target: damRanged
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: Uwyt9XMedn9FtmA4
 ownership:
   default: 0
 sort: 0
-_key: '!items!Uwyt9XMedn9FtmA4'
+_key: "!items!Uwyt9XMedn9FtmA4"

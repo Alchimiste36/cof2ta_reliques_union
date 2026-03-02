@@ -4,16 +4,16 @@ type: capacity
 img: icons/creatures/claws/claw-scaled-red.webp
 system:
   description: "<p>Le PJ voit ses muscles se développer de façon\_spectaculaire <strong>pendant [1d6 + Mod. de SAG]\_tours</strong> tandis que d’énormes griffes poussent\_subitement au bout de ses doigts.</p><p><strong>Son score de\_FOR passe à 18</strong> (ou bénéficie d’un bonus de\_+2 s’il est déjà égal ou supérieur à cette valeur)\_et il obtient <strong>une attaque de contact de griffes\_infligeant [1d6 + Mod. FOR] DM</strong>.</p><blockquote><h4>Férocité et voie\_du pugilat</h4><p>Si le PJ dispose de la voie\_du pugilat, alors les DM\_de sa capacité Poings de\_fer sont augmentés d’une\_catégorie grâce à Férocité\_(jusqu’au maximum de\_1d12 au rang 5 de la voie\_du pugilat, ou 2d6 en cas\_de Poings de fer avancé).</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.143
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action permet d'obtenir un bonus à la FOR et d'afficher
     l'attaque de griffes.</p><p>La valeur du Modificateur de la première action
     doit être modifiée pour arriver à 18 en FOR.</p><p>La deuxième action
     apparait uniquement lorsque la première est activée et permet de réaliser
     l'attaque de griffes.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 2
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.NVzDrcPGA6qjCYZk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.NVzDrcPGA6qjCYZk
       indice: 0
       label: Activation
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,17 +43,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.NVzDrcPGA6qjCYZk
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.NVzDrcPGA6qjCYZk
           subtype: ability
           target: for
-          value: '1'
+          value: "1"
           apply: self
           additionalInfos: Ajuster cette valeur pour atteindre 18
       resolvers: []
-    - source: Item.ZzTE6qmFnjamkPSf
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ZzTE6qmFnjamkPSf
       indice: 1
       label: Griffes
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -67,15 +67,15 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6 +@for
           target:
@@ -86,7 +86,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -99,9 +99,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -109,4 +109,4 @@ _id: ZzTE6qmFnjamkPSf
 ownership:
   default: 0
 sort: 0
-_key: '!items!ZzTE6qmFnjamkPSf'
+_key: "!items!ZzTE6qmFnjamkPSf"

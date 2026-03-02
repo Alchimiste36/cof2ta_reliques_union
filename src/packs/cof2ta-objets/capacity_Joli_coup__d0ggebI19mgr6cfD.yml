@@ -4,14 +4,14 @@ type: capacity
 img: icons/weapons/crossbows/crossbow-loaded-black.webp
 system:
   description: "<p>Le PJ <strong>ignore les pénalités</strong> normalement appliquées lorsque la cible <strong>est à couvert\_</strong>(généralement -2 à -5).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute +1 aux DM de\_l’arme tant qu’il l’utilise à une portée optimale,\_soit qui n'outrepasse pas la portée maximale\_de l'arme.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Pas d'effet automatique.</p><p>Si le PJ obtient la capacité avancée,
     ajoutez simplement la Condition "est appris" sur l'action pour obtenir
     l'action activable donnant le bonus aux DM.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
       label: Si portée optimale
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,12 +41,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.hqMCp45eYAu0vome
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
           subtype: combat
           target: damRanged
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -57,9 +57,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -67,4 +67,4 @@ _id: d0ggebI19mgr6cfD
 ownership:
   default: 0
 sort: 0
-_key: '!items!d0ggebI19mgr6cfD'
+_key: "!items!d0ggebI19mgr6cfD"

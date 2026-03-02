@@ -5,14 +5,14 @@ img: icons/creatures/abilities/mouth-teeth-sharp.webp
 _id: LzkTjxMgkBnZJMvH
 system:
   description: "<p><strong><span style=\"text-decoration:underline\">lorsqu'il utilise sa capacité Dévorer</span></strong>, la crétaure peut avaler entièrement une\_cible d'au moins une taille inférieure à la sienne.\_</p><p>La victime doit <strong>faire un test de FOR opposé</strong> :\_en cas d'échec elle passe directement dans\_l'estomac du monstre. </p><p>Un personnage avalé\_<strong>subit 3d6 DM</strong> d'asphyxie et d'acide chaque\_tour. Il peut attaquer avec une arme pas plus\_grande qu'une dague en <strong>réussissant un test\_de FOR difficulté 15</strong> à chaque tour. L'attaque\_se fait avec une pénalité de -5 en attaque et\_les DM sont divisés par deux.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde pour la cible qui est
     gobée et qui souhaite attaquer.</p><p>La deuxième action permet de jeter les
     DM sur la cible gobée.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.LzkTjxMgkBnZJMvH
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LzkTjxMgkBnZJMvH
       indice: 0
       label: La cible gobée veut attaquer
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -43,7 +43,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '15'
+          saveDifficulty: "15"
           target:
             type: single
             scope: all
@@ -52,7 +52,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -60,10 +60,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.LzkTjxMgkBnZJMvH
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LzkTjxMgkBnZJMvH
       indice: 1
       label: DM sur cible gobée
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -88,7 +88,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -104,13 +104,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!LzkTjxMgkBnZJMvH'
+_key: "!items!LzkTjxMgkBnZJMvH"

@@ -4,14 +4,14 @@ type: capacity
 img: icons/magic/water/projectile-water-wave-teal.webp
 system:
   description: "<p>Le sort affecte toutes les créatures dans <strong>un cône\_approximatif d’une portée de 20 mètres et\_d’une largeur de 10 mètres</strong> à son extrémité. </p><p>Les\_victimes <strong>subissent [2d6 + Mod d’INT] DM de\_froid et sont ralenties pour 1 tour.</strong>\_</p><p>Si elles ratent\_un test de CON difficulté [10 + rang de la voie], elles subissent seulement la moitié des DM et\_ne sont pas ralenties. </p><p>Les DM du sort passent à\_<strong>4d6 au rang 5</strong> atteint dans cette voie.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.153
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser une attaque automatique contre plusieurs
     cibles sélectionnées et d'appliquer sur les cibles le Statut Ralenti pendant
     1 round. L'effet supplémentaire fonctionne uniquement en Mode Combat.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.BorFOsgQe3bEAMxz
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.BorFOsgQe3bEAMxz
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: '@rang[0,0,2,2,4]d6 + @int'
+            formula: "@rang[0,0,2,2,4]d6 + @int"
           target:
             type: multiple
             number: 20
@@ -51,11 +51,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - slowed
-            duration: '1'
+            duration: "1"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -71,9 +71,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -81,4 +81,4 @@ _id: aIDP3TafeoKQqyA1
 ownership:
   default: 0
 sort: 0
-_key: '!items!aIDP3TafeoKQqyA1'
+_key: "!items!aIDP3TafeoKQqyA1"

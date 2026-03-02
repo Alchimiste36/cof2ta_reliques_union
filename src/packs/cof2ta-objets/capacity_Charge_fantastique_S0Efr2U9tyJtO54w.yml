@@ -4,15 +4,15 @@ type: capacity
 img: icons/creatures/abilities/tail-strike-bone-orange.webp
 system:
   description: "<p>Une fois par combat, à l’initiative du PJ,\_<strong>lui-même et tous ses alliés en vue bénéficient\_immédiatement d’un déplacement</strong> d’un maximum de 20 m en ligne droite, <strong>suivi d’une action\_d’attaque</strong> avec un bonus de <strong>+3 au test de réussite\_et +1d6 aux dégâts</strong>.</p><p>Résolvez d’abord tous les déplacements en commençant par le PJ, puis par ordre d’initiative.\_Ensuite, effectuez toutes les attaques dans le\_même ordre</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.123
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet d'obtenir et de donner le bonus à l'attaque et aux DM au
     PJ et aux cibles sélectionnées. Il faut effectuer une récupération rapide
     pour pouvoir utiliser à nouveau cette capacité.</p><p>Fonctionne uniquement
     en Mode Combat.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 5
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.S0Efr2U9tyJtO54w
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S0Efr2U9tyJtO54w
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -44,19 +44,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.S0Efr2U9tyJtO54w
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S0Efr2U9tyJtO54w
           subtype: combat
           target: melee
-          value: '3'
+          value: "3"
           apply: both
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.S0Efr2U9tyJtO54w
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S0Efr2U9tyJtO54w
           subtype: combat
           target: damMelee
           value: +1d6
           apply: both
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -67,10 +67,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '1'
+            duration: "1"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -86,9 +86,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -96,4 +96,4 @@ _id: S0Efr2U9tyJtO54w
 ownership:
   default: 0
 sort: 0
-_key: '!items!S0Efr2U9tyJtO54w'
+_key: "!items!S0Efr2U9tyJtO54w"

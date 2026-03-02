@@ -4,14 +4,14 @@ type: capacity
 img: icons/magic/perception/hand-eye-fire-blue.webp
 system:
   description: "<p><strong>Une fois par combat</strong>, à la fin d’un tour, le PJ\_peut décider que tout ce qui s’est passé durant ce\_tour n’était que la vision d’un futur possible.</p><p><strong>On\_rejoue alors le tour depuis le début</strong> : les autres PJ,\_créatures et PNJ ne peuvent pas changer leurs\_actions, contrairement au PJ qui bénéficie d’un\_bonus de <strong>+10 en initiative et en DEF</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.134
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir le bonus en DEF et en
     Initiative.</p><blockquote><p><strong>Note : Pour utiliser la
     "concentration" faites SHIFT+CLIC sur l'action</strong></p></blockquote>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 4
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.Nd4nORpPlmbiw5U3
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,19 +43,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Nd4nORpPlmbiw5U3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
           subtype: combat
           target: def
-          value: '10'
+          value: "10"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.Nd4nORpPlmbiw5U3
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.Nd4nORpPlmbiw5U3
           subtype: combat
           target: init
-          value: '10'
+          value: "10"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -66,9 +66,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -76,4 +76,4 @@ _id: Nd4nORpPlmbiw5U3
 ownership:
   default: 0
 sort: 0
-_key: '!items!Nd4nORpPlmbiw5U3'
+_key: "!items!Nd4nORpPlmbiw5U3"

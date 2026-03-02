@@ -5,13 +5,13 @@ img: icons/magic/earth/explosion-lava-stone-red.webp
 _id: GS4YtaFbmM1AatWx
 system:
   description: "<p>Une fois par\_combat, le géant peut taper du pied et provoquer une onde de choc.</p><p>Toutes les créatures\_dans un <strong>rayon de 10 mètres</strong>, de taille <strong>grande\_ou inférieure</strong>, doivent réussir un <strong>test de DEX\_difficulté 15 ou être renversées.</strong></p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
     statut renversé.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.GS4YtaFbmM1AatWx
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.GS4YtaFbmM1AatWx
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '15'
+          saveDifficulty: "15"
           target:
             type: multiple
             number: 20
@@ -51,11 +51,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
-            duration: '0'
+            duration: "0"
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -72,13 +72,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!GS4YtaFbmM1AatWx'
+_key: "!items!GS4YtaFbmM1AatWx"

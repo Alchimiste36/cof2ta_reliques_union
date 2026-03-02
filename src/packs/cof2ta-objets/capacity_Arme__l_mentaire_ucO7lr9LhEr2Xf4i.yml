@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/fire/dagger-rune-enchant-flame-strong-blue.webp
 system:
   description: "<p>En fonction de son ordre et de la nature de sa\_monture, le PJ peut nimber son arme d’une aura\_<strong>pour [5 + Mod. de SAG] tours</strong>. Elle inflige dès\_lors <strong>+1d6 DM élémentaires</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.141
-  slug: ''
+  slug: ""
   inGame: <p>L'action activable permet d'obtenir les DM supplémentaires.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 2
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.E7vicLnxuCkjIOY8
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.E7vicLnxuCkjIOY8
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,26 +38,26 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.LLWbXPJYGboW9ZHs
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LLWbXPJYGboW9ZHs
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.ucO7lr9LhEr2Xf4i
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ucO7lr9LhEr2Xf4i
           subtype: combat
           target: damRanged
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.ucO7lr9LhEr2Xf4i
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ucO7lr9LhEr2Xf4i
           subtype: combat
           target: damMagic
           value: 1d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -68,9 +68,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -78,4 +78,4 @@ _id: ucO7lr9LhEr2Xf4i
 ownership:
   default: 0
 sort: 0
-_key: '!items!ucO7lr9LhEr2Xf4i'
+_key: "!items!ucO7lr9LhEr2Xf4i"

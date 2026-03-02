@@ -5,13 +5,13 @@ img: icons/magic/death/blood-corruption-vomit-red.webp
 _id: 41gFTi8JqFokPLUv
 system:
   description: "<p>Ce pouvoir permet\_d'animer le cadavre d'une créature morte au\_combat. La créature se relève avec <strong>les mêmes\_caractéristiques</strong> mais <strong>subit une pénalité\_de -2 en attaque et en initiative</strong>.</p><p> Lorsque le\_cadavre est à nouveau vaincu, il ne peut\_pas être réanimé. Le cadavre de la créature\_animée ne peut être d'un NC supérieur à 10.\_</p><p><strong>Tuer la créature utilisant Animer un cadavre met immédiatement fin à\_l'animation de cadavre.</strong> La créature ne peut\_animer plus de dix cadavres en même temps.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>L'action permet d'appliquer les malus sur les cadavre animés pour une
     durée illimitée.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.YyV1Cgoy4tA87Quy
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YyV1Cgoy4tA87Quy
       indice: 0
       label: Sur les cadavre animés
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,33 +41,33 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.YyV1Cgoy4tA87Quy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YyV1Cgoy4tA87Quy
           subtype: combat
           target: melee
-          value: '-2'
+          value: "-2"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.YyV1Cgoy4tA87Quy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YyV1Cgoy4tA87Quy
           subtype: combat
           target: ranged
-          value: '-2'
+          value: "-2"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.YyV1Cgoy4tA87Quy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YyV1Cgoy4tA87Quy
           subtype: combat
           target: magic
-          value: '-2'
+          value: "-2"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.YyV1Cgoy4tA87Quy
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YyV1Cgoy4tA87Quy
           subtype: combat
           target: init
-          value: '-2'
+          value: "-2"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -78,10 +78,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -97,13 +97,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!41gFTi8JqFokPLUv'
+_key: "!items!41gFTi8JqFokPLUv"

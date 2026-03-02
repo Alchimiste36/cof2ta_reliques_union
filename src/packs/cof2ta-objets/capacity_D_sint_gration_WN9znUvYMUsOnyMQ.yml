@@ -4,11 +4,11 @@ type: capacity
 img: icons/magic/unholy/beam-impact-purple.webp
 system:
   description: "<p>Le PJ <strong>projette un rayon mortel dont la portée\_est de 20 mètres</strong> et qui annule la cohésion de\_la matière, ne laissant derrière lui qu’un amas\_de poussière.</p><p>Un test d’<strong>attaque magique réussi</strong>\_permet de toucher une créature et d’<strong>infliger\_[6d6 + Mod. d’INT] DM.</strong></p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Si le PJ vise un objet porté par une créature</span></strong></span>, le\_jet d’attaque subit un malus de -5. Les objets\_de tradition et légendaires sont insensibles à ce\_sort et les objets normaux réduits en poussière.</p><p>Aucun objet de plus de 50 kg ne peut être affecté\_par ce sort : inutile de tenter de creuser un\_tunnel par ce biais. En revanche, vous pourrez\_ainsi désintégrer une porte (ou même une pierre\_dans un mur).</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.149
-  slug: ''
+  slug: ""
   inGame: "<p>La première action permet de réaliser l'attaque de Désintégration contre une créature.\_</p><p>La deuxième action permet de réaliser l'attaque de Désintégration contre un objet.</p><blockquote><h5>Sorts prestigieux\_et Magie économe</h5><p>Il n’est pas possible d’user\_de Magie économe sur les\_sorts issus de voies\_de prestige.</p></blockquote>"
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.eXmMVRMlLEOBWuAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.eXmMVRMlLEOBWuAG
       indice: 0
       label: vs Créature
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -41,9 +41,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 6d6 + @int
           target:
@@ -54,14 +54,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.WN9znUvYMUsOnyMQ
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.WN9znUvYMUsOnyMQ
       indice: 1
       label: vs Objet
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -79,9 +79,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm -5'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm -5"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 6d6 + @int
           target:
@@ -92,7 +92,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -105,9 +105,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -115,4 +115,4 @@ _id: WN9znUvYMUsOnyMQ
 ownership:
   default: 0
 sort: 0
-_key: '!items!WN9znUvYMUsOnyMQ'
+_key: "!items!WN9znUvYMUsOnyMQ"

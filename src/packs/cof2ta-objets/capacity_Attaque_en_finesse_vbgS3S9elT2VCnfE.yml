@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/melee/strike-blade-knife-blue-red.webp
 system:
   description: "<p>Le PJ peut <strong>utiliser son score d’attaque à distance</strong>\_pour porter une attaque au contact <strong>lorsqu’il\_utilise une arme de duel ou une dague</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ peut appliquer le bonus\_de DEF d’une main gauche (cf. «Équipement»\_page 156) contre les attaques à distance.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.131
-  slug: ''
+  slug: ""
   inGame: "<p>L'action activable permet d'ajouter AGI et soustraire FOR pour les attaque de contact.\_</p>"
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
       label: Utilisation d'une arme légère
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,12 +38,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.aDymGMCXh8OlgFYJ
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.aDymGMCXh8OlgFYJ
           subtype: combat
           target: melee
-          value: '@agi -@for'
+          value: "@agi -@for"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -54,9 +54,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -64,4 +64,4 @@ _id: vbgS3S9elT2VCnfE
 ownership:
   default: 0
 sort: 0
-_key: '!items!vbgS3S9elT2VCnfE'
+_key: "!items!vbgS3S9elT2VCnfE"

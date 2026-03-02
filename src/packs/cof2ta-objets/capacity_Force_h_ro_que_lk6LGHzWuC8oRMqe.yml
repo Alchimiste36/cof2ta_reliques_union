@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/movement/arrows-up-trio-red.webp
 system:
   description: "<p>Le PJ augmente son score de <strong>FOR de +2</strong> et\_peut désormais <strong>lancer deux d20 à chaque fois\_qu’un test de FOR</strong> lui est demandé et conserver\_le meilleur résultat.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.125
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent et Dé Bonus en FOR</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.IsG15wQbsqXAygIw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,19 +38,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.9VK3TBTMyDKXb9Ca
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9VK3TBTMyDKXb9Ca
           subtype: bonusDice
           target: for
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.lk6LGHzWuC8oRMqe
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.lk6LGHzWuC8oRMqe
           subtype: ability
           target: for
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -61,9 +61,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -71,4 +71,4 @@ _id: lk6LGHzWuC8oRMqe
 ownership:
   default: 0
 sort: 0
-_key: '!items!lk6LGHzWuC8oRMqe'
+_key: "!items!lk6LGHzWuC8oRMqe"

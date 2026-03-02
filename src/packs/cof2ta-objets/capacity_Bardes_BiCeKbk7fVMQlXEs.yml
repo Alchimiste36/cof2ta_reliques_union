@@ -4,14 +4,14 @@ type: capacity
 img: icons/equipment/chest/breastplate-collared-steel.webp
 system:
   description: <p>Armure de plaque pour cheval de guerre.</p>
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>Activer l'action pour obtenir le bonus en DEF et le malus en Initiative.
     Le malus en initiative doit aussi être ajouté manuellement pour le
     cavalier.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.1ym6bJnM3tLUCH3F
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.1ym6bJnM3tLUCH3F
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,19 +41,19 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.1ym6bJnM3tLUCH3F
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.1ym6bJnM3tLUCH3F
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.BiCeKbk7fVMQlXEs
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.BiCeKbk7fVMQlXEs
           subtype: combat
           target: init
-          value: '-5'
+          value: "-5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -64,9 +64,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -74,4 +74,4 @@ _id: BiCeKbk7fVMQlXEs
 ownership:
   default: 0
 sort: 0
-_key: '!items!BiCeKbk7fVMQlXEs'
+_key: "!items!BiCeKbk7fVMQlXEs"

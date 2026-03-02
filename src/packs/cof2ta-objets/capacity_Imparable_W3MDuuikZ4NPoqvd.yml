@@ -5,14 +5,14 @@ img: icons/skills/melee/shield-damaged-broken-blue.webp
 _id: W3MDuuikZ4NPoqvd
 system:
   description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si la\_brute obtient un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> sur un jet\_de d20 à un test d'attaque (même sans utiliser\_Imparable), elle <strong>inflige +1d6 DM et l'attaque est\_automatiquement réussie</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p120
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action activable/désactivable donne le Dé Bonus en attaque de
     contact.</p><p>La deuxième action permet de jeter automatiquement les DM
     supplémentaires.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 4
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.W3MDuuikZ4NPoqvd
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.W3MDuuikZ4NPoqvd
       indice: 0
       label: Dé Bonus
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -42,17 +42,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.W3MDuuikZ4NPoqvd
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.W3MDuuikZ4NPoqvd
           subtype: bonusDice
           target: melee
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.W3MDuuikZ4NPoqvd
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.W3MDuuikZ4NPoqvd
       indice: 1
       label: Si 15 à 20
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -77,7 +77,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -93,9 +93,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -103,4 +103,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!W3MDuuikZ4NPoqvd'
+_key: "!items!W3MDuuikZ4NPoqvd"

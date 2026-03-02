@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/ranged/dagger-thrown-jeweled-green.webp
 system:
   description: "<p>Une fois par tour, en plus de ses autres actions,\_le PJ peut lancer un couteau ou une dague sur\_une cible à distance (portée maximale: 10 m)\_en réussissant <strong>un test d’attaque à distance</strong>. </p><p>Cette\_attaque est une <strong>action gratuite</strong>. Elle occasionne\_<strong>[1d4 + Mod. de DEX] de DM</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.126
-  slug: ''
+  slug: ""
   inGame: <p>L'action permet de réaliser l'attaque à distance.</p>
-  subtype: ''
+  subtype: ""
   actionType: f
   learned: false
   rank: 3
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.BtvegLBLfKKVjTtc
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.BtvegLBLfKKVjTtc
       indice: 0
       label: portée 10m
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -41,9 +41,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atd"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4 +@agi
           target:
@@ -54,7 +54,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -67,9 +67,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -77,4 +77,4 @@ _id: BtvegLBLfKKVjTtc
 ownership:
   default: 0
 sort: 0
-_key: '!items!BtvegLBLfKKVjTtc'
+_key: "!items!BtvegLBLfKKVjTtc"

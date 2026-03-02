@@ -5,11 +5,11 @@ img: icons/magic/nature/instrument-recorder-leaves.webp
 _id: v2Uexh8iQl1cEpCv
 system:
   description: "<p>Le PJ bénéficie d’un bonus de <strong>+5 aux tests de\_DEX et SAG lorsqu’il est en forêt</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.73
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent aux tests d'AGI et de PER.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.v2Uexh8iQl1cEpCv
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.v2Uexh8iQl1cEpCv
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -39,17 +39,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.v2Uexh8iQl1cEpCv
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.v2Uexh8iQl1cEpCv
           subtype: skill
           target: agi
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: En forêt
         - type: capacity
-          source: Item.v2Uexh8iQl1cEpCv
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.v2Uexh8iQl1cEpCv
           subtype: skill
           target: per
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: En forêt
       resolvers: []
@@ -62,13 +62,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!v2Uexh8iQl1cEpCv'
+_key: "!items!v2Uexh8iQl1cEpCv"

@@ -4,11 +4,11 @@ type: capacity
 img: icons/creatures/abilities/mouth-teeth-sharp.webp
 system:
   description: "<p>Le PJ gagne le <strong>rang 3 de la voie de la férocité</strong>.\_</p><p>S’il possède déjà cette capacité, ou venait à\_l’acquérir par la suite, elle se transforme en\_Furie de Berserker, qui lui donne <strong>+3 en attaque</strong>\_et <strong>+2d6 aux DM</strong> pour une pénalité en <strong>DEF\_de -6</strong>. La <strong>difficulté du test de SAG</strong> pour sortir\_prématurément de cet état <strong>passe à 16</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.142
-  slug: ''
-  inGame: "<p>La capacité possède la capacité liée :\_@UUID[Item.FrKhGqQ0ZJxxdvuq]{Rage du berserk}.</p><p>Si le PJ a ou obtient cette capacité d'une autre façon, ajoutez la Condition 'Est appris\" aux deux actions de cette capacité et supprimez la capacité liée.</p>"
-  subtype: ''
+  slug: ""
+  inGame: "<p>La capacité possède la capacité liée :\_@UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.FrKhGqQ0ZJxxdvuq]{Rage du berserk}.</p><p>Si le PJ a ou obtient cette capacité d'une autre façon, ajoutez la Condition 'Est appris\" aux deux actions de cette capacité et supprimez la capacité liée.</p>"
+  subtype: ""
   actionType: l
   learned: false
   rank: 2
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.NVzDrcPGA6qjCYZk
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.NVzDrcPGA6qjCYZk
       indice: 0
       label: En furie !
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -36,32 +36,32 @@ system:
         noManaCost: false
       modifiers:
         - type: capacity
-          source: Item.NVzDrcPGA6qjCYZk
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.NVzDrcPGA6qjCYZk
           subtype: combat
           target: melee
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Intimidation
         - type: capacity
-          source: Item.m5dhznODXFFxotbY
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.m5dhznODXFFxotbY
           subtype: combat
           target: damMelee
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.m5dhznODXFFxotbY
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.m5dhznODXFFxotbY
           subtype: combat
           target: def
-          value: '-6'
+          value: "-6"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       conditions: []
       resolvers: []
-    - source: Item.m5dhznODXFFxotbY
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.m5dhznODXFFxotbY
       indice: 1
       label: Sortir de la Furie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -77,11 +77,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@per'
-            crit: ''
-            difficulty: '16'
+            formula: "@per"
+            crit: ""
+            difficulty: "16"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: self
             number: 0
@@ -90,13 +90,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       conditions: []
       modifiers: []
   allowLinkedCapacity: true
-  linkedCapacity: Item.FrKhGqQ0ZJxxdvuq
+  linkedCapacity: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.FrKhGqQ0ZJxxdvuq
   parentCapacity: null
 effects: []
 flags: {}
@@ -104,9 +104,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -114,4 +114,4 @@ _id: m5dhznODXFFxotbY
 ownership:
   default: 0
 sort: 0
-_key: '!items!m5dhznODXFFxotbY'
+_key: "!items!m5dhznODXFFxotbY"

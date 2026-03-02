@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/ranged/person-archery-bow-attack-orange.webp
 system:
   description: "<p>Le PJ gagne un bonus de <strong>+5 à tous ses tests\_de SAG</strong> sollicitant la <strong>perception</strong> (vue, ouïe,\_vigilance, etc.). De plus, il ajoute son Mod. de\_<strong>SAG aux dégâts qu’il inflige avec un arc</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute son bonus de\_SAG à l’initiative.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: "<p>La première action donne le bonus permanent en PER.\_</p><p>La seconde action activable permet d'obtenir le bonus de PER en DM.</p><p>Si le PJ obtient la capacité avancée, ajoutez simplement la Condition \"est appris\" sur l'action pour obtenir l'action activable donnant le bonus de PER à l'Initiative.</p>"
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -20,10 +20,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.hqMCp45eYAu0vome
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -38,17 +38,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.hqMCp45eYAu0vome
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
           subtype: skill
           target: per
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Perception (vue, ouïe,  vigilance...)
       resolvers: []
-    - source: Item.EAEao1kh5psedDlq
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.EAEao1kh5psedDlq
       indice: 1
       label: Utilisation d'un Arc
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -63,17 +63,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.EAEao1kh5psedDlq
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.EAEao1kh5psedDlq
           subtype: combat
           target: init
-          value: '@per'
+          value: "@per"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.EAEao1kh5psedDlq
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.EAEao1kh5psedDlq
       indice: 2
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -86,12 +86,12 @@ system:
         noManaCost: false
       modifiers:
         - type: capacity
-          source: Item.EAEao1kh5psedDlq
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.EAEao1kh5psedDlq
           subtype: combat
           target: init
-          value: '@per'
+          value: "@per"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       conditions: []
       resolvers: []
   allowLinkedCapacity: false
@@ -103,9 +103,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -113,4 +113,4 @@ _id: EAEao1kh5psedDlq
 ownership:
   default: 0
 sort: 0
-_key: '!items!EAEao1kh5psedDlq'
+_key: "!items!EAEao1kh5psedDlq"

@@ -4,14 +4,14 @@ type: capacity
 img: icons/weapons/polearms/glaive-simple.webp
 system:
   description: "<p>Le PJ ignore les malus liés à l’usage des armes\_d’hast. Il gagne <strong>la maîtrise des armes d’hast</strong>.\_</p><p>Il gagne également un bonus de <strong>+1 aux tests\_d’attaque et aux DM avec une arme d’hast</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.74
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Action activable lorsque le PJ utilise une arme d'hast.</p><p>Pour la
     maîtrise des Armes d'hast : ouvrir le profil depuis l'onglet Biographie et
     cocher les cases Épieu, Lance, Lance de cavalerie et Pique.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.inz3Mu8UfHsfVUi0
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.inz3Mu8UfHsfVUi0
       indice: 0
       label: Utilisation d'une Arme d'Hast
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,19 +41,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.inz3Mu8UfHsfVUi0
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.inz3Mu8UfHsfVUi0
           subtype: combat
           target: melee
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.inz3Mu8UfHsfVUi0
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.inz3Mu8UfHsfVUi0
           subtype: combat
           target: damMelee
-          value: '1'
+          value: "1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -64,9 +64,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -74,4 +74,4 @@ _id: inz3Mu8UfHsfVUi0
 ownership:
   default: 0
 sort: 0
-_key: '!items!inz3Mu8UfHsfVUi0'
+_key: "!items!inz3Mu8UfHsfVUi0"

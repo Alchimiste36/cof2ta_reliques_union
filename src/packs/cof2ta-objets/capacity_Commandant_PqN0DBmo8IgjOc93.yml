@@ -5,15 +5,15 @@ img: icons/environment/people/commoner.webp
 _id: PqN0DBmo8IgjOc93
 system:
   description: "<p>Le bonus de capitaine passe\_à <strong>+3 en initiative, en attaque, aux DM et en DEF</strong>\_à toutes les créatures sous ses ordres à portée\_de vue. </p><p>Tant qu'au <strong>moins quatre créatures sous\_ses ordres</strong> sont à moins de 10 mètres de lui, le\_commandant <strong>ne subit que la moitié des DM qui\_lui sont infligés</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p122
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de sélectionner les alliés et d'activer l'action pour
     leur donner les bonus de la capacité. L'effet dure de façon illimité donc il
     faudra supprimer manuellement les Effets personnalisés sur les feuilles des
     alliés qui ne remplissent plus les conditions.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 3
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.PqN0DBmo8IgjOc93
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,40 +43,40 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.PqN0DBmo8IgjOc93
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
           subtype: combat
           target: melee
-          value: '3'
+          value: "3"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PqN0DBmo8IgjOc93
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
           subtype: combat
           target: ranged
-          value: '3'
+          value: "3"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PqN0DBmo8IgjOc93
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
           subtype: combat
           target: magic
-          value: '3'
+          value: "3"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PqN0DBmo8IgjOc93
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
           subtype: combat
           target: init
-          value: '3'
+          value: "3"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.PqN0DBmo8IgjOc93
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PqN0DBmo8IgjOc93
           subtype: combat
           target: def
-          value: '3'
+          value: "3"
           apply: others
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -87,10 +87,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: combat
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -106,13 +106,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!PqN0DBmo8IgjOc93'
+_key: "!items!PqN0DBmo8IgjOc93"

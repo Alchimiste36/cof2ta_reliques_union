@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/ranged/target-bullseye-arrow-blue.webp
 system:
   description: "<p><strong>Pour une attaque à distance</strong>, le PJ peut <strong>choisir\_d’utiliser 1d12</strong> en attaque au lieu du d20\_habituel (et il ajoute normalement son score\_d’attaque à distance). Si l’attaque est réussie,\_il ajoute <strong>2d6 aux DM</strong>. </p><p>Cette capacité peut par\_exemple être utilisée avec\_@UUID[Item.DIBwIDRbgytaExZ6]{Tir rapide} ou  @UUID[Item.I9xtdTQ6CM6vB63X]{Flèche de mort} (le bonus de 2d6 aux DM n’est pas\_doublé).</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.127
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'appliquer un Dé Malus à l'attaque à distance
     et un bonus de 2d6 aux DM.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.I9xtdTQ6CM6vB63X
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.I9xtdTQ6CM6vB63X
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.UPF97XooxqVmIecV
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.UPF97XooxqVmIecV
           subtype: malusDice
           target: ranged
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.UPF97XooxqVmIecV
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.UPF97XooxqVmIecV
           subtype: combat
           target: damRanged
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: UPF97XooxqVmIecV
 ownership:
   default: 0
 sort: 0
-_key: '!items!UPF97XooxqVmIecV'
+_key: "!items!UPF97XooxqVmIecV"

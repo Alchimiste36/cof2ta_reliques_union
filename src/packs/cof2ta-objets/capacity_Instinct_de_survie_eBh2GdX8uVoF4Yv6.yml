@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/melee/hand-grip-sword-red.webp
 system:
   description: "<p>Une fois par tour, au\_moment de son choix,\_l'aventurier peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer.</p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser.</p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p122
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Les deux premières action permettent de réaliser les tests de sauvegarde
     pour se débarrasser d'un effet qui bloque les mouvements.</p><p>La troisième
     action activable/désactivable permet d'obtenir le bonus de DEF.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.5QFSWWIXQayPd5Jz
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5QFSWWIXQayPd5Jz
       indice: 0
       label: Sauvegarde d'INT
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: int
-          saveDifficulty: '10'
+          saveDifficulty: "10"
           target:
             type: self
             number: 0
@@ -51,7 +51,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -59,10 +59,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.5QFSWWIXQayPd5Jz
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5QFSWWIXQayPd5Jz
       indice: 1
       label: Sauvegarde d'AGI
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -78,7 +78,7 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '10'
+          saveDifficulty: "10"
           target:
             type: self
             number: 0
@@ -87,7 +87,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -95,10 +95,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.5QFSWWIXQayPd5Jz
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5QFSWWIXQayPd5Jz
       indice: 2
       label: Si PV < NC*5
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -113,12 +113,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.5QFSWWIXQayPd5Jz
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5QFSWWIXQayPd5Jz
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -129,9 +129,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -140,4 +140,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!eBh2GdX8uVoF4Yv6'
+_key: "!items!eBh2GdX8uVoF4Yv6"

@@ -4,13 +4,13 @@ type: capacity
 img: icons/equipment/shield/heater-wooden-steel-boss.webp
 system:
   description: "<p>Le PJ peut effectuer à <strong>chaque tour une attaque\_au bouclier</strong> avec un d12 au lieu du d20 (action\_gratuite) qui <strong>inflige [1d4 + Mod. de FOR] DM</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.120
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser une attaque avec le bouclier avec un dé malus
     (au lieu du d12).</p>
-  subtype: ''
+  subtype: ""
   actionType: f
   learned: false
   rank: 3
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.PMmwzPWrrEgcCMkH
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PMmwzPWrrEgcCMkH
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -43,9 +43,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: true
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4 +@for
           target:
@@ -56,7 +56,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -69,9 +69,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -79,4 +79,4 @@ _id: GR2Ib6gA0VtZhmXD
 ownership:
   default: 0
 sort: 0
-_key: '!items!GR2Ib6gA0VtZhmXD'
+_key: "!items!GR2Ib6gA0VtZhmXD"

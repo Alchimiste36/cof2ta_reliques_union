@@ -3,14 +3,14 @@ name: Attaque puissante
 type: capacity
 img: icons/skills/melee/strike-hammer-destructive-orange.webp
 system:
-  description: "<p>Le PJ peut choisir d’utiliser <strong>1d12 en attaque\_au contact au lieu du d20</strong> habituel (il ajoute\_normalement son score d’attaque). Si une telle\_attaque est réussie, il ajoute <strong>+2d6 aux DM</strong>.</p><p>Cette\_capacité peut être utilisée avec @UUID[Item.3D6CKo3cYWxr7yJt]{Double attaque}\_ou @UUID[Item.UmW3wFpA8SQBf5Fl]{Attaque circulaire} par exemple.</p>"
-  source: ''
+  description: "<p>Le PJ peut choisir d’utiliser <strong>1d12 en attaque\_au contact au lieu du d20</strong> habituel (il ajoute\_normalement son score d’attaque). Si une telle\_attaque est réussie, il ajoute <strong>+2d6 aux DM</strong>.</p><p>Cette\_capacité peut être utilisée avec @UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.3D6CKo3cYWxr7yJt]{Double attaque}\_ou @UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.UmW3wFpA8SQBf5Fl]{Attaque circulaire} par exemple.</p>"
+  source: ""
   origin: Livre du Joueur p.124
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir un Dé Malus en attaque de contact et
     les DM supplémentaires.</p>
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   rank: 5
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.T17oGoBoDqIT59XJ
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.T17oGoBoDqIT59XJ
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -40,19 +40,19 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.T17oGoBoDqIT59XJ
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.T17oGoBoDqIT59XJ
           subtype: malusDice
           target: melee
-          value: '0'
+          value: "0"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.T17oGoBoDqIT59XJ
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.T17oGoBoDqIT59XJ
           subtype: combat
           target: damMelee
           value: 2d6
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -63,9 +63,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -73,4 +73,4 @@ _id: T17oGoBoDqIT59XJ
 ownership:
   default: 0
 sort: 0
-_key: '!items!T17oGoBoDqIT59XJ'
+_key: "!items!T17oGoBoDqIT59XJ"

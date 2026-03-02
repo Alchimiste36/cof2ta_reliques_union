@@ -4,16 +4,16 @@ type: capacity
 img: icons/skills/melee/unarmed-punch-fist-yellow-red.webp
 system:
   description: "<p>Lorsqu’il <strong>combat à mains nues</strong>, le PJ peut (s’il le souhaite) <strong>utiliser son score d’attaque à distance</strong>\_au lieu de celui d’attaque au contact. </p><p>Au rang 1\_de cette voie, il inflige <strong>[1d6 + Mod. de FOR]\_DM létaux</strong>. Ces DM passent à <strong>1d8 au rang 3</strong>\_et à <strong>1d10 au rang 5</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la valeur du dé des DM\_est augmentée d’une catégorie, jusqu’au d12\_au rang 5.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.125
-  slug: ''
+  slug: ""
   inGame: >-
     <p>La première action permet de réaliser l'attaque à Mains nues avec le
     score d'attaque de contact. La deuxième permet de réaliser l'attaque avec le
     score d'attaque à distance.</p><p>Si le PJ obtient la capacité avancée,
     modifiez sur les deux actions la valeur du champs "Dommages" des Résolutions
     par "<strong>@rang[1d8,1d8,1d10,1d10,1d12] +@for]</strong>"</p>
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   rank: 1
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.IsG15wQbsqXAygIw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
       label: Mains nues (CàC)
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -46,11 +46,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@rang[1d6,1d6,1d8,1d8,1d10] +@for'
+            formula: "@rang[1d6,1d6,1d8,1d8,1d10] +@for"
           target:
             type: single
             scope: all
@@ -59,14 +59,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.xCqRw8enoiLgjh51
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xCqRw8enoiLgjh51
       indice: 1
       label: Mains nues (Dist)
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -84,11 +84,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atd"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@rang[1d6,1d6,1d8,1d8,1d10] +@for'
+            formula: "@rang[1d6,1d6,1d8,1d8,1d10] +@for"
           target:
             type: single
             number: 0
@@ -97,7 +97,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -110,9 +110,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -120,4 +120,4 @@ _id: xCqRw8enoiLgjh51
 ownership:
   default: 0
 sort: 0
-_key: '!items!xCqRw8enoiLgjh51'
+_key: "!items!xCqRw8enoiLgjh51"

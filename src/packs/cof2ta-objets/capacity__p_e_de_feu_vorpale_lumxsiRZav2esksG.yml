@@ -5,11 +5,11 @@ img: icons/magic/fire/dagger-rune-enchant-flame-strong-orange.webp
 _id: lumxsiRZav2esksG
 system:
   description: "<p>Lorsqu'il attaque avec son\_épée de feu, le prince-démon <strong>obtient des critiques\_sur des résultats de 18 à 20</strong> et, <strong>en cas de critique</strong>, la\_victime doit réussir <strong>un test de CON difficulté 15 ou\_être décapitée !</strong> Auquel cas elle meurt…</p>"
-  source: ''
-  origin: ''
-  slug: ''
-  inGame: ''
-  subtype: ''
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: ""
+  subtype: ""
   actionType: none
   learned: false
   rank: 0
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.lumxsiRZav2esksG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.lumxsiRZav2esksG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -42,9 +42,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '23'
-            crit: '18'
-            difficulty: '@cible.def'
+            formula: "23"
+            crit: "18"
+            difficulty: "@cible.def"
           dmg:
             formula: 3d6+11+2d6
           target:
@@ -55,14 +55,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.lumxsiRZav2esksG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.lumxsiRZav2esksG
       indice: 1
       label: Si critique
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -78,7 +78,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: '15'
+          saveDifficulty: "15"
           target:
             type: single
             scope: all
@@ -87,11 +87,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - dead
-            duration: '0'
+            duration: "0"
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -108,13 +108,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!lumxsiRZav2esksG'
+_key: "!items!lumxsiRZav2esksG"

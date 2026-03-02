@@ -5,7 +5,7 @@ img: icons/weapons/polearms/spear-flared-blue.webp
 _id: rER0ZDQnEw69zFWr
 system:
   description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.157
   slug: epieu
   tags: []
@@ -49,8 +49,8 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -68,9 +68,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6 + @for
           target:
@@ -81,14 +81,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 1
       label: vs Arme naturelle
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -103,17 +103,17 @@ system:
         - predicate: isEquipped
       modifiers:
         - type: equipment
-          source: Item.rER0ZDQnEw69zFWr
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.rER0ZDQnEw69zFWr
           subtype: combat
           target: def
-          value: '2'
+          value: "2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 2
       label: vs Cible sans armure
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -131,9 +131,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 3d6
           target:
@@ -144,7 +144,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -154,13 +154,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!rER0ZDQnEw69zFWr'
+_key: "!items!rER0ZDQnEw69zFWr"

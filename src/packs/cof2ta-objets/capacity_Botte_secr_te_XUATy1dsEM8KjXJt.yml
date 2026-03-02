@@ -4,16 +4,16 @@ type: capacity
 img: icons/skills/melee/strike-dagger-skull-white.webp
 system:
   description: "<p><strong><span style=\"text-decoration:underline\">Lorsque le PJ obtient un critique</span></strong> sur une attaque au\_contact, <strong>l’attaque devient automatiquement une\_Attaque sournoise</strong>. Les effets de la capacité\_d’Attaque sournoise s’appliquent en plus\_des effets normaux du critique.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.128
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser un jet de DM de l'Attaque sournoise si
     l'attaque est un critique. <strong><span
     style="text-decoration:underline">ATTENTION :</span></strong> vous devez
     <strong>désactiver l'action Attaque sournoise</strong> avant sinon les DM
     seront prises en compte.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 5
@@ -25,10 +25,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.XUATy1dsEM8KjXJt
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.XUATy1dsEM8KjXJt
       indice: 0
       label: Si réussite critique
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -44,7 +44,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: '@rangd6'
+            formula: "@rangd6"
           target:
             type: single
             scope: all
@@ -53,7 +53,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -69,9 +69,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -79,4 +79,4 @@ _id: XUATy1dsEM8KjXJt
 ownership:
   default: 0
 sort: 0
-_key: '!items!XUATy1dsEM8KjXJt'
+_key: "!items!XUATy1dsEM8KjXJt"

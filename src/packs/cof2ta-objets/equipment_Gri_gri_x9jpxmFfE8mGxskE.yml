@@ -4,9 +4,9 @@ type: equipment
 img: icons/commodities/treasure/figurine-rabbit.webp
 system:
   description: "<p>Petit fétiche utilisé par le Mystique ayant le rang 1 de la\_@UUID[Item.X1MmVFITXBdOOShF]{Voie des Arts Primitifs} -\_@UUID[Item.9L7QEtDDdQpoXo3f]{Gri-gri}.</p><hr /><p>La prémière action permet de subir autoamtiquement 1 DM pour utiliser la première partie du Gri-gri.\_La deuxième action fait perdre 1 PV au PJ.</p><p>Ajoutez à l'action choisie la Condition \"est possédé\" pour que l'effet soit actif.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.150
-  slug: ''
+  slug: ""
   subtype: misc
   tags: []
   martialCategory: unarmed
@@ -34,10 +34,10 @@ system:
     twoHand: false
   range: null
   actions:
-    - source: Item.jjXcF9liAz6aEZeS
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.jjXcF9liAz6aEZeS
       indice: 0
       label: PV temporaire
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: l
@@ -51,7 +51,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: '-1'
+            formula: "-1"
           target:
             type: self
             number: 0
@@ -60,7 +60,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -68,10 +68,10 @@ system:
           hasAttackSuccessThreshold: false
       conditions: []
       modifiers: []
-    - source: Item.x9jpxmFfE8mGxskE
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.x9jpxmFfE8mGxskE
       indice: 1
       label: PV permanent
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -84,12 +84,12 @@ system:
         noManaCost: false
       modifiers:
         - type: equipment
-          source: Item.x9jpxmFfE8mGxskE
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.x9jpxmFfE8mGxskE
           subtype: attribute
           target: hp
-          value: '-1'
+          value: "-1"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       conditions: []
       resolvers: []
   defense: null
@@ -100,9 +100,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -111,4 +111,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: '!items!x9jpxmFfE8mGxskE'
+_key: "!items!x9jpxmFfE8mGxskE"

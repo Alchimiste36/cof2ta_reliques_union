@@ -4,9 +4,9 @@ type: capacity
 img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
 system:
   description: "<p><strong>Pendant [5 + Mod. de SAG] tours</strong>, le PJ <strong>détecte\_les créatures invisibles ou cachées à moins de\_30 mètres</strong> et <strong>perçoit si un sort de Clairvoyance</strong>\_affecte l’endroit. </p><p><strong>Aveuglé ou dans le noir, ce sort\_lui permet de voir normalement</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ peut lancer ce sort\_en action de mouvement au lieu d’une action\_d’attaque mais ne peut user de concentration\_dans ces conditions.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.134
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action activable permet d'obtenir la Vision dans le noir qui peut être
     activée dans la barre latérale de la feuille du Personnage.</p><p>Le reste
@@ -14,7 +14,7 @@ system:
     avancée, ajoutez un Temps d'action "Action de mouvement" dans l'onglet
     "Détails".</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
     faites SHIFT+CLIC sur l'action</strong></p></blockquote>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -26,10 +26,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -44,10 +44,10 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.TIEGQesrhD2yBVlP
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.TIEGQesrhD2yBVlP
           subtype: state
           target: darkvision
-          value: '30'
+          value: "30"
           apply: self
           additionalInfos: Ne pas être surpris
       resolvers: []
@@ -60,9 +60,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -70,4 +70,4 @@ _id: TSjyFxMCJFpgDD4u
 ownership:
   default: 0
 sort: 0
-_key: '!items!TSjyFxMCJFpgDD4u'
+_key: "!items!TSjyFxMCJFpgDD4u"

@@ -5,11 +5,11 @@ img: icons/tools/fishing/net-simple-brown.webp
 _id: qYHeXRciPFK5uL1d
 system:
   description: "<p>Le PJ gagne un bonus de <strong>+5 sur tous les tests\_de DEX réalisés sur un bateau ou sur d’autres\_supports mobiles</strong> (ce qui comprend les chariots,\_les cordages, les ponts de corde). </p><p>Il gagne un\_bonus de <strong>+5 sur les tous les tests relatifs à la\_natation et à la navigation</strong>.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.145
-  slug: ''
+  slug: ""
   inGame: <p>Bonus permanent aux test d'AGI, de FOR et d'INT.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.qYHeXRciPFK5uL1d
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qYHeXRciPFK5uL1d
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -39,24 +39,24 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.qYHeXRciPFK5uL1d
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qYHeXRciPFK5uL1d
           subtype: skill
           target: agi
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Sur bateau ou supports mobiles
         - type: capacity
-          source: Item.qYHeXRciPFK5uL1d
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qYHeXRciPFK5uL1d
           subtype: skill
           target: for
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Natation
         - type: capacity
-          source: Item.qYHeXRciPFK5uL1d
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qYHeXRciPFK5uL1d
           subtype: skill
           target: int
-          value: '5'
+          value: "5"
           apply: self
           additionalInfos: Navigation
       resolvers: []
@@ -69,13 +69,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!qYHeXRciPFK5uL1d'
+_key: "!items!qYHeXRciPFK5uL1d"

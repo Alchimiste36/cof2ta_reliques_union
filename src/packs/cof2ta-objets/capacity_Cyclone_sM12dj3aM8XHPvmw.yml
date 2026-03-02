@@ -5,11 +5,11 @@ img: icons/magic/air/wind-tornado-cyclone-white.webp
 _id: sM12dj3aM8XHPvmw
 system:
   description: "<p><strong>Une fois par combat</strong>, un élémentaire peut se transformer en tourbillon de\_matière élémentaire. <strong>Pendant [1d4+1] tours</strong>,\_il peut se déplacer à travers les créatures et\_les objets à <strong>la vitesse de 30 mètres par tour</strong>.\_</p><p>Toute créature sur son passage doit faire au\_choix un <strong>test de DEX ou de FOR de difficulté\_[10 + Mod. de FOR] de l'élémentaire</strong>. En cas\_d'échec, la cible <strong>subit automatiquement\_les DM de base</strong> de l'élémentaire (selon la\_taille) et elle est <strong>renversée au sol</strong> (si sa taille\_ne dépasse pas celle de l'élémentaire). </p><p>En cas de succès, elle ne <strong>subit que la moitié\_des DM</strong> et peut rester debout. </p><p>Lorsqu'il est\_sous forme de cyclone, l'élémentaire gagne\_un <strong>bonus de +5 en DEF</strong>.</p>"
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: "<p>La première action permet d'obtenir le bonus de DEF et de déplacement et d'afficher les deux autres actions tant que celle-ci est activée.</p><p>Les deux actions suivantes permettent de réaliser les tests de sauvegarde avec la FOR ou l'AGI.\_</p><p>La dernière action permet de jeter uniquement les DM de l'attaque et de les appliquer entièrement ou à moitié en fonction du résultat du test de sauvegarde.</p>"
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 0
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.sM12dj3aM8XHPvmw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
       indice: 0
       label: Tranformation
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,24 +41,24 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.sM12dj3aM8XHPvmw
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.sM12dj3aM8XHPvmw
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
           subtype: attribute
           target: mov
-          value: '20'
+          value: "20"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
-    - source: Item.sM12dj3aM8XHPvmw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
       indice: 1
       label: Sauvegarde FOR
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -72,11 +72,11 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       resolvers:
         - type: save
           saveAbility: for
-          saveDifficulty: '9'
+          saveDifficulty: "9"
           target:
             type: single
             scope: all
@@ -85,11 +85,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -97,10 +97,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.sM12dj3aM8XHPvmw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
       indice: 2
       label: Sauvegarde DEX
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -114,11 +114,11 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '9'
+          saveDifficulty: "9"
           target:
             type: single
             scope: all
@@ -127,11 +127,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses:
               - overturned
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -139,10 +139,10 @@ system:
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.sM12dj3aM8XHPvmw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.sM12dj3aM8XHPvmw
       indice: 3
       label: DM de l'attaque
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -156,7 +156,7 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       resolvers:
         - type: auto
           dmg:
@@ -169,7 +169,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -185,13 +185,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!sM12dj3aM8XHPvmw'
+_key: "!items!sM12dj3aM8XHPvmw"

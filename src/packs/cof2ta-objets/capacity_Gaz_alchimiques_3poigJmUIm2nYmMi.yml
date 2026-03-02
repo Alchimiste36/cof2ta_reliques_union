@@ -5,14 +5,14 @@ img: icons/consumables/potions/bottle-conical-fumes-green.webp
 _id: 3poigJmUIm2nYmMi
 system:
   description: "<p>Le guérisseur dispose\_de fioles pleines d'un gaz nocif qu'il peut lancer\_sur le champ de bataille jusqu'à <strong>une portée de\_10 mètres</strong> pour empoisonner les cibles prises dans\_<strong>un nuage de 4 mètres de diamètre</strong>. </p><p>Chaque tour\_qu'une victime passe dans le gaz l'oblige à réussir\_un test de <strong>CON difficulté [12 + bonus universel] ou\_à subir 5 DM et être affaiblie pendant 1d4 tours</strong>. </p><p>Le nuage persiste pendant 1d4 tours – un vent\_violent le disperse cependant immédiatement.</p>"
-  source: ''
+  source: ""
   origin: Livre du meneur p150
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer un effet
     périodique sur la cible qui subira 5 DM et le statut Affaibli pendant 1d4
     rounds en cas d'échec.</p>
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 3
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.3poigJmUIm2nYmMi
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.3poigJmUIm2nYmMi
       indice: 0
       label: 4m de diamètre
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -52,8 +52,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: '5'
-            elementType: ''
+            formula: "5"
+            elementType: ""
             statuses:
               - weakened
             duration: 1d4
@@ -73,13 +73,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!3poigJmUIm2nYmMi'
+_key: "!items!3poigJmUIm2nYmMi"

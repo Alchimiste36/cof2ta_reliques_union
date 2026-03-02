@@ -5,11 +5,11 @@ img: icons/consumables/potions/potion-jar-corked-glowing-blue.webp
 _id: KQBxuHgUEMNEFqAG
 system:
   description: "<p>Un breuvage étrange qui <strong>guérit [1d4 + rang] PV</strong>\_et permet de gagner un bonus de <strong>+3 aux [rang\_+ 1] prochains tests effectués</strong> (dans une limite\_de temps de 12 heures).</p><p>Boire un fortifiant\_nécessite une action de mouvement.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ dispose de deux fortifiants en plus des élixirs qu’il peut normalement\_préparer chaque jour.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.132
-  slug: ''
+  slug: ""
   inGame: "<p>La première action permet de réaliser le Soin sur une cible unique.</p><p>La deuxième action activable permet d'obtenir le bonus de +3 à tous les tests. Le nombre de tests effectué est à gérer manuellement.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">ATTENTION :</span></strong></span> Les Elixirs dépendent des statistiques de d'Alchimiste. Si le PJ décide de confier ses élixirs à une autre personne, c'est tout de même l'Alchimiste qui devra faire l'action.\_Vous pouvez aussi utiliser l'Équipement :\_@UUID[Item.PEDCC9tvuGudKqoD]{Fiole de Fortifiant}</p></blockquote>"
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -21,10 +21,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -49,17 +49,17 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.KQBxuHgUEMNEFqAG
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 1
       label: Bonus aux tests
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -74,33 +74,33 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.KQBxuHgUEMNEFqAG
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
           subtype: skill
           target: all
-          value: '3'
+          value: "3"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.KQBxuHgUEMNEFqAG
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
           subtype: combat
           target: melee
-          value: '3'
+          value: "3"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.KQBxuHgUEMNEFqAG
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
           subtype: combat
           target: ranged
-          value: '3'
+          value: "3"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
-          source: Item.KQBxuHgUEMNEFqAG
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
           subtype: combat
           target: magic
-          value: '3'
+          value: "3"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -111,13 +111,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: '!items!KQBxuHgUEMNEFqAG'
+_key: "!items!KQBxuHgUEMNEFqAG"

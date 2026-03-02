@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/melee/blade-tip-acid-poison-green.webp
 system:
   description: "<p>Le PJ sait fabriquer du poison «rapide» en petite\_quantité. Avant chaque combat, ses armes (trois\_au maximum) sont enduites de ce poison.</p><p><strong>La\_première attaque réussie provoque 2d6 DM\_supplémentaires</strong>.</p><p>Si la victime réussit un test\_de <strong>CON difficulté [10 + rang dans la voie]</strong>, elle\_ne subit que la moitié des DM de poison.</p><p>Les\_DM du poison rapide passent à <strong>3d6 au rang\_4</strong> de la voie.</p>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.146
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action permet de jeter les DM de poison.</p><p>Le test de CON pour
     résister est à gérer manuellement.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -22,10 +22,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.LoCOyY1titfiPqzZ
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LoCOyY1titfiPqzZ
       indice: 0
       label: Première attaque réussie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -41,7 +41,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: '@rang[0,2,2,3,3]d6'
+            formula: "@rang[0,2,2,3,3]d6"
           target:
             type: single
             scope: all
@@ -50,7 +50,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -66,9 +66,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -76,4 +76,4 @@ _id: LoCOyY1titfiPqzZ
 ownership:
   default: 0
 sort: 0
-_key: '!items!LoCOyY1titfiPqzZ'
+_key: "!items!LoCOyY1titfiPqzZ"

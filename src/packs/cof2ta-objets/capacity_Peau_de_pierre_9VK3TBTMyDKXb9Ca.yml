@@ -4,14 +4,14 @@ type: capacity
 img: icons/magic/defensive/armor-stone-skin.webp
 system:
   description: "<p>Le PJ est particulièrement endurci, il reçoit un\_<strong>bonus de DEF égal à son Mod. de CON</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF passe à\_[Mod. de CON +1].</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.125
-  slug: ''
+  slug: ""
   inGame: >-
     <p>Bonus permanent en DEF.</p><p>Si le PJ obtient la capacité avancée,
     remplacer la valeur du Modificateur de l'action par "<strong>@con
     +1</strong>".</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -23,10 +23,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.IsG15wQbsqXAygIw
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,12 +41,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.9VK3TBTMyDKXb9Ca
+          source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.9VK3TBTMyDKXb9Ca
           subtype: combat
           target: def
-          value: '@con'
+          value: "@con"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -57,9 +57,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -67,4 +67,4 @@ _id: 9VK3TBTMyDKXb9Ca
 ownership:
   default: 0
 sort: 0
-_key: '!items!9VK3TBTMyDKXb9Ca'
+_key: "!items!9VK3TBTMyDKXb9Ca"

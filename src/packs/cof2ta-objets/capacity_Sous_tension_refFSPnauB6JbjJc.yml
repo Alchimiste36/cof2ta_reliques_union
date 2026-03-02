@@ -4,15 +4,15 @@ type: capacity
 img: icons/magic/lightning/bolts-forked-large-blue.webp
 system:
   description: "<p>Le PJ <strong>se charge d’énergie électrique pour [5 +\_Mod. de SAG] tours</strong>. </p><p><strong>Toute créature qui le blesse\_au contact ou le touche reçoit une décharge\_infligeant 1d6 DM.</strong></p><p> Il peut également <strong>délivrer une\_décharge électrique</strong> (attaque magique, portée:\_10 m) infligeant <strong>[1d6 + Mod. d’INT] DM</strong>. </p><p>Au\_rang 4 de cette voie, les DM passent à 2d6.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> en doublant le coût en PM,\_le PJ peut lancer le sort immédiatement au moment où il est attaqué. Il ne doit pas être surpris\_pour cela et ne peut user de concentration.</p></blockquote>"
-  source: ''
+  source: ""
   origin: Livre du Joueur p.136
-  slug: ''
+  slug: ""
   inGame: >-
     <p>L'action "Activer le sort" permet de dépenser les PM et d'afficher les
     deux autres actions.</p><p>L'action "DM si touché" permet de jeter les DM si
     le PJ se fait toucher (sans dépenser le PM).</p><p>L'action "Décharge
     électrique" permet de réaliser l'attaque magique.</p>
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 2
@@ -24,10 +24,10 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.refFSPnauB6JbjJc
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.refFSPnauB6JbjJc
       indice: 0
       label: DM si touché
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -41,7 +41,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '2'
+          object: "2"
       resolvers:
         - type: auto
           dmg:
@@ -54,17 +54,17 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.refFSPnauB6JbjJc
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.refFSPnauB6JbjJc
       indice: 1
       label: Décharge électrique
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -78,17 +78,17 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '2'
+          object: "2"
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@rang[0,1,1,2,2]d6 + @int'
+            formula: "@rang[0,1,1,2,2]d6 + @int"
           target:
             type: single
             scope: all
@@ -97,14 +97,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
-    - source: Item.refFSPnauB6JbjJc
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.refFSPnauB6JbjJc
       indice: 2
       label: Activer le Sort
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -128,9 +128,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -138,4 +138,4 @@ _id: refFSPnauB6JbjJc
 ownership:
   default: 0
 sort: 0
-_key: '!items!refFSPnauB6JbjJc'
+_key: "!items!refFSPnauB6JbjJc"
