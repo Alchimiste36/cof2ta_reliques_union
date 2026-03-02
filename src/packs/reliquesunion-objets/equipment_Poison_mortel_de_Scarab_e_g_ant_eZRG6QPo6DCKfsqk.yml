@@ -1,0 +1,138 @@
+folder: vFuXmcEF5PVXiohE
+name: Poison mortel de Scarabée géant
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/consommables/potion_22.webp
+_id: eZRG6QPo6DCKfsqk
+system:
+  description: >-
+    <p>Chaque dose correspond à environ 30cl de liquide visqueux. La projection
+    d’une dose de poison sur la peau d’un individu inflige 8d6 DM (la moitié si
+    @Test[car:con|diff:10|comp:Résistance au poison] réussi). </p><p>La cible
+    reçoit 1d6 DM par tour à partir de l’empoisonnement.</p><p> Les DM sont
+    cumulables si la cible est mise en contact avec une nouvelle dose.</p>
+  source: ""
+  origin: ""
+  slug: ""
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ""
+  quantity:
+    current: 4
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 120
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Compendium.world.reliquesunion-objets.Item.eZRG6QPo6DCKfsqk
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: ""
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: 1d6
+            elementType: poison
+            statuses: []
+            duration: "8"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Compendium.world.reliquesunion-objets.Item.eZRG6QPo6DCKfsqk
+      indice: 1
+      label: Résister au poison
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: "10"
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveSuccess
+            formulaType: damage
+            formula: 1d6/2
+            elementType: poison
+            statuses: []
+            duration: "8"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772482139644
+  modifiedTime: 1772482374204
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: "!items!eZRG6QPo6DCKfsqk"

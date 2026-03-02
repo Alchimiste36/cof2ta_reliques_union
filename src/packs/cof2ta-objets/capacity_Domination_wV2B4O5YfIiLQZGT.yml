@@ -1,0 +1,85 @@
+folder: 1vOwdMVxwTj93J9X
+name: Domination
+type: capacity
+img: icons/magic/control/control-influence-puppet.webp
+system:
+  description: "<p>En réussissant <strong>un test d’attaque magique</strong>\_(portée: 20 m) <strong>en opposition contre un test\_d’attaque magique</strong> de la cible (si la créature\_n’a pas d’attaque magique, on utilise alors son\_attaque au contact en appliquant un malus\_de -3), le PJ <strong>prend contrôle de son esprit pendant [1d4 + Mod. de SAG] minutes</strong>.\_Son propre\_corps devient inactif.</p><p>La victime peut <strong>résister au\_sort avec un test de SAG difficulté [10 + Mod.\_d’INT]</strong> à chaque fois qu’elle subit des DM.</p><p>Si\_la créature meurt pendant la domination, le PJ\_réintègre son corps et subit 1d6 DM.</p>"
+  source: ''
+  origin: Livre du Joueur p.135
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser l'attaque magique opposée. La durée et les
+    effets du sorts sont à interpréter par le MJ.</p><blockquote><p><strong>Note
+    : Pour utiliser la "concentration" faites SHIFT+CLIC sur
+    l'action</strong></p></blockquote><p></p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ieW6S8n9EhxMRQkt
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: wV2B4O5YfIiLQZGT
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!wV2B4O5YfIiLQZGT'

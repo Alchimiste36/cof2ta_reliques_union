@@ -1,0 +1,151 @@
+folder: fkaQ5zi2WGOp22kb
+name: Dague +1 de glace
+type: equipment
+img: >-
+  icons/weapons/daggers/dagger-double-red.webp
+system:
+  description: >-
+    <p>Une dague <span class="hgKElc">est un couteau court à lame pointue
+    utilisé comme arme de perforation.</span></p><p><span class="hgKElc">Il
+    s'agit d'une arme "légère" ce qui permet à certains profils d'utiliser
+    l'agilité à la place e la force pour la manier.</span></p><p><span
+    class="hgKElc"><strong>Arrme légère</strong></span></p><hr /><p><strong>Arme
+    magique de Centaure - Poauau</strong></p><ul><li><p>Bonus de +1 en Attaque
+    et aux DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li></ul>
+  source: ""
+  origin: Livre du Joueur p.157
+  slug: dague
+  tags:
+    - legere
+  subtype: weapon
+  martialCategory: dagger
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 550
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Actor.0V16m2pDnY3utxtw.Item.xg338a5jkQUPaAlC
+      indice: 0
+      label: Contact
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc +1"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d4 + @for +1d4° +1
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+    - source: Actor.0V16m2pDnY3utxtw.Item.xg338a5jkQUPaAlC
+      indice: 1
+      label: Distance
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atd +1"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d4 +1d4° +1
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+  range:
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772230320177
+  modifiedTime: 1772230320177
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: IFtVyYbTWiJwMkwi
+sort: 0
+_key: "!items!IFtVyYbTWiJwMkwi"

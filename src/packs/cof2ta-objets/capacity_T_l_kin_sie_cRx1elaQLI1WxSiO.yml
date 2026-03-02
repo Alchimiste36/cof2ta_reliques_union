@@ -1,0 +1,80 @@
+folder: uvHtoSiBBvs1nfqu
+name: Télékinésie
+type: capacity
+img: icons/magic/earth/projectiles-fire-stone-salvo.webp
+_id: cRx1elaQLI1WxSiO
+system:
+  description: "<p>Le fantôme peut déplacer les\_objets par sa force psychique. </p><p>Il peut <strong>soulever\_une masse allant jusqu'à environ 200 kg ou\_plusieurs petits objets</strong>. </p><p>S'il projette ces objets\_sur une cible en réussissant <strong>un test d'attaque\_(+10)</strong>, il inflige jusqu'à <strong>3d6+1 DM à une distance\_maximale de 20 mètres</strong>.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>L'action permet de réaliser l'attaque.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.cRx1elaQLI1WxSiO
+      indice: 0
+      label: portée 10m
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '10'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 3d6+1
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!cRx1elaQLI1WxSiO'

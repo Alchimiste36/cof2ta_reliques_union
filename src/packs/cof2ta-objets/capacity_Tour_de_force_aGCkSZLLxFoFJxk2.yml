@@ -1,0 +1,133 @@
+folder: lVzsmxyYnGl3mGnJ
+name: Tour de force
+type: capacity
+img: icons/skills/movement/arrow-upward-yellow.webp
+system:
+  description: "<p>Le PJ peut temporairement décupler ses ressources physiques pour faire usage d’une force\_prodigieuse. Il peut ainsi soulever une charge\_incroyable, briser une épée, tordre des barreaux\_ou défoncer une porte d’un seul coup de poing.\_</p><p>Il obtient un bonus de <strong>+10 à son test de FOR,</strong>\_<strong>mais cela lui coûte 1d4 PV.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> une fois par combat, le PJ\_peut asséner un coup d’une violence incroyable.\_Il gagne un bonus de 2d6 DM mais cela lui\_coûte 2d4 PV.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.125
+  slug: ''
+  inGame: >-
+    <p>La première action activable permet de jeter le jet de DM au moment où
+    l'amélioration est activée et donne le bonus aux jets de FOR tant que
+    l'action reste activée.</p><p>Si le PJ obtient la capacité avancée, ajoutez
+    sur la deuxième action la Condition "est appris" et ajouter dans l'onglet
+    "Détails" une fréquence Combat 1/1. Cette action activable permet de lancer
+    le jet de DM et d'ajouter le Bonus au DM en cas de coup violent.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.IsG15wQbsqXAygIw
+      indice: 0
+      label: Décupler sa force
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.xcZmDYv8YY56H05S
+          subtype: skill
+          target: for
+          value: '10'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: heal
+          skill:
+            formula: '-1d4'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: Item.xcZmDYv8YY56H05S
+      indice: 1
+      label: Coup violent
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.xcZmDYv8YY56H05S
+          subtype: combat
+          target: damMelee
+          value: 2d6
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: heal
+          skill:
+            formula: '-2d4'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      conditions: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: aGCkSZLLxFoFJxk2
+ownership:
+  default: 0
+sort: 0
+_key: '!items!aGCkSZLLxFoFJxk2'

@@ -1,0 +1,95 @@
+type: equipment
+system:
+  subtype: consumable
+  description: "<p>En brisant cette bombe au sol, un flash de lumière\_aveuglante s’active. Toutes les personnes qui regardent dans cette direction\_doivent faire AGI 20 (pour tourner la tête à temps) ou être aveuglé pendant 2d4 rounds.</p>"
+  source: ""
+  origin: ""
+  slug: ""
+  tags: []
+  martialCategory: ""
+  damagetype: ""
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 60
+    unit: pa
+  rarity: precious
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Actor.FJMtWtydebKWXYF0.Item.NKze5H9WnUgeZlfo
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: "20"
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ""
+            elementType: ""
+            statuses:
+              - blind
+            duration: 2d4
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+name: Bombe aveuglante
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/toile_vivante_bombe_aveuglante.webp
+effects: []
+folder: t6PsV2zwjMMnlBGz
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1770780504729
+  modifiedTime: 1772238224276
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: UH1AHJhg8H2QmGvp
+sort: 600000
+_key: "!items!UH1AHJhg8H2QmGvp"

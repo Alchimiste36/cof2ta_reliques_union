@@ -1,0 +1,465 @@
+folder: G2yuu7LVCS3wnDO7
+name: Jargal alpha
+type: encounter
+img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha.webp
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: true
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -4
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 3
+    hp:
+      base: 16
+      value: 16
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 24
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 16
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: living
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: "<p>Ce profil convient à tous les félins de taille\_moyenne comme le léopard, le jaguar, le jargal\_ou le jewghar.</p>"
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Jargal alpha
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - folder: ds9TVmAEZY0LnDG1
+    name: Morsure et griffes
+    type: attack
+    img: icons/svg/sword.svg
+    _id: 5xO5UUB3oc47LJNC
+    system:
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: melee
+      learned: false
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Item.hSqnqxu1HyiuXCTs
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "9"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d6+1
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    sort: 150000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!WCu3Gc7MqIh569ye.5xO5UUB3oc47LJNC"
+  - folder: uvHtoSiBBvs1nfqu
+    name: Embuscade
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    _id: siqjOqO2FoAQAxbK
+    system:
+      description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>La première action permet d'obtenir le bonus permanent pour les tests
+        de compétence.</p><p>La deuxième action réalise un test de sauvegarde
+        contre une cible.</p><p>La troisième peut être activée pour obtenir les
+        DM supplémentaire face à une cible surprise.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
+              subtype: skill
+              target: agi
+              value: "5"
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+        - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
+          indice: 1
+          label: Au premier tour
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: 15+@agi
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - surprised
+                duration: "1"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
+          indice: 2
+          label: Sur cible surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!WCu3Gc7MqIh569ye.siqjOqO2FoAQAxbK"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: WCu3Gc7MqIh569ye
+ownership:
+  default: 0
+sort: 0
+_key: "!actors!WCu3Gc7MqIh569ye"

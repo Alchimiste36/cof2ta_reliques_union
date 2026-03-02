@@ -1,0 +1,186 @@
+folder: Xr4lKI9brFJ7NkYl
+name: Tatouage Rituel
+type: capacity
+img: >-
+  icons/tools/scribal/pen-steel-grey-brown.webp
+_id: YY7ByHpSAkuVx8j2
+system:
+  description: "<p>Lorsqu'il devient un réel guerrier du Village, le Centaure obtient un tatouage rituel particulièrement important pour lui. Réel symbole de sa place dans le clan, la cérémonie du Tatouage est très importante pour le Centaure.</p><p>Il peut se le faire lui-même, même si souvent un être cher (conjoint, parent, enfant...) réalise le tatouage. Il faut environ 5 heures pour réaliser le Tatouage Rituel.</p><p>\_</p><p>Le Centaure peut choisir entre :\_</p><ul><li><strong>Centaure =&gt;</strong> Gagne un Rang dans la Voie du Peuple du Centaure</li><li><strong>Guérison =&gt;</strong> Gagne une régénération magique de 2PV/rnd</li><li><strong>Peau Epaisse =&gt;</strong> Gagne DEF+3 et RD 3</li><li><strong>Chanceux =&gt;</strong> Gagne +2 points de Chance</li><li><strong>Force =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 FORCE pendant 1d4 heures</li><li><strong>Présence =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 CHARISME pendant 1d4 heures</li><li><strong>Appel du Clan =&gt;</strong> La réputation du Centaure est incroyable. Au bout de quelques temps, des suivants viennent rejoindre le Centaure et l'aider dans ses objectifs. Le Centaure gagne des compagnons d'arme. Répartissez [NIV*2 du Centaure] parmis les suivants pour estimer leur niveau (aucun suivant ne peut avoir plus que NIV-2 du Centaure)</li></ul>"
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: >-
+    <p>Les 5 actions permettent d'obtenir les effets des tatouages guérison,
+    peau épaisse, chanceux, force ou présence. Pour activer un effet, ajoutez la
+    condition "est appris" sur l'action choisie.</p><p>Lors de l'apprentissage,
+    cette capacité donne droit à une capacité liée pour l'effet de la capacité
+    de rang 2. Glissez-déposez la capacité choisie sous cette capacité.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.YY7ByHpSAkuVx8j2
+      indice: 0
+      label: Guérison
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      resolvers:
+        - type: heal
+          skill:
+            formula: "2"
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      conditions: []
+      modifiers: []
+    - source: Item.YY7ByHpSAkuVx8j2
+      indice: 1
+      label: Peau épaisse
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.YY7ByHpSAkuVx8j2
+          subtype: combat
+          target: def
+          value: "3"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.YY7ByHpSAkuVx8j2
+          subtype: combat
+          target: dr
+          value: "3"
+          apply: self
+          additionalInfos: ""
+      conditions: []
+      resolvers: []
+    - source: Item.YY7ByHpSAkuVx8j2
+      indice: 2
+      label: Chanceux
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.YY7ByHpSAkuVx8j2
+          subtype: resource
+          target: fp
+          value: "2"
+          apply: self
+          additionalInfos: ""
+      conditions: []
+      resolvers: []
+    - source: Item.YY7ByHpSAkuVx8j2
+      indice: 3
+      label: Force
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.YY7ByHpSAkuVx8j2
+          subtype: ability
+          target: for
+          value: "4"
+          apply: self
+          additionalInfos: ""
+      conditions: []
+      resolvers: []
+    - source: Item.YY7ByHpSAkuVx8j2
+      indice: 4
+      label: Présence
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Item.YY7ByHpSAkuVx8j2
+          subtype: ability
+          target: cha
+          value: "4"
+          apply: self
+          additionalInfos: ""
+      conditions: []
+      resolvers: []
+  allowLinkedCapacity: true
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769993459159
+  modifiedTime: 1769993459159
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!YY7ByHpSAkuVx8j2"

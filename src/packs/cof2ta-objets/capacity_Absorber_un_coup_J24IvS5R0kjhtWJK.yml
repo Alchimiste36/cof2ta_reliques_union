@@ -1,0 +1,123 @@
+folder: se1EEoFGNDmypq01
+name: Absorber un coup
+type: capacity
+img: icons/skills/melee/shield-block-gray-yellow.webp
+system:
+  description: "<p>Lors de son tour, le PJ fait seulement une action\_d’attaque ou de déplacement. </p><p>Par la suite, à\_tout moment avant son prochain tour, le PJ\_peut effectuer <strong>un test d’attaque au contact en\_opposition à un test réussi d’attaque au contact\_ou à distance</strong> d’un adversaire. En cas de réussite,\_<strong>l’attaque adverse est bloquée</strong> par le bouclier.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le test pour bloquer l’attaque\_bénéficie d’un bonus de +2.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.120
+  slug: ''
+  inGame: >-
+    <p>La première action permet d'effectuer le test en opposition contre une
+    attaque de Contact et la deuxième action contre une attaque à
+    Distance.</p><p><strong>Si le PJ obtient la capacité avancée</strong>,
+    remplacer "@atc" dans le champs "Formule de compétence" par "@atc +2" dans
+    la Résolution des deux actions.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.PMmwzPWrrEgcCMkH
+      indice: 0
+      label: Test contre Contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@oppose.atc'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.J24IvS5R0kjhtWJK
+      indice: 1
+      label: Test contre Distance
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@oppose.atd'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: J24IvS5R0kjhtWJK
+ownership:
+  default: 0
+sort: 0
+_key: '!items!J24IvS5R0kjhtWJK'

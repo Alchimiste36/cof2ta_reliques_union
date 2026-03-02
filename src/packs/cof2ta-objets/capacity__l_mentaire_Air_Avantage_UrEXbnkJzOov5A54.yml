@@ -1,0 +1,81 @@
+folder: uvHtoSiBBvs1nfqu
+name: Élémentaire Air Avantage
+type: capacity
+img: icons/magic/air/wind-swirl-gray-blue.webp
+_id: UrEXbnkJzOov5A54
+system:
+  description: "<p>L'élémentaire d'air obtient un\_<strong>bonus de +3 en initiative</strong> et à <strong>tous les tests de\_DEX</strong>. </p><p>Il peut se déplacer <strong>en vol de 30 mètres\_par action de mouvement</strong>.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>L'action permet d'obtenir les bonus permanent.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.UrEXbnkJzOov5A54
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.UrEXbnkJzOov5A54
+          subtype: combat
+          target: init
+          value: '3'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.UrEXbnkJzOov5A54
+          subtype: skill
+          target: agi
+          value: '3'
+          apply: self
+          additionalInfos: Tous les tests d'AGI
+        - type: capacity
+          source: Item.UrEXbnkJzOov5A54
+          subtype: attribute
+          target: mov
+          value: '10'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!UrEXbnkJzOov5A54'

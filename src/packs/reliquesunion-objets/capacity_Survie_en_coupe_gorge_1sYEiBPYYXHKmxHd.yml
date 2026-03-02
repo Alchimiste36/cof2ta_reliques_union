@@ -1,0 +1,76 @@
+folder: qekQTvOQw99SYnLZ
+name: Survie en coupe-gorge
+type: capacity
+img: >-
+  icons/environment/settlement/blacksmith.webp
+_id: 1sYEiBPYYXHKmxHd
+system:
+  description: "<p>Le personnage gagne <strong>+3 aux tests de PER pour\_s’orienter et éviter les embuscades en ville</strong> et un\_bonus de <strong>+3 aux tests de CHA pour parlementer\_avec des gangs ou des gardes</strong>.</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p172
+  slug: ""
+  inGame: <p>Bonus aux jets de compétences.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.1sYEiBPYYXHKmxHd
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.1sYEiBPYYXHKmxHd
+          subtype: ability
+          target: per
+          value: "0"
+          apply: self
+          additionalInfos: S'orienter et éviter les embuscades en ville
+        - type: capacity
+          source: Item.1sYEiBPYYXHKmxHd
+          subtype: ability
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: Parlementer avec gangs et gardes
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1770076929664
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 100000
+_key: "!items!1sYEiBPYYXHKmxHd"

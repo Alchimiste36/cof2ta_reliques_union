@@ -1,0 +1,106 @@
+folder: p1DwCP2iRVmyjZot
+name: Ennemis jurés
+type: capacity
+img: icons/skills/targeting/target-strike-triple-blue.webp
+system:
+  description: "<p><strong><span style=\"text-decoration:underline\">Après avoir tué une créature</span></strong>, le PJ peut décider\_que tous ceux de sa race sont devenus des\_ennemis jurés. </p><p>Contre ces créatures, il bénéficie\_désormais d’un bonus égal à son Mod. de <strong>SAG\_pour ses attaques et il inflige +1d6 de DM</strong>. </p><p>Au\_niveau 8, Il peut choisir un second ennemi juré.\_Le PJ peut changer d’ennemi juré une fois au\_cours de chaque niveau.</p>"
+  source: ''
+  origin: Livre du Joueur p.130
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir le bonus de PER en attaque et aux DM
+    de contact, de distance et magique. Le PJ note l'ennemi juré dans le label
+    de l'action.</p><p>Au niveau 8, notez le nouvel ennemi juré dans le
+    label.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: VS [ennemi juré]
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.SAKiTsMTNYkvjc2L
+          subtype: combat
+          target: melee
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SAKiTsMTNYkvjc2L
+          subtype: combat
+          target: ranged
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WYpvSOVE5KESQY1L
+          subtype: combat
+          target: magic
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WYpvSOVE5KESQY1L
+          subtype: combat
+          target: damMelee
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WYpvSOVE5KESQY1L
+          subtype: combat
+          target: damRanged
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WYpvSOVE5KESQY1L
+          subtype: combat
+          target: damMagic
+          value: '@per'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: WYpvSOVE5KESQY1L
+ownership:
+  default: 0
+sort: 0
+_key: '!items!WYpvSOVE5KESQY1L'

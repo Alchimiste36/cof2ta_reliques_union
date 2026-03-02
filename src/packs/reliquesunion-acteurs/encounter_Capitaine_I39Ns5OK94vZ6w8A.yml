@@ -1,0 +1,730 @@
+folder: EVXi0nn3lQTYPuEX
+name: Capitaine
+type: encounter
+img: icons/environment/people/cavalry.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    hp:
+      base: 50
+      value: 50
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    nc: 4
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 18
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  pasteData: ""
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: "<p>Des villages et zones rurales aux grandes cités, il existe un éventail de personnes chargées de protéger la population et (parfois surtout) les dirigeants, avec des compétences variables. </p><p> </p><p> </p><p>Le capitaine est un officier qui a gravi les échelons grâce à ses compétences ou qui est bien né\_et a profité des meilleurs mentors et du meilleur\_équipement possible.</p>"
+    languages: []
+    properties: ""
+  magic: 0
+  currentEffects: []
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Capitaine
+  displayName: 20
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/villageois_gardes/gardes/with-shadows-CityGuard8.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    healthEstimate:
+      dontMarkDead: false
+      hideHealthEstimate: false
+      hideName: false
+    item-piles:
+      data: {}
+      version: 3.2.31
+  randomImg: false
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Epée longue
+    type: attack
+    img: icons/svg/sword.svg
+    _id: hDzw2J7X2nrzSeR1
+    system:
+      description: <p>Peut faire 2 attaques</p>
+      source: ""
+      origin: ""
+      slug: epee-longue
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        reloadable: false
+      actions:
+        - source: Item.gYOLAy4GiiA9Wbmy
+          indice: 0
+          label: Epée longue
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+8"
+                crit: "20"
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8+3
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: Item.gYOLAy4GiiA9Wbmy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!I39Ns5OK94vZ6w8A.hDzw2J7X2nrzSeR1"
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée longue
+    type: equipment
+    img: >-
+      icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: 823JFLggxljw58dv
+    system:
+      description: ""
+      source: ""
+      origin: ""
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 6
+        unit: ""
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ""
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 103125
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!I39Ns5OK94vZ6w8A.823JFLggxljw58dv"
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: >-
+      icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: GjHLz2ZsfT8d9dAf
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.I39Ns5OK94vZ6w8A.Item.GjHLz2ZsfT8d9dAf
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.GjHLz2ZsfT8d9dAf
+              subtype: combat
+              target: melee
+              apply: others
+              value: "5"
+              additionalInfos: ""
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses: []
+                duration: "1"
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          actionType: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ""
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!I39Ns5OK94vZ6w8A.GjHLz2ZsfT8d9dAf"
+  - folder: Jc9oocmI3B4cVSRG
+    name: Riposte
+    type: capacity
+    img: >-
+      icons/skills/melee/strikes-sword-triple-gray.webp
+    system:
+      description: >-
+        <p>La créature peut effectuer une attaque en action gratuite contre
+        chaque adversaire qui l’attaque à l’exception de celui qu’elle a
+        elle‑même choisi d’attaquer à son tour.</p>
+      source: ""
+      origin: ""
+      slug: riposte
+      subtype: ""
+      actionType: f
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      inGame: ""
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.addk9BEF9brGSohY
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: PBpCK3rkaaJSf39d
+    sort: 8000000
+    ownership:
+      default: 0
+    _key: "!actors.items!I39Ns5OK94vZ6w8A.PBpCK3rkaaJSf39d"
+  - folder: Jc9oocmI3B4cVSRG
+    name: Capitaine
+    type: capacity
+    img: >-
+      icons/environment/people/infantry-armored.webp
+    system:
+      description: >-
+        <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
+        à toutes les créatures sous ses ordres à portée de vue.</p>
+      source: ""
+      origin: ""
+      slug: capitaine
+      subtype: ""
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+          indice: 0
+          label: Au alliés sous ses ordres
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: init
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: melee
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: ranged
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: magic
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: damMelee
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: damRanged
+              value: "2"
+              apply: others
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.I39Ns5OK94vZ6w8A.Item.0oEuPFEjPTE3veqt
+              subtype: combat
+              target: damMagic
+              value: "2"
+              apply: others
+              additionalInfos: ""
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses: []
+                duration: "1"
+                unit: combat
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+      manaCost: -1
+      inGame: >-
+        <p>L'action permet d'appliquer les bonus aux cibles. L'effet dure 20
+        rounds et fonctionne uniquement en mode Combat.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: 0oEuPFEjPTE3veqt
+    sort: 9000000
+    ownership:
+      default: 0
+    _key: "!actors.items!I39Ns5OK94vZ6w8A.0oEuPFEjPTE3veqt"
+effects: []
+flags:
+  item-piles:
+    data: {}
+    version: 3.2.31
+_stats:
+  compendiumSource: Compendium.cof2-base.cof-2-base-encounter.Actor.gbjrLxI0U16dVlQo
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772238507682
+  modifiedTime: 1772238507682
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: I39Ns5OK94vZ6w8A
+sort: 100000
+_key: "!actors!I39Ns5OK94vZ6w8A"

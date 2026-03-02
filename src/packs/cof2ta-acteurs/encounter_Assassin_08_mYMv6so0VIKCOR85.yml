@@ -1,0 +1,1402 @@
+folder: ToWEBanPgoyovfSy
+name: Assassin 08
+type: encounter
+img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_aventuriers/8assassin_elfe.webp
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 8
+    hp:
+      base: 86
+      value: 86
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 18
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 24
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: ""
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Assassin 8
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_aventuriers/8assassin_elfe_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.1nxrgnMvfxGscNr7
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+13"
+                crit: "19"
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6+8
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Rapière
+    img: icons/svg/sword.svg
+    _id: 1nxrgnMvfxGscNr7
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.1nxrgnMvfxGscNr7"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 30
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.qSIZuB1B1y3YBaqy
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+13"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6+8
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Arc court
+    img: icons/svg/sword.svg
+    _id: qSIZuB1B1y3YBaqy
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.qSIZuB1B1y3YBaqy"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 10
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.zdi5zp0GciKU51eC
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+13"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d4+2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Couteau de lancer
+    img: icons/svg/sword.svg
+    _id: zdi5zp0GciKU51eC
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.zdi5zp0GciKU51eC"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 30
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.QbAy9wSLhpRA9uNe
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+13"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d4
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Arbalète légère
+    img: icons/svg/sword.svg
+    _id: QbAy9wSLhpRA9uNe
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.QbAy9wSLhpRA9uNe"
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Aventuriers
+    type: path
+    img: icons/skills/ranged/person-archery-bow-attack-orange.webp
+    _id: vd0LR7XHiFiTQKvn
+    system:
+      description: ""
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.4s1ytKjuBfNxh6zP.Item.NOKnz7Sz8nxEkCx3
+        - Actor.4s1ytKjuBfNxh6zP.Item.3hO6ytFDGvw23ey8
+        - Actor.4s1ytKjuBfNxh6zP.Item.asHZnXRvP8Tsgy2N
+        - Actor.4s1ytKjuBfNxh6zP.Item.2zimk84gDvAz08Ud
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.vd0LR7XHiFiTQKvn"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Instinct de survie
+    type: capacity
+    img: icons/skills/melee/hand-grip-sword-red.webp
+    system:
+      description: "<p>Une fois par tour, au\_moment de son choix,\_l'aventurier peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer.</p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser.</p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      inGame: >-
+        <p>Les deux premières action permettent de réaliser les tests de
+        sauvegarde pour se débarrasser d'un effet qui bloque les
+        mouvements.</p><p>La troisième action activable/désactivable permet
+        d'obtenir le bonus de DEF.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.NOKnz7Sz8nxEkCx3
+          indice: 0
+          label: Sauvegarde d'INT
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: "10"
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.mYMv6so0VIKCOR85.Item.NOKnz7Sz8nxEkCx3
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: "10"
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.mYMv6so0VIKCOR85.Item.NOKnz7Sz8nxEkCx3
+          indice: 2
+          label: Si PV < 40
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.NOKnz7Sz8nxEkCx3
+              subtype: combat
+              target: def
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: NOKnz7Sz8nxEkCx3
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.NOKnz7Sz8nxEkCx3"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Embuscade
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    _id: 3hO6ytFDGvw23ey8
+    system:
+      description: "<p>Au premier tour de combat,\_si l'environnement permet à l'aventurier de se\_dissimuler, la cible doit faire un <strong>test de SAG\_difficulté 19 ou être surprise</strong>. </p><p>Si elle attaque avec\_succès une cible surprise, la créature inflige <strong>+1d6\_aux DM</strong>. </p><p>La créature obtient un bonus de <strong>+5 à\_tous les tests de discrétion et en Init</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>La première action permanente donne le bonus à l'INIT et au jet de
+        discrétion.</p><p>La deuxième action permet de réaliser le test de
+        sauvegarde et d'appliquer le statut Surpris pendant 1 round sur la cible
+        en cas d'échec.</p><p>La troisième action activable/désactivable permet
+        d'obtenir les DM supplémentaires pour les attaques de contact et de
+        distance.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: init
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+              subtype: skill
+              target: agi
+              value: "5"
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+        - source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+          indice: 1
+          label: Test de surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: "19"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - surprised
+                duration: "1"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+          indice: 2
+          label: Sur cible surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: damRanged
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 125000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.3hO6ytFDGvw23ey8"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Attaque en traitre
+    type: capacity
+    img: icons/skills/melee/strike-dagger-blood-red.webp
+    _id: asHZnXRvP8Tsgy2N
+    system:
+      description: "<p>Si l'aventurier attaque\_<strong>en même temps qu'un allié</strong> (il peut volontairement\_retarder son initiative), <strong>de dos ou par surprise</strong>, il\_réalise une attaque en traître avec un bonus de\_<strong>+5 en attaque et +2d6 aux DM</strong> – cumulable avec\_Attaque mortelle (pour les variantes assassin\_et tireur) ou Imparable (pour la variante maître\_d'armes).\_</p><blockquote><p><strong>Note :</strong> un tireur ne peut utiliser une attaque\_en traître à distance que si un allié est déjà au\_contact de sa cible.</p></blockquote>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>L'action activable/désactivable donne les bonus à l'attaque et aux
+        DM.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.asHZnXRvP8Tsgy2N
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: ranged
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: damRanged
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 137500
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.asHZnXRvP8Tsgy2N"
+  - folder: S5Arn2U0XkYUiO4d
+    name: L'hallali
+    type: capacity
+    img: icons/skills/melee/hand-grip-staff-teal.webp
+    _id: 2zimk84gDvAz08Ud
+    system:
+      description: "<p>Les aventuriers profitent d'une\_erreur de leur adversaire pour lui porter des\_attaques fatales.</p><p> À chaque fois que la victime\_rate une attaque ou obtient sur un test d'attaque\_un résultat au d20 allant de 1 à 5 (inclus), elle\_déclenche la curée ! </p><p>Chaque aventurier doté\_de cette capacité bénéficie <strong>immédiatement et\_gratuitement d'une Attaque en traître</strong> contre\_la victime (+5 au jet d'attaque/+2d6 aux DM).</p>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>Pas d'effet aitomatique. L'action est présente seulement pour
+        afficher la capacité dans la liste des actions.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.2zimk84gDvAz08Ud
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 150000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.2zimk84gDvAz08Ud"
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Assassins
+    type: path
+    img: icons/skills/melee/strike-dagger-skull-white.webp
+    _id: i23vBzwkH5nOu2pl
+    system:
+      description: "<p>Combattants de l'ombre, les assassins\_utilisent des armes de duel et frappent leurs\_adversaires là où ils s'y attendent le moins. On peut\_également classer dans cette catégorie les bandits\_et les voleurs.</p>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.2DXItVzYlZcjaIpI.Item.zhkJR7aXOL6dQFJM
+        - Actor.2DXItVzYlZcjaIpI.Item.uOuKfKvuYCEFBwD6
+        - Actor.2DXItVzYlZcjaIpI.Item.gLedG7MkSSQGX7ka
+        - Actor.2DXItVzYlZcjaIpI.Item.YhkvNiaL3wiDrDDX
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.i23vBzwkH5nOu2pl"
+  - folder: unYmOsV6dhAgwkuj
+    name: Attaque mortelle
+    type: capacity
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    system:
+      description: "<p>Une attaque similaire\_à l'attaque sournoise de l'aventurier (voie de\_l'assassinat) qui doit <strong>être exécutée de dos ou par\_surprise</strong>. </p><p>Le conquérant obtient un bonus de <strong>+5\_en attaque et ajoute 3d6 aux DM</strong>. </p><p>Il obtient aussi\_un bonus de <strong>+5 aux tests de discrétion</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      inGame: >-
+        <p>La première action activable/désactivable donne le bonus à l'attaque
+        et aux DM.</p><p>La deuxième action permanente donne le bonus en
+        discrétion.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.i23vBzwkH5nOu2pl
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.zhkJR7aXOL6dQFJM
+          indice: 0
+          label: Attaque de dos / surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.zhkJR7aXOL6dQFJM
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.zhkJR7aXOL6dQFJM
+              subtype: combat
+              target: damMelee
+              value: 3d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.mYMv6so0VIKCOR85.Item.zhkJR7aXOL6dQFJM
+          indice: 1
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.zhkJR7aXOL6dQFJM
+              subtype: skill
+              target: agi
+              value: "5"
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: zhkJR7aXOL6dQFJM
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.zhkJR7aXOL6dQFJM"
+  - folder: unYmOsV6dhAgwkuj
+    name: Disparition
+    type: capacity
+    img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
+    _id: uOuKfKvuYCEFBwD6
+    system:
+      description: "<p>L'assassin <strong>devient invisible</strong>\_(passage dans les ombres ou utilisation d'un\_sort, etc.) et peut <strong>se déplacer de 20 mètres</strong>. Il\_<strong>réapparaît à son prochain tour</strong> et, s'il réussit un\_<strong>test opposé de discrétion (DEX) contre la SAG\_de sa cible</strong>, il peut porter une <strong>Attaque mortelle</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p136
+      slug: ""
+      inGame: <p>L'action permet de réaliser le test opposé d'AGI contre PER.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.i23vBzwkH5nOu2pl
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.uOuKfKvuYCEFBwD6
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@agi"
+                crit: ""
+                difficulty: "@oppose.per"
+              dmg:
+                formula: ""
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.uOuKfKvuYCEFBwD6"
+  - folder: unYmOsV6dhAgwkuj
+    name: Assassinat
+    type: capacity
+    img: icons/skills/melee/strike-dagger-white-orange.webp
+    _id: gLedG7MkSSQGX7ka
+    system:
+      description: "<p><strong>Au premier tour de combat</strong>, si la\_<strong>cible est surprise</strong>, une Attaque mortelle réussie\_l'oblige à réussir un test de <strong>CON difficulté 15\_</strong>: en\_cas d'échec, <strong>elle tombe à 0 PV</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p136
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Inconscient de façon illimité sur la cible en cas d'échec.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.i23vBzwkH5nOu2pl
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.gLedG7MkSSQGX7ka
+          indice: 0
+          label: 1er tour + Cible surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: "15"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - unconscious
+                unit: unlimited
+                duration: "0"
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 250000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.gLedG7MkSSQGX7ka"
+  - folder: unYmOsV6dhAgwkuj
+    name: Interchangeable
+    type: capacity
+    img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+    _id: YhkvNiaL3wiDrDDX
+    system:
+      description: "<p>Tant que <strong>l'assassin et ses\_alliées sont plus nombreux que la cible</strong>, ils se\_relaient pour esquiver ses attaques et obtiennent\_un bonus de <strong>+5 en DEF</strong>. </p><p>Si plusieurs assassins\_semblables sont au contact du PJ, le MJ a toute\_latitude pour <strong>infliger les DM d'une attaque sur la\_créature de son choix</strong>, le personnage ne sachant\_jamais laquelle il blesse.</p>"
+      source: ""
+      origin: Livre du meneur p136
+      slug: ""
+      inGame: <p>L'action activable/désactivable donne le bonus à la DEF.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.mYMv6so0VIKCOR85.Item.i23vBzwkH5nOu2pl
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.mYMv6so0VIKCOR85.Item.YhkvNiaL3wiDrDDX
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.mYMv6so0VIKCOR85.Item.YhkvNiaL3wiDrDDX
+              subtype: combat
+              target: def
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!mYMv6so0VIKCOR85.YhkvNiaL3wiDrDDX"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: mYMv6so0VIKCOR85
+ownership:
+  default: 0
+sort: 0
+_key: "!actors!mYMv6so0VIKCOR85"

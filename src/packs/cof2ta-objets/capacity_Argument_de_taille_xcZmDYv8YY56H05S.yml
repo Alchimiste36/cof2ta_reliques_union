@@ -1,0 +1,125 @@
+folder: lVzsmxyYnGl3mGnJ
+name: Argument de taille
+type: capacity
+img: icons/magic/control/buff-strength-muscle-damage-orange.webp
+system:
+  description: "<p>Le PJ ajoute son <strong>Mod. de FOR à son score de\_PV maximal</strong> ainsi qu’à ses <strong>tests de CHA</strong> et à\_ceux de <strong>ses alliés au contact</strong> pour les tests de\_négociation, de persuasion ou d’intimidation.\_</p><p>Allez savoir pourquoi, sa simple présence donne\_de la force aux arguments de ses alliés…</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> lorsque le rang 4 est atteint\_dans cette voie, le PJ ajoute une nouvelle fois\_son Mod. de FOR à son score de PV maximal.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.125
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent augmentant les PV maximaux du PJ et pour ses tests de
+    CHA;</p><p>La première action permet de donner aux cibles le bonus aux jets
+    de CHA pendant 1 round. Cet effet fonctionne uniquement en Mode
+    Combat.</p><p>Si le PJ obtient la capacité avancée, quand il atteint le rang
+    4, remplacez la valeur du Modificateur augmentant les PV par "@for*2". Vous
+    pouvez aussi ajoutez un Modificateur sur la rang 4 de cette voie afin de ne
+    pas oublier ce bonus.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.IsG15wQbsqXAygIw
+      indice: 0
+      label: Bonus aux alliés
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.xcZmDYv8YY56H05S
+          subtype: skill
+          target: cha
+          value: '@for'
+          apply: others
+          additionalInfos: Négociation / Persuasion / Intimidation
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 8
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: Item.xcZmDYv8YY56H05S
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.xcZmDYv8YY56H05S
+          subtype: attribute
+          target: hp
+          value: '@for'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xcZmDYv8YY56H05S
+          subtype: skill
+          target: cha
+          value: '@for'
+          apply: self
+          additionalInfos: Négociation / Persuasion / Intimidation
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: xcZmDYv8YY56H05S
+ownership:
+  default: 0
+sort: 0
+_key: '!items!xcZmDYv8YY56H05S'

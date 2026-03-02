@@ -1,0 +1,158 @@
+folder: 70oSGsBlWvf0HQ7g
+name: Malédiction
+type: capacity
+img: icons/magic/unholy/hands-circle-light-green.webp
+system:
+  description: "<p>Le PJ effectue <strong>un test d’attaque magique</strong> contre\_une cible située à moins de 20 mètres. </p><p>En cas\_de succès, <strong>la victime réalise tous ses tests avec\_deux d20 et garde le résultat le plus faible.</strong> </p><p>Le\_sort <strong>prend fin dès qu’elle aura raté trois tests</strong>\_(il n’y a aucune limite de temps pour effectuer\_ces tests). Si la cible possède une capacité lui\_permettant de lancer deux dés et de garder le\_meilleur, elle ne lance plus qu’un seul dé. </p><p>Une\_seule cible à la fois peut être affectée par une\_malédiction.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ peut affecter un total\_de [Mod INT] cibles (minimum 1). Le sort\_doit être lancé pour chaque cible.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.138
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser l'attaque magique contre la DEF d'une cible
+    sélectionnée. En cas de réussite elle applique un Dé Malus à tous les tests
+    de la victime pendant tout le Combat. Il faudra gérer manuellement le nombre
+    de tests réalisés avec l'affaiblissement. Fonctionne uniquement en Mode
+    Combat.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.kVfhIYZXfuJyKxmW
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: agi
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: con
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: for
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: per
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: cha
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: int
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: vol
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: melee
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: ranged
+          value: '0'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: malusDice
+          target: magic
+          value: '0'
+          apply: others
+          additionalInfos: ''
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: combat
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: xWF89gH9J1WHXJzI
+ownership:
+  default: 0
+sort: 0
+_key: '!items!xWF89gH9J1WHXJzI'

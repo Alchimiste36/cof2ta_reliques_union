@@ -1,0 +1,84 @@
+folder: 7jQEzn5foDQAdeMy
+name: Percuter
+type: capacity
+img: icons/skills/melee/strike-hammer-destructive-blue.webp
+system:
+  description: "<p>Sur une « @UUID[Item.0t3tE1cEPQ6dWPrj]{charge }» réussie, si la\_victime est d'une <strong>taille inférieure ou égale à la\_brute</strong>, elle est de plus <strong>projetée à [1d6+1] mètres</strong>\_de là. </p><p>Elle doit réussir un test de <strong>CON de difficulté\_15 ou être étourdie</strong>. À chaque tour, elle peut\_tenter un nouveau test de CON pour retrouver\_ses esprits.</p>"
+  source: ''
+  origin: Livre du meneur p120
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+    statut Etourdi pendant tout le combat en cas d'échec.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 6
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.VLhvHEg0oQfENzYu
+      indice: 0
+      label: Si charge vs taille <=
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: CHGJYkROLg66GRik
+ownership:
+  default: 0
+sort: 0
+_key: '!items!CHGJYkROLg66GRik'

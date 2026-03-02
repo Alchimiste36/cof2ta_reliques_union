@@ -1,0 +1,91 @@
+folder: WxYrOA5rFauz1dXt
+name: Protection contre le mal
+type: capacity
+img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+system:
+  description: "<p>Le PJ <strong>peut lancer ce sort sur lui ou sur tout allié</strong>\_(portée: au contact) pour <strong>la durée d’un combat.</strong> </p><p>La cible obtient alors un bonus de <strong>+2 en DEF\_et pour tous les tests de résistance</strong> contre les\_attaques des morts-vivants, des démons, des\_élémentaires et des créatures conjurées (appelées\_d’un autre plan par magie).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF passe à +4.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.138
+  slug: ''
+  inGame: >-
+    <p>L'action permet d'obtenir ou de donner à une cible sélectionnée le bonus
+    de DEF uniquement pendant la durée d'un Combat. Fonctionne uniquement en
+    Mode Combat.</p><p>L'effet de résistance est à gérer manuellement.</p><p>Si
+    le PJ obtient la capacité avancée, remplacez la Valeur du Modificateur de
+    l'action par "4".</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.kVfhIYZXfuJyKxmW
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.kVfhIYZXfuJyKxmW
+          subtype: combat
+          target: def
+          value: '2'
+          apply: both
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: combat
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: pD5Q0uGrCtEYYE2k
+ownership:
+  default: 0
+sort: 0
+_key: '!items!pD5Q0uGrCtEYYE2k'

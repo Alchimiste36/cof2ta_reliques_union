@@ -1,0 +1,76 @@
+folder: ExucDfoNSZyOeonR
+name: "On\_m’la fait pas à moi !"
+type: capacity
+img: >-
+  icons/magic/control/silhouette-aura-energy.webp
+_id: q0jzlHI9BZHFD20k
+system:
+  description: "<p>L’homme du peuple est méfiant et il est difficile de lui embrouiller l’esprit ou de le baratiner.</p><p>Il\_gagne un bonus de <strong>+5 à tous les tests effectués\_pour résister à une illusion, au baratin, à une\_négociation ou à tout autre moyen d’influencer\_l’esprit</strong> (qu’il soit magique ou non).</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p178
+  slug: ""
+  inGame: <p>Bonus permanent aux jets de compétences.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.q0jzlHI9BZHFD20k
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.q0jzlHI9BZHFD20k
+          subtype: skill
+          target: cha
+          value: "5"
+          apply: self
+          additionalInfos: résister à une illusion ou à l'influence
+        - type: capacity
+          source: Item.q0jzlHI9BZHFD20k
+          subtype: skill
+          target: per
+          value: "5"
+          apply: self
+          additionalInfos: résister à une illusion
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!q0jzlHI9BZHFD20k"

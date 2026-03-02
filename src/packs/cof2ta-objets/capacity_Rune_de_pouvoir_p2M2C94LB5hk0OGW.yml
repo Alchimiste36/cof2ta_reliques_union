@@ -1,0 +1,70 @@
+folder: d9NqfxN66ml5JbEw
+name: Rune de pouvoir
+type: capacity
+img: icons/commodities/treasure/token-engraved-green-glowing.webp
+system:
+  description: "<p>Le PJ <strong>peut lier un sort à un objet par une inscription\_runique</strong>. </p><p>S’il ne connaît pas lui-même le sort, il doit se\_faire aider par une personne qui sait le lancer.</p><p> Le sort\_ainsi lié <strong>peut être utilisé trois fois par jour</strong>. </p><p>Le processus\_est le même que pour fabriquer une arme ou une armure\_magique : remplacez le niveau de magie par le rang du\_sort à lier. </p><p><strong><span style=\"text-decoration:underline\">À partir du niveau 8</span></strong>, le PJ <strong>peut lier plusieurs\_sorts à un objet</strong>, mais la somme des rangs des sorts ne\_peut excéder le niveau de magie maximal auquel il a droit.</p>"
+  source: ''
+  origin: Livre du Joueur p.137
+  slug: ''
+  inGame: >-
+    <p>Pas d'effet automatique. A chaque fois que le PJ insuffle de l'énergie
+    vitale dans un objet, ajouter "-1" dans la Valeur du modificateur de
+    l'action pour diminuer son maximum de PV de 1.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.d6CGCyOAty2NENoz
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.jnfcjuZVWcG0wPV1
+          subtype: attribute
+          target: hp
+          value: '-0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: p2M2C94LB5hk0OGW
+ownership:
+  default: 0
+sort: 0
+_key: '!items!p2M2C94LB5hk0OGW'

@@ -1,0 +1,79 @@
+folder: XmzqMBcyrk9Xp8d5
+name: Bleu incandescent
+type: equipment
+img: icons/commodities/gems/gem-faceted-asscher-blue.webp
+system:
+  description: "<p><strong>Forme</strong> : Sphère</p><p><strong>Effet :</strong> Bonus de +2 en SAG</p><p><strong>Usage en jeu :</strong>\_Bonus permanent en PER.\_Il faut équipé l'objet pour bénéficier de l'effet.</p><blockquote><p>L’enchantement de cristaux est un art délicat\_très prisés des alchimistes. Selon la légende,\_il serait à l’origine de la création des cristaux\_élémentaires.</p><p>Le PJ sait tailler et s’harmoniser avec la puissance\_magique de petits cristaux. <strong>Il est le seul à pouvoir\_les utiliser.</strong> Il faut user d’une Rune de pouvoir\_(rang 5 de la voie de la magie runique) pour créer\_des cristaux capables de s’harmoniser avec autrui.\_</p><p>Pour fonctionner, <strong>un cristal doit être lancé\_près du personnage</strong> : il se met alors à tourner\_rapidement autour de celui-ci.</p><p><strong>Un cristal a une\_DEF de 20, 10 PV et une RD de 5.</strong></p><p>Le pouvoir\_de chaque pierre varie selon sa couleur et sa\_forme.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.151
+  slug: ''
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 200
+    unit: pa
+  rarity: unique
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Item.PDCX3ooTSM8eTVxQ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Item.HxQr7fZJRh5qhlKD
+          subtype: ability
+          target: per
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: HxQr7fZJRh5qhlKD
+ownership:
+  default: 0
+sort: 0
+_key: '!items!HxQr7fZJRh5qhlKD'

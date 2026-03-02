@@ -1,0 +1,98 @@
+folder: Bj9CdYeY6fs3oPt4
+name: Potion de reptation
+type: equipment
+img: >-
+  icons/consumables/potions/potion-flask-corked-labeled-pink.webp
+_id: vfuLjJ5i33PGCgkY
+system:
+  description: >-
+    <p>Pendant INT minutes, l'utilisateur peut ramper de 5 m par action de
+    mouvement sur les murs et les plafonds. Il peut lancer des sorts dans cette
+    posture.</p>
+  source: ""
+  origin: ""
+  slug: potion-de-reptation
+  tags: []
+  subtype: consumable
+  martialCategory: paddedClothFur
+  damagetype: ""
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 200
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vfuLjJ5i33PGCgkY
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range: null
+effects: []
+sort: 1100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1771019147775
+  modifiedTime: 1771019147775
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: "!items!vfuLjJ5i33PGCgkY"

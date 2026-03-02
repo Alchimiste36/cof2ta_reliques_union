@@ -1,0 +1,113 @@
+folder: Xr4lKI9brFJ7NkYl
+name: Valeurs Ancestrales
+type: capacity
+img: >-
+  icons/sundries/documents/document-symbol-circle-gold-red.webp
+_id: MxtocWLoIfJhKhDL
+system:
+  description: >-
+    <p>Les valeurs morales des Centaures sont inscrites dans leur peau et il est
+    bien compliqué de les ébranler. Grâce à leur éducation et leur idéaux
+    ancrés, il est bien compliqué de les manipuler et leur discours sont souvent
+    percutants.</p><p>Le Centaure gagne un <strong>Dé bonus</strong> et un bonus
+    de <strong>+5 à tous les tests de CHARISME contre la
+    Manipulation</strong>.</p><p>Tant qu'il suit les valeurs enseignées à
+    Arkanov, le Centaure gagne un bonus de <strong>+10 à tous ses tests de
+    CHARISME</strong>.</p><p><strong>Les deux effets sont
+    cumulables.</strong></p>
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: >-
+    <p>Bonus permanent aux tests de CHA.</p><p>La deuxième action
+    activable/désactivable permet d'obtenir le De bonus et le bonus aux tests de
+    CHA.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.MxtocWLoIfJhKhDL
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.MxtocWLoIfJhKhDL
+          subtype: skill
+          target: cha
+          value: "10"
+          apply: self
+          additionalInfos: Tous les tests
+      resolvers: []
+    - source: Item.MxtocWLoIfJhKhDL
+      indice: 1
+      label: vs Manipulation
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.MxtocWLoIfJhKhDL
+          subtype: bonusDice
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MxtocWLoIfJhKhDL
+          subtype: skill
+          target: cha
+          value: "5"
+          apply: self
+          additionalInfos: ""
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769993459159
+  modifiedTime: 1769993459159
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!MxtocWLoIfJhKhDL"

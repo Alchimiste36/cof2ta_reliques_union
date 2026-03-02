@@ -1,0 +1,481 @@
+folder: bdIX79UEpqWIfeJc
+name: Araignée géante
+type: encounter
+img: icons/creatures/invertebrates/spider-pink-purple.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 0
+    hp:
+      base: 36
+      value: 36
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 16
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 15
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: <p>PV = [Niveau du PJ x 4]</p><p>Attaque = [Niveau du PJ + 3]</p>
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Scorpion géant
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: "<p>poison 3d6 DM,\_test CON 13 = DM/2</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.CVsxueOZeDs46tc2.Item.5l3k6yVuE4NzZWB4
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: 9 + 3
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+1
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Pattes et Morsure
+    img: icons/svg/sword.svg
+    _id: 5l3k6yVuE4NzZWB4
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ICvsqp9nnuGhvLus.5l3k6yVuE4NzZWB4'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: "<p>poison 3d6 DM,\_test CON 13 = DM/2</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.ICvsqp9nnuGhvLus.Item.wtLa39FgDHDauQFf
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 3d6
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Poison
+    img: icons/svg/sword.svg
+    _id: wtLa39FgDHDauQFf
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ICvsqp9nnuGhvLus.wtLa39FgDHDauQFf'
+  - folder: xS0e7Wv8YXZqGDi5
+    name: Toile (araignée) rang 4
+    type: capacity
+    img: icons/creatures/webs/web-spider-pink.webp
+    system:
+      description: "<p>L’araignée gagne la capacité\_de <strong>lancer (portée: 10 mètres) une toile gluante\_et collante sur un ennemi</strong>. </p><p>Si elle réussit une\_<strong>attaque à distance</strong> [niveau du PJ + 3], la cible\_est <strong>immobilisée</strong> (pas de déplacement, utilisez\_le d12 : voir «États préjudiciables») <strong>pour 1d6\_tours.</strong> </p><p>Au début de son tour, la créature engluée\_doit faire <strong>un test de FOR difficulté 13\_</strong>: en cas\_de succès, elle réussit à se libérer, sinon elle reste\_immobilisée.</p>"
+      source: ''
+      origin: Livre du Joueur p.155
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser une attaque à distance qui applique, en
+        cas de succès, le statut Immobilisé pendant 1d6 round sur une cible
+        sélectionnée.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ICvsqp9nnuGhvLus.Item.6rszRPo1dFu5SJ2r
+          indice: 0
+          label: Portée 10m
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: 9 + 3
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: 1d6
+                unit: round
+              hasAttackSuccessThreshold: false
+          conditions: []
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: 6rszRPo1dFu5SJ2r
+    ownership:
+      default: 0
+    _key: '!actors.items!ICvsqp9nnuGhvLus.6rszRPo1dFu5SJ2r'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: ICvsqp9nnuGhvLus
+ownership:
+  default: 0
+sort: 0
+_key: '!actors!ICvsqp9nnuGhvLus'

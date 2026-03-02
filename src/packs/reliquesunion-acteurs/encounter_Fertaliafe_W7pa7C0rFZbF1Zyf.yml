@@ -1,0 +1,1422 @@
+folder: E2ia3G2sojKQOlMK
+name: Fertaliafe
+type: encounter
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_acteurs/mangeurs_des_plaines/guerrier1.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 5
+    hp:
+      base: 55
+      value: 55
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 19
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: ""
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Mangeur des Plaines
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/mangeurs_des_plaines/guerrier1_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    healthEstimate:
+      dontMarkDead: false
+      hideHealthEstimate: false
+      hideName: false
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+8"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8+7
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Épée longue
+    img: icons/svg/sword.svg
+    _id: 2g2e34YRX4hf7nYV
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.2g2e34YRX4hf7nYV"
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.M0qwrLqFDQfqfOyr
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+8"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d6+7
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Hache à deux mains
+    img: icons/svg/sword.svg
+    _id: M0qwrLqFDQfqfOyr
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.M0qwrLqFDQfqfOyr"
+  - folder: saH8hGLZpV1p2SF8
+    name: DEF -1
+    type: capacity
+    img: >-
+      icons/skills/melee/shield-damaged-broken-orange.webp
+    _id: gXP7FiogXGmSe7p3
+    system:
+      description: >-
+        <p>Capacité à activer si le combattant utilise une hache à deux
+        mains.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.gXP7FiogXGmSe7p3
+          indice: 0
+          label: Si combat à la hache
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.gXP7FiogXGmSe7p3
+              subtype: combat
+              target: def
+              value: "-1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.gXP7FiogXGmSe7p3"
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Champions
+    type: path
+    img: >-
+      icons/environment/people/infantry-armored.webp
+    _id: Uh8lRuclkLrHpaYP
+    system:
+      description: "<p>Désigne les combattants exceptionnels,\_plus compétents que la moyenne au sein de leur\_communauté ou de leur corps de métier.</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.Ytj2I1K5KoOb02JS.Item.6Tl11jKpnRWlqQ8f
+        - Actor.Ytj2I1K5KoOb02JS.Item.4zRb8xw3wonX2CHV
+        - Actor.Ytj2I1K5KoOb02JS.Item.2p3wiUAWv2An1kQe
+        - Actor.Ytj2I1K5KoOb02JS.Item.sBZlDVlAViEYVhw3
+        - Actor.Ytj2I1K5KoOb02JS.Item.w8c5UUUDer5zzDwj
+        - Actor.Ytj2I1K5KoOb02JS.Item.TdwevdLGA3jEDqV0
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 200000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.Uh8lRuclkLrHpaYP"
+  - folder: P8s07MZzuigjOIbQ
+    name: Imparable
+    type: capacity
+    img: >-
+      icons/skills/melee/shield-damaged-broken-blue.webp
+    _id: 6Tl11jKpnRWlqQ8f
+    system:
+      description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si la\_brute obtient un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> sur un jet\_de d20 à un test d'attaque (même sans utiliser\_Imparable), elle <strong>inflige +1d6 DM et l'attaque est\_automatiquement réussie</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>La première action activable/désactivable donne le Dé Bonus en
+        attaque de contact.</p><p>La deuxième action permet de jeter
+        automatiquement les DM supplémentaires.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.6Tl11jKpnRWlqQ8f
+          indice: 0
+          label: Dé Bonus
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.6Tl11jKpnRWlqQ8f
+              subtype: bonusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.6Tl11jKpnRWlqQ8f
+          indice: 1
+          label: Si 15 à 20
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.6Tl11jKpnRWlqQ8f"
+  - folder: P8s07MZzuigjOIbQ
+    name: Riposte
+    type: capacity
+    img: >-
+      icons/skills/melee/maneuver-greatsword-yellow.webp
+    _id: 4zRb8xw3wonX2CHV
+    system:
+      description: "<p>Le champion peut effectuer <strong>une\_attaque en action gratuite contre chaque adversaire</strong> qui l'attaque à l'exception de celui qu'il\_a lui-même choisi d'attaquer à son tour</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.Ytj2I1K5KoOb02JS.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.4zRb8xw3wonX2CHV"
+  - folder: P8s07MZzuigjOIbQ
+    name: Hausser le ton
+    type: capacity
+    img: >-
+      icons/skills/melee/hand-grip-staff-yellow-brown.webp
+    _id: 2p3wiUAWv2An1kQe
+    system:
+      description: "<p>Lorsqu'il passe <strong>sous la moitié\_de sa valeur maximale de PV</strong>, le champion gagne\_un bonus de <strong>+5 à ses tests d'attaque et +1d6 aux\_DM</strong> et réduit tous les DM subis de 5 points par\_attaque <strong>(RD 5)</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      inGame: <p>L'action activable/désactivable donne les bonus.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.2p3wiUAWv2An1kQe
+          indice: 0
+          label: Si PV < 50%
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.2p3wiUAWv2An1kQe
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.2p3wiUAWv2An1kQe
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.2p3wiUAWv2An1kQe
+              subtype: combat
+              target: dr
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.2p3wiUAWv2An1kQe"
+  - folder: P8s07MZzuigjOIbQ
+    name: Charge
+    type: capacity
+    img: >-
+      icons/equipment/head/helm-spangen-horned-gold.webp
+    _id: sBZlDVlAViEYVhw3
+    system:
+      description: "<p>La brute parcourt une distance\_maximale de 30 mètres et porte une attaque :\_lancez <strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si\_l'attaque est réussie, en plus des DM normaux,\_une victime de <strong>taille inférieure ou égale</strong> à la brute\_doit faire un <strong>test opposé de FOR ou être renversée</strong>.\_Dans ce cas, la brute embroche sa victime et <strong>les\_DM sont doublés</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>La première action activable/désactivable donne le dé bonus aux
+        attaques de contact.</p><p>La deuxième attaque permet de réaliser le
+        test opposé de FOR et d'appliquer le statut Renversé si il est
+        réussi.</p>
+      subtype: ""
+      actionType: l
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.sBZlDVlAViEYVhw3
+          indice: 0
+          label: Dé bonus
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.sBZlDVlAViEYVhw3
+              subtype: bonusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.sBZlDVlAViEYVhw3
+          indice: 1
+          label: Si taille inférieure ou égale
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@for"
+                crit: ""
+                difficulty: "@oppose.for"
+              dmg:
+                formula: ""
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - overturned
+                duration: "0"
+                unit: round
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.sBZlDVlAViEYVhw3"
+  - folder: P8s07MZzuigjOIbQ
+    name: Enrager
+    type: capacity
+    img: >-
+      icons/creatures/abilities/mouth-teeth-human.webp
+    system:
+      description: "<p>Lorsqu'elle reçoit un coup critique\_ou si ses PV sont réduits de moitié ou plus, la\_brute <strong>devient enragée</strong>. </p><p>Elle <strong>ignore les pénalités\_de douleur ou la peur</strong>, augmente de <strong>+5 son score\_d'attaque au contact et ses DM de +1d6</strong>. </p><p>Elle\_peut encore agir un tour complet après avoir\_atteint 0 PV.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>L'action activable/désactivable donne les bonus à l'attaque de
+        contact et aux DM ainsi qu'un état indiquant sa résistance à la
+        peur.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.w8c5UUUDer5zzDwj
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.w8c5UUUDer5zzDwj
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.w8c5UUUDer5zzDwj
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.w8c5UUUDer5zzDwj
+              subtype: state
+              target: fearImmunity
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: w8c5UUUDer5zzDwj
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.w8c5UUUDer5zzDwj"
+  - folder: P8s07MZzuigjOIbQ
+    name: Percuter
+    type: capacity
+    img: >-
+      icons/skills/melee/strike-hammer-destructive-blue.webp
+    _id: TdwevdLGA3jEDqV0
+    system:
+      description: "<p>Sur une « @UUID[Item.0t3tE1cEPQ6dWPrj]{charge }» réussie, si la\_victime est d'une <strong>taille inférieure ou égale à la\_brute</strong>, elle est de plus <strong>projetée à [1d6+1] mètres</strong>\_de là. </p><p>Elle doit réussir un test de <strong>CON de difficulté\_15 ou être étourdie</strong>. À chaque tour, elle peut\_tenter un nouveau test de CON pour retrouver\_ses esprits.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Etourdi pendant tout le combat en cas d'échec.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 6
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.Uh8lRuclkLrHpaYP
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.TdwevdLGA3jEDqV0
+          indice: 0
+          label: Si charge vs taille <=
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: "15"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - stun
+                unit: combat
+                duration: "0"
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.TdwevdLGA3jEDqV0"
+  - folder: GgISwHTqrwC4liIs
+    name: Voie des plaines
+    type: path
+    img: >-
+      icons/environment/creatures/horses.webp
+    _id: TLgKZDo3ShC3HNSy
+    system:
+      description: "<h5>Les voies d’origine géographique mettent l’accent sur le lieu où le personnage a été élevé.</h5><h6>Humain : </h6><p><strong>Le\_bonus de la voie d’origine géographique remplace le bonus du même nom de\_la voie de l’humain</strong>. En\_échange, <strong>l’humain reçoit\_un seul bonus, mais de +5</strong> au lieu de +3, <strong>dans\_la profession ou le hobby de son choix</strong>. Si\_le PJ\_dispose d’une voie professionnelle, ce choix doit\_être en accord avec celle-ci (si vous êtes érudit,\_vous n’êtes probablement pas charpentier…).\_</p><h6>Elfe sylvain : </h6><p>Avec cette option, <strong>l’elfe sylvain\_devient un spécialiste de la survie</strong> dans son milieu\_d’origine (correspondant à la voie d’origine géographique choisie) et vous pouvez le rebaptiser\_elfe sauvage. Ce\_faisant, <strong>la capacité de premier\_rang de la voie de l’elfe sylvain est modifiée</strong> :\_à\_la place d’un bonus de survie en forêt, l’elfe\_sauvage bénéficie d’un bonus de survie dans\_le milieu correspondant à son origine géographique, et <strong>le bonus passe de +3 à +5</strong> grâce à la\_capacité de rang 1 de la voie d’origine géographique. <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Attention :</span></strong></span><strong> la\_voie des cités et la voie\_des campagnes sont interdites à ce peuple.</strong></p><blockquote><p><strong>Par exemple</strong> : un\_elfe sauvage avec la capacité\_Habitant des marais (voie des marais) possède un\_bonus de +5 aux tests de survie et de discrétion\_dans les marécages (au lieu de +3). Cette bonification lui est conférée par le rang 1 de sa voie de\_peuple, Lumière des étoiles, et remplace le bonus\_de +3 en survie en forêt.</p></blockquote>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p174
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.W7pa7C0rFZbF1Zyf.Item.EozeDKoqYg7Qduwk
+        - Actor.W7pa7C0rFZbF1Zyf.Item.SfpQI2cnTZSme3H6
+        - Actor.W7pa7C0rFZbF1Zyf.Item.oHeLdcHPRuEQ5Y6P
+        - Actor.W7pa7C0rFZbF1Zyf.Item.q8Y56PKnTCooSXem
+        - Actor.W7pa7C0rFZbF1Zyf.Item.fSCDVjNbrfmPRYJr
+      rank: 3
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.BMqjW0n6vcNIL78A
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 181250
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.TLgKZDo3ShC3HNSy"
+  - folder: P05BJNw3dpDQlWjD
+    name: Habitant des plaines
+    type: capacity
+    img: >-
+      icons/environment/settlement/scarecrow.webp
+    _id: EozeDKoqYg7Qduwk
+    system:
+      description: "<p>Le personnage obtient un bonus de <strong>+3 aux\_tests d’équitation et de survie en plaines</strong>.</p>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p174
+      slug: ""
+      inGame: <p>Bonus aux jets de compétences.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.TLgKZDo3ShC3HNSy
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.EozeDKoqYg7Qduwk
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.EozeDKoqYg7Qduwk
+              subtype: skill
+              target: agi
+              value: "3"
+              apply: self
+              additionalInfos: Équitation
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.EozeDKoqYg7Qduwk
+              subtype: skill
+              target: con
+              value: "3"
+              apply: self
+              additionalInfos: Survie en plaines
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.EozeDKoqYg7Qduwk"
+  - folder: P05BJNw3dpDQlWjD
+    name: Cavalier
+    type: capacity
+    img: >-
+      icons/environment/creatures/horse-tan.webp
+    _id: SfpQI2cnTZSme3H6
+    system:
+      description: "<p>Le personnage gagne un bonus de <strong>+1 en\_attaque lorsqu’il est monté</strong>. </p><p><strong>Monter et descendre\_de selle devient une action gratuite</strong>.</p>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ""
+      inGame: <p>Action activable/désactivable pour obtenir le bonus en attaque.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.TLgKZDo3ShC3HNSy
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.SfpQI2cnTZSme3H6
+          indice: 0
+          label: En selle
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.SfpQI2cnTZSme3H6
+              subtype: combat
+              target: melee
+              value: "1"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.SfpQI2cnTZSme3H6
+              subtype: combat
+              target: ranged
+              value: "1"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.SfpQI2cnTZSme3H6
+              subtype: combat
+              target: magic
+              value: "1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.SfpQI2cnTZSme3H6"
+  - folder: P05BJNw3dpDQlWjD
+    name: "Œil\_de faucon"
+    type: capacity
+    img: >-
+      icons/creatures/eyes/humanoid-single-blue.webp
+    _id: oHeLdcHPRuEQ5Y6P
+    system:
+      description: "<p>Le personnage possède une vue qui porte\_loin, il gagne un bonus d<strong>e +5 sur tous les tests\_d’observation et de détection qui concernent\_des détails lointains</strong> (au moins 100 m de distance)\_et <strong>+10 m à la portée de ses attaques à distance</strong>.</p>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ""
+      inGame: >-
+        <p>Bonus aux jets de compétences.</p><p>Le bonus à la portée doit être
+        changé manuellement dans les Détails des armes à distance.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.TLgKZDo3ShC3HNSy
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.oHeLdcHPRuEQ5Y6P
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.oHeLdcHPRuEQ5Y6P
+              subtype: skill
+              target: per
+              value: "5"
+              apply: self
+              additionalInfos: Observation et détection lointaines (+100m)
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.oHeLdcHPRuEQ5Y6P"
+  - folder: P05BJNw3dpDQlWjD
+    name: Engagement
+    type: capacity
+    img: >-
+      icons/skills/ranged/arrows-flying-salvo-blue.webp
+    _id: q8Y56PKnTCooSXem
+    system:
+      description: "<p>Dans la plaine on peut toujours attaquer à distance avant d’engager un corps à corps.</p><p> <strong>Au\_premier round</strong> de combat, le personnage <strong>peut réaliser une attaque à distance gratuite</strong> (lancer ou\_tir) s’il utilise son tour pour se rapprocher et/ou\_porter une attaque au contact.</p>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ""
+      inGame: >-
+        <p>Pas d'effet automatique. L'action sert uniquement à afficher la
+        capacité dans la liste des actions.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.TLgKZDo3ShC3HNSy
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.q8Y56PKnTCooSXem
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.q8Y56PKnTCooSXem"
+  - folder: P05BJNw3dpDQlWjD
+    name: Adversaire des plaines
+    type: capacity
+    img: >-
+      icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+    _id: fSCDVjNbrfmPRYJr
+    system:
+      description: "<p>Le personnage inflige <strong>+1d4°\_ DM aux créatures volantes</strong>.</p>"
+      source: ""
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ""
+      inGame: <p>Action activable/désactivable pour obtenir le bonus aux DM.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.W7pa7C0rFZbF1Zyf.Item.TLgKZDo3ShC3HNSy
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.W7pa7C0rFZbF1Zyf.Item.fSCDVjNbrfmPRYJr
+          indice: 0
+          label: vs Créatures volantes
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.fSCDVjNbrfmPRYJr
+              subtype: combat
+              target: damMelee
+              value: 1d4°
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.fSCDVjNbrfmPRYJr
+              subtype: combat
+              target: damRanged
+              value: 1d4°
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.W7pa7C0rFZbF1Zyf.Item.fSCDVjNbrfmPRYJr
+              subtype: combat
+              target: damMagic
+              value: 1d4°
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!W7pa7C0rFZbF1Zyf.fSCDVjNbrfmPRYJr"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.cof2ta-acteurs.Actor.0RfasqdIiaP6U4uI
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772238542365
+  modifiedTime: 1772238542365
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: W7pa7C0rFZbF1Zyf
+sort: 100000
+_key: "!actors!W7pa7C0rFZbF1Zyf"

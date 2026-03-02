@@ -1,0 +1,90 @@
+folder: rUDaMk1pMX1ufHU5
+name: Pas de quartier
+type: capacity
+img: icons/skills/melee/maneuver-greatsword-yellow.webp
+system:
+  description: "<p>Pour le PJ, il s’agit de vaincre ou mourir. </p><p>Sa\_férocité est légendaire : il peut tenter <strong>une action\_d’attaque gratuite contre toute créature à son\_contact qui utilise une action de mouvement\_dans le but de s’éloigner de lui</strong>. </p><p>Pour cette\_attaque, il obtient un bonus de <strong>+5 en attaque\_et de +1d6 aux DM</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.145
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir +5 aux attaques de contact et à
+    distance et +1d6 aux DM de ces attaques.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.CzR7RCifSHrP9aRm
+      indice: 0
+      label: vs Cible qui s'éloigne
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.CzR7RCifSHrP9aRm
+          subtype: combat
+          target: melee
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.CzR7RCifSHrP9aRm
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.CzR7RCifSHrP9aRm
+          subtype: combat
+          target: ranged
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.CzR7RCifSHrP9aRm
+          subtype: combat
+          target: damRanged
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: CzR7RCifSHrP9aRm
+ownership:
+  default: 0
+sort: 0
+_key: '!items!CzR7RCifSHrP9aRm'

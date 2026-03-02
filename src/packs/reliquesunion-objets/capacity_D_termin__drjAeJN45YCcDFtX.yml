@@ -1,0 +1,74 @@
+folder: 73SIMU7AmWSYN0GC
+name: Déterminé
+type: capacity
+img: >-
+  icons/magic/control/silhouette-aura-energy.webp
+_id: drjAeJN45YCcDFtX
+system:
+  description: >-
+    <p>On pourrait dire tetu car il est vrai que si un Lutanne a une idée en
+    tête, il ne lachera pas avec quelques arguments bancals.</p><p>Leurs valeurs
+    et leur détermination en font des personne dure à manipuler.</p><p>Le PJ
+    gagne un bonus de +5 pour imposer son idée et pour résister à un
+    manipulation.</p>
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: <p>Bonus permanent aux tests de compétence.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.drjAeJN45YCcDFtX
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.drjAeJN45YCcDFtX
+          subtype: skill
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: Convaincre / résister à la manipulation
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1770779403022
+  modifiedTime: 1770779403022
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: "!items!drjAeJN45YCcDFtX"

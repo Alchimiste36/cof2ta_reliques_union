@@ -1,0 +1,164 @@
+folder: uvHtoSiBBvs1nfqu
+name: Liane démoniaque
+type: capacity
+img: icons/magic/fire/projectile-smoke-swirl-red.webp
+_id: Hi9A1XGKBJYQcYXV
+system:
+  description: "<p>lorsque la créature <strong>réussit\_une attaque avec une liane démoniaque</strong>, la victime\_doit faire un <strong>test de FOR ou de DEX au choix difficulté\_15</strong> ou être <strong>immobilisée</strong> par la liane pour un tour et\_subir 4d6 DM de feu au lieu de 2d6. </p><p>Le prince-démon\_<strong>peut attirer à son contact une victime immobilisée en\_réussissant un test de FOR opposé.</strong> </p><p>Attaquer avec\_son arme et ses lianes au même tour demande au\_prince-démon une action limitée.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>La première action permet de réaliser l'attaque de liane
+    démoniaque.</p><p>La deuxième et la troisième action pemrettent de réaliser
+    les test de sauvegarde avec la FOR ou l'AGI de la cible.</p><p>Le test de
+    FOR opposé doit être fait manuellement.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.Hi9A1XGKBJYQcYXV
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '23'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d6+2d6
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.Hi9A1XGKBJYQcYXV
+      indice: 1
+      label: Enchevêtrement FOR
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 2d6
+            elementType: fire
+            statuses:
+              - immobilized
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.Hi9A1XGKBJYQcYXV
+      indice: 2
+      label: Enchevêtrement DEX
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 2d6
+            elementType: fire
+            statuses:
+              - immobilized
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!Hi9A1XGKBJYQcYXV'

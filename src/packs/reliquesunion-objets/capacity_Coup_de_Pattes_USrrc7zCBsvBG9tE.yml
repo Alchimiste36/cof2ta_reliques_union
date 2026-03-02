@@ -1,0 +1,93 @@
+folder: R5rFF6hGTI3aMtD1
+name: Coup de Pattes
+type: capacity
+img: >-
+  icons/skills/targeting/crosshair-pointed-orange.webp
+_id: USrrc7zCBsvBG9tE
+system:
+  description: >-
+    <p>Les Centaures <strong>peuvent Ruer ou Botter en attaque supplémentaire à
+    chaque round</strong>.</p><p>Ruer/Botter : action simple / Attaque Contact
+    basée sur la FORCE / 1d8 + FOR / Crit 20 / sur 15 ou + au jet d'attaque
+    =&gt; Etourdissement pdt 1 round</p>
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: >-
+    <p>L'action permet de réaliser une attaque et d'appliquer le statut Étourdi
+    si le seuil de déclenchement est atteint pendant 1 round.</p>
+  subtype: ""
+  actionType: f
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.USrrc7zCBsvBG9tE
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d8 + @for
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: true
+          attackSuccessThreshold: 15
+          additionalEffect:
+            active: true
+            applyOn: attackSuccessTreshold
+            formulaType: damage
+            formula: ""
+            elementType: ""
+            statuses:
+              - stun
+            duration: "1"
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769993459159
+  modifiedTime: 1769993459159
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!USrrc7zCBsvBG9tE"

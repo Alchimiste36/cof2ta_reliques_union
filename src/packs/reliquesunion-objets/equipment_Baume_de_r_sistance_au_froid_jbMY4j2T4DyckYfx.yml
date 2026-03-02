@@ -1,0 +1,107 @@
+folder: Ymq9pf3lNgLcYSoT
+name: Baume de résistance au froid
+type: equipment
+img: >-
+  icons/consumables/food/pot-soup-white.webp
+_id: jbMY4j2T4DyckYfx
+system:
+  description: "<p>Cette pâte épaisse presque solide se frotte sur les muscles avant de s'habiller et dégage une sensation de chaleur dans le corps.</p><p>Fabriqué par\_@UUID[Actor.OYaSLTALmbEo5XZL]{Sélénia} à l'École du Vivant, une dose permet de gagner +10 aux tests pour résister au froid pendant 24h.</p><p>En cas de nécessité, si on applique une demi-dose en ce concentrant sur les zones les plus sensible, le bonus est divisé par deux pour la même durée.</p>"
+  source: ""
+  origin: ""
+  slug: ""
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ""
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 15
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Compendium.world.reliquesunion-objets.Item.jbMY4j2T4DyckYfx
+      indice: 0
+      label: Dose entière
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Compendium.world.reliquesunion-objets.Item.jbMY4j2T4DyckYfx
+          subtype: skill
+          target: con
+          value: "10"
+          apply: self
+          additionalInfos: Résistance au froid
+      resolvers: []
+    - source: Compendium.world.reliquesunion-objets.Item.jbMY4j2T4DyckYfx
+      indice: 1
+      label: Demi-dose
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Compendium.world.reliquesunion-objets.Item.jbMY4j2T4DyckYfx
+          subtype: skill
+          target: con
+          value: "5"
+          apply: self
+          additionalInfos: Résistance au froid
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 1100000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1771018430583
+  modifiedTime: 1771019110308
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: "!items!jbMY4j2T4DyckYfx"

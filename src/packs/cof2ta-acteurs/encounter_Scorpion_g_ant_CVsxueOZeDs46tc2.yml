@@ -1,0 +1,481 @@
+folder: bdIX79UEpqWIfeJc
+name: Scorpion géant
+type: encounter
+_id: CVsxueOZeDs46tc2
+img: icons/creatures/invertebrates/scorpion-yellow.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 0
+    hp:
+      base: 36
+      value: 36
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 12
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 16
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: <p>PV = [Niveau du PJ x 4]</p><p>Attaque = [Niveau du PJ + 3]</p>
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Scorpion géant
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: "<p>poison 2d6 DM,\_test CON 13 = DM/2</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.CVsxueOZeDs46tc2.Item.5l3k6yVuE4NzZWB4
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: 9 + 3
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+3
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Pinces et Dard
+    img: icons/svg/sword.svg
+    _id: 5l3k6yVuE4NzZWB4
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!CVsxueOZeDs46tc2.5l3k6yVuE4NzZWB4'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: "<p>poison 2d6 DM,\_test CON 13 = DM/2</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.CVsxueOZeDs46tc2.Item.y5AprfqcQRp3rZKt
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Poison
+    img: icons/svg/sword.svg
+    _id: y5AprfqcQRp3rZKt
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!CVsxueOZeDs46tc2.y5AprfqcQRp3rZKt'
+  - folder: xS0e7Wv8YXZqGDi5
+    name: Étreinte (scorpion) rang 4
+    type: capacity
+    img: icons/creatures/claws/pincer-crab-brown.webp
+    _id: f7sRrCfD2HGbiL4w
+    system:
+      description: "<p>Le scorpion peut désormais\_tenter d’attraper une créature entre ses pinces,\_si elle n’est pas d’une taille supérieure à la\_sienne. </p><p><strong>Lorsqu’il obtient un résultat de 15 à\_20 sur son dé d’attaque, le scorpion attrape\_son adversaire</strong>. </p><p>Au début de son tour, la cible\_saisie doit faire <strong>un test de FOR en opposition</strong>\_avec le scorpion, en cas de succès, elle réussit à\_se libérer, sinon elle est <strong>étourdie</strong> (pas d’action\_et -5 en DEF) et le scorpion maintient l’étreinte.\_</p><p>Lorsqu’il maintient une étreinte, le scorpion ne\_peut rien faire pendant son tour, mais il <strong>inflige\_automatiquement [1d6+3] DM</strong> à la créature\_prisonnière. Le scorpion peut lâcher son étreinte\_quand il le veut.</p>"
+      source: ''
+      origin: Livre du Joueur p.155
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de FOR en opposition. En cas de
+        réussite du PJ, l'attaque inflige 1d6+3 Dm et applique sur la cible le
+        statut Étroudi pendant 1 round.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.CVsxueOZeDs46tc2.Item.f7sRrCfD2HGbiL4w
+          indice: 0
+          label: Sur 15-20
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@for'
+                crit: ''
+                difficulty: '@oppose.for'
+              dmg:
+                formula: 1d6+3
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              hasAttackSuccessThreshold: false
+          conditions: []
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!CVsxueOZeDs46tc2.f7sRrCfD2HGbiL4w'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!actors!CVsxueOZeDs46tc2'

@@ -1,0 +1,102 @@
+folder: hwfibk2SWE2hkRam
+name: Attaque mortelle
+type: capacity
+img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+system:
+  description: "<p>Une attaque similaire\_à l'attaque sournoise de l'aventurier (voie de\_l'assassinat) qui doit <strong>être exécutée de dos ou par\_surprise</strong>. </p><p>Le conquérant obtient un bonus de <strong>+5\_en attaque et ajoute 3d6 aux DM</strong>. </p><p>Il obtient aussi\_un bonus de <strong>+5 aux tests de discrétion</strong>.</p>"
+  source: ''
+  origin: Livre du meneur p122
+  slug: ''
+  inGame: >-
+    <p>La première action activable/désactivable donne le bonus à l'attaque et
+    aux DM.</p><p>La deuxième action permanente donne le bonus en
+    discrétion.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.QuC3V4Iudv2GQhJR
+      indice: 0
+      label: Attaque de dos / surprise
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.QuC3V4Iudv2GQhJR
+          subtype: combat
+          target: melee
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.QuC3V4Iudv2GQhJR
+          subtype: combat
+          target: damMelee
+          value: 3d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.QuC3V4Iudv2GQhJR
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.QuC3V4Iudv2GQhJR
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Discrétion
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 0V5Tefo98QVdMjiM
+ownership:
+  default: 0
+sort: 0
+_key: '!items!0V5Tefo98QVdMjiM'

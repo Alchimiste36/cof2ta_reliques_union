@@ -1,0 +1,60 @@
+folder: jrMDM9V0mKjef2AO
+name: Verglas
+type: capacity
+img: icons/magic/water/barrier-ice-wall-snow.webp
+_id: BorFOsgQe3bEAMxz
+system:
+  description: "<p>Un verglas glissant recouvre le sol sur une <strong>surface\_de 10 m de diamètre</strong> pour le reste du combat (le\_PJ peut décider à tout moment de mettre fin au\_sort). </p><p>Dans cette zone, rester debout demande\_lors de son tour <strong>un test de DEX de difficulté 10</strong>,\_s’y déplacer ou combattre <strong>un test de difficulté\_15</strong>. </p><p><strong>Un échec signifie que la créature est au sol</strong>.\_</p><p><strong>Se relever nécessite de réussir un nouveau test de\_DEX de difficulté 15</strong> et prend un tour. Ramper\_en dehors de la zone demande un tour complet.</p>"
+  source: ''
+  origin: Livre du Joueur p.153
+  slug: ''
+  inGame: <p>L'action permet uniquement de dépenser les PM.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.BorFOsgQe3bEAMxz
+      indice: 0
+      label: Activer le Sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!BorFOsgQe3bEAMxz'

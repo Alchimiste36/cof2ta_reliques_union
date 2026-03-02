@@ -1,0 +1,111 @@
+folder: t0SDY5MxZxjkJ5bT
+name: Moins que rien
+type: capacity
+img: >-
+  icons/commodities/treasure/doll-mummy.webp
+_id: vnkgUUyGpP28wIY5
+system:
+  description: "<p>Le personnage subit <strong>un dé malus aux tests\_d’interaction sociale avec les gens de la bonne\_société</strong>. </p><p>Il\_gagne un bonus de <strong>+3 à tous les tests\_effectués pour résister aux privations</strong> (soif, faim)\_et <strong>pour passer inaperçu</strong>. Tous les misérables se\_ressemblent, non ? </p><p>En\_ville, il <strong>récupère automatiquement 1\_DR par nuit</strong>, même s’il dort dans la\_rue où n’achète rien à manger</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p179
+  slug: ""
+  inGame: >-
+    <p>La première action activable/désactivable donne le Dé malus aux tests de
+    CHA.</p><p>La deuxième action donne les bonus permanents aux jets de
+    compétences.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.vnkgUUyGpP28wIY5
+      indice: 0
+      label: Interaction sociale avec bonne société
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.vnkgUUyGpP28wIY5
+          subtype: malusDice
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: ""
+      resolvers: []
+    - source: Item.vnkgUUyGpP28wIY5
+      indice: 1
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.vnkgUUyGpP28wIY5
+          subtype: skill
+          target: con
+          value: "3"
+          apply: self
+          additionalInfos: Résister à la privation
+        - type: capacity
+          source: Item.vnkgUUyGpP28wIY5
+          subtype: skill
+          target: agi
+          value: "3"
+          apply: self
+          additionalInfos: Passer inaperçu
+        - type: capacity
+          source: Item.vnkgUUyGpP28wIY5
+          subtype: skill
+          target: cha
+          value: "3"
+          apply: self
+          additionalInfos: Passer inaperçu
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!vnkgUUyGpP28wIY5"

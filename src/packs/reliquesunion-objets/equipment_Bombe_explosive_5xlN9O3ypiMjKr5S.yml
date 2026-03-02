@@ -1,0 +1,126 @@
+type: equipment
+system:
+  subtype: consumable
+  description: "<p>En brisant cette bombe au sol, une explosion retentit\_sur la case touchée.</p><p>L’explosion inflige 2d6+2 DM de feu à toutes les créatures\_présentes sur la case et 1 dégât sur chaque case adjacente.</p><p>Les cibles touchées\_peuvent faire un test de AGI 15 pour réduit les DM de moitié</p>"
+  source: ""
+  origin: ""
+  slug: ""
+  tags: []
+  martialCategory: ""
+  damagetype: ""
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 80
+    unit: pa
+  rarity: exotic
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Actor.FJMtWtydebKWXYF0.Item.wVXuxHDH0RKIstzI
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 2D6 +2
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Actor.FJMtWtydebKWXYF0.Item.wVXuxHDH0RKIstzI
+      indice: 1
+      label: 1/2 DM
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: "15"
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+name: Bombe explosive
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/toile_vivante_bombe_explosive.webp
+effects: []
+folder: t6PsV2zwjMMnlBGz
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1770780658735
+  modifiedTime: 1772238262662
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: 5xlN9O3ypiMjKr5S
+sort: 300000
+_key: "!items!5xlN9O3ypiMjKr5S"

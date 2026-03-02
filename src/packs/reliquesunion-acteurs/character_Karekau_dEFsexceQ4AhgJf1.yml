@@ -1,0 +1,3435 @@
+name: Karekau
+type: character
+img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/karekau.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    level: 12
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 65
+      value: -4
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ""
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    def:
+      base: 6
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    melee:
+      base: 8
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    ranged:
+      base: 6
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    magic:
+      base: 11
+      ability: int
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    crit:
+      base: 0
+      ability: ""
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    dr:
+      base: 0
+      ability: ""
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+  resources:
+    fortune:
+      base: 4
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 6
+    recovery:
+      base: -2
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: -2
+    mana:
+      base: 0
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 12
+  details:
+    biography:
+      private: >-
+        <p>Le doyen du village et père de
+        @UUID[Actor.EhKag5p5a4F31dar]{Tumuaki}, malgré son grand âge c'est un
+        centaure respecté et il le sait. Il joue de sa position pour braver les
+        interdit avec une certaine malice. Au premiers abords on dirait qu'il
+        est très conservateur mais pourra prendre le parti des PJs si ça lui
+        permet d'embêter le chef du village.</p><p>Il a tendance à passer du
+        temps à observer les membres de sa famille et en particulier
+        @UUID[Actor.AUMVOCux3piDen0C]{Kaha} pour lui répéter à longueur de
+        journée qu'il aurait du être le chef pour que le village soit mieux géré
+        et sa fille, @UUID[Actor.RThMzXURSyG4AjsL]{Kite'Tihe} pour grogner avec
+        elle sur l'avenir du village et sur sa maladie.</p>
+      public: <p>Mâle - 98 ans</p>
+    appearance:
+      private: ""
+      public: >-
+        <img
+        src="modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/karekau_total.webp"
+        width="200" height="200">
+    notes:
+      private: ""
+      public: ""
+    size: medium
+    languages:
+      - ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+  oldDistanceView: 0
+  otherCapacitiesPointsSpent: 1
+prototypeToken:
+  name: Karekau
+  displayName: 20
+  actorLink: true
+  width: 1
+  height: 1
+  texture:
+    src: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/karekau_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    healthEstimate:
+      dontMarkDead: false
+      hideHealthEstimate: false
+      hideName: false
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - folder: cpwFYFL7c1QAGNtJ
+    name: Centaure d'Arkanov
+    type: feature
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kai.webp
+    _id: LFEUuxXQ7wC6apcs
+    system:
+      description: "<p>Le Village d'Arkanov est resté en autarcie depuis des centaines d'années.</p><p>Les membres de ce village ont des valeurs ancrées dans leurs veines et sont tous formés, dès leur plus jeunes âge, a de nombreuses techniques de combats.</p><p>Rien arrêtera un Centaure d'Arkanov lorsqu'il veut défendre ces convictions et s'il doit en venir aux mains, il est conseiller de rester sur ses gardes car se sont de redoutable danseurs lorsqu'ils attaquent.</p><h2>Modificateurs des Centaures</h2><p>Atout : <strong>+2 FOR et +2 SAG</strong><br />Faiblesse : <strong>-2 DEX</strong><br />Âge de départ à l’aventure : <strong>18 ans et plus</strong><br />Espérance de vie : <strong>environ 80 ans</strong><br /><strong>Trait des Centaures :</strong>\_</p><ul><li>Lumière des étoiles</li><li>+1 PR</li><li>Attaque Naturelle : Ruage ou Bottage (Contact, 1d8+FOR DM, crit 20, étourdissement 1 tours sur 15 à 20)</li></ul>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: people
+      modifiers:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.LFEUuxXQ7wC6apcs
+          type: feature
+          subtype: ability
+          target: for
+          value: "2"
+          apply: self
+          additionalInfos: ""
+        - source: Actor.dEFsexceQ4AhgJf1.Item.LFEUuxXQ7wC6apcs
+          type: feature
+          subtype: ability
+          target: per
+          value: "2"
+          apply: self
+          additionalInfos: ""
+        - source: Actor.dEFsexceQ4AhgJf1.Item.LFEUuxXQ7wC6apcs
+          type: feature
+          subtype: ability
+          target: agi
+          value: "-2"
+          apply: self
+          additionalInfos: ""
+        - source: Actor.dEFsexceQ4AhgJf1.Item.LFEUuxXQ7wC6apcs
+          type: feature
+          subtype: resource
+          target: rp
+          value: "1"
+          apply: self
+          additionalInfos: ""
+      paths:
+        - Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+        - Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.qssLe8701aqU3gI6
+        - Actor.dEFsexceQ4AhgJf1.Item.70JI2OlXZY2JwG3o
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 200000
+    _key: "!actors.items!dEFsexceQ4AhgJf1.LFEUuxXQ7wC6apcs"
+  - folder: oBczRWJocTMbLWNH
+    name: Voie du Peuple Centaure
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kiliko_total.webp
+    _id: AXW2MqwgsaRN4rlQ
+    system:
+      description: >-
+        <p>Les Centaures sont une vieille races des Terres d'Arran.
+        Malheureusement, ils n'ont pas réussi à trouver leur place dans les
+        cités elfiques, naines, humaines ou Peaux Vertes.</p><p>Partageant les
+        forets avec des tibues d'elfes sylvains ou parcourant les grandes
+        plaines, les Centaures ont autrefois été très
+        nombreux.</p><p>Aujourd'hui, il n'en reste qu'une poignée dans certains
+        zones restraintes.</p><p>Un village perdu dans les montagnes des Crocs
+        d'Acier est peuplé de Centaures vivant en autarcie depuis des centaines
+        d'années et oubliés de tous, le Village d'Arkanov.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: people
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.8nIpNOZrdupr0W7Y
+        - Actor.dEFsexceQ4AhgJf1.Item.le1A356YQ4ZDvXNt
+        - Actor.dEFsexceQ4AhgJf1.Item.8ZqDc4skK11Gsb9F
+        - Actor.dEFsexceQ4AhgJf1.Item.wZejybLA84f73PZj
+        - Actor.dEFsexceQ4AhgJf1.Item.pQDKJ94kpdwScPxX
+      rank: 4
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.AXW2MqwgsaRN4rlQ"
+  - folder: R5rFF6hGTI3aMtD1
+    name: Athlétisme
+    type: capacity
+    img: >-
+      icons/skills/movement/arrows-up-trio-red.webp
+    _id: 8nIpNOZrdupr0W7Y
+    system:
+      description: "<p>Les centaures gagnent <strong>+5 au tests\_ de force</strong>. Pour des tests d'Athlétisme, de lutte et de force pour tirer, soulever ou déplacer des objets ainsi que pour la course.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: <p>Bonus permanent aux tests de FOR.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.8nIpNOZrdupr0W7Y
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.8nIpNOZrdupr0W7Y
+              subtype: skill
+              target: for
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.8nIpNOZrdupr0W7Y"
+  - folder: R5rFF6hGTI3aMtD1
+    name: Métabolisme Rustique
+    type: capacity
+    img: >-
+      icons/magic/defensive/shield-barrier-deflect-teal.webp
+    _id: le1A356YQ4ZDvXNt
+    system:
+      description: >-
+        <p>Les Centaures ont un métabolisme plus résistant que la plupart des
+        autres espèces.</p><p>Ils guérissent plus vites et sont très vigilants.
+        Ils gagnent <strong>+1 PR</strong> et <strong>ne peuvent plus être pris
+        par surprise dans leur sommeil</strong>.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: <p>Bonus permanent de 1 DR.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.le1A356YQ4ZDvXNt
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.le1A356YQ4ZDvXNt
+              subtype: resource
+              target: rp
+              value: "1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.le1A356YQ4ZDvXNt"
+  - folder: R5rFF6hGTI3aMtD1
+    name: Coup de Pattes
+    type: capacity
+    img: >-
+      icons/skills/targeting/crosshair-pointed-orange.webp
+    _id: 8ZqDc4skK11Gsb9F
+    system:
+      description: >-
+        <p>Les Centaures <strong>peuvent Ruer ou Botter en attaque
+        supplémentaire à chaque round</strong>.</p><p>Ruer/Botter : action
+        simple / Attaque Contact basée sur la FORCE / 1d8 + FOR / Crit 20 / sur
+        15 ou + au jet d'attaque =&gt; Etourdissement pdt 1 round</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser une attaque et d'appliquer le statut
+        Étourdi si le seuil de déclenchement est atteint pendant 1 round.</p>
+      subtype: ""
+      actionType: f
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.8ZqDc4skK11Gsb9F
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
+              additionalEffect:
+                active: true
+                applyOn: attackSuccessTreshold
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - stun
+                duration: "1"
+                unit: round
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.8ZqDc4skK11Gsb9F"
+  - folder: R5rFF6hGTI3aMtD1
+    name: Maîtrise des Armes Longues
+    type: capacity
+    img: >-
+      icons/weapons/polearms/spear-flared-blue.webp
+    _id: wZejybLA84f73PZj
+    system:
+      description: >-
+        <p>Les Centaures <strong>gagnent la formation martiale Armes de Jet et
+        Armes d'Hast</strong></p><p><strong>Armes de Jet :</strong> les
+        Centaures peuvent lancer une arme de Jet avec chaque bras dans le même
+        round</p><p><strong>Armes d'Hast : </strong>Les Centaures peuvent manier
+        deux armes d'Hast simultanément en utilisant 1d12 et un malus de -2 au
+        DM pour chaque attaque.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>Modifier le profil de l'acteur pour ajouter les formations
+        martiales.</p><p>L'action activable/désactivable permet de s'infliger le
+        dé malus et le malus aux DM.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.wZejybLA84f73PZj
+          indice: 0
+          label: 2 armes d'hast simultanément
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.wZejybLA84f73PZj
+              subtype: malusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.wZejybLA84f73PZj
+              subtype: combat
+              target: damMelee
+              value: "-2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.wZejybLA84f73PZj"
+  - folder: R5rFF6hGTI3aMtD1
+    name: Corps Puissant
+    type: capacity
+    img: >-
+      icons/magic/earth/strike-fist-stone.webp
+    _id: pQDKJ94kpdwScPxX
+    system:
+      description: <p>Les Centaures augmentent leur FORCE et leur CONSTITUTION de +2</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: <p>Bonus permanent aux caractéristiques.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.AXW2MqwgsaRN4rlQ
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.pQDKJ94kpdwScPxX
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.pQDKJ94kpdwScPxX
+              subtype: ability
+              target: for
+              value: "2"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.pQDKJ94kpdwScPxX
+              subtype: ability
+              target: con
+              value: "2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.pQDKJ94kpdwScPxX"
+  - folder: oBczRWJocTMbLWNH
+    name: Voie Culturelle d'Arkanov
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/vaiata_total.webp
+    _id: 4fi5EaAeXkEgWvYc
+    system:
+      description: >-
+        <p>Le Village d'Arkanov est resté en autarcie depuis des centaines
+        d'années.</p><p>Les membres de ce village ont des valeurs ancrées dans
+        leurs veines et sont tous formés, dès leur plus jeunes âge, a de
+        nombreuses techniques de combats.</p><p>Rien arrêtera un Centaure
+        d'Arkanov lorsqu'il veut défendre ces convictions et s'il doit en venir
+        aux mains, il est conseiller de rester sur ses gardes car se sont de
+        redoutable danseurs lorsqu'ils attaquent.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: people
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+        - Actor.dEFsexceQ4AhgJf1.Item.RSIpwWwkYFXGxq6Q
+        - Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+        - Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+        - Actor.dEFsexceQ4AhgJf1.Item.7omOyyzcx4uwmEkh
+      rank: 5
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.4fi5EaAeXkEgWvYc"
+  - folder: Xr4lKI9brFJ7NkYl
+    name: Danse de Combat
+    type: capacity
+    img: >-
+      icons/magic/movement/abstract-ribbons-red-orange.webp
+    _id: FaxhxQ6EOvmgKt73
+    system:
+      description: >-
+        <p>Lorsqu'ils combattent les Centaures d'Arkanov sont particulièrement
+        <strong>intimidant grâce à leur danse de combat et leurs mouvements
+        ryhtmés</strong>.</p><p>Lorsqu'il utilise Danse de Combat, lors d'une
+        attaque de Contact, le Centaure fait un <strong>test d'Intimidation
+        (Force) avec un Dé bonus contre le CHA</strong> de l'adversaire
+        :</p><ul><li>Si réussi =&gt; <strong>Prochaine attaque
+        +5</strong></li><li>Si raté =&gt; <strong>Prochaine attaque
+        -2</strong></li></ul>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>La première action permet de réaliser le test de FOR avec le Dé bonus
+        contre le CHA.</p><p>Les deux actions suivant sont
+        activables/désactivables en fonction du résultat du test.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+          indice: 0
+          label: Intimidation
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: true
+              malusDiceAdd: false
+              skill:
+                formula: "@for"
+                crit: ""
+                difficulty: "@oppose.cha"
+              dmg:
+                formula: ""
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+          indice: 1
+          label: Si réussi
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+          indice: 2
+          label: Si raté
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.FaxhxQ6EOvmgKt73
+              subtype: combat
+              target: melee
+              value: "-2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.FaxhxQ6EOvmgKt73"
+  - folder: Xr4lKI9brFJ7NkYl
+    name: Science du Combat
+    type: capacity
+    img: >-
+      icons/skills/melee/spear-tips-three-green.webp
+    _id: RSIpwWwkYFXGxq6Q
+    system:
+      description: >-
+        <p>Le PJ choisit une capacité de rang 1 ou 2 de la <strong>voie de la
+        Puissance</strong> ou de la <strong>voie de la Maîtrise des
+        Armes</strong>.</p><p>Au rang 4 de cette voie, il gagne une capacité
+        supplémentaire de rang 1 ou 2 de la <strong>voie de la
+        Puissance</strong> ou de la <strong>voie de la Maîtrise des
+        Armes</strong>.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
+        liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: true
+      linkedCapacity: Actor.dEFsexceQ4AhgJf1.Item.VAmGcZ0coBUs9Y39
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.RSIpwWwkYFXGxq6Q"
+  - folder: Xr4lKI9brFJ7NkYl
+    name: Valeurs Ancestrales
+    type: capacity
+    img: >-
+      icons/sundries/documents/document-symbol-circle-gold-red.webp
+    _id: Gz2ddU8MXU8SNnz1
+    system:
+      description: >-
+        <p>Les valeurs morales des Centaures sont inscrites dans leur peau et il
+        est bien compliqué de les ébranler. Grâce à leur éducation et leur
+        idéaux ancrés, il est bien compliqué de les manipuler et leur discours
+        sont souvent percutants.</p><p>Le Centaure gagne un <strong>Dé
+        bonus</strong> et un bonus de <strong>+5 à tous les tests de CHARISME
+        contre la Manipulation</strong>.</p><p>Tant qu'il suit les valeurs
+        enseignées à Arkanov, le Centaure gagne un bonus de <strong>+10 à tous
+        ses tests de CHARISME</strong>.</p><p><strong>Les deux effets sont
+        cumulables.</strong></p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>Bonus permanent aux tests de CHA.</p><p>La deuxième action
+        activable/désactivable permet d'obtenir le De bonus et le bonus aux
+        tests de CHA.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+              subtype: skill
+              target: cha
+              value: "10"
+              apply: self
+              additionalInfos: Tous les tests
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+          indice: 1
+          label: vs Manipulation
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+              subtype: bonusDice
+              target: cha
+              value: "0"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.Gz2ddU8MXU8SNnz1
+              subtype: skill
+              target: cha
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.Gz2ddU8MXU8SNnz1"
+  - folder: Xr4lKI9brFJ7NkYl
+    name: Tatouage Rituel
+    type: capacity
+    img: >-
+      icons/tools/scribal/pen-steel-grey-brown.webp
+    _id: K7lhd8wd6NO9BPGd
+    system:
+      description: "<p>Lorsqu'il devient un réel guerrier du Village, le Centaure obtient un tatouage rituel particulièrement important pour lui. Réel symbole de sa place dans le clan, la cérémonie du Tatouage est très importante pour le Centaure.</p><p>Il peut se le faire lui-même, même si souvent un être cher (conjoint, parent, enfant...) réalise le tatouage. Il faut environ 5 heures pour réaliser le Tatouage Rituel.</p><p>\_</p><p>Le Centaure peut choisir entre :\_</p><ul><li><strong>Centaure =&gt;</strong> Gagne un Rang dans la Voie du Peuple du Centaure</li><li><strong>Guérison =&gt;</strong> Gagne une régénération magique de 2PV/rnd</li><li><strong>Peau Epaisse =&gt;</strong> Gagne DEF+3 et RD 3</li><li><strong>Chanceux =&gt;</strong> Gagne +2 points de Chance</li><li><strong>Force =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 FORCE pendant 1d4 heures</li><li><strong>Présence =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 CHARISME pendant 1d4 heures</li><li><strong>Appel du Clan =&gt;</strong> La réputation du Centaure est incroyable. Au bout de quelques temps, des suivants viennent rejoindre le Centaure et l'aider dans ses objectifs. Le Centaure gagne des compagnons d'arme. Répartissez [NIV*2 du Centaure] parmis les suivants pour estimer leur niveau (aucun suivant ne peut avoir plus que NIV-2 du Centaure)</li></ul>"
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>Les 5 actions permettent d'obtenir les effets des tatouages guérison,
+        peau épaisse, chanceux, force ou présence. Pour activer un effet,
+        ajoutez la condition "est appris" sur l'action choisie.</p><p>Lors de
+        l'apprentissage, cette capacité donne droit à une capacité liée pour
+        l'effet de la capacité de rang 2. Glissez-déposez la capacité choisie
+        sous cette capacité.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+          indice: 1
+          label: Peau épaisse
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+              subtype: combat
+              target: def
+              value: "3"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+              subtype: combat
+              target: dr
+              value: "3"
+              apply: self
+              additionalInfos: ""
+          conditions: []
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+          indice: 2
+          label: Chanceux
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+              subtype: resource
+              target: fp
+              value: "2"
+              apply: self
+              additionalInfos: ""
+          conditions: []
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+          indice: 3
+          label: Force
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+              subtype: ability
+              target: for
+              value: "4"
+              apply: self
+              additionalInfos: ""
+          conditions: []
+          resolvers: []
+      allowLinkedCapacity: true
+      linkedCapacity: Actor.dEFsexceQ4AhgJf1.Item.HdNwQbNUSj2EOwiA
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.K7lhd8wd6NO9BPGd"
+  - folder: Xr4lKI9brFJ7NkYl
+    name: Symbole d'Arkanov
+    type: capacity
+    img: >-
+      icons/magic/symbols/rune-sigil-black-pink.webp
+    _id: 7omOyyzcx4uwmEkh
+    system:
+      description: >-
+        <p>Le Centaure choisi entre :</p><ul><li><strong>CHA et FOR
+        +2</strong></li><li><strong>CHA et FOR +1</strong> et peut choisir un
+        deuxième tatouage rituel</li><li>peut choisir deux nouveaux tatouages
+        rituels</li></ul>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: "<p>L'action permet d'obtenir un bonus en CHA et FOR de +1.\_</p><p>Si vous choisissez la première option modifiez la valeur du Modificateur de l'action par 2 et ajouter la Condition \"est appris\" sur le tatouage choisi du rang 4.</p><p>Si vous choisissez la troisième action, supprimer l'action et ajouter la Condition \"est appris\" sur les tatouages choisis du rang 4.</p>"
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.4fi5EaAeXkEgWvYc
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.7omOyyzcx4uwmEkh
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.7omOyyzcx4uwmEkh"
+  - folder: xETnONqwpdD2pn42
+    name: Ruer/Botter
+    type: capacity
+    img: >-
+      icons/creatures/claws/claw-bear-paw-swipe-brown.webp
+    _id: qssLe8701aqU3gI6
+    system:
+      description: <p>Attaque naturelle des Centaures.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque avec l'application du statut
+        Étroudi si le seuil est atteint.</p>
+      subtype: ""
+      actionType: a
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.qssLe8701aqU3gI6
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8 +@for
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
+              additionalEffect:
+                active: true
+                applyOn: attackSuccessTreshold
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - stun
+                duration: "1"
+                unit: round
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.qssLe8701aqU3gI6"
+  - folder: oXin2F69W6OYUCr3
+    name: "Trait : Lumière des étoiles"
+    type: capacity
+    img: >-
+      icons/magic/life/heart-hand-gold-green.webp
+    system:
+      description: "<p>Pour un Elfe, l’obscurité de la nuit sous la lumière\_des étoiles n’est que de la pénombre, où seuls\_les petits détails lui échappent.</p>"
+      source: ""
+      origin: Livre du Joueur p.71
+      slug: ""
+      inGame: >-
+        <p>Ajoute la Vision dans le noir en bonus permanent, à activer dans la
+        barre latérale de la feuille de personnage.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.70JI2OlXZY2JwG3o
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.70JI2OlXZY2JwG3o
+              subtype: state
+              target: darkvision
+              value: "30"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: 70JI2OlXZY2JwG3o
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.70JI2OlXZY2JwG3o"
+  - name: Doyen âgé
+    type: profile
+    img: icons/svg/upgrade.svg
+    system:
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      maxDefenseArmor: 0
+      modifiers:
+        - type: profile
+          source: Actor.dEFsexceQ4AhgJf1.Item.CbR4lVplGtWGCh40
+          subtype: resource
+          target: mp
+          value: "@niv+@per"
+          additionalInfos: ""
+          apply: self
+        - type: profile
+          source: Actor.dEFsexceQ4AhgJf1.Item.CbR4lVplGtWGCh40
+          subtype: combat
+          target: melee
+          value: "2"
+          additionalInfos: ""
+          apply: self
+        - type: profile
+          source: Actor.dEFsexceQ4AhgJf1.Item.CbR4lVplGtWGCh40
+          subtype: combat
+          target: ranged
+          value: "2"
+          additionalInfos: ""
+          apply: self
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: true
+        dagger: true
+        greatSword: true
+        bastardSword: true
+        shortSword: true
+        longSword: true
+        spear: true
+        flail: true
+        greatFlail: true
+        club: true
+        axe: true
+        greatAxe: true
+        lance: true
+        cavalryLance: true
+        hammer: true
+        mace: true
+        pike: true
+        rapier: true
+        stiletto: true
+        swiftblade: true
+        handCrossbow: false
+        lightCrossbow: false
+        heavyCrossbow: false
+        shortBow: true
+        longBow: true
+        throwingKnife: true
+        throwingDagger: true
+        sling: true
+        throwingAxe: true
+        javelin: true
+        throwingSpear: true
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: true
+        leather: true
+        studdedLeather: true
+        chainShirt: true
+        chainMail: true
+        plateArmor: false
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: true
+        largeShield: true
+      paths: []
+      proficiencies: []
+      mainProfile: true
+      family: combattant
+    effects: []
+    folder: null
+    sort: 400000
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.aAbOhOsZU3zE6l7r
+      duplicateSource: Item.aAbOhOsZU3zE6l7r
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: CbR4lVplGtWGCh40
+    _key: "!actors.items!dEFsexceQ4AhgJf1.CbR4lVplGtWGCh40"
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie du Commandement
+    type: path
+    img: >-
+      icons/tools/instruments/megaphone.webp
+    _id: mft6maWfIzlsUX5f
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      subtype: profile
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.NfkTugKV1jqxTn63
+        - Actor.dEFsexceQ4AhgJf1.Item.ipkIL8kRLWpI2JvB
+        - Actor.dEFsexceQ4AhgJf1.Item.hYeTYYGxAicBIx2v
+        - Actor.dEFsexceQ4AhgJf1.Item.pfZueoC31wCm68O4
+        - Actor.dEFsexceQ4AhgJf1.Item.KE71olabmcoNGiTz
+      rank: 4
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.BPx6wwj8VJptfD4g
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.mft6maWfIzlsUX5f"
+  - folder: GCybkIpk4R1AYEDO
+    name: Action concertée
+    type: capacity
+    img: >-
+      icons/magic/time/arrows-circling-pink.webp
+    system:
+      description: "<p>Une fois par tour, le PJ peut <strong>échanger son\_initiative avec un autre PJ volontaire</strong>. </p><p><strong>S’il cède\_son initiative à un PJ plus lent</strong>, il gagne un bonus\_de <strong>+1 sur ses tests d’attaque</strong> à ce tour. Ce bonus\_passe à <strong>+2 au rang 4</strong> de la voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus aux tests d’attaque\_est augmenté de +1.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'obtenir le bonus en Attaque.</p><p>Si le
+        PJ obtient la capacité avancée, remplacer la valeur du Modificateur par
+        @rang[2,2,2,3,3].</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.mft6maWfIzlsUX5f
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.NfkTugKV1jqxTn63
+          indice: 0
+          label: Échanger avec PJ plus lent
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: true
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.NfkTugKV1jqxTn63
+              subtype: combat
+              target: melee
+              value: "@rang[1,1,1,2,2]"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: NfkTugKV1jqxTn63
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.NfkTugKV1jqxTn63"
+  - folder: GCybkIpk4R1AYEDO
+    name: À couvert
+    type: capacity
+    img: >-
+      icons/equipment/shield/Scutum-steel-worn.webp
+    system:
+      description: "<p>Jusqu’à son prochain tour, le PJ <strong>divise par deux\_les DM dus aux attaques à distance et de zone</strong>\_qu’il reçoit, et peut se <strong>déplacer de 20 mètres</strong>.\_Un compagnon du PJ peut profiter de cette\_aptitude s’il a son accord et reste à son contact.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> jusqu’à [Mod. de CHA]\_compagnons (minimum 1) du PJ peuvent\_profiter de cette aptitude s’ils ont son accord\_et restent à moins de 10 mètres de lui.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      inGame: >-
+        <p>Pas d'effet automatique. A gérer avec les boutons d'application de
+        Dommages du message du tchat.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.mft6maWfIzlsUX5f
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: ipkIL8kRLWpI2JvB
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.ipkIL8kRLWpI2JvB"
+  - folder: GCybkIpk4R1AYEDO
+    name: Exemplaire
+    type: capacity
+    img: >-
+      icons/magic/control/buff-luck-fortune-green-gold.webp
+    system:
+      description: "<p>Une fois par tour, le PJ <strong>permet à un allié qui\_combat le même adversaire que lui de relancer\_le d20 d’un test d’attaque</strong> s’il s’agissait d’un\_d’échec.</p>"
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.mft6maWfIzlsUX5f
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: hYeTYYGxAicBIx2v
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.hYeTYYGxAicBIx2v"
+  - folder: GCybkIpk4R1AYEDO
+    name: Ordre de bataille
+    type: capacity
+    img: >-
+      icons/sundries/flags/banner-flag-red-white.webp
+    system:
+      description: "<p>Le PJ donne des ordres tactiques pertinents au\_cœur de la bataille. </p><p>Une fois par tour, il <strong>octroie\_une action supplémentaire gratuite à un allié en\_vue</strong> (une action de mouvement ou une action\_d’attaque, mais pas une action limitée).</p>"
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.mft6maWfIzlsUX5f
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: pfZueoC31wCm68O4
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.pfZueoC31wCm68O4"
+  - folder: GCybkIpk4R1AYEDO
+    name: Charge fantastique
+    type: capacity
+    img: >-
+      icons/creatures/abilities/tail-strike-bone-orange.webp
+    system:
+      description: "<p>Une fois par combat, à l’initiative du PJ,\_<strong>lui-même et tous ses alliés en vue bénéficient\_immédiatement d’un déplacement</strong> d’un maximum de 20 m en ligne droite, <strong>suivi d’une action\_d’attaque</strong> avec un bonus de <strong>+3 au test de réussite\_et +1d6 aux dégâts</strong>.</p><p>Résolvez d’abord tous les déplacements en commençant par le PJ, puis par ordre d’initiative.\_Ensuite, effectuez toutes les attaques dans le\_même ordre</p>"
+      source: ""
+      origin: Livre du Joueur p.123
+      slug: ""
+      inGame: >-
+        <p>L'action permet d'obtenir et de donner le bonus à l'attaque et aux DM
+        au PJ et aux cibles sélectionnées. Il faut effectuer une récupération
+        rapide pour pouvoir utiliser à nouveau cette capacité.</p><p>Fonctionne
+        uniquement en Mode Combat.</p>
+      subtype: ""
+      actionType: l
+      learned: false
+      rank: 5
+      frequency: combat
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.mft6maWfIzlsUX5f
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.KE71olabmcoNGiTz
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.KE71olabmcoNGiTz
+              subtype: combat
+              target: melee
+              value: "3"
+              apply: both
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.KE71olabmcoNGiTz
+              subtype: combat
+              target: damMelee
+              value: +1d6
+              apply: both
+              additionalInfos: ""
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses: []
+                duration: "1"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: KE71olabmcoNGiTz
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.KE71olabmcoNGiTz"
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie de la Guerre
+    type: path
+    img: >-
+      icons/skills/melee/weapons-crossed-swords-black-gray.webp
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      subtype: profile
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.zZA2Ysowr6JZVX3m
+        - Actor.dEFsexceQ4AhgJf1.Item.hDWCXetomWozFCBQ
+        - Actor.dEFsexceQ4AhgJf1.Item.w4URQPbdZiQ2s72T
+        - Actor.dEFsexceQ4AhgJf1.Item.NHeoILi2e8iILrGM
+        - Actor.dEFsexceQ4AhgJf1.Item.SoanYmrcMNIxXiRj
+      rank: 2
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.vBwN2WP1DvSWksW9
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: z6SdbRQsTCXGsIXY
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.z6SdbRQsTCXGsIXY"
+  - folder: YLvDTUVKVOh5IFKX
+    name: Posture de combat
+    type: capacity
+    img: >-
+      icons/skills/melee/hand-grip-staff-blue.webp
+    _id: zZA2Ysowr6JZVX3m
+    system:
+      description: "<p>Au début de son tour, le PJ peut choisir d’appliquer <strong>jusqu’à -1 par rang atteint</strong> dans cette\_voie <strong>en attaque</strong>, <strong>en DEF</strong> ou <strong>aux DM</strong> et <strong>obtenir\_l’équivalent en bonus</strong> au choix en attaque, en\_DEF ou aux DM jusqu’à son prochain tour.\_</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> le PJ peut accorder le bonus\_à <strong>l’initiative</strong> de son prochain tour.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'obtenir les bonus. Le joueur doit
+        modifier le champs Valeur des dexu Modificateurs qu'il veut
+        impacter.</p><p>Si le PJ obtient la capacité avancée, ajoutez un nouveau
+        Modificateur Combat - Initiative sur l'action.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.z6SdbRQsTCXGsIXY
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.zZA2Ysowr6JZVX3m
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.zZA2Ysowr6JZVX3m
+              subtype: combat
+              target: def
+              value: "0"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.zZA2Ysowr6JZVX3m
+              subtype: combat
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.zZA2Ysowr6JZVX3m
+              subtype: combat
+              target: damMelee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.zZA2Ysowr6JZVX3m"
+  - folder: YLvDTUVKVOh5IFKX
+    name: Désarmer
+    type: capacity
+    img: >-
+      icons/skills/melee/sword-twirl-orange.webp
+    system:
+      description: "<p>Le PJ réalise <strong>une attaque au contact</strong> et sa victime\_doit faire un <strong>test d’attaque opposé</strong>. Si le PJ obtient le plus haut score, <strong>l’arme de son adversaire\_tombe au sol</strong> (une action de mouvement doit\_être employée pour la ramasser).\_</p><p>Si le PJ réussit son test avec <strong>au moins 10 points\_de plus</strong> que son adversaire, il <strong>empêche celui-ci\_de récupérer son arme</strong> (en posant le pied dessus,\_en l’envoyant hors de portée, etc.).</p><p>Cette capacité est évidemment sans effet sur les\_armes naturelles (griffes, crocs, épine dorsale,\_etc.).</p><p>Les adversaires qui utilisent des armes à deux\_mains sont plus difficiles à désarmer, infligeant\_un malus de <strong>-5 au test</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la capacité peut être utilisé\_pour une action d’attaque au lieu d’une\_ action\_limitée.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser le test opposé d'attaque au contact
+        <strong><span style="text-decoration:underline">uniquement contre des
+        feuilles de personnage</span></strong> (ne fonctionne pas sur les
+        feuilles Rencontres). Le résultat est à interpréter manuellement en
+        fonction du résultat.</p><p>Si le PJ obtient la capacité avancée,
+        modifiez le temps de l'action dans l'onglet "Détails".</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.z6SdbRQsTCXGsIXY
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.hDWCXetomWozFCBQ
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@oppose.atc"
+              dmg:
+                formula: ""
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: hDWCXetomWozFCBQ
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.hDWCXetomWozFCBQ"
+  - folder: YLvDTUVKVOh5IFKX
+    name: Double attaque
+    type: capacity
+    img: >-
+      icons/skills/melee/swords-parry-block-blue.webp
+    system:
+      description: "<p>Le PJ peut tenter <strong>deux attaques au contact</strong>\_durant ce tour avec un malus de <strong>-2 à chacune</strong>.</p>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'appliquer le malus de -2 aux attaques de
+        contact.</p>
+      subtype: ""
+      actionType: l
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.z6SdbRQsTCXGsIXY
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.w4URQPbdZiQ2s72T
+          indice: 0
+          label: Si 2 attaques
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.w4URQPbdZiQ2s72T
+              subtype: combat
+              target: melee
+              value: "-2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: w4URQPbdZiQ2s72T
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.w4URQPbdZiQ2s72T"
+  - folder: YLvDTUVKVOh5IFKX
+    name: Attaque circulaire
+    type: capacity
+    img: >-
+      icons/skills/melee/strikes-sword-triple-gray.webp
+    system:
+      description: "<p>Le PJ peut tenter <strong>une attaque au contact contre\_chaque adversaire engagé au contact</strong> avec lui.</p>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: l
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.z6SdbRQsTCXGsIXY
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: NHeoILi2e8iILrGM
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.NHeoILi2e8iILrGM"
+  - folder: YLvDTUVKVOh5IFKX
+    name: Attaque puissante
+    type: capacity
+    img: >-
+      icons/skills/melee/strike-hammer-destructive-orange.webp
+    system:
+      description: "<p>Le PJ peut choisir d’utiliser <strong>1d12 en attaque\_au contact au lieu du d20</strong> habituel (il ajoute\_normalement son score d’attaque). Si une telle\_attaque est réussie, il ajoute <strong>+2d6 aux DM</strong>.</p><p>Cette\_capacité peut être utilisée avec @UUID[Item.3D6CKo3cYWxr7yJt]{Double attaque}\_ou @UUID[Item.UmW3wFpA8SQBf5Fl]{Attaque circulaire} par exemple.</p>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'obtenir un Dé Malus en attaque de contact
+        et les DM supplémentaires.</p>
+      subtype: ""
+      actionType: a
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.z6SdbRQsTCXGsIXY
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.SoanYmrcMNIxXiRj
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.SoanYmrcMNIxXiRj
+              subtype: malusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.SoanYmrcMNIxXiRj
+              subtype: combat
+              target: damMelee
+              value: 2d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: SoanYmrcMNIxXiRj
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.SoanYmrcMNIxXiRj"
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie de la Bravoure
+    type: path
+    img: >-
+      icons/commodities/treasure/medal-ribbon-striped-gold-red.webp
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      subtype: profile
+      capacities:
+        - Actor.dEFsexceQ4AhgJf1.Item.0mVcv52feCdvKpuW
+        - Actor.dEFsexceQ4AhgJf1.Item.yBqPPn7jHVMDBy5H
+        - Actor.dEFsexceQ4AhgJf1.Item.B34iWmFPbqRwKM1h
+        - Actor.dEFsexceQ4AhgJf1.Item.OV1W6lx5R0ori9oZ
+        - Actor.dEFsexceQ4AhgJf1.Item.TFUp3Dk02XtlQLqG
+      rank: 2
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.XOfpivXbcvLuHRTK
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: 3boVAlFeXWc8qw8A
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.3boVAlFeXWc8qw8A"
+  - folder: WkEB3SwBwmId1w26
+    name: Robustesse
+    type: capacity
+    img: >-
+      icons/magic/control/buff-strength-muscle-damage.webp
+    system:
+      description: "<p>En prenant cette capacité, le PJ gagne 3 PV\_supplémentaires au rang 1, puis 3 PV de plus\_au rang 3 atteint dans cette voie et, enfin, 3\_PV au rang 5.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> le bonus de PV passe à 4.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      inGame: >-
+        <p>Bonus permanent aux PV.</p><p>Si le PJ obtient la capacité avancée,
+        remplacer la valeur du Modificateur par @rang[4,4,8,8,12].</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.3boVAlFeXWc8qw8A
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.0mVcv52feCdvKpuW
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.0mVcv52feCdvKpuW
+              subtype: attribute
+              target: hp
+              value: "@rang[3,3,6,6,9]"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: 0mVcv52feCdvKpuW
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.0mVcv52feCdvKpuW"
+  - folder: WkEB3SwBwmId1w26
+    name: Armure naturelle
+    type: capacity
+    img: >-
+      icons/magic/defensive/armor-stone-skin.webp
+    system:
+      description: "<p>Le PJ a endurci son corps. Il bénéficie d’un\_bonus de <strong>+2 à la DEF.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF augmente\_de +1.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      inGame: >-
+        <p>Bonus permanent à la DEF.</p><p>Si le PJ obtient la capacité avancée,
+        remplacer la valeur du Modificateur par 3.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.3boVAlFeXWc8qw8A
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.yBqPPn7jHVMDBy5H
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.yBqPPn7jHVMDBy5H
+              subtype: combat
+              target: def
+              value: "2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: yBqPPn7jHVMDBy5H
+    ownership:
+      default: 0
+      oByx0z6HY26hEziz: 3
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.yBqPPn7jHVMDBy5H"
+  - folder: WkEB3SwBwmId1w26
+    name: Prouesse
+    type: capacity
+    img: >-
+      icons/skills/melee/unarmed-punch-fist.webp
+    system:
+      description: "<p>Le PJ réussit souvent des exploits physiques hors\_norme. </p><p><strong>Une fois par tour</strong>, vous pouvez <strong>sacrifier\_1d4 PV pour obtenir +5 sur un test de Caracs</strong>\_(voir définition en marge) <strong>de FOR ou\_de DEX</strong>. Vous pouvez annoncer l’utilisation de\_cette capacité après avoir pris connaissance du\_résultat du test de caractéristique.</p>"
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet de jeter le jet de DM et tant qu'elle reste
+        activée, les bonus aux tests de compétences sont disponibles.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.3boVAlFeXWc8qw8A
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.B34iWmFPbqRwKM1h
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.B34iWmFPbqRwKM1h
+              subtype: skill
+              target: for
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.B34iWmFPbqRwKM1h
+              subtype: skill
+              target: agi
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d4
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: B34iWmFPbqRwKM1h
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.B34iWmFPbqRwKM1h"
+  - folder: WkEB3SwBwmId1w26
+    name: Dernier rempart
+    type: capacity
+    img: >-
+      icons/skills/melee/maneuver-greatsword-yellow.webp
+    system:
+      description: "<p>Le PJ effectue uniquement une attaque au\_contact durant ce tour. </p><p>En contrepartie, il\_bénéficie d’<strong>une attaque supplémentaire contre\_tout ennemi qui se déplace pour venir à son\_contact</strong>. Un adversaire blessé par cette attaque\_voit son déplacement stoppé.</p>"
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.3boVAlFeXWc8qw8A
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: OV1W6lx5R0ori9oZ
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.OV1W6lx5R0ori9oZ"
+  - folder: WkEB3SwBwmId1w26
+    name: Constitution héroïque
+    type: capacity
+    img: >-
+      icons/skills/movement/arrows-up-trio-red.webp
+    system:
+      description: "<p>Le PJ augmente son score de <strong>CON de +2</strong> et\_peut désormais <strong>lancer deux d20</strong> à chaque fois\_qu’un test de CON lui est demandé et conserver\_le meilleur résultat.</p>"
+      source: ""
+      origin: Livre du Joueur p.121
+      slug: ""
+      inGame: <p>Bonus permanent et Dé Bonus en CON.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.dEFsexceQ4AhgJf1.Item.3boVAlFeXWc8qw8A
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.TFUp3Dk02XtlQLqG
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.TFUp3Dk02XtlQLqG
+              subtype: ability
+              target: con
+              value: "2"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.TFUp3Dk02XtlQLqG
+              subtype: bonusDice
+              target: con
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: TFUp3Dk02XtlQLqG
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.TFUp3Dk02XtlQLqG"
+  - folder: enmgHDhLNrOCtOl5
+    name: Arme de prédilection
+    type: capacity
+    img: >-
+      icons/skills/melee/hand-grip-sword-strike-orange.webp
+    system:
+      description: "<p>Le PJ <strong>choisit une arme de prédilection</strong> (par\_exemple une épée longue ou une hache à une\_main, un arc court, etc.), et gagne <strong>+1 en attaque</strong>\_lorsqu’il l’utilise.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le combattant peut <strong>choisir\_une seconde arme</strong> qui devient alors une arme\_familière. Il gagne un bonus de +1 en attaque\_lorsqu’il l’utilise. Le bonus de la capacité Spécialisation ne s’applique pas à l’arme familière.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>Au moment d'apprendre cette capacité, modifiez le label de l'action
+        pour renseigner l'arme de prédilection choisie. L'action activable
+        permet d'obtenir les bonus lorsque le PJ utilise son arme de
+        prédilection.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.VAmGcZ0coBUs9Y39
+          indice: 0
+          label: Utilisation de [arme de prédilection]
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.VAmGcZ0coBUs9Y39
+              subtype: combat
+              target: melee
+              value: "1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: Actor.dEFsexceQ4AhgJf1.Item.RSIpwWwkYFXGxq6Q
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.NesNcqt6iVNNixZr
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: VAmGcZ0coBUs9Y39
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.VAmGcZ0coBUs9Y39"
+  - folder: enmgHDhLNrOCtOl5
+    name: Science du critique
+    type: capacity
+    img: >-
+      icons/skills/wounds/bone-broken-knee-beam.webp
+    system:
+      description: "<p>Le PJ <strong>inflige des critiques sur un résultat de 19\_ou 20</strong> (18 à 20 lorsqu’il emploie une rapière).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ obtient un bonus de\_+1d6 aux DM lorsqu’il inflige un coup critique.</p></blockquote>"
+      source: ""
+      origin: Livre du Joueur p.124
+      slug: ""
+      inGame: >-
+        <p>Bonus permanent qui augmente la plage de critique.</p><p>Si le PJ
+        obtient la capacité avancée, ajoutez la Condition "est appris" sur la
+        deuxième action. Elle permet de réaliser un jet de 1d6 DM utilisée
+        lorsque le PJ fait une attaque critique.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.HdNwQbNUSj2EOwiA
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.HdNwQbNUSj2EOwiA
+              subtype: combat
+              target: crit
+              value: "1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.HdNwQbNUSj2EOwiA
+          indice: 1
+          label: Jet 1d6 DM
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          conditions: []
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: Actor.dEFsexceQ4AhgJf1.Item.K7lhd8wd6NO9BPGd
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.oKCqq1IvG8feXNhF
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: HdNwQbNUSj2EOwiA
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.HdNwQbNUSj2EOwiA"
+  - folder: OBPli02oRaBQq6Ee
+    name: Bâton ferré d'apaisement
+    type: equipment
+    img: >-
+      icons/weapons/staves/staff-ornate.webp
+    _id: 2f0S63EL4o8ir34W
+    system:
+      description: >-
+        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
+        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
+        est adapté au combat, plus lourd et généralement couvert de métal aux
+        extrémités (bien que les druides utilisent des bâtons de bois noueux
+        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
+        Karekau</strong></p><ul><li><p>Le porteur de ce bâton ferré peut, par
+        une action limitée, faire dormir une cible qu'elle touche pendant 2d4
+        rounds. Après cette durée, une cible non volontaire peut réaliser un
+        test de CON difficulté 15 ou tomber dans l'inconscience pendant 4d6
+        heures. Karekau utilise cette faculté pour s'endormir malgré ses
+        douleurs et courbatures.</p></li></ul>
+      source: ""
+      origin: ""
+      slug: baton-ferre
+      tags:
+        - dmtemporairespossibles
+      subtype: weapon
+      martialCategory: ironStaff
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 450
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
+          indice: 1
+          label: Sauvegarde
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: "15"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - unconscious
+                duration: ""
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ""
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.w1n2zzLplJJ4BFmt
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.2f0S63EL4o8ir34W"
+  - folder: OBPli02oRaBQq6Ee
+    name: Épieu cérémonial du doyen
+    type: equipment
+    img: >-
+      icons/weapons/polearms/spear-flared-blue.webp
+    _id: ZYICTYMsNnQIdVtQ
+    system:
+      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Karekau</strong></p><p>Cet épieu est, traditionnellement, porté par le doyen du village. Il n'est pas réellement plus puissant au combat mais il possède deux pouvoirs utilisent pour le village :</p><ul><li><p>Par une action limitée, le porteur peut frapper le sol avec la pointe de l'épieu et faire résonner/vibrer tout le sol du village tant qu'il frappe un tempo ou un rythme. Très utile pour les danses et chants lors des cérémonies même si Karekau, faute d'une grande oreille musicale, ne l'utilise pas souvent.</p></li><li><p>Par un rituel d'environ 10 minutes, le porteur de l'épieu cérémonial du doyen peut communiquer avec n'importe quel habitant étant né à Arkanov. Cette communication peut durée de façon illimitée tant que l'utilisateur de l'épieu est concentré. Cette faculté a rarement utilisée car le chef du village, Kiliko, a fortement encouragé le doyen d'arrêté d'importuner sans raison un bon nombre d'habitant du village de jour comme de nuit.</p></li></ul><p>Théoriquement rien ne prouve que ces pouvoirs fonctionnent en dehors du village mais c'est bien le cas.</p>"
+      source: ""
+      origin: Livre du Joueur p.157
+      slug: epieu
+      tags: []
+      subtype: weapon
+      martialCategory: spear
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 950
+        unit: pa
+      rarity: unique
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
+          indice: 1
+          label: vs Arme naturelle
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
+              subtype: combat
+              target: def
+              value: "2"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
+          indice: 2
+          label: vs Cible sans armure
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 3d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.rER0ZDQnEw69zFWr
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.ZYICTYMsNnQIdVtQ"
+  - folder: GUKbDXrNXlTgfaW0
+    name: Armure de cuir renforcé +3
+    type: equipment
+    img: >-
+      icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
+    _id: YMCkH96W808Z7n8X
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Karekau</strong></p><ul><li><p>Bonus en DEF magique +3</p></li></ul>
+      source: ""
+      origin: Livre du Joueur p.160
+      slug: cuir-renforce-broigne
+      tags: []
+      subtype: armor
+      martialCategory: studdedLeather
+      damagetype: ""
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 3
+      range: null
+      magicalDefense: 3
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.jaRTjllWH3UdW9Kt
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!dEFsexceQ4AhgJf1.YMCkH96W808Z7n8X"
+  - name: zBiographie
+    type: capacity
+    img: >-
+      icons/sundries/books/book-open-purple.webp
+    _id: 3JBZoymsZlF3Ezoe
+    system:
+      description: >-
+        <p>Le doyen du village et père de
+        @UUID[Actor.EhKag5p5a4F31dar]{Tumuaki}, malgré son grand âge c'est un
+        centaure respecté et il le sait. Il joue de sa position pour braver les
+        interdit avec une certaine malice. Au premiers abords on dirait qu'il
+        est très conservateur mais pourra prendre le parti des PJs si ça lui
+        permet d'embêter le chef du village.</p><p>Il a tendance à passer du
+        temps à observer les membres de sa famille et en particulier
+        @UUID[Actor.AUMVOCux3piDen0C]{Kaha} pour lui répéter à longueur de
+        journée qu'il aurait du être le chef pour que le village soit mieux géré
+        et sa fille, @UUID[Actor.RThMzXURSyG4AjsL]{Kite'Tihe} pour grogner avec
+        elle sur l'avenir du village et sur sa maladie.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: ""
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.3JBZoymsZlF3Ezoe
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    folder: REW9OHvMzGF1zRIZ
+    sort: 100000
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.osSePjXQC5Rn94Nw
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.3JBZoymsZlF3Ezoe"
+  - type: capacity
+    system:
+      learned: true
+      description: >-
+        <p>Ce PNJ a atteint un grand âge et n'a plus les même possibilités que
+        lorsqu'il était plus jeune.</p><p>Il gagne des malus de -4 en AGI, CON
+        et FOR.</p><p>Il ne peut réaliser qu'une seule action par round (soit
+        une attaque soit un mouvement).</p><p>Sur une action physique, un échec
+        critique signifie toujours une blessure grave (tour de dos, blocage
+        articulaire…).</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: ""
+      subtype: ""
+      actionType: none
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dEFsexceQ4AhgJf1.Item.2RaJuNZuAfjt7D0X
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.2RaJuNZuAfjt7D0X
+              subtype: ability
+              target: agi
+              value: "-4"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.2RaJuNZuAfjt7D0X
+              subtype: ability
+              target: con
+              value: "-4"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.dEFsexceQ4AhgJf1.Item.2RaJuNZuAfjt7D0X
+              subtype: ability
+              target: for
+              value: "-4"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    name: Âge vénérable
+    img: icons/magic/death/undead-skeleton-lich-armor.webp
+    _id: 2RaJuNZuAfjt7D0X
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    flags: {}
+    _stats:
+      compendiumSource: Actor.dEFsexceQ4AhgJf1.Item.RrSMQgjsMl3rGbqW
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _key: "!actors.items!dEFsexceQ4AhgJf1.2RaJuNZuAfjt7D0X"
+effects: []
+folder: ZXjaxgZh0gOJCdD9
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.reliquesunion-acteurs.Actor.tJpJlFACm4Cztfya
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772486821104
+  modifiedTime: 1772486821104
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: dEFsexceQ4AhgJf1
+sort: 1000000
+_key: "!actors!dEFsexceQ4AhgJf1"

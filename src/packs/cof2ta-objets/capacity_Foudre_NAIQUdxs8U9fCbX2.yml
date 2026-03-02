@@ -1,0 +1,80 @@
+folder: zxPkkKcqCdrulUkV
+name: Foudre
+type: capacity
+img: icons/magic/lightning/bolt-strike-blue.webp
+system:
+  description: "<p>Le PJ produit un éclair sur <strong>une ligne de\_10 mètres</strong>. </p><p>Toutes les créatures sur la trajectoire\_sont soumises à <strong>un test d’attaque magique</strong> et\_subissent <strong>[5d6 + Mod. d’INT] DM en cas\_d’échec</strong>. </p><p>Les victimes peuvent tenter <strong>un test\_de DEX difficulté [12 + Mod. d’INT]</strong> pour ne\_subir que la moitié des DM.</p>"
+  source: ''
+  origin: Livre du Joueur p.149
+  slug: ''
+  inGame: "<p>L'action permet de réaliser l'attaque magique de la foudre.</p><blockquote><h5>Sorts prestigieux\_et Magie économe</h5><p>Il n’est pas possible d’user\_de Magie économe sur les\_sorts issus de voies\_de prestige.</p></blockquote>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.eXmMVRMlLEOBWuAG
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 5d6 + @int
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: NAIQUdxs8U9fCbX2
+ownership:
+  default: 0
+sort: 0
+_key: '!items!NAIQUdxs8U9fCbX2'

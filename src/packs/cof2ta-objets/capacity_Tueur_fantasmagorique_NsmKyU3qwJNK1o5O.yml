@@ -1,0 +1,82 @@
+folder: BIRI3M946hrP9EbP
+name: Tueur fantasmagorique
+type: capacity
+img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
+system:
+  description: "<p>Ce sort <strong>invoque les pires terreurs d’une créature\_vivante</strong> et lui fait croire à sa propre mort. </p><p>Le PJ doit\_réussir <strong>un test d’attaque magique</strong> (portée: 20 m)\_<strong>en opposition à un test d’attaque magique</strong> de la\_cible (si la créature n’a pas d’attaque magique, on\_utilise alors son attaque au contact en appliquant\_un malus de -3). </p><p>La victime fait <strong>un test de SAG\_difficulté [10 + Mod. d’INT] pour résister</strong>. </p><ul><li><p>En cas\_d’échec, <strong>elle tombe à 0 PV</strong>. </p></li><li><p>En cas de succès, <strong>elle\_perd l’équilibre et tombe par terre</strong>. </p></li></ul><p>Une créature\_ne peut être la cible de ce sort <strong>qu’une fois par jour</strong>,\_et le PJ <strong>ne peut pas affecter un personnage ou une\_créature de niveau supérieur au sien</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.136
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser l'attaque magique opposée et de dépenser les
+    PM du sort.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.NsmKyU3qwJNK1o5O
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: NsmKyU3qwJNK1o5O
+ownership:
+  default: 0
+sort: 0
+_key: '!items!NsmKyU3qwJNK1o5O'

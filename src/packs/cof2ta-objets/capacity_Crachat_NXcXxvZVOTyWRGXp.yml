@@ -1,0 +1,82 @@
+folder: uvHtoSiBBvs1nfqu
+name: Crachat
+type: capacity
+img: icons/magic/unholy/projectile-missile-green.webp
+_id: NXcXxvZVOTyWRGXp
+system:
+  description: "<p>Certains serpents crachent leur venin dans les yeux de leur adversaire pour\_l'aveugler. La victime doit réussir un test de DEX\_difficulté 12 ou être aveuglée pour 1d6 tours.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: ''
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.NXcXxvZVOTyWRGXp
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '12'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - blind
+            duration: 1d6
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!NXcXxvZVOTyWRGXp'

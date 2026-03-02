@@ -1,0 +1,107 @@
+type: equipment
+system:
+  subtype: weapon
+  description: >-
+    <p>Cet impressionnant marteau à une main est gravé de multiples runes
+    naines. Son manche recouvertde cuir est très agréable en
+    main.</p><p>Lorsqu'un coup porte des étincelles parcours le métal du marteau
+    et le bras de l'utilisateur.</p><p>Il est plus léger en main que ce qui n'y
+    parait.</p>
+  source: ""
+  origin: ""
+  slug: ""
+  tags: []
+  martialCategory: hammer
+  damagetype: impact
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 500
+    unit: pa
+  rarity: rare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: Actor.ygBtxpDi9QGPhlbP.Item.x9JsTnV1vo24LqeD
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc +2"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d6 +@for +2
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+name: Marteau de guerre runique
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/toile_vivante_marteau_runique.webp
+effects: []
+folder: t6PsV2zwjMMnlBGz
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1770774025710
+  modifiedTime: 1772238346074
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: S2Bxg3cEkypvMSNz
+sort: 700000
+_key: "!items!S2Bxg3cEkypvMSNz"

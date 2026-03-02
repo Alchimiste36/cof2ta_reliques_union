@@ -1,0 +1,108 @@
+folder: fkaQ5zi2WGOp22kb
+name: Masse d'arme +2 de glace
+type: equipment
+img: >-
+  icons/weapons/maces/mace-flanged-steel-grey.webp
+system:
+  description: >-
+    <p><strong>Arme magique de Centaure - Whakarewa</strong></p><ul><li><p>Bonus
+    de +2 à l'Attaque et aux DM</p></li><li><p>Bonus de +1d4° aux DM de
+    froid</p></li></ul>
+  source: ""
+  origin: Livre du Joueur p.157
+  slug: masse
+  tags: []
+  subtype: weapon
+  martialCategory: mace
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 900
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Actor.5A4aNmciTnCqcjvX.Item.JsR0TlUDdDHud4OB
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc +2"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d6 + @for +1d4° +2
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+  range:
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1771711637861
+  modifiedTime: 1772223024394
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: i6WqMCbamwN00PGD
+sort: 3600000
+_key: "!items!i6WqMCbamwN00PGD"

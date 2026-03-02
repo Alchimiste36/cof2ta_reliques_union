@@ -1,0 +1,84 @@
+folder: fkaQ5zi2WGOp22kb
+name: Demi-plaque +1 RD 2
+type: equipment
+img: >-
+  icons/equipment/chest/breastplate-banded-steel-gold.webp
+system:
+  description: "<p>Encombrantes, ces armures annulent le bonus\_de DEX à la DEF.</p><hr /><p><strong>Armure magique de Centaure - Te'Tipu</strong></p><ul><li><p>Bonus de DEF magique +2</p></li><li><p>Bonus de Résistance au Dommages de 2</p></li></ul>"
+  source: ""
+  origin: Livre du Joueur p.160
+  slug: armure-de-plaques
+  tags: []
+  subtype: armor
+  martialCategory: plateArmor
+  damagetype: ""
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 700
+    unit: ""
+  rarity: rare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Actor.A0N0QlLLdB170Ccf.Item.wT0SDpO9sZIdRVIG
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Actor.A0N0QlLLdB170Ccf.Item.wT0SDpO9sZIdRVIG
+          subtype: combat
+          target: dr
+          value: "2"
+          apply: self
+          additionalInfos: ""
+      resolvers: []
+  defense: 6
+  range: null
+  magicalDefense: 2
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772231704595
+  modifiedTime: 1772231704595
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: EcHFqsjra5TdEVdC
+sort: 0
+_key: "!items!EcHFqsjra5TdEVdC"

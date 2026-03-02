@@ -1,0 +1,83 @@
+folder: wXYeQ5bSlqdz6U3x
+name: Ombre mortelle
+type: capacity
+img: icons/creatures/unholy/demons-horned-glowing-pink.webp
+system:
+  description: "<p>Le PJ <strong>choisit une cible</strong>. L’ombre de celle-ci\_<strong>attaque son propriétaire pendant [3 + Mod.\_de SAG] tours (portée 20 m) en cas de réussite\_d’un test d’attaque magique.</strong> </p><p>L’ombre poursuit\_sa cible partout où elle se réfugie. </p><p><strong><span style=\"text-decoration:underline\">Ombre :</span></strong> 1\_attaque par tour, att = att de la cible, DM =\_DM de la cible divisés par deux.</p>"
+  source: ''
+  origin: Livre du Joueur p.150
+  slug: ''
+  inGame: "<p>L'action permet de réaliser l'attaque magique et d'appliquer un effet supplémentaire sur la cible en cas de succès afin de décompter la durée du sort. L'application de l\"effet supplémentaire fonctionne uniquement en Mode Combat.</p><p>Les attaques de l'Ombre doivent être effectuées avec la feuille de la cible.</p><blockquote><h5>Sorts prestigieux\_et Magie économe</h5><p>Il n’est pas possible d’user\_de Magie économe sur les\_sorts issus de voies\_de prestige.</p></blockquote>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.egw3FU0ZyZwfxhtC
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 3 + @per
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: egw3FU0ZyZwfxhtC
+ownership:
+  default: 0
+sort: 0
+_key: '!items!egw3FU0ZyZwfxhtC'

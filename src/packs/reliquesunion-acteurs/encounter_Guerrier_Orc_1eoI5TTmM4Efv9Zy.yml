@@ -1,0 +1,1383 @@
+folder: BktpKmAqYNj9sGVv
+name: Guerrier Orc
+type: encounter
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/3brute_orc.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 3
+    hp:
+      base: 35
+      value: 35
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: ""
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 18
+    cp:
+      value: 34
+prototypeToken:
+  name: Guerrier Orc
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/3brute_orc_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    healthEstimate:
+      dontMarkDead: false
+      hideHealthEstimate: false
+      hideName: false
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+6"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8+5
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Épée longue
+    img: icons/svg/sword.svg
+    _id: 2g2e34YRX4hf7nYV
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.2g2e34YRX4hf7nYV"
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.M0qwrLqFDQfqfOyr
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+6"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d6+5
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Hache à deux mains
+    img: icons/svg/sword.svg
+    _id: M0qwrLqFDQfqfOyr
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.M0qwrLqFDQfqfOyr"
+  - folder: saH8hGLZpV1p2SF8
+    name: DEF -1
+    type: capacity
+    img: >-
+      icons/skills/melee/shield-damaged-broken-orange.webp
+    _id: gXP7FiogXGmSe7p3
+    system:
+      description: >-
+        <p>Capacité à activer si le combattant utilise une hache à deux
+        mains.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.gXP7FiogXGmSe7p3
+          indice: 0
+          label: Si combat à la hache
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.1eoI5TTmM4Efv9Zy.Item.gXP7FiogXGmSe7p3
+              subtype: combat
+              target: def
+              value: "-1"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.gXP7FiogXGmSe7p3"
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Brutes
+    type: path
+    img: >-
+      icons/environment/people/infantry.webp
+    _id: htEP3PYf1T8QCZtG
+    system:
+      description: "<p>Regroupe les forces de la nature, les grands,\_les grandes, les massifs, les massives, les musculeux,\_les musculeuses. Tout particulièrement adapté aux\_Ogres et aux Orcs, les brigands ou les barbares.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.PQPk2zlxIQ6zhPJI.Item.pBAMdpmWR82vi8XG
+        - Actor.PQPk2zlxIQ6zhPJI.Item.ucY4d4AzO2gYrbIu
+        - Actor.PQPk2zlxIQ6zhPJI.Item.Vdzth9V7COGrqRw9
+        - Actor.PQPk2zlxIQ6zhPJI.Item.tzWcucPoZmzwtPXx
+        - Actor.PQPk2zlxIQ6zhPJI.Item.bIQaV9XzmVr51dyA
+        - Actor.PQPk2zlxIQ6zhPJI.Item.WdrTOyuRS3OvaQEB
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.htEP3PYf1T8QCZtG"
+  - folder: P8s07MZzuigjOIbQ
+    name: Charge
+    type: capacity
+    img: >-
+      icons/equipment/head/helm-spangen-horned-gold.webp
+    _id: pBAMdpmWR82vi8XG
+    system:
+      description: "<p>La brute parcourt une distance\_maximale de 30 mètres et porte une attaque :\_lancez <strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si\_l'attaque est réussie, en plus des DM normaux,\_une victime de <strong>taille inférieure ou égale</strong> à la brute\_doit faire un <strong>test opposé de FOR ou être renversée</strong>.\_Dans ce cas, la brute embroche sa victime et <strong>les\_DM sont doublés</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>La première action activable/désactivable donne le dé bonus aux
+        attaques de contact.</p><p>La deuxième attaque permet de réaliser le
+        test opposé de FOR et d'appliquer le statut Renversé si il est
+        réussi.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.1eoI5TTmM4Efv9Zy.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.pBAMdpmWR82vi8XG
+          indice: 0
+          label: Dé bonus
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.1eoI5TTmM4Efv9Zy.Item.pBAMdpmWR82vi8XG
+              subtype: bonusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.pBAMdpmWR82vi8XG
+          indice: 1
+          label: Si taille inférieure ou égale
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@for"
+                crit: ""
+                difficulty: "@oppose.for"
+              dmg:
+                formula: ""
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - overturned
+                duration: "0"
+                unit: round
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.pBAMdpmWR82vi8XG"
+  - folder: P8s07MZzuigjOIbQ
+    name: Enrager
+    type: capacity
+    img: >-
+      icons/creatures/abilities/mouth-teeth-human.webp
+    system:
+      description: "<p>Lorsqu'elle reçoit un coup critique\_ou si ses PV sont réduits de moitié ou plus, la\_brute <strong>devient enragée</strong>. </p><p>Elle <strong>ignore les pénalités\_de douleur ou la peur</strong>, augmente de <strong>+5 son score\_d'attaque au contact et ses DM de +1d6</strong>. </p><p>Elle\_peut encore agir un tour complet après avoir\_atteint 0 PV.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>L'action activable/désactivable donne les bonus à l'attaque de
+        contact et aux DM ainsi qu'un état indiquant sa résistance à la
+        peur.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.1eoI5TTmM4Efv9Zy.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.ucY4d4AzO2gYrbIu
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.1eoI5TTmM4Efv9Zy.Item.ucY4d4AzO2gYrbIu
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.1eoI5TTmM4Efv9Zy.Item.ucY4d4AzO2gYrbIu
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.1eoI5TTmM4Efv9Zy.Item.ucY4d4AzO2gYrbIu
+              subtype: state
+              target: fearImmunity
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: ucY4d4AzO2gYrbIu
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.ucY4d4AzO2gYrbIu"
+  - folder: P8s07MZzuigjOIbQ
+    name: Percuter
+    type: capacity
+    img: >-
+      icons/skills/melee/strike-hammer-destructive-blue.webp
+    _id: Vdzth9V7COGrqRw9
+    system:
+      description: "<p>Sur une « @UUID[Item.0t3tE1cEPQ6dWPrj]{charge }» réussie, si la\_victime est d'une <strong>taille inférieure ou égale à la\_brute</strong>, elle est de plus <strong>projetée à [1d6+1] mètres</strong>\_de là. </p><p>Elle doit réussir un test de <strong>CON de difficulté\_15 ou être étourdie</strong>. À chaque tour, elle peut\_tenter un nouveau test de CON pour retrouver\_ses esprits.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Etourdi pendant tout le combat en cas d'échec.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.1eoI5TTmM4Efv9Zy.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.Vdzth9V7COGrqRw9
+          indice: 0
+          label: Si charge vs taille <=
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: "15"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - stun
+                unit: combat
+                duration: "0"
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.Vdzth9V7COGrqRw9"
+  - folder: P8s07MZzuigjOIbQ
+    name: Imparable ¤
+    type: capacity
+    img: >-
+      icons/skills/melee/shield-damaged-broken-blue.webp
+    _id: tzWcucPoZmzwtPXx
+    system:
+      description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si la\_brute obtient un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> sur un jet\_de d20 à un test d'attaque (même sans utiliser\_Imparable), elle <strong>inflige +1d6 DM et l'attaque est\_automatiquement réussie</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>Adapter l'action avec les valeurs de l'attaque de la rencontre.
+        L'action fait une attaque avec un dé bonus et un seuil de déclenchement
+        pour les DM en plus.</p>
+      subtype: ""
+      actionType: l
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.1eoI5TTmM4Efv9Zy.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.tzWcucPoZmzwtPXx
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: true
+              malusDiceAdd: false
+              skill:
+                formula: "5"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: "1"
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
+              additionalEffect:
+                active: true
+                applyOn: attackSuccessTreshold
+                formulaType: damage
+                formula: 1d6
+                elementType: ""
+                statuses: []
+                unit: instant
+                duration: "0"
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.tzWcucPoZmzwtPXx"
+  - folder: P8s07MZzuigjOIbQ
+    name: Fauchage
+    type: capacity
+    img: >-
+      icons/skills/melee/strike-axe-red.webp
+    _id: bIQaV9XzmVr51dyA
+    system:
+      description: "<p>Sur un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> au\_test d'attaque, si l'attaque est réussie, la victime\_doit réussir au choix un test de <strong>FOR ou de DEX\_difficulté [10 + bonus universel] ou être renversée</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: >-
+        <p>Les deux actions permettent de réaliser les tests de sauvegarde et
+        d'appliquer le statut Renversé pour le combat en cas d'échec.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.1eoI5TTmM4Efv9Zy.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.1eoI5TTmM4Efv9Zy.Item.bIQaV9XzmVr51dyA
+          indice: 0
+          label: Sauvegarde avec FOR
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: 10+@vol
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - overturned
+                duration: "0"
+                unit: combat
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.bIQaV9XzmVr51dyA"
+  - folder: P8s07MZzuigjOIbQ
+    name: Balayage
+    type: capacity
+    img: >-
+      icons/skills/melee/blood-slash-foam-red.webp
+    _id: WdrTOyuRS3OvaQEB
+    system:
+      description: "<p>La brute utilise sa puissance pour\_affecter plusieurs créatures face à elle d'un seul\_coup. </p><p>Si plusieurs cibles sont présentes face à elle,\_son attaque <strong>affecte jusqu'à trois créatures</strong> (dans\_un arc de 180 °). Faire un <strong>seul test d'attaque et le\_comparer à la DEF de chaque cible</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p120
+      slug: ""
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 6
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.PQPk2zlxIQ6zhPJI.Item.htEP3PYf1T8QCZtG
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.WdrTOyuRS3OvaQEB"
+  - folder: OBPli02oRaBQq6Ee
+    name: Epée longue
+    type: equipment
+    img: >-
+      icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: 4Gc6Jo4FU7ZARe67
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.157
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 6
+        unit: ""
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ""
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.QIHJs2vncOYtsEX2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.4Gc6Jo4FU7ZARe67"
+  - folder: GUKbDXrNXlTgfaW0
+    name: Armure de cuir renforcé
+    type: equipment
+    img: >-
+      icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
+    _id: ZH5kuFOb9ZVMwX1T
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.160
+      slug: cuir-renforce-broigne
+      tags: []
+      subtype: armor
+      martialCategory: studdedLeather
+      damagetype: ""
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 3
+      range: null
+      magicalDefense: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.jaRTjllWH3UdW9Kt
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.ZH5kuFOb9ZVMwX1T"
+  - name: Sifflet
+    type: equipment
+    img: >-
+      icons/tools/instruments/pipe-flute-yellow.webp
+    _id: DQooTPLsh5i3tqW9
+    system:
+      description: "<p>Avec un test de Commandement\_DD\_5, le personnage peut utiliser un sifflet pour envoyer les mêmes signaux qu'avec un cor. Le signal perçant du sifflet s'entend facilement (Perception\_DD 0) dans un rayon de 400 mètres.</p><p>Pour chaque tranche de 400 mètres au-delà de cette zone, les tests de Perception\_pour entendre un sifflet reçoivent un malus de -2.</p><p>Il existe également des sifflets à ultrasons que seuls les animaux et d'autres créatures à l'ouïe fine peuvent entendre.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+        max: null
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.phbkRF4bicbINqYP
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.DQooTPLsh5i3tqW9"
+  - name: Marteau
+    type: equipment
+    img: >-
+      icons/tools/hand/hammer-mason-white-grey.webp
+    _id: aSFJcGg0p3ipTxev
+    system:
+      description: "<p>Si le personnage utilise un marteau en combat, il le traite comme une\_arme improvisée\_à une main infligeant un nombre de dégâts contondants égal à ceux d'un\_gantelet clouté\_de même taille.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.yHgX3VhhG4woO1FK
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.aSFJcGg0p3ipTxev"
+  - name: Hameçon
+    type: equipment
+    img: >-
+      icons/tools/fishing/hook-barbed-steel-blue.webp
+    _id: usGHOnTy0kuHYIbz
+    system:
+      description: >-
+        <p>Ce petit crochet en métal n'est rien de plus qu'une aiguille rigide
+        et recourbée.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pc
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.IuAHJzWNrvQY2dNB
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.usGHOnTy0kuHYIbz"
+  - name: Ficelle (15m)
+    type: equipment
+    img: >-
+      icons/sundries/survival/rope-coiled-brown.webp
+    _id: BJtxNiZMrcJGqilg
+    system:
+      description: "<p>Vendue en pelote ou en bobine, la ficelle permet d'improviser des pièges et des systèmes d'alarme, ou de ramener un objet hors d'atteinte à soi en l'attachant à une flèche ou un carreau. La ficelle a une\_solidité\_de 0,1 point de vie et le\_DD\_pour la briser est de 14.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.2RXQjkCe3DPgdfpX
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!1eoI5TTmM4Efv9Zy.BJtxNiZMrcJGqilg"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.cof2ta-acteurs.Actor.PQPk2zlxIQ6zhPJI
+  duplicateSource: Actor.kEEln8mWo6GEGUtI
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772238594661
+  modifiedTime: 1772238594661
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 900000
+_id: 1eoI5TTmM4Efv9Zy
+_key: "!actors!1eoI5TTmM4Efv9Zy"

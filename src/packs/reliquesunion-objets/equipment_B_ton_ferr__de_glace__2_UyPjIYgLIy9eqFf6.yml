@@ -1,0 +1,113 @@
+folder: fkaQ5zi2WGOp22kb
+name: Bâton ferré de glace +2
+type: equipment
+img: >-
+  icons/weapons/staves/staff-ornate.webp
+system:
+  description: >-
+    <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
+    le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
+    au combat, plus lourd et généralement couvert de métal aux extrémités (bien
+    que les druides utilisent des bâtons de bois noueux avec le même
+    effet).</p><hr /><p><strong>Arme magique de centaure - Hei
+    Tunu</strong></p><ul><li><p>Bonus de +2 en attaque et
+    DM</p></li><li><p>+1d4° DM de glace</p></li></ul>
+  source: ""
+  origin: ""
+  slug: baton-ferre
+  tags:
+    - dmtemporairespossibles
+  subtype: weapon
+  martialCategory: ironStaff
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 900
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Actor.HhfWAaUYHXKxHMFj.Item.tujMGMmEvxMl0Nj3
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc +2"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d6 + @for +1d4° +2
+          target:
+            type: single
+            scope: all
+            number: 0
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+  range:
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1771468314323
+  modifiedTime: 1772223024394
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: UyPjIYgLIy9eqFf6
+sort: 5400000
+_key: "!items!UyPjIYgLIy9eqFf6"

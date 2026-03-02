@@ -1,0 +1,76 @@
+folder: p1DwCP2iRVmyjZot
+name: Attaque éclair
+type: capacity
+img: icons/magic/lightning/fist-unarmed-strike-blue.webp
+system:
+  description: "<p>Le PJ peut effectuer une attaque au contact\_très percutante. </p><p>Il ajoute son Mod. de <strong>DEX en\_attaque et aux DM</strong> pour cette offensive.</p>"
+  source: ''
+  origin: Livre du Joueur p.130
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir le bonus d'AGI en attaque et aux DM
+    de contact.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.SAKiTsMTNYkvjc2L
+          subtype: combat
+          target: melee
+          value: '@agi'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SAKiTsMTNYkvjc2L
+          subtype: combat
+          target: damMelee
+          value: '@agi'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: SAKiTsMTNYkvjc2L
+ownership:
+  default: 0
+sort: 0
+_key: '!items!SAKiTsMTNYkvjc2L'

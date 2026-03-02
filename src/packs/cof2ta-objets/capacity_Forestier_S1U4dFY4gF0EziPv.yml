@@ -1,0 +1,122 @@
+folder: uvHtoSiBBvs1nfqu
+name: Forestier
+type: capacity
+img: icons/environment/wilderness/tree-ash.webp
+_id: S1U4dFY4gF0EziPv
+system:
+  description: "<p> Le centaure a un bonus de <strong>+5 aux\_tests de perception, de survie et de discrétion en\_milieu naturel.</strong> </p><p>De plus, il peut fournir des plantes\_capables de <strong>soigner 3d6 PV</strong> (ne fonctionne\_qu'une fois par personnage et par jour)</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>La première action donne le bonus permanent aux tests de
+    compétence.</p><p>La deuxième action permet de réaliser un soin sur une
+    cible. Le nombre d'utilisation par jour est à régler en fonction du nombre
+    d'alliés.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: daily
+  charges:
+    current: 4
+    max: 4
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.S1U4dFY4gF0EziPv
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.S1U4dFY4gF0EziPv
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Discretion en milieu naturel
+        - type: capacity
+          source: Item.S1U4dFY4gF0EziPv
+          subtype: skill
+          target: per
+          value: '5'
+          apply: self
+          additionalInfos: Survie en milieu naturel
+        - type: capacity
+          source: Item.S1U4dFY4gF0EziPv
+          subtype: skill
+          target: con
+          value: '5'
+          apply: self
+          additionalInfos: Survie en milieu naturel
+      resolvers: []
+    - source: Item.S1U4dFY4gF0EziPv
+      indice: 1
+      label: Soin de 3d6
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 3d6
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!S1U4dFY4gF0EziPv'

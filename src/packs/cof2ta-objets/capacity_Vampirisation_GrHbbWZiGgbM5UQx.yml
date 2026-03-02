@@ -1,0 +1,118 @@
+folder: uvHtoSiBBvs1nfqu
+name: Vampirisation
+type: capacity
+img: icons/magic/death/mouth-bite-fangs-vampire.webp
+_id: GrHbbWZiGgbM5UQx
+system:
+  description: "<p>La créature doit <strong>réussir\_une attaque magique sur une cible vivante</strong>\_à une distance maximale de 30 mètres.\_En\_cas de réussite, la cible <strong>subit 6d6 DM</strong> et la créature <strong>régénère d'autant de PV</strong> que de\_DM infligés.</p><p>De plus, <strong>à chaque fois qu'une\_créature meurt à moins de 20 mètres de lui</strong>,\_la créature siphonne son énergie vitale et\_<strong>gagne 1d6 + 13 PV</strong>.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>La première action permet de réaliser l'attaque de vampirisation. Il
+    faudra appliquer les DM sur la cible et les appliquer en soin sur la
+    créature.</p><p>La deuxième action permet de se soigner automatiquement.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.GrHbbWZiGgbM5UQx
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '17'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 6d6
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.GrHbbWZiGgbM5UQx
+      indice: 1
+      label: Mort à moins de 20m
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 1d6+13
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!GrHbbWZiGgbM5UQx'

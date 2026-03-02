@@ -1,0 +1,116 @@
+folder: r7vQCSttib8wG8VR
+name: Maître en son domaine
+type: capacity
+img: >-
+  icons/sundries/documents/document-sealed-white-red.webp
+_id: sJQzhTq298wzOAvo
+system:
+  description: "<p>L’expert est reconnu par ses pairs comme un\_maître en son domaine et il acquiert une influence\_sociale hors du commun. Grâce à son réseau de\_connaissances ou par l’intermédiaire de ses pairs, le\_personnage peut obtenir de nombreux avantages. </p><p>La\_réussite à un <strong>test de CHA difficulté 10</strong> lui suffit\_pour <strong>obtenir une entrevue avec n’importe quel\_personnage puissant</strong> à tout moment. </p><p>Un\_<strong>test de\_difficulté 15</strong> peut lui permettre d’<strong>obtenir un service</strong>, par exemple une lettre de recommandation,\_un renseignement réservé à l’élite, des billets pour\_un bal privé, ou même une escorte armée pour\_l’aider à se rendre dans un endroit dangereux.</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p177
+  slug: ""
+  inGame: <p>Les deux actions permettent de réaliser les tests de sauvegarde.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.sJQzhTq298wzOAvo
+      indice: 0
+      label: Obtenir une entrevue
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: cha
+          saveDifficulty: "10"
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: Item.sJQzhTq298wzOAvo
+      indice: 1
+      label: Obtenir un service
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: cha
+          saveDifficulty: "15"
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!sJQzhTq298wzOAvo"

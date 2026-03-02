@@ -1,0 +1,75 @@
+folder: uvHtoSiBBvs1nfqu
+name: Imparable
+type: capacity
+img: icons/skills/melee/shield-damaged-broken-blue.webp
+_id: I38FCulUkPfrzF3f
+system:
+  description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. Si le\_champion obtient un résultat compris <strong>entre\_15 et 20 au test d'attaque</strong> (même sans utiliser\_Imparable), il inflige <strong>+1d6 DM et l'attaque est\_automatiquement réussie</strong> (quelle que soit la\_DEF de son adversaire).</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir le Dé Bonus en attaque.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.I38FCulUkPfrzF3f
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.I38FCulUkPfrzF3f
+          subtype: bonusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.I38FCulUkPfrzF3f
+          subtype: bonusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!I38FCulUkPfrzF3f'

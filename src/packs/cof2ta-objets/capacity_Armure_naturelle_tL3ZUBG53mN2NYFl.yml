@@ -1,0 +1,70 @@
+folder: WkEB3SwBwmId1w26
+name: Armure naturelle
+type: capacity
+img: icons/magic/defensive/armor-stone-skin.webp
+system:
+  description: "<p>Le PJ a endurci son corps. Il bénéficie d’un\_bonus de <strong>+2 à la DEF.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF augmente\_de +1.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.121
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent à la DEF.</p><p>Si le PJ obtient la capacité avancée,
+    remplacer la valeur du Modificateur par 3.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.PMmwzPWrrEgcCMkH
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.PMmwzPWrrEgcCMkH
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: tL3ZUBG53mN2NYFl
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!tL3ZUBG53mN2NYFl'

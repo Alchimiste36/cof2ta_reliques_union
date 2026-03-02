@@ -1,0 +1,124 @@
+folder: n5FCdQaLirfGR17h
+name: Rage du berserk
+type: capacity
+img: icons/creatures/abilities/mouth-teeth-rows-red.webp
+system:
+  description: "<p>Le PJ entre dans une rage de berserk pour le\_reste du combat, ce qui le rend particulièrement\_dangereux. </p><p>Il obtient un bonus de <strong>+2 en attaque\_et +1d6 aux DM</strong> à toutes ses attaques au contact,\_mais <strong>perd 4 en DEF</strong> et <strong>ne peut fuir ou attaquer\_à distance</strong>. </p><p>S’il veut stopper la rage avant d’avoir\_éliminé tous ses ennemis, le PJ doit réussir un\_<strong>test de SAG difficulté 13</strong> (un seul essai par tour).</p>"
+  source: ''
+  origin: Livre du Joueur p.123
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir les bonus en Attaque et aux DM et le
+    malus à la DEF.</p><p>La deuxième action permet de réaliser le test de PER
+    difficulté 13.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 3
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.oFPsrb2ONP6TVkmu
+      indice: 0
+      label: En rage !
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.oFPsrb2ONP6TVkmu
+          subtype: combat
+          target: melee
+          value: '2'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.oFPsrb2ONP6TVkmu
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.FrKhGqQ0ZJxxdvuq
+          subtype: combat
+          target: def
+          value: '-4'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.FrKhGqQ0ZJxxdvuq
+      indice: 1
+      label: Sortir de la rage
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@per'
+            crit: ''
+            difficulty: '13'
+          dmg:
+            formula: ''
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: FrKhGqQ0ZJxxdvuq
+ownership:
+  default: 0
+sort: 0
+_key: '!items!FrKhGqQ0ZJxxdvuq'

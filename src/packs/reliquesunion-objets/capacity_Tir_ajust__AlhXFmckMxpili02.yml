@@ -1,0 +1,90 @@
+folder: 73SIMU7AmWSYN0GC
+name: Tir ajusté
+type: capacity
+img: >-
+  icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+_id: AlhXFmckMxpili02
+system:
+  description: >-
+    <p>En utilisant un arc, le PJ peut tirer une flèche de façon très précise
+    pour viser un point sensible sur une cible.</p><p>Au prix d'une action
+    limité, le PJ tire une flèche avec un Dé Bonus qui inflige +[Rang]d6 +AGI DM
+    si elle touche. La cible ne peux pas appliquer de RD naturelle contre ces
+    dommages par contre les créatures insensibles aux attaque sournois ne
+    subissent pas le DM supplémentaires.</p>
+  source: ""
+  origin: ""
+  slug: ""
+  inGame: >-
+    <p>L'action permet de réaliser l'attaque à distance en reprennant les
+    valeurs de la première arme équipée en ajoutant les bonus.</p>
+  subtype: ""
+  actionType: l
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.AlhXFmckMxpili02
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: true
+          malusDiceAdd: false
+          skill:
+            formula: "@arme.skill"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: "@arme.dmg +@rangd6 +@agi"
+          target:
+            type: none
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: true
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: Item.AlhXFmckMxpili02
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1770779403022
+  modifiedTime: 1770780157619
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: "!items!AlhXFmckMxpili02"

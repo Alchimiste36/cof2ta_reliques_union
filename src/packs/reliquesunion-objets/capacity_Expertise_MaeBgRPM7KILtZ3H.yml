@@ -1,0 +1,113 @@
+folder: r7vQCSttib8wG8VR
+name: Expertise
+type: capacity
+img: >-
+  icons/commodities/treasure/medal-ribbon-silver-purple.webp
+_id: MaeBgRPM7KILtZ3H
+system:
+  description: "<p>Le personnage a atteint un tel niveau de compétence qu’il mérite vraiment le titre d’expert\_en son domaine. Désormais, il <strong>bénéficie d’un dé\_bonus pour les tests en rapport avec son métier</strong>. </p><p>Il\_ lui faut <strong>deux fois moins de temps qu’à un\_professionnel ordinaire</strong> pour obtenir le même\_résultat lorsqu’il exerce son métier.</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p177
+  slug: ""
+  inGame: >-
+    <p>Action activable/désactivable donnant un Dé bonus à toutes les
+    caractéristiques.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.MaeBgRPM7KILtZ3H
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: agi
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: con
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: for
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: per
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: int
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Item.MaeBgRPM7KILtZ3H
+          subtype: bonusDice
+          target: vol
+          value: "0"
+          apply: self
+          additionalInfos: ""
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!MaeBgRPM7KILtZ3H"

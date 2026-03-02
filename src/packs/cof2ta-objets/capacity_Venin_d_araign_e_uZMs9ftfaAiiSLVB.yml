@@ -1,0 +1,84 @@
+folder: uvHtoSiBBvs1nfqu
+name: Venin d'araignée
+type: capacity
+img: icons/creatures/invertebrates/spider-skull-green.webp
+_id: uZMs9ftfaAiiSLVB
+system:
+  description: "<p>Les araignées empoisonnent la victime. </p><p>À\_chaque tour où elle est blessée par la nuée, la\_victime doit réussir un <strong>test de CON difficulté\_10 ou sombrer dans l'inconscience</strong> tandis que\_la nuée continue à la dévorer…</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+    statut Inconcient si le test est raté.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.uZMs9ftfaAiiSLVB
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '10'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - unconscious
+            duration: '0'
+            unit: unlimited
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!uZMs9ftfaAiiSLVB'

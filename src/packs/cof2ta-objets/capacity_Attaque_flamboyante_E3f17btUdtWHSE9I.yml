@@ -1,0 +1,74 @@
+folder: qn0EEIMCq5X5EGfy
+name: Attaque flamboyante
+type: capacity
+img: icons/skills/melee/maneuver-sword-katana-yellow.webp
+system:
+  description: "<p>Le style de combat du PJ est flamboyant et\_surprenant.</p><p>Avec cette capacité, il effectue <strong>une\_attaque de contact avec un bonus d’attaque et\_de DM égal à son Mod. de CHA</strong> (en plus du\_Mod. de FOR ou de DEX).</p>"
+  source: ''
+  origin: Livre du Joueur p.129
+  slug: ''
+  inGame: "<p>L'action activable permet d'obtenir un bonus à l'attaque et aux DM de contact.\_</p>"
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.E3f17btUdtWHSE9I
+          subtype: combat
+          target: melee
+          value: '@cha'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.E3f17btUdtWHSE9I
+          subtype: combat
+          target: damMelee
+          value: '@cha'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: E3f17btUdtWHSE9I
+ownership:
+  default: 0
+sort: 0
+_key: '!items!E3f17btUdtWHSE9I'

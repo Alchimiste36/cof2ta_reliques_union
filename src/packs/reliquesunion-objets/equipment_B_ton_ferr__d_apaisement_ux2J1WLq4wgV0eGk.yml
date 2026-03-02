@@ -1,0 +1,157 @@
+folder: fkaQ5zi2WGOp22kb
+name: Bâton ferré d'apaisement
+type: equipment
+img: >-
+  icons/weapons/staves/staff-ornate.webp
+system:
+  description: >-
+    <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
+    le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
+    au combat, plus lourd et généralement couvert de métal aux extrémités (bien
+    que les druides utilisent des bâtons de bois noueux avec le même
+    effet).</p><hr /><p><strong>Arme magique de Centaure -
+    Karekau</strong></p><ul><li><p>Le porteur de ce bâton ferré peut, par une
+    action limitée, faire dormir une cible qu'elle touche pendant 2d4 rounds.
+    Après cette durée, une cible non volontaire peut réaliser un test de CON
+    difficulté 15 ou tomber dans l'inconscience pendant 4d6 heures. Karekau
+    utilise cette faculté pour s'endormir malgré ses douleurs et
+    courbatures.</p></li></ul>
+  source: ""
+  origin: ""
+  slug: baton-ferre
+  tags:
+    - dmtemporairespossibles
+  subtype: weapon
+  martialCategory: ironStaff
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 450
+    unit: pa
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d6 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+    - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
+      indice: 1
+      label: Sauvegarde
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: "15"
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ""
+            elementType: ""
+            statuses:
+              - unconscious
+            duration: ""
+            unit: unlimited
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range:
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772219830152
+  modifiedTime: 1772223024394
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: ux2J1WLq4wgV0eGk
+sort: 1800000
+_key: "!items!ux2J1WLq4wgV0eGk"

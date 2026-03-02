@@ -1,0 +1,77 @@
+folder: 70oSGsBlWvf0HQ7g
+name: Invocation d’un démon
+type: capacity
+img: icons/magic/unholy/silhouette-evil-horned-giant.webp
+system:
+  description: "<p><strong>Une fois par combat</strong>, <strong>en sacrifiant 1d6 PV</strong>, le PJ\_<strong>invoque un démon</strong> qui entre alors à son service\_<strong>pour [5 + Mod. de SAG] tours</strong>. </p><p>Le démon est\_une grande silhouette noire d’environ 2,30 m,\_aux contours brumeux et indéterminés et aux\_yeux larges et écarlates. </p><p>Le démon <strong>divise par\_deux tous les DM non magiques</strong> qu’il subit,\_les sorts et les armes magiques lui infligent des\_DM normaux. Il est <strong>capable de voler</strong> à une\_vitesse équivalente à un déplacement normal.</p><p><strong><span style=\"text-decoration:underline\">Lorsque le PJ atteint le niveau 10</span></strong>, le démon\_devient <strong>capable d’attaquer deux fois par tour</strong>\_au prix d’une <strong>action limitée</strong>.</p><p><strong><span style=\"text-decoration:underline\">Démon :</span></strong></p><p>FOR +5*, DEX +2, CON +4*, INT +2, SAG\_+2, CHA +0,</p><p>Init. 16, DEF 17, PV [niveau du PJ x 5],</p><p>attaque au contact = [niveau du PJ], DM 1d8+5</p>"
+  source: ''
+  origin: Livre du Joueur p.139
+  slug: ''
+  inGame: "<p>L'action permet de dépenser les PM et de subir 1d6 DM.</p><p>Donnez les droits \"Propriétaire\" au PJ pour le Compagnon :\_@UUID[Actor.vxAzuG18og558g9u]{Démon invoqué}</p>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.UJk1xALSeBWJd6Sv
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: '-1d6'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: UJk1xALSeBWJd6Sv
+ownership:
+  default: 0
+sort: 0
+_key: '!items!UJk1xALSeBWJd6Sv'

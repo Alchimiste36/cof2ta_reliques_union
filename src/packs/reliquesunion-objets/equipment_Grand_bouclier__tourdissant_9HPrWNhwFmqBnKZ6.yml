@@ -1,0 +1,99 @@
+folder: fkaQ5zi2WGOp22kb
+name: Grand bouclier étourdissant
+type: equipment
+img: >-
+  icons/equipment/shield/heater-steel-boss-red.webp
+system:
+  description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
+  source: ""
+  origin: Livre du Joueur p.160
+  slug: grand-bouclier
+  tags: []
+  subtype: shield
+  martialCategory: largeShield
+  damagetype: ""
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 4
+    unit: pa
+  rarity: common
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Actor.A0N0QlLLdB170Ccf.Item.MKfo1Ld0zUk8sRmq
+      indice: 0
+      label: Lors d'une charge
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: "10"
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ""
+            elementType: ""
+            statuses:
+              - stun
+            duration: 1d4+1
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: 2
+  range: null
+  magicalDefense: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772232136223
+  modifiedTime: 1772232136223
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: 9HPrWNhwFmqBnKZ6
+sort: 0
+_key: "!items!9HPrWNhwFmqBnKZ6"

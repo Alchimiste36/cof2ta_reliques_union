@@ -1,0 +1,77 @@
+folder: uvHtoSiBBvs1nfqu
+name: Bardes
+type: capacity
+img: icons/equipment/chest/breastplate-collared-steel.webp
+system:
+  description: <p>Armure de plaque pour cheval de guerre.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>Activer l'action pour obtenir le bonus en DEF et le malus en Initiative.
+    Le malus en initiative doit aussi être ajouté manuellement pour le
+    cavalier.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.1ym6bJnM3tLUCH3F
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.1ym6bJnM3tLUCH3F
+          subtype: combat
+          target: def
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.BiCeKbk7fVMQlXEs
+          subtype: combat
+          target: init
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: BiCeKbk7fVMQlXEs
+ownership:
+  default: 0
+sort: 0
+_key: '!items!BiCeKbk7fVMQlXEs'

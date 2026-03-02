@@ -1,0 +1,585 @@
+folder: G2yuu7LVCS3wnDO7
+name: Sanglier sanguinaire
+type: encounter
+img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/sanglier_sanguinaire.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -4
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 6
+    hp:
+      base: 50
+      value: 50
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 18
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: living
+    size: large
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: "<p>Les sangliers mâles pèsent généralement\_autour de 150 kg, mais on peut en rencontrer\_de 200 à 300 kg (ajouter un niveau de boss).\_</p><p>Les Nains se servent des spécimens les plus\_robustes comme monture.</p>"
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Sanglier sanguinaire
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/sanglier_sanguinaire_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.PWVaMrfKxjD8QkLi.Item.pxyuzHY1GaKZo7PH
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "10"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d6+8
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Défenses
+    img: icons/svg/sword.svg
+    _id: pxyuzHY1GaKZo7PH
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!cLQkh4YqZkbg6XNh.pxyuzHY1GaKZo7PH"
+  - folder: uvHtoSiBBvs1nfqu
+    name: Enrager
+    type: capacity
+    img: icons/creatures/abilities/lion-roar-yellow.webp
+    _id: PiNIDKaKXiKaAdjg
+    system:
+      description: "<p>Lorsqu'il <strong>reçoit un coup critique ou si ses\_PV ont diminué de moitié ou plus</strong>, le golem de chair\_devient enragé. </p><p>Il ignore les pénalités de douleur\_ou la peur, augmente de <strong>+5 son score d'attaque\_au contact</strong> et <strong>ses DM de +1d6</strong>. </p><p><strong>Il peut encore agir\_un tour complet après avoir atteint 0 PV.</strong></p>"
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'obtenir le bonus en attaque et aux
+        DM.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.cLQkh4YqZkbg6XNh.Item.PiNIDKaKXiKaAdjg
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.cLQkh4YqZkbg6XNh.Item.PiNIDKaKXiKaAdjg
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.cLQkh4YqZkbg6XNh.Item.PiNIDKaKXiKaAdjg
+              subtype: combat
+              target: damMelee
+              value: +1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!cLQkh4YqZkbg6XNh.PiNIDKaKXiKaAdjg"
+  - folder: uvHtoSiBBvs1nfqu
+    name: Charge du sanglier
+    type: capacity
+    img: icons/creatures/mammals/bull-horned-blue.webp
+    system:
+      description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p><hr /><p><strong>Sur une charge réussie</strong>, si la victime est d'une\_taille inférieure au sanglier, elle est également\_<strong>projetée à [1d6+1] mètres de là</strong> et doit réussir\_un <strong>test de CON de difficulté 15 ou être étourdie</strong>. </p><p>À chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
+      source: ""
+      origin: Livre du Meneur p.68
+      slug: ""
+      inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
+      subtype: ""
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.cLQkh4YqZkbg6XNh.Item.QIfaXEdDf3lVUy04
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.cLQkh4YqZkbg6XNh.Item.QIfaXEdDf3lVUy04
+              subtype: bonusDice
+              target: melee
+              value: "0"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+        - source: Actor.cLQkh4YqZkbg6XNh.Item.QIfaXEdDf3lVUy04
+          indice: 1
+          label: Charge réussie
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: "15"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - stun
+                unit: combat
+                duration: "0"
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: QIfaXEdDf3lVUy04
+    ownership:
+      default: 0
+    _key: "!actors.items!cLQkh4YqZkbg6XNh.QIfaXEdDf3lVUy04"
+  - folder: uvHtoSiBBvs1nfqu
+    name: Enrager
+    type: capacity
+    img: icons/creatures/abilities/lion-roar-yellow.webp
+    _id: ynbbqkum4etqKWeR
+    system:
+      description: "<p>Lorsqu'il <strong>reçoit un coup critique ou si ses\_PV ont diminué de moitié ou plus</strong>, le golem de chair\_devient enragé. </p><p>Il ignore les pénalités de douleur\_ou la peur, augmente de <strong>+5 son score d'attaque\_au contact</strong> et <strong>ses DM de +1d6</strong>. </p><p><strong>Il peut encore agir\_un tour complet après avoir atteint 0 PV.</strong></p>"
+      source: ""
+      origin: ""
+      slug: ""
+      inGame: >-
+        <p>L'action activable permet d'obtenir le bonus en attaque et aux
+        DM.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.cLQkh4YqZkbg6XNh.Item.ynbbqkum4etqKWeR
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.cLQkh4YqZkbg6XNh.Item.ynbbqkum4etqKWeR
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.cLQkh4YqZkbg6XNh.Item.ynbbqkum4etqKWeR
+              subtype: combat
+              target: damMelee
+              value: +1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!cLQkh4YqZkbg6XNh.ynbbqkum4etqKWeR"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: cLQkh4YqZkbg6XNh
+ownership:
+  default: 0
+sort: 0
+_key: "!actors!cLQkh4YqZkbg6XNh"

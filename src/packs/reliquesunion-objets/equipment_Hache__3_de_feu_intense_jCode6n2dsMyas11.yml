@@ -1,0 +1,108 @@
+folder: fkaQ5zi2WGOp22kb
+name: Hache +3 de feu intense
+type: equipment
+img: >-
+  icons/weapons/axes/axe-battle-black.webp
+system:
+  description: >-
+    <p><strong>Arme magique de Centaure - Te'Tipu</strong></p><ul><li><p>Bonus
+    de +3 à l'Attaque et aux DM</p></li><li><p>Bonus de +2d4° DM de
+    feu</p></li></ul>
+  source: ""
+  origin: Livre du Joueur p.157
+  slug: hache
+  tags: []
+  subtype: weapon
+  martialCategory: axe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 1250
+    unit: pa
+  rarity: veryRare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Actor.A0N0QlLLdB170Ccf.Item.bqWuNdGCs69iNegy
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atc +3"
+            crit: ""
+            difficulty: "@cible.def"
+          dmg:
+            formula: 1d8 + @for +2d4° +3
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: "0"
+            unit: round
+      modifiers: []
+  range:
+    unit: ""
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772231702559
+  modifiedTime: 1772231702559
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: jCode6n2dsMyas11
+sort: 0
+_key: "!items!jCode6n2dsMyas11"

@@ -1,0 +1,106 @@
+folder: AzVmWmA8hngl069y
+name: Poison lent
+type: equipment
+img: icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp
+_id: 6oyJ4aRQvYe9FKo4
+system:
+  description: "<p>Effet après une journée.</p><p><strong>En cas d’échec d’un test de CON</strong>, le\_poison <strong>inflige 1d6 de DM</strong>. Le test doit être\_renouvelé chaque jour et il n’est pas possible\_de guérir des blessures infligées par le poison\_tant que ce dernier n’est pas vaincu, que ce soit\_par la réussite d’un test ou par l’administration\_d’un antidote.</p><h5>Poisons</h5><p>Il existe une grande variété de poisons à travers\_le monde, certains existant sous forme naturelle\_et d’autres étant issus d’un processus synthétique\_plus ou moins complexe.</p><p>En sus de leurs effets propres, ces toxiques sont\_catégorisés selon deux critères: la virulence\_ et\_le type.</p><p>La virulence définit l’efficacité avec laquelle il\_va agir. Elle s’échelonne de 0 à 10 bien qu’on\_retrouve la majorité des poisons sur une échelle\_comprise entre 0 et 5. Une virulence supérieure\_à 5 est très rare et caractérise les poisons les plus\_violents et mortels, uniquement manipulés\_par les maîtres alchimistes ou les plus grands\_assassins.</p><p>La plupart des poisons autorisent un test de\_CON pour résister à son effet, la difficulté du\_test étant égale à 10 + virulence.</p><p>Le type de poison permet de prévoir grossièrement la façon dont ses effets vont se manifester.</p><h5>Enduire une arme</h5><p>Il est possible d’enduire une arme de poison\_à l’aide d’un test d’INT difficulté 14 ; en cas\_d’échec la dose est gaspillée. Un échec critique\_sur ce test signifie que le personnage s’empoisonne lui-même. Seule la première attaque\_réussie avec une arme enduite de poison permet\_d’appliquer les effets du poison.</p><p>Pour plus de renseignement sur les poisons,\_référez-vous au chapitre «Équipement» (page\_156).</p>"
+  source: ''
+  origin: Livre du Joueur p.117
+  slug: ''
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Item.6oyJ4aRQvYe9FKo4
+      indice: 0
+      label: DM du poison
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+        - type: auto
+          dmg:
+            formula: 1d6
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!6oyJ4aRQvYe9FKo4'

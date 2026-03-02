@@ -1,0 +1,69 @@
+folder: 9gfvxwQjuTEa0R90
+name: Résistance aux miasmes
+type: capacity
+img: >-
+  icons/magic/acid/dissolve-arm-flesh.webp
+_id: LIuo68gJmfMt8U0s
+system:
+  description: "<p>Le personnage obtient un bonus de <strong>+3 pour\_résister aux maladies et aux poisons</strong>.</p>"
+  source: ""
+  origin: Atlas d'Osgild et Règles Optionnelles p174
+  slug: ""
+  inGame: <p>Bonus aux jets de compétences.</p>
+  subtype: ""
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 1
+  manaCost: -1
+  actions:
+    - source: Item.LIuo68gJmfMt8U0s
+      indice: 0
+      label: ""
+      chatFlavor: ""
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.LIuo68gJmfMt8U0s
+          subtype: skill
+          target: con
+          value: "3"
+          apply: self
+          additionalInfos: Résistance aux maladies et poisons
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1769994086471
+  modifiedTime: 1769994086471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 0
+_key: "!items!LIuo68gJmfMt8U0s"

@@ -1,0 +1,81 @@
+folder: uvHtoSiBBvs1nfqu
+name: Démon
+type: capacity
+img: icons/creatures/magical/spirit-undead-ghost-tan-teal.webp
+_id: etkQkYm0cwnIKXZN
+system:
+  description: "<p>les démons ne sont pas considérés\_comme des créatures non vivantes. Toutefois,\_ils partagent avec celles-ci de nombreux traits.\_</p><p>Ils ne respirent pas, ne dorment jamais, ne\_connaissent pas la fatigue et sont immunisées\_au poison et aux maladies non magiques. Ils\_n'ont pas besoin de se sustenter, du moins pas\_avec des nourritures terrestres.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: ''
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.etkQkYm0cwnIKXZN
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.etkQkYm0cwnIKXZN
+          subtype: state
+          target: poisonImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.etkQkYm0cwnIKXZN
+          subtype: state
+          target: diseaseImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.etkQkYm0cwnIKXZN
+          subtype: state
+          target: sleepimmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!etkQkYm0cwnIKXZN'

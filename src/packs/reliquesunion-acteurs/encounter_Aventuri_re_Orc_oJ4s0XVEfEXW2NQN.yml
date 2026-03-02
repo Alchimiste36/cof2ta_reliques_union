@@ -1,0 +1,1788 @@
+folder: BktpKmAqYNj9sGVv
+name: Aventurière Orc
+type: encounter
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_acteurs/autres_pnjs/orc_f_4.webp
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 1
+    hp:
+      base: 6
+      value: 6
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 18
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 16
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ""
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ""
+      public: ""
+    notes:
+      private: ""
+      public: ""
+    languages: []
+    properties: ""
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 4
+    cp:
+      value: 26
+prototypeToken:
+  name: Aventurière Orc
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/autres_pnjs/orc_f_4_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: "#ffffff"
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags:
+    monks-tokenbar:
+      include: default
+    wall-height:
+      tokenHeight: 0
+    healthEstimate:
+      dontMarkDead: false
+      hideHealthEstimate: false
+      hideName: false
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.1nxrgnMvfxGscNr7
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+5"
+                crit: "19"
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Rapière
+    img: icons/svg/sword.svg
+    _id: 1nxrgnMvfxGscNr7
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.1nxrgnMvfxGscNr7"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 30
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.qSIZuB1B1y3YBaqy
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+5"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Arc court
+    img: icons/svg/sword.svg
+    _id: qSIZuB1B1y3YBaqy
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.qSIZuB1B1y3YBaqy"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 10
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.zdi5zp0GciKU51eC
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+5"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d4+2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Couteau de lancer
+    img: icons/svg/sword.svg
+    _id: zdi5zp0GciKU51eC
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.zdi5zp0GciKU51eC"
+  - type: attack
+    system:
+      subtype: ranged
+      learned: true
+      description: ""
+      source: ""
+      origin: ""
+      slug: ""
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range:
+        value: 30
+        unit: m
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      actions:
+        - source: Actor.UVYttWIpreBznZ9p.Item.QbAy9wSLhpRA9uNe
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "+5"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 2d4
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+          modifiers: []
+    name: Arbalète légère
+    img: icons/svg/sword.svg
+    _id: QbAy9wSLhpRA9uNe
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.QbAy9wSLhpRA9uNe"
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Aventuriers
+    type: path
+    img: >-
+      icons/skills/ranged/person-archery-bow-attack-orange.webp
+    _id: vd0LR7XHiFiTQKvn
+    system:
+      description: ""
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      subtype: encounter
+      capacities:
+        - Actor.4s1ytKjuBfNxh6zP.Item.NOKnz7Sz8nxEkCx3
+        - Actor.4s1ytKjuBfNxh6zP.Item.3hO6ytFDGvw23ey8
+        - Actor.4s1ytKjuBfNxh6zP.Item.asHZnXRvP8Tsgy2N
+        - Actor.4s1ytKjuBfNxh6zP.Item.2zimk84gDvAz08Ud
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.vd0LR7XHiFiTQKvn"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Instinct de survie
+    type: capacity
+    img: >-
+      icons/skills/melee/hand-grip-sword-red.webp
+    system:
+      description: "<p>Une fois par tour, au\_moment de son choix,\_l'aventurier peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer.</p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser.</p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
+      source: ""
+      origin: Livre du meneur p122
+      slug: ""
+      inGame: >-
+        <p>Les deux premières action permettent de réaliser les tests de
+        sauvegarde pour se débarrasser d'un effet qui bloque les
+        mouvements.</p><p>La troisième action activable/désactivable permet
+        d'obtenir le bonus de DEF.</p>
+      subtype: ""
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.oJ4s0XVEfEXW2NQN.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.NOKnz7Sz8nxEkCx3
+          indice: 0
+          label: Sauvegarde d'INT
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: "10"
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.NOKnz7Sz8nxEkCx3
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: "10"
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.NOKnz7Sz8nxEkCx3
+          indice: 2
+          label: Si PV < 5
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.NOKnz7Sz8nxEkCx3
+              subtype: combat
+              target: def
+              value: "5"
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    _id: NOKnz7Sz8nxEkCx3
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.NOKnz7Sz8nxEkCx3"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Embuscade
+    type: capacity
+    img: >-
+      icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    _id: 3hO6ytFDGvw23ey8
+    system:
+      description: "<p>Au premier tour de combat,\_si l'environnement permet à l'aventurier de se\_dissimuler, la cible doit faire un <strong>test de SAG\_difficulté 19 ou être surprise</strong>. </p><p>Si elle attaque avec\_succès une cible surprise, la créature inflige <strong>+1d6\_aux DM</strong>. </p><p>La créature obtient un bonus de <strong>+5 à\_tous les tests de discrétion et en Init</strong>.</p>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>La première action permanente donne le bonus à l'INIT et au jet de
+        discrétion.</p><p>La deuxième action permet de réaliser le test de
+        sauvegarde et d'appliquer le statut Surpris pendant 1 round sur la cible
+        en cas d'échec.</p><p>La troisième action activable/désactivable permet
+        d'obtenir les DM supplémentaires pour les attaques de contact et de
+        distance.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.oJ4s0XVEfEXW2NQN.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: init
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+              subtype: skill
+              target: agi
+              value: "5"
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+          indice: 1
+          label: Test de surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: "19"
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ""
+                elementType: ""
+                statuses:
+                  - surprised
+                duration: "1"
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+          indice: 2
+          label: Sur cible surprise
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.3hO6ytFDGvw23ey8
+              subtype: combat
+              target: damRanged
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 125000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.3hO6ytFDGvw23ey8"
+  - folder: S5Arn2U0XkYUiO4d
+    name: Attaque en traitre
+    type: capacity
+    img: >-
+      icons/skills/melee/strike-dagger-blood-red.webp
+    _id: asHZnXRvP8Tsgy2N
+    system:
+      description: "<p>Si l'aventurier attaque\_<strong>en même temps qu'un allié</strong> (il peut volontairement\_retarder son initiative), <strong>de dos ou par surprise</strong>, il\_réalise une attaque en traître avec un bonus de\_<strong>+5 en attaque et +2d6 aux DM</strong> – cumulable avec\_Attaque mortelle (pour les variantes assassin\_et tireur) ou Imparable (pour la variante maître\_d'armes).\_</p><blockquote><p><strong>Note :</strong> un tireur ne peut utiliser une attaque\_en traître à distance que si un allié est déjà au\_contact de sa cible.</p></blockquote>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>L'action activable/désactivable donne les bonus à l'attaque et aux
+        DM.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.oJ4s0XVEfEXW2NQN.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.asHZnXRvP8Tsgy2N
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: melee
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: ranged
+              value: "5"
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+            - type: capacity
+              source: Actor.oJ4s0XVEfEXW2NQN.Item.asHZnXRvP8Tsgy2N
+              subtype: combat
+              target: damRanged
+              value: 1d6
+              apply: self
+              additionalInfos: ""
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 137500
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.asHZnXRvP8Tsgy2N"
+  - folder: S5Arn2U0XkYUiO4d
+    name: L'hallali
+    type: capacity
+    img: >-
+      icons/skills/melee/hand-grip-staff-teal.webp
+    _id: 2zimk84gDvAz08Ud
+    system:
+      description: "<p>Les aventuriers profitent d'une\_erreur de leur adversaire pour lui porter des\_attaques fatales.</p><p> À chaque fois que la victime\_rate une attaque ou obtient sur un test d'attaque\_un résultat au d20 allant de 1 à 5 (inclus), elle\_déclenche la curée ! </p><p>Chaque aventurier doté\_de cette capacité bénéficie <strong>immédiatement et\_gratuitement d'une Attaque en traître</strong> contre\_la victime (+5 au jet d'attaque/+2d6 aux DM).</p>"
+      source: ""
+      origin: Livre du meneur p134
+      slug: ""
+      inGame: >-
+        <p>Pas d'effet aitomatique. L'action est présente seulement pour
+        afficher la capacité dans la liste des actions.</p>
+      subtype: ""
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.oJ4s0XVEfEXW2NQN.Item.vd0LR7XHiFiTQKvn
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.oJ4s0XVEfEXW2NQN.Item.2zimk84gDvAz08Ud
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 150000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.2zimk84gDvAz08Ud"
+  - folder: srnxqMuZEh5AAU86
+    name: Arc court
+    type: equipment
+    img: >-
+      icons/weapons/bows/shortbow-arrows-black.webp
+    _id: 0RE71mhANoS3Vdds
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.158
+      slug: arc-court
+      tags: []
+      subtype: weapon
+      martialCategory: shortBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 30
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atd"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.qTYcU22ZD6OainA8
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 900000
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.0RE71mhANoS3Vdds"
+  - folder: srnxqMuZEh5AAU86
+    name: Couteaux de lancer
+    type: equipment
+    img: >-
+      icons/weapons/daggers/dagger-bone-black.webp
+    _id: PMwVLI6swGtqAHxp
+    system:
+      description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p>  <p>Lancer trois couteaux au titre d’un seul test d’attaque est possible.  Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p>"
+      source: ""
+      origin: Livre du Joueur p.158
+      slug: couteaux-de-lancer
+      tags: []
+      subtype: weapon
+      martialCategory: throwingKnife
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+          indice: 0
+          label: A distance
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atd"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d4
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+          indice: 1
+          label: Au contact
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atd"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d3
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+          indice: 2
+          label: 3 couteaux à distance
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: l
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atd"
+                crit: ""
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d4 + @agi
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.Z5wEvqUEJ2XbCLp2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 500000
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.PMwVLI6swGtqAHxp"
+  - folder: OBPli02oRaBQq6Ee
+    name: Rapière
+    type: equipment
+    img: >-
+      icons/weapons/swords/scimitar-worn-blue.webp
+    _id: DMnZkF9935F6HVhF
+    system:
+      description: >-
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups d'estoc.</p><p>
+        </p><p><strong>Arme légère, seuil de critique 19-20</strong></p>
+      source: ""
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 6
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.G5IYsoyGoVsMqqqw
+          indice: 0
+          label: ""
+          chatFlavor: ""
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: "@atc"
+                crit: "19"
+                difficulty: "@cible.def"
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: "0"
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ""
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.G5IYsoyGoVsMqqqw
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.DMnZkF9935F6HVhF"
+  - folder: GUKbDXrNXlTgfaW0
+    name: Armure de cuir
+    type: equipment
+    img: >-
+      icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    _id: aiM61FYA8JAu2XyG
+    system:
+      description: ""
+      source: ""
+      origin: Livre du Joueur p.160
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ""
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+      magicalDefense: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.cof2ta-objets.Item.AkaF6hw8bOIgt6ET
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.aiM61FYA8JAu2XyG"
+  - name: Ceinture d'Aventurier
+    type: equipment
+    img: >-
+      icons/equipment/waist/belt-buckle-round-red.webp
+    _id: 9rfaCmTPAEcTTkUd
+    system:
+      description: "<p>Cette bandoulière comporte six poches dans le sens de la longueur et une sacoche au niveau de la hanche. Chaque poche a un épais rabat de cuir qui peut être fermé en cas de secousses (ce qui nécessite une\_action de mouvement\_pour l'ouvrir et l'attacher) ou peut être laissée ouverte pour y accéder plus facilement. Les poches et la sacoche contiennent chacune un certain nombre d'anneaux et de liens permettant d'attacher davantage d'équipement. La ceinture se fixe à l'épaule, et peut être libérée en tirant d'un geste sec en cas d'urgence, par une action de mouvement.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 40
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.ErykeXVo9pJyt6E6
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.9rfaCmTPAEcTTkUd"
+  - name: Bourse
+    type: equipment
+    img: >-
+      icons/containers/bags/coinpouch-simple-leather-silver-brown.webp
+    _id: rrvKry5pDvvYJYoC
+    system:
+      description: >-
+        <p>Une bourse standard en cuir ou en tissu est pourvue d'une cordelette
+        en cuir permettant de la fermer et d'une autre pour la fixer à la
+        ceinture. Elle est suffisamment grande pour contenir 100 à 200 pièces ou
+        deux pommes.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+        max: null
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.54loy4hNFHAkJDj8
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.rrvKry5pDvvYJYoC"
+  - name: Appeau
+    type: equipment
+    img: >-
+      icons/tools/instruments/pipe-flue-tan.webp
+    _id: b6SbMc4MK1R8wK1f
+    system:
+      description: >-
+        <p>Ces sifflets en roseau ou en bambou imitent le cri de divers animaux
+        sauvages. Chaque appeau est lié à un type d'animal spécifique ou à un
+        cri donné (signalant, en général, la présence de nourriture ou d'un
+        partenaire pour attirer l'animal). Avec le bon sifflet, le personnage
+        gagne un bonus de +2 aux tests de Nature/Survie pour pister les animaux
+        d'un type spécifique ou pour subvenir à ses besoins dans la nature.</p>
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.MWLtD6QKZGdWy3zp
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.b6SbMc4MK1R8wK1f"
+  - name: Boite à Parchemins
+    type: equipment
+    img: >-
+      icons/containers/bags/case-scroll-leather-tan.webp
+    _id: IBLOB8YaL8ReIfYi
+    system:
+      description: "<p>Cette boîte en bois accueille facilement 10 parchemins et contient de petites pinces ou des marque-pages pour faciliter l'indexation. Il faut une\_action de mouvement\_pour récupérer un parchemin dans une boîte à parchemins tenue en main. La boîte à parchemins a une\_solidité\_de 5, 5 points de vie et le\_DD\_pour la briser est de 20. Les boîtes à parchemins sont étanches.</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+        max: null
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 15
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.vSa9ODaORA85NMp1
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.IBLOB8YaL8ReIfYi"
+  - name: Boussole
+    type: equipment
+    img: >-
+      icons/tools/navigation/compass-worn-copper.webp
+    _id: xf8vBHYXiSAMnwNE
+    system:
+      description: "<p>Il s'agit d'une boussole ordinaire indiquant le nord magnétique et accordant un bonus de circonstances de +2 aux tests de Nature/Survie pour éviter de se perdre.\_</p>"
+      source: ""
+      origin: ""
+      slug: ""
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ""
+      quantity:
+        current: 1
+        destroyIfEmpty: false
+        max: null
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 20
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions: []
+      defense: null
+      magicalDefense: null
+    effects: []
+    folder: 2WEYYBHjuNosW3yi
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.world.reliquesunion-objets.Item.s3GYarHofvCb80mw
+      duplicateSource: null
+      exportSource: null
+      coreVersion: "13.351"
+      systemId: co2
+      systemVersion: "#{VERSION}#"
+      lastModifiedBy: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: "!actors.items!oJ4s0XVEfEXW2NQN.xf8vBHYXiSAMnwNE"
+effects: []
+flags: {}
+_stats:
+  compendiumSource: Compendium.world.cof2ta-acteurs.Actor.4s1ytKjuBfNxh6zP
+  duplicateSource: Actor.w2ohr9tdmMxWGZli
+  exportSource: null
+  coreVersion: "13.351"
+  systemId: co2
+  systemVersion: "#{VERSION}#"
+  createdTime: 1772238594661
+  modifiedTime: 1772238594661
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 800000
+_id: oJ4s0XVEfEXW2NQN
+_key: "!actors!oJ4s0XVEfEXW2NQN"
