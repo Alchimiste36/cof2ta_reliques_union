@@ -1,0 +1,102 @@
+folder: vQoWzuBnXuSDEFsB
+name: Imperturbable
+type: capacity
+img: icons/magic/control/silhouette-aura-energy.webp
+system:
+  description: "<p>Le PJ gagne un <strong>bonus de +5 aux tests visant\_à résister aux effets mentaux</strong> (tels que la peur,\_l’intimidation ou les sorts d’envoûtement).</p><p>De\_plus, il gagne <strong>un bonus de +3 en Initiative</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.72
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent aux jets de compétence de CHA.</p><p>Bonus permanent en
+    Initiative.</p><p>La deuxième action est activable pour résister aux
+    attaques magiques mentales.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.MxyJTB0q53HHIUVn
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.MxyJTB0q53HHIUVn
+          subtype: skill
+          target: cha
+          value: '5'
+          apply: self
+          additionalInfos: Résister aux effets mentaux
+        - type: capacity
+          source: Item.yMVng70AnxxAT9Hg
+          subtype: combat
+          target: init
+          value: '3'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.yMVng70AnxxAT9Hg
+      indice: 1
+      label: Résister aux attaques mentales
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.yMVng70AnxxAT9Hg
+          subtype: combat
+          target: magic
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: yMVng70AnxxAT9Hg
+ownership:
+  default: 0
+sort: 0
+_key: '!items!yMVng70AnxxAT9Hg'

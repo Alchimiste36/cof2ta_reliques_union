@@ -1,0 +1,62 @@
+folder: uvHtoSiBBvs1nfqu
+name: Se fondre dans les ombres
+type: capacity
+img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
+_id: bf987WdJj3rXqkes
+system:
+  description: "<p>Au prix d'une\_action de mouvement, la créature peut\_gagner les ombres et y disparaître. Il peut en\_ressortir quand bon lui semble, à une distance\_maximale de 20 m de son point de disparition\_– toujours au prix d'une action de mouvement.\_</p><p>Tant qu'il est dans les ombres, la créature\_est insensible à tout type de DM – hormis les\_DM de zone. Il peut cependant être révélé à\_l'aide d'une source de lumière suffisamment\_puissante (tel qu'un sort de Lumières dansantes\_par exemple ou un feu plus important que\_celui d'une torche).</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet simplement de savoir quand la créature est dans
+    les ombres ou non.</p>
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.bf987WdJj3rXqkes
+      indice: 0
+      label: Dans les ombres
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!bf987WdJj3rXqkes'

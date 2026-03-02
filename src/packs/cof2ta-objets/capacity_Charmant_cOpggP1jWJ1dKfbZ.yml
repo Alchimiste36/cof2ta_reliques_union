@@ -1,0 +1,67 @@
+folder: qn0EEIMCq5X5EGfy
+name: Charmant
+type: capacity
+img: icons/magic/control/mouth-smile-deception-purple.webp
+system:
+  description: "<p>Le PJ obtient un bonus de <strong>+5 pour tous ses tests\_de CHA</strong> visant à <strong>séduire, baratiner ou mentir</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le bonus passe à +10.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.129
+  slug: ''
+  inGame: "<p>L'action donne le bonus permanent en CHA.\_</p><p>Si le PJ obtient la capacité avancée, modifiez le champs valeur du Modificateur de l'action par \"10\".</p>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hqMCp45eYAu0vome
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.hqMCp45eYAu0vome
+          subtype: skill
+          target: cha
+          value: '5'
+          apply: self
+          additionalInfos: Baratiner / Séduire / Mentir
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: cOpggP1jWJ1dKfbZ
+ownership:
+  default: 0
+sort: 0
+_key: '!items!cOpggP1jWJ1dKfbZ'

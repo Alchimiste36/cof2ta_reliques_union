@@ -1,0 +1,69 @@
+folder: MLtHVjoC2jrVYPQ1
+name: Armure naturelle
+type: capacity
+img: icons/magic/defensive/armor-stone-skin.webp
+system:
+  description: "<p>Le corps du PJ se renforce et se couvre d’écailles\_lorsqu’il reçoit des blessures graves. </p><p><strong><span style=\"text-decoration:underline\">Lorsque le\_personnage passe sous la moitié de ses PV</span></strong>, il\_gagne une <strong>réduction des DM de 5 points</strong> face\_à tous les types de dégâts.</p>"
+  source: ''
+  origin: Livre du Joueur p.143
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir le bonus en RD.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.NVzDrcPGA6qjCYZk
+      indice: 0
+      label: Si PV < 50%
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.1Y7QdgelQTzghaRQ
+          subtype: combat
+          target: dr
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 1Y7QdgelQTzghaRQ
+ownership:
+  default: 0
+sort: 0
+_key: '!items!1Y7QdgelQTzghaRQ'

@@ -1,0 +1,95 @@
+folder: EEOos64scwT7rbDK
+name: Vent des lames
+type: capacity
+img: icons/skills/melee/sword-engraved-glow-purple.webp
+system:
+  description: "<p>Le PJ peut utiliser son <strong>Mod. de DEX au choix\_en attaque au contact ou aux DM</strong> (mais pas les\_deux) <strong>au lieu du Mod. de FOR</strong> lorsqu’il utilise\_une <strong>arme de guerre</strong> ou une <strong>arme d’hast</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.140
+  slug: ''
+  inGame: >-
+    <p>La première action activable permet d'appliquer aux Attaques de contact
+    le bonus de AGI - FOR.</p><p>La deuxième action permet d'appliquer au
+    Dommages de contact le bonus de AGI - FOR.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.E7vicLnxuCkjIOY8
+      indice: 0
+      label: 'Attaque : Utilisation Arme de guerre ou Arme d''hast'
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.E7vicLnxuCkjIOY8
+          subtype: combat
+          target: melee
+          value: '@agi -@for'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.7EHPABD8jvEhLWTC
+      indice: 1
+      label: 'DM : Utilisation Arme de guerre ou Arme d''hast'
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.7EHPABD8jvEhLWTC
+          subtype: combat
+          target: damMelee
+          value: '@agi -@for'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 7EHPABD8jvEhLWTC
+ownership:
+  default: 0
+sort: 0
+_key: '!items!7EHPABD8jvEhLWTC'

@@ -1,0 +1,89 @@
+folder: 0T4Zxwm3QfeQ8ZxV
+name: Élixir d'Image décalée
+type: equipment
+img: icons/consumables/potions/vial-cork-empty.webp
+system:
+  description: "<p><strong>Pendant [5 + Mod. de SAG] tours</strong>, <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">lorsqu’une\_attaque le touche</span></strong></span>, le PJ <strong>lance 1d6</strong> : <strong>sur 5-6, il\_ne subit pas les DM</strong>.</p><p>Les DM des effets de zone\_s’appliquent normalement.</p><hr /><p>@UUID[Item.87eBcr3sJtocJcjN]{Voie de l'Alchimie} - Rang 4 :\_@UUID[Item.qy3wnSmSSLIUHbOA]{Élixirs de Protection}</p><p>Pas d'effet automatique mais le PJ peut utiliser la table aléatoire :\_@UUID[RollTable.MYM2XPVOTQXdhNIp]{Image décalée}</p>"
+  source: ''
+  origin: Livre du Joueur p.132
+  slug: ''
+  subtype: consumable
+  tags: []
+  martialCategory: unarmed
+  damagetype: magic
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Item.jjXcF9liAz6aEZeS
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: jjXcF9liAz6aEZeS
+ownership:
+  default: 0
+sort: 0
+_key: '!items!jjXcF9liAz6aEZeS'

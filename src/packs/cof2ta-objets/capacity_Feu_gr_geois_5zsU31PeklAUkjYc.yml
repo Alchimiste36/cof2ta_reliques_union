@@ -1,0 +1,77 @@
+folder: Xju3wioBS7IbVYJY
+name: Feu grégeois
+type: capacity
+img: icons/consumables/potions/flask-corked-yellow-glow.webp
+system:
+  description: "<p>Le PJ lance la fiole à une <strong>distance maximum\_de 10 m</strong> grâce à une <strong>action d’attaque</strong> (réussite\_automatique).</p><p>Le contenu explose dans un <strong>rayon\_de 3 m en infligeant 1d6 DM par rang</strong> atteint\_dans cette voie. Un <strong>test de DEX difficulté [10\_+ Mod. d’INT]</strong> réussi permet aux victimes de\_diviser les DM par deux.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> les flammes du feu grégeois\_persistent pendant un tour, infligeant 1 DM de\_feu par rang atteint dans cette voie à toute cible\_commençant son tour ou traversant la zone. La\_réussite d’un test de DEX difficulté [10 + Mod.\_d’INT] permet d’annuler les DM.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.132
+  slug: ''
+  inGame: "<p>L'action permet de réaliser le jet de DM du feu grégeois.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">ATTENTION :</span></strong></span> Les Elixirs dépendent des statistiques de d'Alchimiste. Si le PJ décide de confier ses élixirs à une autre personne, c'est tout de même l'Alchimiste qui devra faire l'action. Vous pouvez aussi utiliser l'Équipement :\_@UUID[Item.Z5ripGxrEvBaKRVG]{Fiole de Feu Grégeois}</p></blockquote>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.KQBxuHgUEMNEFqAG
+      indice: 0
+      label: Rayon de 3m
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: '@rangd6'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 5zsU31PeklAUkjYc
+ownership:
+  default: 0
+sort: 0
+_key: '!items!5zsU31PeklAUkjYc'

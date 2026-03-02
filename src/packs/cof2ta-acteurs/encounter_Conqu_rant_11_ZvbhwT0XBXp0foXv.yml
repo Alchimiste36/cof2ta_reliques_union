@@ -1,0 +1,1104 @@
+folder: FlNMXxZC1i83QqTY
+name: Conquérant 11
+type: encounter
+img: modules/cof2ta/assets/cof2ta_bestiaire/npc_combattants/11conq_nain.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 20
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 11
+    hp:
+      base: 115
+      value: 115
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 27
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ''
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Conquérant 11
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta/assets/cof2ta_bestiaire/npc_combattants/11conq_nain_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+14'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8+13
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    name: Épée longue
+    img: icons/svg/sword.svg
+    _id: 2g2e34YRX4hf7nYV
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.2g2e34YRX4hf7nYV'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.X7TEqjpXfb9pKv4y.Item.M0qwrLqFDQfqfOyr
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+14'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6+13
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    name: Hache à deux mains
+    img: icons/svg/sword.svg
+    _id: M0qwrLqFDQfqfOyr
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.M0qwrLqFDQfqfOyr'
+  - folder: saH8hGLZpV1p2SF8
+    name: DEF -1
+    type: capacity
+    img: icons/skills/melee/shield-damaged-broken-orange.webp
+    _id: gXP7FiogXGmSe7p3
+    system:
+      description: >-
+        <p>Capacité à activer si le combattant utilise une hache à deux
+        mains.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.gXP7FiogXGmSe7p3
+          indice: 0
+          label: Si combat à la hache
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.gXP7FiogXGmSe7p3
+              subtype: combat
+              target: def
+              value: '-1'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.gXP7FiogXGmSe7p3'
+  - folder: SVK15InjZYL8tbL4
+    name: Voie des Conquérants
+    type: path
+    img: icons/environment/people/cavalry-heavy.webp
+    _id: ZWY5BGW0m7puKGOE
+    system:
+      description: "<p>Les conquérants appartiennent à des\_corps militaires organisés tels que les milices, les\_armées ou les groupes de mercenaires.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      subtype: encounter
+      capacities:
+        - Actor.gussoYvECniLLjOt.Item.8HrOvMlF3yhsaWqN
+        - Actor.gussoYvECniLLjOt.Item.tfakCpScYkVd6MQ4
+        - Actor.gussoYvECniLLjOt.Item.13fX6ansW820rH7x
+        - Actor.gussoYvECniLLjOt.Item.SbcD9yzPoe72HudC
+        - Actor.gussoYvECniLLjOt.Item.sKJ7drkIUbYEaCtu
+        - Actor.gussoYvECniLLjOt.Item.9efvH54K0ivsGKZd
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 150000
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.ZWY5BGW0m7puKGOE'
+  - folder: P8s07MZzuigjOIbQ
+    name: Sergent
+    type: capacity
+    img: icons/environment/people/spearfighter.webp
+    _id: 8HrOvMlF3yhsaWqN
+    system:
+      description: "<p>Une fois par tour, le conquérant peut\_<strong>donner une action supplémentaire à n'importe\_quel allié</strong> sous ses ordres à portée de vue (attaque\_ou mouvement). </p><p><strong>Une fois par combat</strong>, une attaque\_qui <strong>aurait dû l'amener à 0 PV est ignorée</strong>.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: >-
+        <p>L'action permet uniquement de compter l'utilisation de la capacité
+        pour ignorer l'attaque.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: combat
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.8HrOvMlF3yhsaWqN
+          indice: 0
+          label: Ignorer derniers DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.8HrOvMlF3yhsaWqN'
+  - folder: P8s07MZzuigjOIbQ
+    name: Capitaine
+    type: capacity
+    img: icons/environment/people/cavalry.webp
+    _id: tfakCpScYkVd6MQ4
+    system:
+      description: "<p>Le conquérant donne un bonus\_de <strong>+2 en initiative, en attaque et aux DM</strong> à toutes\_les créatures sous ses ordres à portée de vue. </p><p>De\_plus, il bénéficie d'une <strong>attaque supplémentaire à\_chaque tour</strong> lorsqu'il utilise une action limitée.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: >-
+        <p>L'action permet de sélectionner les alliés et d'activer l'action pour
+        leur donner les bonus de la capacité. L'effet dure de façon illimité
+        donc il faudra supprimer manuellement les Effets personnalisés sur les
+        feuilles des alliés qui ne remplissent plus les conditions.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+              subtype: combat
+              target: melee
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+              subtype: combat
+              target: ranged
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+              subtype: combat
+              target: magic
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+              subtype: combat
+              target: init
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.tfakCpScYkVd6MQ4
+              subtype: combat
+              target: def
+              value: '2'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                unit: instant
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.tfakCpScYkVd6MQ4'
+  - folder: P8s07MZzuigjOIbQ
+    name: Commandant
+    type: capacity
+    img: icons/environment/people/commoner.webp
+    _id: 13fX6ansW820rH7x
+    system:
+      description: "<p>Le bonus de capitaine passe\_à <strong>+3 en initiative, en attaque, aux DM et en DEF</strong>\_à toutes les créatures sous ses ordres à portée\_de vue. </p><p>Tant qu'au <strong>moins quatre créatures sous\_ses ordres</strong> sont à moins de 10 mètres de lui, le\_commandant <strong>ne subit que la moitié des DM qui\_lui sont infligés</strong>.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: >-
+        <p>L'action permet de sélectionner les alliés et d'activer l'action pour
+        leur donner les bonus de la capacité. L'effet dure de façon illimité
+        donc il faudra supprimer manuellement les Effets personnalisés sur les
+        feuilles des alliés qui ne remplissent plus les conditions.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+              subtype: combat
+              target: melee
+              value: '3'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+              subtype: combat
+              target: ranged
+              value: '3'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+              subtype: combat
+              target: magic
+              value: '3'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+              subtype: combat
+              target: init
+              value: '3'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.13fX6ansW820rH7x
+              subtype: combat
+              target: def
+              value: '3'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '0'
+                unit: combat
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.13fX6ansW820rH7x'
+  - folder: P8s07MZzuigjOIbQ
+    name: Instinct de survie
+    type: capacity
+    img: icons/skills/melee/hand-grip-sword-red.webp
+    _id: SbcD9yzPoe72HudC
+    system:
+      description: "<p>Une fois par tour, au\_moment de son choix, le conquérant peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer. </p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser. </p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: >-
+        <p>Les deux premières action permettent de réaliser les tests de
+        sauvegarde pour se débarrasser d'un effet qui bloque les
+        mouvements.</p><p>La troisième action activable/désactivable permet
+        d'obtenir le bonus de DEF.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.SbcD9yzPoe72HudC
+          indice: 0
+          label: Sauvegarde d'INT
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.SbcD9yzPoe72HudC
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.SbcD9yzPoe72HudC
+          indice: 2
+          label: Si PV < NC*5
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.SbcD9yzPoe72HudC
+              subtype: combat
+              target: def
+              value: '5'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.SbcD9yzPoe72HudC'
+  - folder: P8s07MZzuigjOIbQ
+    name: Chair à canon
+    type: capacity
+    img: icons/weapons/artillery/cannon-engraved-gold.webp
+    _id: sKJ7drkIUbYEaCtu
+    system:
+      description: "<p>Une fois par tour, le conquérant\_peut décider qu'<strong>une attaque qui le visait touche à\_la place l'un de ses subordonnés situé à moins de\_3 mètres</strong> et venu s'interposer. </p><p>Il gagne un bonus\_de <strong>+5 en DEF tant que des subordonnés sont\_positionnés à moins de 3 mètres de lui</strong>.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: <p>L'action activable/désactivable donne le bonus en DEF.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.sKJ7drkIUbYEaCtu
+          indice: 0
+          label: Si alliés à moins de 3m
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.sKJ7drkIUbYEaCtu
+              subtype: combat
+              target: def
+              value: '5'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.sKJ7drkIUbYEaCtu'
+  - folder: P8s07MZzuigjOIbQ
+    name: Attaque mortelle
+    type: capacity
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
+    _id: 9efvH54K0ivsGKZd
+    system:
+      description: "<p>Une attaque similaire\_à l'attaque sournoise de l'aventurier (voie de\_l'assassinat) qui doit <strong>être exécutée de dos ou par\_surprise</strong>. </p><p>Le conquérant obtient un bonus de <strong>+5\_en attaque et ajoute 3d6 aux DM</strong>. </p><p>Il obtient aussi\_un bonus de <strong>+5 aux tests de discrétion</strong>.</p>"
+      source: ''
+      origin: Livre du meneur p122
+      slug: ''
+      inGame: >-
+        <p>La première action activable/désactivable donne le bonus à l'attaque
+        et aux DM.</p><p>La deuxième action permanente donne le bonus en
+        discrétion.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 6
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZvbhwT0XBXp0foXv.Item.ZWY5BGW0m7puKGOE
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.9efvH54K0ivsGKZd
+          indice: 0
+          label: Attaque de dos / surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.9efvH54K0ivsGKZd
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.9efvH54K0ivsGKZd
+              subtype: combat
+              target: damMelee
+              value: 3d6
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: Actor.ZvbhwT0XBXp0foXv.Item.9efvH54K0ivsGKZd
+          indice: 1
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZvbhwT0XBXp0foXv.Item.9efvH54K0ivsGKZd
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!ZvbhwT0XBXp0foXv.9efvH54K0ivsGKZd'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: ZvbhwT0XBXp0foXv
+ownership:
+  default: 0
+sort: 0
+_key: '!actors!ZvbhwT0XBXp0foXv'

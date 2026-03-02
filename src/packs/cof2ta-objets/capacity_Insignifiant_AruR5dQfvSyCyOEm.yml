@@ -1,0 +1,90 @@
+folder: dw1wsjpfSmQ7VrDt
+name: Insignifiant
+type: capacity
+img: icons/creatures/reptiles/chameleon-camouflage-green-brown.webp
+_id: AruR5dQfvSyCyOEm
+system:
+  description: "<p>Le PJ bénéficie d’une étrange faculté à se faire\_oublier ou à détourner l’attention. </p><p><strong>Une fois par\_combat</strong>, alors qu’il était pris pour cible par un\_ennemi, il peut invoquer cette capacité pour\_<strong>reporter l’attention de son assaillant sur une\_autre cible ennemie</strong>. L’ennemi ne s’en prendra\_plus au Gobelin, à moins que ce dernier ne\_l’attaque de nouveau.</p><p>De plus, le Gobelin bénéficie d’un bonus de <strong>+5\_à tous les tests visant à se fondre dans la masse</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.96
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent aux test d'AGI pour se fondre dans la
+    masse.</p><p>L'action permet de décompter l'utilisation de la faculté de se
+    faire oublier.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.AruR5dQfvSyCyOEm
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.AruR5dQfvSyCyOEm
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: De fondre dans la masse
+      resolvers: []
+    - source: Item.AruR5dQfvSyCyOEm
+      indice: 1
+      label: Se faire oublier
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!AruR5dQfvSyCyOEm'

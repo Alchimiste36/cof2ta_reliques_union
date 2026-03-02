@@ -1,0 +1,70 @@
+folder: xQHZZt880DYJregI
+name: Peau de pierre
+type: capacity
+img: icons/magic/defensive/armor-stone-skin.webp
+system:
+  description: "<p>Le PJ est particulièrement endurci, il reçoit un\_<strong>bonus de DEF égal à son Mod. de CON</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF passe à\_[Mod. de CON +1].</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.125
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent en DEF.</p><p>Si le PJ obtient la capacité avancée,
+    remplacer la valeur du Modificateur de l'action par "<strong>@con
+    +1</strong>".</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.IsG15wQbsqXAygIw
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.9VK3TBTMyDKXb9Ca
+          subtype: combat
+          target: def
+          value: '@con'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: 9VK3TBTMyDKXb9Ca
+ownership:
+  default: 0
+sort: 0
+_key: '!items!9VK3TBTMyDKXb9Ca'

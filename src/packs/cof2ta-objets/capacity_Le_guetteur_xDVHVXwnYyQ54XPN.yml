@@ -1,0 +1,67 @@
+folder: a6EoujTciTAewF4q
+name: Le guetteur
+type: capacity
+img: icons/creatures/birds/corvid-flying-wings-purple.webp
+system:
+  description: "<p>Le PJ reçoit <strong>un oiseau de proie comme compagnon animal</strong>. </p><p>Il possède un lien télépathique\_avec lui et peut percevoir par ses sens avec un\_bonus de <strong>+5 aux tests fondés sur la perception</strong>.\_</p><p><strong><span style=\"text-decoration:underline\">Oiseau de proie :</span></strong></p><p>Init. 15, DEF 15, PV [niveau\_du PJ x 3]</p><p>Attaque de contact = [attaque\_magique du PJ], DM 1d4.\_</p>"
+  source: ''
+  origin: Livre du Joueur p.133
+  slug: ''
+  inGame: "<p>Donnez au PJ les droit \"Propriétaire\" pour le Compagnon :\_@UUID[Actor.jE6hmJ51cziqY5iQ]{Oiseau de proie} et adaptez ses statistiques en fonction du PJ.</p><p>Bonus permanent aux tests de PER.</p>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.KQBxuHgUEMNEFqAG
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.ONyokb6wKpAaTlb1
+          subtype: skill
+          target: per
+          value: '5'
+          apply: others
+          additionalInfos: Perception avec oiseau de proie
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: xDVHVXwnYyQ54XPN
+ownership:
+  default: 0
+sort: 0
+_key: '!items!xDVHVXwnYyQ54XPN'

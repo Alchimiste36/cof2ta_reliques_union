@@ -1,0 +1,82 @@
+folder: lf3tHiZeN0M56s5z
+name: Flèche de mort
+type: capacity
+img: icons/skills/ranged/projectile-explosion-black-orange.webp
+system:
+  description: "<p>Le PJ <strong>lance deux d20 pour son attaque</strong> et\_conserve le meilleur résultat. Les <strong>dégâts de la\_flèche sont doublés</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.127
+  slug: ''
+  inGame: >-
+    <p>L'action permet de réaliser une attaque à distance avec un Dé Bonus
+    reprenant les valeurs <strong>de la première arme équipée</strong>.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.I9xtdTQ6CM6vB63X
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: true
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: (@arme.dmg)*2
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: I9xtdTQ6CM6vB63X
+ownership:
+  default: 0
+sort: 0
+_key: '!items!I9xtdTQ6CM6vB63X'

@@ -1,0 +1,81 @@
+folder: uvHtoSiBBvs1nfqu
+name: Créature non-vivante
+type: capacity
+img: icons/magic/nature/tree-animated-squint.webp
+_id: SzKsyUeH8oQ90Xwp
+system:
+  description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>Pas d'effet automatique.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.SzKsyUeH8oQ90Xwp
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.SzKsyUeH8oQ90Xwp
+          subtype: state
+          target: diseaseImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SzKsyUeH8oQ90Xwp
+          subtype: state
+          target: poisonImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.SzKsyUeH8oQ90Xwp
+          subtype: state
+          target: sleepimmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!SzKsyUeH8oQ90Xwp'

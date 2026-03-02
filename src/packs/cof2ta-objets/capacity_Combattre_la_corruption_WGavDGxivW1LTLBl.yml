@@ -1,0 +1,102 @@
+folder: DPiizSQtv978KSXz
+name: Combattre la corruption
+type: capacity
+img: icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+system:
+  description: "<p>Le PJ gagne un bonus de <strong>+1 en attaque et aux\_DM contre les morts-vivants, les démons et les\_animaux corrompus</strong> (ceux qui possèdent des\_pouvoirs paranormaux). </p><p>Ce bonus passe à <strong>+2\_au rang 4</strong> de la voie.</p>"
+  source: ''
+  origin: Livre du Joueur p.142
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir les bonus.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.WGavDGxivW1LTLBl
+      indice: 0
+      label: Contre démons, morts-vivants, corrompus
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: melee
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: ranged
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: magic
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: damMelee
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: damRanged
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WGavDGxivW1LTLBl
+          subtype: combat
+          target: damMagic
+          value: '@rang[1,1,1,2,2]'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: WGavDGxivW1LTLBl
+ownership:
+  default: 0
+sort: 0
+_key: '!items!WGavDGxivW1LTLBl'

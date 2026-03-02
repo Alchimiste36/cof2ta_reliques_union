@@ -1,0 +1,77 @@
+folder: PX3mjVOGzLVSAXCG
+name: Régénération magique
+type: capacity
+img: icons/magic/life/cross-area-circle-green-white.webp
+_id: JWZqSIPXIYrjnSyS
+system:
+  description: "<p>Le mystique <strong>régénère magiquement 5 PV à la fin de chaque tour</strong>. Il faut détruire son corps pour le tuer\_complètement, que ce soit par le feu ou l'acide\_par exemple.</p>"
+  source: ''
+  origin: Livre du meneur p148
+  slug: ''
+  inGame: <p>L'action permet de se soigner automatiquement de 5 PV en l'activant.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.JWZqSIPXIYrjnSyS
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: '5'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!JWZqSIPXIYrjnSyS'

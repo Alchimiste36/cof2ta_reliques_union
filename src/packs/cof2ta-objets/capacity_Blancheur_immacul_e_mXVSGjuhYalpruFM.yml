@@ -1,0 +1,74 @@
+folder: cOY0WzD0BZzJbiwI
+name: Blancheur immaculée
+type: capacity
+img: icons/magic/holy/chalice-glowing-gold.webp
+system:
+  description: "<p>Le PJ n’a besoin que de <strong>la moitié du repos, de\_la nourriture ou de la boisson</strong> d’un Elfe normal\_pour être en pleine forme.</p><p>Il est <strong>immunisé aux\_effets des poisons et des maladies</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.74
+  slug: ''
+  inGame: "<p>L'action ajoute l'immunité qui sera écrite dans la barre latérale de la feuille du Personnage.</p><p>La gestion du repos, de la nourriture et de la boisson est à gérer manuellement.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.DwtUK2PuldbB6H18]{Prédispositions magiques}.</p><p></p>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.mXVSGjuhYalpruFM
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.mXVSGjuhYalpruFM
+          subtype: state
+          target: poisonImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.mXVSGjuhYalpruFM
+          subtype: state
+          target: diseaseImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: true
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: mXVSGjuhYalpruFM
+ownership:
+  default: 0
+sort: 0
+_key: '!items!mXVSGjuhYalpruFM'

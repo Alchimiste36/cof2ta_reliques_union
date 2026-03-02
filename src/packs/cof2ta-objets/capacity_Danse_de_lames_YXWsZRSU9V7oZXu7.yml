@@ -1,0 +1,102 @@
+folder: EEOos64scwT7rbDK
+name: Danse de lames
+type: capacity
+img: icons/skills/melee/strikes-sword-scimitar.webp
+system:
+  description: "<p>Au prix d’une action limitée, le PJ entre en transe\_pour le reste du combat. </p><p>Pendant la Danse des\_lames, il gagne <strong>+2 en attaque et en DEF</strong> et peut\_réaliser <strong>une attaque gratuite supplémentaire</strong> en\_utilisant un d12 au lieu du d20 à chaque tour.\_</p><p>Le personnage peut mettre fin à la transe quand\_il le veut mais ne peut recommencer avant le\_prochain combat. Toutefois, s’il reçoit les DM\_d’une attaque critique, la transe est stoppée net.</p>"
+  source: ''
+  origin: Livre du Joueur p.140
+  slug: ''
+  inGame: >-
+    <p>La première action activable permet d'appliquer aux Attaques de contact
+    le bonus de AGI - FOR.</p><p>La deuxième action permet d'appliquer au
+    Dommages de contact le bonus de AGI - FOR.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.E7vicLnxuCkjIOY8
+      indice: 0
+      label: +2 ATT et DEF
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.E7vicLnxuCkjIOY8
+          subtype: combat
+          target: melee
+          value: '2'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.YXWsZRSU9V7oZXu7
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.7EHPABD8jvEhLWTC
+      indice: 1
+      label: Dé malus pour attaque gratuite
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.7EHPABD8jvEhLWTC
+          subtype: bonusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: YXWsZRSU9V7oZXu7
+ownership:
+  default: 0
+sort: 0
+_key: '!items!YXWsZRSU9V7oZXu7'

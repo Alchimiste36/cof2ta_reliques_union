@@ -1,0 +1,151 @@
+folder: 70oSGsBlWvf0HQ7g
+name: Pacte sanglant
+type: capacity
+img: icons/magic/unholy/orb-droplet-pink.webp
+system:
+  description: "<p><strong>Par une action gratuite</strong>, le PJ <strong>sacrifie 1d4 PV</strong>\_et gagne immédiatement <strong>+3 sur un jet de d20\_de son choix ou en DEF contre une attaque</strong>.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">À\_partir du rang 5</span></strong></span> atteint dans cette voie, il peut\_<strong>sacrifier 2d4 PV</strong> pour faire passer ce bonus <strong>à +5.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.138
+  slug: ''
+  inGame: >-
+    <p>La première action permet de dépenser les PM, de subir 1d4 DM et
+    d'obtenir le bonus aux attaques et aux tests de compétences.</p><p>La
+    deuxièmes action permet de dépenser le PM, de subir 1d4 DM et d'obtenir le
+    bonus en DEF.</p>
+  subtype: ''
+  actionType: f
+  learned: false
+  rank: 3
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.kVfhIYZXfuJyKxmW
+      indice: 0
+      label: Test +3
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: combat
+          target: melee
+          value: '@rang[0,0,3,3,5]'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: combat
+          target: damRanged
+          value: '@rang[0,0,3,3,5]'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: combat
+          target: magic
+          value: '@rang[0,0,3,3,5]'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Item.xWF89gH9J1WHXJzI
+          subtype: skill
+          target: all
+          value: '@rang[0,0,3,3,5]'
+          apply: others
+          additionalInfos: ''
+      resolvers:
+        - type: heal
+          skill:
+            formula: '-1d4'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: Item.QE7rYy393PFkPrUs
+      indice: 1
+      label: DEF +3
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.QE7rYy393PFkPrUs
+          subtype: combat
+          target: def
+          value: '@rang[0,0,3,3,5]'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: heal
+          skill:
+            formula: '-1d4'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: QE7rYy393PFkPrUs
+ownership:
+  default: 0
+sort: 0
+_key: '!items!QE7rYy393PFkPrUs'

@@ -1,0 +1,63 @@
+folder: PX3mjVOGzLVSAXCG
+name: Déplacement magique
+type: capacity
+img: icons/skills/movement/feet-winged-boots-brown.webp
+_id: zRIZeUiDiQFuXwHO
+system:
+  description: "<p>Le mystique\_possède une magie qui lui permet de <strong>se téléporter\_à une distance maximale de 30 mètres</strong>. Le lieu\_d'arrivée doit être en ligne de vue ou parfaitement\_connu (10 minutes pour étudier le lieu).</p>"
+  source: ''
+  origin: Livre du meneur p148
+  slug: ''
+  inGame: >-
+    <p>Pas d'effet automatique. L'action permet uniquement d'afficher la
+    capacité dans la liste des actions.</p>
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 2
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.zRIZeUiDiQFuXwHO
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769517536854
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+  oByx0z6HY26hEziz: 3
+sort: 0
+_key: '!items!zRIZeUiDiQFuXwHO'

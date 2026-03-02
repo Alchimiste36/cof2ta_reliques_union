@@ -1,0 +1,997 @@
+folder: G2yuu7LVCS3wnDO7
+name: Insecte de taille moyenne
+type: encounter
+img: modules/cof2ta/assets/cof2ta_bestiaire/creatures/insecte_moyen.webp
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -4
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 30
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    nc: 2
+    hp:
+      base: 26
+      value: 26
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    def:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    melee:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    ranged:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    magic:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: "<p>On parle d'insecte géant dès qu'une créature\_est de taille petite : en dessous de cette taille,\_référez-vous aux «Nuées». </p><p>Les caractéristiques\_des insectes géants dépendent principalement\_de leur taille. Un profil générique est donné\_pour chaque taille ci-dessous. </p>"
+    languages: []
+    properties: "<p>Dans l'onglet Capacités, supprimez les capacités qui ne sont pas conservées pour l'insecte génat que vous créez. N'oubliez pas d'adapter le NC de la créature en fonction des capacités conservées.</p><ul><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Rapide :</span></strong></span> un insecte géant est capable\_de se déplacer de 30 mètres par action de\_mouvement.</p></li><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Résistant :</span></strong></span> les insectes sont capables de\_survivre aux pires blessures: le MJ lance deux\_d20 pour leurs tests de CON et garde le meilleur\_résultat. Lorsque la créature atteint 0 PV, elle\_peut encore agir un tour complet.</p></li><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Vermine :</span></strong></span> lorsque vous créez un insecte géant,\_il obtient des bonus par rapport à un archétype\_normal. Si vous utilisez un profil d'insecte décrit\_ci-dessous, ignorez cette capacité car elle n'est\_destinée qu'aux MJ souhaitant concevoir ce\_type de créature. Dans ce cas, augmentez les\_PV de +10 et le Mod. de FOR et de CON de\_+3 par rapport à une créature de cette taille</p></li></ul>"
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+prototypeToken:
+  name: Insecte de taille moyenne
+  displayName: 30
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: modules/cof2ta/assets/cof2ta_bestiaire/creatures/insecte_moyen_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 30
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: Actor.MjLdrvcK9T8h4X0f.Item.pcPiJeJnd5mWXJzn
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '6'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+4
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    name: Attaque
+    img: icons/svg/sword.svg
+    _id: pcPiJeJnd5mWXJzn
+    effects: []
+    folder: null
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.pcPiJeJnd5mWXJzn'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Vision dans le noir
+    type: capacity
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
+    system:
+      description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.GAJ0AnIEsSDQtulw
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.t4OFq0YGOaLn66yZ.Item.GAJ0AnIEsSDQtulw
+              subtype: state
+              target: darkvision
+              value: '30'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: GAJ0AnIEsSDQtulw
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.GAJ0AnIEsSDQtulw'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Poison Affaiblissant
+    type: capacity
+    img: icons/skills/wounds/blood-cells-disease-green.webp
+    _id: 4Gvx1QrcWuY1BzF0
+    system:
+      description: "<p>En cas d'échec d'un t<strong>est de\_CON (difficulté 10+Mod. de FOR de l'insecte)</strong>,\_la victime est <strong>affaiblie pendant 1d6 heures</strong>.</p><p>Si\_la victime <strong>subit un nouvel empoisonnement</strong>\_du même type pendant cette période, elle\_sombre dans <strong>l'inconscience pour 1d6 heures</strong>.</p><blockquote><p>De nombreux insectes empoisonnent leurs\_victimes ; selon l'insecte, choisissez le poison\_qui convient : par exemple, une araignée utilise\_du poison affaiblissant et un scorpion ou une\_guêpe un poison mortel.</p><p>Un insecte capable\_d'empoisonner ses victimes augmente son\_NC de +1.</p></blockquote>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut en cas d'échec.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.4Gvx1QrcWuY1BzF0
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: 10 + @for
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - weakened
+                unit: unlimited
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.4Gvx1QrcWuY1BzF0'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Poison Mortel
+    type: capacity
+    img: icons/magic/acid/dissolve-arm-flesh.webp
+    system:
+      description: "<p>le poison <strong>inflige [Mod. de FOR d6]\_DM à la victime</strong>, <strong>la moitié si elle réussit un test\_de CON difficulté 10</strong>. Répartissez les DM au\_rythme de <strong>1d6 par tour</strong> à partir du moment\_de l'empoisonnement.</p><blockquote><p>De nombreux insectes empoisonnent leurs\_victimes ; selon l'insecte, choisissez le poison\_qui convient : par exemple, une araignée utilise\_du poison affaiblissant et un scorpion ou une\_guêpe un poison mortel.</p><p>Un insecte capable\_d'empoisonner ses victimes augmente son\_NC de +1.</p></blockquote>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de réaliser le test de sauvegarde et de
+        subir les DM si le test est raté.</p><p>La deuxième action permet
+        d'appliquer les DM sur une cible si le test de sauvagarde est
+        réussi.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.0eToW95Uh2HSt7q3
+          indice: 0
+          label: Attaque initiale
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d6
+                elementType: poison
+                statuses: []
+                duration: '@for'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.0eToW95Uh2HSt7q3
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: ''
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: 1d6/2
+                elementType: poison
+                statuses: []
+                duration: '@for'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    _id: 0eToW95Uh2HSt7q3
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.0eToW95Uh2HSt7q3'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Cuirassé
+    type: capacity
+    img: icons/commodities/leather/scales-green.webp
+    _id: MvO0jcspIT1heCuK
+    system:
+      description: "<p>les scarabées ou les scorpions\_bénéficient de cette capacité qui leur permet de\_<strong>retrancher 5 points à tous les DM subis</strong>.</p><h5>NC +1</h5>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>Bonus permanent en RD.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.MvO0jcspIT1heCuK
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.t4OFq0YGOaLn66yZ.Item.MvO0jcspIT1heCuK
+              subtype: combat
+              target: dr
+              value: '5'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.MvO0jcspIT1heCuK'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Toile
+    type: capacity
+    img: icons/creatures/webs/web-spider-glowing-purple.webp
+    _id: XILVG9FUz3aSQYXq
+    system:
+      description: "<p>Sur un <strong>test d'attaque réussi</strong> (portée\_selon la taille : moyenne 3 m, grand 5 m, énorme\_10 m, colossale 15 m), l'araignée <strong>emprisonne\_sa cible</strong> dans une toile gluante et solide. </p><p>Se\_libérer nécessite l'usage d'une <strong>action limitée</strong>\_et il faut réussir un <strong>test de FOR difficulté [10 +\_Mod. de FOR de l'araignée]</strong> pour s'en échapper</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de réaliser l'attaque à distance et
+        d'appliquer le statut Immobilisé en cas de réussite.</p><p>La deuxième
+        action permet de jeter le test de sauvegarde pour se libérer.</p>
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.XILVG9FUz3aSQYXq
+          indice: 0
+          label: Attaque
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: l
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '6'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - immobilized
+                unit: unlimited
+                duration: '0'
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.XILVG9FUz3aSQYXq
+          indice: 1
+          label: Sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: 10 + @for
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.XILVG9FUz3aSQYXq'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Vol rapide
+    type: capacity
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
+    _id: z0D5tx47jV1guNGi
+    system:
+      description: "<p>Pour les guêpes géantes ou autres\_prédateurs volants comme les libellules. </p><p>La créature a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol.</p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p><h5>NC +1</h5>"
+      source: ''
+      origin: Livre du Meneur p.68
+      slug: ''
+      inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.z0D5tx47jV1guNGi
+          indice: 0
+          label: Première Attaque
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '11'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+4 +1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.z0D5tx47jV1guNGi'
+  - folder: uvHtoSiBBvs1nfqu
+    name: Embuscade
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    _id: Q6IsP6x0mOPjJ92p
+    system:
+      description: "<p>pour les araignées chasseuses\_(celles qui ne tissent pas de toiles).</p><p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire <strong>un test de SAG difficulté 15 + DEX ou être surprise</strong>.</p><p>S'il attaque\_avec succès une cible surprise, la créature <strong>inflige +1d6 DM supplémentaires</strong>, et toute\_créature dont la <strong>FOR est inférieure à la sienne\_est renversée</strong>.</p><p>Il obtient un bonus de <strong>+5 à tous\_les tests de discrétion</strong>.</p><h5>NC +1</h5>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet d'obtenir le bonus permanent pour les tests
+        de compétence.</p><p>La deuxième action réalise un test de sauvegarde
+        contre une cible.</p><p>La troisième peut être activée pour obtenir les
+        DM supplémentaire face à une cible surprise.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.Q6IsP6x0mOPjJ92p
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.t4OFq0YGOaLn66yZ.Item.Q6IsP6x0mOPjJ92p
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.Q6IsP6x0mOPjJ92p
+          indice: 1
+          label: Au premier tour
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: 15+@agi
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - surprised
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: Actor.t4OFq0YGOaLn66yZ.Item.Q6IsP6x0mOPjJ92p
+          indice: 2
+          label: Sur cible surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.t4OFq0YGOaLn66yZ.Item.Q6IsP6x0mOPjJ92p
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      lastModifiedBy: null
+    ownership:
+      default: 0
+    _key: '!actors.items!t4OFq0YGOaLn66yZ.Q6IsP6x0mOPjJ92p'
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517515504
+  modifiedTime: 1769896852378
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: t4OFq0YGOaLn66yZ
+ownership:
+  default: 0
+sort: 0
+_key: '!actors!t4OFq0YGOaLn66yZ'

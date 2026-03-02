@@ -1,0 +1,67 @@
+folder: iHjMoe9iWCYFy471
+name: 'Trait : Endurant'
+type: capacity
+img: icons/skills/wounds/anatomy-organ-heart-red.webp
+_id: nHRrZg2fY6wVmSBm
+system:
+  description: "<p>Le <strong>maximum de PR de l’Ogre est de 6</strong> – et non\_de 5 comme pour les autres races.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>Bonus permanent de +1 DR.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.nHRrZg2fY6wVmSBm
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.nHRrZg2fY6wVmSBm
+          subtype: resource
+          target: rp
+          value: '1'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!nHRrZg2fY6wVmSBm'

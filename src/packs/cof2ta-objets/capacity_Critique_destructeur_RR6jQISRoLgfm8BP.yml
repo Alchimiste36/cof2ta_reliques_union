@@ -1,0 +1,77 @@
+folder: zy1Hc7TsVBsLhiBp
+name: Critique destructeur
+type: capacity
+img: icons/skills/melee/strike-axe-blood-red.webp
+system:
+  description: "<p><strong>Lorsqu’il obtient un critique</strong> avec une arme à\_deux mains, le PJ obtient <strong>+2d6 aux DM</strong> en plus\_des effets du critique.</p>"
+  source: ''
+  origin: Livre du Joueur p.140
+  slug: ''
+  inGame: <p>L'action permet de jeter les DM en cas de réussite critique.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.E7vicLnxuCkjIOY8
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 2d6
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: RR6jQISRoLgfm8BP
+ownership:
+  default: 0
+sort: 0
+_key: '!items!RR6jQISRoLgfm8BP'

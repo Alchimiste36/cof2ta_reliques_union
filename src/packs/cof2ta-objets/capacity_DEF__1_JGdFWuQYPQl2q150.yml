@@ -1,0 +1,67 @@
+folder: saH8hGLZpV1p2SF8
+name: DEF -1
+type: capacity
+img: icons/skills/melee/shield-damaged-broken-orange.webp
+_id: JGdFWuQYPQl2q150
+system:
+  description: <p>Capacité à activer si le combattant utilise une hache à deux mains.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.JGdFWuQYPQl2q150
+      indice: 0
+      label: Si combat à la hache
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.JGdFWuQYPQl2q150
+          subtype: combat
+          target: def
+          value: '-1'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!JGdFWuQYPQl2q150'

@@ -41,43 +41,86 @@
     {
       "name": "COF2TA Reliques de l'Union",
       "sorting": "m",
-      "color": "#b37a19",
-      "packs": ["cof2ta-guide-du-module", "cof2ta-objets", "cof2ta-acteurs"]
+      "color": "#e00000",
+      "packs": [
+        "cof2ta-guide-de-campagne",
+        "reliquesunion-acteurs",
+        "reliquesunion-journaux",
+        "reliquesunion-objets",
+        "reliquesunion-scenes",
+        "item-piles-item-backup-do-not-delete"
+      ]
     }
   ],
   "packs": [
     {
-      "label": "COF2-TA Guide du Module",
+      "label": "COF2TA Reliques de l'Union - Guide de la Campagne",
       "type": "JournalEntry",
-      "name": "cof2ta-guide-du-module",
-      "path": "packs/cof2ta-guide-du-module",
+      "name": "cof2ta-guide-de-campagne",
+      "path": "packs/cof2ta-guide-de-campagne",
       "system": "co2",
       "ownership": {
-        "PLAYER": "OBSERVER",
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
     },
     {
-      "label": "COF2-TA Objets",
-      "type": "Item",
-      "name": "cof2ta-objets",
-      "path": "packs/cof2ta-objets",
-      "system": "co2",
-      "banner": "modules/cof2ta/assets/cof2ta_icones/cof2ta_nain2.webp",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "label": "COF2-TA Acteurs",
+      "label": "COF2TA Reliques de l'Union - Acteurs",
       "type": "Actor",
-      "name": "cof2ta-acteurs",
-      "path": "packs/cof2ta-acteurs",
+      "name": "reliquesunion-acteurs",
+      "path": "packs/reliquesunion-acteurs",
       "system": "co2",
-      "banner": "modules/cof2ta/assets/cof2ta_bestiaire/creatures/pegase.webp",
+      "banner": "modules/cof2ta_reliques_union/assets/ru_lieux/lavoise/lavoise_centre2.webp",
       "ownership": {
-        "PLAYER": "LIMITED",
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2TA Reliques de l'Union - Journaux",
+      "type": "JournalEntry",
+      "name": "reliquesunion-journaux",
+      "path": "packs/reliquesunion-journaux",
+      "system": "co2",
+      "banner": "modules/cof2ta_reliques_union/assets/ru_lieux/lavoise/lavoise_ecole_rosna2.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2TA Reliques de l'Union - Objets",
+      "type": "Item",
+      "name": "reliquesunion-objets",
+      "path": "packs/reliquesunion-objets",
+      "system": "co2",
+      "banner": "modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/coffre_salle_secrete.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2TA Reliques de l'Union - Scènes",
+      "type": "Scene",
+      "name": "reliquesunion-scenes",
+      "path": "packs/reliquesunion-scenes",
+      "system": "co2",
+      "banner": "modules/cof2ta_reliques_union/assets/ru_lieux/val_rouge/val_rouge_foret2.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "item piles : item backup (do-not-delete)",
+      "type": "Item",
+      "name": "item-piles-item-backup-do-not-delete",
+      "path": "packs/item-piles-item-backup-do-not-delete",
+      "system": "co2",
+      "banner": "modules/cof2ta_reliques_union/assets/ru_lieux/val_rouge/val_rouge_foret2.webp",
+      "ownership": {
+        "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
     }

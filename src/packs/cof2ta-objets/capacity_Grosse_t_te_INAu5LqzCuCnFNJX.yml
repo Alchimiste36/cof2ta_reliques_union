@@ -1,0 +1,74 @@
+folder: EnEIzpHLQqf9ptAL
+name: Grosse tête
+type: capacity
+img: icons/commodities/tech/blueprint.webp
+_id: INAu5LqzCuCnFNJX
+system:
+  description: "<p>Le PJ remplace la force brutale par la réflexion.\_Il peut <strong>effectuer un test d’INT au lieu d’un\_test de FOR</strong> (exemple: il utilise un levier pour\_déplacer une lourde charge). </p><p>Il obtient un bonus\_de <strong>+5 à tous les tests de bricolage ou de science</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.82
+  slug: ''
+  inGame: <p>Bonus permanent aux test d'INT et AGI.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.INAu5LqzCuCnFNJX
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.INAu5LqzCuCnFNJX
+          subtype: skill
+          target: int
+          value: '5'
+          apply: self
+          additionalInfos: Bricolage / Sciences
+        - type: capacity
+          source: Item.INAu5LqzCuCnFNJX
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Bricolage / Sciences
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!INAu5LqzCuCnFNJX'

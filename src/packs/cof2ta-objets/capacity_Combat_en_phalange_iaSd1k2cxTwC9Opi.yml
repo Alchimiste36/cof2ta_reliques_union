@@ -1,0 +1,91 @@
+folder: 6HF7owjLUBud6H1A
+name: Combat en phalange
+type: capacity
+img: icons/environment/people/infantry-army.webp
+_id: iaSd1k2cxTwC9Opi
+system:
+  description: "<p><strong><span style=\"text-decoration:underline\">Lorsque le PJ combat la même créature qu’un\_allié</span></strong>, il gagne <strong>+1 en attaque et en DEF par allié</strong>\_au contact avec lui et avec la créature.</p>"
+  source: ''
+  origin: Livre du Joueur p.83
+  slug: ''
+  inGame: >-
+    <p>L'action activable ajoute un bonus aux Attaques et en DEF. Le bonus est
+    configuré à +1 de base. Le joueur devra le modifier en fonction du nombre
+    d'alliés au contact qui visent la même créature.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.iaSd1k2cxTwC9Opi
+      indice: 0
+      label: Si combat commun
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.iaSd1k2cxTwC9Opi
+          subtype: combat
+          target: melee
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.iaSd1k2cxTwC9Opi
+          subtype: combat
+          target: ranged
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.iaSd1k2cxTwC9Opi
+          subtype: combat
+          target: magic
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.iaSd1k2cxTwC9Opi
+          subtype: combat
+          target: def
+          value: '1'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!iaSd1k2cxTwC9Opi'

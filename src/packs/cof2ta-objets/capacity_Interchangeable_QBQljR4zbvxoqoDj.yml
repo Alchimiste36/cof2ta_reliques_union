@@ -1,0 +1,69 @@
+folder: uvHtoSiBBvs1nfqu
+name: Interchangeable
+type: capacity
+img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+_id: QBQljR4zbvxoqoDj
+system:
+  description: "<p>Tant que le loup et ses\_alliées sont plus nombreux que la cible, ils\_se relaient pour esquiver ses attaques et\_obtiennent un bonus de <strong>+5 en DEF</strong>. </p><p>Si plusieurs\_loups semblables sont au contact du PJ, le MJ\_a toute latitude pour infliger les DM d'une\_attaque sur le loup de son choix, le personnage\_ne sachant jamais lequel il blesse.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir le bonus de DEF lorsque les
+    conditions sont remplies.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.QBQljR4zbvxoqoDj
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.QBQljR4zbvxoqoDj
+          subtype: combat
+          target: def
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!QBQljR4zbvxoqoDj'

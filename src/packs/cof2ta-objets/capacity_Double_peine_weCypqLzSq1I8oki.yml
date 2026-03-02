@@ -1,0 +1,77 @@
+folder: iUmDDqOwMKC5bQ0F
+name: Double peine
+type: capacity
+img: icons/skills/melee/weapons-crossed-swords-pink.webp
+system:
+  description: "<p>Si les deux armes du PJ atteignent la cible lors\_d’un même tour, le personnage obtient un effet\_de combo qui ajoute <strong>+1d6 DM à l’une des deux\_attaques</strong> selon son choix.</p>"
+  source: ''
+  origin: Livre du Joueur p.121
+  slug: ''
+  inGame: <p>L'action permet de jeter le jet de 1d6 DM.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.PMmwzPWrrEgcCMkH
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 1d6
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: weCypqLzSq1I8oki
+ownership:
+  default: 0
+sort: 0
+_key: '!items!weCypqLzSq1I8oki'

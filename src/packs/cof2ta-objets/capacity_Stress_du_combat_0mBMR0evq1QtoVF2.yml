@@ -1,0 +1,82 @@
+folder: uvHtoSiBBvs1nfqu
+name: Stress du combat
+type: capacity
+img: icons/creatures/abilities/dragon-breath-purple.webp
+_id: 0mBMR0evq1QtoVF2
+system:
+  description: "<p>Un cheval de selle n'est pas apte à subir le\_stress du combat. </p><p>Dans ce type de situation, le\_cavalier doit utiliser <strong>une action de mouvement et réussir un test de CHA difficulté 10 pour\_réussir à le maîtriser à chaque tour</strong>. En cas\_d'échec, le cheval prend la fuite.</p><p> Animal\_domestique, le cheval n'est pas habitué à se\_défendre, il reçoit un malus de -2 en combat\_(déjà pris en compte dans ses caractéristiques).</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: ''
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.0mBMR0evq1QtoVF2
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: cha
+          saveDifficulty: '10'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - silence
+            duration: '0'
+            unit: unlimited
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!0mBMR0evq1QtoVF2'

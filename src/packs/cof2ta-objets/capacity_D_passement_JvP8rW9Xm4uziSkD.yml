@@ -1,0 +1,70 @@
+folder: TM2vZsQjVMSGf4wH
+name: Dépassement
+type: capacity
+img: icons/skills/movement/arrows-up-trio-red.webp
+system:
+  description: "<p>Le PJ augmente la valeur d’<strong>une Carac. au choix\_de +2</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.87
+  slug: ''
+  inGame: >-
+    <p>Bonus permanent configuré de base en AGI. Au moment d'apprendre cette
+    capacité, le joueur doit modifier la Caractéristique choisie dans le
+    Sous-type du Modificateur de l'action.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.JvP8rW9Xm4uziSkD
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.JvP8rW9Xm4uziSkD
+          subtype: ability
+          target: agi
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: JvP8rW9Xm4uziSkD
+ownership:
+  default: 0
+sort: 0
+_key: '!items!JvP8rW9Xm4uziSkD'

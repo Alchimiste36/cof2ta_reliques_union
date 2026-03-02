@@ -1,0 +1,71 @@
+folder: n5FCdQaLirfGR17h
+name: Même pas mal
+type: capacity
+img: icons/creatures/abilities/lion-roar-yellow.webp
+system:
+  description: "<p>Lorsqu’il subit un coup critique, cela a pour\_effet de décupler la rage du PJ. </p><p>Il <strong>peut immédiatement entrer en rage</strong> (action gratuite)\_et gagne un bonus de <strong>+1d6 aux DM de ses\_attaques au contact</strong> pour les trois prochains\_tours. </p><p>Le joueur note les DM supplémentaires\_de l’attaque critique à part : <strong>le PJ ne perdra ces\_PV qu’à la fin de la rage.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.123
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir le bonus de DM. Le nombre de rounds
+    est à gérer manuellement.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.oFPsrb2ONP6TVkmu
+      indice: 0
+      label: +1d6 DM
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        visible: false
+        enabled: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.oFPsrb2ONP6TVkmu
+          subtype: combat
+          target: damMelee
+          value: 1d6
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: szsGdpKxTYYyxkjc
+ownership:
+  default: 0
+sort: 0
+_key: '!items!szsGdpKxTYYyxkjc'

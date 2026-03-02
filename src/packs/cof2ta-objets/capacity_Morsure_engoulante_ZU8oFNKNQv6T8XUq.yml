@@ -1,0 +1,78 @@
+folder: uvHtoSiBBvs1nfqu
+name: Morsure engoulante
+type: capacity
+img: icons/magic/acid/dissolve-bone-skull.webp
+_id: ZU8oFNKNQv6T8XUq
+system:
+  description: "<p>Lorsqu'un personnage\_tombe à 0 PV suite à une morsure de goule, il\_doit réussir un <strong>test de CON difficulté 10</strong> sous\_peine de se transformer immédiatement en\_goule. </p><p>Il <strong>subit alors toutes les modifications\_de l'engoulement</strong>, <strong>se relève avec tous ses PV</strong>\_et <strong>commence à attaquer ses compagnons</strong>,\_sonnant le glas de son histoire sur les Terres\_d'Arran.</p><p> De plus, les goules sont plus puissantes,\_plus violentes et disposent d'armes naturelles\_létales : elles gagnent <strong>+2 en attaque et +1d6\_aux DM. [+1 NC]</strong></p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: "<p>L'action permet de réaliser le test de suavegarde pour résister à la transformation.</p><p>Losqu'un personnage est transformé en goule, glissez-déposez la capacité\_@UUID[Item.Orr0hYTlcKZkVbU2]{Transformation en goule} sur sa feuille de personnage afin de lui donner les bonus.</p>"
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ZU8oFNKNQv6T8XUq
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '10'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!ZU8oFNKNQv6T8XUq'

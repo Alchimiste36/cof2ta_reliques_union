@@ -1,0 +1,67 @@
+folder: uvHtoSiBBvs1nfqu
+name: Propulsion
+type: capacity
+img: icons/skills/movement/feet-winged-boots-brown.webp
+system:
+  description: "<p>Sous l'eau, la créature peut <strong>se\_déplacer de 60 mètres par tour</strong> en ligne droite\_au prix d'une action limitée.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: ''
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ZTsMzg64xAAQ9TQ5
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.ZTsMzg64xAAQ9TQ5
+          subtype: attribute
+          target: mov
+          value: '10'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: ZTsMzg64xAAQ9TQ5
+ownership:
+  default: 0
+sort: 0
+_key: '!items!ZTsMzg64xAAQ9TQ5'

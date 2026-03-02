@@ -1,0 +1,89 @@
+folder: NjLRp1kQ3Kjff6e4
+name: Fragment  du crystal noir
+type: equipment
+img: icons/commodities/gems/gem-rough-cushion-violet.webp
+system:
+  description: "<p><strong>Niveau de magie : 5</strong></p><p>Ce cristal noir permet de contrer les effets de la\_magie.</p><p><strong>Une fois par jour</strong>, au prix d'une <strong>action\_limitée</strong>, il permet de créer <strong>une zone de 10 mètres\_de rayon</strong> centrée sur le cristal, lequel perdure\_pendant une journée et qui aspire toute forme\_de magie.</p><p><strong>Aucun sort ni effet magique ne peut\_persister ou pénétrer dans ces zones</strong>. Les sorts\_actifs prennent fin immédiatement.</p><p><strong>Les créatures de magie pure</strong> – telles que les\_élémentaires – <strong>subissent automatiquement\_2d6 DM</strong> tant qu'elles restent dans la zone\_d'anti-magie.</p>"
+  source: ''
+  origin: Livre du Meneur p.190
+  slug: ''
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 50000
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Item.ARDknoszGTN7t98S
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: heal
+          skill:
+            formula: 2d6
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: ARDknoszGTN7t98S
+ownership:
+  default: 0
+sort: 0
+_key: '!items!ARDknoszGTN7t98S'

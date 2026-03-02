@@ -1,0 +1,69 @@
+folder: PX3mjVOGzLVSAXCG
+name: Résistance à la magie
+type: capacity
+img: icons/magic/defensive/shield-barrier-flaming-pentagon-blue-yellow.webp
+_id: r8goRNvRiEYxm2Mq
+system:
+  description: "<p>Le mystique dispose\_de défenses actives contre la magie, que ce soit\_dû à des vêtements enchantés, des cristaux\_ou des sorts actifs. </p><p>Il <strong>réduit de 5 tous les DM\_provoqués par les sorts, les armes traditionnelles\_ou légendaires</strong>.</p>"
+  source: ''
+  origin: Livre du meneur p148
+  slug: ''
+  inGame: >-
+    <p>L'action activable/désactivable permet d'obtenir la RD quand les
+    conditions sont réunies.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.r8goRNvRiEYxm2Mq
+      indice: 0
+      label: RD vs Sorts, Armes tradi ou légendaires
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.r8goRNvRiEYxm2Mq
+          subtype: combat
+          target: dr
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+ownership:
+  default: 0
+sort: 0
+_key: '!items!r8goRNvRiEYxm2Mq'

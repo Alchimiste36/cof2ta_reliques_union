@@ -1,0 +1,176 @@
+folder: WxYrOA5rFauz1dXt
+name: Bénédiction
+type: capacity
+img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
+system:
+  description: "<p>Le PJ entonne un chant pour encourager ses\_compagnons en vue.</p><p>Ceux-ci (ainsi que le PJ)\_bénéficient d’un bonus de <strong>+1 à tous leurs tests\_de Carac. et d’attaque pendant [3 + Mod. de\_SAG] tours</strong>.</p><p>Le bonus passe à <strong>+2 au rang 5</strong>\_atteint dans cette voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus aux tests est\_augmenté de 1.</p></blockquote>"
+  source: ''
+  origin: Livre du Joueur p.138
+  slug: ''
+  inGame: >-
+    <p>L'action activable permet d'obtenir les bonus tant que l'action est
+    activée et de donner les bonus aux cibles sélectionnées pendant 3 + PER
+    rounds. Fonctionne uniquement en mode Combat.</p><p>Si le PJ obtient la
+    capacité avancée, ajoutez la Condition "est appris" sur la deuxième action
+    et supprimez la première.</p>
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 1
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.kVfhIYZXfuJyKxmW
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.kVfhIYZXfuJyKxmW
+          subtype: skill
+          target: all
+          value: '@rang[1,1,1,1,2]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.kVfhIYZXfuJyKxmW
+          subtype: combat
+          target: melee
+          value: '@rang[1,1,1,1,2]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.kVfhIYZXfuJyKxmW
+          subtype: combat
+          target: ranged
+          value: '@rang[1,1,1,1,2]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.oNwSwFOmtXIfahJd
+          subtype: combat
+          target: magic
+          value: '@rang[1,1,1,1,2]'
+          apply: both
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 3 + @per
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: Item.oNwSwFOmtXIfahJd
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      modifiers:
+        - type: capacity
+          source: Item.oNwSwFOmtXIfahJd
+          subtype: skill
+          target: all
+          value: '@rang[2,2,2,2,3]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.oNwSwFOmtXIfahJd
+          subtype: combat
+          target: melee
+          value: '@rang[2,2,2,2,3]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.oNwSwFOmtXIfahJd
+          subtype: combat
+          target: ranged
+          value: '@rang[2,2,2,2,3]'
+          apply: both
+          additionalInfos: ''
+        - type: capacity
+          source: Item.oNwSwFOmtXIfahJd
+          subtype: combat
+          target: magic
+          value: '@rang[2,2,2,2,3]'
+          apply: both
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 3 +@per
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+      conditions: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1769517536854
+  modifiedTime: 1769896831834
+  lastModifiedBy: oByx0z6HY26hEziz
+_id: oNwSwFOmtXIfahJd
+ownership:
+  default: 0
+sort: 0
+_key: '!items!oNwSwFOmtXIfahJd'
