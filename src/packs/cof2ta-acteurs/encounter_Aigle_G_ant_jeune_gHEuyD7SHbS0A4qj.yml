@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Aigle Géant jeune
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/aigle_geant_jeune.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/aigle_geant_jeune.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Les aigles géants sont des volatiles de grandes\_tailles, dont les spécimens adultes sont\_ suffisamment puissants pour emporter dans leurs\_serres des humanoïdes de taille moyenne. </p><p>Rares\_et sauvages, il arrive que certains d'entre eux\_soient domestiqués et dressés pour la chasse.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,9 +249,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: attaque-contact
       subtype: melee
       learned: false
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,15 +307,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ohQzKwdojKkSx6rp
     sort: 200000
     ownership:
       default: 0
-    _key: "!actors.items!gHEuyD7SHbS0A4qj.ohQzKwdojKkSx6rp"
+    _key: '!actors.items!gHEuyD7SHbS0A4qj.ohQzKwdojKkSx6rp'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol rapide
     type: capacity
@@ -322,11 +323,11 @@ items:
     _id: xlIbeoeUv0YWZh2L
     system:
       description: "<p>l'aigle a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol. </p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -341,7 +342,7 @@ items:
         - source: Actor.gHEuyD7SHbS0A4qj.Item.xlIbeoeUv0YWZh2L
           indice: 0
           label: Première Attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -359,9 +360,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "13"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '13'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6 +1d6
               target:
@@ -372,7 +373,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -386,22 +387,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gHEuyD7SHbS0A4qj.xlIbeoeUv0YWZh2L"
+    _key: '!actors.items!gHEuyD7SHbS0A4qj.xlIbeoeUv0YWZh2L'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -409,4 +410,4 @@ _id: gHEuyD7SHbS0A4qj
 ownership:
   default: 0
 sort: 0
-_key: "!actors!gHEuyD7SHbS0A4qj"
+_key: '!actors!gHEuyD7SHbS0A4qj'

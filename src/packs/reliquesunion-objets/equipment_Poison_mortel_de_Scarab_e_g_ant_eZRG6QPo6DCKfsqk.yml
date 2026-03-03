@@ -10,13 +10,13 @@ system:
     @Test[car:con|diff:10|comp:Résistance au poison] réussi). </p><p>La cible
     reçoit 1d6 DM par tour à partir de l’empoisonnement.</p><p> Les DM sont
     cumulables si la cible est mise en contact avec une nouvelle dose.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   subtype: consumable
   tags: []
   martialCategory: paddedClothFur
-  damagetype: ""
+  damagetype: ''
   quantity:
     current: 4
     destroyIfEmpty: false
@@ -42,8 +42,8 @@ system:
   actions:
     - source: Item.eZRG6QPo6DCKfsqk
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -59,7 +59,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -71,7 +71,7 @@ system:
             formula: 1d6
             elementType: poison
             statuses: []
-            duration: "8"
+            duration: '8'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -81,7 +81,7 @@ system:
     - source: Item.eZRG6QPo6DCKfsqk
       indice: 1
       label: Résister au poison
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -97,7 +97,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "10"
+          saveDifficulty: '10'
           target:
             type: single
             scope: all
@@ -109,7 +109,7 @@ system:
             formula: 1d6/2
             elementType: poison
             statuses: []
-            duration: "8"
+            duration: '8'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -129,10 +129,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772482139644
   modifiedTime: 1772482374204
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!eZRG6QPo6DCKfsqk"
+_key: '!items!eZRG6QPo6DCKfsqk'

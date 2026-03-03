@@ -4,11 +4,11 @@ type: capacity
 img: icons/creatures/abilities/wing-batlike-white-blue.webp
 system:
   description: "<p>Le PJ <strong>obtient une monture volante</strong> (aspic,\_dragon, guivre, griffon ou wampür) :</p><p>FOR +4, DEX +2, CON +4, INT -2, SAG +1, CHA\_+0,</p><p>Init. 15, DEF 16, PV [5 × niveau],</p><p>attaque +8,\_DM 1d6+4</p><p>Lorsqu’il est en selle, le PJ peut faire <strong>attaquer sa\_monture une fois par tour</strong> (action gratuite), lors\_du même tour que lui, avec un score d’<strong>attaque\_égal à son niveau +3</strong>.</p><p>En vol, la monture couvre\_une distance de <strong>30 m par action de mouvement</strong>.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.122
-  slug: ""
+  slug: ''
   inGame: "<p>Le MJ donne le droit \"Propriétaire\" au Compagnon :\_@UUID[Actor.3a34NE1MP31DD2Mr]{Monture Fantastique}</p><p>L'action permet de réaliser l'attaque gratuite avec la monture fantastique.</p>"
-  subtype: ""
+  subtype: ''
   actionType: f
   learned: false
   rank: 5
@@ -23,7 +23,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oq1bK8DxQMyGVKWx
       indice: 0
       label: En selle
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -41,11 +41,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@niv +3"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@niv +3'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: single
             scope: all
@@ -54,7 +54,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -67,9 +67,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -77,4 +77,4 @@ _id: hXRnq5i3jciz49Aq
 ownership:
   default: 0
 sort: 0
-_key: "!items!hXRnq5i3jciz49Aq"
+_key: '!items!hXRnq5i3jciz49Aq'

@@ -141,18 +141,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>L'ours brun mesure environ 1,50 m au garrot\_et jusqu'à 2,50 m lorsqu'il se dresse sur ses\_pattes postérieures pour un poids d'environ\_300 kg. On peut aussi trouver des spécimens\_d'ours noir particulièrement massifs (jusqu'à\_400 kg) qui correspondent à ce profil.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -167,7 +167,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ours_brun_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ours_brun_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -176,7 +177,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,10 +249,10 @@ items:
     img: icons/svg/sword.svg
     _id: uJzljqS9ej2QmLj6
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -262,8 +263,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -281,9 +282,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6
               target:
@@ -294,7 +295,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -305,24 +306,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!qYPLjkrFf6HaD63N.uJzljqS9ej2QmLj6"
+    _key: '!actors.items!qYPLjkrFf6HaD63N.uJzljqS9ej2QmLj6'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -336,8 +337,8 @@ items:
       actions:
         - source: Actor.qYPLjkrFf6HaD63N.Item.4Wrxh5N1IKRVCYZx
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -355,9 +356,9 @@ items:
               source: Actor.qYPLjkrFf6HaD63N.Item.4Wrxh5N1IKRVCYZx
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -369,23 +370,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4Wrxh5N1IKRVCYZx
     ownership:
       default: 0
-    _key: "!actors.items!qYPLjkrFf6HaD63N.4Wrxh5N1IKRVCYZx"
+    _key: '!actors.items!qYPLjkrFf6HaD63N.4Wrxh5N1IKRVCYZx'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -393,4 +394,4 @@ _id: qYPLjkrFf6HaD63N
 ownership:
   default: 0
 sort: 0
-_key: "!actors!qYPLjkrFf6HaD63N"
+_key: '!actors!qYPLjkrFf6HaD63N'

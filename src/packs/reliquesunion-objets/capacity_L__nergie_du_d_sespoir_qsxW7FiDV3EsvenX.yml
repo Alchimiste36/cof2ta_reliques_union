@@ -1,18 +1,17 @@
 folder: t0SDY5MxZxjkJ5bT
 name: L’énergie du désespoir
 type: capacity
-img: >-
-  icons/creatures/abilities/mouth-teeth-human.webp
+img: icons/creatures/abilities/mouth-teeth-human.webp
 _id: qsxW7FiDV3EsvenX
 system:
   description: "<p>Lorsque son <strong>total de PV est réduit de moitié</strong>, le\_miséreux obtient <strong>un dé bonus pour tous ses tests\_de FOR, AGI ou CON</strong>. </p><p>De\_plus, <strong>lorsqu’il tombe\_à 0\_PV</strong>, il <strong>reste conscient et peut encore accomplir\_une action de mouvement par tour</strong> (sauf s’il est\_mort évidemment!). S’il subit à nouveau des DM,\_il sombre dans l’inconscience.</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p179
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action activable/désactivable donne le Dé bonus aux tests de
     compétence.</p><p>Les autres effets ne sont pas automatisés.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 5
@@ -27,7 +26,7 @@ system:
     - source: Item.qsxW7FiDV3EsvenX
       indice: 0
       label: Si PV < 50%
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -45,23 +44,23 @@ system:
           source: Item.qsxW7FiDV3EsvenX
           subtype: bonusDice
           target: for
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.qsxW7FiDV3EsvenX
           subtype: bonusDice
           target: agi
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.qsxW7FiDV3EsvenX
           subtype: bonusDice
           target: con
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -72,9 +71,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -82,4 +81,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!qsxW7FiDV3EsvenX"
+_key: '!items!qsxW7FiDV3EsvenX'

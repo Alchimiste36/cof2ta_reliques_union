@@ -1,18 +1,17 @@
 folder: Ymq9pf3lNgLcYSoT
 name: Baume de résistance au froid
 type: equipment
-img: >-
-  icons/consumables/food/pot-soup-white.webp
+img: icons/consumables/food/pot-soup-white.webp
 _id: jbMY4j2T4DyckYfx
 system:
   description: "<p>Cette pâte épaisse presque solide se frotte sur les muscles avant de s'habiller et dégage une sensation de chaleur dans le corps.</p><p>Fabriqué par\_@UUID[Actor.OYaSLTALmbEo5XZL]{Sélénia} à l'École du Vivant, une dose permet de gagner +10 aux tests pour résister au froid pendant 24h.</p><p>En cas de nécessité, si on applique une demi-dose en ce concentrant sur les zones les plus sensible, le bonus est divisé par deux pour la même durée.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   subtype: consumable
   tags: []
   martialCategory: paddedClothFur
-  damagetype: ""
+  damagetype: ''
   quantity:
     current: 1
     destroyIfEmpty: false
@@ -39,7 +38,7 @@ system:
     - source: Item.jbMY4j2T4DyckYfx
       indice: 0
       label: Dose entière
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -57,14 +56,14 @@ system:
           source: Item.jbMY4j2T4DyckYfx
           subtype: skill
           target: con
-          value: "10"
+          value: '10'
           apply: self
           additionalInfos: Résistance au froid
       resolvers: []
     - source: Item.jbMY4j2T4DyckYfx
       indice: 1
       label: Demi-dose
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -82,7 +81,7 @@ system:
           source: Item.jbMY4j2T4DyckYfx
           subtype: skill
           target: con
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Résistance au froid
       resolvers: []
@@ -98,10 +97,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771018430583
   modifiedTime: 1771019110308
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!jbMY4j2T4DyckYfx"
+_key: '!items!jbMY4j2T4DyckYfx'

@@ -5,14 +5,14 @@ img: icons/skills/movement/ball-spinning-blue.webp
 _id: HgrNk764DClPvueD
 system:
   description: "<p>La créature est un\_adversaire retors et particulièrement difficile\_à vaincre.</p><p>Une fois par tour, au moment de\_son choix, la créature <strong>peut utiliser une action de\_mouvement supplémentaire</strong> pour se déplacer.</p><p>Si un effet ou une créature la <strong>paralyse</strong>, la <strong>ralentit</strong>\_ou <strong>restreint ses mouvements</strong>, elle a droit à un <strong>test\_d'INT difficulté 10</strong> pour s'en débarrasser une\_fois par tour.</p><p>Elle gagne <strong>+5 en DEF lorsqu'elle lui reste moins de 60 PV</strong>.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser le test de sauvegarde pour résister
     aux altérations de mouvement.</p><p>La deuxième action activable permet
     d'obtenir le bonus de DEF.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -27,7 +27,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.HgrNk764DClPvueD
       indice: 0
       label: Résister aux altérations de mouvement
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -43,7 +43,7 @@ system:
       resolvers:
         - type: save
           saveAbility: int
-          saveDifficulty: "10"
+          saveDifficulty: '10'
           target:
             type: self
             number: 0
@@ -52,7 +52,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -63,7 +63,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.HgrNk764DClPvueD
       indice: 1
       label: DEF si moins de 60PV
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -81,9 +81,9 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.HgrNk764DClPvueD
           subtype: combat
           target: def
-          value: "5"
+          value: '5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -94,9 +94,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -104,4 +104,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: "!items!HgrNk764DClPvueD"
+_key: '!items!HgrNk764DClPvueD'

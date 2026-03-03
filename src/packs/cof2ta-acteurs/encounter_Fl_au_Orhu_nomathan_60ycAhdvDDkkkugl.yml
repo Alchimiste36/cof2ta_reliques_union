@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Fléau Orhu'nomathan
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fleau_orhunomathan.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fleau_orhunomathan.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: colossal
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Littéralement « géant de ronce» en ancien\_dialecte sylvain, Orhu'nomathan est une\_créature inextricablement lié aux énergies\_telluriques dont l'essence est entrée en résonance avec les forêts des Terres d'Arran. On\_pourrait grossièrement le décrire comme une\_sorte de dryade géante, mais ce serait oublier\_trop facilement ses yeux rouges animés d'une\_intelligence réelle mais pervertie par une rage\_abyssale.</p><p></p><p>Également appelés géants ou titans, les\_Fléaux sont d'immenses créatures animées\_par\_ l'énergie primordiale du monde. Ils\_dominaient les Terres d'Arran avant même\_l'arrivée des premiers Elfes et ont ravagé le\_monde par leurs guerres de territoires avant\_de s'apaiser et de s'endormir.\_</p><p>Les légendes racontent qu'ils se sont éveillés\_une fois et que leur colère à la découverte\_des civilisations émergentes avait manqué\_<span style=\"white-space: initial; color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">d'éradiquer toute forme de vie pensante.</span></p><p>Nul ne sait comment ils ont été de nouveau\_plongés dans leur sommeil sans fin.\_Le monde a depuis oublié leur existence.\_Mais s'il est vrai que les eaux, les roches et\_la végétation ont recouvert leur corps, ils ne\_sont pas morts. Ils dorment, simplement.</p><p>Les Fléaux sont des créatures immenses, mesurant jusqu'à près de 20 mètres de haut –\_ voire\_bien plus, les légendes traitant de certains\_Fléaux comme de véritables\_ montagnes –, à\_la forme humanoïde mais aux traits bestiaux.\_</p><p>Ils sont habités d'une rage ancestrale et dotés\_d'une force encore plus considérable que ce\_que laisse envisager leur stature. Certains\_disposent de pouvoirs magiques dépassant\_l'entendement.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Personnalisation :</span></strong></span> vous pouvez ajouter des\_voies de profil ou de prestige pour un bonus\_de +1 au NC par voie. Il n'y a virtuellement\_aucune limite au NC d'un Fléau mais ajoutez\_un rang de boss pour deux voies pour ne pas\_surcoter sa puissance.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.IBhJ4awiCSfpULwc
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "30"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '30'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 4d6+24
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,28 +307,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.IBhJ4awiCSfpULwc"
+    _key: '!actors.items!60ycAhdvDDkkkugl.IBhJ4awiCSfpULwc'
   - type: attack
     system:
       subtype: magic
       learned: true
       description: "<p>le fléau\_possède un pouvoir magique qui inflige [10d6 +\_30] DM de poison ou d'acide sur un test d'attaque\_magique réussi (portée 30 mètres) sur une cible\_unique.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
         reloadable: false
       range:
         value: null
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -339,8 +340,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.zFlQ3rHennw1hdKY
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: l
@@ -358,9 +359,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "18"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '18'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 10d6+30
               target:
@@ -371,7 +372,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -386,13 +387,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.zFlQ3rHennw1hdKY"
+    _key: '!actors.items!60ycAhdvDDkkkugl.zFlQ3rHennw1hdKY'
   - folder: uvHtoSiBBvs1nfqu
     name: Balayage
     type: capacity
@@ -400,11 +401,11 @@ items:
     _id: ZcVqQZdVdJCdvVcx
     system:
       description: "<p>La créature utilise sa\_grande taille pour affecter plusieurs créatures\_d'un seul coup. </p><p>Si plusieurs cibles\_sont présentes face à elle, son attaque <strong>affecte\_deux créatures</strong> (dans un arc de 180 °). <strong>Faire un\_seul test d'attaque</strong> et le comparer à la DEF de chaque cible.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -426,13 +427,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.ZcVqQZdVdJCdvVcx"
+    _key: '!actors.items!60ycAhdvDDkkkugl.ZcVqQZdVdJCdvVcx'
   - folder: uvHtoSiBBvs1nfqu
     name: Fauchage
     type: capacity
@@ -440,13 +441,13 @@ items:
     _id: UVDYnLYXWvxtjG8c
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 28 ou être renversée</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
         soit la FOR soit l'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -460,8 +461,8 @@ items:
       actions:
         - source: Actor.60ycAhdvDDkkkugl.Item.UVDYnLYXWvxtjG8c
           indice: 0
-          label: "sI 15+ : FOR"
-          chatFlavor: ""
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -477,7 +478,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "28"
+              saveDifficulty: '28'
               target:
                 type: single
                 scope: all
@@ -486,12 +487,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -500,8 +501,8 @@ items:
           modifiers: []
         - source: Actor.60ycAhdvDDkkkugl.Item.UVDYnLYXWvxtjG8c
           indice: 1
-          label: "sI 15+ : AGI"
-          chatFlavor: ""
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -517,7 +518,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "28"
+              saveDifficulty: '28'
               target:
                 type: single
                 scope: all
@@ -526,12 +527,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -548,13 +549,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.UVDYnLYXWvxtjG8c"
+    _key: '!actors.items!60ycAhdvDDkkkugl.UVDYnLYXWvxtjG8c'
   - folder: uvHtoSiBBvs1nfqu
     name: Projection
     type: capacity
@@ -562,14 +563,14 @@ items:
     _id: 2mkxJfKcgQ8xuevz
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur\_un jet de d20</strong> au test d'attaque, la victime est\_<strong>projetée à [1d6+1] mètres de là</strong> et subit <strong>+3d6\_DM supplémentaires</strong>. </p><p>Elle doit réussir un <strong>test\_de CON de difficulté 15 ou être étourdie</strong>. À\_chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de jeter les DM de la projection.</p><p>La
         deuxième action permet de réaliser le test de sauvegarde de CON et
         d'appliquer le statut renversé pendant 1 round.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -584,7 +585,7 @@ items:
         - source: Actor.60ycAhdvDDkkkugl.Item.2mkxJfKcgQ8xuevz
           indice: 0
           label: DM supplémentaires
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -609,7 +610,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -619,7 +620,7 @@ items:
         - source: Actor.60ycAhdvDDkkkugl.Item.2mkxJfKcgQ8xuevz
           indice: 1
           label: Sauvegarde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -635,7 +636,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -644,11 +645,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -666,24 +667,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.2mkxJfKcgQ8xuevz"
+    _key: '!actors.items!60ycAhdvDDkkkugl.2mkxJfKcgQ8xuevz'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -697,8 +698,8 @@ items:
       actions:
         - source: Actor.60ycAhdvDDkkkugl.Item.wjHMlCUfKvIzhafr
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -716,9 +717,9 @@ items:
               source: Actor.60ycAhdvDDkkkugl.Item.wjHMlCUfKvIzhafr
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -730,25 +731,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: wjHMlCUfKvIzhafr
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.wjHMlCUfKvIzhafr"
+    _key: '!actors.items!60ycAhdvDDkkkugl.wjHMlCUfKvIzhafr'
   - folder: hombdbi06Pu0gz8U
     name: Peau d’écorce
     type: capacity
     img: icons/magic/nature/thorns-hand-glow-green.webp
     system:
       description: "<p>La peau du PJ prend la consistance de l’écorce.\_</p><p>Il gagne <strong>+2 en DEF pendant [5 + Mod. de\_SAG] tours</strong>. Ce bonus passe à +4 au rang 4 de\_cette voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ bénéficie d’un bonus\_de +2 à son test d’attaque magique.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.134
-      slug: ""
+      slug: ''
       inGame: "<p>L'action activable permet d'obtenir le bonus en DEF.\_</p><p>Au rang 4, le PJ doit remplacer la Valeur du Modificateur DEF de l'action par \"+4\".</p><p>Si le PJ obtient la capacité avancée, ajoutez un nouveau Modificateur sur l'action de type Combat - Attaque magie - \"+2\".</p><blockquote><p><strong>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</strong></p></blockquote><p></p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -762,8 +763,8 @@ items:
       actions:
         - source: Actor.60ycAhdvDDkkkugl.Item.cRqazaRqAsz1C9jg
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -781,9 +782,9 @@ items:
               source: Actor.60ycAhdvDDkkkugl.Item.cRqazaRqAsz1C9jg
               subtype: combat
               target: def
-              value: "4"
+              value: '4'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -795,23 +796,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: cRqazaRqAsz1C9jg
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.cRqazaRqAsz1C9jg"
+    _key: '!actors.items!60ycAhdvDDkkkugl.cRqazaRqAsz1C9jg'
   - folder: hombdbi06Pu0gz8U
     name: Prison végétale
     type: capacity
     img: icons/magic/nature/root-vine-entangle-foot-green.webp
     system:
       description: "<p>modifié : affecte les cibles\_dans une zone de 30 mètres de diamètre\_pendant 11 tours. Subissent -2 en attaque, en\_DEF et ne peuvent se déplacer. </p><p>Libération\_contre un test de FOR difficulté 20.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action activable permet d'activer le sort (dépense des PM
         et apparition de la seconde action).</p><p>La deuxième action permet
@@ -822,7 +823,7 @@ items:
         remplacez toutes la Valeur de chaque Modificateur de l'action par
         "-3".</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
         faites SHIFT+CLIC sur l'action</strong></p></blockquote><p></p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -837,7 +838,7 @@ items:
         - source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
           indice: 0
           label: Activer le Sort
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -854,8 +855,8 @@ items:
           resolvers: []
         - source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: debuff
           actionType: none
@@ -869,36 +870,36 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           modifiers:
             - type: capacity
               source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
               subtype: combat
               target: def
-              value: "-2"
+              value: '-2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
               subtype: combat
               target: melee
-              value: "-2"
+              value: '-2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
               subtype: combat
               target: ranged
-              value: "-2"
+              value: '-2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
               subtype: combat
               target: magic
-              value: "-2"
+              value: '-2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -909,10 +910,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "11"
+                duration: '11'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -922,7 +923,7 @@ items:
         - source: Actor.60ycAhdvDDkkkugl.Item.y1HIXXr7sgQD17HO
           indice: 2
           label: Libération
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -938,7 +939,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "20"
+              saveDifficulty: '20'
               target:
                 type: single
                 number: 0
@@ -947,7 +948,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -965,25 +966,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: y1HIXXr7sgQD17HO
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.y1HIXXr7sgQD17HO"
+    _key: '!actors.items!60ycAhdvDDkkkugl.y1HIXXr7sgQD17HO'
   - folder: hombdbi06Pu0gz8U
     name: Animation d’un arbre
     type: capacity
     img: icons/magic/nature/tree-animated-squint.webp
     system:
       description: "<p><strong><span style=\"text-decoration:underline\">modifié :</span></strong> permet\_d'animer [1d4+1] arbres pendant la durée du\_combat. Un maximum de vingt arbres peuvent\_être contrôlés simultanément.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Arbre animé :</span></strong></span></p><ul><li><p>Init. 7, DEF 13, PV 60,\_</p></li><li><p>attaque de contact = +20, DM 1d6+3,\_</p></li><li><p>déplacement 10 m par action de mouvement.\_</p></li><li><p>Réduction de DM de 10 sauf contre les armes\_tranchantes et le feu.</p></li></ul>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.134
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.</p><p>Le MJ donne au PJ les droits \"Propriétaire\" du Compagnon :\_@UUID[Actor.0SQ2OHu8eeWoSLOz]{Arbre animé}.</p><blockquote><p><strong>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</strong></p></blockquote>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 4
@@ -999,8 +1000,8 @@ items:
       actions:
         - source: Actor.60ycAhdvDDkkkugl.Item.HjE8vqzGC7Geyu1L
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -1025,7 +1026,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1042,29 +1043,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: HjE8vqzGC7Geyu1L
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.HjE8vqzGC7Geyu1L"
+    _key: '!actors.items!60ycAhdvDDkkkugl.HjE8vqzGC7Geyu1L'
   - folder: hombdbi06Pu0gz8U
     name: Régénération
     type: capacity
     img: icons/magic/life/cross-flared-green.webp
     system:
       description: "<p>La cible touchée par le PJ <strong>guérit 3 PV par tour\_pendant [niveau du PJ + Mod. de SAG] tours</strong>.\_</p><p>Ce sort ne peut pas affecter <strong>une créature plus\_d’une fois par jour</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de soigner 3 PV sur une cible et de lui donner un
         Effet pendant Niveau + PER round qui la soigne de 3 PV à chaque
         tour.</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
         faites SHIFT+CLIC sur l'action</strong></p></blockquote>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 5
@@ -1080,8 +1081,8 @@ items:
       actions:
         - source: Actor.60ycAhdvDDkkkugl.Item.524QpCZPJKfUbihT
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -1097,7 +1098,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: "5"
+                formula: '5'
               target:
                 type: single
                 scope: all
@@ -1106,10 +1107,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: heal
-                formula: "5"
-                elementType: ""
+                formula: '5'
+                elementType: ''
                 statuses: []
-                duration: "20"
+                duration: '20'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1126,14 +1127,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 524QpCZPJKfUbihT
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.524QpCZPJKfUbihT"
+    _key: '!actors.items!60ycAhdvDDkkkugl.524QpCZPJKfUbihT'
   - folder: uvHtoSiBBvs1nfqu
     name: Armure magique
     type: capacity
@@ -1141,11 +1142,11 @@ items:
     _id: Ic6huH59U0AzOrcc
     system:
       description: "<p>La créature possède\_un pouvoir magique qui lui permet de <strong>diviser\_tous les DM physiques subis par deux</strong> pour le\_reste du combat. </p><p>Ce pouvoir <strong>n'affecte pas les\_DM des attaques magiques élémentaires</strong> (feu,\_froid, acide, électricité).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -1167,22 +1168,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!60ycAhdvDDkkkugl.Ic6huH59U0AzOrcc"
+    _key: '!actors.items!60ycAhdvDDkkkugl.Ic6huH59U0AzOrcc'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -1190,4 +1191,4 @@ _id: 60ycAhdvDDkkkugl
 ownership:
   default: 0
 sort: 0
-_key: "!actors!60ycAhdvDDkkkugl"
+_key: '!actors!60ycAhdvDDkkkugl'

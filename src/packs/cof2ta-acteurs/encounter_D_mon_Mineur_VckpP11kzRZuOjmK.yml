@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Démon Mineur
 type: encounter
 _id: VckpP11kzRZuOjmK
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/demon_mineur.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/demon_mineur.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
       private: "<p>Les démons sont des créatures qui ne sont pas\_originaires des Terres d'Arran.\_ Maléfiques,\_elles habitent une autre dimension, l'espace\_qui se tisse entre les ombres et les cauchemars,\_ce lieu perceptible uniquement du coin de\_l'œil ou dans nos terreurs les plus abjectes. </p><p>Leurs moyens d'action sur le plan matériel\_sont limités et elles cherchent\_ continuellement\_à pervertir les âmes faillibles des mystiques\_pour s'y incarner et prendre possession de leur\_corps. Ces dépouilles mortelles amoindrissent\_considérablement leur puissance démoniaque,\_mais les démons n'ont d'autre choix que d'y\_recourir s'ils veulent œuvrer sur les Terres\_d'Arran.</p><p>Le royaume des nécromants était jusqu'à\_récemment leur plus sinistre réussite puisque\_trois princes-démons avait réussi à profaner\_les corps de puissants sorciers et y faire régner\_leur loi démente. Ce qu'il advint d'eux fait\_partie de la légende de Redwin.</p><p>Les démons sont de nature variable et, s'il\_est vrai qu'ils sont presque tous dépositaires\_d'un pouvoir néfaste et incommensurable,\_certains ont une préférence pour le contrôle\_des âmes des mortels tandis que d'autres\_disposent d'une force inimaginable. Fort\_heureusement, rares sont les démons à avoir\_réussi à s'incarner complètement dans les\_Terres d'Arran. Ils restent cependant une\_menace permanente.</p><p>Lorsqu'un démon prend possession du corps\_d'un mortel, il marque ce dernier de stigmates\_repoussants qui trahissent sa possession, tels\_que des yeux sombres où l'on ne voit plus\_les pupilles, des veines noires apparentes\_sous leur peau ou encore une haleine putride\_trahissant des chairs en état de décomposition\_avancée. Souvent, le démon se contente de ces\_modifications, mais il peut arriver de façon\_rarissime qu'il arrive à s'incarner totalement,\_modifiant grandement son apparence pour\_révéler sa véritable nature.</p>"
       public: "<p>Ce démon s'incarne rarement seul dans\_notre dimension, il s'agit plutôt du suivant\_d'un prince démon. À moins qu'un apprenti\_mystique n'ait cherché à jouer avec le feu…</p><p>Le démon mineur est l'une des rares créatures\_démoniaques à pouvoir survivre en dehors\_du corps d'un hôte. Il n'a pas réellement de\_forme en vérité. Il ressemble davantage à une\_sorte de nuage ténébreux, une émanation\_informe et effrayante cherchant à se tapir\_dans les ombres pour mieux se repaître de la\_terreur des vivants.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +169,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/demon_mineur_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/demon_mineur_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -250,11 +252,11 @@ items:
     _id: 4ahjOPEuMx3xaqy8
     system:
       description: "<p>les démons ne sont pas considérés\_comme des créatures non vivantes. Toutefois,\_ils partagent avec celles-ci de nombreux traits.\_</p><p>Ils ne respirent pas, ne dorment jamais, ne\_connaissent pas la fatigue et sont immunisées\_au poison et aux maladies non magiques. Ils\_n'ont pas besoin de se sustenter, du moins pas\_avec des nourritures terrestres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -268,8 +270,8 @@ items:
       actions:
         - source: Actor.VckpP11kzRZuOjmK.Item.4ahjOPEuMx3xaqy8
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -287,23 +289,23 @@ items:
               source: Actor.VckpP11kzRZuOjmK.Item.4ahjOPEuMx3xaqy8
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.VckpP11kzRZuOjmK.Item.4ahjOPEuMx3xaqy8
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.VckpP11kzRZuOjmK.Item.4ahjOPEuMx3xaqy8
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -315,13 +317,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.4ahjOPEuMx3xaqy8"
+    _key: '!actors.items!VckpP11kzRZuOjmK.4ahjOPEuMx3xaqy8'
   - folder: uvHtoSiBBvs1nfqu
     name: Résistance
     type: capacity
@@ -329,11 +331,11 @@ items:
     _id: MS2c8ByGDFCvc5tx
     system:
       description: "<p>Par défaut, tous les démons\_<strong>réduisent les DM de feu et d'acide de 10\_points</strong>. D'autres capacités peuvent améliorer\_cette résistance.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir une RD de 10.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -348,7 +350,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.MS2c8ByGDFCvc5tx
           indice: 0
           label: RD acide et feu
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -366,9 +368,9 @@ items:
               source: Actor.VckpP11kzRZuOjmK.Item.MS2c8ByGDFCvc5tx
               subtype: combat
               target: dr
-              value: "10"
+              value: '10'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -380,13 +382,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.MS2c8ByGDFCvc5tx"
+    _key: '!actors.items!VckpP11kzRZuOjmK.MS2c8ByGDFCvc5tx'
   - folder: uvHtoSiBBvs1nfqu
     name: Télépathie
     type: capacity
@@ -394,11 +396,11 @@ items:
     _id: 873a3I4MTRsQTP5F
     system:
       description: "<p>Les démons peuvent communiquer avec toutes les créatures par <strong>télépathie\_jusqu'à une distance de 50 mètres sans avoir\_besoin de partager une langue commune</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pa d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -420,13 +422,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.873a3I4MTRsQTP5F"
+    _key: '!actors.items!VckpP11kzRZuOjmK.873a3I4MTRsQTP5F'
   - folder: uvHtoSiBBvs1nfqu
     name: Immortel
     type: capacity
@@ -434,11 +436,11 @@ items:
     _id: O5u1SCVoGTw8PGih
     system:
       description: "<p>Un démon ne peut être tué à moins\_d'avoir recours à un rituel spécifique – a minima\_un rituel funéraire pour les démons les plus\_faibles (rang 4 de la voie culturelle de l'ordre\_du Temple). La mort de son enveloppe ne fait\_que le bannir temporairement.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -460,24 +462,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.O5u1SCVoGTw8PGih"
+    _key: '!actors.items!VckpP11kzRZuOjmK.O5u1SCVoGTw8PGih'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -491,8 +493,8 @@ items:
       actions:
         - source: Actor.VckpP11kzRZuOjmK.Item.JduNpMghM9epNrKi
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -510,9 +512,9 @@ items:
               source: Actor.VckpP11kzRZuOjmK.Item.JduNpMghM9epNrKi
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -524,14 +526,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: JduNpMghM9epNrKi
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.JduNpMghM9epNrKi"
+    _key: '!actors.items!VckpP11kzRZuOjmK.JduNpMghM9epNrKi'
   - folder: uvHtoSiBBvs1nfqu
     name: RD/magie
     type: capacity
@@ -541,11 +543,11 @@ items:
       description: >-
         <p>Une réduction de Dommages sauf pour les dommages d'origine
         magique.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -560,7 +562,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.FjQYF8yriGAJeYhZ
           indice: 0
           label: RD sauf magie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -578,9 +580,9 @@ items:
               source: Actor.VckpP11kzRZuOjmK.Item.FjQYF8yriGAJeYhZ
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -592,21 +594,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.FjQYF8yriGAJeYhZ"
+    _key: '!actors.items!VckpP11kzRZuOjmK.FjQYF8yriGAJeYhZ'
   - type: attack
     system:
       subtype: melee
       learned: true
       description: <p>Si touché, appliquer venin démoniaque.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -615,8 +617,8 @@ items:
       actions:
         - source: Actor.VckpP11kzRZuOjmK.Item.lZYngIALSZWijief
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -634,9 +636,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "7"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '7'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4-1
               target:
@@ -647,7 +649,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -662,13 +664,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.lZYngIALSZWijief"
+    _key: '!actors.items!VckpP11kzRZuOjmK.lZYngIALSZWijief'
   - folder: uvHtoSiBBvs1nfqu
     name: Se fondre dans les ombres
     type: capacity
@@ -676,13 +678,13 @@ items:
     _id: CUxw2nxl5s9C9ZrT
     system:
       description: "<p>Au prix d'une\_action de mouvement, la créature peut\_gagner les ombres et y disparaître. Il peut en\_ressortir quand bon lui semble, à une distance\_maximale de 20 m de son point de disparition\_– toujours au prix d'une action de mouvement.\_</p><p>Tant qu'il est dans les ombres, la créature\_est insensible à tout type de DM – hormis les\_DM de zone. Il peut cependant être révélé à\_l'aide d'une source de lumière suffisamment\_puissante (tel qu'un sort de Lumières dansantes\_par exemple ou un feu plus important que\_celui d'une torche).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action activable permet simplement de savoir quand la créature est
         dans les ombres ou non.</p>
-      subtype: ""
+      subtype: ''
       actionType: m
       learned: true
       rank: 0
@@ -697,7 +699,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.CUxw2nxl5s9C9ZrT
           indice: 0
           label: Dans les ombres
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -722,13 +724,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.CUxw2nxl5s9C9ZrT"
+    _key: '!actors.items!VckpP11kzRZuOjmK.CUxw2nxl5s9C9ZrT'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol
     type: capacity
@@ -736,11 +738,11 @@ items:
     _id: z1FqK0CccO2WJhwq
     system:
       description: "<p>La créature\_<strong>peut léviter au prix\_d'une action gratuite</strong> et <strong>se déplacer en vol de\_20 mètres</strong> par action de mouvement.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -762,13 +764,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.z1FqK0CccO2WJhwq"
+    _key: '!actors.items!VckpP11kzRZuOjmK.z1FqK0CccO2WJhwq'
   - folder: BIRI3M946hrP9EbP
     name: Image décalée
     type: capacity
@@ -776,11 +778,11 @@ items:
     _id: L0wBXWRy44GbM8Pr
     system:
       description: "<p><strong>Pendant [5 + Mod. de SAG] tours</strong>, lorsqu’une\_attaque le touche, le PJ lance <strong>1d6</strong> : <strong>sur 5-6, il\_ne subit pas les DM</strong>. Les DM des effets de zone\_s’appliquent normalement.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> le PJ peut appliquer les effets\_de son sort aux DM et effets de zone.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre latérale.</p><p>Vous pouvez utiliser la Table Aléatoire :\_@UUID[RollTable.MYM2XPVOTQXdhNIp]{Image décalée}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -802,24 +804,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.L0wBXWRy44GbM8Pr"
+    _key: '!actors.items!VckpP11kzRZuOjmK.L0wBXWRy44GbM8Pr'
   - folder: BIRI3M946hrP9EbP
     name: Mirage
     type: capacity
     img: icons/magic/perception/mask-stone-eyes-orange.webp
     system:
       description: "<p>Le PJ crée une illusion visuelle et sonore immobile\_d’une durée de <strong>[5 + Mod. de SAG] minutes</strong> (ou\_tours si l’illusion est animée). </p><p>Le volume maximal\_de l’illusion est de <strong>10 m de côté par rang</strong> atteint\_dans cette voie (portée: 500 m). <strong>Divisez ces\_paramètres par 10 si l’illusion est animée</strong>. </p><p>Interagir\_avec l’illusion la fait disparaître.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la durée du sort passe à [30\_+ Mod de SAG] minutes.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.\_Dépensez les PM manuellement depuis la barre latérale.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -841,25 +843,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: DXs9QD6VjYmyde1y
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.DXs9QD6VjYmyde1y"
+    _key: '!actors.items!VckpP11kzRZuOjmK.DXs9QD6VjYmyde1y'
   - folder: BIRI3M946hrP9EbP
     name: Imitation
     type: capacity
     img: icons/magic/control/silhouette-hold-change-blue.webp
     system:
       description: "<p>Le PJ peut <strong>prendre l’apparence d’une créature\_de taille proche</strong> (+ ou – 50 cm) <strong>qu’il voit</strong> au\_moment de l’incantation. </p><p><strong>Durée [5 + Mod. de\_SAG] minutes</strong>. Toucher le PJ (par une attaque\_ou non) met fin au sort.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.\_Dépensez les PM manuellement depuis la barre latérale.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -881,14 +883,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: YX8MmkZR3NPakwDj
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.YX8MmkZR3NPakwDj"
+    _key: '!actors.items!VckpP11kzRZuOjmK.YX8MmkZR3NPakwDj'
   - folder: hsop47dgLjfCwayN
     name: Brumes
     type: capacity
@@ -896,13 +898,13 @@ items:
     _id: 7i2VgltUB1rA6mOk
     system:
       description: "<p>Le PJ créé un brouillard très dense jusqu’à\_une <strong>portée de 20 m sur une zone de 20 m de\_diamètre</strong>.</p><p>Dans cette zone <strong>la visibilité est très\_réduite</strong> et équivalente à de la pénombre. Il n’est\_pas possible de voir par-delà le brouillard qui\_persiste <strong>pendant [5 + Mod. SAG] tours</strong>.\_</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> en doublant le coût en PM,\_le PJ peut doubler la zone du sort ou la durée\_du sort – tout en appliquant les effets d’une\_concentration s’il le souhaite.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre
         latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -924,28 +926,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.7i2VgltUB1rA6mOk"
+    _key: '!actors.items!VckpP11kzRZuOjmK.7i2VgltUB1rA6mOk'
   - folder: hsop47dgLjfCwayN
     name: Sous tension
     type: capacity
     img: icons/magic/lightning/bolts-forked-large-blue.webp
     system:
       description: "<p>Le PJ <strong>se charge d’énergie électrique pour [5 +\_Mod. de SAG] tours</strong>. </p><p><strong>Toute créature qui le blesse\_au contact ou le touche reçoit une décharge\_infligeant 1d6 DM.</strong></p><p> Il peut également <strong>délivrer une\_décharge électrique</strong> (attaque magique, portée:\_10 m) infligeant <strong>[1d6 + Mod. d’INT] DM</strong>. </p><p>Au\_rang 4 de cette voie, les DM passent à 2d6.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> en doublant le coût en PM,\_le PJ peut lancer le sort immédiatement au moment où il est attaqué. Il ne doit pas être surpris\_pour cela et ne peut user de concentration.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action "Activer le sort" permet de dépenser les PM et d'afficher
         les deux autres actions.</p><p>L'action "DM si touché" permet de jeter
         les DM si le PJ se fait toucher (sans dépenser le PM).</p><p>L'action
         "Décharge électrique" permet de réaliser l'attaque magique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -960,7 +962,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.AovSgRMPHH3FP1Cr
           indice: 0
           label: DM si touché
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -974,7 +976,7 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "2"
+              object: '2'
           resolvers:
             - type: auto
               dmg:
@@ -987,7 +989,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -997,7 +999,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.AovSgRMPHH3FP1Cr
           indice: 1
           label: Décharge électrique
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -1011,15 +1013,15 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "2"
+              object: '2'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "7"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '7'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -1030,14 +1032,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.VckpP11kzRZuOjmK.Item.AovSgRMPHH3FP1Cr
           indice: 2
           label: Activer le Sort
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1062,28 +1064,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: AovSgRMPHH3FP1Cr
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.AovSgRMPHH3FP1Cr"
+    _key: '!actors.items!VckpP11kzRZuOjmK.AovSgRMPHH3FP1Cr'
   - folder: hsop47dgLjfCwayN
     name: Armure de terre
     type: capacity
     img: icons/magic/earth/strike-fist-stone.webp
     system:
       description: "<p>Pendant <strong>[5 + Mod. de SAG] tours</strong>, le PJ\_<strong>retranche à tous les DM de feu, de froid,\_d’électricité ou d’acide</strong> subis un montant égal\_à <strong>deux fois son rang</strong> atteint dans cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir la RD. Il faudra l'activer
         lorsqu'il subit des DM élémentaires.</p><p>Dépensez les PM manuellement
         depuis la barre latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -1098,7 +1100,7 @@ items:
         - source: Actor.VckpP11kzRZuOjmK.Item.bigp6hdBeh7NRm9T
           indice: 0
           label: RD contre éléments
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1116,9 +1118,9 @@ items:
               source: Actor.VckpP11kzRZuOjmK.Item.bigp6hdBeh7NRm9T
               subtype: combat
               target: dr
-              value: "6"
+              value: '6'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1130,27 +1132,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: bigp6hdBeh7NRm9T
     ownership:
       default: 0
-    _key: "!actors.items!VckpP11kzRZuOjmK.bigp6hdBeh7NRm9T"
+    _key: '!actors.items!VckpP11kzRZuOjmK.bigp6hdBeh7NRm9T'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!VckpP11kzRZuOjmK"
+_key: '!actors!VckpP11kzRZuOjmK'

@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/melee/blood-slash-foam-red.webp
 system:
   description: "<p>Une fois par combat, le PJ tourne sur lui-même\_en assénant <strong>des attaques à toutes les cibles au\_contact</strong>. Il inflige <strong>automatiquement des DM</strong>\_correspondant à l’arme utilisée (+ tous les bonus\_habituels) à toutes les cibles dans <strong>un rayon de\_5 m autour de lui.</strong></p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.123
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser une attaque automatique reprennant les DM de
     la première arme équipée.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 5
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.oFPsrb2ONP6TVkmu
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -43,7 +43,7 @@ system:
       resolvers:
         - type: auto
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: multiple
             number: 20
@@ -52,7 +52,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -68,9 +68,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -78,4 +78,4 @@ _id: lKRSGtZD9uvsJL2H
 ownership:
   default: 0
 sort: 0
-_key: "!items!lKRSGtZD9uvsJL2H"
+_key: '!items!lKRSGtZD9uvsJL2H'

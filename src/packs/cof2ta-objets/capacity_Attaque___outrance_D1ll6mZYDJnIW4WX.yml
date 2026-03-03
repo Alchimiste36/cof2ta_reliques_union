@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/melee/strike-axe-energy-pink.webp
 system:
   description: "<p>Le PJ peut choisir une pénalité en <strong>-2 DEF</strong> pour\_gagner un bonus de <strong>+1d6 aux DM</strong> ou un bonus\_de <strong>-5 en DEF</strong> pour gagner un bonus de <strong>+2d6\_aux DM</strong>. </p><p>Ce bonus n’est pas multiplié en cas\_de critique.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.140
-  slug: ""
+  slug: ''
   inGame: <p>L'action activable permet d'obtenir le bonus de DEF.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 4
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.E7vicLnxuCkjIOY8
       indice: 0
-      label: "-2 -> +1d6"
-      chatFlavor: ""
+      label: '-2 -> +1d6'
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -41,21 +41,21 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.E7vicLnxuCkjIOY8
           subtype: combat
           target: def
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.D1ll6mZYDJnIW4WX
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.D1ll6mZYDJnIW4WX
       indice: 1
-      label: "-5 -> +2d6"
-      chatFlavor: ""
+      label: '-5 -> +2d6'
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -73,16 +73,16 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.D1ll6mZYDJnIW4WX
           subtype: combat
           target: def
-          value: "-5"
+          value: '-5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.D1ll6mZYDJnIW4WX
           subtype: combat
           target: damMelee
           value: 2d6
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -93,9 +93,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -103,4 +103,4 @@ _id: D1ll6mZYDJnIW4WX
 ownership:
   default: 0
 sort: 0
-_key: "!items!D1ll6mZYDJnIW4WX"
+_key: '!items!D1ll6mZYDJnIW4WX'

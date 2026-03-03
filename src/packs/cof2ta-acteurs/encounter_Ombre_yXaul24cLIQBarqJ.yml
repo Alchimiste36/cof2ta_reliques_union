@@ -142,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: undead
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Une ombre est un mort-vivant étrange,\_les restes maudits des âmes de morts très\_anciens qui hantent les ruines antiques. Une\_ombre est intangible et seulement vaguement\_humanoïde, rampant au sol telle une forme\_fuligineuse pour se dresser soudainement.\_</p><p>Elle prend alors la forme d'une silhouette\_fantomatique plus ou moins translucide mue\_par le seul désir impie d'aspirer la vitalité de\_sa victime.</p>"
     languages: []
     properties: "<p>Contre un groupe de\_personnage équipés d'armes traditionnelles,\_les ombres ont seulement un NC de 2.</p>"
@@ -168,7 +168,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ombre_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ombre_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -250,13 +251,13 @@ items:
     _id: zX2xLWsiBBPSuoPi
     system:
       description: "<p>A chaque fois qu'une\_créature subit les DM du contact corrupteur du\_fantôme, elle doit réussir un test de CON difficulté 15 ou être affaiblie pendant 1d6 minutes.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
         statut Affaibli pendant la durée de l'effet.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -270,8 +271,8 @@ items:
       actions:
         - source: Actor.yXaul24cLIQBarqJ.Item.zX2xLWsiBBPSuoPi
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -287,7 +288,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: none
                 number: 0
@@ -296,8 +297,8 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - weakened
                 duration: 1d6*10
@@ -318,13 +319,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.zX2xLWsiBBPSuoPi"
+    _key: '!actors.items!yXaul24cLIQBarqJ.zX2xLWsiBBPSuoPi'
   - type: attack
     system:
       subtype: melee
@@ -332,9 +333,9 @@ items:
       description: >-
         <p>Affaiblissement à chaque fois que des DM sont infligés à une
         cible.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -343,8 +344,8 @@ items:
       actions:
         - source: Actor.yXaul24cLIQBarqJ.Item.hdTv3K1jomow670D
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -362,9 +363,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -375,7 +376,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -390,13 +391,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.hdTv3K1jomow670D"
+    _key: '!actors.items!yXaul24cLIQBarqJ.hdTv3K1jomow670D'
   - folder: uvHtoSiBBvs1nfqu
     name: Création de rejeton
     type: capacity
@@ -404,11 +405,11 @@ items:
     _id: 2ZHDRZYtHr1YNwSB
     system:
       description: "<p><strong>Une créature tuée par\_une ombre devient elle-même une ombre 1d4\_tours</strong> après son décès.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -430,13 +431,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.2ZHDRZYtHr1YNwSB"
+    _key: '!actors.items!yXaul24cLIQBarqJ.2ZHDRZYtHr1YNwSB'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -444,11 +445,11 @@ items:
     _id: VelxjZwjSVk2WdSN
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -462,8 +463,8 @@ items:
       actions:
         - source: Actor.yXaul24cLIQBarqJ.Item.VelxjZwjSVk2WdSN
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -481,23 +482,23 @@ items:
               source: Actor.yXaul24cLIQBarqJ.Item.VelxjZwjSVk2WdSN
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.yXaul24cLIQBarqJ.Item.VelxjZwjSVk2WdSN
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.yXaul24cLIQBarqJ.Item.VelxjZwjSVk2WdSN
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -509,13 +510,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.VelxjZwjSVk2WdSN"
+    _key: '!actors.items!yXaul24cLIQBarqJ.VelxjZwjSVk2WdSN'
   - folder: uvHtoSiBBvs1nfqu
     name: Fumeux
     type: capacity
@@ -523,11 +524,11 @@ items:
     _id: LkcdT7UyhBA114GM
     system:
       description: "<p>Les ombres peuvent <strong>déformer leur\_corps à volonté pour passer dans le moindre\_interstice</strong>, comme sous une porte ou par le\_trou d'une serrure.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -549,13 +550,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.LkcdT7UyhBA114GM"
+    _key: '!actors.items!yXaul24cLIQBarqJ.LkcdT7UyhBA114GM'
   - folder: uvHtoSiBBvs1nfqu
     name: Vitalité surnaturelle
     type: capacity
@@ -563,11 +564,11 @@ items:
     _id: 4qmpTcqgNZd2njje
     system:
       description: "<p>La créature guérit à\_un rythme fantastique : elle <strong>récupère 5 PV à la\_fin de chaque tour</strong>. </p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action permet de se soigner automatiquement.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -581,8 +582,8 @@ items:
       actions:
         - source: Actor.yXaul24cLIQBarqJ.Item.4qmpTcqgNZd2njje
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -598,7 +599,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: "5"
+                formula: '5'
               target:
                 type: self
                 number: 0
@@ -607,7 +608,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -624,24 +625,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.4qmpTcqgNZd2njje"
+    _key: '!actors.items!yXaul24cLIQBarqJ.4qmpTcqgNZd2njje'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -655,8 +656,8 @@ items:
       actions:
         - source: Actor.yXaul24cLIQBarqJ.Item.ZPsjAPcqpVqcXNgA
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -674,9 +675,9 @@ items:
               source: Actor.yXaul24cLIQBarqJ.Item.ZPsjAPcqpVqcXNgA
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -688,27 +689,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ZPsjAPcqpVqcXNgA
     ownership:
       default: 0
-    _key: "!actors.items!yXaul24cLIQBarqJ.ZPsjAPcqpVqcXNgA"
+    _key: '!actors.items!yXaul24cLIQBarqJ.ZPsjAPcqpVqcXNgA'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!yXaul24cLIQBarqJ"
+_key: '!actors!yXaul24cLIQBarqJ'

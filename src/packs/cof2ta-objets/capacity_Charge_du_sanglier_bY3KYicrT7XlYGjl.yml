@@ -4,11 +4,11 @@ type: capacity
 img: icons/creatures/mammals/bull-horned-blue.webp
 system:
   description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p><hr /><p><strong>Sur une charge réussie</strong>, si la victime est d'une\_taille inférieure au sanglier, elle est également\_<strong>projetée à [1d6+1] mètres de là</strong> et doit réussir\_un <strong>test de CON de difficulté 15 ou être étourdie</strong>. </p><p>À chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
-  source: ""
+  source: ''
   origin: Livre du Meneur p.68
-  slug: ""
+  slug: ''
   inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 0
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.l5DPqMLGrEODCyf4
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -41,14 +41,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.q3rEJPxF7HbEOTnD
           subtype: bonusDice
           target: melee
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.bY3KYicrT7XlYGjl
       indice: 1
       label: Charge réussie
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -64,7 +64,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -73,12 +73,12 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - stun
             unit: combat
-            duration: "0"
+            duration: '0'
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -94,9 +94,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -104,4 +104,4 @@ _id: bY3KYicrT7XlYGjl
 ownership:
   default: 0
 sort: 0
-_key: "!items!bY3KYicrT7XlYGjl"
+_key: '!items!bY3KYicrT7XlYGjl'

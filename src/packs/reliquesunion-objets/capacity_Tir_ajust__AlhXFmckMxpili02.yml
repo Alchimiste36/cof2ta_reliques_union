@@ -1,8 +1,7 @@
 folder: 73SIMU7AmWSYN0GC
 name: Tir ajusté
 type: capacity
-img: >-
-  icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+img: icons/skills/ranged/arrows-flying-salvo-blue-light.webp
 _id: AlhXFmckMxpili02
 system:
   description: >-
@@ -12,13 +11,13 @@ system:
     si elle touche. La cible ne peux pas appliquer de RD naturelle contre ces
     dommages par contre les créatures insensibles aux attaque sournois ne
     subissent pas le DM supplémentaires.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser l'attaque à distance en reprennant les
     valeurs de la première arme équipée en ajoutant les bonus.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 4
@@ -32,8 +31,8 @@ system:
   actions:
     - source: Item.AlhXFmckMxpili02
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -51,11 +50,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg +@rangd6 +@agi"
+            formula: '@arme.dmg +@rangd6 +@agi'
           target:
             type: none
             number: 0
@@ -65,7 +64,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: true
@@ -81,10 +80,10 @@ _stats:
   compendiumSource: Item.AlhXFmckMxpili02
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1770779403022
   modifiedTime: 1770780157619
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!AlhXFmckMxpili02"
+_key: '!items!AlhXFmckMxpili02'

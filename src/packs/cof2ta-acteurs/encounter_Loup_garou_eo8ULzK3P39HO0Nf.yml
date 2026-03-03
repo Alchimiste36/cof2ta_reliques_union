@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Loup-garou
 type: encounter
 _id: eo8ULzK3P39HO0Nf
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_garou.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_garou.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Malgré les légendes et les superstitions, la\_lycanthropie n'est pas une maladie mais\_plutôt une forme de rituel magique. En\_fusionnant son essence avec celle d'un animal\_totem, de rares mystiques ont pu devenir des\_créatures hybrides mythiques, mi-animal\_mi-humanoïde.</p><p>Ces individus sont extrêmement rares et\_relèvent de la légende. Les raisons les ayant\_poussés à un tel acte n'appartiennent qu'à\_eux : par exemple, l'esprit du roi sylvain\_Lotomn s'est lié à celui d'un loup après sa\_mort pour continuer à veiller sur sa reine\_Eliseii. D'autres contes elfiques évoquent des\_druides bannis par leur cercle et ayant été\_contraints de se lier à des animaux inférieurs,\_tels que les rats.</p><h4>Le loup-garou</h4><p>Un loup-garou peut changer de forme à\_volonté et possède deux formes : la forme\_classique de loup et une forme hybride\_mi-homme, mi-loup (ou de loup redressé\_sur ses pattes arrière), plus dangereuse. Le\_loup-garou décrit ici est un profil de base\_mais vous pouvez le rendre plus puissant\_en lui ajoutant des voies de profil ou, plus\_simplement, des niveaux de boss.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +169,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_garou_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_garou_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -244,15 +246,15 @@ prototypeToken:
   prependAdjective: false
 items:
   - folder: ds9TVmAEZY0LnDG1
-    name: "Loup : Morsure et griffes"
+    name: 'Loup : Morsure et griffes'
     type: attack
     img: icons/svg/sword.svg
     _id: y66cCYzzxyo3R8I5
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -263,8 +265,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +284,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "6"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '6'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+5
               target:
@@ -295,7 +297,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,21 +308,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.y66cCYzzxyo3R8I5"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.y66cCYzzxyo3R8I5'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -329,8 +331,8 @@ items:
       actions:
         - source: Actor.eo8ULzK3P39HO0Nf.Item.pFlQVH39thUwnMg4
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -348,9 +350,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "6"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '6'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+5
               target:
@@ -361,11 +363,11 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
-    name: "Humanoïde : Arme"
+    name: 'Humanoïde : Arme'
     img: icons/svg/sword.svg
     _id: pFlQVH39thUwnMg4
     effects: []
@@ -376,13 +378,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.pFlQVH39thUwnMg4"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.pFlQVH39thUwnMg4'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
@@ -390,15 +392,15 @@ items:
     _id: bPo43S8IW4lJCYUe
     system:
       description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -412,8 +414,8 @@ items:
       actions:
         - source: Actor.eo8ULzK3P39HO0Nf.Item.bPo43S8IW4lJCYUe
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -431,14 +433,14 @@ items:
               source: Actor.eo8ULzK3P39HO0Nf.Item.bPo43S8IW4lJCYUe
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.eo8ULzK3P39HO0Nf.Item.bPo43S8IW4lJCYUe
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -463,11 +465,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -478,7 +480,7 @@ items:
         - source: Actor.eo8ULzK3P39HO0Nf.Item.bPo43S8IW4lJCYUe
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -498,7 +500,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -510,13 +512,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.bPo43S8IW4lJCYUe"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.bPo43S8IW4lJCYUe'
   - folder: uvHtoSiBBvs1nfqu
     name: Empathie avec les loups
     type: capacity
@@ -524,11 +526,11 @@ items:
     _id: lYEJUA1MQgWRkrh1
     system:
       description: "<p>Un loup-garou\_possède un don naturel pour <strong>apaiser les loups</strong>\_et parfois même <strong>les commander</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -550,13 +552,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.lYEJUA1MQgWRkrh1"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.lYEJUA1MQgWRkrh1'
   - folder: uvHtoSiBBvs1nfqu
     name: Forme hybride
     type: capacity
@@ -564,11 +566,11 @@ items:
     _id: hCBCDtQ93VFvQmNG
     system:
       description: "<p>Le personnage adopte une\_forme qui reflète totalement sa nature duale,\_mi-loup mi-humanoïde. Il peut à la fois <strong>porter\_des attaques de morsure et utiliser une arme</strong>. </p><p>En termes de jeu, cela lui accorde <strong>une attaque\_de chaque</strong> <strong>type</strong> (loup + humanoïde) <strong>par tour</strong> en\_utilisant une action limitée.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -590,13 +592,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.hCBCDtQ93VFvQmNG"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.hCBCDtQ93VFvQmNG'
   - folder: uvHtoSiBBvs1nfqu
     name: Transformation en loup
     type: capacity
@@ -604,11 +606,11 @@ items:
     _id: RYSTFWTjRi2FdbFf
     system:
       description: "<p>La créature peut\_<strong>se transformer à volonté en loup</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -630,24 +632,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.RYSTFWTjRi2FdbFf"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.RYSTFWTjRi2FdbFf'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -661,8 +663,8 @@ items:
       actions:
         - source: Actor.eo8ULzK3P39HO0Nf.Item.edfFlqi2hNrvxQiq
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -680,9 +682,9 @@ items:
               source: Actor.eo8ULzK3P39HO0Nf.Item.edfFlqi2hNrvxQiq
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -694,27 +696,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: edfFlqi2hNrvxQiq
     ownership:
       default: 0
-    _key: "!actors.items!eo8ULzK3P39HO0Nf.edfFlqi2hNrvxQiq"
+    _key: '!actors.items!eo8ULzK3P39HO0Nf.edfFlqi2hNrvxQiq'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!eo8ULzK3P39HO0Nf"
+_key: '!actors!eo8ULzK3P39HO0Nf'

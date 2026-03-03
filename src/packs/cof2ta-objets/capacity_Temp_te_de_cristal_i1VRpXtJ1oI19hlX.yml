@@ -4,15 +4,15 @@ type: capacity
 img: icons/magic/water/projectile-beams-salvo-blue.webp
 system:
   description: "<p>Le PJ <strong>choisit une cible située à moins de\_40 mètres</strong>.</p><p>Il fait un test d’<strong>attaque magique et\_le compare à la DEF de tous les personnages</strong> (y\_compris le PJ et ses compagnons) se trouvant\_<strong>dans un rayon de 10 mètres</strong> autour de la cible.\_</p><p>Chaque victime pour laquelle le test est un\_succès <strong>encaisse [5d6 + Mod. d’INT] de DM\_de froid et est ralentie pendant 1 tour</strong> à moins\_de réussir un test de CON difficulté 13.\_En cas\_de réussite, elles subissent seulement la moitié\_des DM et ne sont pas ralenties.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.153
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser une attaque automatique contre plusieurs
     cibles sélectionnées, de jeter les DM et d'appliquer sur les cibles le
     Statut Ralenti pendant 1 round. L'effet supplémentaire fonctionne uniquement
     en Mode Combat.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 5
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.BorFOsgQe3bEAMxz
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -45,9 +45,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atm"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 5d6 + @int
           target:
@@ -58,11 +58,11 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - slowed
-            duration: "1"
+            duration: '1'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -75,9 +75,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -85,4 +85,4 @@ _id: i1VRpXtJ1oI19hlX
 ownership:
   default: 0
 sort: 0
-_key: "!items!i1VRpXtJ1oI19hlX"
+_key: '!items!i1VRpXtJ1oI19hlX'

@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Hydre à cinq têtes
 type: encounter
 _id: dOuYZqgUePuT1Qf7
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/hydre_cinq_tetes.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/hydre_cinq_tetes.webp
 system:
   abilities:
     agi:
@@ -142,15 +143,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>L'hydre est une grande créature reptilienne\_de presque deux tonnes pourvue de multiples\_têtes. Son grand corps quadrupède est lourd\_et massif. De son tronc émerge plusieurs\_encolures terminées par des têtes draconiques\_aux mâchoires larges et mortelles.</p>"
     languages: []
     properties: "<ul><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Couper une tête :</span></strong></span> l'hydre est un adversaire\_très dangereux à cause de son nombre élevé\_d'attaques. Pour réduire le nombre de têtes, un\_personnage peut tenter de la décapiter. Dans\_ce cas, l'attaque souffre d'une pénalité de -5\_et elle doit infliger au moins 10 points de DM\_en une seule fois. En cas de réussite, la tête est\_coupée et les PV du monstre baissent de 10.\_Toutefois la guérison accélérée de l'hydre fait\_repousser la tête en 2 tours (sauf DM de feu).\_En cas d'échec, l'hydre ne subit aucun DM.</p></li><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Ajouter des têtes :</span></strong></span> pour chaque tête supplémentaire, ajoutez 10 PV, +1 en attaque et une\_attaque supplémentaire. Le NC augmente\_de +1.</p></li></ul>"
@@ -178,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -251,9 +252,9 @@ items:
     _id: hqcOrzC0V4iIiCV5
     system:
       description: <p>5 attaques</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -264,8 +265,8 @@ items:
       actions:
         - source: Item.Dz4Yb3syZWVlYJ1z
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -283,9 +284,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+4
               target:
@@ -296,7 +297,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -307,24 +308,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!dOuYZqgUePuT1Qf7.hqcOrzC0V4iIiCV5"
+    _key: '!actors.items!dOuYZqgUePuT1Qf7.hqcOrzC0V4iIiCV5'
   - folder: uvHtoSiBBvs1nfqu
     name: Guérison accélérée
     type: capacity
     img: icons/magic/life/heart-cross-strong-flame-blue.webp
     system:
       description: "<p>l'hydre <strong>guérit de 5 PV\_par tour</strong> sauf contre les DM de feu.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action permet de se soigner automatiquement.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -338,8 +339,8 @@ items:
       actions:
         - source: Actor.dOuYZqgUePuT1Qf7.Item.MCUaQi0s2DnrcBax
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -355,7 +356,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: "5"
+                formula: '5'
               target:
                 type: self
                 number: 0
@@ -364,7 +365,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -381,25 +382,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: MCUaQi0s2DnrcBax
     ownership:
       default: 0
-    _key: "!actors.items!dOuYZqgUePuT1Qf7.MCUaQi0s2DnrcBax"
+    _key: '!actors.items!dOuYZqgUePuT1Qf7.MCUaQi0s2DnrcBax'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -413,8 +414,8 @@ items:
       actions:
         - source: Actor.dOuYZqgUePuT1Qf7.Item.H8wC7oqAflgniKME
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -432,9 +433,9 @@ items:
               source: Actor.dOuYZqgUePuT1Qf7.Item.H8wC7oqAflgniKME
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -446,27 +447,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: H8wC7oqAflgniKME
     ownership:
       default: 0
-    _key: "!actors.items!dOuYZqgUePuT1Qf7.H8wC7oqAflgniKME"
+    _key: '!actors.items!dOuYZqgUePuT1Qf7.H8wC7oqAflgniKME'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!dOuYZqgUePuT1Qf7"
+_key: '!actors!dOuYZqgUePuT1Qf7'

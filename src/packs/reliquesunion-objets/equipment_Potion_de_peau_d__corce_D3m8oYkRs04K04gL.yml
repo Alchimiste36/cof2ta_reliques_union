@@ -1,8 +1,7 @@
 folder: Bj9CdYeY6fs3oPt4
 name: Potion de peau d’écorce
 type: equipment
-img: >-
-  icons/consumables/potions/bottle-conical-corked-green.webp
+img: icons/consumables/potions/bottle-conical-corked-green.webp
 _id: D3m8oYkRs04K04gL
 system:
   description: >-
@@ -11,13 +10,13 @@ system:
     sont pas cumulables au bonus d’une armure métallique ou d’un autre sort de
     protection qui ajoute un bonus de DEF (à l’exception du Masque du
     prédateur).</p>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: potion-de-peau-decorce
   tags: []
   subtype: consumable
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 1
     max: null
@@ -45,7 +44,7 @@ system:
     - source: Item.D3m8oYkRs04K04gL
       indice: 0
       label: DEF +5
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -62,9 +61,9 @@ system:
           source: Item.D3m8oYkRs04K04gL
           subtype: combat
           target: def
-          value: "5"
+          value: '5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: consumable
           skill: {}
@@ -79,7 +78,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       actionType: none
@@ -98,10 +97,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771019147775
   modifiedTime: 1771019147775
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!D3m8oYkRs04K04gL"
+_key: '!items!D3m8oYkRs04K04gL'

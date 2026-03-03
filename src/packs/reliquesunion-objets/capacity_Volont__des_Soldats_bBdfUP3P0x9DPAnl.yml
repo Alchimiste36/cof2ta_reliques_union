@@ -1,23 +1,22 @@
 folder: 31d3Ww6D2Nd46MA5
 name: Volonté des Soldats
 type: capacity
-img: >-
-  icons/magic/control/control-influence-rally-purple.webp
+img: icons/magic/control/control-influence-rally-purple.webp
 _id: bBdfUP3P0x9DPAnl
 system:
   description: >-
     <p><strong>Tous les alliés Mâles Exsangues</strong> qui peuvent entendre la
     Matrone <strong>gagnent +3 ATT de Contact, +1d6 DM (3)</strong> et
     <strong>ils perdent 3 DEF pendant un tour</strong>.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet d'appliquer les effets sur les acteurs ciblés pendant
     toute la durée du combat.</p><p>Lors de l'apprentissage, cette capacité
     donne droit à une capacité liée pour l'effet de la capacité de rang 2.
     Glissez-déposez la capacité choisie sous cette capacité.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 4
@@ -31,8 +30,8 @@ system:
   actions:
     - source: Item.bBdfUP3P0x9DPAnl
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -50,23 +49,23 @@ system:
           source: Item.bBdfUP3P0x9DPAnl
           subtype: combat
           target: melee
-          value: "3"
+          value: '3'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.bBdfUP3P0x9DPAnl
           subtype: combat
           target: damMelee
           value: 1d6
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.bBdfUP3P0x9DPAnl
           subtype: combat
           target: def
-          value: "3"
+          value: '3'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           target:
@@ -77,10 +76,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: combat
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -96,9 +95,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -106,4 +105,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!bBdfUP3P0x9DPAnl"
+_key: '!items!bBdfUP3P0x9DPAnl'

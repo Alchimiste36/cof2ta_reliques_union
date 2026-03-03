@@ -75,7 +75,7 @@ system:
     xp:
       max: 0
     recovery:
-      dice: ""
+      dice: ''
     tempDm: 0
   combat:
     init:
@@ -130,7 +130,7 @@ system:
       max: null
     crit:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -140,7 +140,7 @@ system:
       max: null
     dr:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -184,17 +184,17 @@ system:
       value: 1
   details:
     biography:
-      private: ""
+      private: ''
       public: "<p>Je suis née dans les faubourgs de la cité des\_Sangs-mêlés. Là-bas, le crime est plus qu’un\_art de vivre, c’est une nécessité.</p><p>Dans ce monde où les liens de sang n’ont aucune\_importance, je me suis créée une famille de\_toute pièce dont les membres se comptaient\_sur les doigts d’une main : Loshi un pickpocket\_gobelin, Tark le Nain alcoolique, soi-disant\_ancien soldat, et Vina et Solilas, des Humains\_et amis d’enfance.</p><p>Une bande inséparable qui - à défaut d’être\_loyale - adoucissait un peu le goût de la vie. Et\_puis il y a eu le casse manqué: le plan semblait\_juteux, une caisse d’œufs de dragons volés en\_provenance d’Akrähyng qui devait nous assurer\_une retraite dorée.</p><p>Ça a mal tourné. Pour sauver leurs peaux des\_griffes de la Rosa, un gang très influent et se\_prétendant « propriétaire légitime des œufs\_volés», Vina et Solilas m’ont balancée. J’ai quand\_même senti le coup venir et j’ai eu le temps de\_m’enfuir en sautant à bord du premier navire\_marchand, sans me soucier de sa destination.</p><p>Savoir que Solilas a perdu une main dans\_l’histoire ne rend pas sa trahison ni la fin de\_notre amitié plus plaisante. Qu’aurais-je fait\_à sa place? J’espère ne jamais être soumise un\_jour à un tel choix.</p>"
     appearance:
-      private: ""
+      private: ''
       public: "<p>Shaï est une gobeline de petite taille (pour son\_peuple), svelte et féline, à la peau foncée presque\_bleutée. Elle a les traits plutôt doux et les yeux\_d’un blanc nacré. Ses oreilles sont percées et\_ornées de plusieurs bijoux confectionnés à partir\_de petits ossements et dents d’animaux. Elle\_arbore une longue chevelure noire tressée en\_une unique natte qu’elle ramène généralement\_en avant, par-dessus son épaule.</p><p>La peau de ses épaules, de sa poitrine et de son\_dos est parsemée de tâche naissance rappelant\_les motifs des fourrures de guépard.</p>"
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     size: medium
     languages:
-      - ""
+      - ''
   wealth:
     gp:
       value: 0
@@ -211,7 +211,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/pretires/Sha%C3%AF_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/pretires/Sha%C3%AF_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -220,7 +221,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -289,42 +290,43 @@ items:
   - folder: QZKWGWu8512Lhphc
     name: Peaux vertes Gobelin
     type: feature
-    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_pv_gobelin_token.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_pv_gobelin_token.webp
     system:
       description: "<h2>Les\_Gobelins</h2><p>Petits, frêles mais rusés, les Gobelins ont pu\_survivre à la violence des Terres d’Arran et à\_de nombreux conflits armés, ainsi qu'à l'asservissement par les Orcs ou l'appétit vénal des\_esclavagistes grâce à deux capacités uniques : une\_faculté d’adaptation extraordinaire et une propension presque surnaturelle à tirer leur épingle\_d’un jeu dont ils nient les règles en permanence.</p><p>Organisés en tribus, ils sont capables de mener des\_guérillas mortelles à l’aide d’escadrons d’archers\_d’élite ou encore de s’associer avec des groupes\_d’Ogres ou d’Orcs pour mener des sièges usants et\_de nature à faire tomber les villes les plus fortifiées.</p><p>Au final, le Gobelin reste aventureux. Si la vie de\_groupe présente des atouts évidents, elle constitue\_également un frein à l’épanouissement personnel.\_De nombreux Gobelins ont quitté le mode de vie\_tribal pour rejoindre de grandes cités humaines\_et y mener des carrières de brigand et de voleur\_avec plus ou moins de réussite. Qu’importe, la vie\_est courte et elle mérite d’être vécue pleinement.</p><h4>Modificateurs des Gobelins</h4><p>Atouts : <strong>+2 DEX, +2 INT</strong></p><p>Faiblesses\_: <strong>-2 FOR, -2 CON</strong></p><p>Âge de départ à l’aventure\_: <strong>12 ans et plus</strong></p><p>Espérance de vie : <strong>30 ans</strong></p><p>Taille : <strong>entre 1,00 m et 1,20\_m</strong></p><p>Poids : <strong>entre 20 kg et 40 kg</strong></p><p>Trait des Gobelins : <strong>Vision dans le noir</strong></p><p><strong>Noms féminins :</strong> <em>Bhui, Elxia, Etolki, Fell, Clyrt,\_Kiria, Kle, Lluia, Mazzia, Og, Ovyf, Pra, Pyho,\_Ruir, Selsi, Shee, Sria, Strotha, Ufla, Uggi,\_Yzzia, Viee.</em></p><p><strong>Noms masculins :</strong> <em>Ald, Biek, Brom, Cla’as, Ciz,\_Dekz, Draam, Fra’asm, Gribs, Iebsic, Iolrirm,\_Iord, Kabkoic, Kliq, Rerr, Siarkin, Slobs, Vos,\_Vres, Zral, Zren.</em></p><h2>Les Peaux vertes</h2><p>Les Peaux vertes forment un grand peuple\_qui regroupe plusieurs ethnies très\_différentes les unes des autres, que ce\_soit morphologiquement ou culturellement.\_Cependant, à l’échelle des Terres d’Arran, toutes\_sont souvent considérées de la même façon par\_les autres peuples en raison de la couleur de leur\_peau et du danger que peuvent représenter les\_clans organisés aux frontières de la civilisation.\_Il est vrai que toutes les Peaux vertes ont des\_choses en commun.</p><p>Depuis les temps immémoriaux, les Orcs\_semblent être en guerre permanente contre\_la plupart des peuples des Terres d’Arran. Au\_nord-est, les Ogres menacent dangereusement\_les forteresses-États naines tandis que souvent\_les Gobelins prolifèrent dans les bas-fonds des\_plus grandes villes ou bien s’organisent en tribus\_de pillards dans les contrées sauvages.</p><p>S’il est vrai que les Peaux vertes sont craintes\_et méprisées, il n’est pas rare pour autant de les\_<span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">croiser en nombre restreint dans certaines villes\_</span>cosmopolites, négociant leurs services en tant\_que mercenaires, voleurs ou gardes du corps,\_la nature les ayant pourvues de formidables\_capacités physiques prêtes à être monnayées.</p><p>Les Peaux vertes partagent une même voie de\_peuple, mais les multiples ethnies composant ce\_groupe disposent de leurs propres voies culturelles. En revanche, contrairement aux autres\_peuples présentés jusque-là, les modificateurs de\_caractéristique de peuple, les traits spécifiques\_ne sont pas communs à tout le peuple des Peaux\_vertes mais détaillés pour\_ chacune des cultures,\_ogre, orque ou gobeline.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       subtype: people
       modifiers:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.RN6BbiWLv8Sy49eN
           type: feature
           subtype: ability
           target: agi
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.gUQRlhYxEkwgFX7C.Item.RN6BbiWLv8Sy49eN
           type: feature
           subtype: ability
           target: int
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.gUQRlhYxEkwgFX7C.Item.RN6BbiWLv8Sy49eN
           type: feature
           subtype: ability
           target: for
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.gUQRlhYxEkwgFX7C.Item.RN6BbiWLv8Sy49eN
           type: feature
           subtype: ability
           target: con
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       paths:
         - Actor.gUQRlhYxEkwgFX7C.Item.S7GABWPqtCkggrse
         - Actor.gUQRlhYxEkwgFX7C.Item.eK0N5pEnRD68CtMi
@@ -337,14 +339,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: RN6BbiWLv8Sy49eN
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.RN6BbiWLv8Sy49eN"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.RN6BbiWLv8Sy49eN'
   - folder: ER8GmcWWezCOADVe
     name: Voie du Peuple Peaux Vertes
     type: path
@@ -352,9 +354,9 @@ items:
     _id: S7GABWPqtCkggrse
     system:
       description: "<h2>Les Peaux vertes</h2><p>Les Peaux vertes forment un grand peuple\_qui regroupe plusieurs ethnies très\_différentes les unes des autres, que ce\_soit morphologiquement ou culturellement.\_Cependant, à l’échelle des Terres d’Arran, toutes\_sont souvent considérées de la même façon par\_les autres peuples en raison de la couleur de leur\_peau et du danger que peuvent représenter les\_clans organisés aux frontières de la civilisation.\_Il est vrai que toutes les Peaux vertes ont des\_choses en commun.</p><p>Depuis les temps immémoriaux, les Orcs\_semblent être en guerre permanente contre\_la plupart des peuples des Terres d’Arran. Au\_nord-est, les Ogres menacent dangereusement\_les forteresses-États naines tandis que souvent\_les Gobelins prolifèrent dans les bas-fonds des\_plus grandes villes ou bien s’organisent en tribus\_de pillards dans les contrées sauvages.</p><p>S’il est vrai que les Peaux vertes sont craintes\_et méprisées, il n’est pas rare pour autant de les\_<span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">croiser en nombre restreint dans certaines villes\_</span>cosmopolites, négociant leurs services en tant\_que mercenaires, voleurs ou gardes du corps,\_la nature les ayant pourvues de formidables\_capacités physiques prêtes à être monnayées.</p><p>Les Peaux vertes partagent une même voie de\_peuple, mais les multiples ethnies composant ce\_groupe disposent de leurs propres voies culturelles. En revanche, contrairement aux autres\_peuples présentés jusque-là, les modificateurs de\_caractéristique de peuple, les traits spécifiques\_ne sont pas communs à tout le peuple des Peaux\_vertes mais détaillés pour\_ chacune des cultures,\_ogre, orque ou gobeline.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.gUQRlhYxEkwgFX7C.Item.di5rvVh19LX1OvSX
@@ -372,13 +374,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.S7GABWPqtCkggrse"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.S7GABWPqtCkggrse'
   - folder: BF5UormkBEDrCFHs
     name: Pour l’honneur
     type: capacity
@@ -386,11 +388,11 @@ items:
     _id: di5rvVh19LX1OvSX
     system:
       description: "<p>Les Peaux vertes sont des parias aux yeux des\_autres peuples des Terres d’Arran mais, au sein\_de leurs clans, leurs victoires et leurs faits d’armes\_forgent leurs légendes. </p><p>Le PJ gagne un bonus\_de <strong>+5 aux tests de Carac. pour toute interaction\_sociale avec d’autres Peaux vertes</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent aux tests de CHA.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -404,8 +406,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.di5rvVh19LX1OvSX
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -423,7 +425,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.di5rvVh19LX1OvSX
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Interaction sociale avec Peaux Vertes
           resolvers: []
@@ -437,27 +439,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.di5rvVh19LX1OvSX"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.di5rvVh19LX1OvSX'
   - folder: BF5UormkBEDrCFHs
     name: Frappe déloyale
     type: capacity
     img: icons/skills/melee/sword-damaged-broken-orange.webp
     system:
       description: "<p>Une fois par adversaire, <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">après avoir manqué une\_attaque de contact</span></strong></span>, le PJ peut annoncer que cette\_attaque était en réalité une frappe déloyale : le\_coup avait pour objectif de détourner l’attention\_de l’adversaire, le temps pour le PJ de placer un\_coup vicieux.</p><p>À l’issue d’un test opposé dont\_la nature est précisée ci-dessous, le personnage\_peut réaliser l’une des manœuvres suivantes :\_</p><p><strong>aveugler</strong> (DEX contre CON), <strong>désarmer</strong> (FOR\_ou DEX contre FOR) ou <strong>repousser</strong> (FOR contre\_FOR) – voir page 110 pour plus d’informations\_sur le résultat de ces manœuvres.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action permet d'activer la capacité et de faire
         apparaitre les 4 autres Actions. Chaque action permet de réaliser le
         test opposé de la manoeuvre.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -472,7 +474,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.iSjKkL3rjV1KXoRN
           indice: 0
           label: Activer la capacité
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -490,7 +492,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.iSjKkL3rjV1KXoRN
           indice: 1
           label: Aveugler
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -504,17 +506,17 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@agi"
-                crit: ""
-                difficulty: "@oppose.con"
+                formula: '@agi'
+                crit: ''
+                difficulty: '@oppose.con'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -523,14 +525,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.iSjKkL3rjV1KXoRN
           indice: 2
           label: Désarmer avec FOR
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -544,17 +546,17 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@for"
-                crit: ""
-                difficulty: "@oppose.for"
+                formula: '@for'
+                crit: ''
+                difficulty: '@oppose.for'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: none
                 number: 0
@@ -563,14 +565,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.iSjKkL3rjV1KXoRN
           indice: 3
           label: Désarmer avec AGI
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -584,17 +586,17 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@agi"
-                crit: ""
-                difficulty: "@oppose.for"
+                formula: '@agi'
+                crit: ''
+                difficulty: '@oppose.for'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -603,14 +605,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.iSjKkL3rjV1KXoRN
           indice: 4
           label: Repousser
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -624,17 +626,17 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@for"
-                crit: ""
-                difficulty: "@oppose.for"
+                formula: '@for'
+                crit: ''
+                difficulty: '@oppose.for'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: none
                 number: 0
@@ -643,7 +645,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -657,25 +659,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: iSjKkL3rjV1KXoRN
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.iSjKkL3rjV1KXoRN"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.iSjKkL3rjV1KXoRN'
   - folder: BF5UormkBEDrCFHs
     name: Maîtrise des armes sauvages
     type: capacity
     img: icons/weapons/polearms/trident-ice-blue.webp
     system:
       description: "<p>Le PJ a appris à utiliser aux mieux les traditions\_étranges de son peuple. </p><p>Il peut <strong>porter et utiliser\_les armes et armures traditionnelles de son\_peuple</strong> pour lesquelles il possède la formation\_martiale. </p><p>Pour les Aberrations (cf. page 97),\_la nature de la tradition est définie par la Voie\_culturelle (par exemple une Aberration ayant\_la voie culturelle de l’Ogre peut prétendre à la\_maîtrise des armes traditionnelles ogres).</p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -697,28 +699,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: hEp4JNKbKXmtTK9N
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.hEp4JNKbKXmtTK9N"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.hEp4JNKbKXmtTK9N'
   - folder: BF5UormkBEDrCFHs
     name: Croyances païennes
     type: capacity
     img: icons/creatures/birds/raptor-owl-flying-moon.webp
     system:
       description: "<p>Le PJ arbore désormais <strong>un tatouage mystique</strong>\_qui améliore ses performances physiques. Au\_choix : </p><p><strong>taureau</strong> (+5 aux tests de FOR), </p><p><strong>ours</strong>\_(+5 aux tests de CON), </p><p><strong>panthère</strong> (+5 aux tests\_de DEX) ou </p><p><strong>chouette</strong> (+5 aux tests de SAG).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Une action est configurée avec un Modificateur pour chaque tatouage.
         </p><p>Au moment d'apprendre cette capacité, le PJ supprime les
         Modificateurs pour conserver seulement celui du tatouage choisi.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -732,8 +734,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.bzwj7mU7OKj7U6zK
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -751,30 +753,30 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.bzwj7mU7OKj7U6zK
               subtype: skill
               target: for
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: "Taureau : Tous les tests"
+              additionalInfos: 'Taureau : Tous les tests'
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.bzwj7mU7OKj7U6zK
               subtype: skill
               target: con
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: "Ours : Tous les tests"
+              additionalInfos: 'Ours : Tous les tests'
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.bzwj7mU7OKj7U6zK
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: "Panthère : Tous les tests"
+              additionalInfos: 'Panthère : Tous les tests'
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.bzwj7mU7OKj7U6zK
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: "Chouette : Tous les tests"
+              additionalInfos: 'Chouette : Tous les tests'
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -786,27 +788,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: bzwj7mU7OKj7U6zK
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.bzwj7mU7OKj7U6zK"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.bzwj7mU7OKj7U6zK'
   - folder: BF5UormkBEDrCFHs
     name: Héros tribal
     type: capacity
     img: icons/sundries/flags/banner-skull-red.webp
     system:
       description: "<p>Le PJ peut <strong>utiliser 1 PC pour annuler un coup\_critique</strong> à son encontre et le transformer en coup\_normal. </p><p><strong><span style=\"text-decoration:underline\">Une fois par jour</span></strong>, il peut <strong>utiliser 2 PC\_pour transformer un test réussi</strong> à son encontre\_en échec. </p><p>N.B.: il n’est pas possible d’annuler\_une réussite critique.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.93
-      slug: ""
+      slug: ''
       inGame: >-
         <p>A gérer manuellement en retirant le ou les PC dépensés depuis la
         barre latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -828,23 +830,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: IRZSNer0sYpAqLAV
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.IRZSNer0sYpAqLAV"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.IRZSNer0sYpAqLAV'
   - folder: ER8GmcWWezCOADVe
     name: Voie Culturelle des Gobelins
     type: path
     img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_pv_gobelin2.webp
     system:
       description: "<h2>Les\_Gobelins</h2><p>Petits, frêles mais rusés, les Gobelins ont pu\_survivre à la violence des Terres d’Arran et à\_de nombreux conflits armés, ainsi qu'à l'asservissement par les Orcs ou l'appétit vénal des\_esclavagistes grâce à deux capacités uniques : une\_faculté d’adaptation extraordinaire et une propension presque surnaturelle à tirer leur épingle\_d’un jeu dont ils nient les règles en permanence.</p><p>Organisés en tribus, ils sont capables de mener des\_guérillas mortelles à l’aide d’escadrons d’archers\_d’élite ou encore de s’associer avec des groupes\_d’Ogres ou d’Orcs pour mener des sièges usants et\_de nature à faire tomber les villes les plus fortifiées.</p><p>Au final, le Gobelin reste aventureux. Si la vie de\_groupe présente des atouts évidents, elle constitue\_également un frein à l’épanouissement personnel.\_De nombreux Gobelins ont quitté le mode de vie\_tribal pour rejoindre de grandes cités humaines\_et y mener des carrières de brigand et de voleur\_avec plus ou moins de réussite. Qu’importe, la vie\_est courte et elle mérite d’être vécue pleinement.</p><h4>Modificateurs des Gobelins</h4><p>Atouts : <strong>+2 DEX, +2 INT</strong></p><p>Faiblesses\_: <strong>-2 FOR, -2 CON</strong></p><p>Âge de départ à l’aventure\_: <strong>12 ans et plus</strong></p><p>Espérance de vie : <strong>30 ans</strong></p><p>Taille : <strong>entre 1,00 m et 1,20\_m</strong></p><p>Poids : <strong>entre 20 kg et 40 kg</strong></p><p>Trait des Gobelins : <strong>Vision dans le noir</strong></p><p><strong>Noms féminins :</strong> <em>Bhui, Elxia, Etolki, Fell, Clyrt,\_Kiria, Kle, Lluia, Mazzia, Og, Ovyf, Pra, Pyho,\_Ruir, Selsi, Shee, Sria, Strotha, Ufla, Uggi,\_Yzzia, Viee.</em></p><p><strong>Noms masculins :</strong> <em>Ald, Biek, Brom, Cla’as, Ciz,\_Dekz, Draam, Fra’asm, Gribs, Iebsic, Iolrirm,\_Iord, Kabkoic, Kliq, Rerr, Siarkin, Slobs, Vos,\_Vres, Zral, Zren.</em></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.gUQRlhYxEkwgFX7C.Item.U4bCKLOgKjbwvQww
@@ -862,14 +864,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: eK0N5pEnRD68CtMi
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.eK0N5pEnRD68CtMi"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.eK0N5pEnRD68CtMi'
   - folder: dw1wsjpfSmQ7VrDt
     name: Insignifiant
     type: capacity
@@ -877,14 +879,14 @@ items:
     _id: U4bCKLOgKjbwvQww
     system:
       description: "<p>Le PJ bénéficie d’une étrange faculté à se faire\_oublier ou à détourner l’attention. </p><p><strong>Une fois par\_combat</strong>, alors qu’il était pris pour cible par un\_ennemi, il peut invoquer cette capacité pour\_<strong>reporter l’attention de son assaillant sur une\_autre cible ennemie</strong>. L’ennemi ne s’en prendra\_plus au Gobelin, à moins que ce dernier ne\_l’attaque de nouveau.</p><p>De plus, le Gobelin bénéficie d’un bonus de <strong>+5\_à tous les tests visant à se fondre dans la masse</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux test d'AGI pour se fondre dans la
         masse.</p><p>L'action permet de décompter l'utilisation de la faculté de
         se faire oublier.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 1
@@ -900,8 +902,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.U4bCKLOgKjbwvQww
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -919,14 +921,14 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.U4bCKLOgKjbwvQww
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: De fondre dans la masse
           resolvers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.U4bCKLOgKjbwvQww
           indice: 1
           label: Se faire oublier
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -951,26 +953,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.U4bCKLOgKjbwvQww"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.U4bCKLOgKjbwvQww'
   - folder: dw1wsjpfSmQ7VrDt
     name: Agile et sournois
     type: capacity
     img: icons/skills/movement/feet-winged-boots-brown.webp
     system:
       description: "<p>Le PJ choisit une capacité de <strong>rang 1 ou 2 de la\_voie de l’acrobatie</strong> ou de la <strong>voie de l’assassinat</strong>. </p><p>Au rang 4 de cette voie, il gagne <strong>une capacité\_supplémentaire de rang 1 ou 2</strong> de la voie de\_l’acrobatie ou de la voie de l’assassinat.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
         liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -994,28 +996,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 8MgpLsbSdqD0SfTw
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.8MgpLsbSdqD0SfTw"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.8MgpLsbSdqD0SfTw'
   - folder: dw1wsjpfSmQ7VrDt
     name: Ombre mouvante
     type: capacity
     img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
     system:
       description: "<p>En réussissant <strong>un test de DEX difficulté 10</strong>, le\_PJ peut se déplacer (sur une distance maximale\_de 20 m) jusqu’à une zone ténébreuse ou à l’abri\_des regards (derrière un mur, dans un buisson\_ou sous une calèche par exemple, du moment\_que personne ne peut voir précisément la zone)\_et disparaître à son tour. Il ne réapparaît qu’au\_tour suivant, au cours de sa phase d’initiative.</p><p>Aucun adversaire ne peut l’attaquer pendant\_qu’il a disparu dans les ombres, mais il peut\_subir des DM de zone. Le Gobelin <strong>réapparaît à\_une distance maximale de 10 m</strong> de sa position\_initiale.</p><p><strong><span style=\"text-decoration:underline\">S’il a l’initiative sur un adversaire</span></strong> qu’il\_prend pour cible au contact, il bénéficie d’un\_bonus de <strong>+2d6 DM à son attaque</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action permet de réaliser le test d'AGI difficulté
         10.</p><p>La deuxième action activable ajoute les DM bonus sur
         l'attaque.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 3
@@ -1032,7 +1034,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.dRYyjlMACYFfHhlD
           indice: 0
           label: Test AGI
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1050,11 +1052,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@agi"
-                crit: ""
-                difficulty: "10"
+                formula: '@agi'
+                crit: ''
+                difficulty: '10'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: none
                 number: 0
@@ -1063,14 +1065,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.dRYyjlMACYFfHhlD
           indice: 1
           label: Si initiative
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1090,7 +1092,7 @@ items:
               target: damMelee
               value: +2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1102,25 +1104,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: dRYyjlMACYFfHhlD
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.dRYyjlMACYFfHhlD"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.dRYyjlMACYFfHhlD'
   - folder: dw1wsjpfSmQ7VrDt
     name: Rochassier
     type: capacity
     img: icons/creatures/claws/claw-hooked-curved.webp
     system:
       description: "<p>Le PJ <strong>peut se mouvoir sur les surfaces verticales</strong>\_avec la même aisance que sur une surface horizontale. Il a besoin d’<strong>utiliser ses quatre membres</strong>\_pour se déplacer normalement. Cependant, avec\_trois membres seulement mobilisés, il peut rester\_immobile ou se déplacer à la moitié de sa vitesse\_normale (donc 10 m par action de mouvement).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.eKX024FBO4V2WuYS]{Agile et sournois}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1144,25 +1146,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4oEuX6Dd3WTBYsUY
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.4oEuX6Dd3WTBYsUY"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.4oEuX6Dd3WTBYsUY'
   - folder: dw1wsjpfSmQ7VrDt
     name: Teigneux
     type: capacity
     img: icons/magic/death/skull-horned-worn-fire-blue.webp
     system:
       description: "<p>Le PJ augmente ses valeurs de <strong>DEX et de INT\_de +2</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent en AGI et INT.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1178,8 +1180,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.GuzIsboPjn8f1uXC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1197,16 +1199,16 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.GuzIsboPjn8f1uXC
               subtype: ability
               target: agi
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.GuzIsboPjn8f1uXC
               subtype: ability
               target: int
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1218,28 +1220,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: GuzIsboPjn8f1uXC
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.GuzIsboPjn8f1uXC"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.GuzIsboPjn8f1uXC'
   - folder: dw1wsjpfSmQ7VrDt
-    name: "Trait : Vision dans le noir"
+    name: 'Trait : Vision dans le noir'
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     _id: Pi5YAehmRa99jrka
     system:
       description: "<p>Dans le noir total, le Gobelin <strong>voit comme dans\_la pénombre à 30 m.</strong></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.96
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent ajoutant la vision dans le noir activable depuis la
         barre latérale de la feuille de personnage.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -1253,8 +1255,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.Pi5YAehmRa99jrka
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1272,9 +1274,9 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.Pi5YAehmRa99jrka
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1286,51 +1288,51 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.Pi5YAehmRa99jrka"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.Pi5YAehmRa99jrka'
   - folder: BifroNnJXDduzvYU
     name: Voleuse
     type: profile
     img: icons/magic/unholy/silhouette-robe-evil-power.webp
     system:
       description: "<p><strong>Peuple privilégié :</strong> Gobelin</p><p>La voleuse se faufile dans les ombres ou dans les foules pour s’approprier les biens d’autrui,\_que ce soit pour son propre compte ou celui\_d’une tierce personne. Elle est particulièrement\_à l’aise dans les cités cosmopolites où elle évolue\_comme un poisson dans l’eau.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.61
-      slug: ""
+      slug: ''
       maxDefenseArmor: 0
       modifiers:
         - type: profile
           source: Actor.gUQRlhYxEkwgFX7C.Item.xs6azJFRYPY2Ar0z
           subtype: resource
           target: mp
-          value: "@niv+@per"
-          additionalInfos: ""
+          value: '@niv+@per'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.gUQRlhYxEkwgFX7C.Item.xs6azJFRYPY2Ar0z
           subtype: resource
           target: fp
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.gUQRlhYxEkwgFX7C.Item.xs6azJFRYPY2Ar0z
           subtype: combat
           target: melee
-          value: "1"
-          additionalInfos: ""
+          value: '1'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.gUQRlhYxEkwgFX7C.Item.xs6azJFRYPY2Ar0z
           subtype: combat
           target: ranged
-          value: "1"
-          additionalInfos: ""
+          value: '1'
+          additionalInfos: ''
           apply: self
       martialTrainingsWeapons:
         unarmed: true
@@ -1393,24 +1395,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: xs6azJFRYPY2Ar0z
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.xs6azJFRYPY2Ar0z"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.xs6azJFRYPY2Ar0z'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de l’Acrobatie
     type: path
     img: icons/skills/movement/feet-winged-sandals-tan.webp
     _id: h7rlwj3jPlO8fzTr
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.gUQRlhYxEkwgFX7C.Item.MGqpYrAT83tuMYq0
@@ -1428,13 +1430,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.h7rlwj3jPlO8fzTr"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.h7rlwj3jPlO8fzTr'
   - folder: TUGiA4J9kobOhuBG
     name: Acrobate
     type: capacity
@@ -1442,14 +1444,14 @@ items:
     _id: MGqpYrAT83tuMYq0
     system:
       description: "<p>Le PJ obtient un bonus de <strong>+5 à tous ses tests de\_DEX</strong> visant à réaliser des <strong>acrobaties</strong>, <strong>conserver\_son équilibre</strong>, <strong>faire des sauts</strong> ou <strong>de l’escalade</strong>.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong> le bonus passe à +10.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux test d'AGI.</p><p>Si le PJ obtient la capacité
         avancée, modifiez le champs Valeur du Modificateur de l'action pour
         inscrire "10".</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1463,7 +1465,7 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.MGqpYrAT83tuMYq0
           indice: 0
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1481,7 +1483,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.MGqpYrAT83tuMYq0
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Acrobatie / Équilibre / Sauts / Escalade
           resolvers: []
@@ -1495,28 +1497,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.MGqpYrAT83tuMYq0"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.MGqpYrAT83tuMYq0'
   - folder: TUGiA4J9kobOhuBG
     name: Grâce féline
     type: capacity
     img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
     system:
       description: "<p>Le PJ ajoute son Mod. de <strong>CHA en DEF et en\_initiative</strong> (en plus du Mod. habituel de DEX).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute son Mod. de\_CHA à tous les tests de discrétion et d’esquive.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent en DEF et Initiative.</p><p>Si le PJ obtient la
         capacité avancée, ajoutez simplement la Condition "est appris" sur la
         seconde action permettant d'obtenir le bonus permanent aux tests
         d'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1530,8 +1532,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.TwXRyBjZHlDyAThl
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1549,21 +1551,21 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.TwXRyBjZHlDyAThl
               subtype: combat
               target: init
-              value: "@cha"
+              value: '@cha'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.TwXRyBjZHlDyAThl
               subtype: combat
               target: def
-              value: "@cha"
+              value: '@cha'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.TwXRyBjZHlDyAThl
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1580,7 +1582,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.TwXRyBjZHlDyAThl
               subtype: skill
               target: agi
-              value: "@cha"
+              value: '@cha'
               apply: self
               additionalInfos: Discrétion / Esquive
           resolvers: []
@@ -1594,25 +1596,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: TwXRyBjZHlDyAThl
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.TwXRyBjZHlDyAThl"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.TwXRyBjZHlDyAThl'
   - folder: TUGiA4J9kobOhuBG
     name: Lanceur de couteau
     type: capacity
     img: icons/skills/ranged/dagger-thrown-jeweled-green.webp
     system:
       description: "<p>Une fois par tour, en plus de ses autres actions,\_le PJ peut lancer un couteau ou une dague sur\_une cible à distance (portée maximale: 10 m)\_en réussissant <strong>un test d’attaque à distance</strong>. </p><p>Cette\_attaque est une <strong>action gratuite</strong>. Elle occasionne\_<strong>[1d4 + Mod. de DEX] de DM</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de réaliser l'attaque à distance.</p>
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: false
       rank: 3
@@ -1627,7 +1629,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.h91AL7QUaha9cuNb
           indice: 0
           label: portée 10m
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -1645,9 +1647,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 +@agi
               target:
@@ -1658,7 +1660,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1672,28 +1674,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: h91AL7QUaha9cuNb
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.h91AL7QUaha9cuNb"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.h91AL7QUaha9cuNb'
   - folder: TUGiA4J9kobOhuBG
     name: Esquive acrobatique
     type: capacity
     img: icons/magic/air/air-wave-gust-smoke-yellow.webp
     system:
       description: "<p>Une fois par tour, le PJ peut réaliser une esquive\_en réussissant <strong>un test d’attaque à distance</strong>\_contre une <strong>difficulté égale au score obtenu\_par son adversaire</strong> lors de son attaque.</p><p> En cas\_de réussite, <strong>le PJ ne subit aucun DM</strong>. Si cette\_attaque était un critique, il subit tout de même\_des DM normaux (et annule donc l’effet critique «dégâts doublés»).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque à distance sans difficulté.
         Ajoutez cette dernière sur la fenêtre de l'attaque ou interpréter
         seulement le résultat obtenu.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1707,8 +1709,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.K3xxLrg8S6L89eBK
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -1726,11 +1728,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: ""
+                formula: '@atd'
+                crit: ''
+                difficulty: ''
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -1739,7 +1741,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1753,25 +1755,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: K3xxLrg8S6L89eBK
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.K3xxLrg8S6L89eBK"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.K3xxLrg8S6L89eBK'
   - folder: TUGiA4J9kobOhuBG
     name: Dextérité héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
     system:
       description: "<p>Le PJ augmente son score de\_<strong>DEX de +2</strong> et peut désormais\_<strong>lancer deux d20</strong> à chaque fois\_qu’un test de DEX lui est demandé et conserver le meilleur\_résultat.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent et Dé Bonus en AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1785,8 +1787,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.KU8bRSqvO2ezFG4q
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1804,16 +1806,16 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.KU8bRSqvO2ezFG4q
               subtype: ability
               target: agi
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.KU8bRSqvO2ezFG4q
               subtype: bonusDice
               target: agi
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1825,23 +1827,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: KU8bRSqvO2ezFG4q
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.KU8bRSqvO2ezFG4q"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.KU8bRSqvO2ezFG4q'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de l'Escrime
     type: path
     img: icons/weapons/swords/swords-short.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.gUQRlhYxEkwgFX7C.Item.wJ0nlNmf47LgTKKS
@@ -1859,25 +1861,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: Qjrn04vm6M5WRhiO
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.Qjrn04vm6M5WRhiO"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.Qjrn04vm6M5WRhiO'
   - folder: yItquDwQdpiBQJL2
     name: Attaque en finesse
     type: capacity
     img: icons/skills/melee/strike-blade-knife-blue-red.webp
     system:
       description: "<p>Le PJ peut <strong>utiliser son score d’attaque à distance</strong>\_pour porter une attaque au contact <strong>lorsqu’il\_utilise une arme de duel ou une dague</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ peut appliquer le bonus\_de DEF d’une main gauche (cf. «Équipement»\_page 156) contre les attaques à distance.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: "<p>L'action activable permet d'ajouter AGI et soustraire FOR pour les attaque de contact.\_</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1892,7 +1894,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.wJ0nlNmf47LgTKKS
           indice: 0
           label: Utilisation d'une arme légère
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1910,9 +1912,9 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.wJ0nlNmf47LgTKKS
               subtype: combat
               target: melee
-              value: "@agi -@for"
+              value: '@agi -@for'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1924,29 +1926,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: wJ0nlNmf47LgTKKS
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.wJ0nlNmf47LgTKKS"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.wJ0nlNmf47LgTKKS'
   - folder: yItquDwQdpiBQJL2
     name: Intelligence du combat
     type: capacity
     img: icons/skills/melee/maneuver-daggers-paired-orange.webp
     system:
       description: "<p>Le PJ ajoute son <strong>Mod. d’INT en initiative et en\_DEF</strong> en plus de son Mod. de DEX.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> s’il le souhaite, le PJ peut\_remplacer le Mod. de FOR aux DM par son\_Mod. d’INT. </p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent d'INT en Initiative et en DEF.</p><p>Si le PJ obtient
         la capacité avancée, ajoutez simplement la Condition "est appris" sur la
         deuxième action qui, lorsqu'elle est activée, ajoute INT et soustrait
         FOR aux DM de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1960,8 +1962,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.UR5Jc6A0igoUzPTE
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1979,21 +1981,21 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.UR5Jc6A0igoUzPTE
               subtype: combat
               target: init
-              value: "@int"
+              value: '@int'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.UR5Jc6A0igoUzPTE
               subtype: combat
               target: def
-              value: "@int"
+              value: '@int'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.UR5Jc6A0igoUzPTE
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2009,9 +2011,9 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.UR5Jc6A0igoUzPTE
               subtype: combat
               target: damMelee
-              value: "@int -@for"
+              value: '@int -@for'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: false
@@ -2024,27 +2026,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: UR5Jc6A0igoUzPTE
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.UR5Jc6A0igoUzPTE"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.UR5Jc6A0igoUzPTE'
   - folder: yItquDwQdpiBQJL2
     name: Feinte
     type: capacity
     img: icons/skills/melee/strikes-sword-scimitar.webp
     system:
       description: "<p>Le PJ effectue une attaque fictive pour déséquilibrer son adversaire et réaliser ensuite une attaque\_mortelle. </p><p>Faites <strong>un test d’attaque normal lors\_de ce tour</strong> mais <strong>n’infligez aucun DM</strong>. </p><p>Au tour\_suivant, <strong><span style=\"text-decoration:underline\">si vous attaquez le même adversaire</span></strong>,\_vous profiterez d’un bonus de <strong>+5 en attaque</strong> et,\_si votre feinte était réussie, de <strong>+2d6 aux DM</strong>. </p><p><strong><span style=\"text-decoration:underline\">Au\_rang 5</span></strong> atteint dans cette voie, le bonus d’attaque\_de la feinte passe à <strong>+10</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet, après une feinte réussie, obtenir le bonus
         à l'attaque et aux DM de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 3
@@ -2059,7 +2061,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.TOQoOcYAk2DReHzo
           indice: 0
           label: Si feinte réussie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2077,16 +2079,16 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.TOQoOcYAk2DReHzo
               subtype: combat
               target: melee
-              value: "@rang[0,0,5,5,10]"
+              value: '@rang[0,0,5,5,10]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gUQRlhYxEkwgFX7C.Item.TOQoOcYAk2DReHzo
               subtype: combat
               target: damMelee
               value: 2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2098,25 +2100,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: TOQoOcYAk2DReHzo
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.TOQoOcYAk2DReHzo"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.TOQoOcYAk2DReHzo'
   - folder: yItquDwQdpiBQJL2
     name: Ambidextrie
     type: capacity
     img: icons/skills/melee/swords-parry-block-yellow.webp
     system:
       description: "<p>Le PJ peut à présent utiliser une arme dans\_chaque main sans pénalité s'il utilise des armes\_de duel ou des dagues. </p><p>Avec sa main faible, il\_peut effectuer <strong>une attaque au contact gratuite\_supplémentaire</strong> à chaque tour. Cette seconde\_attaque n’empêche pas l’utilisation d’une\_capacité limitée, mais elle ne peut pas en être\_l’origine.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -2138,25 +2140,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: DOMYqyh7i15pUFCt
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.DOMYqyh7i15pUFCt"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.DOMYqyh7i15pUFCt'
   - folder: yItquDwQdpiBQJL2
     name: Botte mortelle
     type: capacity
     img: icons/skills/melee/blade-tip-chipped-blood-red.webp
     system:
       description: "<p>Lors d’une attaque au contact, s’il obtient un\_score <strong><span style=\"text-decoration:underline\">total d’attaque supérieur ou égal à la DEF\_de son adversaire +10 points</span></strong>, le PJ obtient un\_bonus de <strong>+2d6 aux DM</strong> de son attaque.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de réaliser le jet de DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2171,7 +2173,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.4WQvG6fRUx4n00FO
           indice: 0
           label: Si attaque > DEF+10
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -2196,7 +2198,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -2213,23 +2215,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4WQvG6fRUx4n00FO
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.4WQvG6fRUx4n00FO"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.4WQvG6fRUx4n00FO'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de la Fourberie
     type: path
     img: icons/environment/traps/trap-jaw-green.webp
     system:
       description: <h5></h5>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.gUQRlhYxEkwgFX7C.Item.cA8Ig08bQSW1hjme
@@ -2247,25 +2249,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: X7YfDYniKCHL0TZA
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.X7YfDYniKCHL0TZA"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.X7YfDYniKCHL0TZA'
   - folder: PeyEhL8AkHtHxqN3
     name: Doigts agiles
     type: capacity
     img: icons/tools/hand/lockpicks-steel-grey.webp
     system:
       description: "<p>Le PJ reçoit un bonus de <strong>+5 pour tous ses\_tests de DEX liés à la précision\_</strong>: crocheter une\_serrure, désamorcer un piège, faire les poches\_de quelqu’un…</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le bonus passe à +10.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: "<p>L'action donne le bonus permanent en AGI.\_</p><p>Si le PJ obtient la capacité avancée, modifiez le champs valeur du Modificateur de l'action par \"10\".</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 1
@@ -2279,8 +2281,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.cA8Ig08bQSW1hjme
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2298,7 +2300,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.cA8Ig08bQSW1hjme
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Précision (crochetage, désamorçage, escamotage…)
           resolvers: []
@@ -2312,25 +2314,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: cA8Ig08bQSW1hjme
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.cA8Ig08bQSW1hjme"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.cA8Ig08bQSW1hjme'
   - folder: PeyEhL8AkHtHxqN3
     name: Détecter les pièges
     type: capacity
     img: icons/environment/traps/trap-jaw-steel.webp
     system:
       description: "<p>En réussissant <strong>un test d’INT difficulté 10</strong>, le PJ\_peut détecter (et ensuite contourner sans danger)\_<strong>les pièges</strong> (avant qu’ils ne se déclenchent bien\_entendu). </p><p>Les pièges magiques exigent <strong>un test\_d’INT de difficulté 15.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> la détection des pièges non\_magiques est réussie de façon automatique.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -2344,8 +2346,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.8hcPnM301iWiU6Ip
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2363,7 +2365,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.8hcPnM301iWiU6Ip
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Précision (crochetage, désamorçage, escamotage…)
           resolvers: []
@@ -2377,25 +2379,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 8hcPnM301iWiU6Ip
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.8hcPnM301iWiU6Ip"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.8hcPnM301iWiU6Ip'
   - folder: PeyEhL8AkHtHxqN3
     name: Croc-en-jambe
     type: capacity
     img: icons/magic/control/silhouette-fall-slip-prone.webp
     system:
       description: "<p><strong><span style=\"text-decoration:underline\">Lorsqu’il obtient un score de 17 à 20</span></strong> sur son\_d20 en attaque au contact, le PJ <strong>fait chuter\_son adversaire</strong> en plus de lui infliger des DM\_normaux. </p><p>Un score de 19 ou 20 est nécessaire\_pour une créature quadrupède.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -2409,8 +2411,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.dbEsMiSUiL94jtQL
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2428,7 +2430,7 @@ items:
               source: Actor.gUQRlhYxEkwgFX7C.Item.dbEsMiSUiL94jtQL
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Précision (crochetage, désamorçage, escamotage…)
           resolvers: []
@@ -2442,30 +2444,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: dbEsMiSUiL94jtQL
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.dbEsMiSUiL94jtQL"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.dbEsMiSUiL94jtQL'
   - folder: PeyEhL8AkHtHxqN3
     name: Attaque paralysante
     type: capacity
     img: icons/skills/wounds/injury-pain-body-orange.webp
     system:
       description: "<p><strong>Une fois par combat</strong>, le PJ peut, <strong>en réussissant\_une attaque de contact</strong>, paralyser un adversaire\_de douleur. </p><p>Ce dernier n’encaisse <strong>pas de DM</strong>,\_mais <strong>ne peut plus attaquer ni se déplacer\_pendant 1d4 tours.</strong></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser une attaque de contact sans DM mais avec
         un effet supplémentaire infligeant le statut "Paralysé" à la cible
         pendant 1d4 round. Fonctionne uniquement en Mode Combat.</p><p>Il faut
         faire une Récupération Rapide pour pouvoir réutiliser cette
         capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 4
@@ -2481,8 +2483,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.gZl9OVJvBctL0Z1r
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -2500,11 +2502,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -2513,8 +2515,8 @@ items:
                 active: true
                 applyOn: success
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - paralysis
                 duration: 1d4
@@ -2531,25 +2533,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: gZl9OVJvBctL0Z1r
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.gZl9OVJvBctL0Z1r"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.gZl9OVJvBctL0Z1r'
   - folder: PeyEhL8AkHtHxqN3
     name: Attaque en traître
     type: capacity
     img: icons/skills/wounds/injury-pain-impaled-hand-blood.webp
     system:
       description: "<p>Une fois par tour, <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">lorsqu’un allié réussit à blesser\_une créature au contact du PJ</span></strong></span>, celui-ci peut lui\_porter <strong>une attaque normale gratuite</strong> en profitant\_de l’ouverture.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2573,28 +2575,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: psJGWSWvpb6CTgvE
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.psJGWSWvpb6CTgvE"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.psJGWSWvpb6CTgvE'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
     type: equipment
     img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
     _id: Dx7kE37bQG2M30AC
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-simple
       tags: []
       subtype: armor
       martialCategory: leather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -2629,13 +2631,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.Dx7kE37bQG2M30AC"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.Dx7kE37bQG2M30AC'
   - folder: OBPli02oRaBQq6Ee
     name: Rapière
     type: equipment
@@ -2646,7 +2648,7 @@ items:
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups d'estoc.</p><p>
         </p><p><strong>Arme légère, seuil de critique 19-20</strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
       tags:
@@ -2680,8 +2682,8 @@ items:
       actions:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.Uqlm3u2q3ZMl4gLd
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -2699,9 +2701,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for
               target:
@@ -2712,12 +2714,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -2734,13 +2736,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.Uqlm3u2q3ZMl4gLd"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.Uqlm3u2q3ZMl4gLd'
   - folder: OBPli02oRaBQq6Ee
     name: Dague
     type: equipment
@@ -2756,7 +2758,7 @@ items:
         pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
         ILfuVd" lang="fr"><span class="hgKElc">Arrme
         légère</span></span></strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: dague
       tags:
@@ -2791,7 +2793,7 @@ items:
         - source: Actor.gUQRlhYxEkwgFX7C.Item.uovkIXNmnQszbDjP
           indice: 0
           label: Contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -2809,9 +2811,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 + @for
               target:
@@ -2822,14 +2824,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.gUQRlhYxEkwgFX7C.Item.uovkIXNmnQszbDjP
           indice: 1
           label: Distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -2847,9 +2849,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -2860,12 +2862,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -2882,26 +2884,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gUQRlhYxEkwgFX7C.uovkIXNmnQszbDjP"
+    _key: '!actors.items!gUQRlhYxEkwgFX7C.uovkIXNmnQszbDjP'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!gUQRlhYxEkwgFX7C"
+_key: '!actors!gUQRlhYxEkwgFX7C'

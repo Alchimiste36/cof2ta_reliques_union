@@ -1,11 +1,10 @@
 folder: fkaQ5zi2WGOp22kb
 name: Arc composite de poussières +2
 type: equipment
-img: >-
-  icons/weapons/bows/shortbow-recurve.webp
+img: icons/weapons/bows/shortbow-recurve.webp
 system:
   description: "<p>Score minimum en FOR requis : 12.</p><hr /><p><strong>Arme magique centaure - Haputanga</strong></p><p>L'arc composite de Haputanga est une merveille qu'elle maitrise avec brio.</p><p>Le manche de l'arc est sculpté à la main de l'archère et certains petits gestes des doigts permettent de rendre cette arc effroyable pour les ennemis.</p><ul><li><p>Bonus de +2 en attaque et DM.</p></li><li><p>\_<span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Flèches Poussières (L) :\_</span></strong></span>si l'attaque touche la cible, elle la désoriente en créant un nuage de poussière autour d'elle. La cible gagne le statut Etourdi pendant 1 tour. Si l'attaque est un critique, la cible est aveuglée 1d4 tour</p></li></ul>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.158
   slug: arc-court
   tags: []
@@ -49,8 +48,8 @@ system:
   actions:
     - source: Actor.RD6SRAYZuC4Wypgi.Item.azoAoL0cjBigV9id
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -68,9 +67,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atd +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for +2
           target:
@@ -82,13 +81,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Actor.RD6SRAYZuC4Wypgi.Item.azoAoL0cjBigV9id
       indice: 1
       label: Flèche Poussière
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: l
@@ -106,9 +105,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atd +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for +2
           target:
@@ -120,11 +119,11 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - stun
-            duration: "1"
+            duration: '1'
             unit: round
       modifiers: []
 effects: []
@@ -133,7 +132,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
   systemVersion: 1.6.1
   createdTime: 1771452595201
@@ -144,4 +143,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: 0clOpLRTBqXKC51J
 sort: 5900000
-_key: "!items!0clOpLRTBqXKC51J"
+_key: '!items!0clOpLRTBqXKC51J'

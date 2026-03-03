@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Loup, Mâle alpha
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_male_alpha.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_male_alpha.webp
 system:
   abilities:
     agi:
@@ -141,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Seul, le loup n'a pas usage de la capacité\_Interchangeables et son NC passe à ½. Ce\_profil correspond à un loup d'une cinquantaine de kilos.\_</p><ul><li><p><strong><span style=\"text-decoration: underline;\">Chien :</span></strong> vous pouvez aussi utiliser le profil du\_loup pour les gros chiens en retirant de 2 à 4 PV</p></li></ul>"
     languages: []
     properties: >-
@@ -180,7 +181,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -253,11 +254,11 @@ items:
     _id: qQApA5dUsHPYWhhc
     system:
       description: "<p>L'odorat supérieur des loups leur\_permet d'obtenir la SAG en Carac. supérieure.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent donnant un dé bonus en PER.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -271,8 +272,8 @@ items:
       actions:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.qQApA5dUsHPYWhhc
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -290,9 +291,9 @@ items:
               source: Actor.nCf1lw9iVZtaG3DY.Item.qQApA5dUsHPYWhhc
               subtype: bonusDice
               target: per
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -304,23 +305,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.qQApA5dUsHPYWhhc"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.qQApA5dUsHPYWhhc'
   - folder: ds9TVmAEZY0LnDG1
     name: Morsures
     type: attack
     img: icons/svg/sword.svg
     _id: Kl1gyg9Wp5hJ5pI9
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -331,8 +332,8 @@ items:
       actions:
         - source: Item.Dz4Yb3syZWVlYJ1z
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -350,9 +351,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "4"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '4'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+3
               target:
@@ -363,7 +364,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -374,13 +375,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.Kl1gyg9Wp5hJ5pI9"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.Kl1gyg9Wp5hJ5pI9'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
@@ -388,15 +389,15 @@ items:
     _id: 5W0NFjzJlRuvNdUC
     system:
       description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -410,8 +411,8 @@ items:
       actions:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.5W0NFjzJlRuvNdUC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -429,14 +430,14 @@ items:
               source: Actor.nCf1lw9iVZtaG3DY.Item.5W0NFjzJlRuvNdUC
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.nCf1lw9iVZtaG3DY.Item.5W0NFjzJlRuvNdUC
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -461,11 +462,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -476,7 +477,7 @@ items:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.5W0NFjzJlRuvNdUC
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -496,7 +497,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -508,13 +509,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.5W0NFjzJlRuvNdUC"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.5W0NFjzJlRuvNdUC'
   - folder: uvHtoSiBBvs1nfqu
     name: Attaque en traitre
     type: capacity
@@ -522,13 +523,13 @@ items:
     _id: mIUFgF2GURNsygHE
     system:
       description: "<p>Si le mâle alpha\_<strong>attaque en même temps qu'un allié</strong> (il peut\_volontairement retarder son initiative), <strong>de\_dos</strong> ou <strong>par surprise</strong>, il porte une attaque\_sournoise avec un bonus de <strong>+5 en attaque et\_+2d6 aux DM</strong>.</p><h5>NC +1</h5>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir les bonus à l'attaque et aux
         DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -542,8 +543,8 @@ items:
       actions:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.mIUFgF2GURNsygHE
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -561,16 +562,16 @@ items:
               source: Actor.nCf1lw9iVZtaG3DY.Item.mIUFgF2GURNsygHE
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.nCf1lw9iVZtaG3DY.Item.mIUFgF2GURNsygHE
               subtype: combat
               target: damMelee
               value: +2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -582,13 +583,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.mIUFgF2GURNsygHE"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.mIUFgF2GURNsygHE'
   - folder: uvHtoSiBBvs1nfqu
     name: Interchangeable
     type: capacity
@@ -596,13 +597,13 @@ items:
     _id: IVOxbRfnTCH5VHcb
     system:
       description: "<p>Tant que le loup et ses\_alliées sont plus nombreux que la cible, ils\_se relaient pour esquiver ses attaques et\_obtiennent un bonus de <strong>+5 en DEF</strong>.</p><p>Si plusieurs\_loups semblables sont au contact du PJ, le MJ\_a toute latitude pour infliger les DM d'une\_attaque sur le loup de son choix, le personnage\_ne sachant jamais lequel il blesse.</p><h5>NC +1</h5>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir le bonus de DEF lorsque les
         conditions sont remplies.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -616,8 +617,8 @@ items:
       actions:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.IVOxbRfnTCH5VHcb
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -635,9 +636,9 @@ items:
               source: Actor.nCf1lw9iVZtaG3DY.Item.IVOxbRfnTCH5VHcb
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -649,13 +650,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.IVOxbRfnTCH5VHcb"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.IVOxbRfnTCH5VHcb'
   - folder: uvHtoSiBBvs1nfqu
     name: L'hallali
     type: capacity
@@ -663,14 +664,14 @@ items:
     _id: EeteAA34s8rO2coi
     system:
       description: "<p>Les mâles alpha profitent d'une\_erreur de leur adversaire pour lui porter des\_attaques fatales.</p><p><strong>À chaque fois que la victime\_de la meute rate une attaque</strong> ou obtient sur\_un test d'attaque un résultat au d20 allant\_de 1 à 5 (inclus), elle déclenche la curée !\_</p><p>Chaque mâle alpha doté de cette capacité\_bénéficie <strong>immédiatement et gratuitement\_d'une attaque en traître</strong> contre la victime (+5\_au jet d'attaque/+2d6 aux DM).</p><h5>NC +1</h5>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir les bonus en attaque et aux DM
         comme pour l'attaque en traitre. ATTENTION : ne doit pas se cumuler avec
         l'activation de la capacité Attaque en traitre.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -684,8 +685,8 @@ items:
       actions:
         - source: Actor.nCf1lw9iVZtaG3DY.Item.EeteAA34s8rO2coi
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -703,16 +704,16 @@ items:
               source: Actor.nCf1lw9iVZtaG3DY.Item.EeteAA34s8rO2coi
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.nCf1lw9iVZtaG3DY.Item.EeteAA34s8rO2coi
               subtype: combat
               target: damMelee
               value: +2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -724,22 +725,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!nCf1lw9iVZtaG3DY.EeteAA34s8rO2coi"
+    _key: '!actors.items!nCf1lw9iVZtaG3DY.EeteAA34s8rO2coi'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -747,4 +748,4 @@ _id: nCf1lw9iVZtaG3DY
 ownership:
   default: 0
 sort: 0
-_key: "!actors!nCf1lw9iVZtaG3DY"
+_key: '!actors!nCf1lw9iVZtaG3DY'

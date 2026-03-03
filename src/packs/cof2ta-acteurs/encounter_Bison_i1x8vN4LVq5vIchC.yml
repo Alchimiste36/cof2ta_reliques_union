@@ -141,18 +141,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Ce profil correspond à tous les grands herbivores\_à cornes (taureau, etc.). Les femelles fuient\_généralement à moins de défendre un petit.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -167,7 +167,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/bison_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/bison_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -176,7 +177,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,9 +248,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: attaque-contact
       subtype: melee
       learned: false
@@ -262,8 +263,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -281,9 +282,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+4
               target:
@@ -294,7 +295,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -305,26 +306,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ohQzKwdojKkSx6rp
     sort: 200000
     ownership:
       default: 0
-    _key: "!actors.items!i1x8vN4LVq5vIchC.ohQzKwdojKkSx6rp"
+    _key: '!actors.items!i1x8vN4LVq5vIchC.ohQzKwdojKkSx6rp'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -338,8 +339,8 @@ items:
       actions:
         - source: Actor.i1x8vN4LVq5vIchC.Item.IrzHKOGgmEBC2gmj
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -357,9 +358,9 @@ items:
               source: Actor.i1x8vN4LVq5vIchC.Item.IrzHKOGgmEBC2gmj
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -371,23 +372,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: IrzHKOGgmEBC2gmj
     ownership:
       default: 0
-    _key: "!actors.items!i1x8vN4LVq5vIchC.IrzHKOGgmEBC2gmj"
+    _key: '!actors.items!i1x8vN4LVq5vIchC.IrzHKOGgmEBC2gmj'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -395,4 +396,4 @@ _id: i1x8vN4LVq5vIchC
 ownership:
   default: 0
 sort: 0
-_key: "!actors!i1x8vN4LVq5vIchC"
+_key: '!actors!i1x8vN4LVq5vIchC'

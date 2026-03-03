@@ -5,15 +5,15 @@ img: icons/environment/wilderness/tree-ash.webp
 _id: S1U4dFY4gF0EziPv
 system:
   description: "<p> Le centaure a un bonus de <strong>+5 aux\_tests de perception, de survie et de discrétion en\_milieu naturel.</strong> </p><p>De plus, il peut fournir des plantes\_capables de <strong>soigner 3d6 PV</strong> (ne fonctionne\_qu'une fois par personnage et par jour)</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action donne le bonus permanent aux tests de
     compétence.</p><p>La deuxième action permet de réaliser un soin sur une
     cible. Le nombre d'utilisation par jour est à régler en fonction du nombre
     d'alliés.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -29,8 +29,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S1U4dFY4gF0EziPv
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -48,28 +48,28 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S1U4dFY4gF0EziPv
           subtype: skill
           target: agi
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Discretion en milieu naturel
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S1U4dFY4gF0EziPv
           subtype: skill
           target: per
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Survie en milieu naturel
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S1U4dFY4gF0EziPv
           subtype: skill
           target: con
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Survie en milieu naturel
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.S1U4dFY4gF0EziPv
       indice: 1
       label: Soin de 3d6
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -94,7 +94,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -110,13 +110,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!S1U4dFY4gF0EziPv"
+_key: '!items!S1U4dFY4gF0EziPv'

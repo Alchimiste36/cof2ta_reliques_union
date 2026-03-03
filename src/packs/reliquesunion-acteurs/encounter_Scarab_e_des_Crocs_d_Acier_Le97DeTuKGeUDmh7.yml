@@ -142,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>On parle d'insecte géant dès qu'une créature\_est de taille petite : en dessous de cette taille,\_référez-vous aux «Nuées». </p><p>Les caractéristiques\_des insectes géants dépendent principalement\_de leur taille. Un profil générique est donné\_pour chaque taille ci-dessous. </p>"
     languages: []
     properties: "<p>Dans l'onglet Capacités, supprimez les capacités qui ne sont pas conservées pour l'insecte génat que vous créez. N'oubliez pas d'adapter le NC de la créature en fonction des capacités conservées.</p><ul><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Rapide :</span></strong></span> un insecte géant est capable\_de se déplacer de 30 mètres par action de\_mouvement.</p></li><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Résistant :</span></strong></span> les insectes sont capables de\_survivre aux pires blessures: le MJ lance deux\_d20 pour leurs tests de CON et garde le meilleur\_résultat. Lorsque la créature atteint 0 PV, elle\_peut encore agir un tour complet.</p></li><li><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Vermine :</span></strong></span> lorsque vous créez un insecte géant,\_il obtient des bonus par rapport à un archétype\_normal. Si vous utilisez un profil d'insecte décrit\_ci-dessous, ignorez cette capacité car elle n'est\_destinée qu'aux MJ souhaitant concevoir ce\_type de créature. Dans ce cas, augmentez les\_PV de +10 et le Mod. de FOR et de CON de\_+3 par rapport à une créature de cette taille</p></li></ul>"
@@ -178,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -256,10 +256,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -268,8 +268,8 @@ items:
       actions:
         - source: Actor.MjLdrvcK9T8h4X0f.Item.pcPiJeJnd5mWXJzn
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -287,9 +287,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8
               target:
@@ -301,7 +301,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Coup de pattes
@@ -315,25 +315,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.pcPiJeJnd5mWXJzn"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.pcPiJeJnd5mWXJzn'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
-    img: >-
-      icons/magic/perception/eye-ringed-glow-angry-teal.webp
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -347,8 +346,8 @@ items:
       actions:
         - source: Actor.Le97DeTuKGeUDmh7.Item.GAJ0AnIEsSDQtulw
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -366,9 +365,9 @@ items:
               source: Actor.Le97DeTuKGeUDmh7.Item.GAJ0AnIEsSDQtulw
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -380,30 +379,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: GAJ0AnIEsSDQtulw
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.GAJ0AnIEsSDQtulw"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.GAJ0AnIEsSDQtulw'
   - folder: uvHtoSiBBvs1nfqu
     name: Poison Mortel
     type: capacity
-    img: >-
-      icons/magic/acid/dissolve-arm-flesh.webp
+    img: icons/magic/acid/dissolve-arm-flesh.webp
     system:
       description: "<p>le poison <strong>inflige [Mod. de FOR d6]\_DM à la victime</strong>, <strong>la moitié si elle réussit un test\_de CON difficulté 10</strong>. Répartissez les DM au\_rythme de <strong>1d6 par tour</strong> à partir du moment\_de l'empoisonnement.</p><blockquote><p>De nombreux insectes empoisonnent leurs\_victimes ; selon l'insecte, choisissez le poison\_qui convient : par exemple, une araignée utilise\_du poison affaiblissant et un scorpion ou une\_guêpe un poison mortel.</p><p>Un insecte capable\_d'empoisonner ses victimes augmente son\_NC de +1.</p></blockquote>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de réaliser le test de sauvegarde et de
         subir les DM si le test est raté.</p><p>La deuxième action permet
         d'appliquer les DM sur une cible si le test de sauvagarde est
         réussi.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -418,7 +416,7 @@ items:
         - source: Actor.Le97DeTuKGeUDmh7.Item.0eToW95Uh2HSt7q3
           indice: 0
           label: Attaque initiale
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -434,7 +432,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: single
                 scope: all
@@ -446,7 +444,7 @@ items:
                 formula: 8d6
                 elementType: poison
                 statuses: []
-                duration: "@for"
+                duration: '@for'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -457,7 +455,7 @@ items:
         - source: Actor.Le97DeTuKGeUDmh7.Item.0eToW95Uh2HSt7q3
           indice: 1
           label: 1/2 DM
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -473,7 +471,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: single
                 number: 0
@@ -485,7 +483,7 @@ items:
                 formula: 1d6/2
                 elementType: poison
                 statuses: []
-                duration: "@for"
+                duration: '@for'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -503,27 +501,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 0eToW95Uh2HSt7q3
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.0eToW95Uh2HSt7q3"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.0eToW95Uh2HSt7q3'
   - folder: uvHtoSiBBvs1nfqu
     name: Cuirassé
     type: capacity
-    img: >-
-      icons/commodities/leather/scales-green.webp
+    img: icons/commodities/leather/scales-green.webp
     _id: MvO0jcspIT1heCuK
     system:
       description: "<p>les scarabées ou les scorpions\_bénéficient de cette capacité qui leur permet de\_<strong>retrancher 5 points à tous les DM subis</strong>.</p><h5>NC +1</h5>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent en RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -537,8 +534,8 @@ items:
       actions:
         - source: Actor.Le97DeTuKGeUDmh7.Item.MvO0jcspIT1heCuK
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -556,9 +553,9 @@ items:
               source: Actor.Le97DeTuKGeUDmh7.Item.MvO0jcspIT1heCuK
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -570,26 +567,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.MvO0jcspIT1heCuK"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.MvO0jcspIT1heCuK'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol rapide
     type: capacity
-    img: >-
-      icons/creatures/abilities/wings-birdlike-blue.webp
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
     _id: z0D5tx47jV1guNGi
     system:
       description: "<p>Pour les guêpes géantes ou autres\_prédateurs volants comme les libellules. </p><p>La créature a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol.</p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p><h5>NC +1</h5>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -604,7 +600,7 @@ items:
         - source: Actor.Le97DeTuKGeUDmh7.Item.z0D5tx47jV1guNGi
           indice: 0
           label: Première Attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -622,9 +618,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "21"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '21'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 3d6+12 +1d6
               target:
@@ -635,7 +631,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -649,30 +645,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.z0D5tx47jV1guNGi"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.z0D5tx47jV1guNGi'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
-    img: >-
-      icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     _id: Q6IsP6x0mOPjJ92p
     system:
       description: "<p>pour les araignées chasseuses\_(celles qui ne tissent pas de toiles).</p><p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire <strong>un test de SAG difficulté 15 + DEX ou être surprise</strong>.</p><p>S'il attaque\_avec succès une cible surprise, la créature <strong>inflige +1d6 DM supplémentaires</strong>, et toute\_créature dont la <strong>FOR est inférieure à la sienne\_est renversée</strong>.</p><p>Il obtient un bonus de <strong>+5 à tous\_les tests de discrétion</strong>.</p><h5>NC +1</h5>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -686,8 +681,8 @@ items:
       actions:
         - source: Actor.Le97DeTuKGeUDmh7.Item.Q6IsP6x0mOPjJ92p
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -705,14 +700,14 @@ items:
               source: Actor.Le97DeTuKGeUDmh7.Item.Q6IsP6x0mOPjJ92p
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.Le97DeTuKGeUDmh7.Item.Q6IsP6x0mOPjJ92p
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -737,11 +732,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -752,7 +747,7 @@ items:
         - source: Actor.Le97DeTuKGeUDmh7.Item.Q6IsP6x0mOPjJ92p
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -772,7 +767,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -784,21 +779,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Le97DeTuKGeUDmh7.Q6IsP6x0mOPjJ92p"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.Q6IsP6x0mOPjJ92p'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -807,8 +802,8 @@ items:
       actions:
         - source: Actor.Le97DeTuKGeUDmh7.Item.1UK9NVkEk8Z4vgtO
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -826,9 +821,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d8+8
               target:
@@ -840,7 +835,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Coup de corne
@@ -857,11 +852,11 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Le97DeTuKGeUDmh7.1UK9NVkEk8Z4vgtO"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.1UK9NVkEk8Z4vgtO'
   - folder: vFuXmcEF5PVXiohE
     name: Corne de scarabée
     type: equipment
@@ -878,13 +873,13 @@ items:
         / Encombrement 0 / Résistant à l’acide / si installé sur l’avant bras
         permet d’utiliser ses deux mains sans malus / Peut recevoir des
         runes.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: smallShield
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -919,11 +914,11 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.GBRtFsoMJEau35qc
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Le97DeTuKGeUDmh7.HVNXwudJCSxKkEet"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.HVNXwudJCSxKkEet'
   - folder: vFuXmcEF5PVXiohE
     name: Poison mortel de Scarabée géant
     type: equipment
@@ -937,13 +932,13 @@ items:
         </p><p>La cible reçoit 1d6 DM par tour à partir de
         l’empoisonnement.</p><p> Les DM sont cumulables si la cible est mise en
         contact avec une nouvelle dose.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: consumable
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 4
         destroyIfEmpty: false
@@ -969,8 +964,8 @@ items:
       actions:
         - source: Compendium.world.reliquesunion-objets.Item.eZRG6QPo6DCKfsqk
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -986,7 +981,7 @@ items:
           resolvers:
             - type: auto
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -998,7 +993,7 @@ items:
                 formula: 1d6
                 elementType: poison
                 statuses: []
-                duration: "8"
+                duration: '8'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1008,7 +1003,7 @@ items:
         - source: Compendium.world.reliquesunion-objets.Item.eZRG6QPo6DCKfsqk
           indice: 1
           label: Résister au poison
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1024,7 +1019,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: single
                 scope: all
@@ -1036,7 +1031,7 @@ items:
                 formula: 1d6/2
                 elementType: poison
                 statuses: []
-                duration: "8"
+                duration: '8'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1056,20 +1051,20 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.eZRG6QPo6DCKfsqk
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Le97DeTuKGeUDmh7.T64H81TWEHmKwZcV"
+    _key: '!actors.items!Le97DeTuKGeUDmh7.T64H81TWEHmKwZcV'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.world.cof2ta-acteurs.Actor.8ijv7QSuTRjrjJfx
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
   modifiedTime: 1772486821104
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -1078,4 +1073,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: Le97DeTuKGeUDmh7
 sort: 300000
-_key: "!actors!Le97DeTuKGeUDmh7"
+_key: '!actors!Le97DeTuKGeUDmh7'

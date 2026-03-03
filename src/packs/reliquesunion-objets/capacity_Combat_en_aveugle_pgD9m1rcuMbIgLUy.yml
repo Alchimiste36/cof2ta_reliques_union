@@ -1,18 +1,17 @@
 folder: 0mzQVFKofG1vbePQ
 name: Combat en aveugle
 type: capacity
-img: >-
-  icons/magic/perception/silhouette-stealth-shadow.webp
+img: icons/magic/perception/silhouette-stealth-shadow.webp
 _id: pgD9m1rcuMbIgLUy
 system:
   description: "<p>Le personnage <strong>ne subit pas de malus lorsqu’il\_combat au contact un ennemi qu’il ne voit pas</strong>. </p><p>De\_plus, il est devenu expert dans le <strong>maniement\_de la torche enflammée</strong> : il\_inflige [1d6 + AGI]\_DM\_avec cette arme et lorsqu’il fait noir, il aveugle\_ses ennemis, leur infligeant une pénalité de -1\_en attaque au contact (les animaux doublent\_cette pénalité).</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p174
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser l'attaque de Torche enflammée. Le malus aux
     ennemi est à appliquer manuellement.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 4
@@ -27,7 +26,7 @@ system:
     - source: Item.pgD9m1rcuMbIgLUy
       indice: 0
       label: Torche enflammée
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -45,9 +44,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 +@agi
           target:
@@ -59,7 +58,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -71,9 +70,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -81,4 +80,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!pgD9m1rcuMbIgLUy"
+_key: '!items!pgD9m1rcuMbIgLUy'

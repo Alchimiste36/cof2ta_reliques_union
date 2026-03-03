@@ -5,13 +5,13 @@ img: icons/creatures/invertebrates/spider-skull-green.webp
 _id: uZMs9ftfaAiiSLVB
 system:
   description: "<p>Les araignées empoisonnent la victime. </p><p>À\_chaque tour où elle est blessée par la nuée, la\_victime doit réussir un <strong>test de CON difficulté\_10 ou sombrer dans l'inconscience</strong> tandis que\_la nuée continue à la dévorer…</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
     statut Inconcient si le test est raté.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.uZMs9ftfaAiiSLVB
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "10"
+          saveDifficulty: '10'
           target:
             type: single
             scope: all
@@ -51,11 +51,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - unconscious
-            duration: "0"
+            duration: '0'
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -72,13 +72,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!uZMs9ftfaAiiSLVB"
+_key: '!items!uZMs9ftfaAiiSLVB'

@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Nuée de guêpes géantes
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/nuee_guepes.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/nuee_guepes.webp
 system:
   abilities:
     agi:
@@ -141,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Les rats ne sont généralement ni agressifs ni\_dangereux mais poussés par la faim, la peur ou\_un quelconque maléfice, ils peuvent attaquer\_en grand nombre. Vous pouvez vous servir\_de ce profil pour créer des nuées d'autres\_créatures comme, par exemple, des insectes\_géants. </p><p>Les caractéristiques données ici ne\_correspondent pas à un individu mais à un\_groupe de plusieurs dizaines de créatures\_(davantage si elles sont plus petites) recouvrant une surface de deux mètres de côté et\_équivalant à une créature de taille moyenne.</p><h4>Les nuées</h4><p>Une nuée est un regroupement de très nombreuses petites créatures qui ne représentent\_pas de réel danger prises individuellement\_mais peuvent s'avérer redoutables dans le cas\_d'une vague de plusieurs dizaines (voire de\_centaines) d'individus.</p>"
     languages: []
     properties: "<p>Les guêpes géantes combinent le pire des\_araignées et des oiseaux. En plus d'<strong>un\_ poison\_similaire à celui des araignées</strong>, elles ont la particularité de <strong>se déplacer en vol de 30 mètres\_par action de mouvement</strong> ce qui rend toute\_tentative de fuite futile…</p>"
@@ -167,7 +168,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/nuee_guepes_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/nuee_guepes_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -176,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -246,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -258,8 +260,8 @@ items:
       actions:
         - source: Actor.6ozUbaz2S4QPPR23.Item.558aaOrva2JxfCGv
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -277,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -290,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -305,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!NFCBFdMUjIwXS5yC.558aaOrva2JxfCGv"
+    _key: '!actors.items!NFCBFdMUjIwXS5yC.558aaOrva2JxfCGv'
   - folder: uvHtoSiBBvs1nfqu
     name: Cibles multiples
     type: capacity
@@ -319,11 +321,11 @@ items:
     _id: i9r4OLa9flpEif3p
     system:
       description: "<p>La nuée est constituée\_de très nombreuses cibles et <strong>les attaques\_conventionnelles lui infligent peu de DM.</strong> </p><p><strong>Les\_attaques de zone lui infligent des DM normaux</strong>\_mais tous les DM provoqués par des armes de\_contact ou à distance ne lui infligent qu'un seul\_point de DM par attaque réussie.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatiques.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -345,13 +347,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!NFCBFdMUjIwXS5yC.i9r4OLa9flpEif3p"
+    _key: '!actors.items!NFCBFdMUjIwXS5yC.i9r4OLa9flpEif3p'
   - folder: uvHtoSiBBvs1nfqu
     name: Recouvrir
     type: capacity
@@ -359,14 +361,14 @@ items:
     _id: 4D1BVvUejmArSEoz
     system:
       description: "<p>La nuée peut recouvrir sa proie\_<strong>après avoir réussi une attaque de contact</strong>. </p><p>Dès lors, la cible est distraite, déséquilibrée et\_victime d'innombrables morsures. La nuée lui\_inflige <strong>automatiquement 1d6 DM par tour</strong> et\_la victime <strong>est affaiblie</strong> tant que la nuée n'est\_pas vaincue.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'actionpermet d'infliger les DM à la cible et le statut Affaibli
         jusqu'à la fin du combat (supprimer l'effet depuis l'onglet Effets si la
         nuée est détruite).</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -381,7 +383,7 @@ items:
         - source: Actor.NFCBFdMUjIwXS5yC.Item.4D1BVvUejmArSEoz
           indice: 0
           label: Après une attaque réussie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -407,10 +409,10 @@ items:
                 applyOn: always
                 formulaType: damage
                 formula: 1d6
-                elementType: ""
+                elementType: ''
                 statuses:
                   - weakened
-                duration: "0"
+                duration: '0'
                 unit: combat
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -427,13 +429,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!NFCBFdMUjIwXS5yC.4D1BVvUejmArSEoz"
+    _key: '!actors.items!NFCBFdMUjIwXS5yC.4D1BVvUejmArSEoz'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol
     type: capacity
@@ -441,11 +443,11 @@ items:
     _id: jlXqIRqSxn7m932N
     system:
       description: "<p>Les guêpes géantes  ont la particularité de <strong>se déplacer en vol de 30 mètres\_par action de mouvement</strong> ce qui rend toute\_tentative de fuite futile…</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent au déplacement.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -459,8 +461,8 @@ items:
       actions:
         - source: Actor.NFCBFdMUjIwXS5yC.Item.jlXqIRqSxn7m932N
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -478,9 +480,9 @@ items:
               source: Actor.NFCBFdMUjIwXS5yC.Item.jlXqIRqSxn7m932N
               subtype: attribute
               target: mov
-              value: "10"
+              value: '10'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -492,13 +494,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!NFCBFdMUjIwXS5yC.jlXqIRqSxn7m932N"
+    _key: '!actors.items!NFCBFdMUjIwXS5yC.jlXqIRqSxn7m932N'
   - folder: uvHtoSiBBvs1nfqu
     name: Venin de guêpes géantes
     type: capacity
@@ -506,13 +508,13 @@ items:
     _id: HDu0rc2E1l7fcpw6
     system:
       description: "<p>Les araignées empoisonnent la victime. </p><p>À\_chaque tour où elle est blessée par la nuée, la\_victime doit réussir un <strong>test de CON difficulté\_10 ou sombrer dans l'inconscience</strong> tandis que\_la nuée continue à la dévorer…</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
         statut Inconcient si le test est raté.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -526,8 +528,8 @@ items:
       actions:
         - source: Actor.NFCBFdMUjIwXS5yC.Item.HDu0rc2E1l7fcpw6
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -543,7 +545,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: single
                 scope: all
@@ -552,11 +554,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - unconscious
-                duration: "0"
+                duration: '0'
                 unit: unlimited
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -574,22 +576,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!NFCBFdMUjIwXS5yC.HDu0rc2E1l7fcpw6"
+    _key: '!actors.items!NFCBFdMUjIwXS5yC.HDu0rc2E1l7fcpw6'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -597,4 +599,4 @@ _id: NFCBFdMUjIwXS5yC
 ownership:
   default: 0
 sort: 0
-_key: "!actors!NFCBFdMUjIwXS5yC"
+_key: '!actors!NFCBFdMUjIwXS5yC'

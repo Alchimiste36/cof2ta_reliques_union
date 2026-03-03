@@ -1,8 +1,7 @@
 folder: R5rFF6hGTI3aMtD1
 name: Coup de Pattes
 type: capacity
-img: >-
-  icons/skills/targeting/crosshair-pointed-orange.webp
+img: icons/skills/targeting/crosshair-pointed-orange.webp
 _id: USrrc7zCBsvBG9tE
 system:
   description: >-
@@ -10,13 +9,13 @@ system:
     chaque round</strong>.</p><p>Ruer/Botter : action simple / Attaque Contact
     basée sur la FORCE / 1d8 + FOR / Crit 20 / sur 15 ou + au jet d'attaque
     =&gt; Etourdissement pdt 1 round</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser une attaque et d'appliquer le statut Étourdi
     si le seuil de déclenchement est atteint pendant 1 round.</p>
-  subtype: ""
+  subtype: ''
   actionType: f
   learned: false
   rank: 3
@@ -30,8 +29,8 @@ system:
   actions:
     - source: Item.USrrc7zCBsvBG9tE
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -49,9 +48,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d8 + @for
           target:
@@ -64,11 +63,11 @@ system:
             active: true
             applyOn: attackSuccessTreshold
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - stun
-            duration: "1"
+            duration: '1'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -80,9 +79,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -90,4 +89,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!USrrc7zCBsvBG9tE"
+_key: '!items!USrrc7zCBsvBG9tE'

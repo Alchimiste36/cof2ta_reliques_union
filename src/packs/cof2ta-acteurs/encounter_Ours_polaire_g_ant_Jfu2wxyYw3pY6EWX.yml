@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Ours polaire géant
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ours_polaire_geant.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/ours_polaire_geant.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: huge
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Capable d'atteindre plus de 15 mètres de\_long et 10 mètres de haut, cet ours énorme\_ne se retrouve qu'au-delà des frontières de la\_Borduria, sur la banquise.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -249,10 +250,10 @@ items:
     img: icons/svg/sword.svg
     _id: uJzljqS9ej2QmLj6
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "17"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '17'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 3d6+13
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,24 +307,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Jfu2wxyYw3pY6EWX.uJzljqS9ej2QmLj6"
+    _key: '!actors.items!Jfu2wxyYw3pY6EWX.uJzljqS9ej2QmLj6'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -337,8 +338,8 @@ items:
       actions:
         - source: Actor.Jfu2wxyYw3pY6EWX.Item.4Wrxh5N1IKRVCYZx
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -356,9 +357,9 @@ items:
               source: Actor.Jfu2wxyYw3pY6EWX.Item.4Wrxh5N1IKRVCYZx
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -370,14 +371,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4Wrxh5N1IKRVCYZx
     ownership:
       default: 0
-    _key: "!actors.items!Jfu2wxyYw3pY6EWX.4Wrxh5N1IKRVCYZx"
+    _key: '!actors.items!Jfu2wxyYw3pY6EWX.4Wrxh5N1IKRVCYZx'
   - folder: uvHtoSiBBvs1nfqu
     name: Fauchage
     type: capacity
@@ -385,13 +386,13 @@ items:
     _id: J7d4Xz4gt8v2tbNJ
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 22 ou être renversée</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
         soit la FOR soit l'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -405,8 +406,8 @@ items:
       actions:
         - source: Actor.Jfu2wxyYw3pY6EWX.Item.J7d4Xz4gt8v2tbNJ
           indice: 0
-          label: "sI 15+ : FOR"
-          chatFlavor: ""
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -422,7 +423,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "22"
+              saveDifficulty: '22'
               target:
                 type: single
                 scope: all
@@ -431,12 +432,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -445,8 +446,8 @@ items:
           modifiers: []
         - source: Actor.Jfu2wxyYw3pY6EWX.Item.J7d4Xz4gt8v2tbNJ
           indice: 1
-          label: "sI 15+ : AGI"
-          chatFlavor: ""
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -462,7 +463,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "22"
+              saveDifficulty: '22'
               target:
                 type: single
                 scope: all
@@ -471,11 +472,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
-                duration: "0"
+                duration: '0'
                 unit: unlimited
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -493,22 +494,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Jfu2wxyYw3pY6EWX.J7d4Xz4gt8v2tbNJ"
+    _key: '!actors.items!Jfu2wxyYw3pY6EWX.J7d4Xz4gt8v2tbNJ'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -516,4 +517,4 @@ _id: Jfu2wxyYw3pY6EWX
 ownership:
   default: 0
 sort: 0
-_key: "!actors!Jfu2wxyYw3pY6EWX"
+_key: '!actors!Jfu2wxyYw3pY6EWX'

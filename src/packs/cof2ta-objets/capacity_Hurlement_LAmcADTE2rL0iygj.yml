@@ -5,13 +5,13 @@ img: icons/magic/death/undead-ghost-scream-teal.webp
 _id: LAmcADTE2rL0iygj
 system:
   description: "<p>le fantôme pousse un terrible\_hurlement, toutes les créatures présentent\_dans <strong>un rayon de 10 mètres</strong> doivent réussir\_un <strong>test de SAG difficulté 12 ou fuir pendant\_1d6 tours</strong>. </p><p>Une créature qui a réussi son test\_de SAG est immunisée au hurlement pour les\_prochaines 24 heures.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
     statut "réduit au silence" pendant la durée de l'effet.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 0
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LAmcADTE2rL0iygj
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: per
-          saveDifficulty: "12"
+          saveDifficulty: '12'
           target:
             type: single
             scope: all
@@ -51,8 +51,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - silence
             duration: 1d6
@@ -72,13 +72,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!LAmcADTE2rL0iygj"
+_key: '!items!LAmcADTE2rL0iygj'

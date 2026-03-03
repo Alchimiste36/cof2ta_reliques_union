@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: huge
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 3
   height: 3
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/myst_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/myst_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.VieD2Y6pArEMq7OG.Item.0tnwQTt1iGHXjsx3
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "19"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '19'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,24 +307,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!VieD2Y6pArEMq7OG.0tnwQTt1iGHXjsx3"
+    _key: '!actors.items!VieD2Y6pArEMq7OG.0tnwQTt1iGHXjsx3'
   - folder: uvHtoSiBBvs1nfqu
     name: Agripper
     type: capacity
     img: icons/creatures/claws/claw-talons-glowing-orange.webp
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> en attaque, la créature agrippe sa proie\_et ne la lâche plus.</p><p>Il obtient un bonus de <strong>+5\_en attaque et +1d6 aux DM contre la cible qu'il\_agrippe</strong> et celle-ci est <strong>immobilisée</strong> si elle est de\_taille inférieure.</p><p>La victime peut essayer de se\_libérer au prix d'une action de mouvement en\_réussissant un test de FOR opposé.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque contre la cible agrippée.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -338,7 +339,7 @@ items:
         - source: Actor.VieD2Y6pArEMq7OG.Item.9gQjIfIMsjzoHR0y
           indice: 0
           label: vs Cible agrippée
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -356,9 +357,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+13"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+13'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6 +1d6
               target:
@@ -369,7 +370,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -383,25 +384,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 9gQjIfIMsjzoHR0y
     ownership:
       default: 0
-    _key: "!actors.items!VieD2Y6pArEMq7OG.9gQjIfIMsjzoHR0y"
+    _key: '!actors.items!VieD2Y6pArEMq7OG.9gQjIfIMsjzoHR0y'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -415,8 +416,8 @@ items:
       actions:
         - source: Actor.VieD2Y6pArEMq7OG.Item.5dYdjPfdyoyHzlCO
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -434,9 +435,9 @@ items:
               source: Actor.VieD2Y6pArEMq7OG.Item.5dYdjPfdyoyHzlCO
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -448,27 +449,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 5dYdjPfdyoyHzlCO
     ownership:
       default: 0
-    _key: "!actors.items!VieD2Y6pArEMq7OG.5dYdjPfdyoyHzlCO"
+    _key: '!actors.items!VieD2Y6pArEMq7OG.5dYdjPfdyoyHzlCO'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!VieD2Y6pArEMq7OG"
+_key: '!actors!VieD2Y6pArEMq7OG'

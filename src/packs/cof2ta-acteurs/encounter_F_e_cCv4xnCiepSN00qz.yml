@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: verySmall
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Les fées sont de petites créatures féminines\_ailées à l'apparence variable en fonction de\_leur nature. Magiques et artificielles, elles\_sont le fruit des énergies telluriques des Terres\_d'Arran et évoluent dans des lieux isolés et\_chargés de magie. Certaines créatures primordiales, telles que les Fléaux, sont également\_capables de leur donner naissance.</p><p>La fée originelle est charmante, envoûtante\_et possède des ailes de libellule.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 0.5
   height: 0.5
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fee_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fee_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,17 +248,17 @@ items:
     system:
       subtype: magic
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
         reloadable: false
       range:
         value: null
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -269,8 +270,8 @@ items:
       actions:
         - source: Actor.cCv4xnCiepSN00qz.Item.eI9FLNLwUFsEgYoA
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -288,9 +289,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -301,7 +302,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -316,13 +317,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.eI9FLNLwUFsEgYoA"
+    _key: '!actors.items!cCv4xnCiepSN00qz.eI9FLNLwUFsEgYoA'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol
     type: capacity
@@ -330,11 +331,11 @@ items:
     _id: jxWxx3A9yX1A3EAw
     system:
       description: "<p>La créature\_<strong>peut léviter au prix\_d'une action gratuite</strong> et <strong>se déplacer en vol de\_20 mètres</strong> par action de mouvement.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -356,13 +357,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.jxWxx3A9yX1A3EAw"
+    _key: '!actors.items!cCv4xnCiepSN00qz.jxWxx3A9yX1A3EAw'
   - folder: BIRI3M946hrP9EbP
     name: Image décalée
     type: capacity
@@ -370,11 +371,11 @@ items:
     _id: PrlWe0KiWXyH80l4
     system:
       description: "<p><strong>Pendant [5 + Mod. de SAG] tours</strong>, lorsqu’une\_attaque le touche, le PJ lance <strong>1d6</strong> : <strong>sur 5-6, il\_ne subit pas les DM</strong>. Les DM des effets de zone\_s’appliquent normalement.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> le PJ peut appliquer les effets\_de son sort aux DM et effets de zone.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre latérale.</p><p>Vous pouvez utiliser la Table Aléatoire :\_@UUID[RollTable.MYM2XPVOTQXdhNIp]{Image décalée}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -396,24 +397,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.PrlWe0KiWXyH80l4"
+    _key: '!actors.items!cCv4xnCiepSN00qz.PrlWe0KiWXyH80l4'
   - folder: BIRI3M946hrP9EbP
     name: Mirage
     type: capacity
     img: icons/magic/perception/mask-stone-eyes-orange.webp
     system:
       description: "<p>Le PJ crée une illusion visuelle et sonore immobile\_d’une durée de <strong>[5 + Mod. de SAG] minutes</strong> (ou\_tours si l’illusion est animée). </p><p>Le volume maximal\_de l’illusion est de <strong>10 m de côté par rang</strong> atteint\_dans cette voie (portée: 500 m). <strong>Divisez ces\_paramètres par 10 si l’illusion est animée</strong>. </p><p>Interagir\_avec l’illusion la fait disparaître.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la durée du sort passe à [30\_+ Mod de SAG] minutes.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.\_Dépensez les PM manuellement depuis la barre latérale.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -435,27 +436,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: YYjhKCILaFcA0n92
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.YYjhKCILaFcA0n92"
+    _key: '!actors.items!cCv4xnCiepSN00qz.YYjhKCILaFcA0n92'
   - folder: BIRI3M946hrP9EbP
     name: Dédoublement
     type: capacity
     img: icons/magic/control/energy-stream-link-white.webp
     system:
       description: "<p><strong>Sur une attaque magique réussie</strong> (portée: 20 m), le\_PJ <strong>crée un double translucide</strong> de la cible pendant\_<strong>[5 + Mod. de SAG] tours</strong>. </p><p><strong>Le double est sous le\_contrôle du PJ.</strong> Il possède <strong>les mêmes caractéristiques</strong>\_que l’original mais seulement <strong>la moitié de ses PV,\_et tous les DM qu’il inflige sont divisés par deux</strong>.\_</p><p>Il disparaît si ses PV tombent à 0. Une créature ne\_peut être dédoublée qu’une fois par combat.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque magique contre la DEF d'une
         cible et de dépenser les PM du sort.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 4
@@ -469,8 +470,8 @@ items:
       actions:
         - source: Actor.cCv4xnCiepSN00qz.Item.J9XumosskcwhLb8x
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -488,11 +489,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '5'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -501,7 +502,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -515,25 +516,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: J9XumosskcwhLb8x
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.J9XumosskcwhLb8x"
+    _key: '!actors.items!cCv4xnCiepSN00qz.J9XumosskcwhLb8x'
   - folder: BIRI3M946hrP9EbP
     name: Imitation
     type: capacity
     img: icons/magic/control/silhouette-hold-change-blue.webp
     system:
       description: "<p>Le PJ peut <strong>prendre l’apparence d’une créature\_de taille proche</strong> (+ ou – 50 cm) <strong>qu’il voit</strong> au\_moment de l’incantation. </p><p><strong>Durée [5 + Mod. de\_SAG] minutes</strong>. Toucher le PJ (par une attaque\_ou non) met fin au sort.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: "<p>Pas d'effet automatique.\_Dépensez les PM manuellement depuis la barre latérale.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -555,27 +556,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: NdA7XF2wPvvxkSkk
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.NdA7XF2wPvvxkSkk"
+    _key: '!actors.items!cCv4xnCiepSN00qz.NdA7XF2wPvvxkSkk'
   - folder: BIRI3M946hrP9EbP
     name: Tueur fantasmagorique
     type: capacity
     img: icons/magic/control/fear-fright-monster-grin-purple-blue.webp
     system:
       description: "<p>Ce sort <strong>invoque les pires terreurs d’une créature\_vivante</strong> et lui fait croire à sa propre mort. </p><p>Le PJ doit\_réussir <strong>un test d’attaque magique</strong> (portée: 20 m)\_<strong>en opposition à un test d’attaque magique</strong> de la\_cible (si la créature n’a pas d’attaque magique, on\_utilise alors son attaque au contact en appliquant\_un malus de -3). </p><p>La victime fait <strong>un test de SAG\_difficulté [10 + Mod. d’INT] pour résister</strong>. </p><ul><li><p>En cas\_d’échec, <strong>elle tombe à 0 PV</strong>. </p></li><li><p>En cas de succès, <strong>elle\_perd l’équilibre et tombe par terre</strong>. </p></li></ul><p>Une créature\_ne peut être la cible de ce sort <strong>qu’une fois par jour</strong>,\_et le PJ <strong>ne peut pas affecter un personnage ou une\_créature de niveau supérieur au sien</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque magique opposée et de dépenser
         les PM du sort.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 5
@@ -589,8 +590,8 @@ items:
       actions:
         - source: Actor.cCv4xnCiepSN00qz.Item.qY0rLQUvFDVSzoQm
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -608,11 +609,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "5"
-                crit: ""
-                difficulty: "@oppose.atm"
+                formula: '5'
+                crit: ''
+                difficulty: '@oppose.atm'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -621,7 +622,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -635,27 +636,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: qY0rLQUvFDVSzoQm
     ownership:
       default: 0
-    _key: "!actors.items!cCv4xnCiepSN00qz.qY0rLQUvFDVSzoQm"
+    _key: '!actors.items!cCv4xnCiepSN00qz.qY0rLQUvFDVSzoQm'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!cCv4xnCiepSN00qz"
+_key: '!actors!cCv4xnCiepSN00qz'

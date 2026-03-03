@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Dryade vengeresse
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/dryade_vengeresse.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/dryade_vengeresse.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: plant
     size: colossal
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Une dryade – également appelé esprit de la\_forêt – est une sorte d'arbre vivant ou un\_amalgame de végétaux ayant pris une forme\_grossièrement humanoïde. C'est la reine\_sylvaine Eliseii qui a réveillé ces créatures\_avant que la reine Ora ne renouvelle l'exploit\_quelques décennies plus tard.\_</p><p>Aujourd'hui, les dryades sont retournées à\_leur hibernation séculaire mais leur essence est\_toujours présente dans les forêts de Duhann\_et de Daëdenn. Il n'est pas exclu qu'un\_druide ou un sage suffisamment puissant soit\_capable d'en éveiller de nouvelles, quels que\_soit ses dessins.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -250,11 +251,11 @@ items:
     _id: 2YMlxfpfnpAnKd7L
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -268,8 +269,8 @@ items:
       actions:
         - source: Actor.gBvGKXeUkc1xTQAV.Item.2YMlxfpfnpAnKd7L
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -287,23 +288,23 @@ items:
               source: Actor.gBvGKXeUkc1xTQAV.Item.2YMlxfpfnpAnKd7L
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gBvGKXeUkc1xTQAV.Item.2YMlxfpfnpAnKd7L
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gBvGKXeUkc1xTQAV.Item.2YMlxfpfnpAnKd7L
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -315,24 +316,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gBvGKXeUkc1xTQAV.2YMlxfpfnpAnKd7L"
+    _key: '!actors.items!gBvGKXeUkc1xTQAV.2YMlxfpfnpAnKd7L'
   - folder: uvHtoSiBBvs1nfqu
     name: RD/feu et haches
     type: capacity
     img: icons/magic/defensive/shield-barrier-flaming-pentagon-teal.webp
     system:
       description: "<p>la dryade possède\_<strong>retranche 10 points à tous les DM</strong> sauf s'il\_s'agit de DM de <strong>feu</strong> ou d'<strong>armes tranchantes\_très lourdes</strong>, comme les haches.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -347,7 +348,7 @@ items:
         - source: Actor.gBvGKXeUkc1xTQAV.Item.oCDwmjiqB8ASnkc5
           indice: 0
           label: RD sauf feu et haches
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -365,9 +366,9 @@ items:
               source: Actor.gBvGKXeUkc1xTQAV.Item.oCDwmjiqB8ASnkc5
               subtype: combat
               target: dr
-              value: "10"
+              value: '10'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -379,22 +380,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: oCDwmjiqB8ASnkc5
     ownership:
       default: 0
-    _key: "!actors.items!gBvGKXeUkc1xTQAV.oCDwmjiqB8ASnkc5"
+    _key: '!actors.items!gBvGKXeUkc1xTQAV.oCDwmjiqB8ASnkc5'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -403,8 +404,8 @@ items:
       actions:
         - source: Actor.gBvGKXeUkc1xTQAV.Item.eRwKzCIiP5wRee79
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -422,9 +423,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "24"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '24'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 4d6+18
               target:
@@ -435,7 +436,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -450,13 +451,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gBvGKXeUkc1xTQAV.eRwKzCIiP5wRee79"
+    _key: '!actors.items!gBvGKXeUkc1xTQAV.eRwKzCIiP5wRee79'
   - folder: uvHtoSiBBvs1nfqu
     name: Balayage
     type: capacity
@@ -464,11 +465,11 @@ items:
     _id: JGNRn7dDmV2XkCOR
     system:
       description: "<p>La créature utilise sa\_grande taille pour affecter plusieurs créatures\_d'un seul coup. </p><p>Si plusieurs cibles\_sont présentes face à elle, son attaque <strong>affecte\_deux créatures</strong> (dans un arc de 180 °). <strong>Faire un\_seul test d'attaque</strong> et le comparer à la DEF de chaque cible.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -490,22 +491,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gBvGKXeUkc1xTQAV.JGNRn7dDmV2XkCOR"
+    _key: '!actors.items!gBvGKXeUkc1xTQAV.JGNRn7dDmV2XkCOR'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -513,4 +514,4 @@ _id: gBvGKXeUkc1xTQAV
 ownership:
   default: 0
 sort: 0
-_key: "!actors!gBvGKXeUkc1xTQAV"
+_key: '!actors!gBvGKXeUkc1xTQAV'

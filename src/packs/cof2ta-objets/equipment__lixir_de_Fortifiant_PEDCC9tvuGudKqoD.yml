@@ -4,9 +4,9 @@ type: equipment
 img: icons/consumables/potions/potion-jar-corked-glowing-blue.webp
 system:
   description: "<p>Un breuvage étrange qui <strong>guérit [1d4 + rang] PV</strong>\_et permet de gagner un bonus de <strong>+3 aux [rang\_+ 1] prochains tests effectués</strong> (dans une limite\_de temps de 12 heures).</p><p>Boire un fortifiant\_nécessite une action de mouvement.</p><hr /><p>@UUID[Item.87eBcr3sJtocJcjN]{Voie de l'Alchimie} - Rang 1 :\_@UUID[Item.KQBxuHgUEMNEFqAG]{Fortifiant}</p><p>La première action permet de réaliser le Soin sur une cible unique.</p><p>La deuxième action activable permet d'obtenir le bonus de +3 à tous les tests. Le nombre de tests effectué est à gérer manuellement.</p><p><em>Il faut modifier l'action en fonction du Personnage qui a fabriquer l'élixir.</em></p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.132
-  slug: ""
+  slug: ''
   subtype: consumable
   tags: []
   martialCategory: unarmed
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -62,7 +62,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -72,7 +72,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
       indice: 1
       label: Bonus aux tests
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -90,30 +90,30 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
           subtype: combat
           target: melee
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
           subtype: combat
           target: ranged
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
           subtype: combat
           target: magic
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.PEDCC9tvuGudKqoD
           subtype: skill
           target: all
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   defense: null
   magicalDefense: null
@@ -123,9 +123,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -133,4 +133,4 @@ _id: PEDCC9tvuGudKqoD
 ownership:
   default: 0
 sort: 0
-_key: "!items!PEDCC9tvuGudKqoD"
+_key: '!items!PEDCC9tvuGudKqoD'

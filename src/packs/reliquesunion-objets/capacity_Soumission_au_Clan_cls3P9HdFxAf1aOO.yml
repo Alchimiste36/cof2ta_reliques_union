@@ -1,8 +1,7 @@
 folder: lDxeo77mNAWMtUbR
 name: Soumission au Clan
 type: capacity
-img: >-
-  icons/skills/melee/weapons-crossed-daggers-orange.webp
+img: icons/skills/melee/weapons-crossed-daggers-orange.webp
 _id: cls3P9HdFxAf1aOO
 system:
   description: >-
@@ -12,16 +11,16 @@ system:
     DM.</strong></p><p>Par contre, <strong>il devra attaquer dès qu'il le
     peut</strong> sur les ennemis, il se rue dans le combat et <strong>ne pourra
     pas fuir.</strong></p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de s'infliger 1d6 DM autoamtiquement.</p><p>La
     deuxième action activable/désactivable permet d'obtenir les bonus à
     l'attaque et aux DM.</p><p>Lors de l'apprentissage, cette capacité donne
     droit à une capacité liée pour l'effet de la capacité de rang 2.
     Glissez-déposez la capacité choisie sous cette capacité.</p><p></p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 4
@@ -36,7 +35,7 @@ system:
     - source: Item.cls3P9HdFxAf1aOO
       indice: 0
       label: Blessure
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -52,7 +51,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: "-1d6"
+            formula: '-1d6'
           target:
             type: self
             number: 0
@@ -61,7 +60,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -71,7 +70,7 @@ system:
     - source: Item.cls3P9HdFxAf1aOO
       indice: 1
       label: Bonus
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -89,16 +88,16 @@ system:
           source: Item.cls3P9HdFxAf1aOO
           subtype: combat
           target: melee
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.cls3P9HdFxAf1aOO
           subtype: combat
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: true
   linkedCapacity: null
@@ -109,9 +108,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -119,4 +118,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!cls3P9HdFxAf1aOO"
+_key: '!items!cls3P9HdFxAf1aOO'

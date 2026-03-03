@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: colossal
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Également appelés géants ou titans, les\_Fléaux sont d'immenses créatures animées\_par\_ l'énergie primordiale du monde. Ils\_dominaient les Terres d'Arran avant même\_l'arrivée des premiers Elfes et ont ravagé le\_monde par leurs guerres de territoires avant\_de s'apaiser et de s'endormir.\_</p><p>Les légendes racontent qu'ils se sont éveillés\_une fois et que leur colère à la découverte\_des civilisations émergentes avait manqué\_<span style=\"white-space: initial; color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">d'éradiquer toute forme de vie pensante.</span></p><p>Nul ne sait comment ils ont été de nouveau\_plongés dans leur sommeil sans fin.\_Le monde a depuis oublié leur existence.\_Mais s'il est vrai que les eaux, les roches et\_la végétation ont recouvert leur corps, ils ne\_sont pas morts. Ils dorment, simplement.</p><p>Les Fléaux sont des créatures immenses, mesurant jusqu'à près de 20 mètres de haut –\_ voire\_bien plus, les légendes traitant de certains\_Fléaux comme de véritables\_ montagnes –, à\_la forme humanoïde mais aux traits bestiaux.\_</p><p>Ils sont habités d'une rage ancestrale et dotés\_d'une force encore plus considérable que ce\_que laisse envisager leur stature. Certains\_disposent de pouvoirs magiques dépassant\_l'entendement.</p><p><strong><span style=\"text-decoration: underline;\">Personnalisation :</span></strong> vous pouvez ajouter des\_voies de profil ou de prestige pour un bonus\_de +1 au NC par voie. Il n'y a virtuellement\_aucune limite au NC d'un Fléau mais ajoutez\_un rang de boss pour deux voies pour ne pas\_surcoter sa puissance.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 4
   height: 4
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fleau_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fleau_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.IBhJ4awiCSfpULwc
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "30"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '30'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 4d6+24
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,28 +307,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.IBhJ4awiCSfpULwc"
+    _key: '!actors.items!by78t7Wy9aRODnXb.IBhJ4awiCSfpULwc'
   - type: attack
     system:
       subtype: magic
       learned: true
       description: "<p>le fléau\_possède un pouvoir magique qui inflige [10d6\_+ 30] DM sur un test d'attaque magique réussi\_(portée 30 mètres) sur une cible unique. Ce\_pouvoir est lié à un élément propre au Fléau,\_que ce soit le feu, la glace, la roche, la foudre,\_etc.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
         reloadable: false
       range:
         value: null
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -339,8 +340,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.zFlQ3rHennw1hdKY
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: l
@@ -358,9 +359,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "18"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '18'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 10d6+30
               target:
@@ -371,7 +372,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -386,13 +387,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.zFlQ3rHennw1hdKY"
+    _key: '!actors.items!by78t7Wy9aRODnXb.zFlQ3rHennw1hdKY'
   - folder: uvHtoSiBBvs1nfqu
     name: Balayage
     type: capacity
@@ -400,11 +401,11 @@ items:
     _id: ZcVqQZdVdJCdvVcx
     system:
       description: "<p>La créature utilise sa\_grande taille pour affecter plusieurs créatures\_d'un seul coup. </p><p>Si plusieurs cibles\_sont présentes face à elle, son attaque <strong>affecte\_deux créatures</strong> (dans un arc de 180 °). <strong>Faire un\_seul test d'attaque</strong> et le comparer à la DEF de chaque cible.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -426,13 +427,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.ZcVqQZdVdJCdvVcx"
+    _key: '!actors.items!by78t7Wy9aRODnXb.ZcVqQZdVdJCdvVcx'
   - folder: uvHtoSiBBvs1nfqu
     name: Fauchage
     type: capacity
@@ -440,13 +441,13 @@ items:
     _id: UVDYnLYXWvxtjG8c
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 28 ou être renversée</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
         soit la FOR soit l'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -460,8 +461,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.UVDYnLYXWvxtjG8c
           indice: 0
-          label: "sI 15+ : FOR"
-          chatFlavor: ""
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -477,7 +478,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "28"
+              saveDifficulty: '28'
               target:
                 type: single
                 scope: all
@@ -486,12 +487,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -500,8 +501,8 @@ items:
           modifiers: []
         - source: Actor.by78t7Wy9aRODnXb.Item.UVDYnLYXWvxtjG8c
           indice: 1
-          label: "sI 15+ : AGI"
-          chatFlavor: ""
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -517,7 +518,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "28"
+              saveDifficulty: '28'
               target:
                 type: single
                 scope: all
@@ -526,12 +527,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -548,13 +549,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.UVDYnLYXWvxtjG8c"
+    _key: '!actors.items!by78t7Wy9aRODnXb.UVDYnLYXWvxtjG8c'
   - folder: uvHtoSiBBvs1nfqu
     name: Projection
     type: capacity
@@ -562,14 +563,14 @@ items:
     _id: 2mkxJfKcgQ8xuevz
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur\_un jet de d20</strong> au test d'attaque, la victime est\_<strong>projetée à [1d6+1] mètres de là</strong> et subit <strong>+3d6\_DM supplémentaires</strong>. </p><p>Elle doit réussir un <strong>test\_de CON de difficulté 15 ou être étourdie</strong>. À\_chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de jeter les DM de la projection.</p><p>La
         deuxième action permet de réaliser le test de sauvegarde de CON et
         d'appliquer le statut renversé pendant 1 round.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -584,7 +585,7 @@ items:
         - source: Actor.by78t7Wy9aRODnXb.Item.2mkxJfKcgQ8xuevz
           indice: 0
           label: DM supplémentaires
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -609,7 +610,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -619,7 +620,7 @@ items:
         - source: Actor.by78t7Wy9aRODnXb.Item.2mkxJfKcgQ8xuevz
           indice: 1
           label: Sauvegarde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -635,7 +636,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -644,11 +645,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -666,24 +667,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.2mkxJfKcgQ8xuevz"
+    _key: '!actors.items!by78t7Wy9aRODnXb.2mkxJfKcgQ8xuevz'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -697,8 +698,8 @@ items:
       actions:
         - source: Actor.by78t7Wy9aRODnXb.Item.wjHMlCUfKvIzhafr
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -716,9 +717,9 @@ items:
               source: Actor.by78t7Wy9aRODnXb.Item.wjHMlCUfKvIzhafr
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -730,14 +731,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: wjHMlCUfKvIzhafr
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.wjHMlCUfKvIzhafr"
+    _key: '!actors.items!by78t7Wy9aRODnXb.wjHMlCUfKvIzhafr'
   - folder: uvHtoSiBBvs1nfqu
     name: Armure magique
     type: capacity
@@ -745,11 +746,11 @@ items:
     _id: CDLMzcfdTBVN2b3w
     system:
       description: "<p>La créature possède\_un pouvoir magique qui lui permet de <strong>diviser\_tous les DM physiques subis par deux</strong> pour le\_reste du combat. </p><p>Ce pouvoir <strong>n'affecte pas les\_DM des attaques magiques élémentaires</strong> (feu,\_froid, acide, électricité).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -771,26 +772,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!by78t7Wy9aRODnXb.CDLMzcfdTBVN2b3w"
+    _key: '!actors.items!by78t7Wy9aRODnXb.CDLMzcfdTBVN2b3w'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!by78t7Wy9aRODnXb"
+_key: '!actors!by78t7Wy9aRODnXb'

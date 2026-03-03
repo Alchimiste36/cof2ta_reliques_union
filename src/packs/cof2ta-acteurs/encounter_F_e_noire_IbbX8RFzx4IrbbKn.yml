@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: verySmall
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Le monde a changé. Les entités primordiales\_ont lentement été corrompues et les fées qui\_les servent ne sont plus les mêmes. </p><p>La fée noire\_est une créature hybride dont le buste est celui\_d'une femme minuscule tandis que le bas du\_corps est celui d'une créature insectoïde. Ce\_sont les charmants bambins de celle que l'on\_nomme la mère des Fléaux. </p><p>Apparemment\_inoffensifs, le cœur de ces créatures vibre d'une\_magie ancestrale qui leur donne le pouvoir\_de pénétrer dans le sommeil des gens. Elles se\_nourrissent des rêves, ce qui leur permettrait,\_d'après la légende, de muter et devenir des\_araignées aux proportions démesurées. </p><p>Mais\_sans rêves pour se nourrir, elles meurent.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 0.5
   height: 0.5
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fee_noire_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fee_noire_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,17 +248,17 @@ items:
     system:
       subtype: ranged
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
         reloadable: false
       range:
         value: null
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -269,8 +270,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.xpDAWll3SudOx840
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -288,9 +289,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -301,7 +302,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -316,24 +317,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.xpDAWll3SudOx840"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.xpDAWll3SudOx840'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -347,8 +348,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.O8SUJUOItG5ryN5D
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -366,9 +367,9 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.O8SUJUOItG5ryN5D
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -380,14 +381,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: O8SUJUOItG5ryN5D
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.O8SUJUOItG5ryN5D"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.O8SUJUOItG5ryN5D'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol
     type: capacity
@@ -395,11 +396,11 @@ items:
     _id: G9oifoh3B8qHTsCa
     system:
       description: "<p>La créature\_<strong>peut léviter au prix\_d'une action gratuite</strong> et <strong>se déplacer en vol de\_20 mètres</strong> par action de mouvement.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -421,13 +422,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.G9oifoh3B8qHTsCa"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.G9oifoh3B8qHTsCa'
   - folder: uvHtoSiBBvs1nfqu
     name: Vampirisation
     type: capacity
@@ -435,15 +436,15 @@ items:
     _id: GrazPi9TNoW4h5ee
     system:
       description: "<p>La créature doit <strong>réussir\_une attaque magique sur une cible vivante</strong>\_à une distance maximale de 30 mètres.\_En\_cas de réussite, la cible <strong>subit 2d6 DM</strong> et la créature <strong>régénère d'autant de PV</strong> que de\_DM infligés.</p><p>De plus, <strong>à chaque fois qu'une\_créature meurt à moins de 20 mètres de lui</strong>,\_la créature siphonne son énergie vitale et\_<strong>gagne 1d6 + 4 PV</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de réaliser l'attaque de vampirisation. Il
         faudra appliquer les DM sur la cible et les appliquer en soin sur la
         créature.</p><p>La deuxième action permet de se soigner
         automatiquement.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -457,8 +458,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.GrazPi9TNoW4h5ee
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -476,9 +477,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6
               target:
@@ -489,14 +490,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.IbbX8RFzx4IrbbKn.Item.GrazPi9TNoW4h5ee
           indice: 1
           label: Mort à moins de 20m
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -521,7 +522,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -538,13 +539,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.GrazPi9TNoW4h5ee"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.GrazPi9TNoW4h5ee'
   - folder: hsop47dgLjfCwayN
     name: Brumes
     type: capacity
@@ -552,13 +553,13 @@ items:
     _id: UWOsOfEXbn2kx9Uf
     system:
       description: "<p>Le PJ créé un brouillard très dense jusqu’à\_une <strong>portée de 20 m sur une zone de 20 m de\_diamètre</strong>.</p><p>Dans cette zone <strong>la visibilité est très\_réduite</strong> et équivalente à de la pénombre. Il n’est\_pas possible de voir par-delà le brouillard qui\_persiste <strong>pendant [5 + Mod. SAG] tours</strong>.\_</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> en doublant le coût en PM,\_le PJ peut doubler la zone du sort ou la durée\_du sort – tout en appliquant les effets d’une\_concentration s’il le souhaite.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre
         latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -580,28 +581,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.UWOsOfEXbn2kx9Uf"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.UWOsOfEXbn2kx9Uf'
   - folder: hsop47dgLjfCwayN
     name: Sous tension
     type: capacity
     img: icons/magic/lightning/bolts-forked-large-blue.webp
     system:
       description: "<p>Le PJ <strong>se charge d’énergie électrique pour [5 +\_Mod. de SAG] tours</strong>. </p><p><strong>Toute créature qui le blesse\_au contact ou le touche reçoit une décharge\_infligeant 1d6 DM.</strong></p><p> Il peut également <strong>délivrer une\_décharge électrique</strong> (attaque magique, portée:\_10 m) infligeant <strong>[1d6 + Mod. d’INT] DM</strong>. </p><p>Au\_rang 4 de cette voie, les DM passent à 2d6.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> en doublant le coût en PM,\_le PJ peut lancer le sort immédiatement au moment où il est attaqué. Il ne doit pas être surpris\_pour cela et ne peut user de concentration.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action "Activer le sort" permet de dépenser les PM et d'afficher
         les deux autres actions.</p><p>L'action "DM si touché" permet de jeter
         les DM si le PJ se fait toucher (sans dépenser le PM).</p><p>L'action
         "Décharge électrique" permet de réaliser l'attaque magique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -616,7 +617,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.BL4TFVxQRzo0o32O
           indice: 0
           label: DM si touché
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -630,7 +631,7 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "2"
+              object: '2'
           resolvers:
             - type: auto
               dmg:
@@ -643,7 +644,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -653,7 +654,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.BL4TFVxQRzo0o32O
           indice: 1
           label: Décharge électrique
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -667,15 +668,15 @@ items:
           conditions:
             - predicate: isLearned
             - predicate: isLinkedActionActivated
-              object: "2"
+              object: '2'
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -686,14 +687,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.IbbX8RFzx4IrbbKn.Item.BL4TFVxQRzo0o32O
           indice: 2
           label: Activer le Sort
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -718,28 +719,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: BL4TFVxQRzo0o32O
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.BL4TFVxQRzo0o32O"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.BL4TFVxQRzo0o32O'
   - folder: hsop47dgLjfCwayN
     name: Armure de terre
     type: capacity
     img: icons/magic/earth/strike-fist-stone.webp
     system:
       description: "<p>Pendant <strong>[5 + Mod. de SAG] tours</strong>, le PJ\_<strong>retranche à tous les DM de feu, de froid,\_d’électricité ou d’acide</strong> subis un montant égal\_à <strong>deux fois son rang</strong> atteint dans cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir la RD. Il faudra l'activer
         lorsqu'il subit des DM élémentaires.</p><p>Dépensez les PM manuellement
         depuis la barre latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -754,7 +755,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.lAsRWM4TQ6J5wMpr
           indice: 0
           label: RD contre éléments
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -772,9 +773,9 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.lAsRWM4TQ6J5wMpr
               subtype: combat
               target: dr
-              value: "10"
+              value: '10'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -786,27 +787,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: lAsRWM4TQ6J5wMpr
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.lAsRWM4TQ6J5wMpr"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.lAsRWM4TQ6J5wMpr'
   - folder: hsop47dgLjfCwayN
     name: Boule de feu
     type: capacity
     img: icons/magic/fire/projectile-fireball-orange-yellow.webp
     system:
       description: "<p>Le PJ choisit une cible située à <strong>moins de 30 mètres</strong>. </p><p>Il fait <strong>un test d’attaque magique et le compare à\_la DEF de tous les personnages</strong> (y compris le PJ\_et ses compagnons) se trouvant dans un <strong>rayon\_de 6 mètres</strong> autour de la cible. </p><p>Chaque victime\_pour laquelle le test est un succès <strong>encaisse [4d6\_+ Mod. d’INT] de DM</strong>. </p><p>En cas d’échec, <strong>la cible\_ne subit que la moitié des DM</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque magique et de dépenser les
         PM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 4
@@ -821,7 +822,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.UaWFQTlA7ZtLAmGo
           indice: 0
           label: Rayon 6m
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -839,9 +840,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 4d6 +2
               target:
@@ -852,7 +853,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -866,25 +867,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: UaWFQTlA7ZtLAmGo
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.UaWFQTlA7ZtLAmGo"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.UaWFQTlA7ZtLAmGo'
   - folder: hsop47dgLjfCwayN
     name: Intelligence héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
     system:
       description: "<p>Le PJ augmente sa valeur d’<strong>INT de +2</strong>. Il peut\_désormais <strong>lancer deux d20</strong> à chaque fois qu’un\_test d’INT lui est demandé et conserver le\_meilleur résultat.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.136
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent et Dé Bonus en INT.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 5
@@ -898,8 +899,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.IFiJsLAKwBBYPjvd
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -917,16 +918,16 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.IFiJsLAKwBBYPjvd
               subtype: ability
               target: int
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.IFiJsLAKwBBYPjvd
               subtype: bonusDice
               target: int
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -938,23 +939,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: IFiJsLAKwBBYPjvd
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.IFiJsLAKwBBYPjvd"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.IFiJsLAKwBBYPjvd'
   - folder: 70oSGsBlWvf0HQ7g
     name: Saignements
     type: capacity
     img: icons/skills/wounds/blood-drip-droplet-red.webp
     system:
       description: "<p>Le PJ doit réussir <strong>un test d’attaque magique</strong>\_(portée: 10 m). </p><p>Du sang s’écoule de la bouche,\_du nez, des oreilles et même des yeux de la\_victime, qui subit <strong>1d6 DM par tour pendant\_[rang atteint dans la voie] tours</strong>. </p><p>Ce sort <strong>ignore\_la RD</strong> d’une cible mais les créatures qui ne\_saignent pas y sont immunisées (telles que les\_créatures non vivantes, les goules ou encore\_les dryades). </p><p>Les DM passent à <strong>1d8 au rang 4\_atteint</strong> dans cette voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> la durée du sort devient\_[rang atteint dans la voie + Mod. SAG] tours.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque magique contre la DEF d'une
         cible sélectionnée. En cas de réussite elle applique un effet de
@@ -962,7 +963,7 @@ items:
         mode Combat.</p><p>Si le PJ obtient la capacité avancée, remplacez le
         champs Durée de l'Effet supplémentaire de la Résolution de l'action par
         "@rang + @per".</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -976,8 +977,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.HgajtdSQdYeXLyqS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: magical
           actionType: none
@@ -995,9 +996,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -1009,9 +1010,9 @@ items:
                 applyOn: success
                 formulaType: damage
                 formula: 1d6
-                elementType: ""
+                elementType: ''
                 statuses: []
-                duration: "3"
+                duration: '3'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1025,30 +1026,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: HgajtdSQdYeXLyqS
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.HgajtdSQdYeXLyqS"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.HgajtdSQdYeXLyqS'
   - folder: 70oSGsBlWvf0HQ7g
     name: Malédiction
     type: capacity
     img: icons/magic/unholy/hands-circle-light-green.webp
     system:
       description: "<p>Le PJ effectue <strong>un test d’attaque magique</strong> contre\_une cible située à moins de 20 mètres. </p><p>En cas\_de succès, <strong>la victime réalise tous ses tests avec\_deux d20 et garde le résultat le plus faible.</strong> </p><p>Le\_sort <strong>prend fin dès qu’elle aura raté trois tests</strong>\_(il n’y a aucune limite de temps pour effectuer\_ces tests). Si la cible possède une capacité lui\_permettant de lancer deux dés et de garder le\_meilleur, elle ne lance plus qu’un seul dé. </p><p>Une\_seule cible à la fois peut être affectée par une\_malédiction.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ peut affecter un total\_de [Mod INT] cibles (minimum 1). Le sort\_doit être lancé pour chaque cible.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque magique contre la DEF d'une
         cible sélectionnée. En cas de réussite elle applique un Dé Malus à tous
         les tests de la victime pendant tout le Combat. Il faudra gérer
         manuellement le nombre de tests réalisés avec l'affaiblissement.
         Fonctionne uniquement en Mode Combat.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -1062,8 +1063,8 @@ items:
       actions:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: debuff
           actionType: none
@@ -1081,82 +1082,82 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: agi
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: con
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: for
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: per
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: cha
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: int
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: vol
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: ranged
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.7kqhDDEV3HH68gcl
               subtype: malusDice
               target: magic
-              value: "0"
+              value: '0'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -1165,11 +1166,11 @@ items:
                 active: true
                 applyOn: success
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
                 unit: combat
-                duration: "0"
+                duration: '0'
               hasAttackSuccessThreshold: false
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1181,29 +1182,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 7kqhDDEV3HH68gcl
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.7kqhDDEV3HH68gcl"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.7kqhDDEV3HH68gcl'
   - folder: 70oSGsBlWvf0HQ7g
     name: Pacte sanglant
     type: capacity
     img: icons/magic/unholy/orb-droplet-pink.webp
     system:
       description: "<p><strong>Par une action gratuite</strong>, le PJ <strong>sacrifie 1d4 PV</strong>\_et gagne immédiatement <strong>+3 sur un jet de d20\_de son choix ou en DEF contre une attaque</strong>.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">À\_partir du rang 5</span></strong></span> atteint dans cette voie, il peut\_<strong>sacrifier 2d4 PV</strong> pour faire passer ce bonus <strong>à +5.</strong></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action permet de dépenser les PM, de subir 1d4 DM et
         d'obtenir le bonus aux attaques et aux tests de compétences.</p><p>La
         deuxièmes action permet de dépenser le PM, de subir 1d4 DM et d'obtenir
         le bonus en DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: true
       rank: 3
@@ -1218,7 +1219,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
           indice: 0
           label: Test +3
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1236,34 +1237,34 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
               subtype: combat
               target: melee
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
               subtype: combat
               target: damRanged
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
               subtype: combat
               target: magic
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
               subtype: skill
               target: all
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: heal
               skill:
-                formula: "-1d4"
+                formula: '-1d4'
               target:
                 type: self
                 number: 0
@@ -1272,7 +1273,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1281,7 +1282,7 @@ items:
         - source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
           indice: 1
           label: DEF +3
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1299,13 +1300,13 @@ items:
               source: Actor.IbbX8RFzx4IrbbKn.Item.mCrtQ9w2KerBfmuv
               subtype: combat
               target: def
-              value: "3"
+              value: '3'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: heal
               skill:
-                formula: "-1d4"
+                formula: '-1d4'
               target:
                 type: self
                 number: 0
@@ -1314,7 +1315,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1330,27 +1331,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: mCrtQ9w2KerBfmuv
     ownership:
       default: 0
-    _key: "!actors.items!IbbX8RFzx4IrbbKn.mCrtQ9w2KerBfmuv"
+    _key: '!actors.items!IbbX8RFzx4IrbbKn.mCrtQ9w2KerBfmuv'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!IbbX8RFzx4IrbbKn"
+_key: '!actors!IbbX8RFzx4IrbbKn'

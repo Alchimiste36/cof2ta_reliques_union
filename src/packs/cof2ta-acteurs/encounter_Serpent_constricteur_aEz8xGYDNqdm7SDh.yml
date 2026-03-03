@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Serpent constricteur
 type: encounter
 _id: aEz8xGYDNqdm7SDh
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/serpent_constricteur.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/serpent_constricteur.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Ce profil correspond au boa ou au python,\_toutefois cette famille de serpents comprend\_de grandes disparités de tailles et de poids,\_les serpents pouvant faire deux mètres pour\_une quinzaine de kilos à plus de 6 mètres\_pour 150 kg et au-delà. </p><p>Les caractéristiques\_présentées ici correspondent à un spécimen\_d'environ 4 m pour 80 kg.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -178,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,10 +249,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -260,8 +261,8 @@ items:
       actions:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.cFLmfCl0ebKko15p
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -279,9 +280,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "4"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '4'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+3
               target:
@@ -292,7 +293,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -307,13 +308,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!aEz8xGYDNqdm7SDh.cFLmfCl0ebKko15p"
+    _key: '!actors.items!aEz8xGYDNqdm7SDh.cFLmfCl0ebKko15p'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
@@ -321,15 +322,15 @@ items:
     _id: QYs7ohgbmp6sHGAo
     system:
       description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -343,8 +344,8 @@ items:
       actions:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.QYs7ohgbmp6sHGAo
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -362,14 +363,14 @@ items:
               source: Actor.aEz8xGYDNqdm7SDh.Item.QYs7ohgbmp6sHGAo
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.aEz8xGYDNqdm7SDh.Item.QYs7ohgbmp6sHGAo
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -394,11 +395,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -409,7 +410,7 @@ items:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.QYs7ohgbmp6sHGAo
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -429,7 +430,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -441,13 +442,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!aEz8xGYDNqdm7SDh.QYs7ohgbmp6sHGAo"
+    _key: '!actors.items!aEz8xGYDNqdm7SDh.QYs7ohgbmp6sHGAo'
   - folder: uvHtoSiBBvs1nfqu
     name: Étreinte
     type: capacity
@@ -455,14 +456,14 @@ items:
     _id: o6BEr9LNedgyk3oc
     system:
       description: "<p>A chaque fois que le serpent <strong>réussit\_une attaque</strong> il peut faire un <strong>test de FOR opposé</strong>\_contre sa victime (toutefois celle-ci peut choisir\_de résister par un test de DEX). </p><p>En cas de\_succès, il s'enroule autour d'elle et commence\_à l'étouffer, infligeant <strong>automatiquement 1d6\_DM supplémentaires par tour</strong>. La victime est\_<strong>immobilisée</strong>. Elle peut tenter de <strong>se libérer au\_prix d'une action de mouvement</strong> à chaque\_tour, en réussissant <strong>un test de FOR difficulté 15</strong>.\_</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'infliger les DM et le statut Immobilisé
         sur les cible.</p><p>La deuxième action permet de réaliser le test de
         sauvegarde pour se libérer.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -477,7 +478,7 @@ items:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.o6BEr9LNedgyk3oc
           indice: 0
           label: Sur cible étreinte
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -503,11 +504,11 @@ items:
                 applyOn: always
                 formulaType: damage
                 formula: 1d6
-                elementType: ""
+                elementType: ''
                 statuses:
                   - immobilized
                 unit: combat
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -516,7 +517,7 @@ items:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.o6BEr9LNedgyk3oc
           indice: 1
           label: Se libérer
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -532,7 +533,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 number: 0
@@ -541,7 +542,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -559,26 +560,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!aEz8xGYDNqdm7SDh.o6BEr9LNedgyk3oc"
+    _key: '!actors.items!aEz8xGYDNqdm7SDh.o6BEr9LNedgyk3oc'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!aEz8xGYDNqdm7SDh"
+_key: '!actors!aEz8xGYDNqdm7SDh'

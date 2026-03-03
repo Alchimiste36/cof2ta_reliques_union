@@ -4,13 +4,13 @@ type: capacity
 img: icons/skills/wounds/blood-drip-droplet-red.webp
 system:
   description: "<p><strong>En sacrifiant 1d4 PV</strong>, le PJ <strong>obtient la possibilité\_de lancer un sort plus rapidement</strong>. Un sort\_nécessitant une action d’attaque se lance pour\_une action de mouvement par exemple tandis\_qu’un sort nécessitant une concentration se\_lance pour une action d’attaque au lieu d’une\_action limitée. </p><p>Par cette méthode, si le PJ\_souhaite lancer deux sorts dans le même tour,\_il doit sacrifier 1d4 PV supplémentaire (donc\_un maximum 3d4 PV). </p><p><strong>Les sorts affectés par\_cette capacité sont limités au rang 3.</strong></p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.150
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de perdre autoamtiquement le 1d4 de DM.</p><p>Les effets
     sont à gérer manuellement.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -24,8 +24,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.egw3FU0ZyZwfxhtC
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -41,7 +41,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: "-1d4"
+            formula: '-1d4'
           target:
             type: self
             number: 0
@@ -50,7 +50,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -66,9 +66,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -76,4 +76,4 @@ _id: cCDeqmdtTWO1mtfl
 ownership:
   default: 0
 sort: 0
-_key: "!items!cCDeqmdtTWO1mtfl"
+_key: '!items!cCDeqmdtTWO1mtfl'

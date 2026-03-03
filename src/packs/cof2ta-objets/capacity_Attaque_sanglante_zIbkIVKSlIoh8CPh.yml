@@ -4,11 +4,11 @@ type: capacity
 img: icons/skills/melee/blade-tip-chipped-blood-red.webp
 system:
   description: "<p>Le PJ réalise une <strong>attaque de contact</strong> violente\_qui provoque une hémorragie. </p><p>En plus des DM\_normaux, l’attaque <strong>produit un saignement qui\_inflige à la victime +1d6 DM à chaque tour</strong>\_suivant jusqu’à ce que la cible réussisse un test de\_CON difficulté [12 + Mod. de FOR] ou qu’elle\_soit soignée. </p><p>On ne peut cumuler plusieurs effets\_de saignement.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.95
-  slug: ""
+  slug: ''
   inGame: "<p>L'action permet de réaliser l'attaque en reprennant la première arme équipée. Elle ajoute l'effet supplémentaire de Saignement. L'effet fonctionne uniquement en mode Combat.</p><p>L'effet supplémentaire peut être supprimé depuis l'onglet \"Effet\" sur la feuille de la cible.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.dU9Bz1QAOCCbOlO3]{Talent pour la violence}</p>"
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 4
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.zIbkIVKSlIoh8CPh
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -41,11 +41,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: single
             scope: all
@@ -55,10 +55,10 @@ system:
             applyOn: success
             formulaType: damage
             formula: 1d6
-            elementType: ""
+            elementType: ''
             statuses:
               - bleeding
-            duration: "99"
+            duration: '99'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -71,9 +71,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -81,4 +81,4 @@ _id: zIbkIVKSlIoh8CPh
 ownership:
   default: 0
 sort: 0
-_key: "!items!zIbkIVKSlIoh8CPh"
+_key: '!items!zIbkIVKSlIoh8CPh'

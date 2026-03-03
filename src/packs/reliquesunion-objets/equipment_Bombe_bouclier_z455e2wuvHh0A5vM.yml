@@ -2,12 +2,12 @@ type: equipment
 system:
   subtype: consumable
   description: "<p>En brisant cette bombe au sol, une bulle de protection\_magique apparait instantanément sur la case. </p><p>Toutes créature à l’intérieur de\_la bulle reçoit DEF+5 et ne peut pas être touchée par des attaques à distances\_non magiques (les flèches, carreaux, billes, armes de lancer tapent contre la\_bulle et tombent au sol sans dégât). </p><p>La bulle de protection se dissipe après 2\_rounds.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   tags: []
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 1
     destroyIfEmpty: false
@@ -33,8 +33,8 @@ system:
   actions:
     - source: Actor.FJMtWtydebKWXYF0.Item.vl1GZKnvHhpSF2vA
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -52,9 +52,9 @@ system:
           source: Actor.FJMtWtydebKWXYF0.Item.vl1GZKnvHhpSF2vA
           subtype: combat
           target: def
-          value: "5"
+          value: '5'
           apply: both
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           target:
@@ -65,10 +65,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
-            duration: "2"
+            duration: '2'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -85,9 +85,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1770780808813
   modifiedTime: 1772238241490
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -96,4 +96,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: z455e2wuvHh0A5vM
 sort: 0
-_key: "!items!z455e2wuvHh0A5vM"
+_key: '!items!z455e2wuvHh0A5vM'

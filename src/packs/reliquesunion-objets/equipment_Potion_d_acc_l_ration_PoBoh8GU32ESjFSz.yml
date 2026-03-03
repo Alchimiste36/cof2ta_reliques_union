@@ -1,8 +1,7 @@
 folder: 8DZlr3ptfsd78d8T
 name: Potion d'accélération
 type: equipment
-img: >-
-  icons/consumables/potions/bottle-conical-corked-yellow.webp
+img: icons/consumables/potions/bottle-conical-corked-yellow.webp
 system:
   description: >-
     <p>L'utilisateur voit son métabolisme s’accélérer pendant 1d4° rounds. Il
@@ -13,13 +12,13 @@ system:
     cumuler cette réduction de ‑1 PM avec une Concentration (L) (voir le
     chapitre « La magie », page 227). Par exemple, une Désintégration lancée de
     cette façon coûtera 5 – 2 – 1 = 2 PM.</p>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: potion-dacceleration
   tags: []
   subtype: consumable
   martialCategory: paddedClothFur
-  damagetype: ""
+  damagetype: ''
   quantity:
     current: 1
     max: null
@@ -46,8 +45,8 @@ system:
   actions:
     - source: Item.qLL0ptDGJSSMZIzR
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
@@ -73,7 +72,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -81,7 +80,7 @@ system:
     - source: Item.qLL0ptDGJSSMZIzR
       indice: 1
       label: DEF +3
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -94,15 +93,15 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: equipment
           source: Item.qLL0ptDGJSSMZIzR
           subtype: combat
           target: def
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
       actionType: none
   defense: null
@@ -118,12 +117,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771019143715
   modifiedTime: 1771019143715
   lastModifiedBy: MdLP35I2yaa8z7GV
 _id: PoBoh8GU32ESjFSz
 sort: 800000
-_key: "!items!PoBoh8GU32ESjFSz"
+_key: '!items!PoBoh8GU32ESjFSz'

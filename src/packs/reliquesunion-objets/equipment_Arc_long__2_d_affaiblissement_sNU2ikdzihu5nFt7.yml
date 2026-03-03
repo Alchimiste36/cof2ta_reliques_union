@@ -1,8 +1,7 @@
 folder: fkaQ5zi2WGOp22kb
 name: Arc long +2 d'affaiblissement
 type: equipment
-img: >-
-  icons/weapons/bows/longbow-recurve-brown.webp
+img: icons/weapons/bows/longbow-recurve-brown.webp
 system:
   description: >-
     <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p><strong>Arme magique de
@@ -10,7 +9,7 @@ system:
     DM</p></li><li><p>Lorsqu'une flèche touche une être vivant, il doit réussir
     un test de CON difficulté 15 ou être affaibli pendant 1d6
     minutes.</p></li></ul>
-  source: ""
+  source: ''
   origin: Livre du Joueur p.158
   slug: arc-long
   tags: []
@@ -54,8 +53,8 @@ system:
   actions:
     - source: Actor.vU8X9FHu74kiJtcM.Item.pc4BqqnLiwUwdfeR
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: a
@@ -73,9 +72,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atd +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d8 +2
           target:
@@ -87,13 +86,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Actor.vU8X9FHu74kiJtcM.Item.pc4BqqnLiwUwdfeR
       indice: 1
       label: Si touché
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -109,7 +108,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -118,8 +117,8 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - weakened
             duration: 2d6*10
@@ -136,9 +135,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771884502775
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -147,4 +146,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: sNU2ikdzihu5nFt7
 sort: 2300000
-_key: "!items!sNU2ikdzihu5nFt7"
+_key: '!items!sNU2ikdzihu5nFt7'

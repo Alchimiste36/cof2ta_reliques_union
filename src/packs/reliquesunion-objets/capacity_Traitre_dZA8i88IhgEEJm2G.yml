@@ -1,8 +1,7 @@
 folder: lDxeo77mNAWMtUbR
 name: Traitre
 type: capacity
-img: >-
-  icons/weapons/daggers/dagger-simple-blue.webp
+img: icons/weapons/daggers/dagger-simple-blue.webp
 _id: dZA8i88IhgEEJm2G
 system:
   description: >-
@@ -12,15 +11,15 @@ system:
     l'adversaire.</p><p><strong>Il obtient +2 ATT et 2 PV de saignement</strong>
     en plus des DM de l'arme.</p><p>Il perd <strong>- 2 DEF</strong>
     <strong>jusqu'à son prochain tour</strong>.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser une attaque en reprenant les
     valeurs de la première arme équipée en ajoutant le bonus et l'effet de
     saignement.</p><p>La deuxième action activable/désactivable permet d'obtenir
     le malus à la DEF suite à l'attaque.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 3
@@ -34,8 +33,8 @@ system:
   actions:
     - source: Item.dZA8i88IhgEEJm2G
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -53,11 +52,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: single
             scope: all
@@ -67,17 +66,17 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: "2"
-            elementType: ""
+            formula: '2'
+            elementType: ''
             statuses:
               - bleeding
             unit: combat
-            duration: "0"
+            duration: '0'
       modifiers: []
     - source: Item.dZA8i88IhgEEJm2G
       indice: 1
       label: DEF -2
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -95,9 +94,9 @@ system:
           source: Item.dZA8i88IhgEEJm2G
           subtype: combat
           target: def
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -108,9 +107,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -118,4 +117,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!dZA8i88IhgEEJm2G"
+_key: '!items!dZA8i88IhgEEJm2G'

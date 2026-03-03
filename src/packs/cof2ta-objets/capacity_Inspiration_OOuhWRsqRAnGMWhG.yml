@@ -4,13 +4,13 @@ type: capacity
 img: icons/magic/control/buff-luck-fortune-gold.webp
 system:
   description: "<p>Au prix d’une <strong>action d’attaque</strong>, le\_mystique désigne <strong>un allié à moins de 10 mètres</strong>\_et lui octroie un bonus de <strong>+1 à tous ses tests\_pendant [2 + Mod. SAG] tours.</strong> </p><p>Il peut lancer\_une inspiration à chaque tour mais <strong>ne peut\_maintenir plus de [1 + Mod. INT] inspirations</strong>\_à la fois (minimum 1).</p><blockquote><p>Chaque profil de la famille des mystiques\_possède un talent magique, une capacité supplémentaire, décrit(e) dans la liste ci-dessous.</p><p>Bien que les talents magiques soient des sorts\_‒ des capacités dont le nom est suivi d’un\_astérisque (*) ‒, ils ne requièrent pas la consommation de points de magie (PM) pour être\_lancés et ne peuvent pas bénéficier des effets\_d’une concentration (voir Système de jeu - La\_magie page 112).</p></blockquote>"
-  source: ""
+  source: ''
   origin: Livre du joueur p45
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet d'appliquer un effet sur un cible qui donne le bonus
     pendant 2+@per rounds.</p>
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   rank: 0
@@ -24,8 +24,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hYSBJ5Vmvqv4By3l
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -43,30 +43,30 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OOuhWRsqRAnGMWhG
           subtype: combat
           target: melee
-          value: "1"
+          value: '1'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OOuhWRsqRAnGMWhG
           subtype: combat
           target: melee
-          value: "1"
+          value: '1'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OOuhWRsqRAnGMWhG
           subtype: combat
           target: melee
-          value: "1"
+          value: '1'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.OOuhWRsqRAnGMWhG
           subtype: skill
           target: all
-          value: "1"
+          value: '1'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           target:
@@ -77,8 +77,8 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
             duration: 2+@per
             unit: round
@@ -96,9 +96,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -106,4 +106,4 @@ _id: OOuhWRsqRAnGMWhG
 ownership:
   default: 0
 sort: 0
-_key: "!items!OOuhWRsqRAnGMWhG"
+_key: '!items!OOuhWRsqRAnGMWhG'

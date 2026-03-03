@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Cheval de guerre lourd
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/cheval_lourd.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/cheval_lourd.webp
 system:
   abilities:
     agi:
@@ -141,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Le cheval de guerre ne souffre pas des pénalités\_du cheval de selle en combat : son score\_d'attaque passe à +5. </p><p>Un cheval de guerre\_est apte à porter une barde, un ensemble de\_protections pour le cheval :</p><ul><li><p>Un caparaçon de\_mailles augmente la DEF du cheval de +3\_pour un prix de 100 pa. </p></li><li><p>Une barde de plaques\_de métal apporte un bonus de +5 en DEF pour un prix de 300 pa. Les bardes octroient\_un malus en Init. au cheval et à son cavalier\_égal au bonus de DEF.</p></li></ul><p><strong>Un cheval sauvage, non dressé</strong>, se défend\_comme s'il était un cheval de guerre léger. </p><p><strong>Un cheval de guerre lourd</strong> voit son NC\_augmenter de +1 : il gagne +2 en DEF, en\_attaque, aux DM et augmente ses PV de 20\_(boss de rang 1).</p>"
     languages: []
     properties: "<p><strong>Monture :</strong> la créature double son Mod. de FOR\_pour porter une charge.</p>"
@@ -167,7 +168,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/cheval_lourd_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/cheval_lourd_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -176,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -246,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -258,8 +260,8 @@ items:
       actions:
         - source: Actor.sPfTPCKWT7VXVHsA.Item.DfnKzZLuQgf0UnNt
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -277,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "7"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '7'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+6
               target:
@@ -290,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -305,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!HHIj0KkVZJtdFnLW.DfnKzZLuQgf0UnNt"
+    _key: '!actors.items!HHIj0KkVZJtdFnLW.DfnKzZLuQgf0UnNt'
   - folder: uvHtoSiBBvs1nfqu
     name: Carapaçon de mailles
     type: capacity
@@ -319,11 +321,11 @@ items:
     _id: eoG90O1GSPsGhjak
     system:
       description: <p>Armure de mailles pour cheval de guerre.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Activer l'action pour obtenir le bonus en DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -337,8 +339,8 @@ items:
       actions:
         - source: Actor.HHIj0KkVZJtdFnLW.Item.eoG90O1GSPsGhjak
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -356,9 +358,9 @@ items:
               source: Actor.HHIj0KkVZJtdFnLW.Item.eoG90O1GSPsGhjak
               subtype: combat
               target: def
-              value: "3"
+              value: '3'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -370,27 +372,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!HHIj0KkVZJtdFnLW.eoG90O1GSPsGhjak"
+    _key: '!actors.items!HHIj0KkVZJtdFnLW.eoG90O1GSPsGhjak'
   - folder: uvHtoSiBBvs1nfqu
     name: Bardes
     type: capacity
     img: icons/equipment/chest/breastplate-collared-steel.webp
     system:
       description: <p>Armure de plaque pour cheval de guerre.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Activer l'action pour obtenir le bonus en DEF et le malus en
         Initiative. Le malus en initiative doit aussi être ajouté manuellement
         pour le cavalier.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -404,8 +406,8 @@ items:
       actions:
         - source: Actor.HHIj0KkVZJtdFnLW.Item.lz4FdckQIy7KtYZT
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -423,16 +425,16 @@ items:
               source: Actor.HHIj0KkVZJtdFnLW.Item.lz4FdckQIy7KtYZT
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.HHIj0KkVZJtdFnLW.Item.lz4FdckQIy7KtYZT
               subtype: combat
               target: init
-              value: "-5"
+              value: '-5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -444,23 +446,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: lz4FdckQIy7KtYZT
     ownership:
       default: 0
-    _key: "!actors.items!HHIj0KkVZJtdFnLW.lz4FdckQIy7KtYZT"
+    _key: '!actors.items!HHIj0KkVZJtdFnLW.lz4FdckQIy7KtYZT'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -468,4 +470,4 @@ _id: HHIj0KkVZJtdFnLW
 ownership:
   default: 0
 sort: 0
-_key: "!actors!HHIj0KkVZJtdFnLW"
+_key: '!actors!HHIj0KkVZJtdFnLW'

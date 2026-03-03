@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Loup solitaire
 type: encounter
 _id: 4iWQg78nEdAcvmwv
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_solitaire.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_solitaire.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Seul, le loup n'a pas usage de la capacité\_Interchangeables et son NC passe à ½. Ce\_profil correspond à un loup d'une cinquantaine de kilos.\_</p><ul><li><p><strong><span style=\"text-decoration: underline;\">Chien :</span></strong> vous pouvez aussi utiliser le profil du\_loup pour les gros chiens en retirant de 2 à 4 PV</p></li></ul>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +169,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_solitaire_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/loup_solitaire_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -250,11 +252,11 @@ items:
     _id: qQApA5dUsHPYWhhc
     system:
       description: "<p>L'odorat supérieur des loups leur\_permet d'obtenir la SAG en Carac. supérieure.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent donnant un dé bonus en PER.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -268,8 +270,8 @@ items:
       actions:
         - source: Actor.4iWQg78nEdAcvmwv.Item.qQApA5dUsHPYWhhc
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -287,9 +289,9 @@ items:
               source: Actor.4iWQg78nEdAcvmwv.Item.qQApA5dUsHPYWhhc
               subtype: bonusDice
               target: per
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -301,23 +303,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!4iWQg78nEdAcvmwv.qQApA5dUsHPYWhhc"
+    _key: '!actors.items!4iWQg78nEdAcvmwv.qQApA5dUsHPYWhhc'
   - folder: ds9TVmAEZY0LnDG1
     name: Morsures
     type: attack
     img: icons/svg/sword.svg
     _id: Kl1gyg9Wp5hJ5pI9
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -328,8 +330,8 @@ items:
       actions:
         - source: Item.Dz4Yb3syZWVlYJ1z
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -347,9 +349,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+1
               target:
@@ -360,7 +362,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -371,26 +373,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!4iWQg78nEdAcvmwv.Kl1gyg9Wp5hJ5pI9"
+    _key: '!actors.items!4iWQg78nEdAcvmwv.Kl1gyg9Wp5hJ5pI9'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!4iWQg78nEdAcvmwv"
+_key: '!actors!4iWQg78nEdAcvmwv'

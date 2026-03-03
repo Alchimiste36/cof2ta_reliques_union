@@ -1,8 +1,7 @@
 folder: Xr4lKI9brFJ7NkYl
 name: Danse de Combat
 type: capacity
-img: >-
-  icons/magic/movement/abstract-ribbons-red-orange.webp
+img: icons/magic/movement/abstract-ribbons-red-orange.webp
 _id: av7pkiDQ1oXsbvsm
 system:
   description: >-
@@ -13,14 +12,14 @@ system:
     avec un Dé bonus contre le CHA</strong> de l'adversaire :</p><ul><li>Si
     réussi =&gt; <strong>Prochaine attaque +5</strong></li><li>Si raté =&gt;
     <strong>Prochaine attaque -2</strong></li></ul>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser le test de FOR avec le Dé bonus
     contre le CHA.</p><p>Les deux actions suivant sont activables/désactivables
     en fonction du résultat du test.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 1
@@ -35,7 +34,7 @@ system:
     - source: Item.av7pkiDQ1oXsbvsm
       indice: 0
       label: Intimidation
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -53,11 +52,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@for"
-            crit: ""
-            difficulty: "@oppose.cha"
+            formula: '@for'
+            crit: ''
+            difficulty: '@oppose.cha'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -67,13 +66,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Item.av7pkiDQ1oXsbvsm
       indice: 1
       label: Si réussi
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -91,14 +90,14 @@ system:
           source: Item.av7pkiDQ1oXsbvsm
           subtype: combat
           target: melee
-          value: "5"
+          value: '5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Item.av7pkiDQ1oXsbvsm
       indice: 2
       label: Si raté
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -116,9 +115,9 @@ system:
           source: Item.av7pkiDQ1oXsbvsm
           subtype: combat
           target: melee
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -129,9 +128,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -139,4 +138,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!av7pkiDQ1oXsbvsm"
+_key: '!items!av7pkiDQ1oXsbvsm'

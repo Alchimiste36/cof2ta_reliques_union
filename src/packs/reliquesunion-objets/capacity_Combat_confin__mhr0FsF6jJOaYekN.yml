@@ -1,16 +1,15 @@
 folder: 0mzQVFKofG1vbePQ
 name: Combat confiné
 type: capacity
-img: >-
-  icons/skills/melee/hand-grip-staff-blue.webp
+img: icons/skills/melee/hand-grip-staff-blue.webp
 _id: mhr0FsF6jJOaYekN
 system:
   description: "<p>Le personnage obtient un bonus de <strong>+2 en\_attaque</strong> lorsqu’il combat <strong>sous terre</strong> ou <strong>dans un\_endroit étroit ou exigu</strong> (couloir, escalier…).</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p172
-  slug: ""
+  slug: ''
   inGame: <p>Action activable/désactivable pour obtenir le bonus en attaque.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -25,7 +24,7 @@ system:
     - source: Item.mhr0FsF6jJOaYekN
       indice: 0
       label: Combat sous terre / exigu
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,23 +42,23 @@ system:
           source: Item.mhr0FsF6jJOaYekN
           subtype: combat
           target: melee
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.mhr0FsF6jJOaYekN
           subtype: combat
           target: ranged
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.mhr0FsF6jJOaYekN
           subtype: combat
           target: magic
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -70,9 +69,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -80,4 +79,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!mhr0FsF6jJOaYekN"
+_key: '!items!mhr0FsF6jJOaYekN'

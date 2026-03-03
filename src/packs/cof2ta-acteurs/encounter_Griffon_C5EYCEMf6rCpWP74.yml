@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Le griffon est une puissante créature au corps\_de lion pourvue de la tête et des ailes d'un\_aigle. Ce mélange ne manque pas de majesté\_et cet animal fantastique est parfois utilisé\_comme monture par les chevaliers. </p><p>La créature\_pèse environ 300 kg pour une envergure de\_7 mètres. Un griffon est plus intelligent qu'un\_simple animal et, même s'il ne parle pas, il\_peut apprendre à comprendre une langue s'il\_y est habitué très tôt.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/griffon_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/griffon_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -250,11 +251,11 @@ items:
     _id: L17kMnNNaB5C8qLk
     system:
       description: "<p>La créature a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol.</p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -269,7 +270,7 @@ items:
         - source: Actor.C5EYCEMf6rCpWP74.Item.L17kMnNNaB5C8qLk
           indice: 0
           label: Première Attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -287,9 +288,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "15"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '15'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8 +1d6
               target:
@@ -300,7 +301,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -314,21 +315,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!C5EYCEMf6rCpWP74.L17kMnNNaB5C8qLk"
+    _key: '!actors.items!C5EYCEMf6rCpWP74.L17kMnNNaB5C8qLk'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -337,8 +338,8 @@ items:
       actions:
         - source: Actor.C5EYCEMf6rCpWP74.Item.6n3aYUAXfyui6VxW
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -356,9 +357,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8
               target:
@@ -369,7 +370,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -384,26 +385,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!C5EYCEMf6rCpWP74.6n3aYUAXfyui6VxW"
+    _key: '!actors.items!C5EYCEMf6rCpWP74.6n3aYUAXfyui6VxW'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!C5EYCEMf6rCpWP74"
+_key: '!actors!C5EYCEMf6rCpWP74'

@@ -4,13 +4,13 @@ type: equipment
 img: icons/equipment/chest/robe-layered-red.webp
 system:
   description: "<p><strong>Niveau de magie : 10</strong></p><p>Relique unique des Elfes rouges, cette robe rouge\_et or émet toujours une douce aura jaunâtre.\_Elle confère les avantages suivants :</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Vision dans le noir :</span></strong></span> dans le noir total, le\_personnage voit comme dans la pénombre\_jusqu'à 30 mètres.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Résistance au feu et au froid :</span></strong></span> le personnage\_gagne une RD de 10 contre le feu et le froid.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Explosion ardente :</span></strong></span> trois fois par jour, au prix\_d'une action d'attaque, le personnage émet une\_explosion de flammes centrée sur lui-même et\_de 6 mètres de rayon. Toutes les créatures prises\_dans la déflagration (sauf le personnage) doivent\_réussir un test de DEX difficulté 15 sous peine\_de subir 6d6 DM. La réussite du test permet\_de réduit les DM de moitié.</p>"
-  source: ""
+  source: ''
   origin: Livre du Meneur p.191
-  slug: ""
+  slug: ''
   subtype: misc
   tags: []
   martialCategory: paddedClothFur
-  damagetype: ""
+  damagetype: ''
   quantity:
     current: 1
     destroyIfEmpty: false
@@ -35,8 +35,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ARDknoszGTN7t98S
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -54,14 +54,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.umbyj3AAy1JPqRM2
           subtype: state
           target: darkvision
-          value: "30"
+          value: '30'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.umbyj3AAy1JPqRM2
       indice: 1
       label: RD vs Feu et Froid
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -79,14 +79,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.umbyj3AAy1JPqRM2
           subtype: combat
           target: dr
-          value: "10"
+          value: '10'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.umbyj3AAy1JPqRM2
       indice: 2
       label: 6m de rayon
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -111,7 +111,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -126,9 +126,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -136,4 +136,4 @@ _id: umbyj3AAy1JPqRM2
 ownership:
   default: 0
 sort: 0
-_key: "!items!umbyj3AAy1JPqRM2"
+_key: '!items!umbyj3AAy1JPqRM2'

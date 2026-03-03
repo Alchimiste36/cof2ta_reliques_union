@@ -4,14 +4,14 @@ type: capacity
 img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
 system:
   description: "<p>Le PJ ajoute son Mod. de <strong>CHA en DEF et en\_initiative</strong> (en plus du Mod. habituel de DEX).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute son Mod. de\_CHA à tous les tests de discrétion et d’esquive.</p></blockquote>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.126
-  slug: ""
+  slug: ''
   inGame: >-
     <p>Bonus permanent en DEF et Initiative.</p><p>Si le PJ obtient la capacité
     avancée, ajoutez simplement la Condition "est appris" sur la seconde action
     permettant d'obtenir le bonus permanent aux tests d'AGI.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 2
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -44,21 +44,21 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.hqMCp45eYAu0vome
           subtype: combat
           target: init
-          value: "@cha"
+          value: '@cha'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.QYCuur9DZP54cAQ6
           subtype: combat
           target: def
-          value: "@cha"
+          value: '@cha'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.QYCuur9DZP54cAQ6
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -75,7 +75,7 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.QYCuur9DZP54cAQ6
           subtype: skill
           target: agi
-          value: "@cha"
+          value: '@cha'
           apply: self
           additionalInfos: Discrétion / Esquive
       resolvers: []
@@ -88,9 +88,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -98,4 +98,4 @@ _id: QYCuur9DZP54cAQ6
 ownership:
   default: 0
 sort: 0
-_key: "!items!QYCuur9DZP54cAQ6"
+_key: '!items!QYCuur9DZP54cAQ6'

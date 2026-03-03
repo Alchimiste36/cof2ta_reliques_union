@@ -2,12 +2,12 @@ type: equipment
 system:
   subtype: consumable
   description: "<p>Cette pâte sent fortement les champignons. </p><p>Quand on respire la pâte légèrement on a des facilités à s’endormir. Si on\_oblige une personne à respirer fortement de la pâte en contact avec le nez et\_la bouche, avec un mouchoir par exemple, la personne doit réussir un test de CON 20 ou devenir muet pendant 2d10 heures.</p><p> Ajouter +2 au DD du\_test par round en contact avec les voies respiratoires.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   tags: []
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 2
     destroyIfEmpty: false
@@ -33,8 +33,8 @@ system:
   actions:
     - source: Actor.rwst2vEmQPMvEUGy.Item.eYhsolfZJ7wjQoza
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -50,7 +50,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "20"
+          saveDifficulty: '20'
           target:
             type: single
             scope: all
@@ -59,12 +59,12 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - silence
             unit: unlimited
-            duration: "0"
+            duration: '0'
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -81,9 +81,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1770775579053
   modifiedTime: 1772238209679
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -92,4 +92,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: uMux0pNjs73Usngm
 sort: 500000
-_key: "!items!uMux0pNjs73Usngm"
+_key: '!items!uMux0pNjs73Usngm'

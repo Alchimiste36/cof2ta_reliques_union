@@ -1,19 +1,18 @@
 folder: bbhLR63kC0zCsWTW
 name: Évaluer l’adversité
 type: capacity
-img: >-
-  icons/magic/perception/eye-ringed-glow-angry-red.webp
+img: icons/magic/perception/eye-ringed-glow-angry-red.webp
 _id: HwbhdZ9M0p25r6oY
 system:
   description: "<p>L’homme d’armes a appris à jauger lorsqu’il a\_affaire à plus forte partie. </p><p>Faites un <strong>test opposé\_d’attaque au contact contre une créature en\_vue</strong>. </p><p>En\_cas de réussite, <strong>le MJ vous informe de ses\_valeurs de DEF et d’attaque</strong>. </p><p>Si\_vous combattez\_cette créature, vous <strong>obtenez un dé bonus sur un\_test d’attaque</strong> de votre choix.</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p179
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser le test opposé d'attaque de
     contact.</p><p>La deuxième action activable/désactivable permet d'obtenir le
     Dé bonus en attaque.</p>
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   rank: 5
@@ -27,8 +26,8 @@ system:
   actions:
     - source: Item.HwbhdZ9M0p25r6oY
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -46,11 +45,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@oppose.atc"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@oppose.atc'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -60,13 +59,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Item.HwbhdZ9M0p25r6oY
       indice: 1
       label: Dé bonus
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -84,23 +83,23 @@ system:
           source: Item.HwbhdZ9M0p25r6oY
           subtype: bonusDice
           target: melee
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.HwbhdZ9M0p25r6oY
           subtype: bonusDice
           target: ranged
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Item.HwbhdZ9M0p25r6oY
           subtype: bonusDice
           target: magic
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -111,9 +110,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -121,4 +120,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!HwbhdZ9M0p25r6oY"
+_key: '!items!HwbhdZ9M0p25r6oY'

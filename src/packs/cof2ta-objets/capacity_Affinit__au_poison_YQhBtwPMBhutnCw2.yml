@@ -4,15 +4,15 @@ type: capacity
 img: icons/creatures/abilities/stinger-poison-scorpion-brown.webp
 system:
   description: "<p>Après des années passées en compagnie d’êtres\_qui rampent et piquent, le PJ a développé une\_aptitude à maîtriser le poison de ces derniers.\_</p><p>S’il utilise <strong>une arme tranchante ou perforante</strong>,\_comme une dague ou un épieu, il <strong>peut\_ l’enduire\_de poison.</strong> </p><p>En cas d’<strong>attaque de contact réussie</strong>, le\_PJ <strong>inflige 1d6 DM supplémentaires au début de\_chaque tour de la créature affectée</strong>. </p><p>Après avoir\_subi les effets du poison, la victime peut faire\_un test de CON difficulté [10 + Mod d’INT\_du PJ] pour stopper les effets du poison. L’effet\_de poison n’est <strong>pas cumulable</strong> et la <strong>réussite d’un\_test de CON immunise au poison pour 24 h</strong>.\_</p><p>En plus des effets décrits ci-dessus, le PJ gagne\_désormais un bonus de <strong>+5 à tous les tests de\_CON destinés à résister au poison</strong>.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.155
-  slug: ""
+  slug: ''
   inGame: >-
     <p>Bonus permanent aux tests de CON.</p><p>L'action permet d'infliger 1d6 DM
     a une cible sélectionnée et d'appliquer un effet suppélementaire pour la
     durée du combat sur la cible. L'effet supplémentaire fonctionne uniquement
     en Mode Combat.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YQhBtwPMBhutnCw2
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -45,14 +45,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YQhBtwPMBhutnCw2
           subtype: skill
           target: con
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Résister au poison
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YQhBtwPMBhutnCw2
       indice: 1
       label: Si attaque contact réussie
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -80,7 +80,7 @@ system:
             formula: 1d6
             elementType: poison
             statuses: []
-            duration: "1"
+            duration: '1'
             unit: combat
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -96,9 +96,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -106,4 +106,4 @@ _id: YQhBtwPMBhutnCw2
 ownership:
   default: 0
 sort: 0
-_key: "!items!YQhBtwPMBhutnCw2"
+_key: '!items!YQhBtwPMBhutnCw2'

@@ -6,13 +6,13 @@ img: >-
 _id: XQUi3mcA2ZSm3f1c
 system:
   description: "<p>Bien que le bouclier semble fait de métal strié de rainures verdâtres, il s’agit\_bien d’écorce.</p><p>C’est un bout de l’Arbre-Mère de la forêt du Val Rouge qui\_a été façonné en bouclier d’environ 80cm de diamètre.\_Lorsqu’on le porte\_son poids est étrangement faible et les sangles de cuir dessous sont très\_agréables à tenir en main.</p><p>Après 24h en sa possession, la personne ressent\_l’énergie magique du bouclier qui lui donne une sensation spéciale, une\_vibration étrange.</p><p>A l’utilisation, <strong>le bouclier confère un bonus de défense magique de +2 en plus de son bonus de +1 en DEF physique, contre les attaques magique la DEF est augmentée de +1 et une RD de +1.</strong></p><p>Après 24 en sa possession, <strong>le bouclier confère un bonus de +1 PC.</strong></p><p></p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   subtype: shield
   tags: []
   martialCategory: smallShield
-  damagetype: ""
+  damagetype: ''
   quantity:
     current: 1
     destroyIfEmpty: false
@@ -37,8 +37,8 @@ system:
   actions:
     - source: Item.XQUi3mcA2ZSm3f1c
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -56,21 +56,21 @@ system:
           source: Item.XQUi3mcA2ZSm3f1c
           subtype: resource
           target: fp
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.XQUi3mcA2ZSm3f1c
           subtype: combat
           target: dr
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Item.XQUi3mcA2ZSm3f1c
       indice: 1
       label: DEF vs MAGIE
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -88,9 +88,9 @@ system:
           source: Item.XQUi3mcA2ZSm3f1c
           subtype: combat
           target: def
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   defense: 1
   magicalDefense: 2
@@ -104,10 +104,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1770435848957
   modifiedTime: 1772237958111
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!XQUi3mcA2ZSm3f1c"
+_key: '!items!XQUi3mcA2ZSm3f1c'

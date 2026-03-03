@@ -142,22 +142,22 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: >-
         <p>Jonio Frest est un petit bandit local qui traine beaucoup avec les
         frères Arek. Alcoolique notoire, il a passé beaucoup de soirées dans une
         cellule.</p><p>Il a activement participé aux actions de vengeance sur
         les elfes sylvains après les premières attaques.</p>
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 1
@@ -182,7 +182,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -260,10 +260,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -272,8 +272,8 @@ items:
       actions:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -291,9 +291,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+6"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+6'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+5
               target:
@@ -305,7 +305,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Poignard
@@ -319,28 +319,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.2g2e34YRX4hf7nYV"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.2g2e34YRX4hf7nYV'
   - folder: saH8hGLZpV1p2SF8
     name: DEF -1
     type: capacity
-    img: >-
-      icons/skills/melee/shield-damaged-broken-orange.webp
+    img: icons/skills/melee/shield-damaged-broken-orange.webp
     _id: gXP7FiogXGmSe7p3
     system:
       description: >-
         <p>Capacité à activer si le combattant utilise une hache à deux
         mains.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -355,7 +354,7 @@ items:
         - source: Actor.Ov8bouNrZwcAexRU.Item.gXP7FiogXGmSe7p3
           indice: 0
           label: Si combat à la hache
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -373,9 +372,9 @@ items:
               source: Actor.Ov8bouNrZwcAexRU.Item.gXP7FiogXGmSe7p3
               subtype: combat
               target: def
-              value: "-1"
+              value: '-1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -387,18 +386,17 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.gXP7FiogXGmSe7p3"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.gXP7FiogXGmSe7p3'
   - folder: OBPli02oRaBQq6Ee
     name: Poignard
     type: equipment
-    img: >-
-      icons/weapons/swords/shortsword-simple.webp
+    img: icons/weapons/swords/shortsword-simple.webp
     _id: Wxny13TQpy1JlfaR
     system:
       description: >-
@@ -410,7 +408,7 @@ items:
         combat rapproché qu'en projection</span></span></p><p>
         </p><p><strong><span class="ILfuVd" lang="fr"><span class="hgKElc">Arme
         légère</span></span></strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: epee-courte
       tags:
@@ -443,8 +441,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -462,9 +460,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for
               target:
@@ -476,12 +474,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
       damagetype: slashing
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -497,30 +495,29 @@ items:
       compendiumSource: Item.8HGdjYpAtdPT57QQ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.Wxny13TQpy1JlfaR"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.Wxny13TQpy1JlfaR'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
     type: equipment
-    img: >-
-      icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
     _id: gWMEcYFuKplnLHUp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-simple
       tags: []
       subtype: armor
       martialCategory: leather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -554,30 +551,29 @@ items:
       compendiumSource: Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.gWMEcYFuKplnLHUp"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.gWMEcYFuKplnLHUp'
   - folder: w6M8tJF69ktGmzxc
     name: Briquet à silex
     type: equipment
-    img: >-
-      icons/commodities/stone/geode-raw-black.webp
+    img: icons/commodities/stone/geode-raw-black.webp
     _id: 5802OCuGV8wfDNgE
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: briquet-a-silex
       tags: []
       subtype: misc
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       quantity:
         current: 1
         max: null
@@ -609,30 +605,29 @@ items:
       compendiumSource: Item.J2tiPBx1DjmQAmIg
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.5802OCuGV8wfDNgE"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.5802OCuGV8wfDNgE'
   - folder: w6M8tJF69ktGmzxc
     name: Outre
     type: equipment
-    img: >-
-      icons/sundries/survival/wetskin-leather-purple.webp
+    img: icons/sundries/survival/wetskin-leather-purple.webp
     _id: AylDKD7w7f1OSatO
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: outre
       subtype: misc
       tags: []
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       defense: null
       magicalDefense: null
       quantity:
@@ -676,20 +671,19 @@ items:
       compendiumSource: Item.Son0yhz6X0jSLVXA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.AylDKD7w7f1OSatO"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.AylDKD7w7f1OSatO'
   - folder: nB3SXs44buWvXPuP
     name: l'Assomoir
     type: equipment
-    img: >-
-      icons/consumables/drinks/alcohol-jug-spirits-brown.webp
+    img: icons/consumables/drinks/alcohol-jug-spirits-brown.webp
     _id: 2LQcahxwPXmJwHxh
     system:
       description: >-
@@ -700,13 +694,13 @@ items:
         journée de travail quelques gorgées permettent de dromir comme un bébé
         en oubliant les douleurs ou les tracas.</p><p>Vendue en bouteille de
         terre cuite de 1 litre.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: consumable
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -742,15 +736,14 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.bTbQpYlrjXK7TBsh
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Ov8bouNrZwcAexRU.2LQcahxwPXmJwHxh"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.2LQcahxwPXmJwHxh'
   - name: Bourse
     type: equipment
-    img: >-
-      icons/containers/bags/coinpouch-simple-leather-silver-brown.webp
+    img: icons/containers/bags/coinpouch-simple-leather-silver-brown.webp
     _id: ds9KkdiVem8ZuZfE
     system:
       description: >-
@@ -758,13 +751,13 @@ items:
         en cuir permettant de la fermer et d'une autre pour la fixer à la
         ceinture. Elle est suffisamment grande pour contenir 100 à 200 pièces ou
         deux pommes.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -797,32 +790,31 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.54loy4hNFHAkJDj8
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.ds9KkdiVem8ZuZfE"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.ds9KkdiVem8ZuZfE'
   - folder: w6M8tJF69ktGmzxc
     name: Outils de crochetage
     type: equipment
-    img: >-
-      icons/tools/hand/lockpicks-steel-grey.webp
+    img: icons/tools/hand/lockpicks-steel-grey.webp
     _id: ryZjY8WPv6qpeEwg
     system:
       description: >-
         <p>Sans ces outils, une pénalité de ‑10 est infligée aux tests d’AGI
         (Crocheter).</p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.160
       slug: outils-de-crochetage
       tags: []
       subtype: misc
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       quantity:
         current: 1
         max: null
@@ -854,29 +846,28 @@ items:
       compendiumSource: Item.j7pPHT65fSxCwWdy
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.ryZjY8WPv6qpeEwg"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.ryZjY8WPv6qpeEwg'
   - name: Ficelle (15m)
     type: equipment
-    img: >-
-      icons/sundries/survival/rope-coiled-brown.webp
+    img: icons/sundries/survival/rope-coiled-brown.webp
     _id: VpnQOJkvuhMYLsEo
     system:
       description: "<p>Vendue en pelote ou en bobine, la ficelle permet d'improviser des pièges et des systèmes d'alarme, ou de ramener un objet hors d'atteinte à soi en l'attachant à une flèche ou un carreau. La ficelle a une\_solidité\_de 0,1 point de vie et le\_DD\_pour la briser est de 14.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -908,19 +899,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.2RXQjkCe3DPgdfpX
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.VpnQOJkvuhMYLsEo"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.VpnQOJkvuhMYLsEo'
   - name: Menottes
     type: equipment
-    img: >-
-      icons/sundries/survival/cuffs-shackles-steel.webp
+    img: icons/sundries/survival/cuffs-shackles-steel.webp
     _id: S6h4qjFc9cjjjcVL
     system:
       description: >-
@@ -937,13 +927,13 @@ items:
         prix indiqué. Les créatures de taille Gig, C, TP, Min ou I ne peuvent
         être attachées qu'avec des menottes fabriquées spécialement, ce qui
         coûte au moins 100 fois le prix indiqué.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -976,24 +966,24 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.HCuqxheRwz0SxhXi
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Ov8bouNrZwcAexRU.S6h4qjFc9cjjjcVL"
+    _key: '!actors.items!Ov8bouNrZwcAexRU.S6h4qjFc9cjjjcVL'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.world.cof2ta-acteurs.Actor.tqjvenifpNKBbAFe
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238507682
   modifiedTime: 1772238507682
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -1002,4 +992,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: Ov8bouNrZwcAexRU
 sort: 806250
-_key: "!actors!Ov8bouNrZwcAexRU"
+_key: '!actors!Ov8bouNrZwcAexRU'

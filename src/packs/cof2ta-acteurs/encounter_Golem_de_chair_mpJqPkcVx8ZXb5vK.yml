@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Golem de chair
 type: encounter
 _id: mpJqPkcVx8ZXb5vK
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_chair.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_chair.webp
 system:
   abilities:
     agi:
@@ -142,15 +143,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<h4>Golem de chair</h4><p>Monstre à la fois pitoyable et effrayant, le\_golem de chair est une créature imposante\_mesurant presque 2,50 mètres constituée de\_l'assemblage grossier de divers cadavres.</p><h4>Les Golems</h4><p>Les golems sont des créatures artificielles\_fabriquées à partir d'éléments étranges ou\_précieux et animés grâce aux arcanes de la\_magie runique. Il faut une connaissance\_pointue de la magie pour réussir un tel exploit\_et rares sont les mystiques à en être capables.</p><p>Les golems décrits ici correspondent à des\_gardiens infatigables auquel on confie la\_mission de garder un trésor ou un passage\_pour l'éternité. Généralement, un mot de\_passe prononcé à voix haute ou un symbole\_brandi devant soi permet d'accéder au lieu\_protégé en toute sécurité.</p><p>Les golems sont des créatures non vivantes,\_dépourvues d'esprit, ce qui les immunise à\_toute magie qui affecterait la volonté ou les\_émotions.</p>"
     languages: []
     properties: "<p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Résistance :</span></strong></span> le golem de chair divise par deux tous\_<span style=\"white-space: initial; color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">les DM élémentaires (feu, froid, électricité, acide).</span></p>"
@@ -168,7 +169,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_chair_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_chair_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -251,11 +253,11 @@ items:
       description: >-
         <p>Une réduction de Dommages sauf pour les dommages infligés par les
         armes elfiques.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -270,7 +272,7 @@ items:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.9BakF2tAt93dzDJ9
           indice: 0
           label: RD sauf armes elfiques
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -288,9 +290,9 @@ items:
               source: Actor.mpJqPkcVx8ZXb5vK.Item.9BakF2tAt93dzDJ9
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -302,22 +304,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 9BakF2tAt93dzDJ9
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.9BakF2tAt93dzDJ9"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.9BakF2tAt93dzDJ9'
   - type: attack
     system:
       subtype: melee
       learned: true
       description: <p>2 Attaques</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -326,8 +328,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.IQrMziZLHqI8YYdG
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -345,9 +347,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "12"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '12'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+5
               target:
@@ -358,7 +360,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -373,13 +375,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.IQrMziZLHqI8YYdG"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.IQrMziZLHqI8YYdG'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -387,11 +389,11 @@ items:
     _id: CHTTXpLBOTj0BoUC
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -405,8 +407,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.CHTTXpLBOTj0BoUC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -424,23 +426,23 @@ items:
               source: Actor.mpJqPkcVx8ZXb5vK.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.mpJqPkcVx8ZXb5vK.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.mpJqPkcVx8ZXb5vK.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -452,24 +454,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.CHTTXpLBOTj0BoUC"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.CHTTXpLBOTj0BoUC'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -483,8 +485,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.eoPYfCA9eEFBh4OH
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -502,9 +504,9 @@ items:
               source: Actor.mpJqPkcVx8ZXb5vK.Item.eoPYfCA9eEFBh4OH
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -516,14 +518,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: eoPYfCA9eEFBh4OH
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.eoPYfCA9eEFBh4OH"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.eoPYfCA9eEFBh4OH'
   - folder: uvHtoSiBBvs1nfqu
     name: Enrager
     type: capacity
@@ -531,11 +533,11 @@ items:
     _id: ZmfjiXVbsSfQFknT
     system:
       description: "<p>Lorsqu'il <strong>reçoit un coup critique ou si ses\_PV ont diminué de moitié ou plus</strong>, le golem de chair\_devient enragé. </p><p>Il ignore les pénalités de douleur\_ou la peur, augmente de <strong>+5 son score d'attaque\_au contact</strong> et <strong>ses DM de +1d6</strong>. </p><p><strong>Il peut encore agir\_un tour complet après avoir atteint 0 PV.</strong></p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -549,8 +551,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.ZmfjiXVbsSfQFknT
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -568,16 +570,16 @@ items:
               source: Actor.mpJqPkcVx8ZXb5vK.Item.ZmfjiXVbsSfQFknT
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.mpJqPkcVx8ZXb5vK.Item.ZmfjiXVbsSfQFknT
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -589,24 +591,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.ZmfjiXVbsSfQFknT"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.ZmfjiXVbsSfQFknT'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -620,8 +622,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.l9iWZs9qtoldySJj
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -639,9 +641,9 @@ items:
               source: Actor.mpJqPkcVx8ZXb5vK.Item.l9iWZs9qtoldySJj
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -653,27 +655,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: l9iWZs9qtoldySJj
     ownership:
       default: 0
-    _key: "!actors.items!mpJqPkcVx8ZXb5vK.l9iWZs9qtoldySJj"
+    _key: '!actors.items!mpJqPkcVx8ZXb5vK.l9iWZs9qtoldySJj'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!mpJqPkcVx8ZXb5vK"
+_key: '!actors!mpJqPkcVx8ZXb5vK'

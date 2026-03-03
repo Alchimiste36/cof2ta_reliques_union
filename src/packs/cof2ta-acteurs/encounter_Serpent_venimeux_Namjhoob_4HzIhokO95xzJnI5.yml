@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Serpent venimeux Namjhoob
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/serpent_venimeux.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/serpent_venimeux.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: verySmall
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Ce profil correspond à un serpent d'environ\_un mètre de long (crotale, vipère, etc.) ainsi\_qu'au Namjhoob.</p><h5>Namjhoob</h5><p>Ce serpent de petite taille et aux couleurs\_vives – orange et rouge sang – est extrêmement venimeux. Sa morsure est capable de\_terrasser n'importe quelle créature de taille\_moyenne en quelques minutes seulement. </p><p>Certains spécimens présentent le long de leur\_corps des excroissances kératiques très dures\_permettant une meilleure accroche sur le sol.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,9 +249,9 @@ items:
       subtype: melee
       learned: true
       description: <p>+ poison</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.aEz8xGYDNqdm7SDh.Item.cFLmfCl0ebKko15p
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,11 +279,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "3"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '3'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
-                formula: "1"
+                formula: '1'
               target:
                 type: single
                 number: 0
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,27 +307,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!4HzIhokO95xzJnI5.cFLmfCl0ebKko15p"
+    _key: '!actors.items!4HzIhokO95xzJnI5.cFLmfCl0ebKko15p'
   - folder: uvHtoSiBBvs1nfqu
     name: Venin de Namjhoob
     type: capacity
     img: icons/creatures/abilities/fang-tooth-poison-green.webp
     system:
       description: "<p>La victime d'une morsure de serpent\_venimeux doit faire un <strong>test de CON difficulté\_15</strong> lors de chaque morsure. </p><p>En cas d'échec la\_victime subit <strong>1 point de DM supplémentaire par\_tour pendant 1d6 tours</strong> et, de plus, la victime\_<strong>est affaiblie pour une durée similaire exprimée\_en heures</strong>. Une nouvelle morsure n'augmente\_pas les DM à chaque tour mais cumule la durée\_d'effet (trois morsures venimeuses par serpent\_au maximum).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde pour résister au
         venin et d'appliquer le DM et le statut Affaibli pendant 1d6 rounds.
         </p><p>ATTENTION : le statut est sensé avoir une durée en heures.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -341,7 +342,7 @@ items:
         - source: Actor.4HzIhokO95xzJnI5.Item.j4wizqBSz5gJUucG
           indice: 0
           label: Sauvegarde du venin
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -357,7 +358,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -366,7 +367,7 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: "1"
+                formula: '1'
                 elementType: poison
                 statuses:
                   - weakened
@@ -388,14 +389,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: j4wizqBSz5gJUucG
     ownership:
       default: 0
-    _key: "!actors.items!4HzIhokO95xzJnI5.j4wizqBSz5gJUucG"
+    _key: '!actors.items!4HzIhokO95xzJnI5.j4wizqBSz5gJUucG'
   - folder: uvHtoSiBBvs1nfqu
     name: Crachat
     type: capacity
@@ -403,11 +404,11 @@ items:
     _id: 1ob5tbNhYUPnQo6W
     system:
       description: "<p>Certains serpents crachent leur venin dans les yeux de leur adversaire pour\_l'aveugler. La victime doit réussir un test de DEX\_difficulté 12 ou être aveuglée pour 1d6 tours.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -421,8 +422,8 @@ items:
       actions:
         - source: Actor.4HzIhokO95xzJnI5.Item.1ob5tbNhYUPnQo6W
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -438,7 +439,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "12"
+              saveDifficulty: '12'
               target:
                 type: single
                 scope: all
@@ -447,8 +448,8 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - blind
                 duration: 1d6
@@ -469,22 +470,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!4HzIhokO95xzJnI5.1ob5tbNhYUPnQo6W"
+    _key: '!actors.items!4HzIhokO95xzJnI5.1ob5tbNhYUPnQo6W'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -492,4 +493,4 @@ _id: 4HzIhokO95xzJnI5
 ownership:
   default: 0
 sort: 0
-_key: "!actors!4HzIhokO95xzJnI5"
+_key: '!actors!4HzIhokO95xzJnI5'

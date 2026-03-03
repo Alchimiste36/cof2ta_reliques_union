@@ -1,18 +1,17 @@
 folder: wPnEIoBw8jAgPBDl
 name: Métabolisme Extrême
 type: capacity
-img: >-
-  icons/skills/wounds/injury-pain-body-orange.webp
+img: icons/skills/wounds/injury-pain-body-orange.webp
 _id: LbwU9WUApJnuP8Us
 system:
   description: "<p>S'ils survivent assez longtemps dans leurs souterrains, les Elfes Exsangues comprennent comment se renforcer physiquement grâce à leur forte volonté.</p><p>\_Ils obtiennent une <strong>régénération permanente de 2PV par tours et ils gagnent 3PR</strong>.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de se soigner de 2 PV.</p><p>La deuxième action
     donne un bonus permanent de +3 DR.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 5
@@ -26,8 +25,8 @@ system:
   actions:
     - source: Item.LbwU9WUApJnuP8Us
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: heal
       actionType: none
@@ -43,7 +42,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: "2"
+            formula: '2'
           target:
             type: self
             number: 0
@@ -52,7 +51,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -61,8 +60,8 @@ system:
       modifiers: []
     - source: Item.LbwU9WUApJnuP8Us
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -80,9 +79,9 @@ system:
           source: Item.LbwU9WUApJnuP8Us
           subtype: resource
           target: rp
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -93,9 +92,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1769993459159
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -103,4 +102,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!LbwU9WUApJnuP8Us"
+_key: '!items!LbwU9WUApJnuP8Us'

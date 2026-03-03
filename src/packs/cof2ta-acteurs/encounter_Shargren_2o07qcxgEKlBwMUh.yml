@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Le shargren est un mammifère aquatique\_vorace et dangereux évoluant en banc dans\_les océans. Son corps est puissant, long de 4\_à 6 mètres tandis que sa bouche est bardée\_de dents acérées. </p><p>De part et d'autre de son\_crâne émergent de multiples yeux de tailles\_variables, lui conférant une acuité visuelle\_sans égale dans les eaux.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/shargren_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/shargren_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -249,10 +250,10 @@ items:
     img: icons/svg/sword.svg
     _id: yakUeCc2MBI8VE2f
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.Dz4Yb3syZWVlYJ1z
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2o07qcxgEKlBwMUh.yakUeCc2MBI8VE2f"
+    _key: '!actors.items!2o07qcxgEKlBwMUh.yakUeCc2MBI8VE2f'
   - folder: uvHtoSiBBvs1nfqu
     name: Dévorer
     type: capacity
@@ -320,11 +321,11 @@ items:
     _id: odUZebYGYqsheZzp
     system:
       description: "<p>lorsque le shargren <strong>réussit une\_attaque avec un résultat de 15 à 20</strong> sur un jet\_de d20, il saisit sa proie entre ses crocs et lui\_<strong>inflige immédiatement une attaque gratuite\_supplémentaire dont les DM sont majorés de\_+1d6</strong>. </p><p>Pour se libérer, la victime doit réussir <strong>un\_test de FOR opposé</strong> lors de son tour et cela lui\_demande une action de mouvement (et une\_autre pour amorcer une fuite ou se remettre\_en position de combat si elle a réussi).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action permet de réaliser l'attaque gratuite avec les DM bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -339,7 +340,7 @@ items:
         - source: Actor.2o07qcxgEKlBwMUh.Item.odUZebYGYqsheZzp
           indice: 0
           label: sur résultat de 15 à 20
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -357,9 +358,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "10"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+8 +1d6
               target:
@@ -370,7 +371,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -384,24 +385,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2o07qcxgEKlBwMUh.odUZebYGYqsheZzp"
+    _key: '!actors.items!2o07qcxgEKlBwMUh.odUZebYGYqsheZzp'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -415,8 +416,8 @@ items:
       actions:
         - source: Actor.2o07qcxgEKlBwMUh.Item.Fi5YG7Pr0y4S0DLl
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -434,9 +435,9 @@ items:
               source: Actor.2o07qcxgEKlBwMUh.Item.Fi5YG7Pr0y4S0DLl
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -448,27 +449,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: Fi5YG7Pr0y4S0DLl
     ownership:
       default: 0
-    _key: "!actors.items!2o07qcxgEKlBwMUh.Fi5YG7Pr0y4S0DLl"
+    _key: '!actors.items!2o07qcxgEKlBwMUh.Fi5YG7Pr0y4S0DLl'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!2o07qcxgEKlBwMUh"
+_key: '!actors!2o07qcxgEKlBwMUh'

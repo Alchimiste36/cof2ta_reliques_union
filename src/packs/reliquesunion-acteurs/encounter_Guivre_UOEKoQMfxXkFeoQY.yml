@@ -1,8 +1,7 @@
 folder: lcE4qqNIr45ZI6XX
 name: Guivre
 type: encounter
-img: >-
-  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/guivre.webp
+img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/guivre.webp
 system:
   abilities:
     agi:
@@ -142,18 +141,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Une guivre est une grande créature ailée\_rappelant une immense chauve-souris. Très\_agressif, ce prédateur essentiellement nocturne\_piste ses proies à l'ouïe grâce à ses grandes\_oreilles. Tout comme la chauve-souris, il peut\_pousser des cris stridents dont la réverbération\_des sons dans l'environnement lui permet de\_se repérer en absence de lumière. Cependant,\_contrairement au petit mammifère il n'est\_pas aveugle.</p><p>Certaines guivres ont été dressées pour servir\_de monture. L'exercice est périlleux, mais s'il\_est vrai qu'elles ne peuvent égaler en vitesse\_ou endurance les dragons d'Akrähyng, elles\_sont plus robustes et rustiques.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -178,7 +177,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -255,16 +254,15 @@ items:
   - folder: uvHtoSiBBvs1nfqu
     name: Insensible à l'aveuglement
     type: capacity
-    img: >-
-      icons/magic/perception/eye-ringed-glow-angry-red.webp
+    img: icons/magic/perception/eye-ringed-glow-angry-red.webp
     _id: OUDxAxC7IM2sZ1yn
     system:
       description: "<p>Grâce à ses\_facultés auditives exceptionnelles, la guivre <strong>ne\_souffre d'aucun malus lorsqu'elle est aveuglée</strong>\_<strong>ou qu'elle combat dans le noir complet</strong>.\_</p><p>Cependant, elle pourrait éventuellement être\_surprise par des dangers immatériels.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -286,23 +284,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!UOEKoQMfxXkFeoQY.OUDxAxC7IM2sZ1yn"
+    _key: '!actors.items!UOEKoQMfxXkFeoQY.OUDxAxC7IM2sZ1yn'
   - folder: ds9TVmAEZY0LnDG1
     name: Morsure et griffes
     type: attack
     img: icons/svg/sword.svg
     _id: aMt5WbMWqsMIZXqw
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -313,8 +311,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -332,9 +330,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "8"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '8'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6
               target:
@@ -345,7 +343,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -356,26 +354,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!UOEKoQMfxXkFeoQY.aMt5WbMWqsMIZXqw"
+    _key: '!actors.items!UOEKoQMfxXkFeoQY.aMt5WbMWqsMIZXqw'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol rapide
     type: capacity
-    img: >-
-      icons/creatures/abilities/wings-birdlike-blue.webp
+    img: icons/creatures/abilities/wings-birdlike-blue.webp
     _id: LDdfkQBu2UUUwU9Q
     system:
       description: "<p>La créature a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol.</p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque avec les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -390,7 +387,7 @@ items:
         - source: Actor.UOEKoQMfxXkFeoQY.Item.LDdfkQBu2UUUwU9Q
           indice: 0
           label: Première Attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -408,9 +405,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "13"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '13'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6 +1d6
               target:
@@ -421,7 +418,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -435,22 +432,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!UOEKoQMfxXkFeoQY.LDdfkQBu2UUUwU9Q"
+    _key: '!actors.items!UOEKoQMfxXkFeoQY.LDdfkQBu2UUUwU9Q'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.world.cof2ta-acteurs.Actor.Z3hyAOrx5O1Ir8MT
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
   modifiedTime: 1772486821104
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -459,4 +456,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: UOEKoQMfxXkFeoQY
 sort: 100000
-_key: "!actors!UOEKoQMfxXkFeoQY"
+_key: '!actors!UOEKoQMfxXkFeoQY'

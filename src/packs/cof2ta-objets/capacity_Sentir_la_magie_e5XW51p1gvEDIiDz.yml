@@ -4,14 +4,14 @@ type: capacity
 img: icons/magic/perception/eye-slit-orange.webp
 system:
   description: "<p>Le PJ a développé pour sa survie un sens hors du\_commun pour repérer les lanceurs de sorts – et\_mieux les fuir ! </p><p>En réussissant un <strong>test de SAG\_difficulté 15</strong>, il sent immédiatement si son\_interlocuteur est versé dans les arts mystiques\_– c’est-à-dire s’il maîtrise au moins une voie de\_la famille des mystiques ou une voie de créature\_associée à des sorts. </p><p>De plus, il bénéficie d’un\_bonus de <strong>+5 aux tests visant à résister aux effets\_magiques</strong>.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.91
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser le test de PER difficulté 15 face à
     un interlocuteur.</p><p>La deuxième action activable donne un bonus à
     l'Attaque Magique et à la DEF contre les effets magiques.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -26,7 +26,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.e5XW51p1gvEDIiDz
       indice: 0
       label: Interlocuteur mystique ?
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -44,11 +44,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@per"
-            crit: ""
-            difficulty: "15"
+            formula: '@per'
+            crit: ''
+            difficulty: '15'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -57,14 +57,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.e5XW51p1gvEDIiDz
       indice: 1
       label: Contre effets magiques
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -82,16 +82,16 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.e5XW51p1gvEDIiDz
           subtype: combat
           target: magic
-          value: "5"
+          value: '5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.e5XW51p1gvEDIiDz
           subtype: combat
           target: def
-          value: "5"
+          value: '5'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -102,9 +102,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -112,4 +112,4 @@ _id: e5XW51p1gvEDIiDz
 ownership:
   default: 0
 sort: 0
-_key: "!items!e5XW51p1gvEDIiDz"
+_key: '!items!e5XW51p1gvEDIiDz'

@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Jargal alpha
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Ce profil convient à tous les félins de taille\_moyenne comme le léopard, le jaguar, le jargal\_ou le jewghar.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -167,7 +168,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/jargal_alpha_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -176,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,10 +250,10 @@ items:
     img: icons/svg/sword.svg
     _id: 5xO5UUB3oc47LJNC
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -262,8 +264,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -281,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "9"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '9'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+1
               target:
@@ -294,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -305,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!WCu3Gc7MqIh569ye.5xO5UUB3oc47LJNC"
+    _key: '!actors.items!WCu3Gc7MqIh569ye.5xO5UUB3oc47LJNC'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
@@ -319,15 +321,15 @@ items:
     _id: siqjOqO2FoAQAxbK
     system:
       description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -341,8 +343,8 @@ items:
       actions:
         - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -360,14 +362,14 @@ items:
               source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -392,11 +394,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -407,7 +409,7 @@ items:
         - source: Actor.WCu3Gc7MqIh569ye.Item.siqjOqO2FoAQAxbK
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -427,7 +429,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -439,22 +441,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!WCu3Gc7MqIh569ye.siqjOqO2FoAQAxbK"
+    _key: '!actors.items!WCu3Gc7MqIh569ye.siqjOqO2FoAQAxbK'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -462,4 +464,4 @@ _id: WCu3Gc7MqIh569ye
 ownership:
   default: 0
 sort: 0
-_key: "!actors!WCu3Gc7MqIh569ye"
+_key: '!actors!WCu3Gc7MqIh569ye'

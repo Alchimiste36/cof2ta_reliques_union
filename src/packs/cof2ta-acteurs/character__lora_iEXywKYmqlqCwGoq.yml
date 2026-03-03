@@ -75,7 +75,7 @@ system:
     xp:
       max: 0
     recovery:
-      dice: ""
+      dice: ''
     tempDm: 0
   combat:
     init:
@@ -130,7 +130,7 @@ system:
       max: null
     crit:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -140,7 +140,7 @@ system:
       max: null
     dr:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -184,17 +184,17 @@ system:
       value: 3
   details:
     biography:
-      private: ""
+      private: ''
       public: "<p>Je suis le fruit de l’amour désapprouvé entre\_une Humaine du royaume d’Yrlanie et un\_Sylvain de Daëdenn. Contrairement à de\_nombreux Semi-Elfe, je n’ai pas l’impression\_d’avoir eu une enfance difficile. Du moins,\_jusqu’au décès de ma mère.</p><p>Ce drame a été comme un signal du destin. Un\_appel à comprendre et à appréhender une autre\_part de mes origines. J’ai tout quitté et remué\_ciel et terre pour rejoindre mon père. C’est lui\_qui m’a initiée à l’art exigeant de l’archerie.</p><p>Je ne suis pas sûre de me sentir à ma place à\_Daëdenn, mais j’ai l’intention de connaître mon\_héritage au mieux. Je suis une Semi-Elfe, à la fois\_Humaine et Elfe. Je suis la preuve que l’amour\_ne connaît aucune frontière et j’en suis fière.</p>"
     appearance:
-      private: ""
+      private: ''
       public: "<p>Élora revendique ses origines et son métissage. </p><p>Elle affiche un style vestimentaire qui tranche\_avec la sobriété sylvaine, mêlant cuir, tissage de\_fibres végétales et fourrure. Ses cheveux, roux,\_sont noués en une multitude de fines tresses qui\_encadrent parfaitement son doux visage à la peau\_mate. Elle a les yeux bleus et les oreilles ornées\_de bijoux confectionnés à partir de plumes ou\_de petites pierres colorées.</p>"
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     size: medium
     languages:
-      - ""
+      - ''
   wealth:
     gp:
       value: 0
@@ -211,7 +211,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/pretires/%C3%89lora_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/pretires/%C3%89lora_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -220,7 +221,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -292,31 +293,31 @@ items:
     img: icons/environment/people/infantry.webp
     system:
       description: "<p><strong>Peuple privilégié :</strong> Semi-Elfe</p><p>La mercenaire est une combattante qui loue ses\_talents martiaux contre quelques pièces d’or.\_</p><p>Polyvalente, elle a développé de nombreux styles\_de combat pour s’adapter au mieux au danger.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.56
-      slug: ""
+      slug: ''
       maxDefenseArmor: 0
       modifiers:
         - type: profile
           source: Actor.iEXywKYmqlqCwGoq.Item.A5zqEgzdTEPfp5ht
           subtype: resource
           target: mp
-          value: "@niv+@per"
-          additionalInfos: ""
+          value: '@niv+@per'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.iEXywKYmqlqCwGoq.Item.A5zqEgzdTEPfp5ht
           subtype: combat
           target: melee
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.iEXywKYmqlqCwGoq.Item.A5zqEgzdTEPfp5ht
           subtype: combat
           target: ranged
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
       martialTrainingsWeapons:
         unarmed: true
@@ -379,23 +380,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: A5zqEgzdTEPfp5ht
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.A5zqEgzdTEPfp5ht"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.A5zqEgzdTEPfp5ht'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de l’Archerie
     type: path
     img: icons/weapons/bows/bow-ornamental-carved-brown.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
@@ -413,25 +414,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 0SjO4wMUpGblBepR
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.0SjO4wMUpGblBepR"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.0SjO4wMUpGblBepR'
   - folder: lf3tHiZeN0M56s5z
     name: Sens affûtés
     type: capacity
     img: icons/skills/ranged/person-archery-bow-attack-orange.webp
     system:
       description: "<p>Le PJ gagne un bonus de <strong>+5 à tous ses tests\_de SAG</strong> sollicitant la <strong>perception</strong> (vue, ouïe,\_vigilance, etc.). De plus, il ajoute son Mod. de\_<strong>SAG aux dégâts qu’il inflige avec un arc</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute son bonus de\_SAG à l’initiative.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       inGame: "<p>La première action donne le bonus permanent en PER.\_</p><p>La seconde action activable permet d'obtenir le bonus de PER en DM.</p><p>Si le PJ obtient la capacité avancée, ajoutez simplement la Condition \"est appris\" sur l'action pour obtenir l'action activable donnant le bonus de PER à l'Initiative.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -445,8 +446,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -464,14 +465,14 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Perception (vue, ouïe,  vigilance...)
           resolvers: []
         - source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
           indice: 1
           label: Utilisation d'un Arc
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -489,14 +490,14 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
               subtype: combat
               target: init
-              value: "@per"
+              value: '@per'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
           indice: 2
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -512,9 +513,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.P75xPNkwsuLCCzak
               subtype: combat
               target: init
-              value: "@per"
+              value: '@per'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: false
@@ -527,27 +528,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: P75xPNkwsuLCCzak
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.P75xPNkwsuLCCzak"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.P75xPNkwsuLCCzak'
   - folder: lf3tHiZeN0M56s5z
     name: Tir aveugle
     type: capacity
     img: icons/skills/ranged/arrow-flying-white-blue.webp
     system:
       description: "<p>Le PJ peut <strong>attaquer à distance un ennemi qu’il ne\_voit pas</strong> (par exemple invisible ou dissimulé dans\_le noir total), mais dont il connaît l’existence et\_la position approximative, comme s’il le voyait,\_donc sans le malus causé par le fait qu’il ne le\_voit pas.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> l’utilisation de la capacité\_nécessite une action d’attaque au lieu d’une\_action limitée.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique</p><p>Si le PJ obtient la capacité avancée,
         modifiez le Temps d'action depuis l'onglet "Détails".</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 2
@@ -569,25 +570,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ekWZdQeluP6yPCOR
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.ekWZdQeluP6yPCOR"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.ekWZdQeluP6yPCOR'
   - folder: lf3tHiZeN0M56s5z
     name: Tir rapide
     type: capacity
     img: icons/weapons/bows/shortbow-arrows-black.webp
     system:
       description: "<p>Le PJ peut porter <strong>deux attaques à distance\_pendant ce tour</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 3
@@ -609,27 +610,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: vqtgkLwUqdn5rxKO
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.vqtgkLwUqdn5rxKO"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.vqtgkLwUqdn5rxKO'
   - folder: lf3tHiZeN0M56s5z
     name: Flèche de mort
     type: capacity
     img: icons/skills/ranged/projectile-explosion-black-orange.webp
     system:
       description: "<p>Le PJ <strong>lance deux d20 pour son attaque</strong> et\_conserve le meilleur résultat. Les <strong>dégâts de la\_flèche sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser une attaque à distance avec un Dé Bonus
         reprenant les valeurs <strong>de la première arme équipée</strong>.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 4
@@ -643,8 +644,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.3Al28BLpOg97vV3b
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -662,9 +663,9 @@ items:
               bonusDiceAdd: true
               malusDiceAdd: false
               skill:
-                formula: "@arme.skill"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@arme.skill'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: (@arme.dmg)*2
               target:
@@ -675,7 +676,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -689,27 +690,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 3Al28BLpOg97vV3b
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.3Al28BLpOg97vV3b"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.3Al28BLpOg97vV3b'
   - folder: lf3tHiZeN0M56s5z
     name: Dans le mille
     type: capacity
     img: icons/skills/ranged/target-bullseye-arrow-blue.webp
     system:
       description: "<p><strong>Pour une attaque à distance</strong>, le PJ peut <strong>choisir\_d’utiliser 1d12</strong> en attaque au lieu du d20\_habituel (et il ajoute normalement son score\_d’attaque à distance). Si l’attaque est réussie,\_il ajoute <strong>2d6 aux DM</strong>. </p><p>Cette capacité peut par\_exemple être utilisée avec\_@UUID[Item.DIBwIDRbgytaExZ6]{Tir rapide} ou  @UUID[Item.I9xtdTQ6CM6vB63X]{Flèche de mort} (le bonus de 2d6 aux DM n’est pas\_doublé).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'appliquer un Dé Malus à l'attaque à
         distance et un bonus de 2d6 aux DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -723,8 +724,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.AJfEBuE9QeWWXhfg
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -742,16 +743,16 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.AJfEBuE9QeWWXhfg
               subtype: malusDice
               target: ranged
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.AJfEBuE9QeWWXhfg
               subtype: combat
               target: damRanged
               value: 2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -763,24 +764,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: AJfEBuE9QeWWXhfg
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.AJfEBuE9QeWWXhfg"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.AJfEBuE9QeWWXhfg'
   - folder: qHR1W8IIN4msKM5x
     name: Voie du Combat à Deux Armes
     type: path
     img: icons/skills/melee/weapons-crossed-swords-purple.webp
     _id: UYRtInzBXpYTDZXU
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.Vl1DpVeAoz82A781
@@ -798,29 +799,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.UYRtInzBXpYTDZXU"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.UYRtInzBXpYTDZXU'
   - folder: iUmDDqOwMKC5bQ0F
     name: Combat à deux armes
     type: capacity
     img: icons/skills/melee/weapons-crossed-swords-yellow.webp
     system:
       description: "<p>Le PJ effectue une attaque de chaque main. Il\_utilise 1d20 pour le test d’attaque de sa main\_directrice et un d12 pour l’attaque portée avec\_son autre bras. Il doit manier une arme légère\_dans sa main faible (1d6 de DM maxi).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> s’il utilise deux armes légères\_(1d6 de DM au maximum), le PJ gagne un\_bonus de +1 en attaque.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Le PJ sélectionne "avec Dé Malus" sur la
         fenêtre de l'attaque avec la deuxième arme.</p><p>Si le PJ obtient la
         capacité avancée, ajoutez la Condition "est apprise" sur l'action. Cela
         fera apparaitre l'action activable pour obtenir le bonus à
         l'attaque.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 1
@@ -835,7 +836,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.Vl1DpVeAoz82A781
           indice: 0
           label: Avec deux armes légères
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -851,9 +852,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.Vl1DpVeAoz82A781
               subtype: combat
               target: melee
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: false
@@ -866,27 +867,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: Vl1DpVeAoz82A781
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.Vl1DpVeAoz82A781"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.Vl1DpVeAoz82A781'
   - folder: iUmDDqOwMKC5bQ0F
     name: Parade croisée
     type: capacity
     img: icons/skills/melee/swords-parry-block-yellow.webp
     system:
       description: "<p>Au cours d’un tour complet, le PJ obtient un\_bonus en <strong>DEF de +2</strong>. Il ne réalise qu’une attaque\_à ce tour. Si le résultat du dé d’attaque est pair,\_la main principale porte le coup; si le résultat\_est impair, c’est la main secondaire.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de <strong>DEF passe à +4</strong>.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent en DEF.</p><p>Si le PJ obtient la capacité avancée,
         modifiez la valeur du Modificateur par 4.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 2
@@ -900,8 +901,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.uySDuJJxaXCsl8Bv
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -919,9 +920,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.uySDuJJxaXCsl8Bv
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -933,25 +934,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: uySDuJJxaXCsl8Bv
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.uySDuJJxaXCsl8Bv"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.uySDuJJxaXCsl8Bv'
   - folder: iUmDDqOwMKC5bQ0F
     name: Symétrie
     type: capacity
     img: icons/skills/melee/weapons-crossed-swords-white-blue.webp
     system:
       description: "<p>Le PJ n’est plus obligé de manier une arme légère\_dans sa main secondaire. S’il le souhaite, il peut\_<strong>utiliser une arme aussi lourde que dans sa main\_principale</strong> (d8). </p><p>S’il utilise deux armes légères\_(1d6 de DM au maximum), il gagne un bonus\_de <strong>+1 en attaque</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir le bonus à l'Attaque.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -966,7 +967,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.SkZQ2gVE0CuRTshN
           indice: 0
           label: Avec deux armes légères
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -984,9 +985,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.SkZQ2gVE0CuRTshN
               subtype: combat
               target: melee
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -998,25 +999,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: SkZQ2gVE0CuRTshN
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.SkZQ2gVE0CuRTshN"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.SkZQ2gVE0CuRTshN'
   - folder: iUmDDqOwMKC5bQ0F
     name: Double peine
     type: capacity
     img: icons/skills/melee/weapons-crossed-swords-pink.webp
     system:
       description: "<p>Si les deux armes du PJ atteignent la cible lors\_d’un même tour, le personnage obtient un effet\_de combo qui ajoute <strong>+1d6 DM à l’une des deux\_attaques</strong> selon son choix.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de jeter le jet de 1d6 DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1030,8 +1031,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.GJlhHbVq0DGRu3VJ
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -1056,7 +1057,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1073,28 +1074,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: GJlhHbVq0DGRu3VJ
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.GJlhHbVq0DGRu3VJ"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.GJlhHbVq0DGRu3VJ'
   - folder: iUmDDqOwMKC5bQ0F
     name: Combat à deux armes parfait
     type: capacity
     img: icons/skills/melee/weapons-crossed-swords-yellow-teal.webp
     system:
       description: "<p>Le combat à deux armes (et en conséquence la parade\_croisée) ne <strong>nécessite plus qu’une\_ action d’attaque</strong> au\_lieu d’une action limitée pour être utilisé.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.121
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Modifiez le Temps d'action de l'Onglet
         "Détails" de votre capacité Combat à deux armes pour la tranformer en
         Action Gratuite.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1116,23 +1117,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: LurFgD3H6YMvONrc
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.LurFgD3H6YMvONrc"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.LurFgD3H6YMvONrc'
   - folder: qHR1W8IIN4msKM5x
     name: Voie de la Maîtrise des Armes
     type: path
     img: icons/skills/melee/spear-tips-quintuple-orange.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.11XvvHahqZNrEBab
@@ -1150,29 +1151,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: wtJxKpf1h8BeMgL4
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.wtJxKpf1h8BeMgL4"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.wtJxKpf1h8BeMgL4'
   - folder: enmgHDhLNrOCtOl5
     name: Arme de prédilection
     type: capacity
     img: icons/skills/melee/hand-grip-sword-strike-orange.webp
     system:
       description: "<p>Le PJ <strong>choisit une arme de prédilection</strong> (par\_exemple une épée longue ou une hache à une\_main, un arc court, etc.), et gagne <strong>+1 en attaque</strong>\_lorsqu’il l’utilise.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le combattant peut <strong>choisir\_une seconde arme</strong> qui devient alors une arme\_familière. Il gagne un bonus de +1 en attaque\_lorsqu’il l’utilise. Le bonus de la capacité Spécialisation ne s’applique pas à l’arme familière.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Au moment d'apprendre cette capacité, modifiez le label de l'action
         pour renseigner l'arme de prédilection choisie. L'action activable
         permet d'obtenir les bonus lorsque le PJ utilise son arme de
         prédilection.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1187,7 +1188,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.11XvvHahqZNrEBab
           indice: 0
           label: Utilisation d'un arc court
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1205,9 +1206,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.11XvvHahqZNrEBab
               subtype: combat
               target: melee
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1219,29 +1220,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 11XvvHahqZNrEBab
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.11XvvHahqZNrEBab"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.11XvvHahqZNrEBab'
   - folder: enmgHDhLNrOCtOl5
     name: Science du critique
     type: capacity
     img: icons/skills/wounds/bone-broken-knee-beam.webp
     system:
       description: "<p>Le PJ <strong>inflige des critiques sur un résultat de 19\_ou 20</strong> (18 à 20 lorsqu’il emploie une rapière).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le PJ obtient un bonus de\_+1d6 aux DM lorsqu’il inflige un coup critique.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent qui augmente la plage de critique.</p><p>Si le PJ
         obtient la capacité avancée, ajoutez la Condition "est appris" sur la
         deuxième action. Elle permet de réaliser un jet de 1d6 DM utilisée
         lorsque le PJ fait une attaque critique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1255,8 +1256,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.dR7Dsutc5KtU7LeF
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1274,14 +1275,14 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.dR7Dsutc5KtU7LeF
               subtype: combat
               target: crit
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.iEXywKYmqlqCwGoq.Item.dR7Dsutc5KtU7LeF
           indice: 1
           label: Jet 1d6 DM
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -1304,7 +1305,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1322,25 +1323,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: dR7Dsutc5KtU7LeF
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.dR7Dsutc5KtU7LeF"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.dR7Dsutc5KtU7LeF'
   - folder: enmgHDhLNrOCtOl5
     name: Spécialisation
     type: capacity
     img: icons/skills/melee/hand-grip-sword-white-brown.webp
     system:
       description: "<p>Lorsque le PJ emploie son arme de prédilection,\_il gagne un bonus de <strong>+2 aux DM</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       inGame: "<p>L'action activable donne le bonus aux DM.\_</p><p>Si vous souhaitez limiter le nombre d'action de la feuille de personnage, supprimez l'action sur cette capacité et ajoutez sur la capacité de rang 1 Arme de Prédilection, un Modificateur de type Combat - Dommages de contact - \"2\". Sinon, modifiez le label de cette action avec l'arme de rpédilection choisie.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1355,7 +1356,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.TpVwRsWagJGTpJNS
           indice: 0
           label: Utilisation de [arme de prédilection]
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1373,9 +1374,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.TpVwRsWagJGTpJNS
               subtype: combat
               target: damMelee
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1387,27 +1388,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: TpVwRsWagJGTpJNS
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.TpVwRsWagJGTpJNS"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.TpVwRsWagJGTpJNS'
   - folder: enmgHDhLNrOCtOl5
     name: Attaque parfaite
     type: capacity
     img: icons/skills/melee/strike-polearm-glowing-white.webp
     system:
       description: "<p>Lancez <strong>deux d20 en attaque au contact</strong> et gardez\_le meilleur résultat ; ajoutez <strong>+1d6 aux DM</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable donne le Dé Bonus aux attaques de contact et le
         bonus aux DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 4
@@ -1421,8 +1422,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.KXm7AfM06AUin6iv
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1440,16 +1441,16 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.KXm7AfM06AUin6iv
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.KXm7AfM06AUin6iv
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1461,25 +1462,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: KXm7AfM06AUin6iv
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.KXm7AfM06AUin6iv"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.KXm7AfM06AUin6iv'
   - folder: enmgHDhLNrOCtOl5
     name: Riposte
     type: capacity
     img: icons/skills/melee/strike-axe-red.webp
     system:
       description: "<p>En plus de ses actions normales, <strong>une fois par\_tour</strong>, <strong><span style=\"text-decoration:underline\">lorsqu’un adversaire rate une attaque de\_contact contre le PJ</span></strong>, ce dernier obtient une\_<strong>attaque supplémentaire contre cet adversaire</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.124
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1501,23 +1502,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: H2mLApr9AwYh0PSA
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.H2mLApr9AwYh0PSA"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.H2mLApr9AwYh0PSA'
   - folder: QZKWGWu8512Lhphc
     name: Sang-Mêlé Semi-Elfe des ruines nordiques
     type: feature
-    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_semi_elfe_token.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_semi_elfe_token.webp
     system:
       description: "<h3>ATTENTION</h3><p>Lorsque vous créez un personnage Semi-Elfe, <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">il faut d'abord dupliquer ce trait !</span></strong></span></p><p>Sur le nouveau trait, <strong>ajouter la voie culturelle choisie</strong>.</p><p>Uniquement après cela, <strong>glissez-déposez le trait</strong> sur la feuille de personnage.</p><h2>Les Semi-Elfes</h2><p>La proximité entre les Elfes et les Humains\_devait conduire à des unions mixtes. De tous\_les enfants nés de parents issus de peuples\_différents, les Semi-Elfes sont de très loin les\_plus nombreux. Ce qui ne les empêche pas\_d’être brimés et méprisés partout sur les Terres\_d’Arran. Réduits à l’esclavage dans les mines\_du Mitan, confinés dans des ghettos ou à des\_tâches ingrates dans les villes du Nord, unis en\_peuplades nomades dans les Terres orientales,\_les Semi-Elfes sont en quête de reconnaissance.\_</p><p>Physiquement, ils sont à la fois très différents des\_Elfes et des Humains. En vérité, on retrouve en\_eux, de façon surprenante des caractéristiques\_appartenant à de nombreux peuples d’Arran.\_</p><p>Par exemple, leur dentition est souvent proéminente, surtout leurs canines inférieures, assez\_semblables à celles des Orcs. Ils empruntent\_aux Elfes leurs longues oreilles pointues et aux\_Humains leur pilosité faciale. Enfin, ils arborent\_fréquemment des taches écaillées sur le corps,\_communes à certaines tribus naines.</p><h4>Voie du peuple Semi-Elfe</h4><p>Le Semi-Elfe commence avec la voie du peuple\_elfe et la voie du peuple humain. Il peut évoluer\_dans les deux voies lors de sa progression en\_dépensant normalement ses points de capacité,\_<span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">mais il est limité au rang 3 maximum dans\_</span>chacune des voies.</p><h4>Voie culturelle</h4><p>Lors de la création de personnage, en accord\_avec le MJ, le joueur choisit une voie culturelle\_parmi celles des Elfes et des Humains en\_fonction de l’historique de son personnage et de\_la communauté ou la région des Terres d’Arran\_dans laquelle il a grandi.</p><h4>Modificateurs des Semi-Elfes</h4><ul><li><p>Atout: <strong>Aucun</strong></p></li><li><p>Faiblesse: <strong>Aucun</strong></p></li><li><p>Âge de départ à l’aventure : <strong>20 ans et plus</strong></p></li><li><p>Espérance de vie: <strong>150 ans</strong></p></li><li><p>Taille: <strong>entre 1,50 m et 1,90m</strong></p></li><li><p>Poids : <strong>entre 40 kg et 80 kg</strong></p></li><li><p>Trait des Semi-Elfes : <strong>Aucun</strong></p></li></ul>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.76
-      slug: ""
+      slug: ''
       subtype: people
       modifiers: []
       paths:
@@ -1532,23 +1534,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4fBn0gCCHYSzUedE
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.4fBn0gCCHYSzUedE"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.4fBn0gCCHYSzUedE'
   - folder: Z4oGmDIGYVNgtAJP
     name: Voie du Peuple Elfe Mêlé
     type: path
     img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_elfe2.webp
     system:
       description: "<h6><strong>Voie utilisée uniquement dans le cas des Semi-Elfes et des Sang-Mêlés</strong></h6><h2>Les Elfes</h2><p>Selon les légendes, les Elfes sont des\_esprits immortels, seconds enfants\_d’Arran venus au monde après les\_dragons et avant les Hommes. Installés partout\_sur les Terres d’Arran, ils vivent en communautés\_relativement fermées. Leur immortalité est un\_don autant qu’une malédiction: elle leur confère\_une sagesse infinie et en même temps les détache\_lentement du sort du monde, les entraînant\_dans une sorte de torpeur.\_</p><p>En dépit de la nature immortelle des individus\_qui les composent, la plupart des grandes\_communautés comptent en leur sein des sages,\_prophètes ou vénérables à la peau flétrie et l’âge\_abyssal. Les rumeurs prétendent que le corps et\_l’âme d’un Elfe sont si\_ intimement liés qu’ils\_sont le reflet l’un de l’autre, ce qui expliquerait\_que certains Elfes fatigués ou las paraîtraient\_bien plus âgés que d’autres.</p><h4>Modificateurs des Elfes</h4><ul><li><p>Atout: <strong>+2 CHA</strong></p></li><li><p>Faiblesse: <strong>-2 FOR</strong></p></li><li><p>Âge de départ à l’aventure : <strong>80 ans et plus</strong></p></li><li><p>Espérance de vie: <strong>théoriquement immortel</strong></p></li><li><p>Taille: <strong>entre 1,65 m et 1,90 m</strong></p></li><li><p>Poids : <strong>entre 50 kg et 80 kg</strong></p></li><li><p>Trait des Elfes : <strong>Lumière des étoiles</strong></p></li><li><p></p></li></ul><p><strong>Noms féminins:</strong> <em>Adoraa, Amarie, Aril’em,\_Bi’leth, Dilya, Eelmyra, Faetris, Fin’nea, Ilimys,\_Ilsewël, Inaëra, Keydi, Li’erin, Mylaelä, Nälaea,\_Nue’leth, Phivaaris, Reywarin, Saëli’hn, Selussa,\_Shaë’len, Sihanien, Teriiani, Tisha, Yes’rieth,\_Yllagwyn, Yn’asel.</em></p><p><strong>Noms masculins:</strong> <em>Arel, Ayen, Carfell, Dae’kalyn, Daemys, Eldaeren, Eld’uin, Elluin, Erolwen,\_Faardan, Faeren, Ianjyr, Iewin, Ilthur, Kerr’yth,\_Khaa’ris, Lathaïen, Liagwyn, Mlartlar, Nael,\_Nar’wen, Nyll, Preswë, Qiro, Rilatar, Tanithil,\_Yelg’wyn, Ylyn, Waera, Wysalei.</em></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.H7tYdUnV4wjyCeAI
@@ -1564,14 +1566,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: fCWBv66JSBaDKPiJ
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.fCWBv66JSBaDKPiJ"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.fCWBv66JSBaDKPiJ'
   - folder: oXin2F69W6OYUCr3
     name: Grâce elfique
     type: capacity
@@ -1579,11 +1581,11 @@ items:
     _id: H7tYdUnV4wjyCeAI
     system:
       description: "<p>Le PJ gagne <strong>+5 à tous les tests de CHA et de\_déplacement silencieux</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 1
@@ -1597,8 +1599,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.H7tYdUnV4wjyCeAI
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1616,16 +1618,16 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.H7tYdUnV4wjyCeAI
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Déplacement silencieux
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.H7tYdUnV4wjyCeAI
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1637,24 +1639,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.H7tYdUnV4wjyCeAI"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.H7tYdUnV4wjyCeAI'
   - folder: oXin2F69W6OYUCr3
     name: Essence magique
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
       description: "<p>Le PJ est naturellement lié à l’essence du monde.\_</p><p>Il obtient un bonus de <strong>+2 en DEF contre les\_attaques magiques</strong> et à tous les tests destinés à\_résister à la magie.</p><p>Ce bonus passe à <strong>+4 au rang\_4</strong> atteint dans cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Action activable pour appliquer le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1669,7 +1671,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.48FYWo5mmGRUJwIw
           indice: 0
           label: Résister à la magie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1687,9 +1689,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.48FYWo5mmGRUJwIw
               subtype: combat
               target: def
-              value: "@rang[0,2,2,4,4]"
+              value: '@rang[0,2,2,4,4]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1701,25 +1703,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 48FYWo5mmGRUJwIw
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.48FYWo5mmGRUJwIw"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.48FYWo5mmGRUJwIw'
   - folder: oXin2F69W6OYUCr3
     name: Maîtrise des armes elfiques
     type: capacity
     img: icons/weapons/bows/shortbow-recurve-yellow.webp
     system:
       description: "<p>Le PJ a appris à manier l’artisanat raffiné de\_son peuple. Il peut porter et utiliser armes et\_armures de la tradition elfique, pour lesquels il\_possède la formation martiale. Voir à ce sujet la\_marge <em><strong>Armes et armures traditionnelles.</strong></em></p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'action automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1741,23 +1743,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: SAfusfzVYW5mwIuR
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.SAfusfzVYW5mwIuR"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.SAfusfzVYW5mwIuR'
   - folder: Z4oGmDIGYVNgtAJP
     name: Voie du Peuple Humain Mêlé
     type: path
     img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain2.webp
     system:
       description: "<h6><strong>Voie utilisée uniquement dans le cas des Semi-Elfes et des Sang-Mêlés</strong></h6><h2>Les Humains</h2><p>Les Humains constituent un peuple très\_hétéroclite et très commun sur les Terres\_d’Arran. Leur installation se fait souvent\_au détriment des autres peuples. Ils ont colonisé\_les steppes nordiques hostiles pour fonder la cité\_d’Aspen en Borduria et ont rendu habitables les\_terres arides aux marges de la Terre des Ogres\_pour bâtir l’immense empire Assanide. Les forêts\_de Duhann et de Daëdenn cèdent chaque année\_de plus en plus de terrain au développement\_des cités-États de Tarascon et il n’y a guère\_que les Nains cloîtrés dans leurs imprenables\_forteresses-États qui ne semblent pas menacés\_par cette expansion. Pas encore en tout cas.</p><p>Les Humains n’ont certes pas la longévité\_des Elfes ni la robustesse des Nains, mais\_ils compensent par leur incroyable capacité\_d’adaptation et une fécondité impressionnante.</p><p>Capables du meilleur comme du pire, les\_sociétés humaines sont variées et il est impossible\_de les réduire à une définition générale. Les\_peuples d’Arran victimes de leur xénophobie\_n’ont souvent connu que les mauvais côtés de\_certaines communautés humaines. Mais d’autres\_peuplades, quelques frontières plus loin, vivent\_en respectant des valeurs et des traditions tout\_à fait inverses.</p><h4>Modificateurs des Humains</h4><p>Atout: <strong>aucun</strong></p><p>Faiblesse: <strong>aucun</strong></p><p>Âge de départ à l’aventure: <strong>18 ans et plus</strong></p><p>Espérance de vie: <strong>70 ans</strong></p><p>Taille: <strong>entre 1,50 m et 2,00 m</strong></p><p>Poids : <strong>entre 40 kg et 120 kg</strong></p><p>Traits des Humains : <strong>aucun</strong></p><p><strong>Noms féminins:</strong> <em>Aethria, Aales, Ann, Aphra,\_Ashae, Ayfara, Bryde, Clymoni, Daeira, Dalleira, Dhesah, Elianora, Elise, Emelyne, Egelina,\_Gaynore, Helleori, Ianthe, Inle, Jehane, Jivete,\_Malie, Mareona, Mattie, Melisenda, Merily,\_Nota, Phaio, Ptelera, Rose, Ulshee, Ysabea.</em></p><p><strong>Noms masculins:</strong> <em>Alvan, Ancelm, Daue,\_Iohannes, Gallien, Geffery, Geoff, Gerald,\_Hamo, Herry, Herval, Joa, Joscell, Jun, Maina,\_Mauklom, Nicoll, Niel, Oenus, Raimn, Ran,\_Ranort, Robb, Roff, Rullo, Simm, Teebald,\_Tericio, Thomme, Vinlam, Yvoe.</em></p>"
-      source: ""
+      source: ''
       origin: Livre des Joueurs page 87
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
@@ -1773,14 +1775,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: fUQSr88H5QXOfa2Z
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.fUQSr88H5QXOfa2Z"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.fUQSr88H5QXOfa2Z'
   - folder: TM2vZsQjVMSGf4wH
     name: Adaptable
     type: capacity
@@ -1788,13 +1790,13 @@ items:
     _id: 5vvkXitkbK6eaR8Q
     system:
       description: "<p><strong><span style=\"text-decoration:underline\">Après avoir raté un test de Carac.</span></strong>, le PJ obtient\_un bonus de <strong>+5 au prochain test</strong> pour retenter\_la même action au prochain tour.</p>"
-      source: ""
+      source: ''
       origin: Livre des Joueurs page 87
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux tests de compétences. A activer seulement après
         un test raté.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1808,8 +1810,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1827,42 +1829,42 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: con
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: for
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.5vvkXitkbK6eaR8Q
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
           resolvers: []
@@ -1876,26 +1878,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.5vvkXitkbK6eaR8Q"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.5vvkXitkbK6eaR8Q'
   - folder: TM2vZsQjVMSGf4wH
     name: Loup parmi les loups
     type: capacity
     img: icons/skills/melee/hand-grip-sword-orange.webp
     system:
       description: "<p>Le PJ gagne <strong>+1 aux DM lorsqu’il combat un\_adversaire humanoïde</strong>. Ce bonus passe à <strong>+2 au\_rang 4</strong> de cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.87
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action est activable lorsque le personnage combat un adversaire
         humanoïde.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1910,7 +1912,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.uGRmXFJRERTkqZqW
           indice: 0
           label: Contre un humanoïde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1928,23 +1930,23 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.uGRmXFJRERTkqZqW
               subtype: combat
               target: damMelee
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.uGRmXFJRERTkqZqW
               subtype: combat
               target: damRanged
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.uGRmXFJRERTkqZqW
               subtype: combat
               target: damMagic
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1956,25 +1958,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: uGRmXFJRERTkqZqW
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.uGRmXFJRERTkqZqW"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.uGRmXFJRERTkqZqW'
   - folder: TM2vZsQjVMSGf4wH
     name: Enseignement exotique
     type: capacity
     img: icons/weapons/daggers/dagger-magical-glowing-blue.webp
     system:
       description: "<p>Le PJ choisit l’une des formations martiales\_maîtrisées par son personnage ainsi qu’une\_tradition d’un des peuples des Terres d’Arran :\_le PJ peut porter et utiliser uniquement\_ les\_armes ou armures qu’il maîtrise, forgées dans\_cette tradition.</p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.87
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1996,24 +1998,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: w4PS11WyfxRJA1K6
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.w4PS11WyfxRJA1K6"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.w4PS11WyfxRJA1K6'
   - folder: LWfsjN0pv7aydAdr
     name: Voie Culturelle des Ruines Nordiques
     type: path
-    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain_ruines_nordiques2.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain_ruines_nordiques2.webp
     _id: aBFypBQvjI3UrSwQ
     system:
       description: "<h2>Humains\_des ruines nordiques</h2><p>Les peuples nordiques se trouvent de la Borduria\_jusqu’au royaume d’Yrlanie et, à l’est, sur la\_majeure partie de l’Ourann. Fiers, marins,\_guerriers, souvent considérés comme sauvages,\_ces hommes et femmes ont payé un lourd tribut\_lors de la malédiction des goules. De tous les\_peuples, il a probablement été le plus éprouvé.\_</p><p>Proches de la nature, habitués à des conditions\_de vie hostiles, ces Humains décorent souvent\_leurs vêtements et armures de peaux, de fourrures ou phanères de bêtes. Les cheveux longs,\_le visage anguleux et la peau tannée par les vents\_glacés, ils sont mus par une volonté farouche.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.iEXywKYmqlqCwGoq.Item.oMcP7vui3vNzAA6N
@@ -2031,13 +2034,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.aBFypBQvjI3UrSwQ"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.aBFypBQvjI3UrSwQ'
   - folder: 90k1Mhah1Lbfgk4O
     name: Pied marin
     type: capacity
@@ -2045,11 +2048,11 @@ items:
     _id: oMcP7vui3vNzAA6N
     system:
       description: "<p>Le PJ obtient un bonus de <strong>+5 aux tests de\_navigation, de natation et d’équilibre</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent aux tests d'AGI, d'INT et de CON.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 1
@@ -2063,8 +2066,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.oMcP7vui3vNzAA6N
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2082,21 +2085,21 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.oMcP7vui3vNzAA6N
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Équilibre / Natation / Navigation
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.oMcP7vui3vNzAA6N
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Équilibre / Natation / Navigation
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.oMcP7vui3vNzAA6N
               subtype: skill
               target: con
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Équilibre / Natation / Navigation
           resolvers: []
@@ -2110,26 +2113,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.oMcP7vui3vNzAA6N"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.oMcP7vui3vNzAA6N'
   - folder: 90k1Mhah1Lbfgk4O
     name: Barbare
     type: capacity
     img: icons/skills/melee/hand-grip-sword-white-brown.webp
     system:
       description: "<p>Le PJ choisit une capacité de <strong>rang 1 ou 2 de la\_voie de la bravoure</strong> ou de la <strong>voie de la chasse</strong>.\_</p><p>Au rang 4 de cette voie, il gagne <strong>une capacité\_supplémentaire de rang 1 ou 2</strong> de la voie de la\_bravoure ou de la voie de la chasse.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
         liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -2151,29 +2154,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: gIlKvAtOPakfHrsF
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.gIlKvAtOPakfHrsF"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.gIlKvAtOPakfHrsF'
   - folder: 90k1Mhah1Lbfgk4O
     name: Expertise des haches
     type: capacity
     img: icons/weapons/axes/axe-double-engraved-blue.webp
     system:
       description: "<p>Le PJ gagne un bonus de <strong>+1 en attaque et aux\_DM lorsqu’il manie une hache</strong>. </p><p>De plus, il est\_<strong>formé au maniement de la grande hache de\_bûcheron</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable donne les bonus aux attaques et DM.</p><p>Pour la
         formation martiale, au moment d'apprendre cette capacité, ouvrez le
         profil du personnage depuis l'onglet "Biographie" et cocher la case
         Hache à deux mains.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -2188,7 +2191,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.Ma8YsrPoA67WwNRs
           indice: 0
           label: Utilisation d'une hache
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2206,16 +2209,16 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.Ma8YsrPoA67WwNRs
               subtype: combat
               target: melee
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.Ma8YsrPoA67WwNRs
               subtype: combat
               target: damMelee
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2227,25 +2230,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: Ma8YsrPoA67WwNRs
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.Ma8YsrPoA67WwNRs"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.Ma8YsrPoA67WwNRs'
   - folder: 90k1Mhah1Lbfgk4O
     name: Homme des clans
     type: capacity
     img: icons/environment/people/infantry.webp
     system:
       description: "<p>Le PJ a acquis un tel statut au sein de son clan\_qu’il <strong>dispose maintenant d’un homme de main\_à son service</strong> qui combat à ses côtés et assure ses\_arrières sur le champ de bataille. Ce dernier lui\_est totalement fidèle et peut être de plus affecté\_à quelques basses besognes, telles que l’entretien\_des armes ou encore l’intendance.</p><p>Grâce à lui,\_les armes du personnage sont parfaitement\_entretenues et <strong>infligent des critiques sur un\_résultat de 19 ou 20</strong>.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Bras droit:</span></strong></span></p><p>DEF 16, PV [niveau du PJ x 6],</p><p>attaque\_[niveau du PJ], DM 1d8+2.</p><p>FOR +2, DEX +0, CON\_+2, INT +0, SAG +0, CHA +0.</p><p>Il agit à l’initiative\_du PJ.</p><p>S’il venait à mourir, le PJ pourrait prendre un\_autre bras droit à son service au niveau suivant.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       inGame: "<p>Le MJ donne les droits \"Propriétaire\" au joueur pour le Compagnon :\_@UUID[Actor.fMUztxQLMAIgdwww]{Bras droit des Ruines Nordiques}. Le PJ modifie les statistiques du Compagnon en fonction de son personnage.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.xnf94jpQ3KHIZvvt]{Barbare}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -2260,7 +2263,7 @@ items:
         - source: Actor.iEXywKYmqlqCwGoq.Item.y5XJaRd01YZrAkyU
           indice: 0
           label: Présence du Bras droit
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2278,9 +2281,9 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.y5XJaRd01YZrAkyU
               subtype: combat
               target: crit
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: true
       linkedCapacity: null
@@ -2292,25 +2295,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: y5XJaRd01YZrAkyU
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.y5XJaRd01YZrAkyU"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.y5XJaRd01YZrAkyU'
   - folder: 90k1Mhah1Lbfgk4O
     name: Conquérant
     type: capacity
     img: icons/environment/people/cavalry-heavy.webp
     system:
       description: "<p>Le PJ augmente ses valeurs de <strong>DEX et CON\_de +2</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.88
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent en AGI et CON.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2324,8 +2327,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.v9sDFJdsQtjvCZnT
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2343,16 +2346,16 @@ items:
               source: Actor.iEXywKYmqlqCwGoq.Item.v9sDFJdsQtjvCZnT
               subtype: ability
               target: agi
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.iEXywKYmqlqCwGoq.Item.v9sDFJdsQtjvCZnT
               subtype: ability
               target: con
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2364,28 +2367,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: v9sDFJdsQtjvCZnT
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.v9sDFJdsQtjvCZnT"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.v9sDFJdsQtjvCZnT'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir renforcé
     type: equipment
     img: icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
     _id: Fm1p22UiQDOvHq5t
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-renforce-broigne
       tags: []
       subtype: armor
       martialCategory: studdedLeather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -2420,21 +2423,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.Fm1p22UiQDOvHq5t"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.Fm1p22UiQDOvHq5t'
   - folder: srnxqMuZEh5AAU86
     name: Arc court
     type: equipment
     img: icons/weapons/bows/shortbow-arrows-black.webp
     _id: 1SPli44AylCBFkIE
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.158
       slug: arc-court
       tags: []
@@ -2478,8 +2481,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.1SPli44AylCBFkIE
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -2497,9 +2500,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -2510,7 +2513,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -2521,21 +2524,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.1SPli44AylCBFkIE"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.1SPli44AylCBFkIE'
   - folder: OBPli02oRaBQq6Ee
     name: Epée longue
     type: equipment
     img: icons/weapons/swords/sword-guard-brass-worn.webp
     _id: xiT3OHF7uRtURCDe
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.157
       slug: epee-longue
       tags: []
@@ -2555,7 +2558,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ""
+        unit: ''
       rarity: common
       equipped: false
       properties:
@@ -2568,8 +2571,8 @@ items:
       actions:
         - source: Actor.iEXywKYmqlqCwGoq.Item.xiT3OHF7uRtURCDe
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -2587,9 +2590,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 + @for
               target:
@@ -2600,12 +2603,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -2622,26 +2625,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!iEXywKYmqlqCwGoq.xiT3OHF7uRtURCDe"
+    _key: '!actors.items!iEXywKYmqlqCwGoq.xiT3OHF7uRtURCDe'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!iEXywKYmqlqCwGoq"
+_key: '!actors!iEXywKYmqlqCwGoq'

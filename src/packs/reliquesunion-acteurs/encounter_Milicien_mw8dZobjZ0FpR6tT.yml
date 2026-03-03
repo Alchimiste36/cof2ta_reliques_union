@@ -145,15 +145,15 @@ system:
       bonuses:
         sheet: 0
         effects: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: >-
         <p>Des villages et zones rurales aux grandes cités, il existe un
         éventail de personnes chargées de protéger la population et (parfois
@@ -161,7 +161,7 @@ system:
         milicien est un simple citoyen qui a été un peu entraîné et armé pour
         défendre son village ou patrouiller.</p>
     languages: []
-    properties: ""
+    properties: ''
   magic: 0
   currentEffects: []
   wealth:
@@ -190,7 +190,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -268,9 +268,9 @@ items:
     img: icons/svg/sword.svg
     _id: oC9UuTXRMNuis11E
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: pique
       subtype: melee
       learned: true
@@ -284,7 +284,7 @@ items:
         - source: Item.NW0iA97KBCTHGY5t
           indice: 0
           label: Pique
-          chatFlavor: ""
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -299,9 +299,9 @@ items:
           resolvers:
             - type: attack
               skill:
-                formula: "+2"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+2'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d10+1
               target:
@@ -314,7 +314,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -327,18 +327,17 @@ items:
       compendiumSource: Item.NW0iA97KBCTHGY5t
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mw8dZobjZ0FpR6tT.oC9UuTXRMNuis11E"
+    _key: '!actors.items!mw8dZobjZ0FpR6tT.oC9UuTXRMNuis11E'
   - folder: BHbn2gP9Z2mczP4c
     name: Pique
     type: equipment
-    img: >-
-      icons/weapons/polearms/pike-flared-red.webp
+    img: icons/weapons/polearms/pike-flared-red.webp
     _id: f3jqM1AYttgKcZWW
     system:
       description: >-
@@ -350,8 +349,8 @@ items:
         pénalité de ‑5. Son utilisateur subit un dé malus en attaque dans toutes
         les autres conditions.</p> <p>Attention : 3 actions différentes en
         fonction de la situation.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: pique
       tags: []
       subtype: weapon
@@ -384,7 +383,7 @@ items:
         - source: Compendium.cof2-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
           indice: 0
           label: Attaque normale
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -402,9 +401,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: true
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d10 + @for
               target:
@@ -415,14 +414,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Compendium.cof2-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
           indice: 1
           label: Attaque derrière un allié
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -440,9 +439,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc - 5"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc - 5'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d10 + @for
               target:
@@ -453,14 +452,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Compendium.cof2-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
           indice: 2
           label: vs Grande en mouvement
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -478,9 +477,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: (1d10 x2) + @for
               target:
@@ -491,12 +490,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -512,18 +511,17 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mw8dZobjZ0FpR6tT.f3jqM1AYttgKcZWW"
+    _key: '!actors.items!mw8dZobjZ0FpR6tT.f3jqM1AYttgKcZWW'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
-    img: >-
-      icons/skills/social/diplomacy-handshake-yellow.webp
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
     _id: Hr4iOrq4CyrL0A5J
     system:
       description: >-
@@ -538,7 +536,7 @@ items:
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
       source: page 216 du livre des règles
       slug: soutenir
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -554,8 +552,8 @@ items:
       actions:
         - source: Actor.mw8dZobjZ0FpR6tT.Item.Hr4iOrq4CyrL0A5J
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -573,9 +571,9 @@ items:
               source: Actor.mw8dZobjZ0FpR6tT.Item.Hr4iOrq4CyrL0A5J
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -586,10 +584,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -599,7 +597,7 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
-      origin: ""
+      origin: ''
     effects: []
     sort: 0
     flags: {}
@@ -607,22 +605,22 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!mw8dZobjZ0FpR6tT.Hr4iOrq4CyrL0A5J"
+    _key: '!actors.items!mw8dZobjZ0FpR6tT.Hr4iOrq4CyrL0A5J'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.cof2-base.cof-2-base-encounter.Actor.zlx2BKnIQDDDPooL
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238507682
   modifiedTime: 1772238507682
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -631,4 +629,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: mw8dZobjZ0FpR6tT
 sort: 300000
-_key: "!actors!mw8dZobjZ0FpR6tT"
+_key: '!actors!mw8dZobjZ0FpR6tT'

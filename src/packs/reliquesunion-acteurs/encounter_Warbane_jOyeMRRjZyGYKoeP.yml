@@ -2,8 +2,7 @@ folder: G2UzWtuIlch7TW34
 name: Warbane
 type: encounter
 _id: jOyeMRRjZyGYKoeP
-img: >-
-  modules/cof2ta_reliques_union/assets/ru_acteurs/arkarum/warbane.webp
+img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkarum/warbane.webp
 system:
   abilities:
     agi:
@@ -143,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -169,8 +168,7 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: >-
-      modules/cof2ta_reliques_union/assets/ru_acteurs/arkarum/warbane.webp
+    src: modules/cof2ta_reliques_union/assets/ru_acteurs/arkarum/warbane.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -179,7 +177,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,14 +246,13 @@ items:
   - folder: GgISwHTqrwC4liIs
     name: Voie des cités
     type: path
-    img: >-
-      icons/environment/settlement/city-gate.webp
+    img: icons/environment/settlement/city-gate.webp
     _id: 0dgp0II6Fm9Dy0Zb
     system:
       description: "<h5>Les voies d’origine géographique mettent l’accent sur le lieu où le personnage a été élevé.</h5><h6>Humain : </h6><p><strong>Le\_bonus de la voie d’origine géographique remplace le bonus du même nom de\_la voie de l’humain</strong>. En\_échange, <strong>l’humain reçoit\_un seul bonus, mais de +5</strong> au lieu de +3, <strong>dans\_la profession ou le hobby de son choix</strong>. Si\_le PJ\_dispose d’une voie professionnelle, ce choix doit\_être en accord avec celle-ci (si vous êtes érudit,\_vous n’êtes probablement pas charpentier…).\_</p><h6>Elfe sylvain : </h6><p>Avec cette option, <strong>l’elfe sylvain\_devient un spécialiste de la survie</strong> dans son milieu\_d’origine (correspondant à la voie d’origine géographique choisie) et vous pouvez le rebaptiser\_elfe sauvage. Ce\_faisant, <strong>la capacité de premier\_rang de la voie de l’elfe sylvain est modifiée</strong> :\_à\_la place d’un bonus de survie en forêt, l’elfe\_sauvage bénéficie d’un bonus de survie dans\_le milieu correspondant à son origine géographique, et <strong>le bonus passe de +3 à +5</strong> grâce à la\_capacité de rang 1 de la voie d’origine géographique. <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Attention :</span></strong></span><strong> la\_voie des cités et la voie\_des campagnes sont interdites à ce peuple.</strong></p><blockquote><p><strong>Par exemple</strong> : un\_elfe sauvage avec la capacité\_Habitant des marais (voie des marais) possède un\_bonus de +5 aux tests de survie et de discrétion\_dans les marécages (au lieu de +3). Cette bonification lui est conférée par le rang 1 de sa voie de\_peuple, Lumière des étoiles, et remplace le bonus\_de +3 en survie en forêt.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.jOyeMRRjZyGYKoeP.Item.TTpULelTawHZldlv
@@ -272,30 +269,29 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.vOV58NjKw8Qd3zhQ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 200000
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.0dgp0II6Fm9Dy0Zb"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.0dgp0II6Fm9Dy0Zb'
   - folder: qekQTvOQw99SYnLZ
     name: Habitant des villes
     type: capacity
-    img: >-
-      icons/environment/settlement/watchtower-stone.webp
+    img: icons/environment/settlement/watchtower-stone.webp
     _id: TTpULelTawHZldlv
     system:
       description: >-
         <p>Le personnage obtient un bonus de <strong>+3 en discrétion en ville
         et aux tests de commerce</strong>.</p>
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -309,8 +305,8 @@ items:
       actions:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.TTpULelTawHZldlv
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -328,21 +324,21 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.TTpULelTawHZldlv
               subtype: skill
               target: agi
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Discrétion en ville
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.TTpULelTawHZldlv
               subtype: skill
               target: cha
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Commerce
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.TTpULelTawHZldlv
               subtype: skill
               target: int
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Commerce
           resolvers: []
@@ -359,24 +355,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.TTpULelTawHZldlv"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.TTpULelTawHZldlv'
   - folder: qekQTvOQw99SYnLZ
     name: Survie en coupe-gorge
     type: capacity
-    img: >-
-      icons/environment/settlement/blacksmith.webp
+    img: icons/environment/settlement/blacksmith.webp
     _id: GXO12lC2qhD0smPf
     system:
       description: "<p>Le personnage gagne <strong>+3 aux tests de PER pour\_s’orienter et éviter les embuscades en ville</strong> et un\_bonus de <strong>+3 aux tests de CHA pour parlementer\_avec des gangs ou des gardes</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -390,8 +385,8 @@ items:
       actions:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.GXO12lC2qhD0smPf
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -409,14 +404,14 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.GXO12lC2qhD0smPf
               subtype: ability
               target: per
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: S'orienter et éviter les embuscades en ville
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.GXO12lC2qhD0smPf
               subtype: ability
               target: cha
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Parlementer avec gangs et gardes
           resolvers: []
@@ -433,24 +428,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.GXO12lC2qhD0smPf"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.GXO12lC2qhD0smPf'
   - folder: qekQTvOQw99SYnLZ
     name: Fendre la foule
     type: capacity
-    img: >-
-      icons/environment/settlement/city-entrance.webp
+    img: icons/environment/settlement/city-entrance.webp
     _id: yqa5HOimdYMQTydS
     system:
       description: "<p>Le personnage <strong>n’est pas ralenti dans un lieu\_bondé</strong> et, s’il combat au milieu d’une foule\_(marché, exécution publique, festival, etc.), il\_gagne <strong>+2 en DEF et en attaque</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus en DEF activable/désactivable.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -465,7 +459,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.yqa5HOimdYMQTydS
           indice: 0
           label: Dans un lieu bondé
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -483,30 +477,30 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.yqa5HOimdYMQTydS
               subtype: combat
               target: melee
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.yqa5HOimdYMQTydS
               subtype: combat
               target: ranged
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.yqa5HOimdYMQTydS
               subtype: combat
               target: magic
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.yqa5HOimdYMQTydS
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -521,24 +515,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.yqa5HOimdYMQTydS"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.yqa5HOimdYMQTydS'
   - folder: qekQTvOQw99SYnLZ
     name: Pistage urbain
     type: capacity
-    img: >-
-      icons/environment/settlement/palast.webp
+    img: icons/environment/settlement/palast.webp
     _id: nLTpz5tA8dfi5x4Y
     system:
       description: "<p>Le personnage obtient un bonus de <strong>+5 aux\_tests destinés à réaliser une filature</strong> et est capable\_de <strong>pister quelqu’un en interrogeant des témoins</strong>\_(test de CHA difficulté 15 à 30 selon les conditions). </p><p>De\_plus, il obtient un bonus de <strong>+5 aux tests\_de poursuite en milieu urbain</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p173
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -552,8 +545,8 @@ items:
       actions:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.nLTpz5tA8dfi5x4Y
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -571,21 +564,21 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.nLTpz5tA8dfi5x4Y
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Filature
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.nLTpz5tA8dfi5x4Y
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Filature
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.nLTpz5tA8dfi5x4Y
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Poursuite en milieu urbain
           resolvers: []
@@ -602,24 +595,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.nLTpz5tA8dfi5x4Y"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.nLTpz5tA8dfi5x4Y'
   - folder: qekQTvOQw99SYnLZ
     name: Expert en rixes
     type: capacity
-    img: >-
-      icons/environment/settlement/tavern.webp
+    img: icons/environment/settlement/tavern.webp
     _id: NmJ2LmoeELCF6xQs
     system:
       description: "<p>Le personnage obtient un bonus de <strong>+1d4°\_DM\_lorsqu’il inflige des DM temporaires à une créature humanoïde</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p173
-      slug: ""
+      slug: ''
       inGame: <p>Bonus activable/désactivable.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -634,7 +626,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.NmJ2LmoeELCF6xQs
           indice: 0
           label: DM temporaires sur humanoïde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -654,7 +646,7 @@ items:
               target: damMelee
               value: 1d4°
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -669,22 +661,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.NmJ2LmoeELCF6xQs"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.NmJ2LmoeELCF6xQs'
   - folder: fWmjCA560DEw5LaH
     name: Voie du nanti
     type: path
-    img: >-
-      icons/equipment/finger/ring-cabochon-squared-gold.webp
+    img: icons/equipment/finger/ring-cabochon-squared-gold.webp
     _id: wBBiBOlCHUaCnGS5
     system:
       description: "<p>«<em>Les pauvres, c’est fait pour être très pauvres\_et les riches très riches !</em>» (Don Salluste, un riche\_noble estranger).</p><hr /><p>Une voie professionnelle correspond généralement à l’éducation du PJ avant qu’il ne\_parte à l’aventure. Un\_PJ peut choisir une voie\_professionnelle au niveau 1 et plus rarement au\_cours de sa carrière de héros.</p><p>Si vous utilisez la règle optionnelle de l’âge\_de départ variable, le MJ pourrait rendre obligatoire d’investir dans une voie professionnelle\_les points de capacité acquis par ce biais.\_</p><p>Une voie professionnelle peut aussi être\_acquise à la suite d’une pause dans une vie\_d’aventures (par exemple, les héros repartent\_à l’aventure après s’être posé pendant dix ans.\_Le\_MJ accorde à chacun quelques rangs dans la\_voie professionnelle de leur choix).\_</p><p><strong>Bonus communautaire.</strong> Tous les personnages qui possèdent une voie professionnelle\_obtiennent un bonus de +3 aux tests d’interaction sociale (généralement CHA) avec un autre\_membre de leur communauté.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p179
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.jOyeMRRjZyGYKoeP.Item.9S7ZN29lro8294hh
@@ -701,28 +692,27 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.nrjQzqt9CKjdj4OB
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.wBBiBOlCHUaCnGS5"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.wBBiBOlCHUaCnGS5'
   - folder: FNo8CFxv0sbyFxOb
     name: Plein aux as
     type: capacity
-    img: >-
-      icons/commodities/currency/coins-plain-stack-gold-yellow.webp
+    img: icons/commodities/currency/coins-plain-stack-gold-yellow.webp
     _id: 9S7ZN29lro8294hh
     system:
       description: "<p>Le personnage n’est jamais à court de liquidité\_et <strong>obtient chaque jour 10\_ pa par rang</strong> atteint\_dans la voie <strong>pour ses dépenses courantes</strong>. S’il\_n’est pas dépensé, cet argent n’est pas comptabilisé dans les économies du personnage.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p179
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -747,24 +737,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.9S7ZN29lro8294hh"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.9S7ZN29lro8294hh'
   - folder: FNo8CFxv0sbyFxOb
     name: "On\_ne prête qu’aux riches"
     type: capacity
-    img: >-
-      icons/commodities/currency/coins-stitched-pouch-brown.webp
+    img: icons/commodities/currency/coins-stitched-pouch-brown.webp
     _id: poe8VJIzLn8o227j
     system:
       description: "<p>Si le personnage souhaite faire l’acquisition\_d’un objet ou d’un bien de grande valeur et qu’il\_n’a pas l’argent nécessaire sur lui, <strong>on lui fait crédit\_sans problème : il\_a un mois devant lui pour payer. </strong></p><p>Ensuite, il peut faire un <strong>test de CHA difficulté 15\_pour prolonger ce délai d’un mois</strong> supplémentaire, et peut renouveler ce test plusieurs mois\_d’affilée si nécessaire. Mais attention, lorsque le\_couperet tombe, ça peut faire mal…</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p179
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de réaliser le test de sauvegarde.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -779,7 +768,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.poe8VJIzLn8o227j
           indice: 0
           label: Prolonger le délai
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -795,7 +784,7 @@ items:
           resolvers:
             - type: save
               saveAbility: cha
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: self
                 number: 0
@@ -804,7 +793,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -825,24 +814,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.poe8VJIzLn8o227j"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.poe8VJIzLn8o227j'
   - folder: FNo8CFxv0sbyFxOb
     name: Pot-de-vin
     type: capacity
-    img: >-
-      icons/commodities/currency/coin-embossed-crown-gold.webp
+    img: icons/commodities/currency/coin-embossed-crown-gold.webp
     _id: xb8HlSbUTsTg9Og0
     system:
       description: "<p>En y mettant le prix, le personnage arrive\_généralement à obtenir ce qu’il veut. </p><p><strong>Lorsqu’il\_rate un test de CHA</strong>, il peut obtenir un bonus de\_<strong>+1 autant de fois qu’il paie 10\_pa</strong> (pour un montant maximal de 100\_pa) <strong>afin de transformer son\_échec en réussite</strong>. Cet\_argent ne peut pas provenir de la capacité Plein aux as.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -867,27 +855,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.xb8HlSbUTsTg9Og0"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.xb8HlSbUTsTg9Og0'
   - folder: FNo8CFxv0sbyFxOb
     name: Garde du corps
     type: capacity
-    img: >-
-      icons/environment/people/infantry-armored.webp
+    img: icons/environment/people/infantry-armored.webp
     _id: orS8lzJeBlh9RAwx
     system:
       description: "<p>Tant de richesse finit par attirer la convoitise,\_et le nanti doit à présent être protégé par un\_garde.\_Celui-ci offre un bonus de <strong>+2 en DEF à son\_employeur lorsqu’il est à son contact</strong>.</p><p> Le\_garde\_est <strong>totalement loyal au personnage</strong>. S’il vient\_à mourir, il est possible d’en engager un nouveau en dépensant 500\_pa lors du passage au\_niveau suivant.</p><p>LE GARDE DU CORPS</p><ul><li><p>AGI +0 / CON +2 / FOR +2 / PER +0 / CHA +0 / INT +0 / VOL +1</p></li><li><p>DEF 16 / PV [niveau x\_4] / Init. [Init.\_du\_personnage]</p></li><li><p>Attaque [Niveau du PJ] · DM 1d4°+2</p></li></ul>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Créez une rencontre représentant le Garde du corps et donnez les
         droits propriétaire au PJ.</p><p>L'action activable/désactivable permet
         d'obtenir le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 4
@@ -902,7 +889,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.orS8lzJeBlh9RAwx
           indice: 0
           label: Garde du corps au contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -920,9 +907,9 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.orS8lzJeBlh9RAwx
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -937,27 +924,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.orS8lzJeBlh9RAwx"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.orS8lzJeBlh9RAwx'
   - folder: FNo8CFxv0sbyFxOb
     name: Au-dessus des lois
     type: capacity
-    img: >-
-      icons/sundries/survival/cuffs-shackles-steel.webp
+    img: icons/sundries/survival/cuffs-shackles-steel.webp
     _id: LAHS1OiOnkGZsVln
     system:
       description: "<p>L’argent permet bien des excentricités, parfois même ignorer la loi. </p><p><strong>Lorsque le personnage\_commet une action illégale</strong>, il peut faire un <strong>test\_de CHA pour échapper à la justice</strong>, avec une difficulté de <strong>10 pour un délit</strong>, <strong>15 pour un crime</strong> et <strong>20\_pour un acte odieux</strong>. </p><ul><li><p>Si\_l’action contrarie un puissant, la difficulté augmente de 5. </p></li><li><p>Si\_la victime du\_crime ou du délit est un personnage important,\_cette capacité est inefficace.</p></li><li><p> Si\_ le personnage\_utilise cette capacité plusieurs fois dans la même\_semaine, la difficulté du test de CHA augmente\_de 10 à chaque fois. </p></li></ul><p>Il\_n’est pas possible d’utiliser\_Pot-de-vin pour améliorer le résultat de ce test.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser un test de sauvegarde de CHA de
         difficulté 10. Interprétez le résultat en fonction de la difficulté
         réelle du test.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 5
@@ -971,8 +957,8 @@ items:
       actions:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.LAHS1OiOnkGZsVln
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -988,7 +974,7 @@ items:
           resolvers:
             - type: save
               saveAbility: cha
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -997,7 +983,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1018,43 +1004,42 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.LAHS1OiOnkGZsVln"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.LAHS1OiOnkGZsVln'
   - folder: 0fLy1zc3wnE791eb
     name: Castagneur/castagneuse
     type: profile
-    img: >-
-      icons/skills/melee/unarmed-punch-fist.webp
+    img: icons/skills/melee/unarmed-punch-fist.webp
     system:
       description: "<p><strong>Peuple privilégié :</strong> Humain des Terres orientales</p><p>Pour la castagneuse, la force de ses poings est\_capable de venir à bout de tous les problèmes\_et de toutes les situations. En cas d’échec,\_c’est qu’elle n’a pas frappé assez fort. Le plus\_important est d’être toujours debout à la fin.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.54
-      slug: ""
+      slug: ''
       maxDefenseArmor: 0
       modifiers:
         - type: profile
           source: Item.vFBthEAEY098672P
           subtype: resource
           target: mp
-          value: "@niv+@per"
-          additionalInfos: ""
+          value: '@niv+@per'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Item.vFBthEAEY098672P
           subtype: combat
           target: melee
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Item.vFBthEAEY098672P
           subtype: combat
           target: ranged
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
       martialTrainingsWeapons:
         unarmed: true
@@ -1116,27 +1101,26 @@ items:
       compendiumSource: Item.vFBthEAEY098672P
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 0Jpe7atZXBzrwLUs
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.0Jpe7atZXBzrwLUs"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.0Jpe7atZXBzrwLUs'
   - folder: SVK15InjZYL8tbL4
     name: Voie des Champions
     type: path
-    img: >-
-      icons/environment/people/infantry-armored.webp
+    img: icons/environment/people/infantry-armored.webp
     _id: ITfJYOJZC71r7MR9
     system:
       description: "<p>Désigne les combattants exceptionnels,\_plus compétents que la moyenne au sein de leur\_communauté ou de leur corps de métier.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.jOyeMRRjZyGYKoeP.Item.EE8fElNU061NmJCT
@@ -1154,30 +1138,29 @@ items:
       compendiumSource: Item.ik44OrTBXMJaEDpM
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.ITfJYOJZC71r7MR9"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.ITfJYOJZC71r7MR9'
   - folder: 7jQEzn5foDQAdeMy
     name: Imparable
     type: capacity
-    img: >-
-      icons/skills/melee/shield-damaged-broken-blue.webp
+    img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si la\_brute obtient un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> sur un jet\_de d20 à un test d'attaque (même sans utiliser\_Imparable), elle <strong>inflige +1d6 DM et l'attaque est\_automatiquement réussie</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p120
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action activable/désactivable donne le Dé Bonus en
         attaque de contact.</p><p>La deuxième action permet de jeter
         automatiquement les DM supplémentaires.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 1
@@ -1192,7 +1175,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.EE8fElNU061NmJCT
           indice: 0
           label: Dé Bonus
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1210,14 +1193,14 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.EE8fElNU061NmJCT
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.jOyeMRRjZyGYKoeP.Item.EE8fElNU061NmJCT
           indice: 1
           label: Si 15 à 20
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -1242,7 +1225,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1258,9 +1241,9 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: EE8fElNU061NmJCT
     ownership:
@@ -1268,20 +1251,19 @@ items:
       oByx0z6HY26hEziz: 3
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.EE8fElNU061NmJCT"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.EE8fElNU061NmJCT'
   - folder: 7jQEzn5foDQAdeMy
     name: Riposte
     type: capacity
-    img: >-
-      icons/skills/melee/maneuver-greatsword-yellow.webp
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
     _id: LgUFz0f4fkywjbJp
     system:
       description: "<p>Le champion peut effectuer <strong>une\_attaque en action gratuite contre chaque adversaire</strong> qui l'attaque à l'exception de celui qu'il\_a lui-même choisi d'attaquer à son tour</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -1302,29 +1284,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       oByx0z6HY26hEziz: 3
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.LgUFz0f4fkywjbJp"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.LgUFz0f4fkywjbJp'
   - folder: pdQQTQ02SRaePPZe
     name: Hausser le ton
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-staff-yellow-brown.webp
+    img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
     _id: BVo2aRSGbUueF3GL
     system:
       description: "<p>Lorsqu'il passe <strong>sous la moitié\_de sa valeur maximale de PV</strong>, le champion gagne\_un bonus de <strong>+5 à ses tests d'attaque et +1d6 aux\_DM</strong> et réduit tous les DM subis de 5 points par\_attaque <strong>(RD 5)</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: <p>L'action activable/désactivable donne les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -1339,7 +1320,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.BVo2aRSGbUueF3GL
           indice: 0
           label: Si PV < 50%
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1357,23 +1338,23 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.BVo2aRSGbUueF3GL
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.BVo2aRSGbUueF3GL
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.BVo2aRSGbUueF3GL
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1384,31 +1365,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.BVo2aRSGbUueF3GL"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.BVo2aRSGbUueF3GL'
   - folder: 7jQEzn5foDQAdeMy
     name: Charge
     type: capacity
-    img: >-
-      icons/equipment/head/helm-spangen-horned-gold.webp
+    img: icons/equipment/head/helm-spangen-horned-gold.webp
     system:
       description: "<p>La brute parcourt une distance\_maximale de 30 mètres et porte une attaque :\_lancez <strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si\_l'attaque est réussie, en plus des DM normaux,\_une victime de <strong>taille inférieure ou égale</strong> à la brute\_doit faire un <strong>test opposé de FOR ou être renversée</strong>.\_Dans ce cas, la brute embroche sa victime et <strong>les\_DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p120
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action activable/désactivable donne le dé bonus aux
         attaques de contact.</p><p>La deuxième attaque permet de réaliser le
         test opposé de FOR et d'appliquer le statut Renversé si il est
         réussi.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 4
@@ -1423,7 +1403,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.MKpful8Hokgso9lY
           indice: 0
           label: Dé bonus
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1441,14 +1421,14 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.MKpful8Hokgso9lY
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.jOyeMRRjZyGYKoeP.Item.MKpful8Hokgso9lY
           indice: 1
           label: Si taille inférieure ou égale
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1466,11 +1446,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@for"
-                crit: ""
-                difficulty: "@oppose.for"
+                formula: '@for'
+                crit: ''
+                difficulty: '@oppose.for'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -1480,11 +1460,11 @@ items:
                 active: true
                 applyOn: success
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
       allowLinkedCapacity: false
@@ -1496,9 +1476,9 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: MKpful8Hokgso9lY
     ownership:
@@ -1506,22 +1486,21 @@ items:
       oByx0z6HY26hEziz: 3
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.MKpful8Hokgso9lY"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.MKpful8Hokgso9lY'
   - folder: 7jQEzn5foDQAdeMy
     name: Enrager
     type: capacity
-    img: >-
-      icons/creatures/abilities/mouth-teeth-human.webp
+    img: icons/creatures/abilities/mouth-teeth-human.webp
     system:
       description: "<p>Lorsqu'elle reçoit un coup critique\_ou si ses PV sont réduits de moitié ou plus, la\_brute <strong>devient enragée</strong>. </p><p>Elle <strong>ignore les pénalités\_de douleur ou la peur</strong>, augmente de <strong>+5 son score\_d'attaque au contact et ses DM de +1d6</strong>. </p><p>Elle\_peut encore agir un tour complet après avoir\_atteint 0 PV.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p120
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable/désactivable donne les bonus à l'attaque de
         contact et aux DM ainsi qu'un état indiquant sa résistance à la
         peur.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1535,8 +1514,8 @@ items:
       actions:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.SxBiiKyIaM3Vz7AT
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1554,23 +1533,23 @@ items:
               source: Actor.jOyeMRRjZyGYKoeP.Item.SxBiiKyIaM3Vz7AT
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.SxBiiKyIaM3Vz7AT
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.jOyeMRRjZyGYKoeP.Item.SxBiiKyIaM3Vz7AT
               subtype: state
               target: fearImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1581,9 +1560,9 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: SxBiiKyIaM3Vz7AT
     ownership:
@@ -1591,21 +1570,20 @@ items:
       oByx0z6HY26hEziz: 3
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.SxBiiKyIaM3Vz7AT"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.SxBiiKyIaM3Vz7AT'
   - folder: 7jQEzn5foDQAdeMy
     name: Percuter
     type: capacity
-    img: >-
-      icons/skills/melee/strike-hammer-destructive-blue.webp
+    img: icons/skills/melee/strike-hammer-destructive-blue.webp
     system:
       description: "<p>Sur une « @UUID[Item.0t3tE1cEPQ6dWPrj]{charge }» réussie, si la\_victime est d'une <strong>taille inférieure ou égale à la\_brute</strong>, elle est de plus <strong>projetée à [1d6+1] mètres</strong>\_de là. </p><p>Elle doit réussir un test de <strong>CON de difficulté\_15 ou être étourdie</strong>. À chaque tour, elle peut\_tenter un nouveau test de CON pour retrouver\_ses esprits.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p120
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
         statut Etourdi pendant tout le combat en cas d'échec.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 6
@@ -1620,7 +1598,7 @@ items:
         - source: Actor.jOyeMRRjZyGYKoeP.Item.hYbbVpCucY1YvqDb
           indice: 0
           label: Si charge vs taille <=
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1636,7 +1614,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -1645,12 +1623,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
                 unit: combat
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -1666,25 +1644,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: hYbbVpCucY1YvqDb
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.hYbbVpCucY1YvqDb"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.hYbbVpCucY1YvqDb'
   - name: Tranchoir runique +2 de froid
     type: attack
     img: icons/svg/sword.svg
     _id: YnwZ2A3hk037Qfb6
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -1695,8 +1673,8 @@ items:
       actions:
         - source: Item.3ujTeGUUeAD11NWD
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -1714,9 +1692,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@for +2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@for +2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 + @for +2 +1d6
               target:
@@ -1728,7 +1706,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     effects: []
@@ -1742,11 +1720,11 @@ items:
       compendiumSource: Item.3ujTeGUUeAD11NWD
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!jOyeMRRjZyGYKoeP.YnwZ2A3hk037Qfb6"
+    _key: '!actors.items!jOyeMRRjZyGYKoeP.YnwZ2A3hk037Qfb6'
 effects: []
 sort: 0
 ownership:
@@ -1757,10 +1735,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238594661
   modifiedTime: 1772238594661
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!actors!jOyeMRRjZyGYKoeP"
+_key: '!actors!jOyeMRRjZyGYKoeP'

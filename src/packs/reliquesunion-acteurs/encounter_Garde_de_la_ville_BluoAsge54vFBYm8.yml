@@ -144,15 +144,15 @@ system:
       bonuses:
         sheet: 0
         effects: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: >-
         <p>Des villages et zones rurales aux grandes cités, il existe un
         éventail de personnes chargées de protéger la population et (parfois
@@ -160,7 +160,7 @@ system:
         </p><p>Le garde de la ville est un garde professionnel, mieux équipé et
         entraîné qu’un simple milicien. </p>
     languages: []
-    properties: ""
+    properties: ''
   magic: 0
   currentEffects: []
   wealth:
@@ -189,7 +189,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -267,9 +267,9 @@ items:
     img: icons/svg/sword.svg
     _id: 63RmDRK7ooPJEeJm
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: epee-longue
       subtype: melee
       learned: true
@@ -283,7 +283,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ""
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -298,9 +298,9 @@ items:
           resolvers:
             - type: attack
               skill:
-                formula: "+4"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+4'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+2
               target:
@@ -313,7 +313,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -326,22 +326,22 @@ items:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!BluoAsge54vFBYm8.63RmDRK7ooPJEeJm"
+    _key: '!actors.items!BluoAsge54vFBYm8.63RmDRK7ooPJEeJm'
   - folder: eRnLMLNnqgpvpmpq
     name: Arbalète
     type: attack
     img: icons/svg/sword.svg
     _id: skJIl7p8nmx9PP7C
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: arbalete
       subtype: ranged
       learned: true
@@ -355,7 +355,7 @@ items:
         - source: Item.Kkq7VvDKKjrdECbA
           indice: 0
           label: Arbalète
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -373,9 +373,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+4"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+4'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d4
               target:
@@ -386,13 +386,13 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
         value: null
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -408,23 +408,22 @@ items:
       compendiumSource: Item.Kkq7VvDKKjrdECbA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!BluoAsge54vFBYm8.skJIl7p8nmx9PP7C"
+    _key: '!actors.items!BluoAsge54vFBYm8.skJIl7p8nmx9PP7C'
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
-    img: >-
-      icons/weapons/swords/sword-guard-brass-worn.webp
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
     _id: MxlBBCYoBl89lCcM
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: epee-longue
       tags: []
       subtype: weapon
@@ -443,7 +442,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ""
+        unit: ''
       rarity: common
       equipped: false
       properties:
@@ -456,8 +455,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -475,9 +474,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 + @for
               target:
@@ -488,12 +487,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -509,23 +508,22 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!BluoAsge54vFBYm8.MxlBBCYoBl89lCcM"
+    _key: '!actors.items!BluoAsge54vFBYm8.MxlBBCYoBl89lCcM'
   - folder: E0IHxlFlZyFSfQGY
     name: Arbalète légère
     type: equipment
-    img: >-
-      icons/weapons/crossbows/crossbow-simple-black.webp
+    img: icons/weapons/crossbows/crossbow-simple-black.webp
     _id: DxcKMfYhCybHxbvj
     system:
       description: <p>Nécessite une action de mouvement pour être rechargée.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: arbalete-legere
       tags: []
       subtype: weapon
@@ -568,8 +566,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.acGjjV3uAZpTT30J
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -587,9 +585,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d4
               target:
@@ -600,7 +598,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -611,22 +609,22 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.acGjjV3uAZpTT30J
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!BluoAsge54vFBYm8.DxcKMfYhCybHxbvj"
+    _key: '!actors.items!BluoAsge54vFBYm8.DxcKMfYhCybHxbvj'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.cof2-base.cof-2-base-encounter.Actor.ayVEbVXzg1p5RWI4
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238507682
   modifiedTime: 1772238507682
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -635,4 +633,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: BluoAsge54vFBYm8
 sort: 200000
-_key: "!actors!BluoAsge54vFBYm8"
+_key: '!actors!BluoAsge54vFBYm8'

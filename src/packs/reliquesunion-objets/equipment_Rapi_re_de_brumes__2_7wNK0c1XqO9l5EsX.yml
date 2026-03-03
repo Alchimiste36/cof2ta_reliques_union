@@ -1,8 +1,7 @@
 folder: fkaQ5zi2WGOp22kb
 name: Rapière de brumes +2
 type: equipment
-img: >-
-  icons/weapons/swords/scimitar-worn-blue.webp
+img: icons/weapons/swords/scimitar-worn-blue.webp
 system:
   description: >-
     <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée, à
@@ -11,7 +10,7 @@ system:
     /><p><strong>Arme magique de Centaure - Ka'Kata</strong></p><ul><li><p>Bonus
     de +2 en Attaque et DM</p></li><li><p>sur un résultat de 15 à 20 sur le jet
     d'attaque, la cible est aveuglée pendant 1d4 rounds.</p></li></ul>
-  source: ""
+  source: ''
   origin: Livre du Joueur p.157
   slug: rapiere
   tags:
@@ -45,8 +44,8 @@ system:
   actions:
     - source: Actor.0zLeG9iYDxAcg6Sk.Item.VminHJXKlVeLMNAO
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -64,9 +63,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc +2"
-            crit: "19"
-            difficulty: "@cible.def"
+            formula: '@atc +2'
+            crit: '19'
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for +2
           target:
@@ -79,15 +78,15 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - blind
             duration: 1d4
             unit: round
       modifiers: []
   range:
-    unit: ""
+    unit: ''
     base: 0
     ability: null
     details: null
@@ -103,9 +102,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771881098514
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -114,4 +113,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: 7wNK0c1XqO9l5EsX
 sort: 3700000
-_key: "!items!7wNK0c1XqO9l5EsX"
+_key: '!items!7wNK0c1XqO9l5EsX'

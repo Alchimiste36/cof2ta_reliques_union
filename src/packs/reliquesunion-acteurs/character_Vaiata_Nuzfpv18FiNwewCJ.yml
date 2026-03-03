@@ -73,7 +73,7 @@ system:
     xp:
       max: 0
     recovery:
-      dice: ""
+      dice: ''
     tempDm: 0
   combat:
     init:
@@ -128,7 +128,7 @@ system:
       max: null
     crit:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -138,7 +138,7 @@ system:
       max: null
     dr:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -185,17 +185,17 @@ system:
       private: "<p>la flamme de la jeunesse incarnée dans cette jeune centaure femelle à la curiosité maladive et à l'espièglerie dans chaque fibre de son corps. Toujours souriante, ses yeux trahissent souvent son manque d'attention.</p><p>Après avoir trépigner sur les bancs de l'école en début de journée, elle passe son temps à aider qui le souhaite mais surtout pas trop longtemps.\_<span style=\"color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">Douée dans beaucoup de tâches du Village, elle ne sera peut-être jamais assez assidue pour devenir experte d'un sujet ou d'un artisanat.</span></p><p><span style=\"color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">En fin de journée, elle est souvent avec @UUID[Actor.EeHmNrec4W6ZBwu5]{Peepi} et @UUID[Actor.9HdmSAxScK9Twvch]{Taiohi}, un frère et une soeur de 7 et 6 ans, a les faire marrer, faire des pirouettes ou leur raconter des histoires d'aventures, de voyages et de dragons.</span></p><p><span style=\"color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">Elle passe aussi beaucoup de temps avec @UUID[Actor.gWWGE6tcGj7MOU2j]{Miihini} a se raconter des ragots et pur l'aider dans l'entretien des machines du Village.</span></p><p><span style=\"color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">Les seuls moments où elle peut être triste, c'est lorsqu'elle constate la distance qui commence à les séparer avec son petit frère, @UUID[Actor.vtQwznCk8jlT2WXW]{Mataro}. Elle n'arrive pas a comprendre cette colère bloquée de son frère et son sérieux depuis quelques temps.</span></p><p><span style=\"color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">L'arrivée des Aventuriers étrangers sera une bénédiction pour Vaiata : de la nouveauté, des histoires, des découvertes et la perspective d'en apprendre plus sur le vaste monde extérieur. Elle bravera tous les interdits pour leur parler et les aider.</span></p>"
       public: <p>Femelle - 18 ans</p>
     appearance:
-      private: ""
+      private: ''
       public: >-
         <img
         src="modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/vaiata_total.webp"
         width="200" height="200">
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     size: medium
     languages:
-      - ""
+      - ''
   wealth:
     gp:
       value: 0
@@ -221,7 +221,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -298,44 +298,43 @@ items:
   - folder: cpwFYFL7c1QAGNtJ
     name: Centaure d'Arkanov
     type: feature
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kai.webp
+    img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kai.webp
     _id: RwixfdCzTZN8vdos
     system:
       description: "<p>Le Village d'Arkanov est resté en autarcie depuis des centaines d'années.</p><p>Les membres de ce village ont des valeurs ancrées dans leurs veines et sont tous formés, dès leur plus jeunes âge, a de nombreuses techniques de combats.</p><p>Rien arrêtera un Centaure d'Arkanov lorsqu'il veut défendre ces convictions et s'il doit en venir aux mains, il est conseiller de rester sur ses gardes car se sont de redoutable danseurs lorsqu'ils attaquent.</p><h2>Modificateurs des Centaures</h2><p>Atout : <strong>+2 FOR et +2 SAG</strong><br />Faiblesse : <strong>-2 DEX</strong><br />Âge de départ à l’aventure : <strong>18 ans et plus</strong><br />Espérance de vie : <strong>environ 80 ans</strong><br /><strong>Trait des Centaures :</strong>\_</p><ul><li>Lumière des étoiles</li><li>+1 PR</li><li>Attaque Naturelle : Ruage ou Bottage (Contact, 1d8+FOR DM, crit 20, étourdissement 1 tours sur 15 à 20)</li></ul>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: people
       modifiers:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.RwixfdCzTZN8vdos
           type: feature
           subtype: ability
           target: for
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.Nuzfpv18FiNwewCJ.Item.RwixfdCzTZN8vdos
           type: feature
           subtype: ability
           target: per
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.Nuzfpv18FiNwewCJ.Item.RwixfdCzTZN8vdos
           type: feature
           subtype: ability
           target: agi
-          value: "-2"
+          value: '-2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - source: Actor.Nuzfpv18FiNwewCJ.Item.RwixfdCzTZN8vdos
           type: feature
           subtype: resource
           target: rp
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       paths:
         - Actor.Nuzfpv18FiNwewCJ.Item.2cRS9FHKoAdQQwNr
         - Actor.Nuzfpv18FiNwewCJ.Item.kKe9fe1mX5c1VkLo
@@ -348,20 +347,19 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 200000
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.RwixfdCzTZN8vdos"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.RwixfdCzTZN8vdos'
   - folder: oBczRWJocTMbLWNH
     name: Voie du Peuple Centaure
     type: path
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kiliko_total.webp
+    img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kiliko_total.webp
     _id: 2cRS9FHKoAdQQwNr
     system:
       description: >-
@@ -374,9 +372,9 @@ items:
         zones restraintes.</p><p>Un village perdu dans les montagnes des Crocs
         d'Acier est peuplé de Centaures vivant en autarcie depuis des centaines
         d'années et oubliés de tous, le Village d'Arkanov.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: people
       capacities:
         - Actor.Nuzfpv18FiNwewCJ.Item.Zolv37I2WhbpfIhn
@@ -397,24 +395,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.2cRS9FHKoAdQQwNr"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.2cRS9FHKoAdQQwNr'
   - folder: R5rFF6hGTI3aMtD1
     name: Athlétisme
     type: capacity
-    img: >-
-      icons/skills/movement/arrows-up-trio-red.webp
+    img: icons/skills/movement/arrows-up-trio-red.webp
     _id: Zolv37I2WhbpfIhn
     system:
       description: "<p>Les centaures gagnent <strong>+5 au tests\_ de force</strong>. Pour des tests d'Athlétisme, de lutte et de force pour tirer, soulever ou déplacer des objets ainsi que pour la course.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent aux tests de FOR.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -428,8 +425,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.Zolv37I2WhbpfIhn
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -447,9 +444,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.Zolv37I2WhbpfIhn
               subtype: skill
               target: for
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -464,16 +461,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.Zolv37I2WhbpfIhn"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.Zolv37I2WhbpfIhn'
   - folder: R5rFF6hGTI3aMtD1
     name: Métabolisme Rustique
     type: capacity
-    img: >-
-      icons/magic/defensive/shield-barrier-deflect-teal.webp
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     _id: 71Kvovi3jGzIxfqe
     system:
       description: >-
@@ -481,11 +477,11 @@ items:
         autres espèces.</p><p>Ils guérissent plus vites et sont très vigilants.
         Ils gagnent <strong>+1 PR</strong> et <strong>ne peuvent plus être pris
         par surprise dans leur sommeil</strong>.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent de 1 DR.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -499,8 +495,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.71Kvovi3jGzIxfqe
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -518,9 +514,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.71Kvovi3jGzIxfqe
               subtype: resource
               target: rp
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -535,16 +531,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.71Kvovi3jGzIxfqe"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.71Kvovi3jGzIxfqe'
   - folder: R5rFF6hGTI3aMtD1
     name: Coup de Pattes
     type: capacity
-    img: >-
-      icons/skills/targeting/crosshair-pointed-orange.webp
+    img: icons/skills/targeting/crosshair-pointed-orange.webp
     _id: fsKG1lnVTzQh7n0D
     system:
       description: >-
@@ -552,13 +547,13 @@ items:
         supplémentaire à chaque round</strong>.</p><p>Ruer/Botter : action
         simple / Attaque Contact basée sur la FORCE / 1d8 + FOR / Crit 20 / sur
         15 ou + au jet d'attaque =&gt; Etourdissement pdt 1 round</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser une attaque et d'appliquer le statut
         Étourdi si le seuil de déclenchement est atteint pendant 1 round.</p>
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: false
       rank: 3
@@ -572,8 +567,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.fsKG1lnVTzQh7n0D
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -591,9 +586,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 + @for
               target:
@@ -606,11 +601,11 @@ items:
                 active: true
                 applyOn: attackSuccessTreshold
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
-                duration: "1"
+                duration: '1'
                 unit: round
           modifiers: []
       allowLinkedCapacity: false
@@ -626,16 +621,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.fsKG1lnVTzQh7n0D"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.fsKG1lnVTzQh7n0D'
   - folder: R5rFF6hGTI3aMtD1
     name: Maîtrise des Armes Longues
     type: capacity
-    img: >-
-      icons/weapons/polearms/spear-flared-blue.webp
+    img: icons/weapons/polearms/spear-flared-blue.webp
     _id: PKQWHaqizkAdvPPb
     system:
       description: >-
@@ -645,14 +639,14 @@ items:
         round</p><p><strong>Armes d'Hast : </strong>Les Centaures peuvent manier
         deux armes d'Hast simultanément en utilisant 1d12 et un malus de -2 au
         DM pour chaque attaque.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Modifier le profil de l'acteur pour ajouter les formations
         martiales.</p><p>L'action activable/désactivable permet de s'infliger le
         dé malus et le malus aux DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -667,7 +661,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.PKQWHaqizkAdvPPb
           indice: 0
           label: 2 armes d'hast simultanément
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: debuff
           actionType: none
@@ -685,16 +679,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.PKQWHaqizkAdvPPb
               subtype: malusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.PKQWHaqizkAdvPPb
               subtype: combat
               target: damMelee
-              value: "-2"
+              value: '-2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -709,24 +703,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.PKQWHaqizkAdvPPb"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.PKQWHaqizkAdvPPb'
   - folder: R5rFF6hGTI3aMtD1
     name: Corps Puissant
     type: capacity
-    img: >-
-      icons/magic/earth/strike-fist-stone.webp
+    img: icons/magic/earth/strike-fist-stone.webp
     _id: 1N8upYrWWrSDMjmi
     system:
       description: <p>Les Centaures augmentent leur FORCE et leur CONSTITUTION de +2</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent aux caractéristiques.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -740,8 +733,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.1N8upYrWWrSDMjmi
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -759,16 +752,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.1N8upYrWWrSDMjmi
               subtype: ability
               target: for
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.1N8upYrWWrSDMjmi
               subtype: ability
               target: con
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -783,16 +776,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.1N8upYrWWrSDMjmi"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.1N8upYrWWrSDMjmi'
   - folder: oBczRWJocTMbLWNH
     name: Voie Culturelle d'Arkanov
     type: path
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/vaiata_total.webp
+    img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/vaiata_total.webp
     _id: kKe9fe1mX5c1VkLo
     system:
       description: >-
@@ -803,9 +795,9 @@ items:
         d'Arkanov lorsqu'il veut défendre ces convictions et s'il doit en venir
         aux mains, il est conseiller de rester sur ses gardes car se sont de
         redoutable danseurs lorsqu'ils attaquent.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: people
       capacities:
         - Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
@@ -826,16 +818,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.kKe9fe1mX5c1VkLo"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.kKe9fe1mX5c1VkLo'
   - folder: Xr4lKI9brFJ7NkYl
     name: Danse de Combat
     type: capacity
-    img: >-
-      icons/magic/movement/abstract-ribbons-red-orange.webp
+    img: icons/magic/movement/abstract-ribbons-red-orange.webp
     _id: GxBqu5QKsnleXyzJ
     system:
       description: >-
@@ -847,14 +838,14 @@ items:
         :</p><ul><li>Si réussi =&gt; <strong>Prochaine attaque
         +5</strong></li><li>Si raté =&gt; <strong>Prochaine attaque
         -2</strong></li></ul>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de réaliser le test de FOR avec le Dé bonus
         contre le CHA.</p><p>Les deux actions suivant sont
         activables/désactivables en fonction du résultat du test.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 1
@@ -869,7 +860,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
           indice: 0
           label: Intimidation
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -887,11 +878,11 @@ items:
               bonusDiceAdd: true
               malusDiceAdd: false
               skill:
-                formula: "@for"
-                crit: ""
-                difficulty: "@oppose.cha"
+                formula: '@for'
+                crit: ''
+                difficulty: '@oppose.cha'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -901,13 +892,13 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
           indice: 1
           label: Si réussi
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -925,14 +916,14 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
           indice: 2
           label: Si raté
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -950,9 +941,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.GxBqu5QKsnleXyzJ
               subtype: combat
               target: melee
-              value: "-2"
+              value: '-2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -967,16 +958,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.GxBqu5QKsnleXyzJ"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.GxBqu5QKsnleXyzJ'
   - folder: Xr4lKI9brFJ7NkYl
     name: Science du Combat
     type: capacity
-    img: >-
-      icons/skills/melee/spear-tips-three-green.webp
+    img: icons/skills/melee/spear-tips-three-green.webp
     _id: R8MX6SOOHQK5AHzI
     system:
       description: >-
@@ -986,13 +976,13 @@ items:
         supplémentaire de rang 1 ou 2 de la <strong>voie de la
         Puissance</strong> ou de la <strong>voie de la Maîtrise des
         Armes</strong>.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
         liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1017,16 +1007,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.R8MX6SOOHQK5AHzI"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.R8MX6SOOHQK5AHzI'
   - folder: Xr4lKI9brFJ7NkYl
     name: Valeurs Ancestrales
     type: capacity
-    img: >-
-      icons/sundries/documents/document-symbol-circle-gold-red.webp
+    img: icons/sundries/documents/document-symbol-circle-gold-red.webp
     _id: cY1Pa5b10xWdKJMo
     system:
       description: >-
@@ -1039,14 +1028,14 @@ items:
         enseignées à Arkanov, le Centaure gagne un bonus de <strong>+10 à tous
         ses tests de CHARISME</strong>.</p><p><strong>Les deux effets sont
         cumulables.</strong></p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux tests de CHA.</p><p>La deuxième action
         activable/désactivable permet d'obtenir le De bonus et le bonus aux
         tests de CHA.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1060,8 +1049,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.cY1Pa5b10xWdKJMo
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1079,14 +1068,14 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.cY1Pa5b10xWdKJMo
               subtype: skill
               target: cha
-              value: "10"
+              value: '10'
               apply: self
               additionalInfos: Tous les tests
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.cY1Pa5b10xWdKJMo
           indice: 1
           label: vs Manipulation
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1104,16 +1093,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.cY1Pa5b10xWdKJMo
               subtype: bonusDice
               target: cha
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.cY1Pa5b10xWdKJMo
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1128,22 +1117,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.cY1Pa5b10xWdKJMo"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.cY1Pa5b10xWdKJMo'
   - folder: Xr4lKI9brFJ7NkYl
     name: Tatouage Rituel
     type: capacity
-    img: >-
-      icons/tools/scribal/pen-steel-grey-brown.webp
+    img: icons/tools/scribal/pen-steel-grey-brown.webp
     _id: C7JErPad3qebWkbB
     system:
       description: "<p>Lorsqu'il devient un réel guerrier du Village, le Centaure obtient un tatouage rituel particulièrement important pour lui. Réel symbole de sa place dans le clan, la cérémonie du Tatouage est très importante pour le Centaure.</p><p>Il peut se le faire lui-même, même si souvent un être cher (conjoint, parent, enfant...) réalise le tatouage. Il faut environ 5 heures pour réaliser le Tatouage Rituel.</p><p>\_</p><p>Le Centaure peut choisir entre :\_</p><ul><li><strong>Centaure =&gt;</strong> Gagne un Rang dans la Voie du Peuple du Centaure</li><li><strong>Guérison =&gt;</strong> Gagne une régénération magique de 2PV/rnd</li><li><strong>Peau Epaisse =&gt;</strong> Gagne DEF+3 et RD 3</li><li><strong>Chanceux =&gt;</strong> Gagne +2 points de Chance</li><li><strong>Force =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 FORCE pendant 1d4 heures</li><li><strong>Présence =&gt;</strong> Activation par une action de mouvement 3 fois/jour =&gt; gagne +4 CHARISME pendant 1d4 heures</li><li><strong>Appel du Clan =&gt;</strong> La réputation du Centaure est incroyable. Au bout de quelques temps, des suivants viennent rejoindre le Centaure et l'aider dans ses objectifs. Le Centaure gagne des compagnons d'arme. Répartissez [NIV*2 du Centaure] parmis les suivants pour estimer leur niveau (aucun suivant ne peut avoir plus que NIV-2 du Centaure)</li></ul>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les 5 actions permettent d'obtenir les effets des tatouages guérison,
         peau épaisse, chanceux, force ou présence. Pour activer un effet,
@@ -1151,7 +1139,7 @@ items:
         l'apprentissage, cette capacité donne droit à une capacité liée pour
         l'effet de la capacité de rang 2. Glissez-déposez la capacité choisie
         sous cette capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1166,7 +1154,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
           indice: 0
           label: Guérison
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: heal
           actionType: none
@@ -1180,7 +1168,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: "2"
+                formula: '2'
               target:
                 type: self
                 number: 0
@@ -1189,7 +1177,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1200,7 +1188,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
           indice: 1
           label: Peau épaisse
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1216,22 +1204,22 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
               subtype: combat
               target: def
-              value: "3"
+              value: '3'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
               subtype: combat
               target: dr
-              value: "3"
+              value: '3'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
           indice: 2
           label: Chanceux
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1247,15 +1235,15 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
               subtype: resource
               target: fp
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
           indice: 3
           label: Force
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1271,15 +1259,15 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
               subtype: ability
               target: for
-              value: "4"
+              value: '4'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
           indice: 4
           label: Présence
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1295,9 +1283,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.C7JErPad3qebWkbB
               subtype: ability
               target: cha
-              value: "4"
+              value: '4'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: true
@@ -1313,16 +1301,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.C7JErPad3qebWkbB"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.C7JErPad3qebWkbB'
   - folder: Xr4lKI9brFJ7NkYl
     name: Symbole d'Arkanov
     type: capacity
-    img: >-
-      icons/magic/symbols/rune-sigil-black-pink.webp
+    img: icons/magic/symbols/rune-sigil-black-pink.webp
     _id: b9vh8iRdJA6SWMag
     system:
       description: >-
@@ -1330,11 +1317,11 @@ items:
         +2</strong></li><li><strong>CHA et FOR +1</strong> et peut choisir un
         deuxième tatouage rituel</li><li>peut choisir deux nouveaux tatouages
         rituels</li></ul>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: "<p>L'action permet d'obtenir un bonus en CHA et FOR de +1.\_</p><p>Si vous choisissez la première option modifiez la valeur du Modificateur de l'action par 2 et ajouter la Condition \"est appris\" sur le tatouage choisi du rang 4.</p><p>Si vous choisissez la troisième action, supprimer l'action et ajouter la Condition \"est appris\" sur les tatouages choisis du rang 4.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1348,8 +1335,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.b9vh8iRdJA6SWMag
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1367,16 +1354,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.b9vh8iRdJA6SWMag
               subtype: ability
               target: for
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.b9vh8iRdJA6SWMag
               subtype: ability
               target: cha
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1391,26 +1378,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.b9vh8iRdJA6SWMag"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.b9vh8iRdJA6SWMag'
   - folder: xETnONqwpdD2pn42
     name: Ruer/Botter
     type: capacity
-    img: >-
-      icons/creatures/claws/claw-bear-paw-swipe-brown.webp
+    img: icons/creatures/claws/claw-bear-paw-swipe-brown.webp
     _id: QfqY5IgqJJ2ObIrY
     system:
       description: <p>Attaque naturelle des Centaures.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque avec l'application du statut
         Étroudi si le seuil est atteint.</p>
-      subtype: ""
+      subtype: ''
       actionType: a
       learned: true
       rank: 0
@@ -1424,8 +1410,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.QfqY5IgqJJ2ObIrY
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -1443,9 +1429,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 +@for
               target:
@@ -1458,11 +1444,11 @@ items:
                 active: true
                 applyOn: attackSuccessTreshold
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
-                duration: "1"
+                duration: '1'
                 unit: round
           modifiers: []
       allowLinkedCapacity: false
@@ -1478,25 +1464,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.QfqY5IgqJJ2ObIrY"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.QfqY5IgqJJ2ObIrY'
   - folder: oXin2F69W6OYUCr3
-    name: "Trait : Lumière des étoiles"
+    name: 'Trait : Lumière des étoiles'
     type: capacity
-    img: >-
-      icons/magic/life/heart-hand-gold-green.webp
+    img: icons/magic/life/heart-hand-gold-green.webp
     system:
       description: "<p>Pour un Elfe, l’obscurité de la nuit sous la lumière\_des étoiles n’est que de la pénombre, où seuls\_les petits détails lui échappent.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Ajoute la Vision dans le noir en bonus permanent, à activer dans la
         barre latérale de la feuille de personnage.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -1510,8 +1495,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.i3luuBOVlLVsImSC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1529,9 +1514,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.i3luuBOVlLVsImSC
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1542,47 +1527,47 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: i3luuBOVlLVsImSC
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.i3luuBOVlLVsImSC"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.i3luuBOVlLVsImSC'
   - name: Intrépide Touche-à-tout
     type: profile
     img: icons/svg/upgrade.svg
     _id: sjePuO0hpERgL8uW
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       maxDefenseArmor: 0
       modifiers:
         - type: profile
           source: Actor.Nuzfpv18FiNwewCJ.Item.sjePuO0hpERgL8uW
           subtype: resource
           target: mp
-          value: "@niv+@per"
-          additionalInfos: ""
+          value: '@niv+@per'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.Nuzfpv18FiNwewCJ.Item.sjePuO0hpERgL8uW
           subtype: combat
           target: melee
-          value: "1"
-          additionalInfos: ""
+          value: '1'
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.Nuzfpv18FiNwewCJ.Item.sjePuO0hpERgL8uW
           subtype: combat
           target: ranged
-          value: "1"
-          additionalInfos: ""
+          value: '1'
+          additionalInfos: ''
           apply: self
       martialTrainingsWeapons:
         unarmed: true
@@ -1646,22 +1631,21 @@ items:
       compendiumSource: Item.aAbOhOsZU3zE6l7r
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.sjePuO0hpERgL8uW"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.sjePuO0hpERgL8uW'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de l’Acrobatie
     type: path
-    img: >-
-      icons/skills/movement/feet-winged-sandals-tan.webp
+    img: icons/skills/movement/feet-winged-sandals-tan.webp
     _id: uJsca1qrbXpq4nBJ
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.127
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.Nuzfpv18FiNwewCJ.Item.fL5sxj9vVwtSl9xe
@@ -1678,31 +1662,30 @@ items:
       compendiumSource: Item.3CH8hNH2Wf2Rk4uP
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.uJsca1qrbXpq4nBJ"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.uJsca1qrbXpq4nBJ'
   - folder: TUGiA4J9kobOhuBG
     name: Acrobate
     type: capacity
-    img: >-
-      icons/creatures/abilities/paw-print-yellow.webp
+    img: icons/creatures/abilities/paw-print-yellow.webp
     _id: fL5sxj9vVwtSl9xe
     system:
       description: "<p>Le PJ obtient un bonus de <strong>+5 à tous ses tests de\_DEX</strong> visant à réaliser des <strong>acrobaties</strong>, <strong>conserver\_son équilibre</strong>, <strong>faire des sauts</strong> ou <strong>de l’escalade</strong>.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong> le bonus passe à +10.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux test d'AGI.</p><p>Si le PJ obtient la capacité
         avancée, modifiez le champs Valeur du Modificateur de l'action pour
         inscrire "10".</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1716,7 +1699,7 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.fL5sxj9vVwtSl9xe
           indice: 0
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1734,7 +1717,7 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.fL5sxj9vVwtSl9xe
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Acrobatie / Équilibre / Sauts / Escalade
           resolvers: []
@@ -1747,31 +1730,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.fL5sxj9vVwtSl9xe"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.fL5sxj9vVwtSl9xe'
   - folder: TUGiA4J9kobOhuBG
     name: Grâce féline
     type: capacity
-    img: >-
-      icons/creatures/abilities/cougar-pounce-stalk-black.webp
+    img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
     system:
       description: "<p>Le PJ ajoute son Mod. de <strong>CHA en DEF et en\_initiative</strong> (en plus du Mod. habituel de DEX).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ ajoute son Mod. de\_CHA à tous les tests de discrétion et d’esquive.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent en DEF et Initiative.</p><p>Si le PJ obtient la
         capacité avancée, ajoutez simplement la Condition "est appris" sur la
         seconde action permettant d'obtenir le bonus permanent aux tests
         d'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -1785,8 +1767,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.aQwv3ZYnFgSJN4pl
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1804,21 +1786,21 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.aQwv3ZYnFgSJN4pl
               subtype: combat
               target: init
-              value: "@cha"
+              value: '@cha'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.aQwv3ZYnFgSJN4pl
               subtype: combat
               target: def
-              value: "@cha"
+              value: '@cha'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.aQwv3ZYnFgSJN4pl
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1835,7 +1817,7 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.aQwv3ZYnFgSJN4pl
               subtype: skill
               target: agi
-              value: "@cha"
+              value: '@cha'
               apply: self
               additionalInfos: Discrétion / Esquive
           resolvers: []
@@ -1848,28 +1830,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: aQwv3ZYnFgSJN4pl
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.aQwv3ZYnFgSJN4pl"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.aQwv3ZYnFgSJN4pl'
   - folder: TUGiA4J9kobOhuBG
     name: Lanceur de couteau
     type: capacity
-    img: >-
-      icons/skills/ranged/dagger-thrown-jeweled-green.webp
+    img: icons/skills/ranged/dagger-thrown-jeweled-green.webp
     system:
       description: "<p>Une fois par tour, en plus de ses autres actions,\_le PJ peut lancer un couteau ou une dague sur\_une cible à distance (portée maximale: 10 m)\_en réussissant <strong>un test d’attaque à distance</strong>. </p><p>Cette\_attaque est une <strong>action gratuite</strong>. Elle occasionne\_<strong>[1d4 + Mod. de DEX] de DM</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de réaliser l'attaque à distance.</p>
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: true
       rank: 3
@@ -1884,7 +1865,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.r9diXVfhuRdxnLis
           indice: 0
           label: portée 10m
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -1902,9 +1883,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 +@agi
               target:
@@ -1915,7 +1896,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1928,31 +1909,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: r9diXVfhuRdxnLis
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.r9diXVfhuRdxnLis"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.r9diXVfhuRdxnLis'
   - folder: TUGiA4J9kobOhuBG
     name: Esquive acrobatique
     type: capacity
-    img: >-
-      icons/magic/air/air-wave-gust-smoke-yellow.webp
+    img: icons/magic/air/air-wave-gust-smoke-yellow.webp
     system:
       description: "<p>Une fois par tour, le PJ peut réaliser une esquive\_en réussissant <strong>un test d’attaque à distance</strong>\_contre une <strong>difficulté égale au score obtenu\_par son adversaire</strong> lors de son attaque.</p><p> En cas\_de réussite, <strong>le PJ ne subit aucun DM</strong>. Si cette\_attaque était un critique, il subit tout de même\_des DM normaux (et annule donc l’effet critique «dégâts doublés»).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser l'attaque à distance sans difficulté.
         Ajoutez cette dernière sur la fenêtre de l'attaque ou interpréter
         seulement le résultat obtenu.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1966,8 +1946,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.sRcRNEzaQL9UcZTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -1985,11 +1965,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: ""
+                formula: '@atd'
+                crit: ''
+                difficulty: ''
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 scope: all
@@ -1998,7 +1978,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -2011,28 +1991,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: sRcRNEzaQL9UcZTs
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.sRcRNEzaQL9UcZTs"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.sRcRNEzaQL9UcZTs'
   - folder: TUGiA4J9kobOhuBG
     name: Dextérité héroïque
     type: capacity
-    img: >-
-      icons/skills/movement/arrows-up-trio-red.webp
+    img: icons/skills/movement/arrows-up-trio-red.webp
     system:
       description: "<p>Le PJ augmente son score de\_<strong>DEX de +2</strong> et peut désormais\_<strong>lancer deux d20</strong> à chaque fois\_qu’un test de DEX lui est demandé et conserver le meilleur\_résultat.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.126
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent et Dé Bonus en AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2046,8 +2025,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.GV3UgBedCcfWGYsK
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2065,16 +2044,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.GV3UgBedCcfWGYsK
               subtype: ability
               target: agi
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.GV3UgBedCcfWGYsK
               subtype: bonusDice
               target: agi
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2085,26 +2064,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: GV3UgBedCcfWGYsK
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.GV3UgBedCcfWGYsK"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.GV3UgBedCcfWGYsK'
   - folder: Mf0xrs9ecCLidANW
     name: Voie du Bohème
     type: path
-    img: >-
-      icons/environment/settlement/wagon.webp
+    img: icons/environment/settlement/wagon.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.Nuzfpv18FiNwewCJ.Item.ESZUubKqSwsSKbTM
@@ -2121,28 +2099,27 @@ items:
       compendiumSource: Item.fhzv6SDr2Yl3bBUp
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: nau56qfGmAAlVTQx
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.nau56qfGmAAlVTQx"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.nau56qfGmAAlVTQx'
   - folder: jkGAL6bGBfIzdRCT
     name: Rumeurs et légendes
     type: capacity
-    img: >-
-      icons/sundries/documents/document-official-capital.webp
+    img: icons/sundries/documents/document-official-capital.webp
     system:
       description: "<p>À force de voyager, le PJ a appris toutes sortes\_de choses.</p><p>Il obtient un bonus de <strong>+5 aux tests\_d’INT</strong> pour se «souvenir» d’une information\_historique, politique, géographique ou occulte\_qui pourrait lui être utile. Ce bonus peut être\_appliqué aux tests d’identification des objets\_légendaires.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le bonus passe à +10.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       inGame: "<p>L'action donne le bonus permanent en INT.\_</p><p>Si le PJ obtient la capacité avancée, modifiez le champs valeur du Modificateur de l'action par \"10\".</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -2156,8 +2133,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.ESZUubKqSwsSKbTM
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2175,7 +2152,7 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.ESZUubKqSwsSKbTM
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Se souvenir information historique, politique, occulte...
           resolvers: []
@@ -2188,28 +2165,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ESZUubKqSwsSKbTM
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.ESZUubKqSwsSKbTM"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.ESZUubKqSwsSKbTM'
   - folder: jkGAL6bGBfIzdRCT
     name: Argumenter
     type: capacity
-    img: >-
-      icons/skills/social/diplomacy-handshake.webp
+    img: icons/skills/social/diplomacy-handshake.webp
     system:
       description: "<p>Le PJ peut mettre sa logique et sa malice au\_service de sa force de persuasion.</p><p>Il obtient\_un bonus de <strong>+5 aux tests de CHA visant à\_convaincre</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ peut également appliquer ce bonus pour tromper, mentir ou\_ séduire\_(ne se cumule pas avec la capacité\_@UUID[Item.cOpggP1jWJ1dKfbZ]{Charmant} de\_la @UUID[Item.YMshIWoU6Zfjs3lq]{Voie du Charme}).</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       inGame: "<p>L'action donne le bonus permanent en INT.\_</p><p>Si le PJ obtient la capacité avancée, ajoutez \"/ Tromper / Mentir / Séduire\" dans le champs Notes du Modificateur de l'action.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -2223,8 +2199,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.3A1JRmySDEBfhNVF
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2242,7 +2218,7 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.3A1JRmySDEBfhNVF
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Convaincre
           resolvers: []
@@ -2255,28 +2231,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 3A1JRmySDEBfhNVF
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.3A1JRmySDEBfhNVF"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.3A1JRmySDEBfhNVF'
   - folder: jkGAL6bGBfIzdRCT
     name: Débrouillard
     type: capacity
-    img: >-
-      icons/tools/fasteners/nails-steel-blue.webp
+    img: icons/tools/fasteners/nails-steel-blue.webp
     system:
       description: "<p>Le PJ obtient un bonus de <strong>+5 à tous ses tests\_de survie en nature</strong> et aux <strong>tests de profession et\_d’artisanat</strong> (forge, charpentier, etc.).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       inGame: "<p>L'action donne le bonus permanent en PER, INT, CHA et FOR.\_</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -2290,8 +2265,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2309,35 +2284,35 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Survie en nature
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
               subtype: skill
               target: int
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Profession / Artisanat
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
               subtype: skill
               target: per
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Profession / Artisanat
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
               subtype: skill
               target: for
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Profession / Artisanat
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.wJDupOxIESVelZ1w
               subtype: skill
               target: cha
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Profession / Artisanat
           resolvers: []
@@ -2350,30 +2325,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: wJDupOxIESVelZ1w
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.wJDupOxIESVelZ1w"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.wJDupOxIESVelZ1w'
   - folder: jkGAL6bGBfIzdRCT
     name: Déguisement
     type: capacity
-    img: >-
-      icons/environment/people/cleric-grey.webp
+    img: icons/environment/people/cleric-grey.webp
     system:
       description: "<p>Avec beaucoup d’ingéniosité, un jeu d’acteur\_hors pair et en disposant des accessoires adéquats, le PJ <strong>parvient à prendre l’apparence de\_n’importe quelle créature de taille à peu près\_équivalente</strong> (avec une marge d’environ 50 cm).\_</p><p>S’il subit un examen minutieux, l’aventurier\_doit réussir <strong>un test opposé de CHA contre SAG\_pour ne pas être découvert</strong>. </p><p>Il a besoin de vingt\_minutes pour se préparer et le déguisement\_peut servir pendant deux heures avant que le\_maquillage ne commence à s’altérer.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test opposé de CHA contre PER en cas
         d'examen.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -2387,8 +2361,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.4NGHG8Zhl9e3NG9w
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -2406,11 +2380,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@cha"
-                crit: ""
-                difficulty: "@oppose.per"
+                formula: '@cha'
+                crit: ''
+                difficulty: '@oppose.per'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: single
                 number: 0
@@ -2419,7 +2393,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -2432,30 +2406,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 4NGHG8Zhl9e3NG9w
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.4NGHG8Zhl9e3NG9w"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.4NGHG8Zhl9e3NG9w'
   - folder: jkGAL6bGBfIzdRCT
     name: Touche-à-tout
     type: capacity
-    img: >-
-      icons/tools/smithing/tongs-steel-grey.webp
+    img: icons/tools/smithing/tongs-steel-grey.webp
     system:
       description: "<p>Le PJ peut choisir n’importe quelle <strong>capacité de\_rang 1 à 3 de son choix au sein d’une autre voie\_de combattant ou d’aventurier.</strong> </p><p>Cette capacité\_permet de faire évoluer une capacité en capacité\_avancée. En revanche, comme précisé p. 119,\_seules les capacités de rang 1 ou 2 peuvent être\_avancées, impossible donc pour une capacité\_de rang 3 d'être prise \"deux fois\".</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.129
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La capacité permet d'acquérir une capacité liée en la
         glissant-déposant dans la zone prévue.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2476,26 +2449,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: H9uHEvVIQTGJhr0W
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.H9uHEvVIQTGJhr0W"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.H9uHEvVIQTGJhr0W'
   - folder: Mf0xrs9ecCLidANW
     name: Voie de l'Escrime
     type: path
-    img: >-
-      icons/weapons/swords/swords-short.webp
+    img: icons/weapons/swords/swords-short.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.Nuzfpv18FiNwewCJ.Item.xtSyPAlFBVapsVxw
@@ -2512,28 +2484,27 @@ items:
       compendiumSource: Item.ikAM9200QB5MU51R
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: XP6VuOLzYSZF3ArE
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.XP6VuOLzYSZF3ArE"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.XP6VuOLzYSZF3ArE'
   - folder: yItquDwQdpiBQJL2
     name: Attaque en finesse
     type: capacity
-    img: >-
-      icons/skills/melee/strike-blade-knife-blue-red.webp
+    img: icons/skills/melee/strike-blade-knife-blue-red.webp
     system:
       description: "<p>Le PJ peut <strong>utiliser son score d’attaque à distance</strong>\_pour porter une attaque au contact <strong>lorsqu’il\_utilise une arme de duel ou une dague</strong>.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le PJ peut appliquer le bonus\_de DEF d’une main gauche (cf. «Équipement»\_page 156) contre les attaques à distance.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: "<p>L'action activable permet d'ajouter AGI et soustraire FOR pour les attaque de contact.\_</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -2548,7 +2519,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.xtSyPAlFBVapsVxw
           indice: 0
           label: Utilisation d'une arme légère
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2566,9 +2537,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.xtSyPAlFBVapsVxw
               subtype: combat
               target: melee
-              value: "@agi -@for"
+              value: '@agi -@for'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2579,32 +2550,31 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: xtSyPAlFBVapsVxw
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.xtSyPAlFBVapsVxw"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.xtSyPAlFBVapsVxw'
   - folder: yItquDwQdpiBQJL2
     name: Intelligence du combat
     type: capacity
-    img: >-
-      icons/skills/melee/maneuver-daggers-paired-orange.webp
+    img: icons/skills/melee/maneuver-daggers-paired-orange.webp
     system:
       description: "<p>Le PJ ajoute son <strong>Mod. d’INT en initiative et en\_DEF</strong> en plus de son Mod. de DEX.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> s’il le souhaite, le PJ peut\_remplacer le Mod. de FOR aux DM par son\_Mod. d’INT. </p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent d'INT en Initiative et en DEF.</p><p>Si le PJ obtient
         la capacité avancée, ajoutez simplement la Condition "est appris" sur la
         deuxième action qui, lorsqu'elle est activée, ajoute INT et soustrait
         FOR aux DM de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -2618,8 +2588,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.LkTPgcsJtzSZIe0c
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2637,21 +2607,21 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.LkTPgcsJtzSZIe0c
               subtype: combat
               target: init
-              value: "@int"
+              value: '@int'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.LkTPgcsJtzSZIe0c
               subtype: combat
               target: def
-              value: "@int"
+              value: '@int'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.LkTPgcsJtzSZIe0c
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2667,9 +2637,9 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.LkTPgcsJtzSZIe0c
               subtype: combat
               target: damMelee
-              value: "@int -@for"
+              value: '@int -@for'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: false
@@ -2681,30 +2651,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: LkTPgcsJtzSZIe0c
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.LkTPgcsJtzSZIe0c"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.LkTPgcsJtzSZIe0c'
   - folder: yItquDwQdpiBQJL2
     name: Feinte
     type: capacity
-    img: >-
-      icons/skills/melee/strikes-sword-scimitar.webp
+    img: icons/skills/melee/strikes-sword-scimitar.webp
     system:
       description: "<p>Le PJ effectue une attaque fictive pour déséquilibrer son adversaire et réaliser ensuite une attaque\_mortelle. </p><p>Faites <strong>un test d’attaque normal lors\_de ce tour</strong> mais <strong>n’infligez aucun DM</strong>. </p><p>Au tour\_suivant, <strong><span style=\"text-decoration:underline\">si vous attaquez le même adversaire</span></strong>,\_vous profiterez d’un bonus de <strong>+5 en attaque</strong> et,\_si votre feinte était réussie, de <strong>+2d6 aux DM</strong>. </p><p><strong><span style=\"text-decoration:underline\">Au\_rang 5</span></strong> atteint dans cette voie, le bonus d’attaque\_de la feinte passe à <strong>+10</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet, après une feinte réussie, obtenir le bonus
         à l'attaque et aux DM de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 3
@@ -2719,7 +2688,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.8yYek02du77mBDsZ
           indice: 0
           label: Si feinte réussie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2737,16 +2706,16 @@ items:
               source: Actor.Nuzfpv18FiNwewCJ.Item.8yYek02du77mBDsZ
               subtype: combat
               target: melee
-              value: "@rang[0,0,5,5,10]"
+              value: '@rang[0,0,5,5,10]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Nuzfpv18FiNwewCJ.Item.8yYek02du77mBDsZ
               subtype: combat
               target: damMelee
               value: 2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2757,28 +2726,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 8yYek02du77mBDsZ
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.8yYek02du77mBDsZ"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.8yYek02du77mBDsZ'
   - folder: yItquDwQdpiBQJL2
     name: Ambidextrie
     type: capacity
-    img: >-
-      icons/skills/melee/swords-parry-block-yellow.webp
+    img: icons/skills/melee/swords-parry-block-yellow.webp
     system:
       description: "<p>Le PJ peut à présent utiliser une arme dans\_chaque main sans pénalité s'il utilise des armes\_de duel ou des dagues. </p><p>Avec sa main faible, il\_peut effectuer <strong>une attaque au contact gratuite\_supplémentaire</strong> à chaque tour. Cette seconde\_attaque n’empêche pas l’utilisation d’une\_capacité limitée, mais elle ne peut pas en être\_l’origine.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -2799,28 +2767,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: O4x3FQLMGeTjwVdp
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.O4x3FQLMGeTjwVdp"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.O4x3FQLMGeTjwVdp'
   - folder: yItquDwQdpiBQJL2
     name: Botte mortelle
     type: capacity
-    img: >-
-      icons/skills/melee/blade-tip-chipped-blood-red.webp
+    img: icons/skills/melee/blade-tip-chipped-blood-red.webp
     system:
       description: "<p>Lors d’une attaque au contact, s’il obtient un\_score <strong><span style=\"text-decoration:underline\">total d’attaque supérieur ou égal à la DEF\_de son adversaire +10 points</span></strong>, le PJ obtient un\_bonus de <strong>+2d6 aux DM</strong> de son attaque.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.131
-      slug: ""
+      slug: ''
       inGame: <p>L'action permet de réaliser le jet de DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2835,7 +2802,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.300RjeEz1QYhSdh9
           indice: 0
           label: Si attaque > DEF+10
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -2860,7 +2827,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -2876,28 +2843,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 300RjeEz1QYhSdh9
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.300RjeEz1QYhSdh9"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.300RjeEz1QYhSdh9'
   - name: zBiographie
     type: capacity
-    img: >-
-      icons/sundries/books/book-open-purple.webp
+    img: icons/sundries/books/book-open-purple.webp
     _id: Y4sb9AqFmtgH7shk
     system:
       description: "<p>la flamme de la jeunesse incarnée dans cette jeune centaure femelle à la curiosité maladive et à l'espièglerie dans chaque fibre de son corps. Toujours souriante, ses yeux trahissent souvent son manque d'attention.</p><p>Après avoir trépigner sur les bancs de l'école en début de journée, elle passe son temps à aider qui le souhaite mais surtout pas trop longtemps.\_<span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">Douée dans beaucoup de tâches du Village, elle ne sera peut-être jamais assez assidue pour devenir experte d'un sujet ou d'un artisanat.</span></p><p><span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">En fin de journée, elle est souvent avec @UUID[Actor.EeHmNrec4W6ZBwu5]{Peepi} et @UUID[Actor.9HdmSAxScK9Twvch]{Taiohi}, un frère et une soeur de 7 et 6 ans, a les faire marrer, faire des pirouettes ou leur raconter des histoires d'aventures, de voyages et de dragons.</span></p><p><span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">Elle passe aussi beaucoup de temps avec @UUID[Actor.gWWGE6tcGj7MOU2j]{Miihini} a se raconter des ragots et pur l'aider dans l'entretien des machines du Village.</span></p><p><span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">Les seuls moments où elle peut être triste, c'est lorsqu'elle constate la distance qui commence à les séparer avec son petit frère, @UUID[Actor.vtQwznCk8jlT2WXW]{Mataro}. Elle n'arrive pas a comprendre cette colère bloquée de son frère et son sérieux depuis quelques temps.</span></p><p><span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">L'arrivée des Aventuriers étrangers sera une bénédiction pour Vaiata : de la nouveauté, des histoires, des découvertes et la perspective d'en apprendre plus sur le vaste monde extérieur. Elle bravera tous les interdits pour leur parler et les aider.</span></p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -2911,8 +2877,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.Y4sb9AqFmtgH7shk
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -2941,16 +2907,15 @@ items:
       compendiumSource: Item.osSePjXQC5Rn94Nw
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.Y4sb9AqFmtgH7shk"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.Y4sb9AqFmtgH7shk'
   - folder: OBPli02oRaBQq6Ee
     name: Rapière +2
     type: equipment
-    img: >-
-      icons/weapons/swords/scimitar-worn-blue.webp
+    img: icons/weapons/swords/scimitar-worn-blue.webp
     _id: gpkp6mObfMo6gXBt
     system:
       description: >-
@@ -2960,7 +2925,7 @@ items:
         19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
         Vaiata</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
         DM</p></li></ul>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
       tags:
@@ -2994,8 +2959,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.gpkp6mObfMo6gXBt
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -3013,9 +2978,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc +2"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for +2
               target:
@@ -3027,11 +2992,11 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -3047,20 +3012,19 @@ items:
       compendiumSource: Item.G5IYsoyGoVsMqqqw
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 100000
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.gpkp6mObfMo6gXBt"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.gpkp6mObfMo6gXBt'
   - folder: OBPli02oRaBQq6Ee
     name: Dague
     type: equipment
-    img: >-
-      icons/weapons/daggers/dagger-double-red.webp
+    img: icons/weapons/daggers/dagger-double-red.webp
     _id: N1UGX77W3FmnpfJN
     system:
       description: >-
@@ -3072,7 +3036,7 @@ items:
         pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
         ILfuVd" lang="fr"><span class="hgKElc">Arrme
         légère</span></span></strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: dague
       tags:
@@ -3107,7 +3071,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.N1UGX77W3FmnpfJN
           indice: 0
           label: Contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -3125,9 +3089,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 + @for
               target:
@@ -3138,14 +3102,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.N1UGX77W3FmnpfJN
           indice: 1
           label: Distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -3163,9 +3127,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -3176,12 +3140,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -3197,24 +3161,23 @@ items:
       compendiumSource: Item.bwFlCTHBg9Fqa0JI
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 200000
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.N1UGX77W3FmnpfJN"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.N1UGX77W3FmnpfJN'
   - folder: srnxqMuZEh5AAU86
     name: Couteau de lancer de retour
     type: equipment
-    img: >-
-      icons/weapons/daggers/dagger-bone-black.webp
+    img: icons/weapons/daggers/dagger-bone-black.webp
     _id: g9ibRZy0BF68k1hP
     system:
       description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p><p>Lancer trois couteaux au titre d’un seul test d’attaque est possible. Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p><hr /><p><strong>Arme magique de Centaure - Vaiata</strong></p><ul><li><p>Le couteau revient en main par une action gratuite</p></li></ul>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.158
       slug: couteaux-de-lancer
       tags: []
@@ -3259,7 +3222,7 @@ items:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.g9ibRZy0BF68k1hP
           indice: 0
           label: A distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -3277,9 +3240,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -3290,14 +3253,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.g9ibRZy0BF68k1hP
           indice: 1
           label: Au contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -3315,9 +3278,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d3
               target:
@@ -3328,14 +3291,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.Nuzfpv18FiNwewCJ.Item.g9ibRZy0BF68k1hP
           indice: 2
           label: 3 couteaux à distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: l
@@ -3353,9 +3316,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 + @agi
               target:
@@ -3366,7 +3329,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -3376,26 +3339,25 @@ items:
       compendiumSource: Item.Z5wEvqUEJ2XbCLp2
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 300000
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.g9ibRZy0BF68k1hP"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.g9ibRZy0BF68k1hP'
   - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
-    img: >-
-      icons/skills/melee/unarmed-punch-fist.webp
+    img: icons/skills/melee/unarmed-punch-fist.webp
     _id: 8r2zBMTpwIUzrLNy
     system:
       description: >-
         <p>Dans le cas du combat à mains nues, les DM sont généralement
         temporaires, sauf pour les moines</p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: mains-nues
       tags:
@@ -3415,7 +3377,7 @@ items:
         unit: kg
       price:
         value: 0
-        unit: ""
+        unit: ''
       rarity: common
       equipped: false
       properties:
@@ -3428,8 +3390,8 @@ items:
       actions:
         - source: Actor.Nuzfpv18FiNwewCJ.Item.8r2zBMTpwIUzrLNy
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -3447,9 +3409,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d3 + @for
               target:
@@ -3460,13 +3422,13 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       damagetype: impact
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -3482,30 +3444,29 @@ items:
       compendiumSource: Item.bwUmODTqsTqPbRr9
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 400000
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.8r2zBMTpwIUzrLNy"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.8r2zBMTpwIUzrLNy'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
     type: equipment
-    img: >-
-      icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
     _id: VFoEBfmAJeV9jxZZ
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-simple
       tags: []
       subtype: armor
       martialCategory: leather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3539,20 +3500,19 @@ items:
       compendiumSource: Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.VFoEBfmAJeV9jxZZ"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.VFoEBfmAJeV9jxZZ'
   - folder: GUKbDXrNXlTgfaW0
     name: Targe de réception de projectiles
     type: equipment
-    img: >-
-      icons/equipment/shield/buckler-wooden-boss-brown.webp
+    img: icons/equipment/shield/buckler-wooden-boss-brown.webp
     _id: 9ZNtl2JOZJ58SRuw
     system:
       description: >-
@@ -3560,13 +3520,13 @@ items:
         Vaiata</strong></p><ul><li><p>Lorsque le porteur est la cible d'un
         projectile, elle a droit à un test de PER difficulté 15 pour parer le
         projectile avec le bouclier et ne subir aucun DM.</p></li></ul>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.160
       slug: petit-bouclier
       tags: []
       subtype: shield
       martialCategory: smallShield
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3600,15 +3560,15 @@ items:
       compendiumSource: Item.AFazTvARvVqVI4go
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Nuzfpv18FiNwewCJ.9ZNtl2JOZJ58SRuw"
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.9ZNtl2JOZJ58SRuw'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3616,9 +3576,9 @@ _stats:
   compendiumSource: Compendium.world.reliquesunion-acteurs.Actor.odrYGDrjFeqgEW6e
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
   modifiedTime: 1772486821104
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -3627,4 +3587,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: Nuzfpv18FiNwewCJ
 sort: 112500
-_key: "!actors!Nuzfpv18FiNwewCJ"
+_key: '!actors!Nuzfpv18FiNwewCJ'

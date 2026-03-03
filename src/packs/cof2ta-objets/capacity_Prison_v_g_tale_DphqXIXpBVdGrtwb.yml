@@ -4,9 +4,9 @@ type: capacity
 img: icons/magic/nature/root-vine-entangle-foot-green.webp
 system:
   description: "<p>Le PJ peut commander à la végétation de pousser\_et bloquer ses ennemis (mais pas ses alliés) dans\_<strong>une zone de 10 m de diamètre</strong> (portée: 20 m)\_<strong>pendant [5 + Mod. de SAG] tours</strong>.</p><p> Entravées,\_les cibles subissent un malus de <strong>-2 en attaque et\_en DEF et ne peuvent pas se déplacer</strong>. </p><p>Chaque\_tour, une créature peut se libérer avec un test\_de FOR difficulté [10 + Mod. d’INT].</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> les cibles entravées subissent\_un malus de -3 en attaque et en DEF.</p></blockquote>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.134
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action activable permet d'activer le sort (dépense des PM et
     apparition de la seconde action).</p><p>La deuxième action permet
@@ -17,7 +17,7 @@ system:
     Valeur de chaque Modificateur de l'action par
     "-3".</p><blockquote><p><strong>Note : Pour utiliser la "concentration"
     faites SHIFT+CLIC sur l'action</strong></p></blockquote><p></p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 2
@@ -32,7 +32,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.KQBxuHgUEMNEFqAG
       indice: 0
       label: Activer le Sort
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -49,8 +49,8 @@ system:
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DphqXIXpBVdGrtwb
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -64,36 +64,36 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DphqXIXpBVdGrtwb
           subtype: combat
           target: def
-          value: "-2"
+          value: '-2'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DphqXIXpBVdGrtwb
           subtype: combat
           target: melee
-          value: "-2"
+          value: '-2'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DphqXIXpBVdGrtwb
           subtype: combat
           target: ranged
-          value: "-2"
+          value: '-2'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DphqXIXpBVdGrtwb
           subtype: combat
           target: magic
-          value: "-2"
+          value: '-2'
           apply: others
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           target:
@@ -104,8 +104,8 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
             duration: 5 +@per
             unit: round
@@ -123,9 +123,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -133,4 +133,4 @@ _id: DphqXIXpBVdGrtwb
 ownership:
   default: 0
 sort: 0
-_key: "!items!DphqXIXpBVdGrtwb"
+_key: '!items!DphqXIXpBVdGrtwb'

@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/targeting/crosshair-pointed-orange.webp
 system:
   description: "<p>Le PJ fabrique et enchante une flèche particulière <strong>pour un ennemi unique qu’il nomme</strong>.\_Il lui faut <strong>une journée complète pour créer</strong> la\_flèche et il ne peut en posséder plus d’une à\_un moment donné (ni pour la même cible, ni\_pour une autre). </p><p>Lorsqu’il utilise sa flèche contre\_l’ennemi pour lequel elle a été créée, il obtient un\_bonus de <strong>+3 à l’attaque et de +1d6 aux DM par\_rang</strong> atteint dans la voie. </p><p><strong>Si la flèche a été créée\_depuis plus d’un an, ces bonus sont doublés.</strong></p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.144
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action permet d'obtenir les bonus pour la flêche tueuse et la
     deucième action apparait pour activer ou non une fois de plus les bonus si
     l'année est passée.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 2
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -46,19 +46,19 @@ system:
           target: ranged
           value: 3*@rang
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
           subtype: combat
           target: damRanged
-          value: "@rangd6"
+          value: '@rangd6'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
       indice: 1
       label: Si 1 an ou plus
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -72,7 +72,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
@@ -80,14 +80,14 @@ system:
           target: ranged
           value: 3*@rang
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
           subtype: combat
           target: damRanged
-          value: "@rangd6"
+          value: '@rangd6'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -98,9 +98,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -108,4 +108,4 @@ _id: me1B5vVGVlnDu0Ih
 ownership:
   default: 0
 sort: 0
-_key: "!items!me1B5vVGVlnDu0Ih"
+_key: '!items!me1B5vVGVlnDu0Ih'

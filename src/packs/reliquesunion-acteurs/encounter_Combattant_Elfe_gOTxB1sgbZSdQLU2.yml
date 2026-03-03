@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -178,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -256,10 +256,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -268,8 +268,8 @@ items:
       actions:
         - source: Actor.UVYttWIpreBznZ9p.Item.1nxrgnMvfxGscNr7
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -287,9 +287,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+5"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '+5'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -301,7 +301,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Rapière
@@ -315,24 +315,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.1nxrgnMvfxGscNr7"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.1nxrgnMvfxGscNr7'
   - folder: SVK15InjZYL8tbL4
     name: Voie des Aventuriers
     type: path
-    img: >-
-      icons/skills/ranged/person-archery-bow-attack-orange.webp
+    img: icons/skills/ranged/person-archery-bow-attack-orange.webp
     _id: vd0LR7XHiFiTQKvn
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.4s1ytKjuBfNxh6zP.Item.NOKnz7Sz8nxEkCx3
@@ -349,29 +348,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.vd0LR7XHiFiTQKvn"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.vd0LR7XHiFiTQKvn'
   - folder: S5Arn2U0XkYUiO4d
     name: Instinct de survie
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-sword-red.webp
+    img: icons/skills/melee/hand-grip-sword-red.webp
     system:
       description: "<p>Une fois par tour, au\_moment de son choix,\_l'aventurier peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer.</p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser.</p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Les deux premières action permettent de réaliser les tests de
         sauvegarde pour se débarrasser d'un effet qui bloque les
         mouvements.</p><p>La troisième action activable/désactivable permet
         d'obtenir le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -386,7 +384,7 @@ items:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.NOKnz7Sz8nxEkCx3
           indice: 0
           label: Sauvegarde d'INT
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -402,7 +400,7 @@ items:
           resolvers:
             - type: save
               saveAbility: int
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -411,7 +409,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -422,7 +420,7 @@ items:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.NOKnz7Sz8nxEkCx3
           indice: 1
           label: Sauvegarde d'AGI
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -438,7 +436,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -447,7 +445,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -458,7 +456,7 @@ items:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.NOKnz7Sz8nxEkCx3
           indice: 2
           label: Si PV < 5
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -476,9 +474,9 @@ items:
               source: Actor.gOTxB1sgbZSdQLU2.Item.NOKnz7Sz8nxEkCx3
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -490,25 +488,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: NOKnz7Sz8nxEkCx3
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.NOKnz7Sz8nxEkCx3"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.NOKnz7Sz8nxEkCx3'
   - folder: S5Arn2U0XkYUiO4d
     name: Embuscade
     type: capacity
-    img: >-
-      icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     _id: 3hO6ytFDGvw23ey8
     system:
       description: "<p>Au premier tour de combat,\_si l'environnement permet à l'aventurier de se\_dissimuler, la cible doit faire un <strong>test de SAG\_difficulté 19 ou être surprise</strong>. </p><p>Si elle attaque avec\_succès une cible surprise, la créature inflige <strong>+1d6\_aux DM</strong>. </p><p>La créature obtient un bonus de <strong>+5 à\_tous les tests de discrétion et en Init</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action permanente donne le bonus à l'INIT et au jet de
         discrétion.</p><p>La deuxième action permet de réaliser le test de
@@ -516,7 +513,7 @@ items:
         en cas d'échec.</p><p>La troisième action activable/désactivable permet
         d'obtenir les DM supplémentaires pour les attaques de contact et de
         distance.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -530,8 +527,8 @@ items:
       actions:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -549,21 +546,21 @@ items:
               source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
               subtype: combat
               target: init
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
           indice: 1
           label: Test de surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -579,7 +576,7 @@ items:
           resolvers:
             - type: save
               saveAbility: per
-              saveDifficulty: "19"
+              saveDifficulty: '19'
               target:
                 type: single
                 scope: all
@@ -588,11 +585,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -603,7 +600,7 @@ items:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -623,14 +620,14 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gOTxB1sgbZSdQLU2.Item.3hO6ytFDGvw23ey8
               subtype: combat
               target: damRanged
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -642,28 +639,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.3hO6ytFDGvw23ey8"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.3hO6ytFDGvw23ey8'
   - folder: S5Arn2U0XkYUiO4d
     name: Attaque en traitre
     type: capacity
-    img: >-
-      icons/skills/melee/strike-dagger-blood-red.webp
+    img: icons/skills/melee/strike-dagger-blood-red.webp
     _id: asHZnXRvP8Tsgy2N
     system:
       description: "<p>Si l'aventurier attaque\_<strong>en même temps qu'un allié</strong> (il peut volontairement\_retarder son initiative), <strong>de dos ou par surprise</strong>, il\_réalise une attaque en traître avec un bonus de\_<strong>+5 en attaque et +2d6 aux DM</strong> – cumulable avec\_Attaque mortelle (pour les variantes assassin\_et tireur) ou Imparable (pour la variante maître\_d'armes).\_</p><blockquote><p><strong>Note :</strong> un tireur ne peut utiliser une attaque\_en traître à distance que si un allié est déjà au\_contact de sa cible.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable/désactivable donne les bonus à l'attaque et aux
         DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -677,8 +673,8 @@ items:
       actions:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.asHZnXRvP8Tsgy2N
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -696,30 +692,30 @@ items:
               source: Actor.gOTxB1sgbZSdQLU2.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gOTxB1sgbZSdQLU2.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: ranged
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gOTxB1sgbZSdQLU2.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.gOTxB1sgbZSdQLU2.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: damRanged
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -731,28 +727,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.asHZnXRvP8Tsgy2N"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.asHZnXRvP8Tsgy2N'
   - folder: S5Arn2U0XkYUiO4d
     name: L'hallali
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-staff-teal.webp
+    img: icons/skills/melee/hand-grip-staff-teal.webp
     _id: 2zimk84gDvAz08Ud
     system:
       description: "<p>Les aventuriers profitent d'une\_erreur de leur adversaire pour lui porter des\_attaques fatales.</p><p> À chaque fois que la victime\_rate une attaque ou obtient sur un test d'attaque\_un résultat au d20 allant de 1 à 5 (inclus), elle\_déclenche la curée ! </p><p>Chaque aventurier doté\_de cette capacité bénéficie <strong>immédiatement et\_gratuitement d'une Attaque en traître</strong> contre\_la victime (+5 au jet d'attaque/+2d6 aux DM).</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet aitomatique. L'action est présente seulement pour
         afficher la capacité dans la liste des actions.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -766,8 +761,8 @@ items:
       actions:
         - source: Actor.gOTxB1sgbZSdQLU2.Item.2zimk84gDvAz08Ud
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -792,25 +787,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.2zimk84gDvAz08Ud"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.2zimk84gDvAz08Ud'
   - folder: OBPli02oRaBQq6Ee
     name: Rapière
     type: equipment
-    img: >-
-      icons/weapons/swords/scimitar-worn-blue.webp
+    img: icons/weapons/swords/scimitar-worn-blue.webp
     _id: QAnT6mbvYHtVzRvq
     system:
       description: >-
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups d'estoc.</p><p>
         </p><p><strong>Arme légère, seuil de critique 19-20</strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
       tags:
@@ -844,8 +838,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.G5IYsoyGoVsMqqqw
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -863,9 +857,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for
               target:
@@ -876,12 +870,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -897,30 +891,29 @@ items:
       compendiumSource: Item.G5IYsoyGoVsMqqqw
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.QAnT6mbvYHtVzRvq"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.QAnT6mbvYHtVzRvq'
   - folder: GUKbDXrNXlTgfaW0
     name: Petit bouclier
     type: equipment
-    img: >-
-      icons/equipment/shield/buckler-wooden-boss-brown.webp
+    img: icons/equipment/shield/buckler-wooden-boss-brown.webp
     _id: KsegAIS4147EPK0i
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: petit-bouclier
       tags: []
       subtype: shield
       martialCategory: smallShield
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -954,30 +947,29 @@ items:
       compendiumSource: Item.AFazTvARvVqVI4go
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.KsegAIS4147EPK0i"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.KsegAIS4147EPK0i'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
     type: equipment
-    img: >-
-      icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
     _id: xZm5UNOuMzCkOfhQ
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-simple
       tags: []
       subtype: armor
       martialCategory: leather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -1011,24 +1003,23 @@ items:
       compendiumSource: Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.xZm5UNOuMzCkOfhQ"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.xZm5UNOuMzCkOfhQ'
   - folder: srnxqMuZEh5AAU86
     name: Couteaux de lancer
     type: equipment
-    img: >-
-      icons/weapons/daggers/dagger-bone-black.webp
+    img: icons/weapons/daggers/dagger-bone-black.webp
     _id: sQI4lLfaJAFBMpvb
     system:
       description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p>  <p>Lancer trois couteaux au titre d’un seul test d’attaque est possible.  Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.158
       slug: couteaux-de-lancer
       tags: []
@@ -1073,7 +1064,7 @@ items:
         - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
           indice: 0
           label: A distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -1091,9 +1082,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -1104,14 +1095,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
           indice: 1
           label: Au contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -1129,9 +1120,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d3
               target:
@@ -1142,14 +1133,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Compendium.cof2-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
           indice: 2
           label: 3 couteaux à distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: l
@@ -1167,9 +1158,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 + @agi
               target:
@@ -1180,7 +1171,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1190,30 +1181,29 @@ items:
       compendiumSource: Item.Z5wEvqUEJ2XbCLp2
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 500000
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.sQI4lLfaJAFBMpvb"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.sQI4lLfaJAFBMpvb'
   - folder: w6M8tJF69ktGmzxc
     name: Gamelle
     type: equipment
-    img: >-
-      icons/containers/kitchenware/bowl-clay-brown.webp
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
     _id: QPsiKfKHcZULhaKz
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: gamelle
       subtype: misc
       tags: []
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       defense: null
       magicalDefense: null
       quantity:
@@ -1257,19 +1247,18 @@ items:
       compendiumSource: Item.yx74sJAB7rc5kCmc
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.QPsiKfKHcZULhaKz"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.QPsiKfKHcZULhaKz'
   - name: Sac de Couchage
     type: equipment
-    img: >-
-      icons/sundries/survival/bedroll-blue-red.webp
+    img: icons/sundries/survival/bedroll-blue-red.webp
     _id: tQ7504tJItZZu6X7
     system:
       description: >-
@@ -1280,13 +1269,13 @@ items:
         y ranger des objets ou pour le transporter. La plupart des gens
         utilisent une couverture en plus du sac de couchage pour se tenir au
         chaud ou pour se faire un coussin.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1319,19 +1308,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.EBNOQFm2BRBG855x
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.tQ7504tJItZZu6X7"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.tQ7504tJItZZu6X7'
   - name: Perche
     type: equipment
-    img: >-
-      icons/weapons/staves/staff-simple.webp
+    img: icons/weapons/staves/staff-simple.webp
     _id: o8wxXrQEtyAz0S8I
     system:
       description: >-
@@ -1346,13 +1334,13 @@ items:
         aussi solide qu'une perche d'une seule pièce, il vaut mieux l'utiliser
         pour comme pour sonder le terrain que pour sauter ou escalader quelque
         chose.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1385,19 +1373,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.FYsul7zF7a082CQL
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.o8wxXrQEtyAz0S8I"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.o8wxXrQEtyAz0S8I'
   - name: Bourse
     type: equipment
-    img: >-
-      icons/containers/bags/coinpouch-simple-leather-silver-brown.webp
+    img: icons/containers/bags/coinpouch-simple-leather-silver-brown.webp
     _id: 9hYOHjnNqJ0k36HN
     system:
       description: >-
@@ -1405,13 +1392,13 @@ items:
         en cuir permettant de la fermer et d'une autre pour la fixer à la
         ceinture. Elle est suffisamment grande pour contenir 100 à 200 pièces ou
         deux pommes.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1444,15 +1431,15 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.54loy4hNFHAkJDj8
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.9hYOHjnNqJ0k36HN"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.9hYOHjnNqJ0k36HN'
   - name: Aiguille à coudre
     type: equipment
     img: icons/tools/hand/needle-grey.webp
@@ -1461,13 +1448,13 @@ items:
       description: >-
         <p>Cette aiguille permet au personnage de coudre des vêtements, de la
         toile ou du cuir fin.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1500,24 +1487,24 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.37ieFieBKaqsriLp
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!gOTxB1sgbZSdQLU2.OaZhgC5mgvS8ApVS"
+    _key: '!actors.items!gOTxB1sgbZSdQLU2.OaZhgC5mgvS8ApVS'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.world.cof2ta-acteurs.Actor.4s1ytKjuBfNxh6zP
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238594661
   modifiedTime: 1772238594661
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -1526,4 +1513,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: gOTxB1sgbZSdQLU2
 sort: 1300000
-_key: "!actors!gOTxB1sgbZSdQLU2"
+_key: '!actors!gOTxB1sgbZSdQLU2'

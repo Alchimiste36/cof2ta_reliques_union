@@ -1,18 +1,17 @@
 folder: ExucDfoNSZyOeonR
 name: "Ni\_vu ni connu"
 type: capacity
-img: >-
-  icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
+img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
 _id: JCFfH9Lo5uXHkEN4
 system:
   description: "<p>L’homme du peuple se fond dans la foule sans\_aucun souci. </p><p>En\_effectuant un <strong>test de CHA difficulté 10</strong>, il <strong>disparaît dans la foule</strong> et ne peut plus\_être retrouvé, sauf capacité particulière.</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p178
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde.</p><p>La deuxième
     action donne le DR de la capacité de rang 2.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 4
@@ -26,8 +25,8 @@ system:
   actions:
     - source: Item.JCFfH9Lo5uXHkEN4
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -43,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: cha
-          saveDifficulty: "10"
+          saveDifficulty: '10'
           target:
             type: self
             number: 0
@@ -52,7 +51,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -62,8 +61,8 @@ system:
       modifiers: []
     - source: Item.JCFfH9Lo5uXHkEN4
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -81,9 +80,9 @@ system:
           source: Item.JCFfH9Lo5uXHkEN4
           subtype: resource
           target: rp
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -94,9 +93,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -104,4 +103,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!JCFfH9Lo5uXHkEN4"
+_key: '!items!JCFfH9Lo5uXHkEN4'

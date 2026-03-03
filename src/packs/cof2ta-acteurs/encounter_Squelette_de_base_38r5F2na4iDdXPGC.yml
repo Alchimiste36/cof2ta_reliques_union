@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: undead
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Le squelette est une créature aberrante,\_animée à l'aide des sortilèges les plus honnis\_de la nécromancie. </p><p>Ce non-vivant est une\_créature sans cervelle, immunisée à toute\_forme d'attaque mentale, incapable de parler\_et de communiquer. Il ne reçoit ses ordres\_que de son créateur et attaque toute créature\_vivante à vue, comme pour se venger de\_la condition de misère dans laquelle il est\_maintenu.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/squelette_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/squelette_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.38r5F2na4iDdXPGC.Item.SNLUblXCuHcZIJ9D
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+1
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,21 +307,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.SNLUblXCuHcZIJ9D"
+    _key: '!actors.items!38r5F2na4iDdXPGC.SNLUblXCuHcZIJ9D'
   - type: attack
     system:
       subtype: melee
       learned: true
       description: <p>Chsoir une arme et adapter le jet de DM.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -329,8 +330,8 @@ items:
       actions:
         - source: Actor.38r5F2na4iDdXPGC.Item.MAURM3EaLaQA4Xhx
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -348,9 +349,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 +1
               target:
@@ -361,7 +362,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -376,13 +377,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.MAURM3EaLaQA4Xhx"
+    _key: '!actors.items!38r5F2na4iDdXPGC.MAURM3EaLaQA4Xhx'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -390,11 +391,11 @@ items:
     _id: KPDIApiun7o5XX3r
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -408,8 +409,8 @@ items:
       actions:
         - source: Actor.38r5F2na4iDdXPGC.Item.KPDIApiun7o5XX3r
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -427,23 +428,23 @@ items:
               source: Actor.38r5F2na4iDdXPGC.Item.KPDIApiun7o5XX3r
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.38r5F2na4iDdXPGC.Item.KPDIApiun7o5XX3r
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.38r5F2na4iDdXPGC.Item.KPDIApiun7o5XX3r
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -455,13 +456,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.KPDIApiun7o5XX3r"
+    _key: '!actors.items!38r5F2na4iDdXPGC.KPDIApiun7o5XX3r'
   - folder: uvHtoSiBBvs1nfqu
     name: Sans esprit
     type: capacity
@@ -469,11 +470,11 @@ items:
     _id: Y8eIUdPTyHBxM2sJ
     system:
       description: "<p>aucune âme n'habite la carcasse\_morte et le squelette est immunisé à tous les\_sorts qui affectent l'esprit (INT, SAG et CHA).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Bonus permanent ajoutant la résistance aux effets mentaux.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -487,8 +488,8 @@ items:
       actions:
         - source: Actor.38r5F2na4iDdXPGC.Item.Y8eIUdPTyHBxM2sJ
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -506,9 +507,9 @@ items:
               source: Actor.38r5F2na4iDdXPGC.Item.Y8eIUdPTyHBxM2sJ
               subtype: state
               target: enslavementImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -520,24 +521,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.Y8eIUdPTyHBxM2sJ"
+    _key: '!actors.items!38r5F2na4iDdXPGC.Y8eIUdPTyHBxM2sJ'
   - folder: uvHtoSiBBvs1nfqu
     name: RD/armes contondantes
     type: capacity
     img: icons/magic/defensive/shield-barrier-flaming-pentagon-red.webp
     system:
       description: "<p>Une réduction de Dommages sauf pour les dommages des armes contondantes.</p><blockquote><p>Une arme contondante est une arme qui utilise\_la force de l'impact pour blesser comme une\_masse ou un marteau à l'inverse d'une épée\_(tranchante) ou d'une flèche (perforante).</p></blockquote>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -552,7 +553,7 @@ items:
         - source: Actor.38r5F2na4iDdXPGC.Item.llgAbwHhXSN23nke
           indice: 0
           label: RD sauf armes traditionelles
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -570,9 +571,9 @@ items:
               source: Actor.38r5F2na4iDdXPGC.Item.llgAbwHhXSN23nke
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -584,25 +585,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: llgAbwHhXSN23nke
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.llgAbwHhXSN23nke"
+    _key: '!actors.items!38r5F2na4iDdXPGC.llgAbwHhXSN23nke'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -616,8 +617,8 @@ items:
       actions:
         - source: Actor.38r5F2na4iDdXPGC.Item.gicqWFWMkQR1tRHo
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -635,9 +636,9 @@ items:
               source: Actor.38r5F2na4iDdXPGC.Item.gicqWFWMkQR1tRHo
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -649,27 +650,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: gicqWFWMkQR1tRHo
     ownership:
       default: 0
-    _key: "!actors.items!38r5F2na4iDdXPGC.gicqWFWMkQR1tRHo"
+    _key: '!actors.items!38r5F2na4iDdXPGC.gicqWFWMkQR1tRHo'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!38r5F2na4iDdXPGC"
+_key: '!actors!38r5F2na4iDdXPGC'

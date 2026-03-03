@@ -1,8 +1,7 @@
 folder: fkaQ5zi2WGOp22kb
 name: Bâton ferré d'apaisement
 type: equipment
-img: >-
-  icons/weapons/staves/staff-ornate.webp
+img: icons/weapons/staves/staff-ornate.webp
 system:
   description: >-
     <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
@@ -16,8 +15,8 @@ system:
     difficulté 15 ou tomber dans l'inconscience pendant 4d6 heures. Karekau
     utilise cette faculté pour s'endormir malgré ses douleurs et
     courbatures.</p></li></ul>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: baton-ferre
   tags:
     - dmtemporairespossibles
@@ -50,8 +49,8 @@ system:
   actions:
     - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -69,9 +68,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for
           target:
@@ -83,13 +82,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
       indice: 1
       label: Sauvegarde
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -105,7 +104,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -114,11 +113,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - unconscious
-            duration: ""
+            duration: ''
             unit: unlimited
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -127,7 +126,7 @@ system:
           hasAttackSuccessThreshold: false
       modifiers: []
   range:
-    unit: ""
+    unit: ''
     base: 0
     ability: null
     details: null
@@ -143,9 +142,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772219830152
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -154,4 +153,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: ux2J1WLq4wgV0eGk
 sort: 1800000
-_key: "!items!ux2J1WLq4wgV0eGk"
+_key: '!items!ux2J1WLq4wgV0eGk'

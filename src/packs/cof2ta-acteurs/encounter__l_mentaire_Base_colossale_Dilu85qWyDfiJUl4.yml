@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Élémentaire Base colossale
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/elementaire_colossale.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/elementaire_colossale.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: undead
     size: colossal
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Les élémentaires sont les incarnations des\_quatre éléments primordiaux : le feu, l'eau,\_la terre et l'air. Ils peuvent être invoqués par\_magie et se manifestent dans le monde sous\_la forme d'une créature au buste vaguement\_humanoïde mêlée à un tourbillon de matière\_élémentaire.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.jfQ1BcGIlmt9Ll56.Item.rKBG8PQkq7mo8sis
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "23"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '23'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 4d6+17
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.rKBG8PQkq7mo8sis"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.rKBG8PQkq7mo8sis'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -320,11 +321,11 @@ items:
     _id: vzE1UOn8lpSeXtmf
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -338,8 +339,8 @@ items:
       actions:
         - source: Actor.Dilu85qWyDfiJUl4.Item.vzE1UOn8lpSeXtmf
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -357,23 +358,23 @@ items:
               source: Actor.Dilu85qWyDfiJUl4.Item.vzE1UOn8lpSeXtmf
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Dilu85qWyDfiJUl4.Item.vzE1UOn8lpSeXtmf
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Dilu85qWyDfiJUl4.Item.vzE1UOn8lpSeXtmf
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -385,13 +386,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.vzE1UOn8lpSeXtmf"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.vzE1UOn8lpSeXtmf'
   - folder: uvHtoSiBBvs1nfqu
     name: RD/magie
     type: capacity
@@ -401,11 +402,11 @@ items:
       description: >-
         <p>Une réduction de Dommages sauf pour les dommages d'origine
         magique.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -420,7 +421,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.MkNvNKbqfgGtXJ8j
           indice: 0
           label: RD sauf magie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -438,9 +439,9 @@ items:
               source: Actor.Dilu85qWyDfiJUl4.Item.MkNvNKbqfgGtXJ8j
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -452,24 +453,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.MkNvNKbqfgGtXJ8j"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.MkNvNKbqfgGtXJ8j'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p><p>Les élémentaires voient\_dans le noir jusqu'à 30 mètres et peuvent\_déterminer la localisation de toute créature en\_contact avec leur élément à moins de 30 mètres,\_même si celle-ci est invisible.\_</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -483,8 +484,8 @@ items:
       actions:
         - source: Actor.Dilu85qWyDfiJUl4.Item.JQyuJ4NgAoAywoCc
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -502,9 +503,9 @@ items:
               source: Actor.Dilu85qWyDfiJUl4.Item.JQyuJ4NgAoAywoCc
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -516,14 +517,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: JQyuJ4NgAoAywoCc
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.JQyuJ4NgAoAywoCc"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.JQyuJ4NgAoAywoCc'
   - folder: uvHtoSiBBvs1nfqu
     name: Cyclone
     type: capacity
@@ -531,11 +532,11 @@ items:
     _id: INLG0Lurm1nScW9h
     system:
       description: "<p><strong>Une fois par combat</strong>, un élémentaire peut se transformer en tourbillon de\_matière élémentaire. <strong>Pendant [1d4+1] tours</strong>,\_il peut se déplacer à travers les créatures et\_les objets à <strong>la vitesse de 30 mètres par tour</strong>.\_</p><p>Toute créature sur son passage doit faire au\_choix un <strong>test de DEX ou de FOR de difficulté\_[10 + Mod. de FOR] de l'élémentaire</strong>. En cas\_d'échec, la cible <strong>subit automatiquement\_les DM de base</strong> de l'élémentaire (selon la\_taille) et elle est <strong>renversée au sol</strong> (si sa taille\_ne dépasse pas celle de l'élémentaire). </p><p>En cas de succès, elle ne <strong>subit que la moitié\_des DM</strong> et peut rester debout. </p><p>Lorsqu'il est\_sous forme de cyclone, l'élémentaire gagne\_un <strong>bonus de +5 en DEF</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: "<p>La première action permet d'obtenir le bonus de DEF et de déplacement et d'afficher les deux autres actions tant que celle-ci est activée.</p><p>Les deux actions suivantes permettent de réaliser les tests de sauvegarde avec la FOR ou l'AGI.\_</p><p>La dernière action permet de jeter uniquement les DM de l'attaque et de les appliquer entièrement ou à moitié en fonction du résultat du test de sauvegarde.</p>"
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -552,7 +553,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
           indice: 0
           label: Tranformation
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -570,21 +571,21 @@ items:
               source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
               subtype: attribute
               target: mov
-              value: "20"
+              value: '20'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
           indice: 1
           label: Sauvegarde FOR
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -598,11 +599,11 @@ items:
           conditions:
             - predicate: isOwned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -611,11 +612,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -626,7 +627,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
           indice: 2
           label: Sauvegarde DEX
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -640,11 +641,11 @@ items:
           conditions:
             - predicate: isOwned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -653,11 +654,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -668,7 +669,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.INLG0Lurm1nScW9h
           indice: 3
           label: DM de l'attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -682,7 +683,7 @@ items:
           conditions:
             - predicate: isOwned
             - predicate: isLinkedActionActivated
-              object: "0"
+              object: '0'
           resolvers:
             - type: auto
               dmg:
@@ -695,7 +696,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -712,13 +713,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.INLG0Lurm1nScW9h"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.INLG0Lurm1nScW9h'
   - folder: uvHtoSiBBvs1nfqu
     name: Fauchage
     type: capacity
@@ -726,13 +727,13 @@ items:
     _id: 7eN3IMjSfQ1aeDV0
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 22 ou être renversée</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
         soit la FOR soit l'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -746,8 +747,8 @@ items:
       actions:
         - source: Actor.Dilu85qWyDfiJUl4.Item.7eN3IMjSfQ1aeDV0
           indice: 0
-          label: "sI 15+ : FOR"
-          chatFlavor: ""
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -763,7 +764,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -772,12 +773,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -786,8 +787,8 @@ items:
           modifiers: []
         - source: Actor.Dilu85qWyDfiJUl4.Item.7eN3IMjSfQ1aeDV0
           indice: 1
-          label: "sI 15+ : AGI"
-          chatFlavor: ""
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -803,7 +804,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -812,12 +813,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -834,13 +835,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.7eN3IMjSfQ1aeDV0"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.7eN3IMjSfQ1aeDV0'
   - folder: uvHtoSiBBvs1nfqu
     name: Balayage
     type: capacity
@@ -848,11 +849,11 @@ items:
     _id: v52XFlx1kl2ZUJy0
     system:
       description: "<p>La créature utilise sa\_grande taille pour affecter plusieurs créatures\_d'un seul coup. </p><p>Si plusieurs cibles\_sont présentes face à elle, son attaque <strong>affecte\_deux créatures</strong> (dans un arc de 180 °). <strong>Faire un\_seul test d'attaque</strong> et le comparer à la DEF de chaque cible.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -874,13 +875,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.v52XFlx1kl2ZUJy0"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.v52XFlx1kl2ZUJy0'
   - folder: uvHtoSiBBvs1nfqu
     name: Projection
     type: capacity
@@ -888,14 +889,14 @@ items:
     _id: FnwYhaIcd6Oz0AIW
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur\_un jet de d20</strong> au test d'attaque, la victime est\_<strong>projetée à [1d6+1] mètres de là</strong> et subit <strong>+3d6\_DM supplémentaires</strong>. </p><p>Elle doit réussir un <strong>test\_de CON de difficulté 15 ou être étourdie</strong>. À\_chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet de jeter les DM de la projection.</p><p>La
         deuxième action permet de réaliser le test de sauvegarde de CON et
         d'appliquer le statut renversé pendant 1 round.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -910,7 +911,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.FnwYhaIcd6Oz0AIW
           indice: 0
           label: DM supplémentaires
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -935,7 +936,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -945,7 +946,7 @@ items:
         - source: Actor.Dilu85qWyDfiJUl4.Item.FnwYhaIcd6Oz0AIW
           indice: 1
           label: Sauvegarde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -961,7 +962,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -970,11 +971,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - stun
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -992,22 +993,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dilu85qWyDfiJUl4.FnwYhaIcd6Oz0AIW"
+    _key: '!actors.items!Dilu85qWyDfiJUl4.FnwYhaIcd6Oz0AIW'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -1015,4 +1016,4 @@ _id: Dilu85qWyDfiJUl4
 ownership:
   default: 0
 sort: 0
-_key: "!actors!Dilu85qWyDfiJUl4"
+_key: '!actors!Dilu85qWyDfiJUl4'

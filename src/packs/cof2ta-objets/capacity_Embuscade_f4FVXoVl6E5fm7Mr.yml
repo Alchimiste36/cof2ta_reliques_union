@@ -5,15 +5,15 @@ img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
 _id: f4FVXoVl6E5fm7Mr
 system:
   description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet d'obtenir le bonus permanent pour les tests de
     compétence.</p><p>La deuxième action réalise un test de sauvegarde contre
     une cible.</p><p>La troisième peut être activée pour obtenir les DM
     supplémentaire face à une cible surprise.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.f4FVXoVl6E5fm7Mr
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -46,14 +46,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.f4FVXoVl6E5fm7Mr
           subtype: skill
           target: agi
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Discrétion
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.f4FVXoVl6E5fm7Mr
       indice: 1
       label: Au premier tour
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -78,11 +78,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - surprised
-            duration: "1"
+            duration: '1'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -93,7 +93,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.f4FVXoVl6E5fm7Mr
       indice: 2
       label: Sur cible surprise
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -113,7 +113,7 @@ system:
           target: damMelee
           value: 1d6
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -124,9 +124,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769517536854
   lastModifiedBy: oByx0z6HY26hEziz
@@ -134,4 +134,4 @@ ownership:
   default: 0
   oByx0z6HY26hEziz: 3
 sort: 0
-_key: "!items!f4FVXoVl6E5fm7Mr"
+_key: '!items!f4FVXoVl6E5fm7Mr'

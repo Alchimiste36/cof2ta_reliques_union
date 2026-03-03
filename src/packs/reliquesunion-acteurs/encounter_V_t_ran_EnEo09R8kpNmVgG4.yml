@@ -1,8 +1,7 @@
 folder: EVXi0nn3lQTYPuEX
 name: Vétéran
 type: encounter
-img: >-
-  icons/environment/people/cavalry-heavy.webp
+img: icons/environment/people/cavalry-heavy.webp
 system:
   abilities:
     agi:
@@ -145,15 +144,15 @@ system:
       bonuses:
         sheet: 0
         effects: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Des villages et zones rurales aux grandes cités, il existe un éventail de personnes chargées de protéger la population et (parfois surtout) les dirigeants, avec des compétences variables. </p><p> </p><p>Un vétéran ou un garde de palais ducal a déjà connu la guerre ou fait partie d’une force d’élite, ce qui lui vaut d’être au service direct\_de son seigneur. Il peut aussi diriger une équipe\_de milicien.\_</p>"
     languages: []
     properties: >-
@@ -187,7 +186,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -265,9 +264,9 @@ items:
     img: icons/svg/sword.svg
     _id: HKPshmeT622u9zVX
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: epee-longue
       subtype: melee
       learned: true
@@ -281,7 +280,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ""
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -296,9 +295,9 @@ items:
           resolvers:
             - type: attack
               skill:
-                formula: "+6"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+4
               target:
@@ -311,7 +310,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -324,22 +323,22 @@ items:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.HKPshmeT622u9zVX"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.HKPshmeT622u9zVX'
   - folder: eRnLMLNnqgpvpmpq
     name: Arbalète lourde
     type: attack
     img: icons/svg/sword.svg
     _id: RF5EogFsBZ1vAOb0
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: arbalete-lourde
       subtype: ranged
       learned: true
@@ -353,7 +352,7 @@ items:
         - source: Item.Kkq7VvDKKjrdECbA
           indice: 0
           label: Arbalète
-          chatFlavor: ""
+          chatFlavor: ''
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -368,9 +367,9 @@ items:
           resolvers:
             - type: attack
               skill:
-                formula: "+6"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 3d4
               target:
@@ -383,7 +382,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -396,23 +395,22 @@ items:
       compendiumSource: Item.Kkq7VvDKKjrdECbA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.RF5EogFsBZ1vAOb0"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.RF5EogFsBZ1vAOb0'
   - folder: E0IHxlFlZyFSfQGY
     name: Arbalète lourde
     type: equipment
-    img: >-
-      icons/weapons/crossbows/crossbow-purple.webp
+    img: icons/weapons/crossbows/crossbow-purple.webp
     _id: hstF1p2RbMZv1reo
     system:
       description: <p>Nécessite une action de mouvement pour être rechargée.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: arbalete-lourde
       tags: []
       subtype: weapon
@@ -455,8 +453,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.dBRg6mUZBm4KQ9Hb
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -474,9 +472,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6
               target:
@@ -487,7 +485,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -498,23 +496,22 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.dBRg6mUZBm4KQ9Hb
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.hstF1p2RbMZv1reo"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.hstF1p2RbMZv1reo'
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
-    img: >-
-      icons/weapons/swords/sword-guard-brass-worn.webp
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
     _id: n2P6plStYui3eHiX
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: epee-longue
       tags: []
       subtype: weapon
@@ -533,7 +530,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ""
+        unit: ''
       rarity: common
       equipped: false
       properties:
@@ -546,8 +543,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -565,9 +562,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8 + @for
               target:
@@ -578,12 +575,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -599,18 +596,17 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.n2P6plStYui3eHiX"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.n2P6plStYui3eHiX'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
-    img: >-
-      icons/skills/social/diplomacy-handshake-yellow.webp
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
     _id: UEOoUHMZv1uHkV22
     system:
       description: >-
@@ -625,7 +621,7 @@ items:
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
       source: page 216 du livre des règles
       slug: soutenir
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -641,8 +637,8 @@ items:
       actions:
         - source: Actor.EnEo09R8kpNmVgG4.Item.UEOoUHMZv1uHkV22
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -660,9 +656,9 @@ items:
               source: Actor.EnEo09R8kpNmVgG4.Item.UEOoUHMZv1uHkV22
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -673,10 +669,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -686,7 +682,7 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
-      origin: ""
+      origin: ''
     effects: []
     sort: 0
     flags: {}
@@ -694,18 +690,17 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.UEOoUHMZv1uHkV22"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.UEOoUHMZv1uHkV22'
   - folder: Jc9oocmI3B4cVSRG
     name: Imparable
     type: capacity
-    img: >-
-      icons/skills/melee/shield-damaged-broken-blue.webp
+    img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: >-
         <p>Si la créature obtient <strong>15‑20 au d20 d’un test
@@ -713,10 +708,10 @@ items:
         inflige <strong>+2d4 DM supplémentaire</strong> et l’attaque est
         automatiquement réussie (quelle que soit la DEF de son adversaire). Les
         dés bonus ne sont pas multipliés en cas de critique</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: imparable
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       charges:
@@ -730,7 +725,7 @@ items:
         - source: Actor.EnEo09R8kpNmVgG4.Item.5lSD1137n3jOmye0
           indice: 0
           label: si 15-20 à l'attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -755,7 +750,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -763,7 +758,7 @@ items:
               hasAttackSuccessThreshold: false
           modifiers: []
       manaCost: -1
-      inGame: ""
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -775,30 +770,29 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 5lSD1137n3jOmye0
     sort: 8700000
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.5lSD1137n3jOmye0"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.5lSD1137n3jOmye0'
   - folder: Jc9oocmI3B4cVSRG
     name: Sergent
     type: capacity
-    img: >-
-      icons/environment/people/cavalry.webp
+    img: icons/environment/people/cavalry.webp
     system:
       description: >-
         <p>Une fois par round, le sergent peut donner une action supplémentaire
         à n’importe quel allié sous ses ordres à portée de vue (attaque ou
         mouvement). Une fois par combat, une attaque qui aurait dû amener le
         sergent à 0 PV est ignorée.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: sergent
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: true
       charges:
@@ -811,7 +805,7 @@ items:
       actions: []
       manaCost: -1
       frequency: combat
-      inGame: ""
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -822,20 +816,19 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.L8b1AAMvZJLPT5zd
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: D9rE9h577ljpXILK
     sort: 7600000
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.D9rE9h577ljpXILK"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.D9rE9h577ljpXILK'
   - folder: Jc9oocmI3B4cVSRG
     name: Brise-genou (15)
     type: capacity
-    img: >-
-      icons/skills/wounds/bone-broken-knee-beam.webp
+    img: icons/skills/wounds/bone-broken-knee-beam.webp
     system:
       description: >-
         <p>Si un adversaire au contact tente de s’éloigner de la créature
@@ -843,10 +836,10 @@ items:
         contre lui. Si cette attaque est réussie, en plus des DM habituels, la
         cible doit réussir un <strong>test de CON difficulté 15</strong> ou
         diviser par deux tous ses déplacements pour le reste du combat</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: brise-genou
-      subtype: ""
+      subtype: ''
       actionType: f
       learned: true
       charges:
@@ -860,7 +853,7 @@ items:
         - source: Actor.EnEo09R8kpNmVgG4.Item.18PEhXF765TxbYt6
           indice: 0
           label: Test de sauvegarde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -876,7 +869,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "15"
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
@@ -885,11 +878,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 unit: combat
                 statuses: []
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -912,24 +905,24 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 18PEhXF765TxbYt6
     sort: 9300000
     ownership:
       default: 0
-    _key: "!actors.items!EnEo09R8kpNmVgG4.18PEhXF765TxbYt6"
+    _key: '!actors.items!EnEo09R8kpNmVgG4.18PEhXF765TxbYt6'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.cof2-base.cof-2-base-encounter.Actor.zVHPKXzenNcrZ5Gx
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238507682
   modifiedTime: 1772238507682
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -938,4 +931,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: EnEo09R8kpNmVgG4
 sort: 500000
-_key: "!actors!EnEo09R8kpNmVgG4"
+_key: '!actors!EnEo09R8kpNmVgG4'

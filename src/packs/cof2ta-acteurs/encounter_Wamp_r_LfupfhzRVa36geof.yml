@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Cette chauve-souris géante, au corps plus\_grand que celui d'un humain, possède une\_envergure de plus de cinq mètres une fois ses\_ailes déployées. Sa morsure possède des vertus\_anesthésiantes, ce qui en fait un adversaire\_redoutable. </p><p>Elle est réputée sucer le sang de\_ses victimes sans les éveiller, les laissant mortes\_au petit matin.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +168,8 @@ prototypeToken:
   width: 2
   height: 2
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/wampur_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/wampur_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -249,10 +250,10 @@ items:
     img: icons/svg/sword.svg
     _id: fN4h8fYKuHzm3GXL
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.Dz4Yb3syZWVlYJ1z
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "7"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '7'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+1
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!LfupfhzRVa36geof.fN4h8fYKuHzm3GXL"
+    _key: '!actors.items!LfupfhzRVa36geof.fN4h8fYKuHzm3GXL'
   - folder: uvHtoSiBBvs1nfqu
     name: Poison anesthésiant
     type: capacity
@@ -320,13 +321,13 @@ items:
     _id: kQhwOYtAP8KWaAGD
     system:
       description: "<p>La morsure du wampür\_inocule un poison : la victime doit réussir un <strong>test\_de CON difficulté 12 ou être affaiblie pendant\_1d6 tours</strong>. </p><p><strong>Si elle est affectée une seconde fois\_par le poison</strong> alors qu'elle est déjà sous son\_effet, elle sombre à la place dans <strong>l'inconscience\_pour 1d6 tours</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer
         l'effet affaibli pendant 1d6 rounds.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -340,8 +341,8 @@ items:
       actions:
         - source: Actor.LfupfhzRVa36geof.Item.kQhwOYtAP8KWaAGD
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -357,7 +358,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "12"
+              saveDifficulty: '12'
               target:
                 type: single
                 scope: all
@@ -366,8 +367,8 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - weakened
                 duration: 1d6
@@ -388,26 +389,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!LfupfhzRVa36geof.kQhwOYtAP8KWaAGD"
+    _key: '!actors.items!LfupfhzRVa36geof.kQhwOYtAP8KWaAGD'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!LfupfhzRVa36geof"
+_key: '!actors!LfupfhzRVa36geof'

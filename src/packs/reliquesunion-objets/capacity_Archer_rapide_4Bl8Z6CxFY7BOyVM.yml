@@ -1,8 +1,7 @@
 folder: 73SIMU7AmWSYN0GC
 name: Archer rapide
 type: capacity
-img: >-
-  icons/skills/ranged/arrows-triple-yellow-red.webp
+img: icons/skills/ranged/arrows-triple-yellow-red.webp
 _id: 4Bl8Z6CxFY7BOyVM
 system:
   description: >-
@@ -11,15 +10,15 @@ system:
     gratuite à son tour avec un malus de -2 en attaque.</p><p>En utilisant une
     action limité, le PJ obtient un Dé Bonus à ses attaques avec un arc et
     ajoute san AGI aux DM.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser une attaque reprennant les valeurs
     de la première arme équipée avec le malus de -2 en attaque.</p><p>La
     deuxième action permet de réaliser une attaque avec un Dé Bonus et le bonus
     aux DM en reprennant les valeurs de la première arme équipée.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -34,7 +33,7 @@ system:
     - source: Item.4Bl8Z6CxFY7BOyVM
       indice: 0
       label: Attaque gratuite
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -52,11 +51,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill -2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill -2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: single
             scope: all
@@ -66,13 +65,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Item.4Bl8Z6CxFY7BOyVM
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: l
@@ -90,11 +89,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg +@agi"
+            formula: '@arme.dmg +@agi'
           target:
             type: single
             scope: all
@@ -104,7 +103,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -120,10 +119,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1770779403022
   modifiedTime: 1770779403022
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!4Bl8Z6CxFY7BOyVM"
+_key: '!items!4Bl8Z6CxFY7BOyVM'

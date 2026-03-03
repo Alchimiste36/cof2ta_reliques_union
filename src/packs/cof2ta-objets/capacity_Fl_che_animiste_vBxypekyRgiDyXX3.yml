@@ -4,9 +4,9 @@ type: capacity
 img: icons/magic/nature/leaf-arrowheads-glow-green.webp
 system:
   description: "<p>Le PJ peut utiliser des flèches capables d’animer la\_végétation.</p><p><strong>Une fois par combat</strong>, pour <strong>une action\_d’attaque</strong>, il peut <strong>lancer à distance jusqu’à la portée\_de son arc le sort Prison végétale</strong> (voie des forêts, rang\_2) dans sa version avancée sans consommer de PM.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.144
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action permet de déclencher le pouvoir et d'afficher la
     deuxième action.</p><p>La deuxième action permet d'appliquer pendant 5+PER
@@ -14,7 +14,7 @@ system:
     affectée par la prison végétale, il faut supprimer l'Effet additionnel
     depuis l'onglet Effets de sa feuille. Fonctionne uniquement en Mode
     Combat.</p>
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   rank: 3
@@ -31,7 +31,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
       indice: 0
       label: Tirer la flèche
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: none
@@ -48,8 +48,8 @@ system:
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -63,36 +63,36 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.me1B5vVGVlnDu0Ih
           subtype: combat
           target: def
-          value: "-3"
+          value: '-3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.vBxypekyRgiDyXX3
           subtype: combat
           target: melee
-          value: "-3"
+          value: '-3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.vBxypekyRgiDyXX3
           subtype: combat
           target: ranged
-          value: "-3"
+          value: '-3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.vBxypekyRgiDyXX3
           subtype: combat
           target: magic
-          value: "-3"
+          value: '-3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           target:
@@ -103,8 +103,8 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
             duration: 5+@per
             unit: round
@@ -122,9 +122,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -132,4 +132,4 @@ _id: vBxypekyRgiDyXX3
 ownership:
   default: 0
 sort: 0
-_key: "!items!vBxypekyRgiDyXX3"
+_key: '!items!vBxypekyRgiDyXX3'

@@ -4,14 +4,14 @@ type: capacity
 img: icons/creatures/abilities/fang-tooth-poison-green.webp
 system:
   description: "<p>La victime d'une morsure de serpent\_venimeux doit faire un <strong>test de CON difficulté\_15</strong> lors de chaque morsure. </p><p>En cas d'échec la\_victime subit <strong>1 point de DM supplémentaire par\_tour pendant 1d6 tours</strong> et, de plus, la victime\_<strong>est affaiblie pour une durée similaire exprimée\_en heures</strong>. Une nouvelle morsure n'augmente\_pas les DM à chaque tour mais cumule la durée\_d'effet (trois morsures venimeuses par serpent\_au maximum).</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde pour résister au venin
     et d'appliquer le DM et le statut Affaibli pendant 1d6 rounds.
     </p><p>ATTENTION : le statut est sensé avoir une durée en heures.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -26,7 +26,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ljv43n8qalfa6S5j
       indice: 0
       label: Sauvegarde du venin
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -51,7 +51,7 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: "1"
+            formula: '1'
             elementType: poison
             statuses:
               - weakened
@@ -72,9 +72,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -82,4 +82,4 @@ _id: cZ16gOyTn0gAXKGc
 ownership:
   default: 0
 sort: 0
-_key: "!items!cZ16gOyTn0gAXKGc"
+_key: '!items!cZ16gOyTn0gAXKGc'

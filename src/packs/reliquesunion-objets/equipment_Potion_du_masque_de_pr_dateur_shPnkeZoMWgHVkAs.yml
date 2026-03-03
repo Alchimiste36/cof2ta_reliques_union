@@ -1,20 +1,19 @@
 folder: Bj9CdYeY6fs3oPt4
 name: Potion du masque de prédateur
 type: equipment
-img: >-
-  icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp
+img: icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp
 system:
   description: >-
     <p>Pendant PER minutes, l'utilisateur prend les traits d’un fauve ou d’un
     loup. Il gagne +2 en Initiative, en DEF, en attaque et aux DM au contact et
     peut voir dans la nuit (comme un elfe).</p>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: potion-du-masque-de-predateur
   tags: []
   subtype: consumable
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 1
     max: null
@@ -41,8 +40,8 @@ system:
   actions:
     - source: Item.0uBWJkbYk54Jw4FR
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -59,37 +58,37 @@ system:
           source: Item.0uBWJkbYk54Jw4FR
           subtype: combat
           target: init
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.0uBWJkbYk54Jw4FR
           subtype: combat
           target: def
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.0uBWJkbYk54Jw4FR
           subtype: combat
           target: melee
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.0uBWJkbYk54Jw4FR
           subtype: combat
           target: damMelee
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.0uBWJkbYk54Jw4FR
           subtype: state
           target: darkvision
-          value: "10"
+          value: '10'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: consumable
           skill: {}
@@ -104,7 +103,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       actionType: none
@@ -121,12 +120,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771019147775
   modifiedTime: 1771019147775
   lastModifiedBy: MdLP35I2yaa8z7GV
 _id: shPnkeZoMWgHVkAs
 sort: 0
-_key: "!items!shPnkeZoMWgHVkAs"
+_key: '!items!shPnkeZoMWgHVkAs'

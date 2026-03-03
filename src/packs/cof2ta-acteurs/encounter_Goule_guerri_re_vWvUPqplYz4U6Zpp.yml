@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Goule guerrière
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/goule_guerriere.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/goule_guerriere.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: undead
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>«Goule» est une appellation générique qui\_désigne toute créature ayant été préalablement\_mordue par une autre goule, processus qualifié\_d'engoulement. Les goules sont le fruit d'un\_rituel oublié de la nécromancie et rares sont\_les mages assez puissants - ou assez fous - pour\_le mener et en contrôler les conséquences.</p><p>Lorsqu'une créature devient une goule, sa\_peau se flétrit et prend une couleur violacée\_tandis que ses lèvres se retroussent au point\_de disparaître presque totalement, révélant\_des dents en nombre anormalement élevé\_et tranchantes comme une lame. Les griffes\_poussent de façon démesurée tandis que les\_yeux prennent une teinte blanche sanieuse.\_</p><p>Les goules sont des créatures non vivantes\_d'un genre singulier. En effet, elles ne saignent\_pas, sont insensibles à la douleur, dépourvues\_d'intelligence et les effets mentaux (tels\_que les sorts d'envoûtement) n'ont aucune\_prise sur elles. Cependant, elles partagent\_certaines caractéristiques avec les créatures\_vivantes: elles respirent (et peuvent donc se\_noyer), ont besoin de se nourrir et peuvent\_être contaminées par des maladies mortelles.</p><p>Le moyen le plus conventionnel de tuer une\_goule est de lui trancher la tête.\_Lorsqu'elles sont frappées par les rayons du soleil, les goules «s'endorment» et se mettent à\_rêver. Elles perdent presque toute combativité\_et repensent à leur vie avant l'engoulement,\_reprenant presque leur apparence d'origine.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.AbsHrCSVaVGDl030.Item.dT0uMeoY2SDN78om
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "6"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '6'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+3
               target:
@@ -291,7 +292,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.dT0uMeoY2SDN78om"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.dT0uMeoY2SDN78om'
   - folder: uvHtoSiBBvs1nfqu
     name: Goule
     type: capacity
@@ -320,11 +321,11 @@ items:
     _id: kurG09qKZVAfG2ri
     system:
       description: "<p>Les goules <strong>ne saignent pas</strong>, sont\_<strong>insensibles à la douleur</strong>, <strong>aux DM temporaires</strong> et\_<strong>aux effets mentaux</strong>. </p><p>Elles ne sont pas affectées\_par <strong>la fatigue</strong>, mais restent <strong>sensibles aux effets\_liés à la respiration</strong> (tels que l'asphyxie, la\_noyade)<strong>, aux poisons et aux maladies</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -338,8 +339,8 @@ items:
       actions:
         - source: Actor.vWvUPqplYz4U6Zpp.Item.kurG09qKZVAfG2ri
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -357,23 +358,23 @@ items:
               source: Actor.vWvUPqplYz4U6Zpp.Item.kurG09qKZVAfG2ri
               subtype: state
               target: fearImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.vWvUPqplYz4U6Zpp.Item.kurG09qKZVAfG2ri
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.vWvUPqplYz4U6Zpp.Item.kurG09qKZVAfG2ri
               subtype: state
               target: enslavementImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -385,13 +386,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.kurG09qKZVAfG2ri"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.kurG09qKZVAfG2ri'
   - folder: uvHtoSiBBvs1nfqu
     name: Morsure engoulante
     type: capacity
@@ -399,11 +400,11 @@ items:
     _id: zaVRe9ecC3cngzT7
     system:
       description: "<p>Lorsqu'un personnage\_tombe à 0 PV suite à une morsure de goule, il\_doit réussir un <strong>test de CON difficulté 10</strong> sous\_peine de se transformer immédiatement en\_goule. </p><p>Il <strong>subit alors toutes les modifications\_de l'engoulement</strong>, <strong>se relève avec tous ses PV</strong>\_et <strong>commence à attaquer ses compagnons</strong>,\_sonnant le glas de son histoire sur les Terres\_d'Arran.</p><p> De plus, les goules sont plus puissantes,\_plus violentes et disposent d'armes naturelles\_létales : elles gagnent <strong>+2 en attaque et +1d6\_aux DM. [+1 NC]</strong></p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: "<p>L'action permet de réaliser le test de suavegarde pour résister à la transformation.</p><p>Losqu'un personnage est transformé en goule, glissez-déposez la capacité\_@UUID[Item.Orr0hYTlcKZkVbU2]{Transformation en goule} sur sa feuille de personnage afin de lui donner les bonus.</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -417,8 +418,8 @@ items:
       actions:
         - source: Actor.vWvUPqplYz4U6Zpp.Item.zaVRe9ecC3cngzT7
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -434,7 +435,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: single
                 number: 0
@@ -443,7 +444,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -461,13 +462,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.zaVRe9ecC3cngzT7"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.zaVRe9ecC3cngzT7'
   - folder: uvHtoSiBBvs1nfqu
     name: Rapide et résistante
     type: capacity
@@ -475,11 +476,11 @@ items:
     _id: HDclGiCmo2SRKIFC
     system:
       description: "<p>Les goules se déplacent\_très rapidement et peuvent <strong>parcourir 30 mètres\_par action de mouvement</strong>. </p><p>De plus, <strong>la FOR et\_la CON deviennent des Caracs. supérieures</strong> (*).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action donne les bonus permanents.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -493,8 +494,8 @@ items:
       actions:
         - source: Actor.vWvUPqplYz4U6Zpp.Item.HDclGiCmo2SRKIFC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -512,23 +513,23 @@ items:
               source: Actor.vWvUPqplYz4U6Zpp.Item.HDclGiCmo2SRKIFC
               subtype: bonusDice
               target: for
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.vWvUPqplYz4U6Zpp.Item.HDclGiCmo2SRKIFC
               subtype: bonusDice
               target: con
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.vWvUPqplYz4U6Zpp.Item.HDclGiCmo2SRKIFC
               subtype: attribute
               target: mov
-              value: "20"
+              value: '20'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -540,13 +541,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.HDclGiCmo2SRKIFC"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.HDclGiCmo2SRKIFC'
   - folder: uvHtoSiBBvs1nfqu
     name: Stupide
     type: capacity
@@ -554,11 +555,11 @@ items:
     _id: HHdra7S08qZVxInc
     system:
       description: "<p>Si la goule <strong>conserve les capacités\_découlant des attributs physiques</strong> de son\_corps d'origine (comme le fait de voler ou une\_résistance aux dommages par exemple), elle\_<strong>ne peut plus utiliser les capacités nécessitant\_une forme de raisonnement ou d'instinct</strong>,\_telles que les embuscades, la discrétion ou\_le lancement de sorts. </p><p>Pour chaque capacité\_perdue, retirez 1 au NC (minimum 0).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -580,24 +581,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.HHdra7S08qZVxInc"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.HHdra7S08qZVxInc'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -611,8 +612,8 @@ items:
       actions:
         - source: Actor.vWvUPqplYz4U6Zpp.Item.uE6fzmrMx6zBs0gA
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -630,9 +631,9 @@ items:
               source: Actor.vWvUPqplYz4U6Zpp.Item.uE6fzmrMx6zBs0gA
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -644,23 +645,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: uE6fzmrMx6zBs0gA
     ownership:
       default: 0
-    _key: "!actors.items!vWvUPqplYz4U6Zpp.uE6fzmrMx6zBs0gA"
+    _key: '!actors.items!vWvUPqplYz4U6Zpp.uE6fzmrMx6zBs0gA'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -668,4 +669,4 @@ _id: vWvUPqplYz4U6Zpp
 ownership:
   default: 0
 sort: 0
-_key: "!actors!vWvUPqplYz4U6Zpp"
+_key: '!actors!vWvUPqplYz4U6Zpp'

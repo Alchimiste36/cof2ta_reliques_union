@@ -1,16 +1,15 @@
 folder: qekQTvOQw99SYnLZ
 name: Pistage urbain
 type: capacity
-img: >-
-  icons/environment/settlement/palast.webp
+img: icons/environment/settlement/palast.webp
 _id: r49fSo9LTWugdcKX
 system:
   description: "<p>Le personnage obtient un bonus de <strong>+5 aux\_tests destinés à réaliser une filature</strong> et est capable\_de <strong>pister quelqu’un en interrogeant des témoins</strong>\_(test de CHA difficulté 15 à 30 selon les conditions). </p><p>De\_plus, il obtient un bonus de <strong>+5 aux tests\_de poursuite en milieu urbain</strong>.</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p173
-  slug: ""
+  slug: ''
   inGame: <p>Bonus aux jets de compétences.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 4
@@ -24,8 +23,8 @@ system:
   actions:
     - source: Item.r49fSo9LTWugdcKX
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -43,21 +42,21 @@ system:
           source: Item.r49fSo9LTWugdcKX
           subtype: skill
           target: per
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Filature
         - type: capacity
           source: Item.r49fSo9LTWugdcKX
           subtype: skill
           target: int
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Filature
         - type: capacity
           source: Item.r49fSo9LTWugdcKX
           subtype: skill
           target: agi
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Poursuite en milieu urbain
       resolvers: []
@@ -70,9 +69,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1770076929664
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -80,4 +79,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 400000
-_key: "!items!r49fSo9LTWugdcKX"
+_key: '!items!r49fSo9LTWugdcKX'

@@ -1,7 +1,8 @@
 folder: FlNMXxZC1i83QqTY
 name: Conquérant 04
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/4conq_humain.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/4conq_humain.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +248,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +260,8 @@ items:
       actions:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +279,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+8"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+8'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+7
               target:
@@ -292,7 +293,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Épée longue
@@ -306,21 +307,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.2g2e34YRX4hf7nYV"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.2g2e34YRX4hf7nYV'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -329,8 +330,8 @@ items:
       actions:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.M0qwrLqFDQfqfOyr
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -348,9 +349,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+8"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+8'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+7
               target:
@@ -362,7 +363,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Hache à deux mains
@@ -376,13 +377,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.M0qwrLqFDQfqfOyr"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.M0qwrLqFDQfqfOyr'
   - folder: saH8hGLZpV1p2SF8
     name: DEF -1
     type: capacity
@@ -392,11 +393,11 @@ items:
       description: >-
         <p>Capacité à activer si le combattant utilise une hache à deux
         mains.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -411,7 +412,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.gXP7FiogXGmSe7p3
           indice: 0
           label: Si combat à la hache
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -429,9 +430,9 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.gXP7FiogXGmSe7p3
               subtype: combat
               target: def
-              value: "-1"
+              value: '-1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -443,13 +444,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.gXP7FiogXGmSe7p3"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.gXP7FiogXGmSe7p3'
   - folder: SVK15InjZYL8tbL4
     name: Voie des Conquérants
     type: path
@@ -457,9 +458,9 @@ items:
     _id: ZWY5BGW0m7puKGOE
     system:
       description: "<p>Les conquérants appartiennent à des\_corps militaires organisés tels que les milices, les\_armées ou les groupes de mercenaires.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.gussoYvECniLLjOt.Item.8HrOvMlF3yhsaWqN
@@ -478,13 +479,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.ZWY5BGW0m7puKGOE"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.ZWY5BGW0m7puKGOE'
   - folder: P8s07MZzuigjOIbQ
     name: Sergent
     type: capacity
@@ -492,13 +493,13 @@ items:
     _id: 8HrOvMlF3yhsaWqN
     system:
       description: "<p>Une fois par tour, le conquérant peut\_<strong>donner une action supplémentaire à n'importe\_quel allié</strong> sous ses ordres à portée de vue (attaque\_ou mouvement). </p><p><strong>Une fois par combat</strong>, une attaque\_qui <strong>aurait dû l'amener à 0 PV est ignorée</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet uniquement de compter l'utilisation de la capacité
         pour ignorer l'attaque.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -515,7 +516,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.8HrOvMlF3yhsaWqN
           indice: 0
           label: Ignorer derniers DM
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -540,13 +541,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.8HrOvMlF3yhsaWqN"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.8HrOvMlF3yhsaWqN'
   - folder: P8s07MZzuigjOIbQ
     name: Capitaine
     type: capacity
@@ -554,15 +555,15 @@ items:
     _id: tfakCpScYkVd6MQ4
     system:
       description: "<p>Le conquérant donne un bonus\_de <strong>+2 en initiative, en attaque et aux DM</strong> à toutes\_les créatures sous ses ordres à portée de vue. </p><p>De\_plus, il bénéficie d'une <strong>attaque supplémentaire à\_chaque tour</strong> lorsqu'il utilise une action limitée.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de sélectionner les alliés et d'activer l'action pour
         leur donner les bonus de la capacité. L'effet dure de façon illimité
         donc il faudra supprimer manuellement les Effets personnalisés sur les
         feuilles des alliés qui ne remplissent plus les conditions.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -576,8 +577,8 @@ items:
       actions:
         - source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -595,37 +596,37 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
               subtype: combat
               target: melee
-              value: "2"
+              value: '2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
               subtype: combat
               target: ranged
-              value: "2"
+              value: '2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
               subtype: combat
               target: magic
-              value: "2"
+              value: '2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
               subtype: combat
               target: init
-              value: "2"
+              value: '2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.tfakCpScYkVd6MQ4
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -636,11 +637,11 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
                 unit: instant
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -656,13 +657,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.tfakCpScYkVd6MQ4"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.tfakCpScYkVd6MQ4'
   - folder: P8s07MZzuigjOIbQ
     name: Commandant
     type: capacity
@@ -670,15 +671,15 @@ items:
     _id: 13fX6ansW820rH7x
     system:
       description: "<p>Le bonus de capitaine passe\_à <strong>+3 en initiative, en attaque, aux DM et en DEF</strong>\_à toutes les créatures sous ses ordres à portée\_de vue. </p><p>Tant qu'au <strong>moins quatre créatures sous\_ses ordres</strong> sont à moins de 10 mètres de lui, le\_commandant <strong>ne subit que la moitié des DM qui\_lui sont infligés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet de sélectionner les alliés et d'activer l'action pour
         leur donner les bonus de la capacité. L'effet dure de façon illimité
         donc il faudra supprimer manuellement les Effets personnalisés sur les
         feuilles des alliés qui ne remplissent plus les conditions.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -692,8 +693,8 @@ items:
       actions:
         - source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -711,37 +712,37 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
               subtype: combat
               target: melee
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
               subtype: combat
               target: ranged
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
               subtype: combat
               target: magic
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
               subtype: combat
               target: init
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.13fX6ansW820rH7x
               subtype: combat
               target: def
-              value: "3"
+              value: '3'
               apply: others
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -752,10 +753,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: combat
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -772,13 +773,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.13fX6ansW820rH7x"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.13fX6ansW820rH7x'
   - folder: P8s07MZzuigjOIbQ
     name: Instinct de survie
     type: capacity
@@ -786,15 +787,15 @@ items:
     _id: SbcD9yzPoe72HudC
     system:
       description: "<p>Une fois par tour, au\_moment de son choix, le conquérant peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer. </p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser. </p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Les deux premières action permettent de réaliser les tests de
         sauvegarde pour se débarrasser d'un effet qui bloque les
         mouvements.</p><p>La troisième action activable/désactivable permet
         d'obtenir le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -809,7 +810,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.SbcD9yzPoe72HudC
           indice: 0
           label: Sauvegarde d'INT
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -825,7 +826,7 @@ items:
           resolvers:
             - type: save
               saveAbility: int
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -834,7 +835,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -845,7 +846,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.SbcD9yzPoe72HudC
           indice: 1
           label: Sauvegarde d'AGI
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -861,7 +862,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -870,7 +871,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -881,7 +882,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.SbcD9yzPoe72HudC
           indice: 2
           label: Si PV < NC*5
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -899,9 +900,9 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.SbcD9yzPoe72HudC
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -913,13 +914,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.SbcD9yzPoe72HudC"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.SbcD9yzPoe72HudC'
   - folder: P8s07MZzuigjOIbQ
     name: Chair à canon
     type: capacity
@@ -927,11 +928,11 @@ items:
     _id: sKJ7drkIUbYEaCtu
     system:
       description: "<p>Une fois par tour, le conquérant\_peut décider qu'<strong>une attaque qui le visait touche à\_la place l'un de ses subordonnés situé à moins de\_3 mètres</strong> et venu s'interposer. </p><p>Il gagne un bonus\_de <strong>+5 en DEF tant que des subordonnés sont\_positionnés à moins de 3 mètres de lui</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: <p>L'action activable/désactivable donne le bonus en DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -946,7 +947,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.sKJ7drkIUbYEaCtu
           indice: 0
           label: Si alliés à moins de 3m
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -964,9 +965,9 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.sKJ7drkIUbYEaCtu
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -978,13 +979,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.sKJ7drkIUbYEaCtu"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.sKJ7drkIUbYEaCtu'
   - folder: P8s07MZzuigjOIbQ
     name: Attaque mortelle
     type: capacity
@@ -992,14 +993,14 @@ items:
     _id: 9efvH54K0ivsGKZd
     system:
       description: "<p>Une attaque similaire\_à l'attaque sournoise de l'aventurier (voie de\_l'assassinat) qui doit <strong>être exécutée de dos ou par\_surprise</strong>. </p><p>Le conquérant obtient un bonus de <strong>+5\_en attaque et ajoute 3d6 aux DM</strong>. </p><p>Il obtient aussi\_un bonus de <strong>+5 aux tests de discrétion</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action activable/désactivable donne le bonus à l'attaque
         et aux DM.</p><p>La deuxième action permanente donne le bonus en
         discrétion.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: false
       rank: 6
@@ -1014,7 +1015,7 @@ items:
         - source: Actor.m0p5HL4km2YTQBoA.Item.9efvH54K0ivsGKZd
           indice: 0
           label: Attaque de dos / surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1032,21 +1033,21 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.9efvH54K0ivsGKZd
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.m0p5HL4km2YTQBoA.Item.9efvH54K0ivsGKZd
               subtype: combat
               target: damMelee
               value: 3d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.m0p5HL4km2YTQBoA.Item.9efvH54K0ivsGKZd
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1064,7 +1065,7 @@ items:
               source: Actor.m0p5HL4km2YTQBoA.Item.9efvH54K0ivsGKZd
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
@@ -1078,22 +1079,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!m0p5HL4km2YTQBoA.9efvH54K0ivsGKZd"
+    _key: '!actors.items!m0p5HL4km2YTQBoA.9efvH54K0ivsGKZd'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -1101,4 +1102,4 @@ _id: m0p5HL4km2YTQBoA
 ownership:
   default: 0
 sort: 0
-_key: "!actors!m0p5HL4km2YTQBoA"
+_key: '!actors!m0p5HL4km2YTQBoA'

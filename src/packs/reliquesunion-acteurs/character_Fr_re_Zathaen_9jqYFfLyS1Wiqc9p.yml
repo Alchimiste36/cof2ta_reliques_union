@@ -76,7 +76,7 @@ system:
     xp:
       max: 0
     recovery:
-      dice: ""
+      dice: ''
     tempDm: 0
   combat:
     init:
@@ -131,7 +131,7 @@ system:
       max: null
     crit:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -141,7 +141,7 @@ system:
       max: null
     dr:
       base: 0
-      ability: ""
+      ability: ''
       bonuses:
         sheet: 0
         effects: 0
@@ -185,17 +185,17 @@ system:
       value: 15
   details:
     biography:
-      private: ""
+      private: ''
       public: "<p>Frère Zathaen est un semi-elfe\_très expérimenté au combat. Il a 37 ans et il est le\_responsable de ce groupe. Il combat l’injustice et vient\_en aide aux miséreux. Il aime sa vie et sa mission et\_après quelques temps de discussion on se rend compte\_qu’il est très cultivé sur beaucoup de sujets.</p>"
     appearance:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     size: medium
     languages:
-      - ""
+      - ''
   wealth:
     gp:
       value: 2
@@ -222,7 +222,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -299,14 +299,13 @@ items:
   - folder: GgISwHTqrwC4liIs
     name: Voie des cités
     type: path
-    img: >-
-      icons/environment/settlement/city-gate.webp
+    img: icons/environment/settlement/city-gate.webp
     _id: wQwcuYcu9wW0jjHz
     system:
       description: "<h5>Les voies d’origine géographique mettent l’accent sur le lieu où le personnage a été élevé.</h5><h6>Humain : </h6><p><strong>Le\_bonus de la voie d’origine géographique remplace le bonus du même nom de\_la voie de l’humain</strong>. En\_échange, <strong>l’humain reçoit\_un seul bonus, mais de +5</strong> au lieu de +3, <strong>dans\_la profession ou le hobby de son choix</strong>. Si\_le PJ\_dispose d’une voie professionnelle, ce choix doit\_être en accord avec celle-ci (si vous êtes érudit,\_vous n’êtes probablement pas charpentier…).\_</p><h6>Elfe sylvain : </h6><p>Avec cette option, <strong>l’elfe sylvain\_devient un spécialiste de la survie</strong> dans son milieu\_d’origine (correspondant à la voie d’origine géographique choisie) et vous pouvez le rebaptiser\_elfe sauvage. Ce\_faisant, <strong>la capacité de premier\_rang de la voie de l’elfe sylvain est modifiée</strong> :\_à\_la place d’un bonus de survie en forêt, l’elfe\_sauvage bénéficie d’un bonus de survie dans\_le milieu correspondant à son origine géographique, et <strong>le bonus passe de +3 à +5</strong> grâce à la\_capacité de rang 1 de la voie d’origine géographique. <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Attention :</span></strong></span><strong> la\_voie des cités et la voie\_des campagnes sont interdites à ce peuple.</strong></p><blockquote><p><strong>Par exemple</strong> : un\_elfe sauvage avec la capacité\_Habitant des marais (voie des marais) possède un\_bonus de +5 aux tests de survie et de discrétion\_dans les marécages (au lieu de +3). Cette bonification lui est conférée par le rang 1 de sa voie de\_peuple, Lumière des étoiles, et remplace le bonus\_de +3 en survie en forêt.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.A4m2hXjkJt6Dw9IS
@@ -323,30 +322,29 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.vOV58NjKw8Qd3zhQ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 200000
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.wQwcuYcu9wW0jjHz"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.wQwcuYcu9wW0jjHz'
   - folder: qekQTvOQw99SYnLZ
     name: Habitant des villes
     type: capacity
-    img: >-
-      icons/environment/settlement/watchtower-stone.webp
+    img: icons/environment/settlement/watchtower-stone.webp
     _id: A4m2hXjkJt6Dw9IS
     system:
       description: >-
         <p>Le personnage obtient un bonus de <strong>+3 en discrétion en ville
         et aux tests de commerce</strong>.</p>
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -360,8 +358,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.A4m2hXjkJt6Dw9IS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -379,21 +377,21 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.A4m2hXjkJt6Dw9IS
               subtype: skill
               target: agi
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Discrétion en ville
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.A4m2hXjkJt6Dw9IS
               subtype: skill
               target: cha
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Commerce
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.A4m2hXjkJt6Dw9IS
               subtype: skill
               target: int
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Commerce
           resolvers: []
@@ -410,24 +408,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.A4m2hXjkJt6Dw9IS"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.A4m2hXjkJt6Dw9IS'
   - folder: qekQTvOQw99SYnLZ
     name: Survie en coupe-gorge
     type: capacity
-    img: >-
-      icons/environment/settlement/blacksmith.webp
+    img: icons/environment/settlement/blacksmith.webp
     _id: XiBRU4Y0gdPpcvST
     system:
       description: "<p>Le personnage gagne <strong>+3 aux tests de PER pour\_s’orienter et éviter les embuscades en ville</strong> et un\_bonus de <strong>+3 aux tests de CHA pour parlementer\_avec des gangs ou des gardes</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -441,8 +438,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.XiBRU4Y0gdPpcvST
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -460,14 +457,14 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.XiBRU4Y0gdPpcvST
               subtype: ability
               target: per
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: S'orienter et éviter les embuscades en ville
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.XiBRU4Y0gdPpcvST
               subtype: ability
               target: cha
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Parlementer avec gangs et gardes
           resolvers: []
@@ -484,24 +481,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.XiBRU4Y0gdPpcvST"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.XiBRU4Y0gdPpcvST'
   - folder: qekQTvOQw99SYnLZ
     name: Fendre la foule
     type: capacity
-    img: >-
-      icons/environment/settlement/city-entrance.webp
+    img: icons/environment/settlement/city-entrance.webp
     _id: OJ5qkpqogKcj3zRD
     system:
       description: "<p>Le personnage <strong>n’est pas ralenti dans un lieu\_bondé</strong> et, s’il combat au milieu d’une foule\_(marché, exécution publique, festival, etc.), il\_gagne <strong>+2 en DEF et en attaque</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p172
-      slug: ""
+      slug: ''
       inGame: <p>Bonus en DEF activable/désactivable.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -516,7 +512,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.OJ5qkpqogKcj3zRD
           indice: 0
           label: Dans un lieu bondé
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -534,30 +530,30 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.OJ5qkpqogKcj3zRD
               subtype: combat
               target: melee
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.OJ5qkpqogKcj3zRD
               subtype: combat
               target: ranged
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.OJ5qkpqogKcj3zRD
               subtype: combat
               target: magic
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.OJ5qkpqogKcj3zRD
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -572,24 +568,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.OJ5qkpqogKcj3zRD"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.OJ5qkpqogKcj3zRD'
   - folder: qekQTvOQw99SYnLZ
     name: Pistage urbain
     type: capacity
-    img: >-
-      icons/environment/settlement/palast.webp
+    img: icons/environment/settlement/palast.webp
     _id: qKLtB4eBJg3G8Jp6
     system:
       description: "<p>Le personnage obtient un bonus de <strong>+5 aux\_tests destinés à réaliser une filature</strong> et est capable\_de <strong>pister quelqu’un en interrogeant des témoins</strong>\_(test de CHA difficulté 15 à 30 selon les conditions). </p><p>De\_plus, il obtient un bonus de <strong>+5 aux tests\_de poursuite en milieu urbain</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p173
-      slug: ""
+      slug: ''
       inGame: <p>Bonus aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -603,8 +598,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.qKLtB4eBJg3G8Jp6
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -622,21 +617,21 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.qKLtB4eBJg3G8Jp6
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Filature
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.qKLtB4eBJg3G8Jp6
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Filature
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.qKLtB4eBJg3G8Jp6
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Poursuite en milieu urbain
           resolvers: []
@@ -653,24 +648,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.qKLtB4eBJg3G8Jp6"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.qKLtB4eBJg3G8Jp6'
   - folder: qekQTvOQw99SYnLZ
     name: Expert en rixes
     type: capacity
-    img: >-
-      icons/environment/settlement/tavern.webp
+    img: icons/environment/settlement/tavern.webp
     _id: 6tDa3En7bYsADXhm
     system:
       description: "<p>Le personnage obtient un bonus de <strong>+1d4°\_DM\_lorsqu’il inflige des DM temporaires à une créature humanoïde</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p173
-      slug: ""
+      slug: ''
       inGame: <p>Bonus activable/désactivable.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -685,7 +679,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.6tDa3En7bYsADXhm
           indice: 0
           label: DM temporaires sur humanoïde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -705,7 +699,7 @@ items:
               target: damMelee
               value: 1d4°
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -720,22 +714,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.6tDa3En7bYsADXhm"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.6tDa3En7bYsADXhm'
   - folder: fWmjCA560DEw5LaH
     name: Voie du nomade
     type: path
-    img: >-
-      icons/environment/settlement/tent.webp
+    img: icons/environment/settlement/tent.webp
     _id: ofgf8rxO10IjiL8l
     system:
       description: "<p>Cette voie correspond à <strong>ceux qui ont passé\_leur jeunesse sur les routes</strong> : enfant de saltimbanque, de garde de caravane, de marchand\_ambulant, fugitifs en cavale, etc.</p><hr /><p>Une voie professionnelle correspond généralement à l’éducation du PJ avant qu’il ne\_parte à l’aventure. Un\_PJ peut choisir une voie\_professionnelle au niveau 1 et plus rarement au\_cours de sa carrière de héros.</p><p>Si vous utilisez la règle optionnelle de l’âge\_de départ variable, le MJ pourrait rendre obligatoire d’investir dans une voie professionnelle\_les points de capacité acquis par ce biais.\_</p><p>Une voie professionnelle peut aussi être\_acquise à la suite d’une pause dans une vie\_d’aventures (par exemple, les héros repartent\_à l’aventure après s’être posé pendant dix ans.\_Le\_MJ accorde à chacun quelques rangs dans la\_voie professionnelle de leur choix).\_</p><p><strong>Bonus communautaire.</strong> Tous les personnages qui possèdent une voie professionnelle\_obtiennent un bonus de +3 aux tests d’interaction sociale (généralement CHA) avec un autre\_membre de leur communauté.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.4OfFZCr9x7S5IuhE
@@ -752,28 +745,27 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.Ol8fbDnfeUlcDJVN
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.ofgf8rxO10IjiL8l"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.ofgf8rxO10IjiL8l'
   - folder: wOgzhTJ8yrdWVmOR
     name: Sens de l’orientation
     type: capacity
-    img: >-
-      icons/tools/navigation/compass-plain-blue.webp
+    img: icons/tools/navigation/compass-plain-blue.webp
     _id: 4OfFZCr9x7S5IuhE
     system:
       description: "<p>Le personnage obtient un bonus de <strong>+3 pour\_s’orienter ainsi que pour prédire la météo</strong> dans\_les prochaines 24\_h.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -787,8 +779,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.4OfFZCr9x7S5IuhE
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -806,14 +798,14 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.4OfFZCr9x7S5IuhE
               subtype: skill
               target: int
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: S'orienter / Prédire la météo sur 24h
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.4OfFZCr9x7S5IuhE
               subtype: skill
               target: per
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: S'orienter / Prédire la météo sur 24h
           resolvers: []
@@ -830,24 +822,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.4OfFZCr9x7S5IuhE"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.4OfFZCr9x7S5IuhE'
   - folder: wOgzhTJ8yrdWVmOR
     name: Voyageur
     type: capacity
-    img: >-
-      icons/sundries/survival/bedroll-blue-red.webp
+    img: icons/sundries/survival/bedroll-blue-red.webp
     _id: 56aepmwknXfNtvqk
     system:
       description: "<p>Le personnage gagne un bonus de <strong>+3 aux\_tests de récupération lorsqu’il dort à la belle\_étoile</strong> et au <strong>test de PER (Survie) pour déterminer les événements</strong> (voir les règles de voyage,\_COF, page\_233).</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent aux jets de compétences.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -861,8 +852,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.56aepmwknXfNtvqk
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -880,14 +871,14 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.56aepmwknXfNtvqk
               subtype: skill
               target: per
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Déterminer les événments lors d'un voyage
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.56aepmwknXfNtvqk
               subtype: skill
               target: con
-              value: "3"
+              value: '3'
               apply: self
               additionalInfos: Récupération quand dort à la belle étoile
           resolvers: []
@@ -904,24 +895,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.56aepmwknXfNtvqk"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.56aepmwknXfNtvqk'
   - folder: wOgzhTJ8yrdWVmOR
     name: Chasseur-cueilleur
     type: capacity
-    img: >-
-      icons/consumables/fruit/grapes-bunch-purple-pink.webp
+    img: icons/consumables/fruit/grapes-bunch-purple-pink.webp
     _id: iE0ambtiyHYsJe9i
     system:
       description: "<p>Le personnage <strong>peut se nourrir tout en progressant à un rythme de déplacement normal</strong>. S’il\_réussit un test de PER (Survie) dont la difficulté\_dépend de la dangerosité de la région (voir les\_règles de voyage, COF, page\_233), <strong>il peut nourrir\_une autre personne en plus de lui</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -946,28 +936,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.iE0ambtiyHYsJe9i"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.iE0ambtiyHYsJe9i'
   - folder: wOgzhTJ8yrdWVmOR
     name: "Je\_suis déjà venu"
     type: capacity
-    img: >-
-      icons/environment/settlement/house-farmland.webp
+    img: icons/environment/settlement/house-farmland.webp
     _id: NF3Hbc5CcyFJ24p6
     system:
       description: "<p>Lorsque le personnage arrive dans une localité, le joueur peut <strong>dépenser au choix 1\_ DR\_ou 1\_PC pour y être déjà venu</strong>. Dans ce cas, le\_MJ lui <strong>indique les lieux les plus connus et lui\_fournit un contact de confiance</strong> dans la place.\_</p><p>De\_plus, lorsqu’il fait du commerce dans cette\_localité, il <strong>réduit d’un niveau la rareté des objets\_qu’il recherche</strong> (par exemple, un objet très rare\_devient seulement rare). </p><p>La\_dépense du DR ou\_du PC est valable pour toute l’aventure en cours.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de diminuer de 1 les DR ou les PC du PJ
         de façon permanente en ajoutant la Condition "est appris" dessus. A la
         fin de l'aventure, supprimez la Condition pour regagner la
         ressource.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 4
@@ -982,7 +971,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.NF3Hbc5CcyFJ24p6
           indice: 0
           label: Perte de 1 DR
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: debuff
           actionType: none
@@ -998,15 +987,15 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.NF3Hbc5CcyFJ24p6
               subtype: resource
               target: rp
-              value: "-1"
+              value: '-1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.NF3Hbc5CcyFJ24p6
           indice: 1
           label: Perte de 1 PC
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: debuff
           actionType: none
@@ -1022,9 +1011,9 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.NF3Hbc5CcyFJ24p6
               subtype: resource
               target: fp
-              value: "-1"
+              value: '-1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           conditions: []
           resolvers: []
       allowLinkedCapacity: false
@@ -1040,24 +1029,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.NF3Hbc5CcyFJ24p6"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.NF3Hbc5CcyFJ24p6'
   - folder: wOgzhTJ8yrdWVmOR
     name: Attentif
     type: capacity
-    img: >-
-      icons/magic/perception/eye-tendrils-web-purple.webp
+    img: icons/magic/perception/eye-tendrils-web-purple.webp
     _id: FKUnMAGJw81SzbLC
     system:
       description: "<p>Les routes sont parfois dangereuses et éviter\_les combats est la meilleure façon de survivre au\_voyage. </p><p>Le\_personnage gagne <strong>+1 en PER</strong>.</p>"
-      source: ""
+      source: ''
       origin: Atlas d'Osgild et Règles Optionnelles p180
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent à la PER.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1071,8 +1059,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.FKUnMAGJw81SzbLC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1090,9 +1078,9 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.FKUnMAGJw81SzbLC
               subtype: ability
               target: per
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1107,11 +1095,11 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.FKUnMAGJw81SzbLC"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.FKUnMAGJw81SzbLC'
   - folder: QZKWGWu8512Lhphc
     name: Sang-Mêlé Semi-Elfe
     type: feature
@@ -1119,9 +1107,9 @@ items:
       modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_semi_elfe_token.webp
     system:
       description: "<h3>ATTENTION</h3><p>Lorsque vous créez un personnage Semi-Elfe, <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">il faut d'abord dupliquer ce trait !</span></strong></span></p><p>Sur le nouveau trait, <strong>ajouter la voie culturelle choisie</strong>.</p><p>Uniquement après cela, <strong>glissez-déposez le trait</strong> sur la feuille de personnage.</p><h2>Les Semi-Elfes</h2><p>La proximité entre les Elfes et les Humains\_devait conduire à des unions mixtes. De tous\_les enfants nés de parents issus de peuples\_différents, les Semi-Elfes sont de très loin les\_plus nombreux. Ce qui ne les empêche pas\_d’être brimés et méprisés partout sur les Terres\_d’Arran. Réduits à l’esclavage dans les mines\_du Mitan, confinés dans des ghettos ou à des\_tâches ingrates dans les villes du Nord, unis en\_peuplades nomades dans les Terres orientales,\_les Semi-Elfes sont en quête de reconnaissance.\_</p><p>Physiquement, ils sont à la fois très différents des\_Elfes et des Humains. En vérité, on retrouve en\_eux, de façon surprenante des caractéristiques\_appartenant à de nombreux peuples d’Arran.\_</p><p>Par exemple, leur dentition est souvent proéminente, surtout leurs canines inférieures, assez\_semblables à celles des Orcs. Ils empruntent\_aux Elfes leurs longues oreilles pointues et aux\_Humains leur pilosité faciale. Enfin, ils arborent\_fréquemment des taches écaillées sur le corps,\_communes à certaines tribus naines.</p><h4>Voie du peuple Semi-Elfe</h4><p>Le Semi-Elfe commence avec la voie du peuple\_elfe et la voie du peuple humain. Il peut évoluer\_dans les deux voies lors de sa progression en\_dépensant normalement ses points de capacité,\_<span style=\"color:var(--color-text-primary);font-size:var(--font-size-14);font-family:var(--font-body)\">mais il est limité au rang 3 maximum dans\_</span>chacune des voies.</p><h4>Voie culturelle</h4><p>Lors de la création de personnage, en accord\_avec le MJ, le joueur choisit une voie culturelle\_parmi celles des Elfes et des Humains en\_fonction de l’historique de son personnage et de\_la communauté ou la région des Terres d’Arran\_dans laquelle il a grandi.</p><h4>Modificateurs des Semi-Elfes</h4><ul><li><p>Atout: <strong>Aucun</strong></p></li><li><p>Faiblesse: <strong>Aucun</strong></p></li><li><p>Âge de départ à l’aventure : <strong>20 ans et plus</strong></p></li><li><p>Espérance de vie: <strong>150 ans</strong></p></li><li><p>Taille: <strong>entre 1,50 m et 1,90m</strong></p></li><li><p>Poids : <strong>entre 40 kg et 80 kg</strong></p></li><li><p>Trait des Semi-Elfes : <strong>Aucun</strong></p></li></ul>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.76
-      slug: ""
+      slug: ''
       subtype: people
       modifiers: []
       paths:
@@ -1135,26 +1123,25 @@ items:
       compendiumSource: Item.FHtWz2hHT6eWbPhr
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: K4OO734pPDEj9Kp3
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.K4OO734pPDEj9Kp3"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.K4OO734pPDEj9Kp3'
   - folder: Z4oGmDIGYVNgtAJP
     name: Voie du Peuple Elfe Mêlé
     type: path
-    img: >-
-      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_elfe2.webp
+    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_elfe2.webp
     system:
       description: "<h6><strong>Voie utilisée uniquement dans le cas des Semi-Elfes et des Sang-Mêlés</strong></h6><h2>Les Elfes</h2><p>Selon les légendes, les Elfes sont des\_esprits immortels, seconds enfants\_d’Arran venus au monde après les\_dragons et avant les Hommes. Installés partout\_sur les Terres d’Arran, ils vivent en communautés\_relativement fermées. Leur immortalité est un\_don autant qu’une malédiction: elle leur confère\_une sagesse infinie et en même temps les détache\_lentement du sort du monde, les entraînant\_dans une sorte de torpeur.\_</p><p>En dépit de la nature immortelle des individus\_qui les composent, la plupart des grandes\_communautés comptent en leur sein des sages,\_prophètes ou vénérables à la peau flétrie et l’âge\_abyssal. Les rumeurs prétendent que le corps et\_l’âme d’un Elfe sont si\_ intimement liés qu’ils\_sont le reflet l’un de l’autre, ce qui expliquerait\_que certains Elfes fatigués ou las paraîtraient\_bien plus âgés que d’autres.</p><h4>Modificateurs des Elfes</h4><ul><li><p>Atout: <strong>+2 CHA</strong></p></li><li><p>Faiblesse: <strong>-2 FOR</strong></p></li><li><p>Âge de départ à l’aventure : <strong>80 ans et plus</strong></p></li><li><p>Espérance de vie: <strong>théoriquement immortel</strong></p></li><li><p>Taille: <strong>entre 1,65 m et 1,90 m</strong></p></li><li><p>Poids : <strong>entre 50 kg et 80 kg</strong></p></li><li><p>Trait des Elfes : <strong>Lumière des étoiles</strong></p></li><li><p></p></li></ul><p><strong>Noms féminins:</strong> <em>Adoraa, Amarie, Aril’em,\_Bi’leth, Dilya, Eelmyra, Faetris, Fin’nea, Ilimys,\_Ilsewël, Inaëra, Keydi, Li’erin, Mylaelä, Nälaea,\_Nue’leth, Phivaaris, Reywarin, Saëli’hn, Selussa,\_Shaë’len, Sihanien, Teriiani, Tisha, Yes’rieth,\_Yllagwyn, Yn’asel.</em></p><p><strong>Noms masculins:</strong> <em>Arel, Ayen, Carfell, Dae’kalyn, Daemys, Eldaeren, Eld’uin, Elluin, Erolwen,\_Faardan, Faeren, Ianjyr, Iewin, Ilthur, Kerr’yth,\_Khaa’ris, Lathaïen, Liagwyn, Mlartlar, Nael,\_Nar’wen, Nyll, Preswë, Qiro, Rilatar, Tanithil,\_Yelg’wyn, Ylyn, Waera, Wysalei.</em></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.HCglFbVR38M3cp0R
@@ -1169,29 +1156,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: EzPsRaYtheuvUh6G
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.EzPsRaYtheuvUh6G"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.EzPsRaYtheuvUh6G'
   - folder: oXin2F69W6OYUCr3
     name: Grâce elfique
     type: capacity
-    img: >-
-      icons/creatures/abilities/cougar-pounce-stalk-black.webp
+    img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
     _id: HCglFbVR38M3cp0R
     system:
       description: "<p>Le PJ gagne <strong>+5 à tous les tests de CHA et de\_déplacement silencieux</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 1
@@ -1205,8 +1191,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.HCglFbVR38M3cp0R
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1224,16 +1210,16 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.HCglFbVR38M3cp0R
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Déplacement silencieux
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.HCglFbVR38M3cp0R
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1244,27 +1230,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.HCglFbVR38M3cp0R"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.HCglFbVR38M3cp0R'
   - folder: oXin2F69W6OYUCr3
     name: Essence magique
     type: capacity
-    img: >-
-      icons/magic/defensive/shield-barrier-deflect-teal.webp
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
       description: "<p>Le PJ est naturellement lié à l’essence du monde.\_</p><p>Il obtient un bonus de <strong>+2 en DEF contre les\_attaques magiques</strong> et à tous les tests destinés à\_résister à la magie.</p><p>Ce bonus passe à <strong>+4 au rang\_4</strong> atteint dans cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Action activable pour appliquer le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1279,7 +1264,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.2bVX0BqnF2fTvmvs
           indice: 0
           label: Résister à la magie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1297,9 +1282,9 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.2bVX0BqnF2fTvmvs
               subtype: combat
               target: def
-              value: "@rang[0,2,2,4,4]"
+              value: '@rang[0,2,2,4,4]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1310,28 +1295,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 2bVX0BqnF2fTvmvs
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.2bVX0BqnF2fTvmvs"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.2bVX0BqnF2fTvmvs'
   - folder: oXin2F69W6OYUCr3
     name: Maîtrise des armes elfiques
     type: capacity
-    img: >-
-      icons/weapons/bows/shortbow-recurve-yellow.webp
+    img: icons/weapons/bows/shortbow-recurve-yellow.webp
     system:
       description: "<p>Le PJ a appris à manier l’artisanat raffiné de\_son peuple. Il peut porter et utiliser armes et\_armures de la tradition elfique, pour lesquels il\_possède la formation martiale. Voir à ce sujet la\_marge <em><strong>Armes et armures traditionnelles.</strong></em></p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.71
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'action automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1352,26 +1336,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: EjGgDSsnmoAJalc7
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.EjGgDSsnmoAJalc7"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.EjGgDSsnmoAJalc7'
   - folder: Z4oGmDIGYVNgtAJP
     name: Voie du Peuple Humain Mêlé
     type: path
-    img: >-
-      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain2.webp
+    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain2.webp
     system:
       description: "<h6><strong>Voie utilisée uniquement dans le cas des Semi-Elfes et des Sang-Mêlés</strong></h6><h2>Les Humains</h2><p>Les Humains constituent un peuple très\_hétéroclite et très commun sur les Terres\_d’Arran. Leur installation se fait souvent\_au détriment des autres peuples. Ils ont colonisé\_les steppes nordiques hostiles pour fonder la cité\_d’Aspen en Borduria et ont rendu habitables les\_terres arides aux marges de la Terre des Ogres\_pour bâtir l’immense empire Assanide. Les forêts\_de Duhann et de Daëdenn cèdent chaque année\_de plus en plus de terrain au développement\_des cités-États de Tarascon et il n’y a guère\_que les Nains cloîtrés dans leurs imprenables\_forteresses-États qui ne semblent pas menacés\_par cette expansion. Pas encore en tout cas.</p><p>Les Humains n’ont certes pas la longévité\_des Elfes ni la robustesse des Nains, mais\_ils compensent par leur incroyable capacité\_d’adaptation et une fécondité impressionnante.</p><p>Capables du meilleur comme du pire, les\_sociétés humaines sont variées et il est impossible\_de les réduire à une définition générale. Les\_peuples d’Arran victimes de leur xénophobie\_n’ont souvent connu que les mauvais côtés de\_certaines communautés humaines. Mais d’autres\_peuplades, quelques frontières plus loin, vivent\_en respectant des valeurs et des traditions tout\_à fait inverses.</p><h4>Modificateurs des Humains</h4><p>Atout: <strong>aucun</strong></p><p>Faiblesse: <strong>aucun</strong></p><p>Âge de départ à l’aventure: <strong>18 ans et plus</strong></p><p>Espérance de vie: <strong>70 ans</strong></p><p>Taille: <strong>entre 1,50 m et 2,00 m</strong></p><p>Poids : <strong>entre 40 kg et 120 kg</strong></p><p>Traits des Humains : <strong>aucun</strong></p><p><strong>Noms féminins:</strong> <em>Aethria, Aales, Ann, Aphra,\_Ashae, Ayfara, Bryde, Clymoni, Daeira, Dalleira, Dhesah, Elianora, Elise, Emelyne, Egelina,\_Gaynore, Helleori, Ianthe, Inle, Jehane, Jivete,\_Malie, Mareona, Mattie, Melisenda, Merily,\_Nota, Phaio, Ptelera, Rose, Ulshee, Ysabea.</em></p><p><strong>Noms masculins:</strong> <em>Alvan, Ancelm, Daue,\_Iohannes, Gallien, Geffery, Geoff, Gerald,\_Hamo, Herry, Herval, Joa, Joscell, Jun, Maina,\_Mauklom, Nicoll, Niel, Oenus, Raimn, Ran,\_Ranort, Robb, Roff, Rullo, Simm, Teebald,\_Tericio, Thomme, Vinlam, Yvoe.</em></p>"
-      source: ""
+      source: ''
       origin: Livre des Joueurs page 87
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
@@ -1386,31 +1369,30 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: cREjZVijcnjKqoyr
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.cREjZVijcnjKqoyr"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.cREjZVijcnjKqoyr'
   - folder: TM2vZsQjVMSGf4wH
     name: Adaptable
     type: capacity
-    img: >-
-      icons/skills/social/wave-halt-stop.webp
+    img: icons/skills/social/wave-halt-stop.webp
     _id: JoN0Il6aOF4BKhDQ
     system:
       description: "<p><strong><span style=\"text-decoration:underline\">Après avoir raté un test de Carac.</span></strong>, le PJ obtient\_un bonus de <strong>+5 au prochain test</strong> pour retenter\_la même action au prochain tour.</p>"
-      source: ""
+      source: ''
       origin: Livre des Joueurs page 87
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Bonus permanent aux tests de compétences. A activer seulement après
         un test raté.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1424,8 +1406,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1443,42 +1425,42 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: con
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: for
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: cha
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.JoN0Il6aOF4BKhDQ
               subtype: skill
               target: int
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Après un test raté
           resolvers: []
@@ -1491,29 +1473,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.JoN0Il6aOF4BKhDQ"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.JoN0Il6aOF4BKhDQ'
   - folder: TM2vZsQjVMSGf4wH
     name: Loup parmi les loups
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-sword-orange.webp
+    img: icons/skills/melee/hand-grip-sword-orange.webp
     system:
       description: "<p>Le PJ gagne <strong>+1 aux DM lorsqu’il combat un\_adversaire humanoïde</strong>. Ce bonus passe à <strong>+2 au\_rang 4</strong> de cette voie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.87
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action est activable lorsque le personnage combat un adversaire
         humanoïde.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -1528,7 +1509,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.b4QTFePP6BMAmj0V
           indice: 0
           label: Contre un humanoïde
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1546,23 +1527,23 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.b4QTFePP6BMAmj0V
               subtype: combat
               target: damMelee
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
               additionalInfos: Après un test raté
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.b4QTFePP6BMAmj0V
               subtype: combat
               target: damRanged
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.b4QTFePP6BMAmj0V
               subtype: combat
               target: damMagic
-              value: "@rang[0,1,1,2,2]"
+              value: '@rang[0,1,1,2,2]'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1573,28 +1554,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: b4QTFePP6BMAmj0V
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.b4QTFePP6BMAmj0V"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.b4QTFePP6BMAmj0V'
   - folder: TM2vZsQjVMSGf4wH
     name: Enseignement exotique
     type: capacity
-    img: >-
-      icons/weapons/daggers/dagger-magical-glowing-blue.webp
+    img: icons/weapons/daggers/dagger-magical-glowing-blue.webp
     system:
       description: "<p>Le PJ choisit l’une des formations martiales\_maîtrisées par son personnage ainsi qu’une\_tradition d’un des peuples des Terres d’Arran :\_le PJ peut porter et utiliser uniquement\_ les\_armes ou armures qu’il maîtrise, forgées dans\_cette tradition.</p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.87
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1615,16 +1595,16 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: GOu1gtkknuOawcQf
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.GOu1gtkknuOawcQf"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.GOu1gtkknuOawcQf'
   - folder: LWfsjN0pv7aydAdr
     name: Voie Culturelle du Mitan
     type: path
@@ -1632,9 +1612,9 @@ items:
       modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain_mitan2.webp
     system:
       description: "<h2>Humains\_du Mitan</h2><p>Les peuples du Mitan regroupent le royaume de\_Léhon, les cités-États du Tarascon, la\_ Lombardie\_ainsi que les peuples de l’Ourann septentrional.\_</p><p>Plus civilisés et raffinés que les Nordiques, ces\_communautés ont bâti de prestigieuses cités\_portuaires, des flottes marchandes prospères\_et ont élevé au rang d’art le commerce et la\_politique.</p><p>Marchands, diplomates, corsaires, espions ou\_occasionnellement chevaliers – pour les cités les\_plus ancrées dans les anciennes traditions –, les\_peuples du Mitan comptent sur les accords, les\_complots et la puissance de l’or.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       subtype: people
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.u36lgGi07MaOLck3
@@ -1651,29 +1631,28 @@ items:
       compendiumSource: Item.uhAkFB5iYe5EIU0q
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: zvYV4RqQM5VUOsig
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.zvYV4RqQM5VUOsig"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.zvYV4RqQM5VUOsig'
   - folder: EGF4yuGWkbpzMatB
     name: Homme des cités
     type: capacity
-    img: >-
-      icons/environment/settlement/watchtower-city.webp
+    img: icons/environment/settlement/watchtower-city.webp
     _id: u36lgGi07MaOLck3
     system:
       description: "<p>Le PJ est à l’aise dans les foules et les cités\_bondées. </p><p>Il gagne un bonus de <strong>+5 pour tous les\_tests liés à la perception dans une foule</strong>, ainsi\_que pour <strong>trouver l’adresse d’une personne</strong> ou\_<strong>l’emplacement d’un lieu précis</strong> en zone urbaine.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent aux test de PER et de CHA.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -1687,8 +1666,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.u36lgGi07MaOLck3
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1706,14 +1685,14 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.u36lgGi07MaOLck3
               subtype: skill
               target: per
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Dans une foule / Trouver individu ou adresse
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.u36lgGi07MaOLck3
               subtype: skill
               target: cha
-              value: "0"
+              value: '0'
               apply: self
               additionalInfos: Trouver individu ou adresse
           resolvers: []
@@ -1726,29 +1705,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.u36lgGi07MaOLck3"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.u36lgGi07MaOLck3'
   - folder: EGF4yuGWkbpzMatB
     name: Entre tradition et progrès
     type: capacity
-    img: >-
-      icons/environment/creatures/horses.webp
+    img: icons/environment/creatures/horses.webp
     system:
       description: "<p>Le PJ choisit une capacité de <strong>rang 1 ou 2 de\_la voie du combat monté</strong> ou de la <strong>voie de\_l’arbalétrie</strong>. </p><p>Au rang 4 de cette voie, il gagne <strong>une\_capacité supplémentaire de rang 1 ou 2</strong> de la voie\_du combat monté ou de la voie de l'arbalétrie.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
         liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -1769,32 +1747,31 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: VRpzNdXdnv26nJ17
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.VRpzNdXdnv26nJ17"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.VRpzNdXdnv26nJ17'
   - folder: EGF4yuGWkbpzMatB
     name: Modernisme
     type: capacity
-    img: >-
-      icons/weapons/crossbows/crossbow-loaded-black.webp
+    img: icons/weapons/crossbows/crossbow-loaded-black.webp
     system:
       description: "<p>Le PJ gagne un bonus de <strong>+1 en attaque et aux\_DM</strong> lorsqu’il manie une arbalète. </p><p>De plus, il\_gagne <strong>la maîtrise des armes de tir</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable donne les bonus aux attaques et DM.</p><p>Pour la
         formation martiale, au moment d'apprendre cette capacité, ouvrez le
         profil du personnage depuis l'onglet "Biographie" et cochez les cases
         Arbalète de poing, Arbalète légère et Arbalète lourde.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1809,7 +1786,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.7hrhOdvAfuAuoxc2
           indice: 0
           label: Utilisation d'une Arbalète
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1827,16 +1804,16 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.7hrhOdvAfuAuoxc2
               subtype: combat
               target: ranged
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.7hrhOdvAfuAuoxc2
               subtype: combat
               target: damRanged
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1847,28 +1824,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 7hrhOdvAfuAuoxc2
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.7hrhOdvAfuAuoxc2"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.7hrhOdvAfuAuoxc2'
   - folder: EGF4yuGWkbpzMatB
     name: Conspirateur
     type: capacity
-    img: >-
-      icons/sundries/documents/document-sealed-red-tan.webp
+    img: icons/sundries/documents/document-sealed-red-tan.webp
     system:
       description: "<p>Le PJ connaît beaucoup de monde dans les\_Terres d’Arran. </p><p><strong><span style=\"text-decoration:underline\">Une fois par aventure</span></strong>, il peut\_<strong>faire appel à un ami ou contact pour en obtenir\_un service, une information ou sceller une\_alliance</strong>. </p><p>Pour cela, il doit réussir <strong>un test de CHA\_difficulté 10</strong> si le service est du domaine de la\_routine, <strong>de 15</strong> si le service est difficile à rendre\_ou s’il peut présenter un risque pour le contact,\_et <strong>de 20</strong> si le service fait appel à une information\_secrète ou s’il met ouvertement l’allié en danger. </p><p>En cas d’échec, l’ami peut malgré tout accorder\_son aide, mais elle ne sera pas gratuite...</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       inGame: "<p>L'action permet de réaliser le test de CHA configuré pour un Difficulté de 10. Lors du test, le Joueur peut modifier la difficulté ou le MJ pourra interpréter le résultat unqiuement.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.fVvCRjg2ifau57Bl]{Entre tradition et progrès}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1883,7 +1859,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.mRCdfH3B0xtVCBZ7
           indice: 0
           label: Appel à un ami
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -1901,11 +1877,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@cha"
-                crit: ""
-                difficulty: "10"
+                formula: '@cha'
+                crit: ''
+                difficulty: '10'
               dmg:
-                formula: ""
+                formula: ''
               target:
                 type: none
                 number: 0
@@ -1914,7 +1890,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1927,28 +1903,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: mRCdfH3B0xtVCBZ7
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.mRCdfH3B0xtVCBZ7"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.mRCdfH3B0xtVCBZ7'
   - folder: EGF4yuGWkbpzMatB
     name: Maître marchand
     type: capacity
-    img: >-
-      icons/skills/social/trading-justice-scale-gold.webp
+    img: icons/skills/social/trading-justice-scale-gold.webp
     system:
       description: "<p>Le PJ augmente ses valeurs d’<strong>INT et CHA\_de +2</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.89
-      slug: ""
+      slug: ''
       inGame: <p>Bonus permanent en INT et CHA.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -1962,8 +1937,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.nyh63I7lfg7tTTBd
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1981,16 +1956,16 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.nyh63I7lfg7tTTBd
               subtype: ability
               target: cha
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.nyh63I7lfg7tTTBd
               subtype: ability
               target: int
-              value: "2"
+              value: '2'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2001,28 +1976,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: nyh63I7lfg7tTTBd
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.nyh63I7lfg7tTTBd"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.nyh63I7lfg7tTTBd'
   - folder: ooA6Rk9MSgmpk2rl
     name: Fidèle monture
     type: capacity
-    img: >-
-      icons/environment/creatures/horse-tan.webp
+    img: icons/environment/creatures/horse-tan.webp
     system:
       description: "<p>Le PJ possède un puissant destrier (un cheval\_de guerre ou un cochon de combat). </p><p>À dos de\_monture, il peut ajouter un déplacement de\_10 m avant ou après une action normale (par\_exemple faire 10 m et une action limitée). </p><p>La\_monture n’attaque que si elle est elle-même\_attaquée au contact par une créature.</p><p><strong><span style=\"text-decoration:underline\">Fidèle monture : </span></strong></p><p>FOR +4, DEX +0, CON +4, INT -2,\_SAG +0, CHA +0, </p><p>Init. 10, DEF 13, PV 15, </p><p>ruade\_+5, DM 1d6+4</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> au lieu de réaliser un déplacement supplémentaire, le PJ peut commander\_à sa monture d’attaquer sa cible.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.122
-      slug: ""
+      slug: ''
       inGame: "<p>Le MJ donne le droit \"Propriétaire\" au Compagnon :\_@UUID[Actor.H2MoKW8mmdqtSBwD]{Fidèle Monture}</p>"
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -2043,26 +2017,25 @@ items:
       compendiumSource: Item.qeML4VZjVKtXT99U
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: EsWRyaya74wxwEhT
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.EsWRyaya74wxwEhT"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.EsWRyaya74wxwEhT'
   - folder: 3T9yfWQ5caRXMJJz
     name: Pèlerin/pèlerine
     type: profile
-    img: >-
-      icons/magic/holy/prayer-hands-glowing-yellow-green.webp
+    img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
     system:
       description: "<p><strong>Peuple privilégié :</strong> Nain de l’ordre des Errants</p><p>Le pèlerin erre sur les routes des Terres d’Arran\_en quête de spiritualité. Il est\_ particulièrement\_commun dans l’empire nain où il voyage entre\_les campagnes et fermes des Errants pour\_apporter aide et réconfort.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.65
-      slug: ""
+      slug: ''
       maxDefenseArmor: 0
       modifiers:
         - type: profile
@@ -2070,14 +2043,14 @@ items:
           subtype: resource
           target: mp
           value: (@niv+@per)*2
-          additionalInfos: ""
+          additionalInfos: ''
           apply: self
         - type: profile
           source: Actor.9jqYFfLyS1Wiqc9p.Item.d7rettjuc7KYxB3i
           subtype: combat
           target: magic
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
           apply: self
       martialTrainingsWeapons:
         unarmed: true
@@ -2139,26 +2112,25 @@ items:
       compendiumSource: Item.oxBL3ij05Erqcoow
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: d7rettjuc7KYxB3i
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.d7rettjuc7KYxB3i"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.d7rettjuc7KYxB3i'
   - folder: iF0rPRJ2ZZBWYKdu
     name: Voie du Mysticisme
     type: path
-    img: >-
-      icons/magic/holy/barrier-shield-winged-cross.webp
+    img: icons/magic/holy/barrier-shield-winged-cross.webp
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       subtype: profile
       capacities:
         - Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
@@ -2175,33 +2147,32 @@ items:
       compendiumSource: Item.03LzyED2MTw2FgJA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: mA9fixUPGBrWxh71
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.mA9fixUPGBrWxh71"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.mA9fixUPGBrWxh71'
   - folder: WxYrOA5rFauz1dXt
     name: Bénédiction
     type: capacity
-    img: >-
-      icons/magic/holy/prayer-hands-glowing-yellow-green.webp
+    img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
     system:
       description: "<p>Le PJ entonne un chant pour encourager ses\_compagnons en vue.</p><p>Ceux-ci (ainsi que le PJ)\_bénéficient d’un bonus de <strong>+1 à tous leurs tests\_de Carac. et d’attaque pendant [3 + Mod. de\_SAG] tours</strong>.</p><p>Le bonus passe à <strong>+2 au rang 5</strong>\_atteint dans cette voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus aux tests est\_augmenté de 1.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir les bonus tant que l'action est
         activée et de donner les bonus aux cibles sélectionnées pendant 3 + PER
         rounds. Fonctionne uniquement en mode Combat.</p><p>Si le PJ obtient la
         capacité avancée, ajoutez la Condition "est appris" sur la deuxième
         action et supprimez la première.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -2215,8 +2186,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2234,30 +2205,30 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: skill
               target: all
-              value: "@rang[1,1,1,1,2]"
+              value: '@rang[1,1,1,1,2]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: melee
-              value: "@rang[1,1,1,1,2]"
+              value: '@rang[1,1,1,1,2]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: ranged
-              value: "@rang[1,1,1,1,2]"
+              value: '@rang[1,1,1,1,2]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: magic
-              value: "@rang[1,1,1,1,2]"
+              value: '@rang[1,1,1,1,2]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -2268,8 +2239,8 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
                 duration: 3 + @per
                 unit: round
@@ -2280,8 +2251,8 @@ items:
               hasAttackSuccessThreshold: false
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
           indice: 1
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2297,30 +2268,30 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: skill
               target: all
-              value: "@rang[2,2,2,2,3]"
+              value: '@rang[2,2,2,2,3]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: melee
-              value: "@rang[2,2,2,2,3]"
+              value: '@rang[2,2,2,2,3]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: ranged
-              value: "@rang[2,2,2,2,3]"
+              value: '@rang[2,2,2,2,3]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.vXCcQi6HthTetDdN
               subtype: combat
               target: magic
-              value: "@rang[2,2,2,2,3]"
+              value: '@rang[2,2,2,2,3]'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -2331,8 +2302,8 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
                 duration: 3 +@per
                 unit: round
@@ -2351,33 +2322,32 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: vXCcQi6HthTetDdN
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.vXCcQi6HthTetDdN"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.vXCcQi6HthTetDdN'
   - folder: WxYrOA5rFauz1dXt
     name: Protection contre le mal
     type: capacity
-    img: >-
-      icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
     system:
       description: "<p>Le PJ <strong>peut lancer ce sort sur lui ou sur tout allié</strong>\_(portée: au contact) pour <strong>la durée d’un combat.</strong> </p><p>La cible obtient alors un bonus de <strong>+2 en DEF\_et pour tous les tests de résistance</strong> contre les\_attaques des morts-vivants, des démons, des\_élémentaires et des créatures conjurées (appelées\_d’un autre plan par magie).</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF passe à +4.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action permet d'obtenir ou de donner à une cible sélectionnée le
         bonus de DEF uniquement pendant la durée d'un Combat. Fonctionne
         uniquement en Mode Combat.</p><p>L'effet de résistance est à gérer
         manuellement.</p><p>Si le PJ obtient la capacité avancée, remplacez la
         Valeur du Modificateur de l'action par "4".</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 2
@@ -2391,8 +2361,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.bozUTeyOn79K7fHY
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2410,9 +2380,9 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.bozUTeyOn79K7fHY
               subtype: combat
               target: def
-              value: "2"
+              value: '2'
               apply: both
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               target:
@@ -2423,10 +2393,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "1"
+                duration: '1'
                 unit: combat
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -2442,30 +2412,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: bozUTeyOn79K7fHY
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.bozUTeyOn79K7fHY"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.bozUTeyOn79K7fHY'
   - folder: WxYrOA5rFauz1dXt
     name: Délivrance
     type: capacity
-    img: >-
-      icons/magic/life/heart-cross-strong-flame-blue.webp
+    img: icons/magic/life/heart-cross-strong-flame-blue.webp
     system:
       description: "<p>En touchant sa cible, le PJ <strong>annule les pénalités\_infligées par les sorts, les malédictions, la\_pétrification et les capacités spéciales</strong> d’autres\_personnages ou de créatures (douleur, mutilation, poisons, etc.).</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre
         latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 3
@@ -2486,30 +2455,29 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: h3XPx9XQYocLnoP2
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.h3XPx9XQYocLnoP2"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.h3XPx9XQYocLnoP2'
   - folder: WxYrOA5rFauz1dXt
     name: Sanctuaire
     type: capacity
-    img: >-
-      icons/magic/defensive/barrier-shield-dome-blue-purple.webp
+    img: icons/magic/defensive/barrier-shield-dome-blue-purple.webp
     system:
       description: "<p>Quand le PJ lance ce sort, <strong>tous les adversaires\_qui veulent l’attaquer doivent d’abord réussir\_un test de SAG difficulté 15</strong>. </p><p><strong><span style=\"text-decoration:underline\">S’ils échouent</span></strong>,\_<strong>ils ne peuvent pas l’attaquer</strong>. </p><p>Les effets de ce\_sort <strong>durent [5 + Mod de SAG] tours</strong>, mais\_s’il tente la moindre attaque, le sort prend fin\_immédiatement.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet automatique. Dépensez les PM manuellement depuis la barre
         latérale.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -2530,9 +2498,9 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: SFR5KKoJMcxkpYV8
     ownership:
@@ -2540,21 +2508,20 @@ items:
       oByx0z6HY26hEziz: 3
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.SFR5KKoJMcxkpYV8"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.SFR5KKoJMcxkpYV8'
   - folder: WxYrOA5rFauz1dXt
     name: Rituel de puissance
     type: capacity
-    img: >-
-      icons/magic/holy/barrier-shield-winged-blue.webp
+    img: icons/magic/holy/barrier-shield-winged-blue.webp
     system:
       description: "<p><strong>Sur une attaque magique</strong>, le PJ <strong>peut utiliser\_un d12 en attaque au lieu du d20</strong> habituel.\_</p><p><strong><span style=\"text-decoration:underline\">Si l’attaque est réussie</span></strong>, il ajoute <strong>2d6 aux DM</strong>.\_</p><p>Cette capacité s’utilise uniquement avec les sorts\_nécessitant un test d’attaque et infligeant des\_DM. Si les DM sont répartis sur plusieurs tours,\_seuls les DM initiaux sont modifiés.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.138
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable permet d'obtenir un Dé Malus pour les attaques
         magiques et +2d6 aux DM magiques.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 5
@@ -2568,8 +2535,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.bXLFAOY28rTM7vSU
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -2587,16 +2554,16 @@ items:
               source: Actor.9jqYFfLyS1Wiqc9p.Item.bXLFAOY28rTM7vSU
               subtype: malusDice
               target: magic
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.9jqYFfLyS1Wiqc9p.Item.bXLFAOY28rTM7vSU
               subtype: combat
               target: damMagic
               value: 2d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -2607,21 +2574,20 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: bXLFAOY28rTM7vSU
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.bXLFAOY28rTM7vSU"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.bXLFAOY28rTM7vSU'
   - folder: OBPli02oRaBQq6Ee
     name: Bâton ferré
     type: equipment
-    img: >-
-      icons/weapons/staves/staff-ornate.webp
+    img: icons/weapons/staves/staff-ornate.webp
     _id: sJTMKo1GDOREPqo6
     system:
       description: >-
@@ -2630,8 +2596,8 @@ items:
         est adapté au combat, plus lourd et généralement couvert de métal aux
         extrémités (bien que les druides utilisent des bâtons de bois noueux
         avec le même effet).</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: baton-ferre
       tags:
         - dmtemporairespossibles
@@ -2664,8 +2630,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.sJTMKo1GDOREPqo6
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -2683,9 +2649,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for
               target:
@@ -2696,12 +2662,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -2716,20 +2682,19 @@ items:
       compendiumSource: Item.w1n2zzLplJJ4BFmt
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.sJTMKo1GDOREPqo6"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.sJTMKo1GDOREPqo6'
   - folder: OBPli02oRaBQq6Ee
     name: Dague
     type: equipment
-    img: >-
-      icons/weapons/daggers/dagger-double-red.webp
+    img: icons/weapons/daggers/dagger-double-red.webp
     _id: Nqe15EY4uDqFQFx7
     system:
       description: >-
@@ -2741,7 +2706,7 @@ items:
         pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
         ILfuVd" lang="fr"><span class="hgKElc">Arrme
         légère</span></span></strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: dague
       tags:
@@ -2776,7 +2741,7 @@ items:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.Nqe15EY4uDqFQFx7
           indice: 0
           label: Contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -2794,9 +2759,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 + @for
               target:
@@ -2807,14 +2772,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.Nqe15EY4uDqFQFx7
           indice: 1
           label: Distance
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -2832,9 +2797,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4
               target:
@@ -2845,12 +2810,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -2866,24 +2831,23 @@ items:
       compendiumSource: Item.bwFlCTHBg9Fqa0JI
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.Nqe15EY4uDqFQFx7"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.Nqe15EY4uDqFQFx7'
   - folder: srnxqMuZEh5AAU86
     name: Arbalète de poing
     type: equipment
-    img: >-
-      icons/weapons/crossbows/crossbow-simple-red.webp
+    img: icons/weapons/crossbows/crossbow-simple-red.webp
     _id: bGlgHccjldyTc0zb
     system:
       description: <p>Nécesssite une action de mouvement pour être rechargée.</p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.158
       slug: arbalete-de-poing
       tags: []
@@ -2927,8 +2891,8 @@ items:
       actions:
         - source: Actor.9jqYFfLyS1Wiqc9p.Item.bGlgHccjldyTc0zb
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -2946,9 +2910,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -2959,7 +2923,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -2969,30 +2933,29 @@ items:
       compendiumSource: Item.vju1FKWPMsmLY6Un
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 1200000
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.bGlgHccjldyTc0zb"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.bGlgHccjldyTc0zb'
   - folder: w6M8tJF69ktGmzxc
     name: Carquois de flèches
     type: equipment
-    img: >-
-      icons/weapons/ammunition/arrows-fletching.webp
+    img: icons/weapons/ammunition/arrows-fletching.webp
     _id: NaMTKIiOMuILlKPV
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: carquois-de-fleches
       tags: []
       subtype: misc
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       quantity:
         current: 20
         max: 20
@@ -3024,30 +2987,29 @@ items:
       compendiumSource: Item.L26AgaXYYoiIqWIl
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.NaMTKIiOMuILlKPV"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.NaMTKIiOMuILlKPV'
   - folder: w6M8tJF69ktGmzxc
     name: Corde
     type: equipment
-    img: >-
-      icons/sundries/survival/rope-wrapped-brown.webp
+    img: icons/sundries/survival/rope-wrapped-brown.webp
     _id: KeGwQMz77nKQ1uKg
     system:
       description: <p>Une corde de 15m.</p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.160
       slug: corde
       tags: []
       subtype: misc
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: null
@@ -3079,30 +3041,29 @@ items:
       compendiumSource: Item.0ShtIPc1fTyD5mMZ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.KeGwQMz77nKQ1uKg"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.KeGwQMz77nKQ1uKg'
   - folder: w6M8tJF69ktGmzxc
     name: Couverture
     type: equipment
-    img: >-
-      icons/sundries/survival/bedroll-grey.webp
+    img: icons/sundries/survival/bedroll-grey.webp
     _id: mbgTeydzDqKBecLG
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: couverture
       tags: []
       subtype: misc
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       quantity:
         current: 1
         max: null
@@ -3134,30 +3095,29 @@ items:
       compendiumSource: Item.8A7yJXW7MRgIEnIy
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.mbgTeydzDqKBecLG"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.mbgTeydzDqKBecLG'
   - folder: w6M8tJF69ktGmzxc
     name: Gamelle
     type: equipment
-    img: >-
-      icons/containers/kitchenware/bowl-clay-brown.webp
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
     _id: HH2UdhrfqINJCg1t
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: gamelle
       subtype: misc
       tags: []
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       defense: null
       magicalDefense: null
       quantity:
@@ -3201,30 +3161,29 @@ items:
       compendiumSource: Item.yx74sJAB7rc5kCmc
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.HH2UdhrfqINJCg1t"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.HH2UdhrfqINJCg1t'
   - folder: w6M8tJF69ktGmzxc
     name: Matériel d’écriture
     type: equipment
-    img: >-
-      icons/tools/scribal/ink-quill-pink.webp
+    img: icons/tools/scribal/ink-quill-pink.webp
     _id: l9AvT8nvs1wfPeo2
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: materiel-decriture
       tags: []
       subtype: misc
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3256,30 +3215,29 @@ items:
       compendiumSource: Item.kjBUZpoEL49yBQNM
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.l9AvT8nvs1wfPeo2"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.l9AvT8nvs1wfPeo2'
   - folder: w6M8tJF69ktGmzxc
     name: Outre
     type: equipment
-    img: >-
-      icons/sundries/survival/wetskin-leather-purple.webp
+    img: icons/sundries/survival/wetskin-leather-purple.webp
     _id: 9tw0LS3LkqnaVXpr
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: outre
       subtype: misc
       tags: []
-      martialCategory: ""
-      damagetype: ""
+      martialCategory: ''
+      damagetype: ''
       defense: null
       magicalDefense: null
       quantity:
@@ -3323,19 +3281,18 @@ items:
       compendiumSource: Item.Son0yhz6X0jSLVXA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.9tw0LS3LkqnaVXpr"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.9tw0LS3LkqnaVXpr'
   - name: Menottes
     type: equipment
-    img: >-
-      icons/sundries/survival/cuffs-shackles-steel.webp
+    img: icons/sundries/survival/cuffs-shackles-steel.webp
     _id: EoOvZw1WEzU6JvKZ
     system:
       description: >-
@@ -3352,13 +3309,13 @@ items:
         prix indiqué. Les créatures de taille Gig, C, TP, Min ou I ne peuvent
         être attachées qu'avec des menottes fabriquées spécialement, ce qui
         coûte au moins 100 fois le prix indiqué.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -3391,29 +3348,28 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.HCuqxheRwz0SxhXi
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.EoOvZw1WEzU6JvKZ"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.EoOvZw1WEzU6JvKZ'
   - name: Sac à Dos de Maître
     type: equipment
-    img: >-
-      icons/containers/bags/pack-leather-white-tan.webp
+    img: icons/containers/bags/pack-leather-white-tan.webp
     _id: mLWnVTkcf2rislUk
     system:
       description: "<p>Ce sac à dos en cuir se compose d'une grande poche qui se ferme avec une sangle à boucle et peut contenir environ 60 litres de matériel. Certains ont une ou plusieurs poches supplémentaires sur les côtés.<br /><br /><em><strong>Sac à dos de maître.</strong></em><strong>\_</strong>Ce sac à dos est pourvu de nombreuses poches dans lesquelles conserver des objets bien utiles quand on part à l'aventure. Il inclut également des crochets permettant d'accrocher des objets tels que des\_gourdes, des sacoches, voire même une\_couverture\_enroulée. Il est pourvu de lanières matelassées à accrocher en travers de la poitrine et à la taille afin de mieux répartir le poids. Comme pour le sac à dos ordinaire, la poche principale peut contenir environ 60 litres de matériel. Lorsque le personnage porte un sac à dos de maître, il rajoute +1 à son score de\_Force\_lorsqu'il calcule la\_charge\_qu'il peut transporter.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -3446,15 +3402,15 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.s7rBNYV3oKkcdEVA
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.mLWnVTkcf2rislUk"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.mLWnVTkcf2rislUk'
   - name: Savon
     type: equipment
     img: icons/sundries/survival/soap.webp
@@ -3466,13 +3422,13 @@ items:
         nettoyer les vêtements, les marmites, les draps, les aventuriers ou tout
         ce qui se salit.</p><p>Un pain de savon autorise environ 50
         utilisations.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -3504,29 +3460,28 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.peoHZ37OqhlYVBDB
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.CAVreETVUPOU6bCg"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.CAVreETVUPOU6bCg'
   - name: Trousse d'Entretien d'Équipement
     type: equipment
-    img: >-
-      icons/containers/bags/satchel-leather-white-tan.webp
+    img: icons/containers/bags/satchel-leather-white-tan.webp
     _id: 6MqDLuuTz6JbwrPd
     system:
       description: "<p>Cette trousse comprend du lustrant à métal, une petite lime, un couteau à parer, une huile d'entretien pour le cuir, deux chiffons doux, des lanières en cuir supplémentaires, une\_aiguille à coudre\_et quelques boutons.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -3559,29 +3514,28 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.Qm9qYmKM1zurmJhc
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.6MqDLuuTz6JbwrPd"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.6MqDLuuTz6JbwrPd'
   - name: Trousse de Rasage
     type: equipment
-    img: >-
-      icons/sundries/survival/razor.webp
+    img: icons/sundries/survival/razor.webp
     _id: wPiQcazANkZ2lQUO
     system:
       description: "<p>Cette trousse comprend un rasoir droit, une\_pierre à aiguiser, un petit miroir, une brosse, une coupe et assez de poudre à raser pour permettre à un humanoïde de taille M de se raser 50 fois.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -3613,30 +3567,29 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.PEFT5loVqSwLF7FF
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.wPiQcazANkZ2lQUO"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.wPiQcazANkZ2lQUO'
   - folder: GUKbDXrNXlTgfaW0
     name: Tissus matelassés, fourrures
     type: equipment
-    img: >-
-      icons/equipment/chest/coat-collared-studded-red.webp
+    img: icons/equipment/chest/coat-collared-studded-red.webp
     _id: 57xvd2Z9InJOp1Ig
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: tissus-matelasses-fourrures
       tags: []
       subtype: armor
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3670,30 +3623,29 @@ items:
       compendiumSource: Item.pVq6Wd77LiXzCO4D
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.57xvd2Z9InJOp1Ig"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.57xvd2Z9InJOp1Ig'
   - folder: WjuN0iI0W93CxLhn
     name: Herbes médicinales
     type: equipment
-    img: >-
-      icons/consumables/plants/dried-herb-bundle-brown.webp
+    img: icons/consumables/plants/dried-herb-bundle-brown.webp
     _id: L4RtVyAWQVpWrOxT
     system:
       description: "<p>Utilisées avant un repos\_complet de huit heures, ces herbes permettent au\_personnage de regagner 2 PR au lieu d’un seul.</p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.163
-      slug: ""
+      slug: ''
       subtype: consumable
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 7
         destroyIfEmpty: false
@@ -3725,15 +3677,15 @@ items:
       compendiumSource: Item.qvqJKhI9jKh9DiSi
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!9jqYFfLyS1Wiqc9p.L4RtVyAWQVpWrOxT"
+    _key: '!actors.items!9jqYFfLyS1Wiqc9p.L4RtVyAWQVpWrOxT'
 effects: []
 sort: 200000
 ownership:
@@ -3744,10 +3696,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238542365
   modifiedTime: 1772238542365
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!actors!9jqYFfLyS1Wiqc9p"
+_key: '!actors!9jqYFfLyS1Wiqc9p'

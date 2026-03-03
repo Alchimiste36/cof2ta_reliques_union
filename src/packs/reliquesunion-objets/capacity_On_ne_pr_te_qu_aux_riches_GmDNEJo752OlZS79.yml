@@ -1,16 +1,15 @@
 folder: FNo8CFxv0sbyFxOb
 name: "On\_ne prête qu’aux riches"
 type: capacity
-img: >-
-  icons/commodities/currency/coins-stitched-pouch-brown.webp
+img: icons/commodities/currency/coins-stitched-pouch-brown.webp
 _id: GmDNEJo752OlZS79
 system:
   description: "<p>Si le personnage souhaite faire l’acquisition\_d’un objet ou d’un bien de grande valeur et qu’il\_n’a pas l’argent nécessaire sur lui, <strong>on lui fait crédit\_sans problème : il\_a un mois devant lui pour payer. </strong></p><p>Ensuite, il peut faire un <strong>test de CHA difficulté 15\_pour prolonger ce délai d’un mois</strong> supplémentaire, et peut renouveler ce test plusieurs mois\_d’affilée si nécessaire. Mais attention, lorsque le\_couperet tombe, ça peut faire mal…</p>"
-  source: ""
+  source: ''
   origin: Atlas d'Osgild et Règles Optionnelles p179
-  slug: ""
+  slug: ''
   inGame: <p>L'action permet de réaliser le test de sauvegarde.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 2
@@ -25,7 +24,7 @@ system:
     - source: Item.GmDNEJo752OlZS79
       indice: 0
       label: Prolonger le délai
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -41,7 +40,7 @@ system:
       resolvers:
         - type: save
           saveAbility: cha
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: self
             number: 0
@@ -50,7 +49,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -67,9 +66,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769994086471
   modifiedTime: 1769994086471
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -77,4 +76,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 0
-_key: "!items!GmDNEJo752OlZS79"
+_key: '!items!GmDNEJo752OlZS79'

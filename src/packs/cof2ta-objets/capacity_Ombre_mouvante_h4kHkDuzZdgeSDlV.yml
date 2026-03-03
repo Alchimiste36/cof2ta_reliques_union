@@ -4,14 +4,14 @@ type: capacity
 img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
 system:
   description: "<p>En réussissant <strong>un test de DEX difficulté 10</strong>, le\_PJ peut se déplacer (sur une distance maximale\_de 20 m) jusqu’à une zone ténébreuse ou à l’abri\_des regards (derrière un mur, dans un buisson\_ou sous une calèche par exemple, du moment\_que personne ne peut voir précisément la zone)\_et disparaître à son tour. Il ne réapparaît qu’au\_tour suivant, au cours de sa phase d’initiative.</p><p>Aucun adversaire ne peut l’attaquer pendant\_qu’il a disparu dans les ombres, mais il peut\_subir des DM de zone. Le Gobelin <strong>réapparaît à\_une distance maximale de 10 m</strong> de sa position\_initiale.</p><p><strong><span style=\"text-decoration:underline\">S’il a l’initiative sur un adversaire</span></strong> qu’il\_prend pour cible au contact, il bénéficie d’un\_bonus de <strong>+2d6 DM à son attaque</strong>.</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.96
-  slug: ""
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser le test d'AGI difficulté
     10.</p><p>La deuxième action activable ajoute les DM bonus sur
     l'attaque.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 3
@@ -28,7 +28,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.h4kHkDuzZdgeSDlV
       indice: 0
       label: Test AGI
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -46,11 +46,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@agi"
-            crit: ""
-            difficulty: "10"
+            formula: '@agi'
+            crit: ''
+            difficulty: '10'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: none
             number: 0
@@ -59,14 +59,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.h4kHkDuzZdgeSDlV
       indice: 1
       label: Si initiative
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -86,7 +86,7 @@ system:
           target: damMelee
           value: +2d6
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -97,9 +97,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -107,4 +107,4 @@ _id: h4kHkDuzZdgeSDlV
 ownership:
   default: 0
 sort: 0
-_key: "!items!h4kHkDuzZdgeSDlV"
+_key: '!items!h4kHkDuzZdgeSDlV'

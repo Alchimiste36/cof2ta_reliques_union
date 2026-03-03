@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Aigle Géant adulte
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/aigle_geant_adulte.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/aigle_geant_adulte.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Les aigles géants sont des volatiles de grandes\_tailles, dont les spécimens adultes sont\_ suffisamment puissants pour emporter dans leurs\_serres des humanoïdes de taille moyenne. </p><p>Rares\_et sauvages, il arrive que certains d'entre eux\_soient domestiqués et dressés pour la chasse.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,9 +249,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: attaque-contact
       subtype: melee
       learned: false
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "8"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '8'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,15 +307,15 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ohQzKwdojKkSx6rp
     sort: 200000
     ownership:
       default: 0
-    _key: "!actors.items!3maF8QYWE8Bx9uJS.ohQzKwdojKkSx6rp"
+    _key: '!actors.items!3maF8QYWE8Bx9uJS.ohQzKwdojKkSx6rp'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol rapide
     type: capacity
@@ -322,11 +323,11 @@ items:
     _id: n9KIhfmtlBtcYo1S
     system:
       description: "<p>l'aigle a <strong>une action de mouvement\_supplémentaire par tour</strong> lorsqu'il est en vol. </p><p><strong>Au\_premier tour de combat</strong>, il obtient un bonus de\_<strong>+5 en attaque et +1d6 aux DM</strong> s'il est en vol et\_attaque une créature au sol.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action activable pour obtenir les bonus à l'attaque et aux DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -341,7 +342,7 @@ items:
         - source: Actor.3maF8QYWE8Bx9uJS.Item.n9KIhfmtlBtcYo1S
           indice: 0
           label: Première Attaque
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -359,9 +360,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "13"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '13'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6 +1d6
               target:
@@ -372,7 +373,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -386,24 +387,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!3maF8QYWE8Bx9uJS.n9KIhfmtlBtcYo1S"
+    _key: '!actors.items!3maF8QYWE8Bx9uJS.n9KIhfmtlBtcYo1S'
   - folder: uvHtoSiBBvs1nfqu
     name: Agripper
     type: capacity
     img: icons/creatures/claws/claw-talons-glowing-orange.webp
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> en attaque, l'aigle géant agrippe sa proie\_et ne la lâche plus. </p><p>Il obtient un bonus de <strong>+5\_en attaque et +1d6 aux DM contre la cible qu'il\_agrippe</strong> et celle-ci est <strong>immobilisée</strong> si elle est de\_taille inférieure. </p><p>La victime peut essayer de se\_libérer au prix d'une action de mouvement en\_réussissant un test de FOR opposé.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour réaliser l'attaque contre la cible agrippée.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -418,7 +419,7 @@ items:
         - source: Actor.3maF8QYWE8Bx9uJS.Item.XQTagAJddHLLbKeq
           indice: 0
           label: vs Cible agrippée
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -436,9 +437,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+13"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+13'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6 +1d6
               target:
@@ -449,7 +450,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -463,23 +464,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: XQTagAJddHLLbKeq
     ownership:
       default: 0
-    _key: "!actors.items!3maF8QYWE8Bx9uJS.XQTagAJddHLLbKeq"
+    _key: '!actors.items!3maF8QYWE8Bx9uJS.XQTagAJddHLLbKeq'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -487,4 +488,4 @@ _id: 3maF8QYWE8Bx9uJS
 ownership:
   default: 0
 sort: 0
-_key: "!actors!3maF8QYWE8Bx9uJS"
+_key: '!actors!3maF8QYWE8Bx9uJS'

@@ -2,7 +2,8 @@ folder: G2yuu7LVCS3wnDO7
 name: Fantôme Mineur
 type: encounter
 _id: TusB6BL3KDMaiwvD
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fantome_mineur.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fantome_mineur.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: undead
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Un fantôme est la manifestation physique\_de l'âme d'une créature qui n'a pas trouvé\_le repos. Il s'agit généralement d'une race\_pensante humanoïde. Les fantômes peuvent\_être plus ou moins dangereux en fonction\_de la volonté et de la puissance de l'être qui\_se manifeste ou de sa haine pour les vivants.\_</p><p>Certains fantômes mineurs sont peu dangereux tandis que les fantômes les plus haineux\_sont beaucoup plus difficiles à vaincre.\_</p><p>Dans tous les cas, il est rare que vaincre la\_manifestation du fantôme soit suffisant pour\_s'en débarrasser à long terme, et seul le recours\_à un exorciste ou une action qui permet à\_l'âme tourmentée de trouver le repos mettra\_fin à sa réapparition systématique au bout\_de 24 heures.</p><p>En contrepartie, les fantômes sont généralement liés à un lieu, un objet ou une personne\_et s'éloigner est souvent une action suffisante\_pour lui échapper.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -168,7 +169,8 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fantome_mineur_token.webp
+    src: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/fantome_mineur_token.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -177,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -247,10 +249,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -259,8 +261,8 @@ items:
       actions:
         - source: Actor.TusB6BL3KDMaiwvD.Item.2i8Q3HuPVGbfzIVI
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -278,9 +280,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+1
               target:
@@ -291,7 +293,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +308,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.2i8Q3HuPVGbfzIVI"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.2i8Q3HuPVGbfzIVI'
   - folder: uvHtoSiBBvs1nfqu
     name: RD/eau et armes bénies
     type: capacity
@@ -321,11 +323,11 @@ items:
       description: >-
         <p>Une réduction de Dommages sauf pour les dommages de l'eau bénie ou
         des armes bénies.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -340,7 +342,7 @@ items:
         - source: Actor.TusB6BL3KDMaiwvD.Item.NkxDgjaikZMKHCVD
           indice: 0
           label: RD sauf magie
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -358,9 +360,9 @@ items:
               source: Actor.TusB6BL3KDMaiwvD.Item.NkxDgjaikZMKHCVD
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -372,14 +374,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: NkxDgjaikZMKHCVD
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.NkxDgjaikZMKHCVD"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.NkxDgjaikZMKHCVD'
   - folder: uvHtoSiBBvs1nfqu
     name: Affaiblissement
     type: capacity
@@ -387,13 +389,13 @@ items:
     _id: P2DKXogsmPwhefyt
     system:
       description: "<p>A chaque fois qu'une\_créature subit les DM du contact corrupteur du\_fantôme, elle doit réussir un test de CON difficulté 12 ou être affaiblie pendant 1d6 minutes.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
         statut Affaibli pendant la durée de l'effet.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -407,8 +409,8 @@ items:
       actions:
         - source: Actor.TusB6BL3KDMaiwvD.Item.P2DKXogsmPwhefyt
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -424,7 +426,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "12"
+              saveDifficulty: '12'
               target:
                 type: none
                 number: 0
@@ -433,8 +435,8 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - weakened
                 duration: 1d6*10
@@ -455,13 +457,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.P2DKXogsmPwhefyt"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.P2DKXogsmPwhefyt'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -469,11 +471,11 @@ items:
     _id: aC5Qe2Y3RN6yOdfa
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -487,8 +489,8 @@ items:
       actions:
         - source: Actor.TusB6BL3KDMaiwvD.Item.aC5Qe2Y3RN6yOdfa
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -506,23 +508,23 @@ items:
               source: Actor.TusB6BL3KDMaiwvD.Item.aC5Qe2Y3RN6yOdfa
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.TusB6BL3KDMaiwvD.Item.aC5Qe2Y3RN6yOdfa
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.TusB6BL3KDMaiwvD.Item.aC5Qe2Y3RN6yOdfa
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -534,13 +536,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.aC5Qe2Y3RN6yOdfa"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.aC5Qe2Y3RN6yOdfa'
   - folder: uvHtoSiBBvs1nfqu
     name: Intangible
     type: capacity
@@ -548,11 +550,11 @@ items:
     _id: yrWuywRyUZhFiGHy
     system:
       description: "<p>Un fantôme peut <strong>passer à travers\_les murs et les objets</strong> comme s'ils n'existaient\_pas. Il ne peut traverser <strong>ni les objets magiques\_ou organiques ni les créatures</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -574,24 +576,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.yrWuywRyUZhFiGHy"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.yrWuywRyUZhFiGHy'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -605,8 +607,8 @@ items:
       actions:
         - source: Actor.TusB6BL3KDMaiwvD.Item.TVKlh6VKVKMdOWl9
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -624,9 +626,9 @@ items:
               source: Actor.TusB6BL3KDMaiwvD.Item.TVKlh6VKVKMdOWl9
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -638,14 +640,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: TVKlh6VKVKMdOWl9
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.TVKlh6VKVKMdOWl9"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.TVKlh6VKVKMdOWl9'
   - folder: uvHtoSiBBvs1nfqu
     name: Vol
     type: capacity
@@ -653,11 +655,11 @@ items:
     _id: mFJeGQUpZDjEIUdk
     system:
       description: "<p>La créature\_<strong>peut léviter au prix\_d'une action gratuite</strong> et <strong>se déplacer en vol de\_20 mètres</strong> par action de mouvement.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -679,26 +681,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!TusB6BL3KDMaiwvD.mFJeGQUpZDjEIUdk"
+    _key: '!actors.items!TusB6BL3KDMaiwvD.mFJeGQUpZDjEIUdk'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!TusB6BL3KDMaiwvD"
+_key: '!actors!TusB6BL3KDMaiwvD'

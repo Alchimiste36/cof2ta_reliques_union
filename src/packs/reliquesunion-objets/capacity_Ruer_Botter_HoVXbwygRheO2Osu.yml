@@ -1,18 +1,17 @@
 folder: 2fYHgcURBFPPIemc
 name: Ruer/Botter
 type: capacity
-img: >-
-  icons/creatures/claws/claw-bear-paw-swipe-brown.webp
+img: icons/creatures/claws/claw-bear-paw-swipe-brown.webp
 _id: HoVXbwygRheO2Osu
 system:
   description: <p>Attaque naturelle des Centaures.</p>
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser l'attaque avec l'application du statut
     Étroudi si le seuil est atteint.</p>
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   rank: 0
@@ -26,8 +25,8 @@ system:
   actions:
     - source: Item.HoVXbwygRheO2Osu
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -45,9 +44,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d8 +@for
           target:
@@ -60,11 +59,11 @@ system:
             active: true
             applyOn: attackSuccessTreshold
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - stun
-            duration: "1"
+            duration: '1'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -76,9 +75,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769993459159
   modifiedTime: 1772239305322
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -86,4 +85,4 @@ ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 sort: 200000
-_key: "!items!HoVXbwygRheO2Osu"
+_key: '!items!HoVXbwygRheO2Osu'

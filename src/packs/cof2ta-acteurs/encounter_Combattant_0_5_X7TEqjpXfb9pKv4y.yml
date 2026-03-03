@@ -2,7 +2,8 @@ folder: buKzqtg3WNLTTirh
 name: Combattant 0.5
 type: encounter
 _id: X7TEqjpXfb9pKv4y
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/0.5_gobelin.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/npc_combattants/0.5_gobelin.webp
 system:
   abilities:
     agi:
@@ -142,18 +143,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -178,7 +179,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,10 +249,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -260,8 +261,8 @@ items:
       actions:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.2g2e34YRX4hf7nYV
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -279,9 +280,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+1
               target:
@@ -293,7 +294,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Épée longue
@@ -307,21 +308,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!X7TEqjpXfb9pKv4y.2g2e34YRX4hf7nYV"
+    _key: '!actors.items!X7TEqjpXfb9pKv4y.2g2e34YRX4hf7nYV'
   - type: attack
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -330,8 +331,8 @@ items:
       actions:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.M0qwrLqFDQfqfOyr
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -349,9 +350,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+2"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+2'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+1
               target:
@@ -363,7 +364,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Hache à deux mains
@@ -377,13 +378,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!X7TEqjpXfb9pKv4y.M0qwrLqFDQfqfOyr"
+    _key: '!actors.items!X7TEqjpXfb9pKv4y.M0qwrLqFDQfqfOyr'
   - folder: saH8hGLZpV1p2SF8
     name: DEF -1
     type: capacity
@@ -393,11 +394,11 @@ items:
       description: >-
         <p>Capacité à activer si le combattant utilise une hache à deux
         mains.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir le malus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -412,7 +413,7 @@ items:
         - source: Actor.X7TEqjpXfb9pKv4y.Item.XNUvjM0cREmr3cg8
           indice: 0
           label: Si combat à la hache
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -430,9 +431,9 @@ items:
               source: Actor.X7TEqjpXfb9pKv4y.Item.XNUvjM0cREmr3cg8
               subtype: combat
               target: def
-              value: "-1"
+              value: '-1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -444,26 +445,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!X7TEqjpXfb9pKv4y.XNUvjM0cREmr3cg8"
+    _key: '!actors.items!X7TEqjpXfb9pKv4y.XNUvjM0cREmr3cg8'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!actors!X7TEqjpXfb9pKv4y"
+_key: '!actors!X7TEqjpXfb9pKv4y'

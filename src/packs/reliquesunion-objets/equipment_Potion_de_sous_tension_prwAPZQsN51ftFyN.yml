@@ -1,8 +1,7 @@
 folder: Bj9CdYeY6fs3oPt4
 name: Potion de sous tension
 type: equipment
-img: >-
-  icons/consumables/potions/bottle-conical-corked-blue.webp
+img: icons/consumables/potions/bottle-conical-corked-blue.webp
 _id: prwAPZQsN51ftFyN
 system:
   description: >-
@@ -14,13 +13,13 @@ system:
     infligeant [1d4°+CHA] DM.</p> <p><em>Pour éviter de consommer la potion à
     chaque attaque, les deux actions  sont configurées pour restées actives. Il
     faut donc désactiver l'action  après chaque utilisation.</em></p>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: potion-de-sous-tension
   tags: []
   subtype: consumable
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 1
     max: null
@@ -48,7 +47,7 @@ system:
     - source: Item.prwAPZQsN51ftFyN
       indice: 0
       label: Activer la potion
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: consumable
       actionType: none
@@ -75,14 +74,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Item.prwAPZQsN51ftFyN
       indice: 1
       label: DM si touché
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -96,7 +95,7 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: auto
           dmg:
@@ -109,7 +108,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -119,7 +118,7 @@ system:
     - source: Item.prwAPZQsN51ftFyN
       indice: 2
       label: Décharge électrique
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -133,15 +132,15 @@ system:
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atm"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d4° + @cha
           target:
@@ -152,7 +151,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -171,10 +170,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771019147775
   modifiedTime: 1771019147775
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!prwAPZQsN51ftFyN"
+_key: '!items!prwAPZQsN51ftFyN'

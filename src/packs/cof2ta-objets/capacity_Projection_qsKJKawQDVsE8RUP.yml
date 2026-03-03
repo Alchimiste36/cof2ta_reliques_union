@@ -5,14 +5,14 @@ img: icons/magic/water/strike-ice-blades.webp
 _id: qsKJKawQDVsE8RUP
 system:
   description: "<p>Sur un résultat de <strong>15 à 20 sur\_un jet de d20</strong> au test d'attaque, la victime est\_<strong>projetée à [1d6+1] mètres de là</strong> et subit <strong>+3d6\_DM supplémentaires</strong>. </p><p>Elle doit réussir un <strong>test\_de CON de difficulté 15 ou être étourdie</strong>. À\_chaque tour, elle peut tenter un nouveau test\_de CON pour retrouver ses esprits.</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de jeter les DM de la projection.</p><p>La
     deuxième action permet de réaliser le test de sauvegarde de CON et
     d'appliquer le statut renversé pendant 1 round.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 0
@@ -27,7 +27,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qsKJKawQDVsE8RUP
       indice: 0
       label: DM supplémentaires
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -52,7 +52,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -62,7 +62,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.qsKJKawQDVsE8RUP
       indice: 1
       label: Sauvegarde
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -78,7 +78,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -87,11 +87,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - stun
-            duration: "1"
+            duration: '1'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -108,13 +108,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!qsKJKawQDVsE8RUP"
+_key: '!items!qsKJKawQDVsE8RUP'

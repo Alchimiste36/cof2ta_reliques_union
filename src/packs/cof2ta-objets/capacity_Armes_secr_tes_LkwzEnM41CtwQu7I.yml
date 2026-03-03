@@ -4,14 +4,14 @@ type: capacity
 img: icons/skills/melee/strike-dagger-white-orange.webp
 system:
   description: "<p>Le PJ a appris l’art et la manière de cacher\_ses armes et de porter des coups mortels\_imparables.</p><p>Il peut dissimuler jusqu’à\_deux armes légères (d6 maxi) et gagne un\_<strong>bonus de +5 à un test de DEX</strong> à opposer\_à un test de SAG de son adversaire.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">En cas\_de réussite</span></strong></span>, la première attaque portée par\_chaque arme <strong>surprend l’adversaire</strong> et <strong>inflige\_les DM maximaux</strong> (incluant les DM liés à\_des dés bonus).</p>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.75
-  slug: ""
+  slug: ''
   inGame: >-
     <p>Bonus permanent aux jets de AGI à utiliser lors d'un test de
     compétence.</p><p>La deuxième action permet de réaliser le test opposé de
     AGI vs PER.</p><p></p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.CgjjjJvkBOYx7ZaD
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -44,14 +44,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.CgjjjJvkBOYx7ZaD
           subtype: skill
           target: agi
-          value: "5"
+          value: '5'
           apply: self
           additionalInfos: Dissimuler des armes
       resolvers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LkwzEnM41CtwQu7I
       indice: 1
       label: Test Opposé de dissimulation
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -69,11 +69,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@agi"
-            crit: ""
-            difficulty: "@oppose.per"
+            formula: '@agi'
+            crit: ''
+            difficulty: '@oppose.per'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             number: 0
@@ -82,7 +82,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       modifiers: []
@@ -95,9 +95,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -105,4 +105,4 @@ _id: LkwzEnM41CtwQu7I
 ownership:
   default: 0
 sort: 0
-_key: "!items!LkwzEnM41CtwQu7I"
+_key: '!items!LkwzEnM41CtwQu7I'

@@ -1,15 +1,14 @@
 folder: fkaQ5zi2WGOp22kb
 name: Hache à deux mains sanglante +3
 type: equipment
-img: >-
-  icons/weapons/axes/axe-double-brown.webp
+img: icons/weapons/axes/axe-double-brown.webp
 system:
   description: >-
     <p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de
     +3 à l'Attaque et aux DM.</p></li><li><p>L'arme augmente la plage de
     critique de 1.</p></li><li><p>Lorsqu'un coup critique est infligé, un
     saignement de 2d4° est appliqué à la cible pendant 2d4 rounds.</p></li></ul>
-  source: ""
+  source: ''
   origin: Livre du Joueur p.157
   slug: hache-a-deux-mains
   tags: []
@@ -42,8 +41,8 @@ system:
   actions:
     - source: Actor.AUMVOCux3piDen0C.Item.iKWWnrUex1n7P2D1
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -61,9 +60,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: " @atc +3"
-            crit: "19"
-            difficulty: "@cible.def"
+            formula: ' @atc +3'
+            crit: '19'
+            difficulty: '@cible.def'
           dmg:
             formula: 2d6 + @for +3
           target:
@@ -76,14 +75,14 @@ system:
             applyOn: critical
             formulaType: damage
             formula: 2d4°
-            elementType: ""
+            elementType: ''
             statuses:
               - bleeding
             duration: 2d4
             unit: round
       modifiers: []
   range:
-    unit: ""
+    unit: ''
     base: 0
     ability: null
     details: null
@@ -99,9 +98,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771885698522
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -110,4 +109,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: X5eh3URauOSQqqHE
 sort: 2600000
-_key: "!items!X5eh3URauOSQqqHE"
+_key: '!items!X5eh3URauOSQqqHE'

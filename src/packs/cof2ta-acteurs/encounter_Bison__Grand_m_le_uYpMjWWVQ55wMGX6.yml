@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Bison, Grand mâle
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/bison_grand_male.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/bison_grand_male.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Un grand mâle, d'environ 1,80 m au garrot et\_pesant une tonne.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -248,9 +249,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: attaque-contact
       subtype: melee
       learned: false
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "8"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '8'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+6
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,26 +307,26 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ohQzKwdojKkSx6rp
     sort: 200000
     ownership:
       default: 0
-    _key: "!actors.items!uYpMjWWVQ55wMGX6.ohQzKwdojKkSx6rp"
+    _key: '!actors.items!uYpMjWWVQ55wMGX6.ohQzKwdojKkSx6rp'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -339,8 +340,8 @@ items:
       actions:
         - source: Actor.uYpMjWWVQ55wMGX6.Item.uJfIisf4a1qfrPk9
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -358,9 +359,9 @@ items:
               source: Actor.uYpMjWWVQ55wMGX6.Item.uJfIisf4a1qfrPk9
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -372,23 +373,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: uJfIisf4a1qfrPk9
     ownership:
       default: 0
-    _key: "!actors.items!uYpMjWWVQ55wMGX6.uJfIisf4a1qfrPk9"
+    _key: '!actors.items!uYpMjWWVQ55wMGX6.uJfIisf4a1qfrPk9'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -396,4 +397,4 @@ _id: uYpMjWWVQ55wMGX6
 ownership:
   default: 0
 sort: 0
-_key: "!actors!uYpMjWWVQ55wMGX6"
+_key: '!actors!uYpMjWWVQ55wMGX6'

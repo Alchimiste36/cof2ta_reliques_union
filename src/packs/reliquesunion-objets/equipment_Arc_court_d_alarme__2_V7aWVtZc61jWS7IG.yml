@@ -1,8 +1,7 @@
 folder: fkaQ5zi2WGOp22kb
 name: Arc court d'alarme +2
 type: equipment
-img: >-
-  icons/weapons/bows/shortbow-arrows-black.webp
+img: icons/weapons/bows/shortbow-arrows-black.webp
 system:
   description: >-
     <p><strong>Arme magique de Centaure - Tumuaki</strong></p><ul><li><p>Bonus
@@ -11,7 +10,7 @@ system:
     aigü très fort. La flèche à une portée doublée et peut s'entendre très loin.
     </p><p>Les cibles à 10m ou moins du tireur doivent réussir un test de PER
     difficulté 10 ou être confus pendant 1 round.</p></li></ul>
-  source: ""
+  source: ''
   origin: Livre du Joueur p.158
   slug: arc-court
   tags: []
@@ -55,8 +54,8 @@ system:
   actions:
     - source: Actor.EhKag5p5a4F31dar.Item.MNKgnEAZW7ahgHhA
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: a
@@ -74,9 +73,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atd +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 +2
           target:
@@ -88,13 +87,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Actor.EhKag5p5a4F31dar.Item.MNKgnEAZW7ahgHhA
       indice: 1
       label: Flèche sifflante
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -110,7 +109,7 @@ system:
       resolvers:
         - type: save
           saveAbility: per
-          saveDifficulty: "10"
+          saveDifficulty: '10'
           target:
             type: multiple
             number: 20
@@ -119,11 +118,11 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - confused
-            duration: "1"
+            duration: '1'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -137,9 +136,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771708804274
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -148,4 +147,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: V7aWVtZc61jWS7IG
 sort: 3400000
-_key: "!items!V7aWVtZc61jWS7IG"
+_key: '!items!V7aWVtZc61jWS7IG'

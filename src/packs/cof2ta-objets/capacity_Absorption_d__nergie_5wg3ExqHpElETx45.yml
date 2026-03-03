@@ -5,9 +5,9 @@ img: icons/creatures/abilities/fangs-teeth-bite.webp
 _id: 5wg3ExqHpElETx45
 system:
   description: "<p>Cette créature\_peut aspirer l'énergie vitale de sa victime en\_l'enlaçant ou en l'embrassant.</p><p>Si la victime n'est\_pas consentante, la créature\_<strong>doit auparavant\_réussir un test d'attaque au contact</strong> puis <strong>gagner\_un test opposé de FOR</strong>.</p><p>La victime de l'absorption\_d'énergie est <strong>affaiblie</strong> (utilise un d12 aux tests)\_<strong>pour 24 heures</strong> mais ressent une jouissance\_extatique lors de ce contact.</p><p>Elle ressent <strong>le besoin\_impérieux de le renouveler pendant les 24 heures\_suivantes</strong> à moins de réussir <strong>un test de SAG difficulté 18</strong>. Si la victime résiste, elle est immunisée\_à cet effet pour les prochaines 24 heures.</p><p>En plus\_des autres effets, si la créature le souhaite, à\_chaque fois qu'elle absorbe l'énergie, <strong>elle peut\_infliger 1d6 DM et guérir d'autant</strong> (les points de\_vie acquis au-delà de son score maximum de PV\_sont perdus après dix minutes).</p>"
-  source: ""
-  origin: ""
-  slug: ""
+  source: ''
+  origin: ''
+  slug: ''
   inGame: >-
     <p>La première action permet de réaliser l'attaque initiale pour
     l'absorption d'énergie. N'oubliez pas de faire un test de FOR
@@ -16,7 +16,7 @@ system:
     permet de jeter des DM et de les appliquer à la cible et en soin pour la
     créature. Attention : les Soins ne peuvent pas dépasser le maximum des PV de
     la créature. Notez à part les PV en excès.</p>
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 0
@@ -31,7 +31,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5wg3ExqHpElETx45
       indice: 0
       label: Attaque initiale
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: none
@@ -49,11 +49,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "6"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '6'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -62,18 +62,18 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - weakened
             unit: unlimited
-            duration: "0"
+            duration: '0'
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5wg3ExqHpElETx45
       indice: 1
       label: Résister à la tentation
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -89,7 +89,7 @@ system:
       resolvers:
         - type: save
           saveAbility: per
-          saveDifficulty: "18"
+          saveDifficulty: '18'
           target:
             type: single
             scope: all
@@ -98,7 +98,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -109,7 +109,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.5wg3ExqHpElETx45
       indice: 2
       label: DM et soin
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: magical
       actionType: none
@@ -134,7 +134,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -150,13 +150,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!5wg3ExqHpElETx45"
+_key: '!items!5wg3ExqHpElETx45'

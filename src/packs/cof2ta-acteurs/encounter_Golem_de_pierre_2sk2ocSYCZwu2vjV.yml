@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Golem de pierre
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_pierre.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/golem_de_pierre.webp
 system:
   abilities:
     agi:
@@ -141,15 +142,15 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<h4>Golem de chair</h4><p>Un golem de pierre ressemble à une statue\_massive de forme humanoïde d'environ\_2,50 mètres. Son apparence exacte peut\_énormément varier selon les goûts artistiques\_de son créateur.</p><h4>Les Golems</h4><p>Les golems sont des créatures artificielles\_fabriquées à partir d'éléments étranges ou\_précieux et animés grâce aux arcanes de la\_magie runique. Il faut une connaissance\_pointue de la magie pour réussir un tel exploit\_et rares sont les mystiques à en être capables.</p><p>Les golems décrits ici correspondent à des\_gardiens infatigables auquel on confie la\_mission de garder un trésor ou un passage\_pour l'éternité. Généralement, un mot de\_passe prononcé à voix haute ou un symbole\_brandi devant soi permet d'accéder au lieu\_protégé en toute sécurité.</p><p>Les golems sont des créatures non vivantes,\_dépourvues d'esprit, ce qui les immunise à\_toute magie qui affecterait la volonté ou les\_émotions.</p>"
     languages: []
     properties: "<p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Résistance :</span></strong></span> le golem de chair divise par deux tous\_<span style=\"white-space: initial; color: var(--color-text-primary); font-size: var(--font-size-14); font-family: var(--font-body)\">les DM élémentaires (feu, froid, électricité, acide).</span></p>"
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -251,11 +252,11 @@ items:
       description: >-
         <p>Une réduction de Dommages sauf pour les dommages infligés par les
         armes naines.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>L'action activable permet d'obtenir la RD.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -270,7 +271,7 @@ items:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.9BakF2tAt93dzDJ9
           indice: 0
           label: RD sauf armes elfiques
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -288,9 +289,9 @@ items:
               source: Actor.2sk2ocSYCZwu2vjV.Item.9BakF2tAt93dzDJ9
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -302,22 +303,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 9BakF2tAt93dzDJ9
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.9BakF2tAt93dzDJ9"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.9BakF2tAt93dzDJ9'
   - type: attack
     system:
       subtype: melee
       learned: true
       description: <p>2 Attaques</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -326,8 +327,8 @@ items:
       actions:
         - source: Actor.mpJqPkcVx8ZXb5vK.Item.IQrMziZLHqI8YYdG
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -345,9 +346,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "16"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '16'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+14
               target:
@@ -358,7 +359,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -373,13 +374,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.IQrMziZLHqI8YYdG"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.IQrMziZLHqI8YYdG'
   - folder: uvHtoSiBBvs1nfqu
     name: Créature non-vivante
     type: capacity
@@ -387,11 +388,11 @@ items:
     _id: CHTTXpLBOTj0BoUC
     system:
       description: "<p>La créature ne\_respirent pas et sont immunisées aux maladies, aux poisons, à toutes les attaques qui\_demandent un test de CON et sont infatigables.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -405,8 +406,8 @@ items:
       actions:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.CHTTXpLBOTj0BoUC
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -424,23 +425,23 @@ items:
               source: Actor.2sk2ocSYCZwu2vjV.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: diseaseImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.2sk2ocSYCZwu2vjV.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: poisonImmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.2sk2ocSYCZwu2vjV.Item.CHTTXpLBOTj0BoUC
               subtype: state
               target: sleepimmunity
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -452,24 +453,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.CHTTXpLBOTj0BoUC"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.CHTTXpLBOTj0BoUC'
   - folder: uvHtoSiBBvs1nfqu
     name: Charge
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
     system:
       description: "<p>La créature parcourt <strong>une distance\_maximale de 30 mètres</strong> et <strong>réalise une attaque</strong>.\_</p><p><strong>Lancez deux d20</strong> et gardez le meilleur résultat. Si\_l'attaque est réussie, en plus des DM normaux, une\_victime de taille inférieure ou égale à <strong>la créature\_doit faire un test opposé de FOR ou être renversée</strong>.\_</p><p>Dans ce cas, la créature piétine (ou embroche)\_sa victime et <strong>les DM sont doublés</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du Meneur p.68
-      slug: ""
+      slug: ''
       inGame: <p>Action pour obtenir le Dé Bonus sur l'attaque de contact.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -483,8 +484,8 @@ items:
       actions:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.eoPYfCA9eEFBh4OH
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -502,9 +503,9 @@ items:
               source: Actor.2sk2ocSYCZwu2vjV.Item.eoPYfCA9eEFBh4OH
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -516,25 +517,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: eoPYfCA9eEFBh4OH
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.eoPYfCA9eEFBh4OH"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.eoPYfCA9eEFBh4OH'
   - folder: uvHtoSiBBvs1nfqu
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
     system:
       description: "<p>La créature voit dans\_le noir comme en plein jour jusqu'à une distance\_de 30 mètres.</p>"
-      source: ""
-      origin: ""
-      slug: ""
-      inGame: ""
-      subtype: ""
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -548,8 +549,8 @@ items:
       actions:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.l9iWZs9qtoldySJj
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -567,9 +568,9 @@ items:
               source: Actor.2sk2ocSYCZwu2vjV.Item.l9iWZs9qtoldySJj
               subtype: state
               target: darkvision
-              value: "30"
+              value: '30'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -581,14 +582,14 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: l9iWZs9qtoldySJj
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.l9iWZs9qtoldySJj"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.l9iWZs9qtoldySJj'
   - folder: uvHtoSiBBvs1nfqu
     name: Fauchage
     type: capacity
@@ -596,13 +597,13 @@ items:
     _id: aMhj8BR5PSAR5Omj
     system:
       description: "<p>Sur un résultat de <strong>15 à 20 sur un jet\_de d20</strong> au test d'attaque et si l'attaque est réussie,\_la victime doit réussir au choix un <strong>test de FOR ou\_de DEX difficulté 16 ou être renversée</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>Les deux actions permettent de réaliser les tests de sauvegarde avec
         soit la FOR soit l'AGI.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -616,8 +617,8 @@ items:
       actions:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.aMhj8BR5PSAR5Omj
           indice: 0
-          label: "sI 15+ : FOR"
-          chatFlavor: ""
+          label: 'sI 15+ : FOR'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -633,7 +634,7 @@ items:
           resolvers:
             - type: save
               saveAbility: for
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -642,12 +643,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -656,8 +657,8 @@ items:
           modifiers: []
         - source: Actor.2sk2ocSYCZwu2vjV.Item.aMhj8BR5PSAR5Omj
           indice: 1
-          label: "sI 15+ : AGI"
-          chatFlavor: ""
+          label: 'sI 15+ : AGI'
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -673,7 +674,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "16"
+              saveDifficulty: '16'
               target:
                 type: single
                 scope: all
@@ -682,12 +683,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - overturned
                 unit: unlimited
-                duration: "0"
+                duration: '0'
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
@@ -704,13 +705,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.aMhj8BR5PSAR5Omj"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.aMhj8BR5PSAR5Omj'
   - folder: uvHtoSiBBvs1nfqu
     name: Nuage empoisonné
     type: capacity
@@ -718,13 +719,13 @@ items:
     _id: gCzqUMbFnPttoHug
     system:
       description: "<p>Toutes les créatures\_dans un <strong>rayon de 3 mètres</strong> autour du golem\_de pierre doivent réussir un <strong>test de CON\_difficulté 14 chaque tour ou être affaiblie et\_ralentie pendant un tour</strong>.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>L'action permet de réaliser le test de sauvegarde et d'appliquer les
         statuts pendant 1 round.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -738,8 +739,8 @@ items:
       actions:
         - source: Actor.2sk2ocSYCZwu2vjV.Item.gCzqUMbFnPttoHug
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -755,7 +756,7 @@ items:
           resolvers:
             - type: save
               saveAbility: con
-              saveDifficulty: "14"
+              saveDifficulty: '14'
               target:
                 type: single
                 scope: all
@@ -764,12 +765,12 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - weakened
                   - slowed
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -787,22 +788,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!2sk2ocSYCZwu2vjV.gCzqUMbFnPttoHug"
+    _key: '!actors.items!2sk2ocSYCZwu2vjV.gCzqUMbFnPttoHug'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -810,4 +811,4 @@ _id: 2sk2ocSYCZwu2vjV
 ownership:
   default: 0
 sort: 0
-_key: "!actors!2sk2ocSYCZwu2vjV"
+_key: '!actors!2sk2ocSYCZwu2vjV'

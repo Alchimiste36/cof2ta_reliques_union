@@ -1,8 +1,7 @@
 folder: Bj9CdYeY6fs3oPt4
 name: Potion des terrains difficiles
 type: equipment
-img: >-
-  icons/consumables/potions/potion-bottle-corked-stopper-yellow.webp
+img: icons/consumables/potions/potion-bottle-corked-stopper-yellow.webp
 _id: cDJ3yzzqkqpHn5nK
 system:
   description: >-
@@ -12,13 +11,13 @@ system:
     difficile (natation, neige, boue, broussailles, pente abrupte, etc.). Il
     obtient un bonus de +3 en initiative, et +1 en attaque et en DEF lors d’un
     combat dans ces conditions.</p>
-  source: ""
-  origin: ""
+  source: ''
+  origin: ''
   slug: potion-des-terrains-difficiles
   tags: []
   subtype: consumable
-  martialCategory: ""
-  damagetype: ""
+  martialCategory: ''
+  damagetype: ''
   quantity:
     current: 1
     max: null
@@ -46,7 +45,7 @@ system:
     - source: Item.cDJ3yzzqkqpHn5nK
       indice: 0
       label: En terrain difficile
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -63,37 +62,37 @@ system:
           source: Item.cDJ3yzzqkqpHn5nK
           subtype: combat
           target: init
-          value: "3"
+          value: '3'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.cDJ3yzzqkqpHn5nK
           subtype: combat
           target: def
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.cDJ3yzzqkqpHn5nK
           subtype: combat
           target: melee
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.cDJ3yzzqkqpHn5nK
           subtype: combat
           target: ranged
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: equipment
           source: Item.cDJ3yzzqkqpHn5nK
           subtype: combat
           target: magic
-          value: "1"
+          value: '1'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: consumable
           skill: {}
@@ -108,7 +107,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
           hasAttackSuccessThreshold: false
       actionType: none
@@ -127,10 +126,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771019147775
   modifiedTime: 1771019147775
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: "!items!cDJ3yzzqkqpHn5nK"
+_key: '!items!cDJ3yzzqkqpHn5nK'

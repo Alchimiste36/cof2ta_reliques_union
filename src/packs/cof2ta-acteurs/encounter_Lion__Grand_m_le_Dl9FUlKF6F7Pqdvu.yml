@@ -1,7 +1,8 @@
 folder: G2yuu7LVCS3wnDO7
 name: Lion, Grand mâle
 type: encounter
-img: modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/lion_grand_male.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/cof2ta_bestiaire/creatures/lion_grand_male.webp
 system:
   abilities:
     agi:
@@ -141,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: living
     size: large
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
+      private: ''
       public: "<p>Ce profil correspond à un jeune lion ou à une\_lionne d'environ 150 kg.</p>"
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -177,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -249,10 +250,10 @@ items:
     img: icons/svg/sword.svg
     _id: FQj2mvTr57Ae3PYr
     system:
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       subtype: melee
       learned: false
       charges: {}
@@ -263,8 +264,8 @@ items:
       actions:
         - source: Item.hSqnqxu1HyiuXCTs
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -282,9 +283,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "9"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '9'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 2d6+7
               target:
@@ -295,7 +296,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -306,13 +307,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dl9FUlKF6F7Pqdvu.FQj2mvTr57Ae3PYr"
+    _key: '!actors.items!Dl9FUlKF6F7Pqdvu.FQj2mvTr57Ae3PYr'
   - folder: uvHtoSiBBvs1nfqu
     name: Dévorer
     type: capacity
@@ -320,11 +321,11 @@ items:
     _id: WGurwMCXmn2SgDVV
     system:
       description: "<p>Lorsque la créature réussit une\_attaque avec un <strong>résultat de 15 à 20 sur un jet\_de d20</strong>, il saisit sa proie entre ses membres ou sa gueule et\_lui <strong>inflige immédiatement une attaque gratuite\_supplémentaire</strong>.</p><p>Si la FOR de la cible est inférieure\_ou égale au prédateur, elle est <strong>de plus renversée</strong>\_et <strong>immobilisée</strong>.</p><p>Pour se libérer, la victime doit\_réussir <strong>un test de FOR opposé</strong> lors de son tour et\_cela lui demande une action de mouvement (et\_une autre pour se relever si elle a réussi).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -346,13 +347,13 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dl9FUlKF6F7Pqdvu.WGurwMCXmn2SgDVV"
+    _key: '!actors.items!Dl9FUlKF6F7Pqdvu.WGurwMCXmn2SgDVV'
   - folder: uvHtoSiBBvs1nfqu
     name: Embuscade
     type: capacity
@@ -360,15 +361,15 @@ items:
     _id: FPH293jRCj768xKj
     system:
       description: "<p>Au premier tour de combat, si\_l'environnement permet à la créature de se\_dissimuler, la cible doit faire un test de SAG difficulté 15 + DEX ou être surprise.</p><p>S'il attaque\_avec succès une cible surprise, la créature inflige +1d6 DM supplémentaires, et toute\_créature dont la FOR est inférieure à la sienne\_est renversée.</p><p>Il obtient un bonus de +5 à tous\_les tests de discrétion.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       inGame: >-
         <p>La première action permet d'obtenir le bonus permanent pour les tests
         de compétence.</p><p>La deuxième action réalise un test de sauvegarde
         contre une cible.</p><p>La troisième peut être activée pour obtenir les
         DM supplémentaire face à une cible surprise.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 0
@@ -382,8 +383,8 @@ items:
       actions:
         - source: Actor.Dl9FUlKF6F7Pqdvu.Item.FPH293jRCj768xKj
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -401,14 +402,14 @@ items:
               source: Actor.Dl9FUlKF6F7Pqdvu.Item.FPH293jRCj768xKj
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.Dl9FUlKF6F7Pqdvu.Item.FPH293jRCj768xKj
           indice: 1
           label: Au premier tour
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -433,11 +434,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -448,7 +449,7 @@ items:
         - source: Actor.Dl9FUlKF6F7Pqdvu.Item.FPH293jRCj768xKj
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -468,7 +469,7 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -480,22 +481,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Dl9FUlKF6F7Pqdvu.FPH293jRCj768xKj"
+    _key: '!actors.items!Dl9FUlKF6F7Pqdvu.FPH293jRCj768xKj'
 effects: []
 flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517515504
   modifiedTime: 1769896852378
   lastModifiedBy: oByx0z6HY26hEziz
@@ -503,4 +504,4 @@ _id: Dl9FUlKF6F7Pqdvu
 ownership:
   default: 0
 sort: 0
-_key: "!actors!Dl9FUlKF6F7Pqdvu"
+_key: '!actors!Dl9FUlKF6F7Pqdvu'

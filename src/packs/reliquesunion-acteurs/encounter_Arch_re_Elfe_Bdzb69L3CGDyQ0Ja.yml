@@ -142,18 +142,18 @@ system:
         sheet: 0
         effects: 0
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   wealth:
     gp:
       value: 0
@@ -178,7 +178,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: true
   rotation: 0
@@ -256,10 +256,10 @@ items:
     system:
       subtype: melee
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -268,8 +268,8 @@ items:
       actions:
         - source: Actor.UVYttWIpreBznZ9p.Item.1nxrgnMvfxGscNr7
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -287,9 +287,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+7"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '+7'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+2
               target:
@@ -301,7 +301,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Rapière
@@ -315,21 +315,21 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.1nxrgnMvfxGscNr7"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.1nxrgnMvfxGscNr7'
   - type: attack
     system:
       subtype: ranged
       learned: true
-      description: ""
-      source: ""
-      origin: ""
-      slug: ""
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
       charges: {}
       properties:
         spell: false
@@ -348,8 +348,8 @@ items:
       actions:
         - source: Actor.UVYttWIpreBznZ9p.Item.qSIZuB1B1y3YBaqy
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: none
@@ -367,9 +367,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "+7"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '+7'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6+2
               target:
@@ -381,7 +381,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
     name: Arc court
@@ -395,24 +395,23 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.qSIZuB1B1y3YBaqy"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.qSIZuB1B1y3YBaqy'
   - folder: SVK15InjZYL8tbL4
     name: Voie des Aventuriers
     type: path
-    img: >-
-      icons/skills/ranged/person-archery-bow-attack-orange.webp
+    img: icons/skills/ranged/person-archery-bow-attack-orange.webp
     _id: vd0LR7XHiFiTQKvn
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.4s1ytKjuBfNxh6zP.Item.NOKnz7Sz8nxEkCx3
@@ -429,29 +428,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.vd0LR7XHiFiTQKvn"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.vd0LR7XHiFiTQKvn'
   - folder: S5Arn2U0XkYUiO4d
     name: Instinct de survie
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-sword-red.webp
+    img: icons/skills/melee/hand-grip-sword-red.webp
     system:
       description: "<p>Une fois par tour, au\_moment de son choix,\_l'aventurier peut utiliser\_<strong>une action de mouvement supplémentaire</strong> pour\_se déplacer.</p><p>Si un effet ou une créature <strong>le paralyse,\_le ralentit ou restreint ses mouvements</strong>, il a droit\_une fois par tour à un test d'<strong>INT ou de DEX au\_choix de difficulté 10</strong> pour s'en débarrasser.</p><p>Il\_gagne <strong>+5 en DEF</strong> lorsqu'il lui reste moins de\_[NC x 5] PV.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Les deux premières action permettent de réaliser les tests de
         sauvegarde pour se débarrasser d'un effet qui bloque les
         mouvements.</p><p>La troisième action activable/désactivable permet
         d'obtenir le bonus de DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       rank: 1
@@ -466,7 +464,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.NOKnz7Sz8nxEkCx3
           indice: 0
           label: Sauvegarde d'INT
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -482,7 +480,7 @@ items:
           resolvers:
             - type: save
               saveAbility: int
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -491,7 +489,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -502,7 +500,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.NOKnz7Sz8nxEkCx3
           indice: 1
           label: Sauvegarde d'AGI
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -518,7 +516,7 @@ items:
           resolvers:
             - type: save
               saveAbility: agi
-              saveDifficulty: "10"
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -527,7 +525,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -538,7 +536,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.NOKnz7Sz8nxEkCx3
           indice: 2
           label: Si PV < 15
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -556,9 +554,9 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.NOKnz7Sz8nxEkCx3
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -570,25 +568,24 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: NOKnz7Sz8nxEkCx3
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.NOKnz7Sz8nxEkCx3"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.NOKnz7Sz8nxEkCx3'
   - folder: S5Arn2U0XkYUiO4d
     name: Embuscade
     type: capacity
-    img: >-
-      icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     _id: 3hO6ytFDGvw23ey8
     system:
       description: "<p>Au premier tour de combat,\_si l'environnement permet à l'aventurier de se\_dissimuler, la cible doit faire un <strong>test de SAG\_difficulté 19 ou être surprise</strong>. </p><p>Si elle attaque avec\_succès une cible surprise, la créature inflige <strong>+1d6\_aux DM</strong>. </p><p>La créature obtient un bonus de <strong>+5 à\_tous les tests de discrétion et en Init</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action permanente donne le bonus à l'INIT et au jet de
         discrétion.</p><p>La deuxième action permet de réaliser le test de
@@ -596,7 +593,7 @@ items:
         en cas d'échec.</p><p>La troisième action activable/désactivable permet
         d'obtenir les DM supplémentaires pour les attaques de contact et de
         distance.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -610,8 +607,8 @@ items:
       actions:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -629,21 +626,21 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
               subtype: combat
               target: init
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
               subtype: skill
               target: agi
-              value: "5"
+              value: '5'
               apply: self
               additionalInfos: Discrétion
           resolvers: []
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
           indice: 1
           label: Test de surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: spell
           actionType: none
@@ -659,7 +656,7 @@ items:
           resolvers:
             - type: save
               saveAbility: per
-              saveDifficulty: "19"
+              saveDifficulty: '19'
               target:
                 type: single
                 scope: all
@@ -668,11 +665,11 @@ items:
                 active: true
                 applyOn: saveFailure
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses:
                   - surprised
-                duration: "1"
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -683,7 +680,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
           indice: 2
           label: Sur cible surprise
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -703,14 +700,14 @@ items:
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.3hO6ytFDGvw23ey8
               subtype: combat
               target: damRanged
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -722,28 +719,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.3hO6ytFDGvw23ey8"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.3hO6ytFDGvw23ey8'
   - folder: S5Arn2U0XkYUiO4d
     name: Attaque en traitre
     type: capacity
-    img: >-
-      icons/skills/melee/strike-dagger-blood-red.webp
+    img: icons/skills/melee/strike-dagger-blood-red.webp
     _id: asHZnXRvP8Tsgy2N
     system:
       description: "<p>Si l'aventurier attaque\_<strong>en même temps qu'un allié</strong> (il peut volontairement\_retarder son initiative), <strong>de dos ou par surprise</strong>, il\_réalise une attaque en traître avec un bonus de\_<strong>+5 en attaque et +2d6 aux DM</strong> – cumulable avec\_Attaque mortelle (pour les variantes assassin\_et tireur) ou Imparable (pour la variante maître\_d'armes).\_</p><blockquote><p><strong>Note :</strong> un tireur ne peut utiliser une attaque\_en traître à distance que si un allié est déjà au\_contact de sa cible.</p></blockquote>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>L'action activable/désactivable donne les bonus à l'attaque et aux
         DM.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -757,8 +753,8 @@ items:
       actions:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.asHZnXRvP8Tsgy2N
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -776,30 +772,30 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: ranged
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.asHZnXRvP8Tsgy2N
               subtype: combat
               target: damRanged
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -811,28 +807,27 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.asHZnXRvP8Tsgy2N"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.asHZnXRvP8Tsgy2N'
   - folder: S5Arn2U0XkYUiO4d
     name: L'hallali
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-staff-teal.webp
+    img: icons/skills/melee/hand-grip-staff-teal.webp
     _id: 2zimk84gDvAz08Ud
     system:
       description: "<p>Les aventuriers profitent d'une\_erreur de leur adversaire pour lui porter des\_attaques fatales.</p><p> À chaque fois que la victime\_rate une attaque ou obtient sur un test d'attaque\_un résultat au d20 allant de 1 à 5 (inclus), elle\_déclenche la curée ! </p><p>Chaque aventurier doté\_de cette capacité bénéficie <strong>immédiatement et\_gratuitement d'une Attaque en traître</strong> contre\_la victime (+5 au jet d'attaque/+2d6 aux DM).</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p134
-      slug: ""
+      slug: ''
       inGame: >-
         <p>Pas d'effet aitomatique. L'action est présente seulement pour
         afficher la capacité dans la liste des actions.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -846,8 +841,8 @@ items:
       actions:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.2zimk84gDvAz08Ud
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -872,23 +867,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.2zimk84gDvAz08Ud"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.2zimk84gDvAz08Ud'
   - folder: SVK15InjZYL8tbL4
     name: Voie des Maîtres d'armes
     type: path
-    img: >-
-      icons/skills/melee/spear-tips-three-purple.webp
+    img: icons/skills/melee/spear-tips-three-purple.webp
     system:
       description: "<p>Les maîtres d'armes usent de\_techniques martiales souples et combattent au\_corps-à-corps avec une arme dans chaque main.\_</p><p>Adapté aux soldats en armures plus légères tels que\_les spadassins elfes.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p136
-      slug: ""
+      slug: ''
       subtype: encounter
       capacities:
         - Actor.AnsUaiu0pYVZmstb.Item.o0TqTxYOlhNQ5Itq
@@ -905,29 +899,28 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: ztnRbU4chyLsQcdn
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.ztnRbU4chyLsQcdn"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.ztnRbU4chyLsQcdn'
   - folder: pdQQTQ02SRaePPZe
     name: Imparable
     type: capacity
-    img: >-
-      icons/skills/melee/shield-damaged-broken-blue.webp
+    img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: "<p>Portez une attaque en lançant\_<strong>deux d20 et gardez le meilleur résultat</strong>. </p><p>Si la\_brute obtient un résultat de <strong><span style=\"text-decoration:underline\">15 à 20</span></strong> sur un jet\_de d20 à un test d'attaque (même sans utiliser\_Imparable), elle <strong>inflige +1d6 DM et l'attaque est\_automatiquement réussie</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p120
-      slug: ""
+      slug: ''
       inGame: >-
         <p>La première action activable/désactivable donne le Dé Bonus en
         attaque de contact.</p><p>La deuxième action permet de jeter
         automatiquement les DM supplémentaires.</p>
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 1
@@ -942,7 +935,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.o0TqTxYOlhNQ5Itq
           indice: 0
           label: Dé Bonus
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -960,14 +953,14 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.o0TqTxYOlhNQ5Itq
               subtype: bonusDice
               target: melee
-              value: "0"
+              value: '0'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.o0TqTxYOlhNQ5Itq
           indice: 1
           label: Si 15 à 20
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: none
@@ -992,7 +985,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
@@ -1009,26 +1002,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: o0TqTxYOlhNQ5Itq
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.o0TqTxYOlhNQ5Itq"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.o0TqTxYOlhNQ5Itq'
   - folder: pdQQTQ02SRaePPZe
     name: Riposte
     type: capacity
-    img: >-
-      icons/skills/melee/maneuver-greatsword-yellow.webp
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
     system:
       description: "<p>Le champion peut effectuer <strong>une\_attaque en action gratuite contre chaque adversaire</strong> qui l'attaque à l'exception de celui qu'il\_a lui-même choisi d'attaquer à son tour</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: <p>Pas d'effet automatique.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 2
@@ -1050,26 +1042,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: FLAOAW5w2hwtLo21
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.FLAOAW5w2hwtLo21"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.FLAOAW5w2hwtLo21'
   - folder: pdQQTQ02SRaePPZe
     name: Hausser le ton
     type: capacity
-    img: >-
-      icons/skills/melee/hand-grip-staff-yellow-brown.webp
+    img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
     system:
       description: "<p>Lorsqu'il passe <strong>sous la moitié\_de sa valeur maximale de PV</strong>, le champion gagne\_un bonus de <strong>+5 à ses tests d'attaque et +1d6 aux\_DM</strong> et réduit tous les DM subis de 5 points par\_attaque <strong>(RD 5)</strong>.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p122
-      slug: ""
+      slug: ''
       inGame: <p>L'action activable/désactivable donne les bonus.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 3
@@ -1084,7 +1075,7 @@ items:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.Oer5a1pUhZFnUCDn
           indice: 0
           label: Si PV < 50%
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1102,23 +1093,23 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.Oer5a1pUhZFnUCDn
               subtype: combat
               target: melee
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.Oer5a1pUhZFnUCDn
               subtype: combat
               target: damMelee
               value: 1d6
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
             - type: capacity
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.Oer5a1pUhZFnUCDn
               subtype: combat
               target: dr
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1130,26 +1121,25 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: Oer5a1pUhZFnUCDn
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.Oer5a1pUhZFnUCDn"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.Oer5a1pUhZFnUCDn'
   - folder: pdQQTQ02SRaePPZe
     name: Interchangeable
     type: capacity
-    img: >-
-      icons/creatures/abilities/wolf-heads-swirl-purple.webp
+    img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
     system:
       description: "<p>Tant que <strong>l'assassin et ses\_alliées sont plus nombreux que la cible</strong>, ils se\_relaient pour esquiver ses attaques et obtiennent\_un bonus de <strong>+5 en DEF</strong>. </p><p>Si plusieurs assassins\_semblables sont au contact du PJ, le MJ a toute\_latitude pour <strong>infliger les DM d'une attaque sur la\_créature de son choix</strong>, le personnage ne sachant\_jamais laquelle il blesse.</p>"
-      source: ""
+      source: ''
       origin: Livre du meneur p136
-      slug: ""
+      slug: ''
       inGame: <p>L'action activable/désactivable donne le bonus à la DEF.</p>
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: false
       rank: 4
@@ -1163,8 +1153,8 @@ items:
       actions:
         - source: Actor.Bdzb69L3CGDyQ0Ja.Item.AIQ4uMXmOOeUKraj
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1182,9 +1172,9 @@ items:
               source: Actor.Bdzb69L3CGDyQ0Ja.Item.AIQ4uMXmOOeUKraj
               subtype: combat
               target: def
-              value: "5"
+              value: '5'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -1196,23 +1186,22 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: AIQ4uMXmOOeUKraj
     ownership:
       default: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.AIQ4uMXmOOeUKraj"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.AIQ4uMXmOOeUKraj'
   - folder: srnxqMuZEh5AAU86
     name: Arc court
     type: equipment
-    img: >-
-      icons/weapons/bows/shortbow-arrows-black.webp
+    img: icons/weapons/bows/shortbow-arrows-black.webp
     _id: WWsz6hx1URP96hPZ
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.158
       slug: arc-court
       tags: []
@@ -1256,8 +1245,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: ranged
           actionType: a
@@ -1275,9 +1264,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atd"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -1288,7 +1277,7 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
@@ -1298,23 +1287,22 @@ items:
       compendiumSource: Item.qTYcU22ZD6OainA8
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 900000
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.WWsz6hx1URP96hPZ"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.WWsz6hx1URP96hPZ'
   - folder: OBPli02oRaBQq6Ee
     name: Main gauche
     type: equipment
-    img: >-
-      icons/weapons/daggers/dagger-straight-thin-black.webp
+    img: icons/weapons/daggers/dagger-straight-thin-black.webp
     system:
       description: "<p>La main gauche ou dague de parade comporte\_une garde en panier très couvrante. Elle offre\_un bonus de +1 en DEF, mais seulement en\_combat au contact</p><p></p><p><span class=\"hgKElc\"><strong>Arrme légère</strong></span></p>"
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: dague
       tags:
@@ -1348,8 +1336,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -1367,9 +1355,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: ""
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4 +@for
               target:
@@ -1380,14 +1368,14 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
         - source: Item.ikb2jY4pcbLzn7x3
           indice: 1
           label: DEF vs Contact
-          chatFlavor: ""
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
@@ -1405,12 +1393,12 @@ items:
               source: Item.ikb2jY4pcbLzn7x3
               subtype: combat
               target: def
-              value: "1"
+              value: '1'
               apply: self
-              additionalInfos: ""
+              additionalInfos: ''
           resolvers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -1426,28 +1414,27 @@ items:
       compendiumSource: Item.ikb2jY4pcbLzn7x3
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _id: 55nIIY3ReoJ6tZsI
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.55nIIY3ReoJ6tZsI"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.55nIIY3ReoJ6tZsI'
   - folder: OBPli02oRaBQq6Ee
     name: Rapière
     type: equipment
-    img: >-
-      icons/weapons/swords/scimitar-worn-blue.webp
+    img: icons/weapons/swords/scimitar-worn-blue.webp
     _id: 8wK40HITTVpiBgBo
     system:
       description: >-
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups d'estoc.</p><p>
         </p><p><strong>Arme légère, seuil de critique 19-20</strong></p>
-      source: ""
+      source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
       tags:
@@ -1481,8 +1468,8 @@ items:
       actions:
         - source: Compendium.cof2-base.cof-2-base-items.Item.G5IYsoyGoVsMqqqw
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: melee
           actionType: a
@@ -1500,9 +1487,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: "@atc"
-                crit: "19"
-                difficulty: "@cible.def"
+                formula: '@atc'
+                crit: '19'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6 + @for
               target:
@@ -1513,12 +1500,12 @@ items:
                 active: false
                 applyOn: success
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
           modifiers: []
       range:
-        unit: ""
+        unit: ''
         base: 0
         ability: null
         details: null
@@ -1534,29 +1521,28 @@ items:
       compendiumSource: Item.G5IYsoyGoVsMqqqw
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.8wK40HITTVpiBgBo"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.8wK40HITTVpiBgBo'
   - name: Cadenas Simple
     type: equipment
-    img: >-
-      icons/sundries/misc/lock-bronze-reinforced.webp
+    img: icons/sundries/misc/lock-bronze-reinforced.webp
     _id: rbEP9qsCqI7kxOAo
     system:
       description: "<p>Il peut s'agir d'un cadenas, d'une serrure de porte ou de coffre ou de tout autre type de verrou à clé. Le\_DD pour ouvrir un cadenas avec la compétence Filouterie dépend de la qualité du cadenas : simple (DD 20), moyen (DD 25), bon (DD 30) ou supérieur (DD 40).</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1588,19 +1574,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.buoZAr4hpCYPMCwx
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.rbEP9qsCqI7kxOAo"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.rbEP9qsCqI7kxOAo'
   - name: Craie
     type: equipment
-    img: >-
-      icons/commodities/claws/claws-worn-white.webp
+    img: icons/commodities/claws/claws-worn-white.webp
     _id: VLJVHLgVxxFW9jeX
     system:
       description: >-
@@ -1609,13 +1594,13 @@ items:
         environ 24 heures avant qu'elle ne soit complètement usée. Il existe
         également des craies d'autres couleurs, mais elles sont plus rares et
         potentiellement plus chères.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1647,29 +1632,28 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.afsAdLInRn3doZmZ
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.VLJVHLgVxxFW9jeX"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.VLJVHLgVxxFW9jeX'
   - name: Ficelle (15m)
     type: equipment
-    img: >-
-      icons/sundries/survival/rope-coiled-brown.webp
+    img: icons/sundries/survival/rope-coiled-brown.webp
     _id: uWafDIJjHeBpD7S7
     system:
       description: "<p>Vendue en pelote ou en bobine, la ficelle permet d'improviser des pièges et des systèmes d'alarme, ou de ramener un objet hors d'atteinte à soi en l'attachant à une flèche ou un carreau. La ficelle a une\_solidité\_de 0,1 point de vie et le\_DD\_pour la briser est de 14.</p>"
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1701,31 +1685,30 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.2RXQjkCe3DPgdfpX
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.uWafDIJjHeBpD7S7"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.uWafDIJjHeBpD7S7'
   - name: Hameçon
     type: equipment
-    img: >-
-      icons/tools/fishing/hook-barbed-steel-blue.webp
+    img: icons/tools/fishing/hook-barbed-steel-blue.webp
     _id: 0cDLmGbTaCqijDAV
     system:
       description: >-
         <p>Ce petit crochet en métal n'est rien de plus qu'une aiguille rigide
         et recourbée.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1757,19 +1740,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.IuAHJzWNrvQY2dNB
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.0cDLmGbTaCqijDAV"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.0cDLmGbTaCqijDAV'
   - name: Miroir
     type: equipment
-    img: >-
-      icons/commodities/treasure/token-silver-blue.webp
+    img: icons/commodities/treasure/token-silver-blue.webp
     _id: 3FvScWJwIGhwi4yr
     system:
       description: >-
@@ -1777,13 +1759,13 @@ items:
         Contrairement à beaucoup de miroirs de meilleure facture, celui-ci est
         fabriqué en acier poli et il est suffisamment solide pour que le
         personnage le fasse tomber sans risquer de le casser.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1816,19 +1798,18 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.pH7k5vBAABQGBtUo
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.3FvScWJwIGhwi4yr"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.3FvScWJwIGhwi4yr'
   - name: Pierre à Aiguiser
     type: equipment
-    img: >-
-      icons/commodities/stone/paver-cobble-white.webp
+    img: icons/commodities/stone/paver-cobble-white.webp
     _id: YCJ7cqyKNvwUkizD
     system:
       description: >-
@@ -1838,13 +1819,13 @@ items:
         bonus d'arme de +1 aux jets de dégâts lors de la première attaque
         réussie avec cette lame.</p><p>Ceci ne fonctionne que pour les lames
         non-magiques.</p>
-      source: ""
-      origin: ""
-      slug: ""
+      source: ''
+      origin: ''
+      slug: ''
       subtype: misc
       tags: []
       martialCategory: paddedClothFur
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         destroyIfEmpty: false
@@ -1877,30 +1858,29 @@ items:
       compendiumSource: Compendium.world.reliquesunion-objets.Item.qIt4ryFY6IY001Bh
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.YCJ7cqyKNvwUkizD"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.YCJ7cqyKNvwUkizD'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir renforcé
     type: equipment
-    img: >-
-      icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
+    img: icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
     _id: PFvC1Msw5bbF7vPA
     system:
-      description: ""
-      source: ""
+      description: ''
+      source: ''
       origin: Livre du Joueur p.160
       slug: cuir-renforce-broigne
       tags: []
       subtype: armor
       martialCategory: studdedLeather
-      damagetype: ""
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -1934,24 +1914,24 @@ items:
       compendiumSource: Item.jaRTjllWH3UdW9Kt
       duplicateSource: null
       exportSource: null
-      coreVersion: "13.351"
+      coreVersion: '13.351'
       systemId: co2
-      systemVersion: "#{VERSION}#"
+      systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
     sort: 0
-    _key: "!actors.items!Bdzb69L3CGDyQ0Ja.PFvC1Msw5bbF7vPA"
+    _key: '!actors.items!Bdzb69L3CGDyQ0Ja.PFvC1Msw5bbF7vPA'
 effects: []
 flags: {}
 _stats:
   compendiumSource: Compendium.world.cof2ta-acteurs.Actor.AnsUaiu0pYVZmstb
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1772238594661
   modifiedTime: 1772238594661
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -1960,4 +1940,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: Bdzb69L3CGDyQ0Ja
 sort: 1500000
-_key: "!actors!Bdzb69L3CGDyQ0Ja"
+_key: '!actors!Bdzb69L3CGDyQ0Ja'

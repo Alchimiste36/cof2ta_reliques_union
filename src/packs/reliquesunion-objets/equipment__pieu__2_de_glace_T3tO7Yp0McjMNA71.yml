@@ -1,11 +1,10 @@
 folder: fkaQ5zi2WGOp22kb
 name: Épieu +2 de glace
 type: equipment
-img: >-
-  icons/weapons/polearms/spear-flared-blue.webp
+img: icons/weapons/polearms/spear-flared-blue.webp
 system:
   description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Kaiwhakairo</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de froid</p></li></ul>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.157
   slug: epieu
   tags: []
@@ -49,8 +48,8 @@ system:
   actions:
     - source: Actor.fTbuMNahY2sBxbQd.Item.GmlBq0r1VuCHJcab
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -68,9 +67,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for +1d4° +2
           target:
@@ -82,13 +81,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Actor.fTbuMNahY2sBxbQd.Item.GmlBq0r1VuCHJcab
       indice: 1
       label: vs Arme naturelle
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -106,14 +105,14 @@ system:
           source: Actor.fTbuMNahY2sBxbQd.Item.GmlBq0r1VuCHJcab
           subtype: combat
           target: def
-          value: "2"
+          value: '2'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Actor.fTbuMNahY2sBxbQd.Item.GmlBq0r1VuCHJcab
       indice: 2
       label: vs Cible sans armure
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -131,9 +130,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc +2"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 3d6 +1d4° +2
           target:
@@ -145,7 +144,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
 effects: []
@@ -154,9 +153,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1771890097081
   modifiedTime: 1772223024394
   lastModifiedBy: MdLP35I2yaa8z7GV
@@ -165,4 +164,4 @@ ownership:
   MdLP35I2yaa8z7GV: 3
 _id: T3tO7Yp0McjMNA71
 sort: 1100000
-_key: "!items!T3tO7Yp0McjMNA71"
+_key: '!items!T3tO7Yp0McjMNA71'

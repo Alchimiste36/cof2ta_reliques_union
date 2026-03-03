@@ -5,13 +5,13 @@ img: icons/skills/melee/strike-dagger-white-orange.webp
 _id: RpevqCeUcXr6n92Z
 system:
   description: "<p><strong>Au premier tour de combat</strong>, si la\_<strong>cible est surprise</strong>, une Attaque mortelle réussie\_l'oblige à réussir un test de <strong>CON difficulté 15\_</strong>: en\_cas d'échec, <strong>elle tombe à 0 PV</strong>.</p>"
-  source: ""
+  source: ''
   origin: Livre du meneur p136
-  slug: ""
+  slug: ''
   inGame: >-
     <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
     statut Inconscient de façon illimité sur la cible en cas d'échec.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 3
@@ -26,7 +26,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.RpevqCeUcXr6n92Z
       indice: 0
       label: 1er tour + Cible surprise
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -42,7 +42,7 @@ system:
       resolvers:
         - type: save
           saveAbility: con
-          saveDifficulty: "15"
+          saveDifficulty: '15'
           target:
             type: single
             scope: all
@@ -51,12 +51,12 @@ system:
             active: true
             applyOn: saveFailure
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - unconscious
             unit: unlimited
-            duration: "0"
+            duration: '0'
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -72,13 +72,13 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
 ownership:
   default: 0
 sort: 0
-_key: "!items!RpevqCeUcXr6n92Z"
+_key: '!items!RpevqCeUcXr6n92Z'

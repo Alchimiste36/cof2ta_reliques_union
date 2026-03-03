@@ -4,9 +4,9 @@ type: capacity
 img: icons/magic/control/buff-strength-muscle-damage-orange.webp
 system:
   description: "<p>Le PJ ajoute son <strong>Mod. de FOR à son score de\_PV maximal</strong> ainsi qu’à ses <strong>tests de CHA</strong> et à\_ceux de <strong>ses alliés au contact</strong> pour les tests de\_négociation, de persuasion ou d’intimidation.\_</p><p>Allez savoir pourquoi, sa simple présence donne\_de la force aux arguments de ses alliés…</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> lorsque le rang 4 est atteint\_dans cette voie, le PJ ajoute une nouvelle fois\_son Mod. de FOR à son score de PV maximal.</p></blockquote>"
-  source: ""
+  source: ''
   origin: Livre du Joueur p.125
-  slug: ""
+  slug: ''
   inGame: >-
     <p>Bonus permanent augmentant les PV maximaux du PJ et pour ses tests de
     CHA;</p><p>La première action permet de donner aux cibles le bonus aux jets
@@ -15,7 +15,7 @@ system:
     4, remplacez la valeur du Modificateur augmentant les PV par "@for*2". Vous
     pouvez aussi ajoutez un Modificateur sur la rang 4 de cette voie afin de ne
     pas oublier ce bonus.</p>
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   rank: 1
@@ -30,7 +30,7 @@ system:
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.IsG15wQbsqXAygIw
       indice: 0
       label: Bonus aux alliés
-      chatFlavor: ""
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -48,7 +48,7 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
           subtype: skill
           target: cha
-          value: "@for"
+          value: '@for'
           apply: others
           additionalInfos: Négociation / Persuasion / Intimidation
       resolvers:
@@ -61,10 +61,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
-            duration: "1"
+            duration: '1'
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
@@ -73,8 +73,8 @@ system:
           hasAttackSuccessThreshold: false
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -92,14 +92,14 @@ system:
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
           subtype: attribute
           target: hp
-          value: "@for"
+          value: '@for'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.xcZmDYv8YY56H05S
           subtype: skill
           target: cha
-          value: "@for"
+          value: '@for'
           apply: self
           additionalInfos: Négociation / Persuasion / Intimidation
       resolvers: []
@@ -112,9 +112,9 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: "13.351"
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: "#{VERSION}#"
+  systemVersion: '#{VERSION}#'
   createdTime: 1769517536854
   modifiedTime: 1769896831834
   lastModifiedBy: oByx0z6HY26hEziz
@@ -122,4 +122,4 @@ _id: xcZmDYv8YY56H05S
 ownership:
   default: 0
 sort: 0
-_key: "!items!xcZmDYv8YY56H05S"
+_key: '!items!xcZmDYv8YY56H05S'
