@@ -1,4 +1,209 @@
 // Mise en forme au niveau d'un journal
-.journal-cof2ta {
-  --color-text-light-highlight: #f0f0e0;
+.journal-cof2ta-ru {
+  --color-ru-or: #ad7600;
+  --color-ru-violet: #600060;
+  --color-ru-parcho: #663404;
+  --color-ru-bgparcho: #66340445;
+  --color-ru-lien: #911c00;
+  --color-ru-discussion: #001639;
+  --color-ru-roll: #001791;
+  font-family: "myriad cond";
+  .paragraphe {
+    text-indent: 20px;
+    font-size: var(--font-size-18);
+    text-align: justify;
+  }
+  h1 {
+    color: var(--color-ru-or);
+    border-bottom: 1px solid var(--color-ru-or);
+    border-width: 2px;
+    font-family: "Matrix";
+  }
+  h2 {
+    font-family: "Matrix";
+    color: var(--color-ru-parcho);
+
+    border: none;
+    text-decoration: underline;
+    margin: 5px 0 15px 0;
+  }
+
+  h2::before {
+    content: "\0027A5";
+    margin-right: 4px;
+    display: inline-block;
+  }
+  h3 {
+    font-family: "myriad bold ital";
+    color: var(--color-ru-violet);
+    margin: 5px 0 15px 10px;
+  }
+  h3::before {
+    content: "\0027A7";
+    margin-right: 2px;
+  }
+  hr {
+    background-image: linear-gradient(90deg, transparent 0%, var(--color-text-primary) 50%, transparent 100%);
+    height: 1px;
+    margin: 10px 0;
+  }
+  .description {
+    font-family: "myriad ital";
+    color: var(--color-ru-violet);
+    margin: 5px 15px;
+    border-left: 2px solid var(--color-ru-violet);
+    padding: 1px 10px;
+    border-right: 2px solid var(--color-ru-violet);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    hr {
+      background-image: linear-gradient(90deg, var(--color-ru-violet) 0%, transparent 30%, transparent 70%, var(--color-ru-violet) 100%);
+      margin: 10px -10px;
+    }
+    p {
+      font-size: var(--font-size-16);
+    }
+    em {
+      font-family: "myriad cond";
+      font-style: normal;
+      font-size: var(--font-size-18);
+    }
+  }
+  span.description {
+    border: none;
+    font-size: var(--font-size-16);
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: "\002B1F";
+    margin: 0 0 0 10px;
+    line-height: 1rem;
+  }
+  li {
+    padding-left: 5px;
+    .paragraphe {
+      text-indent: 0px;
+    }
+  }
+  li::marker {
+    //color: var(--color-ru-or);
+    font-size: large;
+  }
+  ul ul {
+    list-style: "\002B54";
+    margin: 0;
+    li::marker {
+      font-weight: 900;
+    }
+  }
+  .content-link {
+    border: none;
+    background: none;
+    color: var(--color-ru-lien);
+    font-weight: 700;
+    font-family: "myriad cond ital";
+    letter-spacing: 1px;
+    padding: 0;
+    i {
+      text-indent: 0;
+      color: var(--color-ru-lien);
+    }
+  }
+  img {
+    border: 1px solid var(--color-ru-or);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--color-ru-or);
+    border-right: 3px solid var(--color-ru-or);
+    float: right;
+    margin: 0 -10px 5px 10px;
+  }
+  img.left {
+    border: 1px solid var(--color-ru-or);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--color-ru-or);
+    border-left: 3px solid var(--color-ru-or);
+    float: left;
+    margin: 0 10px 5px 0px;
+  }
+  img.center {
+    border: 1px solid var(--color-ru-or);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--color-ru-or);
+    border-right: 3px solid var(--color-ru-or);
+    border-left: 3px solid var(--color-ru-or);
+    justify-self: center;
+    margin: 0 0 5px 0;
+  }
+  .parcho {
+    border: 1px solid var(--color-ru-parcho);
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--color-ru-bgparcho);
+    box-shadow: 1px 2px 3px 0px var(--color-ru-parcho);
+    font-family: "myriad cond ital";
+    margin: 5px 5px 15px 40px;
+    font-size: var(--font-size-18);
+  }
+  .discussion {
+    font-family: "Hypatia";
+    font-style: italic;
+    font-size: var(--font-size-16);
+    margin: 0 15px;
+    padding: 0 5px;
+    text-indent: 30px;
+    text-align: justify;
+    border-left: 1px dashed black;
+    border-right: 1px dashed black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--color-ru-discussion);
+  }
+  span.discussion {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .discu-acteur {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: var(--font-size-20);
+    font-family: "myriad bold ital";
+  }
+
+  .roll-check-enricher {
+    color: var(--color-ru-roll);
+    text-indent: 0;
+    font-weight: 700;
+  }
+  .roll-result {
+    color: var(--color-ru-parcho);
+    font-weight: 900;
+    font-family: "myriad cond bold ital";
+    letter-spacing: 1px;
+  }
+  .imp {
+    background-color: #e6000029;
+    font-weight: 900;
+  }
+  .intro {
+    font-family: "myriad cond ital";
+    color: var(--color-ru-parcho);
+    margin: 10px 15px;
+    border-top: 2px dotted var(--color-ru-parcho);
+    padding: 0 5px;
+    border-bottom: 2px dotted var(--color-ru-parcho);
+    font-size: var(--font-size-20);
+    text-align: center;
+  }
+  .levelup {
+    font-family: "myriad cond bold";
+    color: var(--color-ru-lien);
+    margin: 10px 15px;
+    border-top: 3px dotted var(--color-ru-lien);
+    border-bottom: 3px dotted var(--color-ru-lien);
+    font-size: var(--font-size-28);
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--color-ru-violet);
+  }
 }
