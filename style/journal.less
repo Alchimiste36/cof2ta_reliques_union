@@ -1,5 +1,10 @@
 // Mise en forme au niveau d'un journal
-.journal-cof2ta-ru {
+
+.journal-cof2ta-ru,
+.merchant-description,
+.editor-enriched,
+.editor-content,
+.chat-card {
   --color-ru-or: #ad7600;
   --color-ru-violet: #600060;
   --color-ru-parcho: #663404;
@@ -7,6 +12,28 @@
   --color-ru-lien: #911c00;
   --color-ru-discussion: #001639;
   --color-ru-roll: #001791;
+  .content-link {
+    border: none;
+    background: none;
+    color: var(--color-ru-lien);
+    font-weight: 700;
+    font-family: "myriad cond ital";
+    letter-spacing: 1px;
+    padding: 0;
+    i {
+      text-indent: 0;
+      color: var(--color-ru-lien);
+    }
+  }
+}
+.journal-cof2ta-ru {
+  //--color-ru-or: #ad7600;
+  //--color-ru-violet: #600060;
+  //--color-ru-parcho: #663404;
+  //--color-ru-bgparcho: #66340445;
+  //--color-ru-lien: #911c00;
+  //--color-ru-discussion: #001639;
+  //--color-ru-roll: #001791;
   font-family: "myriad cond";
   .paragraphe {
     text-indent: 20px;
@@ -50,12 +77,14 @@
   .description {
     font-family: "myriad ital";
     color: var(--color-ru-violet);
-    margin: 5px 15px;
+    margin: 5px 10px;
     border-left: 2px solid var(--color-ru-violet);
-    padding: 1px 10px;
+    padding: 0px 10px;
     border-right: 2px solid var(--color-ru-violet);
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     hr {
       background-image: linear-gradient(90deg, var(--color-ru-violet) 0%, transparent 30%, transparent 70%, var(--color-ru-violet) 100%);
       margin: 10px -10px;
@@ -87,7 +116,6 @@
     }
   }
   li::marker {
-    //color: var(--color-ru-or);
     font-size: large;
   }
   ul ul {
@@ -97,19 +125,7 @@
       font-weight: 900;
     }
   }
-  .content-link {
-    border: none;
-    background: none;
-    color: var(--color-ru-lien);
-    font-weight: 700;
-    font-family: "myriad cond ital";
-    letter-spacing: 1px;
-    padding: 0;
-    i {
-      text-indent: 0;
-      color: var(--color-ru-lien);
-    }
-  }
+
   img {
     border: 1px solid var(--color-ru-or);
     border-radius: 10px;
@@ -149,14 +165,14 @@
     font-family: "Hypatia";
     font-style: italic;
     font-size: var(--font-size-16);
-    margin: 0 15px;
-    padding: 0 5px;
-    text-indent: 30px;
-    text-align: justify;
+    margin: 5px 10px;
+    padding: 0 10px;
     border-left: 1px dashed black;
     border-right: 1px dashed black;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     color: var(--color-ru-discussion);
   }
   span.discussion {
@@ -167,7 +183,7 @@
   .discu-acteur {
     text-decoration: underline;
     font-weight: 700;
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-18);
     font-family: "myriad bold ital";
   }
 
