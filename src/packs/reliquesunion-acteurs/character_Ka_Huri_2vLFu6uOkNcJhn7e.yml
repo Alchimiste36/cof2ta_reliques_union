@@ -185,18 +185,19 @@ system:
       private: >-
         <p>Ses sourires cachent une grande violence et un stresse de chaque
         instant pour Ka'Huri.</p><p>Elle traine beaucoup avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha} et ses deux fils et elle partage de
-        plus en plus leur envie de prendre le contrôle de la région et de la
-        montagne.</p><p>Les attaques des Ombres Blanches sont des plaies pour ce
-        groupe et ils revendiquent leur place dans cette région. Il faut
-        éradiquer les Ombres Blanches, il faut étendre le village et occuper les
-        terres environnantes. Les centaures sont plus forts que tous les autres
-        peuples.</p><p>Au delà de ses idées, Ka'Huri est une bonne artisane et
-        surtout à la poterie et à la fabrication des bougies (c'est d'ailleurs
-        une des seule qui arrive à supporter
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}).</p><p>Elle sait combattre et
-        elle est assez douée à la chasse donc cela lui arrive de suivre les
-        frères hors du village.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha}
+        et ses deux fils et elle partage de plus en plus leur envie de prendre
+        le contrôle de la région et de la montagne.</p><p>Les attaques des
+        Ombres Blanches sont des plaies pour ce groupe et ils revendiquent leur
+        place dans cette région. Il faut éradiquer les Ombres Blanches, il faut
+        étendre le village et occuper les terres environnantes. Les centaures
+        sont plus forts que tous les autres peuples.</p><p>Au delà de ses idées,
+        Ka'Huri est une bonne artisane et surtout à la poterie et à la
+        fabrication des bougies (c'est d'ailleurs une des seule qui arrive à
+        supporter
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}).</p><p>Elle
+        sait combattre et elle est assez douée à la chasse donc cela lui arrive
+        de suivre les frères hors du village.</p>
       public: <p>Femelle - 58 ans</p>
     appearance:
       private: ''
@@ -358,7 +359,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2137,215 +2139,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!2vLFu6uOkNcJhn7e.zZiI73Iejx8M6YvZ'
-  - folder: srnxqMuZEh5AAU86
-    name: Arc composite de feu +1
-    type: equipment
-    img: icons/weapons/bows/shortbow-recurve.webp
-    system:
-      description: >-
-        <p>Score minimum en FOR requis : 12.</p><hr /><p>Arme magique de
-        Centaure - Ka'Huri</p><ul><li><p>Bonus de +1 en attaque et
-        DM</p></li><li><p>+1d6 DM de feu</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: arc-court
-      tags: []
-      subtype: weapon
-      martialCategory: longBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: 20
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 600
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 50
-      actions:
-        - source: Actor.2vLFu6uOkNcJhn7e.Item.4h8YovFwxVgr9iCn
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d6 +1
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.WgrhYBIHbISarO7f
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _id: 4h8YovFwxVgr9iCn
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 400000
-    _key: '!actors.items!2vLFu6uOkNcJhn7e.4h8YovFwxVgr9iCn'
-  - folder: OBPli02oRaBQq6Ee
-    name: Epée longue de feu
-    type: equipment
-    img: icons/weapons/swords/sword-guard-brass-worn.webp
-    _id: 8FqtojM8QbBBeP2D
-    system:
-      description: >-
-        <hr /><p>Arme magique de Centaure - Ka'Huri</p><ul><li><p>+1d6 DM de
-        feu</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: epee-longue
-      tags: []
-      subtype: weapon
-      martialCategory: longSword
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 200
-        unit: ''
-      rarity: exotic
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.2vLFu6uOkNcJhn7e.Item.8FqtojM8QbBBeP2D
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 + @for +1d6
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.QIHJs2vncOYtsEX2
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!2vLFu6uOkNcJhn7e.8FqtojM8QbBBeP2D'
   - folder: OBPli02oRaBQq6Ee
     name: Masse d'arme
     type: equipment
@@ -2820,18 +2613,19 @@ items:
       description: >-
         <p>Ses sourires cachent une grande violence et un stresse de chaque
         instant pour Ka'Huri.</p><p>Elle traine beaucoup avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha} et ses deux fils et elle partage de
-        plus en plus leur envie de prendre le contrôle de la région et de la
-        montagne.</p><p>Les attaques des Ombres Blanches sont des plaies pour ce
-        groupe et ils revendiquent leur place dans cette région. Il faut
-        éradiquer les Ombres Blanches, il faut étendre le village et occuper les
-        terres environnantes. Les centaures sont plus forts que tous les autres
-        peuples.</p><p>Au delà de ses idées, Ka'Huri est une bonne artisane et
-        surtout à la poterie et à la fabrication des bougies (c'est d'ailleurs
-        une des seule qui arrive à supporter
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}).</p><p>Elle sait combattre et
-        elle est assez douée à la chasse donc cela lui arrive de suivre les
-        frères hors du village.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha}
+        et ses deux fils et elle partage de plus en plus leur envie de prendre
+        le contrôle de la région et de la montagne.</p><p>Les attaques des
+        Ombres Blanches sont des plaies pour ce groupe et ils revendiquent leur
+        place dans cette région. Il faut éradiquer les Ombres Blanches, il faut
+        étendre le village et occuper les terres environnantes. Les centaures
+        sont plus forts que tous les autres peuples.</p><p>Au delà de ses idées,
+        Ka'Huri est une bonne artisane et surtout à la poterie et à la
+        fabrication des bougies (c'est d'ailleurs une des seule qui arrive à
+        supporter
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}).</p><p>Elle
+        sait combattre et elle est assez douée à la chasse donc cela lui arrive
+        de suivre les frères hors du village.</p>
       source: ''
       origin: ''
       slug: ''
@@ -4145,11 +3939,230 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!2vLFu6uOkNcJhn7e.UZWxDlVWkAdIg6nd'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Arc composite de feu +1
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_109.webp
+    system:
+      description: >-
+        <p>Score minimum en FOR requis : 12.</p><hr /><p><strong>Arme magique de
+        Centaure - Ka'Huri</strong></p><ul><li><p>Bonus de +1 en attaque et
+        DM</p></li><li><p>+1d6 DM de feu</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: arc-court
+      tags: []
+      subtype: weapon
+      martialCategory: longBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 600
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 50
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.b75CTFa9qQunjjsr
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d6 +1
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.yEIKrAj3Yzgxg9Si
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925367646
+      modifiedTime: 1772925367740
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: b75CTFa9qQunjjsr
+    sort: 0
+    _key: '!actors.items!2vLFu6uOkNcJhn7e.b75CTFa9qQunjjsr'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Epée longue de feu
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_epee_longue_145.webp
+    system:
+      description: >-
+        <hr /><p><strong>Arme magique de Centaure -
+        Ka'Huri</strong></p><ul><li><p>+1d6 DM de feu</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 200
+        unit: ''
+      rarity: exotic
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.W36nUKGtPZcdrIdx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for +1d6
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.uMX3TYz84qLMtWP1
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925425848
+      modifiedTime: 1772925425900
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: W36nUKGtPZcdrIdx
+    sort: 0
+    _key: '!actors.items!2vLFu6uOkNcJhn7e.W36nUKGtPZcdrIdx'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EJeXmdLLDSK408TI
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EJeXmdLLDSK408TI
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

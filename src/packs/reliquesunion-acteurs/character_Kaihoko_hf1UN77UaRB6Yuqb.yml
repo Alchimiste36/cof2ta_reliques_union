@@ -344,7 +344,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3176,111 +3177,6 @@ items:
     sort: 0
     _key: '!actors.items!hf1UN77UaRB6Yuqb.Nvtiiq9O9EXkiFox'
   - folder: OBPli02oRaBQq6Ee
-    name: Hache à deux mains +2 de foudre
-    type: equipment
-    img: icons/weapons/axes/axe-double-brown.webp
-    _id: wHzji3ZQr7hXmDZh
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Kaihoko</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +1d4° DM de foudre</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: hache-a-deux-mains
-      tags: []
-      subtype: weapon
-      martialCategory: greatAxe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 10
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.hf1UN77UaRB6Yuqb.Item.wHzji3ZQr7hXmDZh
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 2d6 + @for +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.7NTfb6SYuy6wWx8o
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!hf1UN77UaRB6Yuqb.wHzji3ZQr7hXmDZh'
-  - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
     img: icons/skills/melee/unarmed-punch-fist.webp
@@ -3385,10 +3281,11 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!hf1UN77UaRB6Yuqb.Z54WZmwJ5BtbYJb7'
-  - folder: GUKbDXrNXlTgfaW0
+  - folder: fkaQ5zi2WGOp22kb
     name: Cotte de mailles de résistance +2
     type: equipment
-    img: icons/equipment/chest/breastplate-rivited-red.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cotte_mailles_resistance.webp
     system:
       description: >-
         <p><strong>Armure magique de Centaure -
@@ -3425,7 +3322,8 @@ items:
         oneHand: false
         twoHand: false
       actions:
-        - source: Actor.hf1UN77UaRB6Yuqb.Item.SE7gZCa0zHRIANH5
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb.Item.o0TKYcCEanvU5NlK
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3443,7 +3341,8 @@ items:
             - predicate: isEquipped
           modifiers:
             - type: equipment
-              source: Actor.hf1UN77UaRB6Yuqb.Item.SE7gZCa0zHRIANH5
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb.Item.o0TKYcCEanvU5NlK
               subtype: combat
               target: dr
               value: '2'
@@ -3456,24 +3355,138 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Item.gVOtlewwxxI6lRap
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RhYrrzk2ofwxkAWM
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _id: SE7gZCa0zHRIANH5
+      createdTime: 1772925002810
+      modifiedTime: 1772925002846
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!hf1UN77UaRB6Yuqb.SE7gZCa0zHRIANH5'
+    _id: o0TKYcCEanvU5NlK
+    sort: 2300000
+    _key: '!actors.items!hf1UN77UaRB6Yuqb.o0TKYcCEanvU5NlK'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Hache à deux mains +2 de foudre
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_2_mains_foudre.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Kaihoko</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +1d4° DM de foudre</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: hache-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb.Item.6ORzsS6YX6eylu5o
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for +1d4° +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.c9jPO8H6A2FJWGVD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925012117
+      modifiedTime: 1772925012167
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 6ORzsS6YX6eylu5o
+    sort: 2700000
+    _key: '!actors.items!hf1UN77UaRB6Yuqb.6ORzsS6YX6eylu5o'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.CumtzwDvuf1EGa5A
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.CumtzwDvuf1EGa5A
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

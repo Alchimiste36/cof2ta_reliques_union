@@ -157,7 +157,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 8
+      value: 6
     recovery:
       base: 5
       ability: con
@@ -179,7 +179,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 20
+      value: 13
   details:
     biography:
       private: >-
@@ -187,20 +187,25 @@ system:
         physique, son expertise du combat et son caractère intransigeant.
         </p><p>Veuf depuis plus de 40 ans, à la naissance de son dernier fils,
         il a une place importante à Arkanov et ne se prive pas de confronter le
-        chef @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3]{Kiliko} lorsqu'il désapprouve une
-        décision. </p><p>Pour lui le village doit se développer, s'agrandir et
-        revendiquer les parcelles qui entourent l'entrée. Les centaures sont
-        bien assez forts et déterminés pour s'émanciper de cette prison. Il
-        enrage de la décision du chef de ne pas partir chercher les Ombres
-        Blanches pour leur faire payer leurs attaques et même s'il se méfie
-        énormément des étrangers, pour lui les montagnes et tout ce qu'elle
-        contiennent appartiennent aux centaures et à eux seuls. </p><p>Ces deux
-        fils les plus jeunes, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf]{Te'Tipu} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb]{Kaihoko}, ont les mêmes idées d'expansion
-        alors que son aîné, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RfNtemPbHymoV2zK]{Kaiako}, partage plus
-        la position du chef pour le plus grand désespoir de Kaha. </p><p>A 78
-        ans, Kaha est un guerrier expérimenté, peut-être le seul qui pourrait
-        battre @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti}.</p>
+        chef
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3]{Kiliko}
+        lorsqu'il désapprouve une décision. </p><p>Pour lui le village doit se
+        développer, s'agrandir et revendiquer les parcelles qui entourent
+        l'entrée. Les centaures sont bien assez forts et déterminés pour
+        s'émanciper de cette prison. Il enrage de la décision du chef de ne pas
+        partir chercher les Ombres Blanches pour leur faire payer leurs attaques
+        et même s'il se méfie énormément des étrangers, pour lui les montagnes
+        et tout ce qu'elle contiennent appartiennent aux centaures et à eux
+        seuls. </p><p>Ces deux fils les plus jeunes,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf]{Te'Tipu}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb]{Kaihoko},
+        ont les mêmes idées d'expansion alors que son aîné,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RfNtemPbHymoV2zK]{Kaiako},
+        partage plus la position du chef pour le plus grand désespoir de Kaha.
+        </p><p>A 78 ans, Kaha est un guerrier expérimenté, peut-être le seul qui
+        pourrait battre
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti}.</p>
       public: <p>Mâle - 78 ans</p>
     appearance:
       private: ''
@@ -362,7 +367,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3221,380 +3227,6 @@ items:
     sort: 0
     _key: '!actors.items!AUMVOCux3piDen0C.rFUOQnAoq0ERNA9h'
   - folder: OBPli02oRaBQq6Ee
-    name: Hache à deux mains sanglante +3
-    type: equipment
-    img: icons/weapons/axes/axe-double-brown.webp
-    _id: iKWWnrUex1n7P2D1
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus
-        de +3 à l'Attaque et aux DM.</p></li><li><p>L'arme augmente la plage de
-        critique de 1.</p></li><li><p>Lorsqu'un coup critique est infligé, un
-        saignement de 2d4° est appliqué à la cible pendant 2d4
-        rounds.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: hache-a-deux-mains
-      tags: []
-      subtype: weapon
-      martialCategory: greatAxe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 1750
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.AUMVOCux3piDen0C.Item.iKWWnrUex1n7P2D1
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: ' @atc +3'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 2d6 + @for +3
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: true
-                applyOn: critical
-                formulaType: damage
-                formula: 2d4°
-                elementType: ''
-                statuses:
-                  - bleeding
-                duration: 2d4
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.7NTfb6SYuy6wWx8o
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!AUMVOCux3piDen0C.iKWWnrUex1n7P2D1'
-  - folder: OBPli02oRaBQq6Ee
-    name: Lance perçante +2 de retour
-    type: equipment
-    img: icons/weapons/polearms/spear-hooked-simple.webp
-    _id: GyQnKG3ZBXKVEj4E
-    system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM.</p></li><li><p>L'arme revient en main de son utilisateur par une action gratuite</p></li><li><p>La plage de critique est augmentée de 1</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: lance
-      tags: []
-      subtype: weapon
-      martialCategory: lance
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 6
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: true
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 10
-      actions:
-        - source: Actor.AUMVOCux3piDen0C.Item.GyQnKG3ZBXKVEj4E
-          indice: 0
-          label: 1 main
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: Actor.AUMVOCux3piDen0C.Item.GyQnKG3ZBXKVEj4E
-          indice: 1
-          label: 2 mains
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d10 + @for +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: Actor.AUMVOCux3piDen0C.Item.GyQnKG3ZBXKVEj4E
-          indice: 2
-          label: A distance
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: none
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd -1'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.MCwQOKemuD8ZKI28
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!AUMVOCux3piDen0C.GyQnKG3ZBXKVEj4E'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Cotte de mailles de discrétion forestière +1
-    type: equipment
-    img: icons/equipment/chest/breastplate-rivited-red.webp
-    system:
-      description: >-
-        <p><strong>Armure magique de Centaure -
-        Kaha</strong></p><ul><li><p>Bonus de DEF magique de +1</p></li><li><p>Le
-        porteur optient un bonus aux tests de discrétion lorqu'il est en
-        forêt</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: cotte-de-mailles
-      tags: []
-      subtype: armor
-      martialCategory: chainMail
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 750
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.AUMVOCux3piDen0C.Item.MBrb9BtoC1nOkIWE
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: false
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: true
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: Actor.AUMVOCux3piDen0C.Item.MBrb9BtoC1nOkIWE
-              subtype: skill
-              target: agi
-              value: '5'
-              apply: self
-              additionalInfos: Discrétion en forêt
-          resolvers: []
-      defense: 5
-      range: null
-      magicalDefense: 1
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.gVOtlewwxxI6lRap
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _id: MBrb9BtoC1nOkIWE
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!AUMVOCux3piDen0C.MBrb9BtoC1nOkIWE'
-  - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
     img: icons/skills/melee/unarmed-punch-fist.webp
@@ -3709,20 +3341,25 @@ items:
         physique, son expertise du combat et son caractère intransigeant.
         </p><p>Veuf depuis plus de 40 ans, à la naissance de son dernier fils,
         il a une place importante à Arkanov et ne se prive pas de confronter le
-        chef @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3]{Kiliko} lorsqu'il désapprouve une
-        décision. </p><p>Pour lui le village doit se développer, s'agrandir et
-        revendiquer les parcelles qui entourent l'entrée. Les centaures sont
-        bien assez forts et déterminés pour s'émanciper de cette prison. Il
-        enrage de la décision du chef de ne pas partir chercher les Ombres
-        Blanches pour leur faire payer leurs attaques et même s'il se méfie
-        énormément des étrangers, pour lui les montagnes et tout ce qu'elle
-        contiennent appartiennent aux centaures et à eux seuls. </p><p>Ces deux
-        fils les plus jeunes, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf]{Te'Tipu} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb]{Kaihoko}, ont les mêmes idées d'expansion
-        alors que son aîné, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RfNtemPbHymoV2zK]{Kaiako}, partage plus
-        la position du chef pour le plus grand désespoir de Kaha. </p><p>A 78
-        ans, Kaha est un guerrier expérimenté, peut-être le seul qui pourrait
-        battre @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti}.</p>
+        chef
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3]{Kiliko}
+        lorsqu'il désapprouve une décision. </p><p>Pour lui le village doit se
+        développer, s'agrandir et revendiquer les parcelles qui entourent
+        l'entrée. Les centaures sont bien assez forts et déterminés pour
+        s'émanciper de cette prison. Il enrage de la décision du chef de ne pas
+        partir chercher les Ombres Blanches pour leur faire payer leurs attaques
+        et même s'il se méfie énormément des étrangers, pour lui les montagnes
+        et tout ce qu'elle contiennent appartiennent aux centaures et à eux
+        seuls. </p><p>Ces deux fils les plus jeunes,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf]{Te'Tipu}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.hf1UN77UaRB6Yuqb]{Kaihoko},
+        ont les mêmes idées d'expansion alors que son aîné,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RfNtemPbHymoV2zK]{Kaiako},
+        partage plus la position du chef pour le plus grand désespoir de Kaha.
+        </p><p>A 78 ans, Kaha est un guerrier expérimenté, peut-être le seul qui
+        pourrait battre
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti}.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3776,18 +3413,411 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!AUMVOCux3piDen0C.xDYQuBWlDFXoO57K'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Cotte de mailles de discrétion forestière +1
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cotte_mailles_discretion_forestiere.webp
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Kaha</strong></p><ul><li><p>Bonus de DEF magique de +1</p></li><li><p>Le
+        porteur optient un bonus aux tests de discrétion lorqu'il est en
+        forêt</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: cotte-de-mailles
+      tags: []
+      subtype: armor
+      martialCategory: chainMail
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 750
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.ZOgxR3EeyRniSR5Z
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.ZOgxR3EeyRniSR5Z
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion en forêt
+          resolvers: []
+      defense: 5
+      range: null
+      magicalDefense: 1
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Wv1vLYMXp6nFyigd
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924963390
+      modifiedTime: 1772924963433
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: ZOgxR3EeyRniSR5Z
+    sort: 3400000
+    _key: '!actors.items!AUMVOCux3piDen0C.ZOgxR3EeyRniSR5Z'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Hache à deux mains sanglante +3
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_2_mains_sanglante.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus
+        de +3 à l'Attaque et aux DM.</p></li><li><p>L'arme augmente la plage de
+        critique de 1.</p></li><li><p>Lorsqu'un coup critique est infligé, un
+        saignement de 2d4° est appliqué à la cible pendant 2d4
+        rounds.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: hache-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 1750
+        unit: pa
+      rarity: veryRare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.1E03xLWrpmC4kYVl
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: ' @atc +3'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for +3
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: critical
+                formulaType: damage
+                formula: 2d4°
+                elementType: ''
+                statuses:
+                  - bleeding
+                duration: 2d4
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.X5eh3URauOSQqqHE
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924974843
+      modifiedTime: 1772924974891
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 1E03xLWrpmC4kYVl
+    sort: 3800000
+    _key: '!actors.items!AUMVOCux3piDen0C.1E03xLWrpmC4kYVl'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Lance perçante +2 de retour
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_percante_retour.webp
+    system:
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM.</p></li><li><p>L'arme revient en main de son utilisateur par une action gratuite</p></li><li><p>La plage de critique est augmentée de 1</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: lance
+      tags: []
+      subtype: weapon
+      martialCategory: lance
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 6
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+          indice: 0
+          label: 1 main
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+          indice: 1
+          label: 2 mains
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for +2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+          indice: 2
+          label: A distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd -1'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0BcKibRSobGeNIk7
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924982207
+      modifiedTime: 1772924982328
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 7VWoZJjZnmXD4rFv
+    sort: 3900000
+    _key: '!actors.items!AUMVOCux3piDen0C.7VWoZJjZnmXD4rFv'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2wKeOBzbiMxxECAt
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2wKeOBzbiMxxECAt
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1772924965385
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

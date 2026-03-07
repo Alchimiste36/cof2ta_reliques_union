@@ -179,7 +179,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 50
+      value: 11
   details:
     biography:
       private: >-
@@ -187,11 +187,13 @@ system:
         forge. Il a les même capacités que son père pour la minutie du travail
         de finition mais contrairement à lui, son humour est toujours percutant
         et juste.</p><p>Passionné par ses deux filles
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZATNz2uVmXwpoX4W]{Tamariki} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.6rsGepWy5twVXkbs]{Hunga}, il passe beaucoup de temps avec
-        eux et les amène dans chaque bâtiment d'artisanat du village. Il est en
-        couple avec @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ]{Maamaa} qui s'occupe en
-        particulier de la cuisine collective avec son père.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZATNz2uVmXwpoX4W]{Tamariki}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.6rsGepWy5twVXkbs]{Hunga},
+        il passe beaucoup de temps avec eux et les amène dans chaque bâtiment
+        d'artisanat du village. Il est en couple avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ]{Maamaa}
+        qui s'occupe en particulier de la cuisine collective avec son père.</p>
       public: <p>Mâle - 37 ans</p>
     appearance:
       private: ''
@@ -350,7 +352,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -1652,11 +1655,13 @@ items:
         forge. Il a les même capacités que son père pour la minutie du travail
         de finition mais contrairement à lui, son humour est toujours percutant
         et juste.</p><p>Passionné par ses deux filles
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZATNz2uVmXwpoX4W]{Tamariki} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.6rsGepWy5twVXkbs]{Hunga}, il passe beaucoup de temps avec
-        eux et les amène dans chaque bâtiment d'artisanat du village. Il est en
-        couple avec @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ]{Maamaa} qui s'occupe en
-        particulier de la cuisine collective avec son père.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZATNz2uVmXwpoX4W]{Tamariki}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.6rsGepWy5twVXkbs]{Hunga},
+        il passe beaucoup de temps avec eux et les amène dans chaque bâtiment
+        d'artisanat du village. Il est en couple avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ]{Maamaa}
+        qui s'occupe en particulier de la cuisine collective avec son père.</p>
       source: ''
       origin: ''
       slug: ''
@@ -2949,121 +2954,6 @@ items:
     sort: 0
     _key: '!actors.items!0zLeG9iYDxAcg6Sk.mqSiz87WhgHniLf8'
   - folder: OBPli02oRaBQq6Ee
-    name: Rapière de brumes +2
-    type: equipment
-    img: icons/weapons/swords/scimitar-worn-blue.webp
-    _id: VminHJXKlVeLMNAO
-    system:
-      description: >-
-        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
-        à la lame flexible, destinée essentiellement aux coups
-        d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
-        Ka'Kata</strong></p><ul><li><p>Bonus de +2 en Attaque et
-        DM</p></li><li><p>sur un résultat de 15 à 20 sur le jet d'attaque, la
-        cible est aveuglée pendant 1d4 rounds.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: rapiere
-      tags:
-        - legere
-      subtype: weapon
-      martialCategory: rapier
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 850
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.0zLeG9iYDxAcg6Sk.Item.VminHJXKlVeLMNAO
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: true
-              attackSuccessThreshold: 15
-              additionalEffect:
-                active: true
-                applyOn: success
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses:
-                  - blind
-                duration: 1d4
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.G5IYsoyGoVsMqqqw
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!0zLeG9iYDxAcg6Sk.VminHJXKlVeLMNAO'
-  - folder: OBPli02oRaBQq6Ee
     name: Main gauche
     type: equipment
     img: icons/weapons/daggers/dagger-straight-thin-black.webp
@@ -3191,11 +3081,11 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!0zLeG9iYDxAcg6Sk.XTIw9R5pMbXlfYBS'
-  - folder: GUKbDXrNXlTgfaW0
+  - folder: fkaQ5zi2WGOp22kb
     name: Armure de cuir renforcé +1
     type: equipment
-    img: icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
-    _id: aNhrBi0AFN8B5BzU
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cuir_renforcee_11.webp
     system:
       description: >-
         <p><strong>Armure magique de Centaure -
@@ -3237,30 +3127,155 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Item.jaRTjllWH3UdW9Kt
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9nqOtzrZHs3509dS
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      createdTime: 1772924554145
+      modifiedTime: 1772924554145
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!0zLeG9iYDxAcg6Sk.aNhrBi0AFN8B5BzU'
+    _id: Clw1OudOqrtWeW2h
+    sort: 3900000
+    _key: '!actors.items!0zLeG9iYDxAcg6Sk.Clw1OudOqrtWeW2h'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Rapière de brumes +2
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_brumes.webp
+    system:
+      description: >-
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups
+        d'estoc.</p><p><strong>Arme légère, seuil de critique
+        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
+        Ka'Kata</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM</p></li><li><p>sur un résultat de 15 à 20 sur le jet d'attaque, la
+        cible est aveuglée pendant 1d4 rounds.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 850
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk.Item.EDk4jFVklHi3u1FJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - blind
+                duration: 1d4
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7wNK0c1XqO9l5EsX
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924562702
+      modifiedTime: 1772924562746
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: EDk4jFVklHi3u1FJ
+    sort: 3700000
+    _key: '!actors.items!0zLeG9iYDxAcg6Sk.EDk4jFVklHi3u1FJ'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.sKhBqPRt8ltRfoIj
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.sKhBqPRt8ltRfoIj
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1772924555491
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

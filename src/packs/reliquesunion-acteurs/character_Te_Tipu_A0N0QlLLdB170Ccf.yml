@@ -344,7 +344,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3332,111 +3333,6 @@ items:
     sort: 0
     _key: '!actors.items!A0N0QlLLdB170Ccf.vn4PC0k24ZHzCYpG'
   - folder: OBPli02oRaBQq6Ee
-    name: Hache +3 de feu intense
-    type: equipment
-    img: icons/weapons/axes/axe-battle-black.webp
-    _id: bqWuNdGCs69iNegy
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Te'Tipu</strong></p><ul><li><p>Bonus de +3 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +2d4° DM de feu</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: hache
-      tags: []
-      subtype: weapon
-      martialCategory: axe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 1250
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.A0N0QlLLdB170Ccf.Item.bqWuNdGCs69iNegy
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +3'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 + @for +2d4° +3
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.9QwTmWqfAkPK5ITR
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!A0N0QlLLdB170Ccf.bqWuNdGCs69iNegy'
-  - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
     img: icons/skills/melee/unarmed-punch-fist.webp
@@ -3541,10 +3437,11 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!A0N0QlLLdB170Ccf.qUZBs87Po8TQ9t0Z'
-  - folder: GUKbDXrNXlTgfaW0
+  - folder: fkaQ5zi2WGOp22kb
     name: Demi-plaque +1 RD 2
     type: equipment
-    img: icons/equipment/chest/breastplate-banded-steel-gold.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/armure_demi_plaque_143.webp
     system:
       description: "<p>Encombrantes, ces armures annulent le bonus\_de DEX à la DEF.</p><hr /><p><strong>Armure magique de Centaure - Te'Tipu</strong></p><ul><li><p>Bonus de DEF magique +2</p></li><li><p>Bonus de Résistance au Dommages de 2</p></li></ul>"
       source: ''
@@ -3578,7 +3475,8 @@ items:
         oneHand: false
         twoHand: false
       actions:
-        - source: Actor.A0N0QlLLdB170Ccf.Item.wT0SDpO9sZIdRVIG
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.32fk9k1XShVR4mqt
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3596,7 +3494,8 @@ items:
             - predicate: isEquipped
           modifiers:
             - type: equipment
-              source: Actor.A0N0QlLLdB170Ccf.Item.wT0SDpO9sZIdRVIG
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.32fk9k1XShVR4mqt
               subtype: combat
               target: dr
               value: '2'
@@ -3609,24 +3508,135 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Item.NQeybMqNyZipKzq2
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.EcHFqsjra5TdEVdC
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _id: wT0SDpO9sZIdRVIG
+      createdTime: 1772925104807
+      modifiedTime: 1772925104848
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!A0N0QlLLdB170Ccf.wT0SDpO9sZIdRVIG'
-  - folder: GUKbDXrNXlTgfaW0
+    _id: 32fk9k1XShVR4mqt
+    sort: 500000
+    _key: '!actors.items!A0N0QlLLdB170Ccf.32fk9k1XShVR4mqt'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Hache +3 de feu intense
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_hache_48.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Te'Tipu</strong></p><ul><li><p>Bonus de +3 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +2d4° DM de feu</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 1250
+        unit: pa
+      rarity: veryRare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.SrE9SGq9MZ0KVSlL
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +3'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for +2d4° +3
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.jCode6n2dsMyas11
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925114846
+      modifiedTime: 1772925114883
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: SrE9SGq9MZ0KVSlL
+    sort: 800000
+    _key: '!actors.items!A0N0QlLLdB170Ccf.SrE9SGq9MZ0KVSlL'
+  - folder: fkaQ5zi2WGOp22kb
     name: Grand bouclier étourdissant
     type: equipment
-    img: icons/equipment/shield/heater-steel-boss-red.webp
-    _id: MKfo1Ld0zUk8sRmq
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armures/bouclier_29.webp
     system:
       description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
       source: ''
@@ -3660,7 +3670,8 @@ items:
         oneHand: false
         twoHand: false
       actions:
-        - source: Actor.A0N0QlLLdB170Ccf.Item.MKfo1Ld0zUk8sRmq
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.zM1ogmibPMjCbpDB
           indice: 0
           label: Lors d'une charge
           chatFlavor: ''
@@ -3706,23 +3717,28 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Item.jRm6HR7QTnRpYEDg
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9HPrWNhwFmqBnKZ6
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      createdTime: 1772925128269
+      modifiedTime: 1772925128313
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!A0N0QlLLdB170Ccf.MKfo1Ld0zUk8sRmq'
+    _id: zM1ogmibPMjCbpDB
+    sort: 200000
+    _key: '!actors.items!A0N0QlLLdB170Ccf.zM1ogmibPMjCbpDB'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Gq3QKHUI7V4CLita
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Gq3QKHUI7V4CLita
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

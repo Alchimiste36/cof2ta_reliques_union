@@ -193,9 +193,10 @@ system:
         prépare une cérémonie sur la place du village mélangeant une grande
         chorégraphie guerrière et synchronisée. </p><p>Grâce à ses recherches il
         a pu refaire vivre ce rituel pour la première fois l'année dernière.
-        </p><p>Il est amoureux de @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata} depuis
-        aussi longtemps qu'il s'en souvient et même s'il a un peu de mal à
-        suivre son rythme, à chaque fois qu'elle est là, le jeune Te'Whakama
+        </p><p>Il est amoureux de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}
+        depuis aussi longtemps qu'il s'en souvient et même s'il a un peu de mal
+        à suivre son rythme, à chaque fois qu'elle est là, le jeune Te'Whakama
         s'illumine.</p>
       public: <p>Mâle - 17 ans</p>
     appearance:
@@ -359,7 +360,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -1575,7 +1577,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ypV4yjxvuKazLU0B
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ypV4yjxvuKazLU0B
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2446,9 +2449,10 @@ items:
         prépare une cérémonie sur la place du village mélangeant une grande
         chorégraphie guerrière et synchronisée. </p><p>Grâce à ses recherches il
         a pu refaire vivre ce rituel pour la première fois l'année dernière.
-        </p><p>Il est amoureux de @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata} depuis
-        aussi longtemps qu'il s'en souvient et même s'il a un peu de mal à
-        suivre son rythme, à chaque fois qu'elle est là, le jeune Te'Whakama
+        </p><p>Il est amoureux de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}
+        depuis aussi longtemps qu'il s'en souvient et même s'il a un peu de mal
+        à suivre son rythme, à chaque fois qu'elle est là, le jeune Te'Whakama
         s'illumine.</p>
       source: ''
       origin: ''
@@ -2503,11 +2507,253 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!j3OVVzmkWhACNokh.aUVuDnfIVjnnUdkR'
+  - folder: OBPli02oRaBQq6Ee
+    name: Dague +2 de bouclier
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_epee_dague_61.webp
+    _id: s332c3jMHHFT9BNw
+    system:
+      description: >-
+        <p>Une dague <span class="hgKElc">est un couteau court à lame pointue
+        utilisé comme arme de perforation.</span></p><p><span class="hgKElc">Il
+        s'agit d'une arme "légère" ce qui permet à certains profils d'utiliser
+        l'agilité à la place e la force pour la manier.</span></p><p><span
+        class="hgKElc"><strong>Arrme légère</strong></span></p><hr
+        /><p><strong>Arme magique de Centaure -
+        Te'Whakama</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM.</p></li><li><p><strong>Bouclier de force (L) :</strong> une fine
+        pellicule de magie pure enveloppe l'utilisateur. Cette protection offre
+        un bonus de DEF magique de +3 pendant INT x3 minutes.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 1200
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.j3OVVzmkWhACNokh.Item.s332c3jMHHFT9BNw
+          indice: 0
+          label: Contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for +2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.j3OVVzmkWhACNokh.Item.s332c3jMHHFT9BNw
+          indice: 1
+          label: Distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 +2
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.j3OVVzmkWhACNokh.Item.s332c3jMHHFT9BNw
+          indice: 2
+          label: Bouclier de force
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: l
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.j3OVVzmkWhACNokh.Item.s332c3jMHHFT9BNw
+              subtype: combat
+              target: def
+              value: '3'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925872899
+      modifiedTime: 1772926159275
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!j3OVVzmkWhACNokh.s332c3jMHHFT9BNw'
+  - folder: GUKbDXrNXlTgfaW0
+    name: Armure de cuir renforcé
+    type: equipment
+    img: icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
+    _id: nT2soGPKm7xOe6vz
+    system:
+      description: ''
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: cuir-renforce-broigne
+      tags: []
+      subtype: armor
+      martialCategory: studdedLeather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 3
+      range: null
+      magicalDefense: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.jaRTjllWH3UdW9Kt
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925901106
+      modifiedTime: 1772925902386
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!j3OVVzmkWhACNokh.nT2soGPKm7xOe6vz'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.z1cpfnKDsGoXcHQ7
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.z1cpfnKDsGoXcHQ7
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

@@ -187,11 +187,12 @@ system:
         elle a un sacré caractère. Sa force de caractère lui permet de
         confronter son grand frère quand il est trop sévère ou qu'il manque à
         ses devoirs.</p><p>Elle est très ouverte d'esprit et un vrai modèle pour
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}. Elle est experte de toutes les
-        machines du village et elle passe beaucoup de temps avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1]{Karekau}.</p><p>Bonne cuisinière elle aime
-        les personne qui ont un bon coup de fourchette. Lorsque l'on arrive à
-        passer sa méfiance, elle est très rigolotte.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}.
+        Elle est experte de toutes les machines du village et elle passe
+        beaucoup de temps avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1]{Karekau}.</p><p>Bonne
+        cuisinière elle aime les personne qui ont un bon coup de fourchette.
+        Lorsque l'on arrive à passer sa méfiance, elle est très rigolotte.</p>
       public: <p>Femelle - 63 ans</p>
     appearance:
       private: ''
@@ -353,7 +354,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3049,116 +3051,6 @@ items:
     sort: 0
     _key: '!actors.items!gWWGE6tcGj7MOU2j.4rT1SAvvGpM4AR2Y'
   - folder: OBPli02oRaBQq6Ee
-    name: Bâton ferré +2
-    type: equipment
-    img: icons/weapons/staves/staff-ornate.webp
-    _id: sIJ1fDwbGF7m3gkm
-    system:
-      description: >-
-        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
-        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
-        est adapté au combat, plus lourd et généralement couvert de métal aux
-        extrémités (bien que les druides utilisent des bâtons de bois noueux
-        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
-        Miihini</strong></p><ul><li><p>Bonus de +2 en Attaque et
-        DM.</p></li></ul>
-      source: ''
-      origin: ''
-      slug: baton-ferre
-      tags:
-        - dmtemporairespossibles
-      subtype: weapon
-      martialCategory: ironStaff
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 2
-        unit: pa
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.gWWGE6tcGj7MOU2j.Item.sIJ1fDwbGF7m3gkm
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-            noChargesUsed: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              hasAttackSuccessThreshold: false
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.w1n2zzLplJJ4BFmt
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!gWWGE6tcGj7MOU2j.sIJ1fDwbGF7m3gkm'
-  - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
     img: icons/skills/melee/unarmed-punch-fist.webp
@@ -3273,11 +3165,12 @@ items:
         elle a un sacré caractère. Sa force de caractère lui permet de
         confronter son grand frère quand il est trop sévère ou qu'il manque à
         ses devoirs.</p><p>Elle est très ouverte d'esprit et un vrai modèle pour
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}. Elle est experte de toutes les
-        machines du village et elle passe beaucoup de temps avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1]{Karekau}.</p><p>Bonne cuisinière elle aime
-        les personne qui ont un bon coup de fourchette. Lorsque l'on arrive à
-        passer sa méfiance, elle est très rigolotte.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ]{Vaiata}.
+        Elle est experte de toutes les machines du village et elle passe
+        beaucoup de temps avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1]{Karekau}.</p><p>Bonne
+        cuisinière elle aime les personne qui ont un bon coup de fourchette.
+        Lorsque l'on arrive à passer sa méfiance, elle est très rigolotte.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3332,9 +3225,124 @@ items:
       lastModifiedBy: null
     _key: '!actors.items!gWWGE6tcGj7MOU2j.wGzJf3DAmIMQLrZF'
   - folder: fkaQ5zi2WGOp22kb
+    name: Bâton ferré +2
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_baton_156.webp
+    system:
+      description: >-
+        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
+        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
+        est adapté au combat, plus lourd et généralement couvert de métal aux
+        extrémités (bien que les druides utilisent des bâtons de bois noueux
+        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
+        Miihini</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM.</p></li></ul>
+      source: ''
+      origin: ''
+      slug: baton-ferre
+      tags:
+        - dmtemporairespossibles
+      subtype: weapon
+      martialCategory: ironStaff
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 2
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.GwwZ6gVr9Sr6wwJD
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DPsJCIVWFvy4kvkm
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925537590
+      modifiedTime: 1772925564503
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: GwwZ6gVr9Sr6wwJD
+    sort: 0
+    _key: '!actors.items!gWWGE6tcGj7MOU2j.GwwZ6gVr9Sr6wwJD'
+  - folder: fkaQ5zi2WGOp22kb
     name: Lance de tonnerre +1
     type: equipment
-    img: icons/weapons/polearms/spear-hooked-simple.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_tonnerre.webp
     system:
       description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Miihini</strong></p><ul><li><p>Bonus de +1 en Attaque et DM.</p></li><li><p>L'attaque inflige +2d4° DM de foudre. La cible réalise un test de CON difficulté 15 ou être étourdi pendant 1d4+1 rounds.</p></li></ul>"
       source: ''
@@ -3359,7 +3367,7 @@ items:
         value: 6
         unit: ''
       rarity: common
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
@@ -3379,7 +3387,8 @@ items:
           effects: 0
         value: 10
       actions:
-        - source: Actor.gWWGE6tcGj7MOU2j.Item.pbPSpE3IuxTfcP5s
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3390,7 +3399,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: false
+            visible: true
             enabled: false
             noManaCost: false
           conditions:
@@ -3417,7 +3426,8 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.gWWGE6tcGj7MOU2j.Item.pbPSpE3IuxTfcP5s
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3428,7 +3438,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: false
+            visible: true
             enabled: false
             noManaCost: false
           conditions:
@@ -3455,7 +3465,8 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.gWWGE6tcGj7MOU2j.Item.pbPSpE3IuxTfcP5s
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3466,7 +3477,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: false
+            visible: true
             enabled: false
             noManaCost: false
           conditions:
@@ -3493,7 +3504,8 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.gWWGE6tcGj7MOU2j.Item.pbPSpE3IuxTfcP5s
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
           indice: 3
           label: Sauvegarde
           chatFlavor: ''
@@ -3504,7 +3516,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: false
+            visible: true
             enabled: false
             noManaCost: false
           conditions:
@@ -3536,24 +3548,28 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.r3Rq4yizmLR6hhYv
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.r3Rq4yizmLR6hhYv
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      createdTime: 1772925558643
+      modifiedTime: 1772925564159
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: pbPSpE3IuxTfcP5s
-    sort: -100000
-    _key: '!actors.items!gWWGE6tcGj7MOU2j.pbPSpE3IuxTfcP5s'
+    _id: XHqMcVLrwTXE2jkI
+    sort: 6100000
+    _key: '!actors.items!gWWGE6tcGj7MOU2j.XHqMcVLrwTXE2jkI'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nVnugxCfNlRY7EyL
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nVnugxCfNlRY7EyL
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

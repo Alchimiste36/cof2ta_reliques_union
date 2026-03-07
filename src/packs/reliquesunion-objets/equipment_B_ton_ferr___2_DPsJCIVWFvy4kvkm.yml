@@ -1,0 +1,111 @@
+folder: fkaQ5zi2WGOp22kb
+name: Bâton ferré +2
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_baton_156.webp
+system:
+  description: >-
+    <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
+    le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
+    au combat, plus lourd et généralement couvert de métal aux extrémités (bien
+    que les druides utilisent des bâtons de bois noueux avec le même
+    effet).</p><hr /><p><strong>Arme magique de Centaure -
+    Miihini</strong></p><ul><li><p>Bonus de +2 en Attaque et DM.</p></li></ul>
+  source: ''
+  origin: ''
+  slug: baton-ferre
+  tags:
+    - dmtemporairespossibles
+  subtype: weapon
+  martialCategory: ironStaff
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 2
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Actor.gWWGE6tcGj7MOU2j.Item.sIJ1fDwbGF7m3gkm
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+        noChargesUsed: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1772925515622
+  modifiedTime: 1772925532544
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: DPsJCIVWFvy4kvkm
+sort: 0
+_key: '!items!DPsJCIVWFvy4kvkm'

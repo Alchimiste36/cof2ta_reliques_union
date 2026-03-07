@@ -1,0 +1,107 @@
+folder: fkaQ5zi2WGOp22kb
+name: Arc composite de feu +1
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_109.webp
+system:
+  description: >-
+    <p>Score minimum en FOR requis : 12.</p><hr /><p><strong>Arme magique de
+    Centaure - Ka'Huri</strong></p><ul><li><p>Bonus de +1 en attaque et
+    DM</p></li><li><p>+1d6 DM de feu</p></li></ul>
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: arc-court
+  tags: []
+  subtype: weapon
+  martialCategory: longBow
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: 20
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 600
+    unit: pa
+  rarity: rare
+  equipped: true
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 50
+  actions:
+    - source: Actor.2vLFu6uOkNcJhn7e.Item.4h8YovFwxVgr9iCn
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: true
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +1d6 +1
+          target:
+            type: single
+            number: 0
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1772925346624
+  modifiedTime: 1772925363216
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: yEIKrAj3Yzgxg9Si
+sort: 0
+_key: '!items!yEIKrAj3Yzgxg9Si'

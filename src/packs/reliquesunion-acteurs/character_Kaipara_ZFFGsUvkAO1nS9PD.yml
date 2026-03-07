@@ -179,26 +179,30 @@ system:
       unit: null
       min: null
       max: null
-      value: 80
+      value: 31
   details:
     biography:
       private: >-
-        <p>Kaipara et sa conjointe @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} sont
-        les deux experts en forge du village. Tous les villageois savent forger
-        un clou ou tordre une barre de fer mais mettez un marteau dans les mains
-        puissante de Kaipara et la forge devient un art subtil, respectueux,
-        presque mystique. Il semble ressentir la matière pour l'amener à se
-        plier mieux que sa propre volonté.</p><p>Ce centaure ne parle pas
-        beaucoup et il ne vaut mieux pas le déranger quand il affute une lame ou
-        réalise un trempe sinon il vous sortira de la forge à coup de sabot dans
-        le joufflu. Il a appris l'art des runes aux côtés de sa mère depuis son
-        plus jeune âge et transmets patiemment son savoir à deux de ses enfants,
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk]{Ka'Kata} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b]{Titiro}.</p><p>Depuis quelques temps, il
-        accueille le jeune @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW]{Mataro} dans la forge
-        et il semble fortement apprécier ce jeune sous tensions. Les blagues de
-        Kaipara sont catastrophiques mais il pense que ça va aider le jeune
-        garçon.</p>
+        <p>Kaipara et sa conjointe
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        sont les deux experts en forge du village. Tous les villageois savent
+        forger un clou ou tordre une barre de fer mais mettez un marteau dans
+        les mains puissante de Kaipara et la forge devient un art subtil,
+        respectueux, presque mystique. Il semble ressentir la matière pour
+        l'amener à se plier mieux que sa propre volonté.</p><p>Ce centaure ne
+        parle pas beaucoup et il ne vaut mieux pas le déranger quand il affute
+        une lame ou réalise un trempe sinon il vous sortira de la forge à coup
+        de sabot dans le joufflu. Il a appris l'art des runes aux côtés de sa
+        mère depuis son plus jeune âge et transmets patiemment son savoir à deux
+        de ses enfants,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk]{Ka'Kata}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b]{Titiro}.</p><p>Depuis
+        quelques temps, il accueille le jeune
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW]{Mataro}
+        dans la forge et il semble fortement apprécier ce jeune sous tensions.
+        Les blagues de Kaipara sont catastrophiques mais il pense que ça va
+        aider le jeune garçon.</p>
       public: <p>Mâle - 68 ans</p>
     appearance:
       private: ''
@@ -360,7 +364,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2973,112 +2978,6 @@ items:
     sort: 0
     _key: '!actors.items!ZFFGsUvkAO1nS9PD.C18qcpzUSjrLnVyz'
   - folder: OBPli02oRaBQq6Ee
-    name: Marteau +3 de tonnerre rapide
-    type: equipment
-    img: icons/weapons/hammers/hammer-double-engraved-gold.webp
-    _id: 5hbYvwNlW94rPD5f
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Kaipara</strong></p><ul><li><p>Bonus de +3 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +2d4° DM de foudre</p></li><li><p>Permet une
-        attaque gratuite supplémentaire pour round</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: marteau
-      tags: []
-      subtype: weapon
-      martialCategory: hammer
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 3700
-        unit: pa
-      rarity: unique
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.ZFFGsUvkAO1nS9PD.Item.5hbYvwNlW94rPD5f
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +3'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2d4° +3
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.BxOAk452unZ7zWOG
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!ZFFGsUvkAO1nS9PD.5hbYvwNlW94rPD5f'
-  - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
     img: icons/skills/melee/unarmed-punch-fist.webp
@@ -3109,7 +3008,7 @@ items:
         value: 0
         unit: ''
       rarity: common
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
@@ -3126,7 +3025,7 @@ items:
           type: melee
           actionType: a
           properties:
-            visible: false
+            visible: true
             enabled: false
             activable: true
             temporary: false
@@ -3177,7 +3076,8 @@ items:
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      modifiedTime: 1772925793604
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
@@ -3189,22 +3089,26 @@ items:
     _id: fzFQyh1gjspU73qi
     system:
       description: >-
-        <p>Kaipara et sa conjointe @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} sont
-        les deux experts en forge du village. Tous les villageois savent forger
-        un clou ou tordre une barre de fer mais mettez un marteau dans les mains
-        puissante de Kaipara et la forge devient un art subtil, respectueux,
-        presque mystique. Il semble ressentir la matière pour l'amener à se
-        plier mieux que sa propre volonté.</p><p>Ce centaure ne parle pas
-        beaucoup et il ne vaut mieux pas le déranger quand il affute une lame ou
-        réalise un trempe sinon il vous sortira de la forge à coup de sabot dans
-        le joufflu. Il a appris l'art des runes aux côtés de sa mère depuis son
-        plus jeune âge et transmets patiemment son savoir à deux de ses enfants,
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk]{Ka'Kata} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b]{Titiro}.</p><p>Depuis quelques temps, il
-        accueille le jeune @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW]{Mataro} dans la forge
-        et il semble fortement apprécier ce jeune sous tensions. Les blagues de
-        Kaipara sont catastrophiques mais il pense que ça va aider le jeune
-        garçon.</p>
+        <p>Kaipara et sa conjointe
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        sont les deux experts en forge du village. Tous les villageois savent
+        forger un clou ou tordre une barre de fer mais mettez un marteau dans
+        les mains puissante de Kaipara et la forge devient un art subtil,
+        respectueux, presque mystique. Il semble ressentir la matière pour
+        l'amener à se plier mieux que sa propre volonté.</p><p>Ce centaure ne
+        parle pas beaucoup et il ne vaut mieux pas le déranger quand il affute
+        une lame ou réalise un trempe sinon il vous sortira de la forge à coup
+        de sabot dans le joufflu. Il a appris l'art des runes aux côtés de sa
+        mère depuis son plus jeune âge et transmets patiemment son savoir à deux
+        de ses enfants,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk]{Ka'Kata}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b]{Titiro}.</p><p>Depuis
+        quelques temps, il accueille le jeune
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW]{Mataro}
+        dans la forge et il semble fortement apprécier ce jeune sous tensions.
+        Les blagues de Kaipara sont catastrophiques mais il pense que ça va
+        aider le jeune garçon.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3258,18 +3162,130 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!ZFFGsUvkAO1nS9PD.fzFQyh1gjspU73qi'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Marteau +3 de tonnerre rapide
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/marteau_tonnerre_kaipara.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Kaipara</strong></p><ul><li><p>Bonus de +3 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +2d4° DM de foudre</p></li><li><p>Permet une
+        attaque gratuite supplémentaire pour round</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: marteau
+      tags: []
+      subtype: weapon
+      martialCategory: hammer
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 3700
+        unit: pa
+      rarity: unique
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD.Item.IYtHbHc9lLkJfb31
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +3'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2d4° +3
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.mLeXbvhjm9qilW6k
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925782614
+      modifiedTime: 1772925791401
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: IYtHbHc9lLkJfb31
+    sort: 2800000
+    _key: '!actors.items!ZFFGsUvkAO1nS9PD.IYtHbHc9lLkJfb31'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gwSrhtEW8lmej4dY
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gwSrhtEW8lmej4dY
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1772925784469
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

@@ -183,9 +183,10 @@ system:
   details:
     biography:
       private: >-
-        <p><strong>Conjointe de @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti}, son
-        cousin,</strong> il leur ai interdit de se reproduire. Ca ne les empêche
-        pas de vivre un vrai amour depuis aussi longtemps qu'elle s'en
+        <p><strong>Conjointe de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tP0ihTOJIthKq66b]{Wakaweti},
+        son cousin,</strong> il leur ai interdit de se reproduire. Ca ne les
+        empêche pas de vivre un vrai amour depuis aussi longtemps qu'elle s'en
         souvient.</p><p>Elle soutient son conjoint et elle est aussi compétente
         que lui avec une lance, un épieu ou un arc entre les mains. Tous les
         matin dans la grotte de prière, ils se retrouvent tous les deux pour une
@@ -354,7 +355,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -1671,114 +1673,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!btvS9qEFveBlGv7J.w172jmDEJVUvLShO'
-  - folder: OBPli02oRaBQq6Ee
-    name: Rapière +2
-    type: equipment
-    img: icons/weapons/swords/scimitar-worn-blue.webp
-    _id: oYErhpY27dKigmfN
-    system:
-      description: >-
-        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
-        à la lame flexible, destinée essentiellement aux coups
-        d'estoc.</p><p></p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p>Arme magique des Centaure - Aroha</p><p>Bonus
-        de +2</p>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: rapiere
-      tags:
-        - legere
-      subtype: weapon
-      martialCategory: rapier
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 600
-        unit: pa
-      rarity: rare
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.btvS9qEFveBlGv7J.Item.oYErhpY27dKigmfN
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.G5IYsoyGoVsMqqqw
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!btvS9qEFveBlGv7J.oYErhpY27dKigmfN'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir renforcé
     type: equipment
@@ -1963,111 +1857,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!btvS9qEFveBlGv7J.cW9b250F8iNuEj9e'
-  - folder: srnxqMuZEh5AAU86
-    name: Arc long de critique +3
-    type: equipment
-    img: icons/weapons/bows/longbow-recurve-brown.webp
-    _id: YQEMJHjLL190YvsK
-    system:
-      description: >-
-        <p>Nécessite d'avoir FOR +1 minimum</p><hr /><p>Arme magique centaure -
-        Aroha</p><ul><li><p>Augmente la plage de critique de
-        1</p></li><li><p>Bonus de +3 en Attaque et DM.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: arc-long
-      tags: []
-      subtype: weapon
-      martialCategory: longBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: 20
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 5
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 50
-      actions:
-        - source: Actor.btvS9qEFveBlGv7J.Item.YQEMJHjLL190YvsK
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            visible: true
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-            noChargesUsed: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              hasAttackSuccessThreshold: false
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.unffhvhlSSi3uMMD
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 1100000
-    _key: '!actors.items!btvS9qEFveBlGv7J.YQEMJHjLL190YvsK'
   - name: Aiguille à coudre
     type: equipment
     img: icons/tools/hand/needle-grey.webp
@@ -2112,7 +1901,8 @@ items:
     folder: 2WEYYBHjuNosW3yi
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.37ieFieBKaqsriLp
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.37ieFieBKaqsriLp
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2168,7 +1958,8 @@ items:
     folder: 2WEYYBHjuNosW3yi
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.xA234uTldTkFbdFK
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.xA234uTldTkFbdFK
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2221,7 +2012,8 @@ items:
     folder: 2WEYYBHjuNosW3yi
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ErykeXVo9pJyt6E6
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ErykeXVo9pJyt6E6
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3648,11 +3440,234 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!btvS9qEFveBlGv7J.gHGOA8SX3JFm8G7U'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Arc long de critique +3
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_40.webp
+    system:
+      description: >-
+        <p>Nécessite d'avoir FOR +1 minimum</p><hr /><p><strong>Arme magique
+        centaure - Aroha</strong></p><ul><li><p>Augmente la plage de critique de
+        1</p></li><li><p>Bonus de +3 en Attaque et DM.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: arc-long
+      tags: []
+      subtype: weapon
+      martialCategory: longBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 50
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.HbLbQMNBh9m6QarL
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XcoS5rbSgWjfL6B0
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924376888
+      modifiedTime: 1772924381252
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: HbLbQMNBh9m6QarL
+    sort: 5700000
+    _key: '!actors.items!btvS9qEFveBlGv7J.HbLbQMNBh9m6QarL'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Rapière +2
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_22.webp
+    system:
+      description: >-
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups
+        d'estoc.</p><p><strong>Arme légère, seuil de critique
+        19-20</strong></p><hr /><p><strong>Arme magique des Centaure -
+        Aroha</strong></p><p>Bonus de +2</p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 600
+        unit: pa
+      rarity: rare
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.JLkcLIuvoNYNHN72
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.zO6UBxW2txzDjpCh
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924400398
+      modifiedTime: 1772924400444
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: JLkcLIuvoNYNHN72
+    sort: 5600000
+    _key: '!actors.items!btvS9qEFveBlGv7J.JLkcLIuvoNYNHN72'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.BQvEXdnPDfoBuIr0
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.BQvEXdnPDfoBuIr0
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

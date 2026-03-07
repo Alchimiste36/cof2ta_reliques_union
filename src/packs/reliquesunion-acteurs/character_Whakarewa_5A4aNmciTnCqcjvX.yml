@@ -179,25 +179,25 @@ system:
       unit: null
       min: null
       max: null
-      value: 550
+      value: 17
   details:
     biography:
       private: >-
         <p>Cette femelle centaure à la musculature discrète est capable de tenir
         un marteau de forge durant plusieurs jours sans avoir une seule
         courbature.</p><p>Contrairement à son conjoint
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara} elle est très exigeante et elle
-        peut se montrer hautaine voir méprisante face à un travail bâclé ou un
-        épuisement physique. Elle n'est pas là pour faire de la dentelle, des
-        runes ou des fioritures, sa forge est efficace, maîtrisée et
-        fonctionnelle.</p><p>On lui confie souvent la restauration des pièces
-        mécaniques des différentes machines du Village. Elle a entre autre
-        remplacé l'engrenage principal de la machine reliée à la roue de la
-        cascade. Sans aucune contradiction, Whakarewa est la cheffe de la forge
-        et il faudra son aval pour l'utiliser.</p><p>Leur différence de
-        caractère n'empêche par Kaipara et Whakarewa de s'aimer comme au premier
-        jour même si cette dernière est souvent atterrée par l'humour vaseux de
-        son conjoint.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara}
+        elle est très exigeante et elle peut se montrer hautaine voir méprisante
+        face à un travail bâclé ou un épuisement physique. Elle n'est pas là
+        pour faire de la dentelle, des runes ou des fioritures, sa forge est
+        efficace, maîtrisée et fonctionnelle.</p><p>On lui confie souvent la
+        restauration des pièces mécaniques des différentes machines du Village.
+        Elle a entre autre remplacé l'engrenage principal de la machine reliée à
+        la roue de la cascade. Sans aucune contradiction, Whakarewa est la
+        cheffe de la forge et il faudra son aval pour l'utiliser.</p><p>Leur
+        différence de caractère n'empêche par Kaipara et Whakarewa de s'aimer
+        comme au premier jour même si cette dernière est souvent atterrée par
+        l'humour vaseux de son conjoint.</p>
       public: <p>Femelle - 61 ans</p>
     appearance:
       private: ''
@@ -360,7 +360,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3483,328 +3484,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 100000
     _key: '!actors.items!5A4aNmciTnCqcjvX.sPom35n53MPJ54Rt'
-  - folder: OBPli02oRaBQq6Ee
-    name: Marteau à deux mains +2 de tonnerre grondant
-    type: equipment
-    img: icons/weapons/hammers/hammer-double-studded.webp
-    _id: biPMW0VwcwMyPVbB
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +2d4° aux DM de foudre</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: fleau-a-deux-mains
-      tags: []
-      subtype: weapon
-      martialCategory: greatFlail
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 2400
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.5A4aNmciTnCqcjvX.Item.biPMW0VwcwMyPVbB
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 3d4 + @for +2d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.GfSsTxWKqA3PIdjP
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!5A4aNmciTnCqcjvX.biPMW0VwcwMyPVbB'
-  - folder: OBPli02oRaBQq6Ee
-    name: Masse d'arme +2 de glace
-    type: equipment
-    img: icons/weapons/maces/mace-flanged-steel-grey.webp
-    _id: JsR0TlUDdDHud4OB
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +1d4° aux DM de froid</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: masse
-      tags: []
-      subtype: weapon
-      martialCategory: mace
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 900
-        unit: pa
-      rarity: rare
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.5A4aNmciTnCqcjvX.Item.JsR0TlUDdDHud4OB
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.yEXTX4LgPIPmeJat
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!5A4aNmciTnCqcjvX.JsR0TlUDdDHud4OB'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Chemise de mailles +2
-    type: equipment
-    img: icons/equipment/chest/breastplate-scale-grey.webp
-    system:
-      description: ''
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: chemise-de-mailles
-      tags: []
-      subtype: armor
-      martialCategory: chainShirt
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 500
-        unit: pa
-      rarity: exotic
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 4
-      range: null
-      magicalDefense: 2
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.gV1rdVNBr5YiPtRl
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _id: 0a7npNfR4lVVZPeS
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!5A4aNmciTnCqcjvX.0a7npNfR4lVVZPeS'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Grand bouclier de Whakarewa
-    type: equipment
-    img: icons/equipment/shield/heater-steel-boss-red.webp
-    _id: Nhe3y6gLZpwcnckT
-    system:
-      description: "<p><strong>Bouclier magique de Centaure - Whakarewa</strong></p><ul><li><p>Ce grand bouclier, réalisé d'un main de maître par Kaipara, est parcouru de runes complexes et subtiles. Un emplacement permet d'y accrocher la\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.i6WqMCbamwN00PGD]{Masse d'arme +2 de glace}.</p><p>Par une action gratuite, le bouclier apparait dans la main gauche de l'utilisateur, si ses mains sont libres, qui peut attraper directement la masse d'arme.</p></li><li><p>Bonus de DEF magique +2</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: grand-bouclier
-      tags: []
-      subtype: shield
-      martialCategory: largeShield
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1350
-        unit: pa
-      rarity: veryRare
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 2
-      range: null
-      magicalDefense: 2
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.jRm6HR7QTnRpYEDg
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!5A4aNmciTnCqcjvX.Nhe3y6gLZpwcnckT'
   - name: zBiographie
     type: capacity
     img: icons/sundries/books/book-open-purple.webp
@@ -3814,18 +3493,18 @@ items:
         <p>Cette femelle centaure à la musculature discrète est capable de tenir
         un marteau de forge durant plusieurs jours sans avoir une seule
         courbature.</p><p>Contrairement à son conjoint
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara} elle est très exigeante et elle
-        peut se montrer hautaine voir méprisante face à un travail bâclé ou un
-        épuisement physique. Elle n'est pas là pour faire de la dentelle, des
-        runes ou des fioritures, sa forge est efficace, maîtrisée et
-        fonctionnelle.</p><p>On lui confie souvent la restauration des pièces
-        mécaniques des différentes machines du Village. Elle a entre autre
-        remplacé l'engrenage principal de la machine reliée à la roue de la
-        cascade. Sans aucune contradiction, Whakarewa est la cheffe de la forge
-        et il faudra son aval pour l'utiliser.</p><p>Leur différence de
-        caractère n'empêche par Kaipara et Whakarewa de s'aimer comme au premier
-        jour même si cette dernière est souvent atterrée par l'humour vaseux de
-        son conjoint.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara}
+        elle est très exigeante et elle peut se montrer hautaine voir méprisante
+        face à un travail bâclé ou un épuisement physique. Elle n'est pas là
+        pour faire de la dentelle, des runes ou des fioritures, sa forge est
+        efficace, maîtrisée et fonctionnelle.</p><p>On lui confie souvent la
+        restauration des pièces mécaniques des différentes machines du Village.
+        Elle a entre autre remplacé l'engrenage principal de la machine reliée à
+        la roue de la cascade. Sans aucune contradiction, Whakarewa est la
+        cheffe de la forge et il faudra son aval pour l'utiliser.</p><p>Leur
+        différence de caractère n'empêche par Kaipara et Whakarewa de s'aimer
+        comme au premier jour même si cette dernière est souvent atterrée par
+        l'humour vaseux de son conjoint.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3879,18 +3558,361 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!5A4aNmciTnCqcjvX.0x53LlJMrpWSrn4C'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Grand bouclier de Whakarewa
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_bouclier_whakarewa.webp
+    system:
+      description: "<p><strong>Bouclier magique de Centaure - Whakarewa</strong></p><ul><li><p>Ce grand bouclier, réalisé d'un main de maître par Kaipara, est parcouru de runes complexes et subtiles. Un emplacement permet d'y accrocher la\_@UUID[Item.i6WqMCbamwN00PGD]{Masse d'arme +2 de glace}.</p><p>Par une action gratuite, le bouclier apparait dans la main gauche de l'utilisateur, si ses mains sont libres, qui peut attraper directement la masse d'arme.</p></li><li><p>Bonus de DEF magique +2</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: grand-bouclier
+      tags: []
+      subtype: shield
+      martialCategory: largeShield
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1350
+        unit: pa
+      rarity: veryRare
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+      magicalDefense: 2
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.iGvNTSNwuoOzkfKq
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925216130
+      modifiedTime: 1772925216130
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: evZKu9F7iNvU6zl2
+    sort: 5000000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.evZKu9F7iNvU6zl2'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Chemise de mailles +2
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_chemise_mailles_2.webp
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Whakarewa</strong></p><ul><li><p>Bonus de DEF magique +2</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: chemise-de-mailles
+      tags: []
+      subtype: armor
+      martialCategory: chainShirt
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 500
+        unit: pa
+      rarity: exotic
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 4
+      range: null
+      magicalDefense: 2
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PT8bOrxZTdlUEh4a
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925265346
+      modifiedTime: 1772925265346
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: gVOIQLniG1kgevJ6
+    sort: 4500000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.gVOIQLniG1kgevJ6'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Masse d'arme +2 de glace
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_masse_glace.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +1d4° aux DM de froid</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: masse
+      tags: []
+      subtype: weapon
+      martialCategory: mace
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 900
+        unit: pa
+      rarity: rare
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.kzlnPIH3HZMtipVr
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.i6WqMCbamwN00PGD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925279907
+      modifiedTime: 1772925279959
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: kzlnPIH3HZMtipVr
+    sort: 4800000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.kzlnPIH3HZMtipVr'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Marteau à deux mains +2 de tonnerre grondant
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_marteau_2_mains_tonnerre.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +2d4° aux DM de foudre</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: fleau-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatFlail
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 2400
+        unit: pa
+      rarity: veryRare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.jHNhvNVjhLFj7Pvx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 3d4 + @for +2d4° +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.6OkKzSlypxTBqVEV
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925288051
+      modifiedTime: 1772925288130
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: jHNhvNVjhLFj7Pvx
+    sort: 4100000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.jHNhvNVjhLFj7Pvx'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.PCoXZeY1iFNBwn9V
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.PCoXZeY1iFNBwn9V
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1772925212457
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

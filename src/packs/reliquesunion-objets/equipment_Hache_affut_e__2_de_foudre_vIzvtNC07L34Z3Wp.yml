@@ -1,66 +1,55 @@
 folder: fkaQ5zi2WGOp22kb
-name: Arc long +2 de glace
+name: Hache affutée +2 de foudre
 type: equipment
-img: icons/weapons/bows/longbow-recurve-brown.webp
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_hache_88.webp
 system:
   description: >-
-    <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p><strong>Arme magique de
-    Centaure - Kiliko</strong></p><ul><li><p>Bonus de +2 en Attaque et aux
-    DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li></ul>
+    <p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus de +2
+    en Attaque et aux DM</p></li><li><p>Augmentation de la plage de critique de
+    1</p></li><li><p>Bonus de +1d4° DM de foudre.</p></li></ul>
   source: ''
-  origin: Livre du Joueur p.158
-  slug: arc-long
+  origin: Livre du Joueur p.157
+  slug: hache
   tags: []
   subtype: weapon
-  martialCategory: longBow
-  damagetype: piercing
+  martialCategory: axe
+  damagetype: slashing
   quantity:
     current: 1
     max: 1
     destroyIfEmpty: false
   charges:
-    current: 20
+    current: null
     max: null
     destroyIfEmpty: false
   weight:
-    value: 3
+    value: 1
     unit: kg
   price:
-    value: 1150
+    value: 2400
     unit: pa
-  rarity: rare
-  equipped: false
+  rarity: veryRare
+  equipped: true
   properties:
     equipable: true
-    reloadable: true
+    reloadable: false
     stackable: false
   usage:
-    oneHand: false
-    twoHand: true
-  range:
-    base: 0
-    ability: null
-    details: null
-    unit: m
-    min: null
-    max: null
-    bonuses:
-      sheet: 0
-      effects: 0
-    value: 50
+    oneHand: true
+    twoHand: false
   actions:
-    - source: Actor.elGCQN2rjOxAynF3.Item.tZVW5vHpu6qok0bK
+    - source: Actor.G9TJ6YEFAnSIbNAM.Item.wO6K9FPsDycPK1Up
       indice: 0
       label: ''
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
-      type: ranged
+      type: melee
       actionType: a
       properties:
         activable: true
         temporary: false
         noChargesUsed: false
-        visible: false
+        visible: true
         enabled: false
         noManaCost: false
       conditions:
@@ -70,11 +59,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atd +2'
-            crit: ''
+            formula: '@atc +2'
+            crit: '19'
             difficulty: '@cible.def'
           dmg:
-            formula: 1d8 +1d4° +2
+            formula: 1d8 + @for +1d4° +2
           target:
             type: single
             number: 0
@@ -87,6 +76,17 @@ system:
             duration: '0'
             unit: round
       modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
 effects: []
 flags: {}
 _stats:
@@ -96,12 +96,12 @@ _stats:
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
-  createdTime: 1772222688398
-  modifiedTime: 1772223024394
+  createdTime: 1772924804344
+  modifiedTime: 1772924848691
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
-_id: tYdnIM3KzEQlINAg
-sort: 1200000
-_key: '!items!tYdnIM3KzEQlINAg'
+_id: vIzvtNC07L34Z3Wp
+sort: 400000
+_key: '!items!vIzvtNC07L34Z3Wp'

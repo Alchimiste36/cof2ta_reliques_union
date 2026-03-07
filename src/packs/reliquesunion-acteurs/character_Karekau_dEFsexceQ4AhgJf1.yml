@@ -184,16 +184,18 @@ system:
     biography:
       private: >-
         <p>Le doyen du village et père de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EhKag5p5a4F31dar]{Tumuaki}, malgré son grand âge c'est un
-        centaure respecté et il le sait. Il joue de sa position pour braver les
-        interdit avec une certaine malice. Au premiers abords on dirait qu'il
-        est très conservateur mais pourra prendre le parti des PJs si ça lui
-        permet d'embêter le chef du village.</p><p>Il a tendance à passer du
-        temps à observer les membres de sa famille et en particulier
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha} pour lui répéter à longueur de
-        journée qu'il aurait du être le chef pour que le village soit mieux géré
-        et sa fille, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe} pour grogner avec
-        elle sur l'avenir du village et sur sa maladie.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EhKag5p5a4F31dar]{Tumuaki},
+        malgré son grand âge c'est un centaure respecté et il le sait. Il joue
+        de sa position pour braver les interdit avec une certaine malice. Au
+        premiers abords on dirait qu'il est très conservateur mais pourra
+        prendre le parti des PJs si ça lui permet d'embêter le chef du
+        village.</p><p>Il a tendance à passer du temps à observer les membres de
+        sa famille et en particulier
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha}
+        pour lui répéter à longueur de journée qu'il aurait du être le chef pour
+        que le village soit mieux géré et sa fille,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}
+        pour grogner avec elle sur l'avenir du village et sur sa maladie.</p>
       public: <p>Mâle - 98 ans</p>
     appearance:
       private: ''
@@ -355,7 +357,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2842,383 +2845,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!dEFsexceQ4AhgJf1.HdNwQbNUSj2EOwiA'
-  - folder: OBPli02oRaBQq6Ee
-    name: Bâton ferré d'apaisement
-    type: equipment
-    img: icons/weapons/staves/staff-ornate.webp
-    _id: 2f0S63EL4o8ir34W
-    system:
-      description: >-
-        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
-        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
-        est adapté au combat, plus lourd et généralement couvert de métal aux
-        extrémités (bien que les druides utilisent des bâtons de bois noueux
-        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
-        Karekau</strong></p><ul><li><p>Le porteur de ce bâton ferré peut, par
-        une action limitée, faire dormir une cible qu'elle touche pendant 2d4
-        rounds. Après cette durée, une cible non volontaire peut réaliser un
-        test de CON difficulté 15 ou tomber dans l'inconscience pendant 4d6
-        heures. Karekau utilise cette faculté pour s'endormir malgré ses
-        douleurs et courbatures.</p></li></ul>
-      source: ''
-      origin: ''
-      slug: baton-ferre
-      tags:
-        - dmtemporairespossibles
-      subtype: weapon
-      martialCategory: ironStaff
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 450
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
-          indice: 1
-          label: Sauvegarde
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: spell
-          actionType: none
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: save
-              saveAbility: con
-              saveDifficulty: '15'
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: saveFailure
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses:
-                  - unconscious
-                duration: ''
-                unit: unlimited
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-              dmg: {}
-              hasAttackSuccessThreshold: false
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.w1n2zzLplJJ4BFmt
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!dEFsexceQ4AhgJf1.2f0S63EL4o8ir34W'
-  - folder: OBPli02oRaBQq6Ee
-    name: Épieu cérémonial du doyen
-    type: equipment
-    img: icons/weapons/polearms/spear-flared-blue.webp
-    _id: ZYICTYMsNnQIdVtQ
-    system:
-      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Karekau</strong></p><p>Cet épieu est, traditionnellement, porté par le doyen du village. Il n'est pas réellement plus puissant au combat mais il possède deux pouvoirs utilisent pour le village :</p><ul><li><p>Par une action limitée, le porteur peut frapper le sol avec la pointe de l'épieu et faire résonner/vibrer tout le sol du village tant qu'il frappe un tempo ou un rythme. Très utile pour les danses et chants lors des cérémonies même si Karekau, faute d'une grande oreille musicale, ne l'utilise pas souvent.</p></li><li><p>Par un rituel d'environ 10 minutes, le porteur de l'épieu cérémonial du doyen peut communiquer avec n'importe quel habitant étant né à Arkanov. Cette communication peut durée de façon illimitée tant que l'utilisateur de l'épieu est concentré. Cette faculté a rarement utilisée car le chef du village, Kiliko, a fortement encouragé le doyen d'arrêté d'importuner sans raison un bon nombre d'habitant du village de jour comme de nuit.</p></li></ul><p>Théoriquement rien ne prouve que ces pouvoirs fonctionnent en dehors du village mais c'est bien le cas.</p>"
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: epieu
-      tags: []
-      subtype: weapon
-      martialCategory: spear
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 950
-        unit: pa
-      rarity: unique
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 10
-      actions:
-        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              hasAttackSuccessThreshold: false
-          modifiers: []
-        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
-          indice: 1
-          label: vs Arme naturelle
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: true
-            temporary: true
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
-              subtype: combat
-              target: def
-              value: '2'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-        - source: Actor.dEFsexceQ4AhgJf1.Item.ZYICTYMsNnQIdVtQ
-          indice: 2
-          label: vs Cible sans armure
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 3d6
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              hasAttackSuccessThreshold: false
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.rER0ZDQnEw69zFWr
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!dEFsexceQ4AhgJf1.ZYICTYMsNnQIdVtQ'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Armure de cuir renforcé +3
-    type: equipment
-    img: icons/equipment/chest/breastplate-layered-leather-brown-silver.webp
-    _id: YMCkH96W808Z7n8X
-    system:
-      description: >-
-        <p><strong>Armure magique de Centaure -
-        Karekau</strong></p><ul><li><p>Bonus en DEF magique +3</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: cuir-renforce-broigne
-      tags: []
-      subtype: armor
-      martialCategory: studdedLeather
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 8
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 3
-      range: null
-      magicalDefense: 3
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.jaRTjllWH3UdW9Kt
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!dEFsexceQ4AhgJf1.YMCkH96W808Z7n8X'
   - name: zBiographie
     type: capacity
     img: icons/sundries/books/book-open-purple.webp
@@ -3226,16 +2852,18 @@ items:
     system:
       description: >-
         <p>Le doyen du village et père de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EhKag5p5a4F31dar]{Tumuaki}, malgré son grand âge c'est un
-        centaure respecté et il le sait. Il joue de sa position pour braver les
-        interdit avec une certaine malice. Au premiers abords on dirait qu'il
-        est très conservateur mais pourra prendre le parti des PJs si ça lui
-        permet d'embêter le chef du village.</p><p>Il a tendance à passer du
-        temps à observer les membres de sa famille et en particulier
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha} pour lui répéter à longueur de
-        journée qu'il aurait du être le chef pour que le village soit mieux géré
-        et sa fille, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe} pour grogner avec
-        elle sur l'avenir du village et sur sa maladie.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.EhKag5p5a4F31dar]{Tumuaki},
+        malgré son grand âge c'est un centaure respecté et il le sait. Il joue
+        de sa position pour braver les interdit avec une certaine malice. Au
+        premiers abords on dirait qu'il est très conservateur mais pourra
+        prendre le parti des PJs si ça lui permet d'embêter le chef du
+        village.</p><p>Il a tendance à passer du temps à observer les membres de
+        sa famille et en particulier
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C]{Kaha}
+        pour lui répéter à longueur de journée qu'il aurait du être le chef pour
+        que le village soit mieux géré et sa fille,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RThMzXURSyG4AjsL]{Kite'Tihe}
+        pour grogner avec elle sur l'avenir du village et sur sa maladie.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3375,11 +3003,407 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!dEFsexceQ4AhgJf1.2RaJuNZuAfjt7D0X'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Armure de cuir renforcé +3
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/armure_cuir_renforcee_73.webp
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Karekau</strong></p><ul><li><p>Bonus en DEF magique +3</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: cuir-renforce-broigne
+      tags: []
+      subtype: armor
+      martialCategory: studdedLeather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 3
+      range: null
+      magicalDefense: 3
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.kUc5WWwpL3L1jINL
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924727011
+      modifiedTime: 1772924727011
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: aLYPPgHlP6C8R2B9
+    sort: 1700000
+    _key: '!actors.items!dEFsexceQ4AhgJf1.aLYPPgHlP6C8R2B9'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Bâton ferré d'apaisement
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_glace.webp
+    system:
+      description: >-
+        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
+        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
+        est adapté au combat, plus lourd et généralement couvert de métal aux
+        extrémités (bien que les druides utilisent des bâtons de bois noueux
+        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
+        Karekau</strong></p><ul><li><p>Le porteur de ce bâton ferré peut, par
+        une action limitée, faire dormir une cible qu'elle touche pendant 2d4
+        rounds. Après cette durée, une cible non volontaire peut réaliser un
+        test de CON difficulté 15 ou tomber dans l'inconscience pendant 4d6
+        heures. Karekau utilise cette faculté pour s'endormir malgré ses
+        douleurs et courbatures.</p></li></ul>
+      source: ''
+      origin: ''
+      slug: baton-ferre
+      tags:
+        - dmtemporairespossibles
+      subtype: weapon
+      martialCategory: ironStaff
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 450
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.E0K3wTfuY3Sgv3lt
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.E0K3wTfuY3Sgv3lt
+          indice: 1
+          label: Sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - unconscious
+                unit: unlimited
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ux2J1WLq4wgV0eGk
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924740714
+      modifiedTime: 1772924743509
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: E0K3wTfuY3Sgv3lt
+    sort: 1800000
+    _key: '!actors.items!dEFsexceQ4AhgJf1.E0K3wTfuY3Sgv3lt'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Épieu cérémonial du doyen
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_glace_3.webp
+    system:
+      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Karekau</strong></p><p>Cet épieu est, traditionnellement, porté par le doyen du village. Il n'est pas réellement plus puissant au combat mais il possède deux pouvoirs utilisent pour le village :</p><ul><li><p>Par une action limitée, le porteur peut frapper le sol avec la pointe de l'épieu et faire résonner/vibrer tout le sol du village tant qu'il frappe un tempo ou un rythme. Très utile pour les danses et chants lors des cérémonies même si Karekau, faute d'une grande oreille musicale, ne l'utilise pas souvent.</p></li><li><p>Par un rituel d'environ 10 minutes, le porteur de l'épieu cérémonial du doyen peut communiquer avec n'importe quel habitant étant né à Arkanov. Cette communication peut durée de façon illimitée tant que l'utilisateur de l'épieu est concentré. Cette faculté a rarement utilisée car le chef du village, Kiliko, a fortement encouragé le doyen d'arrêté d'importuner sans raison un bon nombre d'habitant du village de jour comme de nuit.</p></li></ul><p>Théoriquement rien ne prouve que ces pouvoirs fonctionnent en dehors du village mais c'est bien le cas.</p>"
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: epieu
+      tags: []
+      subtype: weapon
+      martialCategory: spear
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 950
+        unit: pa
+      rarity: unique
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.ZlV2dz17BYj6dHvi
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.ZlV2dz17BYj6dHvi
+          indice: 1
+          label: vs Arme naturelle
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.ZlV2dz17BYj6dHvi
+              subtype: combat
+              target: def
+              value: '2'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.dEFsexceQ4AhgJf1.Item.ZlV2dz17BYj6dHvi
+          indice: 2
+          label: vs Cible sans armure
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 3d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.KcugKfHzKQsXTPiI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924748824
+      modifiedTime: 1772924750789
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: ZlV2dz17BYj6dHvi
+    sort: 1900000
+    _key: '!actors.items!dEFsexceQ4AhgJf1.ZlV2dz17BYj6dHvi'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tJpJlFACm4Cztfya
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.tJpJlFACm4Cztfya
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

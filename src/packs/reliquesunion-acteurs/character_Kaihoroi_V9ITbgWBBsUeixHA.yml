@@ -179,7 +179,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 80
+      value: 8
   details:
     biography:
       private: >-
@@ -192,12 +192,14 @@ system:
         même les noms d'oiseaux qu'il entend de la part de la famille de sa
         conjointe. </p><p>Il est très attentionné avec ses enfants et ne cache
         pas son empathie face aux douleurs de la grossesse de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi]{Haputanga}. Au village, il s'occupe
-        beaucoup du compost et il aime nettoyer les rues, les bâtiments et les
-        outils. </p><p>Un vrai maniaque qui apprécie que chaque chose soit à sa
-        place et bien propre. Lorsqu'il jardine au potager,
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nqHJEcBPmuo9cAKT]{Peka} ne cesse de la réprimander car pour
-        elle rien n'est aussi propre et ranger dans la nature.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi]{Haputanga}.
+        Au village, il s'occupe beaucoup du compost et il aime nettoyer les
+        rues, les bâtiments et les outils. </p><p>Un vrai maniaque qui apprécie
+        que chaque chose soit à sa place et bien propre. Lorsqu'il jardine au
+        potager,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nqHJEcBPmuo9cAKT]{Peka}
+        ne cesse de la réprimander car pour elle rien n'est aussi propre et
+        ranger dans la nature.</p>
       public: <p>Mâle - 31 ans</p>
     appearance:
       private: ''
@@ -360,7 +362,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2849,146 +2852,6 @@ items:
       lastModifiedBy: null
     _id: ZIMPONk1s7gYBF1n
     _key: '!actors.items!V9ITbgWBBsUeixHA.ZIMPONk1s7gYBF1n'
-  - folder: srnxqMuZEh5AAU86
-    name: Hachette +1 de retour de glace
-    type: equipment
-    img: icons/weapons/axes/axe-broad-black.webp
-    _id: 6b2GBGVdJngM9G1n
-    system:
-      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: hachette
-      tags: []
-      subtype: weapon
-      martialCategory: throwingAxe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 2
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 5
-      actions:
-        - source: Actor.V9ITbgWBBsUeixHA.Item.6b2GBGVdJngM9G1n
-          indice: 0
-          label: Distance
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 +1d4° +1
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: Actor.V9ITbgWBBsUeixHA.Item.6b2GBGVdJngM9G1n
-          indice: 1
-          label: Contact
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: l
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.79yAYoZo2gGRzmlm
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 200000
-    _key: '!actors.items!V9ITbgWBBsUeixHA.6b2GBGVdJngM9G1n'
   - folder: OBPli02oRaBQq6Ee
     name: Mains nues
     type: equipment
@@ -3150,146 +3013,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!V9ITbgWBBsUeixHA.ZCP71zfaeeZZKs6W'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Hachette +1 de retour acérée
-    type: equipment
-    img: icons/weapons/axes/axe-broad-black.webp
-    system:
-      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Augmentation de la plage de critique de +1</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: hachette
-      tags: []
-      subtype: weapon
-      martialCategory: throwingAxe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 2
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 5
-      actions:
-        - source: Actor.V9ITbgWBBsUeixHA.Item.D53nN42bL9C1xj9E
-          indice: 0
-          label: Distance
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd +1'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 +1
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: Actor.V9ITbgWBBsUeixHA.Item.D53nN42bL9C1xj9E
-          indice: 1
-          label: Contact
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: l
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +1'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VkY1PitR9jMH0jZQ
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: D53nN42bL9C1xj9E
-    sort: 0
-    _key: '!actors.items!V9ITbgWBBsUeixHA.D53nN42bL9C1xj9E'
   - name: zBiographie
     type: capacity
     img: icons/sundries/books/book-open-purple.webp
@@ -3305,12 +3028,14 @@ items:
         même les noms d'oiseaux qu'il entend de la part de la famille de sa
         conjointe. </p><p>Il est très attentionné avec ses enfants et ne cache
         pas son empathie face aux douleurs de la grossesse de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi]{Haputanga}. Au village, il s'occupe
-        beaucoup du compost et il aime nettoyer les rues, les bâtiments et les
-        outils. </p><p>Un vrai maniaque qui apprécie que chaque chose soit à sa
-        place et bien propre. Lorsqu'il jardine au potager,
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nqHJEcBPmuo9cAKT]{Peka} ne cesse de la réprimander car pour
-        elle rien n'est aussi propre et ranger dans la nature.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi]{Haputanga}.
+        Au village, il s'occupe beaucoup du compost et il aime nettoyer les
+        rues, les bâtiments et les outils. </p><p>Un vrai maniaque qui apprécie
+        que chaque chose soit à sa place et bien propre. Lorsqu'il jardine au
+        potager,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nqHJEcBPmuo9cAKT]{Peka}
+        ne cesse de la réprimander car pour elle rien n'est aussi propre et
+        ranger dans la nature.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3364,18 +3089,311 @@ items:
       systemVersion: '#{VERSION}#'
       lastModifiedBy: null
     _key: '!actors.items!V9ITbgWBBsUeixHA.ceEoZky0jQc9Ma96'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Hachette +1 de retour acérée
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_retour_aceree.webp
+    system:
+      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Augmentation de la plage de critique de +1</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: hachette
+      tags: []
+      subtype: weapon
+      martialCategory: throwingAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 2
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 5
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.VbDxtj2cRxgM4rvG
+          indice: 0
+          label: Distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +1'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 +1
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.VbDxtj2cRxgM4rvG
+          indice: 1
+          label: Contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: l
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +1'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VkY1PitR9jMH0jZQ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925733346
+      modifiedTime: 1772925742512
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: VbDxtj2cRxgM4rvG
+    sort: 2500000
+    _key: '!actors.items!V9ITbgWBBsUeixHA.VbDxtj2cRxgM4rvG'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Hachette +1 de retour de glace
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_retour_glace.webp
+    system:
+      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: hachette
+      tags: []
+      subtype: weapon
+      martialCategory: throwingAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 2
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 5
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.FjttW0L5oXqdBHdA
+          indice: 0
+          label: Distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 +1d4° +1
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.FjttW0L5oXqdBHdA
+          indice: 1
+          label: Contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: l
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1
+              target:
+                type: single
+                scope: all
+                number: 0
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ONqZy1b4vG7YOYoS
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772925735342
+      modifiedTime: 1772925735434
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: FjttW0L5oXqdBHdA
+    sort: 2200000
+    _key: '!actors.items!V9ITbgWBBsUeixHA.FjttW0L5oXqdBHdA'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nM4Gj5Vl8qTGkQpH
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nM4Gj5Vl8qTGkQpH
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1772925738583
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

@@ -186,16 +186,19 @@ system:
         <p>c'est un travailleur touche-à-tout qui peut passer de la scierie, à
         la tissanderie ou à la mine sans aucun problème. Il fait un boulot
         correct partout et il aime, comme sa mère
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} le travail bien fait et
-        efficace. </p><p>Depuis qu'il est en couple avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.4N3OVVj0dI5LPfNR]{Kamura}, il s'occupe car elle n'est pas
-        très disponible. Il apprécie travailler à ses côtés dans la scierie ou
-        au pressoir mais il est assez impuissant face à la distance qu'il y a
-        entre eux. Il n'ont pas d'enfants et ça ronge Iti depuis que son frère
-        et sa soeur ont fondé une famille. </p><p>Les trois enfants de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} se portent volontaire pour
-        "s'occuper" des PJs lorsqu'ils seront dans les mines à leur arrivée.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        le travail bien fait et efficace. </p><p>Depuis qu'il est en couple avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.4N3OVVj0dI5LPfNR]{Kamura},
+        il s'occupe car elle n'est pas très disponible. Il apprécie travailler à
+        ses côtés dans la scierie ou au pressoir mais il est assez impuissant
+        face à la distance qu'il y a entre eux. Il n'ont pas d'enfants et ça
+        ronge Iti depuis que son frère et sa soeur ont fondé une famille.
+        </p><p>Les trois enfants de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        se portent volontaire pour "s'occuper" des PJs lorsqu'ils seront dans
+        les mines à leur arrivée.</p>
       public: <p>Mâle - 38 ans</p>
     appearance:
       private: ''
@@ -357,7 +360,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2863,110 +2867,6 @@ items:
     sort: 0
     _key: '!actors.items!NOuO9E41cHVJuhh8.e9RgYgpkun6zcJ5v'
   - folder: srnxqMuZEh5AAU86
-    name: Arc long +2
-    type: equipment
-    img: icons/weapons/bows/longbow-recurve-brown.webp
-    _id: HfUjMtwnW8K8LCXw
-    system:
-      description: >-
-        <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p>Arme magique de Centaure
-        - Iti</p><ul><li><p>Bonus de +2 en Attaque et DM.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: arc-long
-      tags: []
-      subtype: weapon
-      martialCategory: longBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: 20
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 5
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 50
-      actions:
-        - source: Actor.NOuO9E41cHVJuhh8.Item.HfUjMtwnW8K8LCXw
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.unffhvhlSSi3uMMD
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 1100000
-    _key: '!actors.items!NOuO9E41cHVJuhh8.HfUjMtwnW8K8LCXw'
-  - folder: srnxqMuZEh5AAU86
     name: Couteaux de lancer
     type: equipment
     img: icons/weapons/daggers/dagger-bone-black.webp
@@ -3412,16 +3312,19 @@ items:
         <p>c'est un travailleur touche-à-tout qui peut passer de la scierie, à
         la tissanderie ou à la mine sans aucun problème. Il fait un boulot
         correct partout et il aime, comme sa mère
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} le travail bien fait et
-        efficace.</p><p>Depuis qu'il est en couple avec
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.4N3OVVj0dI5LPfNR]{Kamura}, il s'occupe car elle n'est pas
-        très disponible. Il apprécie travailler à ses côtés dans la scierie ou
-        au pressoir mais il est assez impuissant face à la distance qu'il y a
-        entre eux. Il n'ont pas d'enfants et ça ronge Iti depuis que son frère
-        et sa soeur ont fondé une famille.</p><p>Les trois enfants de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara} et
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa} se portent volontaire pour
-        "s'occuper" des PJs lorsqu'ils seront dans les mines à leur arrivée.</p>
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        le travail bien fait et efficace.</p><p>Depuis qu'il est en couple avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.4N3OVVj0dI5LPfNR]{Kamura},
+        il s'occupe car elle n'est pas très disponible. Il apprécie travailler à
+        ses côtés dans la scierie ou au pressoir mais il est assez impuissant
+        face à la distance qu'il y a entre eux. Il n'ont pas d'enfants et ça
+        ronge Iti depuis que son frère et sa soeur ont fondé une
+        famille.</p><p>Les trois enfants de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD]{Kaipara}
+        et
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX]{Whakarewa}
+        se portent volontaire pour "s'occuper" des PJs lorsqu'ils seront dans
+        les mines à leur arrivée.</p>
       source: ''
       origin: ''
       slug: ''
@@ -3580,11 +3483,121 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!NOuO9E41cHVJuhh8.Ur4hYdbjL0jRGMw8'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Arc long +2
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_104.webp
+    system:
+      description: >-
+        <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p><strong>Arme magique de
+        Centaure - Iti</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: arc-long
+      tags: []
+      subtype: weapon
+      martialCategory: longBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 50
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.NOuO9E41cHVJuhh8.Item.mksEwBDWalkIu5Wq
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.4hxFyiABHVD9hHRM
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924206889
+      modifiedTime: 1772924206936
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: mksEwBDWalkIu5Wq
+    sort: 2000000
+    _key: '!actors.items!NOuO9E41cHVJuhh8.mksEwBDWalkIu5Wq'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.PL2XneyOs3rbecnt
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.PL2XneyOs3rbecnt
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

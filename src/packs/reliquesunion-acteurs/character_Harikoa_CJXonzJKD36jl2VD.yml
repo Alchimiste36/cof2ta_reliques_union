@@ -187,22 +187,25 @@ system:
         <strong>optimiste et plutôt joyeuse au quotidien. Elle n'a jamais
         vraiment eu beaucoup d'amie et quand elle était petite elle essayait de
         trainer avec sa grande soeur.</strong></p><p>A 18 ans, elle passa une
-        journée avec @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HhfWAaUYHXKxHMFj]{Hei Tunu} pour l'aider à
-        gérer les préparations de l'Alambic. La jeune Harikoa est tombée
-        amoureuse de cette machine et de la transformation qu'elle permet.
-        <strong>L'étude des plantes et de leurs extraits, la distillation des
-        huiles, la fermentation des céréales, le dosage pour rendre délicieux
-        une bière râpeuse…</strong> autant de chose qu'elle étudie, expérimente
-        et teste presque tous les jours aux côtés de Hei Tunu. Elle doit faire
-        d'autres tâches pour la communauté mais à chaque instant ses pensées
-        sont tourner vers la prochaine recette qu'elle va modifier ou
-        inventer.</p><p><strong>L'une des huiles essentielles porte son nom
-        {l'Harikoa}.</strong> Elle a découvert, avec l'aide et le soutien de
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.T99bZAdCe7gkYs3V]{Kara} une huile qui permet de détendre
-        tous les muscles du corps après inhalation pendant plusieurs minutes et
-        accentue l'agilité et la précision de consommateur. Très appréciée des
-        travailleurs et des combattants, cette huile, extraite d'une racine et
-        mélangée à des spores de champignons, est assez rare.</p>
+        journée avec
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HhfWAaUYHXKxHMFj]{Hei
+        Tunu} pour l'aider à gérer les préparations de l'Alambic. La jeune
+        Harikoa est tombée amoureuse de cette machine et de la transformation
+        qu'elle permet. <strong>L'étude des plantes et de leurs extraits, la
+        distillation des huiles, la fermentation des céréales, le dosage pour
+        rendre délicieux une bière râpeuse…</strong> autant de chose qu'elle
+        étudie, expérimente et teste presque tous les jours aux côtés de Hei
+        Tunu. Elle doit faire d'autres tâches pour la communauté mais à chaque
+        instant ses pensées sont tourner vers la prochaine recette qu'elle va
+        modifier ou inventer.</p><p><strong>L'une des huiles essentielles porte
+        son nom {l'Harikoa}.</strong> Elle a découvert, avec l'aide et le
+        soutien de
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.T99bZAdCe7gkYs3V]{Kara}
+        une huile qui permet de détendre tous les muscles du corps après
+        inhalation pendant plusieurs minutes et accentue l'agilité et la
+        précision de consommateur. Très appréciée des travailleurs et des
+        combattants, cette huile, extraite d'une racine et mélangée à des spores
+        de champignons, est assez rare.</p>
       public: <p>Femelle - 24 ans</p>
     appearance:
       private: ''
@@ -364,7 +367,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -1557,122 +1561,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!CJXonzJKD36jl2VD.ColZligXwufukqf5'
-  - type: equipment
-    system:
-      subtype: consumable
-      description: "<p>Cette huile essentielle a été créée par la jeune @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.CJXonzJKD36jl2VD]{Harikoa} grâce à l'Alambic du village d'Arkanov.</p><p>Un savant mélange d'une huile extraite d'une racine et mélangée à des spore de champignons, cette huile, une fois inhalée permet de détendre tous les muscles du corps et accroit ainsi l'agilité et a précision du consommateur pour plusieurs minutes.</p><p>Consommée de temps en temps par les artisans pour une réalisation très minutieuse ou pas les combattants pour leur danse de combat lors de cérémonie, l'Huile Harikoa est assez facile à réaliser (même si le dosage est précis) mais le manque de spores de ce champignon spécifique en fait un produit assez rare.</p><p>\_</p><p><strong>Lorsque l'Harikoa est appliquée sur la nuque (Action de mouvement) =&gt; DEX +4 pendant 5d6 + 10 rounds (/r 5d6+10)</strong></p>"
-      source: ''
-      origin: ''
-      slug: ''
-      tags: []
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 10
-        destroyIfEmpty: false
-        max: null
-      charges:
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 250
-        unit: pa
-      rarity: rare
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: true
-      usage:
-        oneHand: false
-        twoHand: false
-      range: null
-      actions:
-        - source: Actor.CJXonzJKD36jl2VD.Item.pGLKZJAOiW8U0f3a
-          indice: 0
-          label: DEX +4
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: m
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: equipment
-              source: Actor.CJXonzJKD36jl2VD.Item.pGLKZJAOiW8U0f3a
-              subtype: ability
-              target: agi
-              value: '4'
-              apply: self
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              target:
-                type: self
-                number: 0
-                scope: all
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: 5d4 +10
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-              dmg: {}
-              hasAttackSuccessThreshold: false
-            - type: consumable
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: ''
-              target:
-                type: none
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-    name: L'Harikoa
-    img: icons/consumables/potions/bottle-metal-yellow-gray.webp
-    _id: pGLKZJAOiW8U0f3a
-    effects: []
-    folder: null
-    sort: 0
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    _key: '!actors.items!CJXonzJKD36jl2VD.pGLKZJAOiW8U0f3a'
   - folder: OBPli02oRaBQq6Ee
     name: Dague
     type: equipment
@@ -2031,64 +1919,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 800000
     _key: '!actors.items!CJXonzJKD36jl2VD.cBq4X5x7oBoR09C4'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Armure de cuir +2
-    type: equipment
-    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
-    _id: pepcpyX7vHMhcgrz
-    system:
-      description: >-
-        <p>Armure magique de Centaure - Harikoa</p><ul><li><p>Bonus de DEF
-        magique +2</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: cuir-simple
-      tags: []
-      subtype: armor
-      martialCategory: leather
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 4
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 2
-      range: null
-      magicalDefense: 2
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.AkaF6hw8bOIgt6ET
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!CJXonzJKD36jl2VD.pepcpyX7vHMhcgrz'
   - folder: 8DZlr3ptfsd78d8T
     name: Potion de chute ralentie
     type: equipment
@@ -2172,7 +2002,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.rVKUoQlpltgiGWxi
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.rVKUoQlpltgiGWxi
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2277,7 +2108,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.NzSVz5qYfFIVB4zR
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.NzSVz5qYfFIVB4zR
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2404,7 +2236,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PoBoh8GU32ESjFSz
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PoBoh8GU32ESjFSz
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2512,7 +2345,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.T0XfJ2pzsnsb3mHc
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.T0XfJ2pzsnsb3mHc
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2620,7 +2454,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.wEXxlf0w1eicws7Z
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.wEXxlf0w1eicws7Z
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2730,7 +2565,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DlXoWlw9SCsibu9l
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DlXoWlw9SCsibu9l
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2836,7 +2672,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.D3m8oYkRs04K04gL
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.D3m8oYkRs04K04gL
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -2969,7 +2806,8 @@ items:
       MdLP35I2yaa8z7GV: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.cDJ3yzzqkqpHn5nK
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.cDJ3yzzqkqpHn5nK
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -4352,11 +4190,190 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!CJXonzJKD36jl2VD.YY81PITCVnc3GXzf'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Armure de cuir +2
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cuir_2.webp
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Harikoa</strong></p><ul><li><p>Bonus de DEF magique +2</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+      magicalDefense: 2
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.BYYpVYeRW3QYMnSS
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924470055
+      modifiedTime: 1772924470055
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: JFYJsicEVe7w7Aob
+    sort: 5500000
+    _key: '!actors.items!CJXonzJKD36jl2VD.JFYJsicEVe7w7Aob'
+  - type: equipment
+    system:
+      subtype: consumable
+      description: "<p>Cette huile essentielle a été créée par la jeune @UUID[Actor.CJXonzJKD36jl2VD]{Harikoa} grâce à l'Alambic du village d'Arkanov.</p><p>Un savant mélange d'une huile extraite d'une racine et mélangée à des spore de champignons, cette huile, une fois inhalée permet de détendre tous les muscles du corps et accroit ainsi l'agilité et a précision du consommateur pour plusieurs minutes.</p><p>Consommée de temps en temps par les artisans pour une réalisation très minutieuse ou pas les combattants pour leur danse de combat lors de cérémonie, l'Huile Harikoa est assez facile à réaliser (même si le dosage est précis) mais le manque de spores de ce champignon spécifique en fait un produit assez rare.</p><p>\_</p><p><strong>Lorsque l'Harikoa est appliquée sur la nuque (Action de mouvement) =&gt; DEX +4 pendant 5d6 + 10 rounds (/r 5d6+10)</strong></p>"
+      source: ''
+      origin: ''
+      slug: ''
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 10
+        destroyIfEmpty: false
+        max: null
+      charges:
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 250
+        unit: pa
+      rarity: rare
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.CJXonzJKD36jl2VD.Item.A3LhB97lvAcEsF04
+          indice: 0
+          label: DEX +4
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: m
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.CJXonzJKD36jl2VD.Item.A3LhB97lvAcEsF04
+              subtype: ability
+              target: agi
+              value: '4'
+              apply: self
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: 5d4 +10
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+            - type: consumable
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+    name: Harikoa
+    img: modules/cof2ta_reliques_union/assets/ru_objets/consommables/potion_21.webp
+    effects: []
+    folder: fkaQ5zi2WGOp22kb
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.63JGxc64FtIoIV4r
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924481874
+      modifiedTime: 1772924481919
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: A3LhB97lvAcEsF04
+    sort: 5300000
+    _key: '!actors.items!CJXonzJKD36jl2VD.A3LhB97lvAcEsF04'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.yOcrS6I3guFnlFKt
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.yOcrS6I3guFnlFKt
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'

@@ -184,18 +184,19 @@ system:
     biography:
       private: >-
         <p>Elle adore préparer les repas dans la cuisine collective aux côtés de
-        son père, @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vU8X9FHu74kiJtcM]{Kai}. Ils partagent se plaisir
-        d'adapter les recettes en fonction des goûts des villageois et de varier
-        en fonction des fruits ou légumes de saison. </p><p>Elle, comme son
-        père, est une combattante très douée et elle a remporté beaucoup de
-        combat lors des cérémonies du village. Elle se lève tous les jours très
-        tôt pour récolter quelques légumes, s'occuper de la cuisine puis, avant
-        de préparer les repas du soir, on peut la trouver dans les murailles à
-        faire du sport et des entrainements pour développer sa souplesse et ses
-        techniques peu conventionnelles. </p><p>Très peu musclée, Maamaa est
-        d'une rare souplesse. Elle peut bondir, glisser ou manoeuvrer autour
-        d'un adversaire en évitant tous ses coups. </p><p>Elle est extrêmement
-        douée un arc à la main, également.</p>
+        son père,
+        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vU8X9FHu74kiJtcM]{Kai}.
+        Ils partagent se plaisir d'adapter les recettes en fonction des goûts
+        des villageois et de varier en fonction des fruits ou légumes de saison.
+        </p><p>Elle, comme son père, est une combattante très douée et elle a
+        remporté beaucoup de combat lors des cérémonies du village. Elle se lève
+        tous les jours très tôt pour récolter quelques légumes, s'occuper de la
+        cuisine puis, avant de préparer les repas du soir, on peut la trouver
+        dans les murailles à faire du sport et des entrainements pour développer
+        sa souplesse et ses techniques peu conventionnelles. </p><p>Très peu
+        musclée, Maamaa est d'une rare souplesse. Elle peut bondir, glisser ou
+        manoeuvrer autour d'un adversaire en évitant tous ses coups. </p><p>Elle
+        est extrêmement douée un arc à la main, également.</p>
       public: <p>Femelle - 39 ans</p>
     appearance:
       private: ''
@@ -357,7 +358,8 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AY7zWFCcUHOl3kbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
@@ -3093,111 +3095,6 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 550000
     _key: '!actors.items!h7x0EB6tAL2BuJkZ.vs1t6s4xZ4sMfqZX'
-  - folder: srnxqMuZEh5AAU86
-    name: Arc court +2
-    type: equipment
-    img: icons/weapons/bows/shortbow-arrows-black.webp
-    _id: q6lmWbwld0l05aKF
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Maamaa</strong></p><ul><li><p>Bonus de +2 en Attaque et
-        DM.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.158
-      slug: arc-court
-      tags: []
-      subtype: weapon
-      martialCategory: shortBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: 20
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 4
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 30
-      actions:
-        - source: Actor.h7x0EB6tAL2BuJkZ.Item.q6lmWbwld0l05aKF
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atd +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.qTYcU22ZD6OainA8
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.351'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 350000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.q6lmWbwld0l05aKF'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
     type: equipment
@@ -3414,9 +3311,119 @@ items:
     sort: 375000
     _key: '!actors.items!h7x0EB6tAL2BuJkZ.5vyBEMmujSI91QNP'
   - folder: fkaQ5zi2WGOp22kb
-    name: Rapière Aiguisée de glace
+    name: Arc court +2
     type: equipment
-    img: icons/weapons/swords/scimitar-worn-blue.webp
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_117.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Maamaa</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.158
+      slug: arc-court
+      tags: []
+      subtype: weapon
+      martialCategory: shortBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 30
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.tkIy2CLOQdE8XqjF
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 +2
+              target:
+                type: single
+                number: 0
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.CwUpZNp6vg2gAj5b
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1772924114397
+      modifiedTime: 1772924137882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: tkIy2CLOQdE8XqjF
+    sort: 2475000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.tkIy2CLOQdE8XqjF'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Rapière Aiguisée de feu
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_feu_aiguisee.webp
     system:
       description: >-
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
@@ -3424,7 +3431,7 @@ items:
         d'estoc.</p><p><strong>Arme légère, seuil de critique
         19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
         Maamaa</strong></p><ul><li><p>Bonus de +1d4° DM de
-        glace</p></li><li><p>Augmentation de la plage de critique de
+        feu</p></li><li><p>Augmentation de la plage de critique de
         1</p></li></ul>
       source: ''
       origin: Livre du Joueur p.157
@@ -3458,7 +3465,8 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.h7x0EB6tAL2BuJkZ.Item.zwmQd3JhTOocmsUI
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.AcF7izPYJAmDGuKA
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3510,23 +3518,27 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9RQSi7ZhhezzkG1P
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.3yGwPPr5v4GQCsbb
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      createdTime: 1772924124590
+      modifiedTime: 1772924134837
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: zwmQd3JhTOocmsUI
-    sort: 275000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.zwmQd3JhTOocmsUI'
+    _id: AcF7izPYJAmDGuKA
+    sort: 5100000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.AcF7izPYJAmDGuKA'
   - folder: fkaQ5zi2WGOp22kb
-    name: Rapière Aiguisée de feu
+    name: Rapière Aiguisée de glace
     type: equipment
-    img: icons/weapons/swords/scimitar-worn-blue.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_glace_aiguisee.webp
     system:
       description: >-
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
@@ -3534,7 +3546,7 @@ items:
         d'estoc.</p><p><strong>Arme légère, seuil de critique
         19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
         Maamaa</strong></p><ul><li><p>Bonus de +1d4° DM de
-        feu</p></li><li><p>Augmentation de la plage de critique de
+        glace</p></li><li><p>Augmentation de la plage de critique de
         1</p></li></ul>
       source: ''
       origin: Livre du Joueur p.157
@@ -3559,7 +3571,7 @@ items:
         value: 450
         unit: pa
       rarity: rare
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
@@ -3568,7 +3580,8 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.h7x0EB6tAL2BuJkZ.Item.zW392ZTr6nHJQqkg
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.OiTeF69KRTqTCfBo
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3579,7 +3592,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: false
+            visible: true
             enabled: false
             noManaCost: false
           conditions:
@@ -3620,24 +3633,28 @@ items:
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.3yGwPPr5v4GQCsbb
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9RQSi7ZhhezzkG1P
       duplicateSource: null
       exportSource: null
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      createdTime: 1772924126589
+      modifiedTime: 1772924126633
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: zW392ZTr6nHJQqkg
-    sort: 325000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.zW392ZTr6nHJQqkg'
+    _id: OiTeF69KRTqTCfBo
+    sort: 4400000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.OiTeF69KRTqTCfBo'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
 _stats:
-  compendiumSource: Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.OSN1NT8DsUrvzzBc
+  compendiumSource: >-
+    Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.OSN1NT8DsUrvzzBc
   duplicateSource: null
   exportSource: null
   coreVersion: '13.351'
