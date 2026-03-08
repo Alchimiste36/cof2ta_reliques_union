@@ -1,5 +1,5 @@
 <h2>Campagne - COF2 Terres d'Arran</h2>
-<h1>Les Reliques de l'Union</h1>
+<h1>Les Reliques de l'Union - version 0.5.0</h1>
 
 <p>Vivez une grande aventure des l'univers des Terres d'Arran qui mènera votre groupe de joueurs sur les traces d'un secret enfoui depuis des centaines d'années.</p>
 <p>Couçu pour un groupe de 3 à 5 personnages de niveau 1, la campagne Les Reliques de l'Union fera évoluer les aventuriers jusqu'au niveau 13-14 après de nombreuses péripéties. De simples habitants du nord de l'Ourann, cette aventure les transformera en légende.</p>
@@ -39,6 +39,13 @@
         <p>et beaucoup d'autres choses pour faciliter la vie du MJ.</p>
       </li>
 </ul>
+</ul>
+
+<h2>Contributeurs</h2>
+<ul>
+<li>Ce module d'aventure a été imaginé, organisé et réalisé par L'Alchimiste</li>
+<li>Avec la participation et le savoir technique de Kristov.</li>
+
 <h2>Informations importantes</h2>
 <h3>Droits et diffusion</h3>
 <p>Les illustrations ont été réalisées une par une avec l'aide de Midjourney et de chatGPT. Chacune a été retravaillée, modifiée et intégrée manuellement. Elles sont liées à cette campagne et ne peut pas être utilisées, vendues ou partagées sans autorisation pour un autre usage.</p>
@@ -49,3 +56,10 @@
 <p>L'histoire aborde des problématiques liées au racisme, à la montée de l'intolérance et des discriminations envers les anciennes races qui mèneront progressivement aux Guerres d'Arran. La campagne convient exclusivement pour des groupes de joueurs voulant incarner des personnages avec des valeurs humanistes prcohes de celles des héros des BD. Même s'ils pourront prendre les traits de "sales types" (ambitieux, égoïstes, colériques, impulsifs...), les PJ devront être prêts à défendre un monde stable proche de la paix face à un autoritarisme ségrégationniste.</p>
 <p>Certaines parties des Reliques de l'Union peuvent mettre le lecteur ou les PJ devant des situations violentes et malsaines. Il est bien sûr possible d'adapter certains passages pour satisfaire la sensibilité de chacun. Aucune images ou illustration n'est choquant implicitement ou explicitement (pas d'illustration sensuelle ou sexuelle, pas d'image sanglante, gore ou violente...).</p>
 <p>Pour finir, une attention particulière a été prise pour remplir cette campagne de PNJ crédibles de nombreux peuples et ethnies avec leurs talents, leurs personnalités et leurs défauts qu'ils soient masculins ou féminins en essayant, au maximum, de s'éloigner des stéréotypes de la fantasy. Inspiré des BD de l'univers des Terres d'Arran, les plus grands héros pourront être des gobelins, des humains, des nains, des femmes, des hommes, petits ou grands, combattants ou gringalets...</p>
+
+<h2>Licences</h2>
+<ul>
+<li>Le code HTML, CSS et Javascript de ce projet est placé sous <a href="https://choosealicense.com/licenses/gpl-3.0/">licence GNU General Public License v3.0</a></li>
+
+<li>Le support de Foundry VTT est couvert par la licence suivante : <a href="https://foundryvtt.com/article/license/">Accord de licence limitée pour le développement de modules du 17/02/2021</a>.</li>
+</ul>

@@ -1,3 +1,6 @@
-# 1.0.0
+# 0.5.0
 
-- Sortie officielle du module
+- Campagne mise en page 50%
+- Acteurs, Objets, Journaux, Scènes 50% et vérifiées
+- Chapitres 1 à 4
+- CSS complété
