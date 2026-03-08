@@ -1,3 +1,7 @@
+# 0.5.1
+
+- Modification des fichiers de la release
+
 # 0.5.0
 
 - Campagne mise en page 50%
