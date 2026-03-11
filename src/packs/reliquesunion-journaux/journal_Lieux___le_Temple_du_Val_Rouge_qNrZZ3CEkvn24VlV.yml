@@ -1,5 +1,5 @@
-folder: 7O5U5SmIY1fmdKzj
-name: Temple du Val Rouge
+folder: TBOUL2Q2QF2hkm7r
+name: 'Lieux : le Temple du Val Rouge'
 flags: {}
 pages:
   - type: text
@@ -7,12 +7,52 @@ pages:
     flags: {}
     _id: COPA0WiReOOfBbpu
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div class=\"salledescr\"><p><strong>Description :</strong></p><p>Vous arrivez dans une grande pièce de 12m par 12m carré. Les parois, d’environ 6m de haut, sont faites de pierres et lorsque vous descendez vous remarquez directement les lanternes accrochées aux murs qui s’allument et brûlent pour éclairant la pièce. Aucune fumée ne se dégage des lanternes et l’air semble particulièrement pur et frais. Le sol est en carreaux de pierres finement taillées dont les joints laissent pousser de la mousse. Lorsque vous arrivez en bas de l’escalier, un bruit de bois se fait entendre et la racine libérant l’escalier se referme.</p><p>Au nord et à l’ouest il y a de grandes doubles portes. A l’est, vous remarquez une avancée de 8m de large qui semble donner sur une immense pièce éclairée et une porte simple. et au sud, un passage de 4m de large donne sur une autre pièce. Chaque ouverture (passages ou portes) fait 4m de haut environ.</p></div><div class=\"sallemj\"><section class=\"secret\" id=\"secret-7Mw4MTwKi6qn6zHH\"><p><strong>Notes pour le MJs :</strong></p><p>Les lanternes s’allument lorsque l’on emprunte l’escalier. Elles sont magiques et peuvent illuminer à volonté. Ce sont les mêmes dans tout le temple. Elles s’allument lorsqu’on rentre dans une pièce.</p><ul><li><p><span style=\"font-family:Arial\"><strong>@Test[car:int|diff:15|comp:Comprendre un mécanisme]</strong></span><span style=\"font-family:Arial\"><strong>\_</strong></span>(trois tests environ 30 minutes chacun) : pour en récupérer une. Objet magique très appréciable et cher (environ 1 000pa/lanterne).\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ZIcZJ2BclgcmKT3t]{Lanterne du Temple du Val Rouge}</p></li></ul><p>Si les PJs remontent l’escalier, la racine libère à nouveau l’entrée du temple.</p><p>La porte à l’est (vers salle D) est verrouillée <span style=\"font-family:Arial\"><strong>@Test[car:agi|diff:20|comp:Crocheter une serrure]</strong></span> pour l’ouvrir ou <span style=\"font-family:Arial\"><strong>@Test[car:for|diff:20|comp:Défoncer une porte]</strong></span><span style=\"font-family:Arial\"><strong>\_</strong></span>pour la forcer. PV 15 - Solidité RD4 - immunisée au feu (la clef se trouve dans le bureau de la salle H)</p></section></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle A : Entrée</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Vous arrivez dans une grande pièce de 12m par 12m carré. Les parois, d'environ 6m de haut, sont faites de pierres et lorsque vous descendez vous remarquez directement les
+              lanternes accrochées aux murs qui s'allument et brûlent pour éclairant la pièce. Aucune fumée ne se dégage des lanternes et l'air semble particulièrement pur et frais. Le sol
+              est en carreaux de pierres finement taillées dont les joints laissent pousser de la mousse. Lorsque vous arrivez en bas de l'escalier, un bruit de bois se fait entendre et la
+              racine libérant l'escalier se referme.
+            </p>
+            <p class="paragraphe">
+              Au nord et à l'ouest il y a de grandes doubles portes. A l'est, vous remarquez une avancée de 8m de large qui semble donner sur une immense pièce éclairée et une porte
+              simple. et au sud, un passage de 4m de large donne sur une autre pièce. Chaque ouverture (passages ou portes) fait 4m de haut environ.
+            </p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              Les lanternes s'allument lorsque l'on emprunte l'escalier. Elles sont magiques et peuvent illuminer à volonté. Ce sont les mêmes dans tout le temple. Elles s'allument
+              lorsqu'on rentre dans une pièce.
+            </p>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  @Test[car:int|diff:15|comp:Comprendre un mécanisme] (trois tests environ 30 minutes chacun) : pour en récupérer une. Objet magique très appréciable et cher (environ 1
+                  000pa/lanterne). @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ZIcZJ2BclgcmKT3t]{Lanterne du Temple du Val Rouge}
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <p class="paragraphe">Si les PJs remontent l'escalier, la racine libère à nouveau l'entrée du temple.</p>
+            <hr />
+            <p class="paragraphe">
+              La porte à l'est (vers salle D) est verrouillée @Test[car:agi|diff:20|comp:Crocheter une serrure] pour l'ouvrir ou @Test[car:for|diff:20|comp:Défoncer une porte] pour la
+              forcer. PV 15 - Solidité RD4 - immunisée au feu (la clef se trouve dans le bureau de la salle H)
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -26,7 +66,8 @@ pages:
       coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      modifiedTime: 1773266474131
     category: null
     ownership:
       default: -1
@@ -62,12 +103,46 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: CjeRO3PdgVF1Oz6B
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div class=\"salledescr\"><p><strong>Description :</strong></p><p><strong>Cette salle possède une immense étagère dans l’angle Ouest (6m de haut). Sur celle-ci, se trouvent de nombreux draps, tissus, livres, serviettes, produits</strong> d’entretien et de toilette, équipement en tout genre. Une échelle est accrochée sur l’étagère pour atteindre les étages plus hauts.</p><p>Un long couloir part vers l’Ouest et de nombreuses portes sont visibles tout autour de vous.</p></div><div class=\"sallemj\"><p><strong>Notes pour le MJs :</strong></p><p>La porte de la salle G et celle au fond du couloir (salle J) sont fermées à clef. <span style=\"font-family:Arial\"><strong>@Test[car:agi|diff:20|comp:Crocheter une serrure]</strong></span> pour l’ouvrir ou <span style=\"font-family:Arial\"><strong>@Test[car:for|diff:20|comp:Défoncer une porte]</strong></span> pour la forcer. PV 15 - Solidité RD4 - immunisée au feu (la clef se trouve dans le bureau de la salle H)</p><p>Les livres sur les étagères sont des recueils pratiques et techniques (cuisine, artisanat, ingénierie, communication, histoire de base des Terres d’Arran, contes et légendes, livres religieux de prières…).</p></div><div class=\"salleplus\"><p><strong>Plus :</strong></p><p>Dans les étagères, chaque objet est de très belle facture. Il y en a pour au minimum 2 000pa d’équipement. Maana verrait d’un très mauvais œil le pillage de ces objets.\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.siKjS65RiyTM8DNz]{Étagères du Passage du dortoir}</p></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle B : Passage du Dortoir</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              <strong>Cette salle possède une immense étagère dans l'angle Ouest (6m de haut). Sur celle-ci, se trouvent de nombreux draps, tissus, livres, serviettes, produits</strong>
+              d'entretien et de toilette, équipement en tout genre. Une échelle est accrochée sur l'étagère pour atteindre les étages plus hauts.
+            </p>
+            <p class="paragraphe">Un long couloir part vers l'Ouest et de nombreuses portes sont visibles tout autour de vous.</p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              La porte de la salle G et celle au fond du couloir (salle J) sont fermées à clef. @Test[car:agi|diff:20|comp:Crocheter une serrure] pour l'ouvrir ou
+              @Test[car:for|diff:20|comp:Défoncer une porte] pour la forcer. PV 15 - Solidité RD4 - immunisée au feu (la clef se trouve dans le bureau de la salle H)
+            </p>
+            <hr />
+            <p class="paragraphe">
+              Les livres sur les étagères sont des recueils pratiques et techniques (cuisine, artisanat, ingénierie, communication, histoire de base des Terres d'Arran, contes et légendes,
+              livres religieux de prières…).
+            </p>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe">
+              Dans les étagères, chaque objet est de très belle facture. Il y en a pour au minimum 2 000pa d'équipement. Maana verrait d'un très mauvais œil le pillage de ces objets.
+              @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.siKjS65RiyTM8DNz]{Étagères du Passage du dortoir}
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -83,7 +158,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257099452
-      modifiedTime: 1773257099452
+      modifiedTime: 1773266474142
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -120,26 +195,32 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: XJpVBk0VKqxKkxWA
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: >-
-        <div class="arran-mod"><div class="salledescr"><p><strong>Description
-        :</strong></p><p>Les portes s’ouvrent avec facilité et vous entrez dans
-        une pièce de 12m par 10m aménagée avec de longues tables en bois massif.
-        Une quinzaine de chaises finement ouvragées sont positionnées devant les
-        tables. Ca ressemble à une salle à manger commune.</p><p>Il y a une
-        double porte à l’Ouest et une porte simple à l’Est.</p></div><div
-        class="sallemj"><p><strong>Notes pour le MJs :</strong></p><p>La porte
-        de l’Est est verrouillée. <span
-        style="font-family:Arial"><strong>@Test[car:agi|diff:20|comp:Crocheter
-        une serrure]</strong></span> pour l’ouvrir ou <span
-        style="font-family:Arial"><strong>@Test[car:for|diff:20|comp:Défoncer
-        une porte]</strong></span> pour la forcer. PV 15 - Solidité RD4 -
-        immunisée au feu (la clef se trouve dans le bureau de la salle
-        H)</p></div></div>
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle C : Réfectoire</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Les portes s'ouvrent avec facilité et vous entrez dans une pièce de 12m par 10m aménagée avec de longues tables en bois massif. Une quinzaine de chaises finement ouvragées
+              sont positionnées devant les tables. Ca ressemble à une salle à manger commune.
+            </p>
+            <p class="paragraphe">Il y a une double porte à l'Ouest et une porte simple à l'Est.</p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              La porte de l'Est est verrouillée. @Test[car:agi|diff:20|comp:Crocheter une serrure] pour l'ouvrir ou @Test[car:for|diff:20|comp:Défoncer une porte] pour la forcer. PV 15 -
+              Solidité RD4 - immunisée au feu (la clef se trouve dans le bureau de la salle H)
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -155,7 +236,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257132817
-      modifiedTime: 1773257132817
+      modifiedTime: 1773266474217
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -190,12 +271,47 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: ergxAh45DtavzO05
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div class=\"salledescr\"><p><strong>Description :</strong></p><p>cette salle de 6m par 8m est entièrement recouverte de bibliothèques du sol au plafond. Des centaines d’ouvrages de toutes tailles sont positionnés avec soin sur les étagères. Certains livres sont très épais alors que d’autres ne ressemblent qu’à de fins fascicules. Les étagères montent jusqu’au plafond à 6m de haut et sur votre droite, sur un magnifique chevalet ouvragé, se tient un grand livre. A première vue, il s’agit de l’index de la bibliothèque. La position des livres y est consignée en fonction de son thème, de son auteur et de son intérêt.</p></div><div class=\"sallemj\"><p><strong>Notes pour le MJs :</strong></p><p>l’étude de cette bibliothèque donne une bonus de +5 sur un test de Culture Générale au bout d’une heure d’étude. Si on y consacre une journée entière le bonus passe à +15 pour des connaissances “pas trop” spécifiques.</p><blockquote><p>Si les PJs cherchent (<span style=\"font-family:Arial\"><strong>@Test[car:int|diff:15|comp:Culture générale]</strong></span> environ une heure), ils trouvent un livre parlant des “<strong>Reliques de l’Union</strong>” et de son histoire. Appelé “<strong>les faux dieux des Plateaux Venteux à Esdavia</strong>”\_\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.x6i82EQBaT05Qiuh]{Les faux dieux des Plateaux Venteux}</p></blockquote></div><div class=\"salleplus\"><p><strong>Plus :</strong></p><p><strong>Trésors :</strong> Certains recueils de cette bibliothèque sont inestimables mais il faudrait de longues heures d’estimation d’un expert pour établir un prix. <span style=\"font-family:Arial\"><strong>@Test[car:int|diff:20|comp:Estimation]</strong></span> : environ 8000 pa.\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7tnuVFofK4mXVInS]{Livres anciens du Val Rouge}</p></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle D : Bibliothèque</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              cette salle de 6m par 8m est entièrement recouverte de bibliothèques du sol au plafond. Des centaines d'ouvrages de toutes tailles sont positionnés avec soin sur les
+              étagères. Certains livres sont très épais alors que d'autres ne ressemblent qu'à de fins fascicules. Les étagères montent jusqu'au plafond à 6m de haut et sur votre droite,
+              sur un magnifique chevalet ouvragé, se tient un grand livre. A première vue, il s'agit de l'index de la bibliothèque. La position des livres y est consignée en fonction de
+              son thème, de son auteur et de son intérêt.
+            </p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              l'étude de cette bibliothèque donne une bonus de +5 sur un test de Culture Générale au bout d'une heure d'étude. Si on y consacre une journée entière le bonus passe à +15
+              pour des connaissances “pas trop” spécifiques.
+            </p>
+            <p class="paragraphe">
+              Si les PJs cherchent (@Test[car:int|diff:15|comp:Culture générale] environ une heure), ils trouvent un livre parlant des “<strong>Reliques de l'Union</strong>” et de son
+              histoire. Appelé “<strong>les faux dieux des Plateaux Venteux à Esdavia</strong>” @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.x6i82EQBaT05Qiuh]{Les faux
+              dieux des Plateaux Venteux}
+            </p>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe">
+              <strong>Trésors :</strong> Certains recueils de cette bibliothèque sont inestimables mais il faudrait de longues heures d'estimation d'un expert pour établir un prix.
+              @Test[car:int|diff:20|comp:Estimation] : environ 8000 pa. @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7tnuVFofK4mXVInS]{Livres anciens du Val Rouge}
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -211,7 +327,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257137251
-      modifiedTime: 1773257137251
+      modifiedTime: 1773266474270
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -246,28 +362,38 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: 9PPArNN01B173plV
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: >-
-        <div class="arran-mod"><div class="salledescr"><p><strong>Description
-        :</strong></p><p>Cette pièce de 6m par 6m est aménagée en cuisine. Des
-        étagères contiennent tous les ustensiles pour préparer à manger. Des
-        flacons sont remplis d’épices, de fruits et légumes séchés, des graines,
-        de racines… Deux plans de travail de chaque côté sont munis de tiroirs
-        remplis d’autres ustensiles.</p><p>Sur l’étagère centrale une vasque en
-        pierre est remplie d’une eau limpide coulant d’une petite fente sur le
-        mur nord et dirigée vers la vasque.</p></div><div
-        class="sallemj"><p><strong>Notes pour le MJs :</strong></p><p>Il y a de
-        quoi faire une trentaine de repas végétariens nourrissants avec les
-        vivres présents dans cette cuisine.</p></div><div
-        class="salleplus"><p><strong>Plus :</strong></p><p><strong>Trésors
-        :</strong> Les ustensiles, de bonne facture, valent environ 400 pa pour
-        un poids d’environ 25kg.
-        @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JTXx3GRfLc0D2qpJ]{Ustensils
-        de cuisine du Val Rouge} </p></div></div>
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle E : Cuisine</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Cette pièce de 6m par 6m est aménagée en cuisine. Des étagères contiennent tous les ustensiles pour préparer à manger. Des flacons sont remplis d'épices, de fruits et légumes
+              séchés, des graines, de racines… Deux plans de travail de chaque côté sont munis de tiroirs remplis d'autres ustensiles.
+            </p>
+            <p class="paragraphe">Sur l'étagère centrale une vasque en pierre est remplie d'une eau limpide coulant d'une petite fente sur le mur nord et dirigée vers la vasque.</p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">Il y a de quoi faire une trentaine de repas végétariens nourrissants avec les vivres présents dans cette cuisine.</p>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe">
+              <strong>Trésors :</strong> Les ustensiles, de bonne facture, valent environ 400 pa pour un poids d'environ 25kg.
+              @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JTXx3GRfLc0D2qpJ]{Ustensils de cuisine du Val Rouge}
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -283,7 +409,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257144647
-      modifiedTime: 1773257144647
+      modifiedTime: 1773266474341
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -330,12 +456,106 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: HJa8jr0k56qhKIRc
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\" data-pm-slice=\"3 4 []\">\n<div class=\"salledescr\">\n<p><strong>Description :</strong></p>\n<p>Une très grande salle de 20m par 22m recouverte d’un carrelage de deux couleurs. Les carreaux blanc semblent lustrés et les bleu clair luisent d’une légère lueur dansante. Quatre braséros disposés au centre de la salle sont remplies de blocs translucides qui ressemblent à de la gelée et qui brillent d’une couleur jaune ou violette. Tout autour de la salle de nombreuses statues (13) sont toutes différentes et représentent des elfes sylvains. Certains semblent de grands guerriers, d’autres des nobles ou encore des érudits ou des shamans. Une plaque est visible sur chaque socle sur lequel est inscrit le nom de chaque personne. Sur le mur Est une statue est plus imposante que les autres. Elle représente un elfe sylvain richement habillée avec le visage déformé par un rictus de folie. L’avidité se sent dans son regard. Il porte une robe noble et une paire de bracelets richement ouvragés aux poignets. En face, de cette statue on trouve un trône imposant construit dans un mélange de pierre et de tronc d’arbre.</p>\n</div>\n<div>\n<div class=\"sallemj\">\n<p><strong>Notes pour le MJs :</strong></p>\n<h3>Les Statues <strong>:</strong></h3>\n<ul>\n<li>\n<p>3 Guerriers :</p>\n<ul>\n<li>\n<p><strong>Aboreth</strong> (H avec longue-vue) -</p>\n</li>\n<li>\n<p><strong>Comissana</strong> (F avec baguette) -</p>\n</li>\n<li>\n<p><strong>Diramfir</strong> (F avec cristal)</p>\n</li>\n</ul>\n</li>\n<li>\n<p>3 Nobles :</p>\n<ul>\n<li>\n<p><strong>Kanfireth</strong> (F avec livre) -</p>\n</li>\n<li>\n<p><strong>Ramajissa</strong> (F avec sextant) -</p>\n</li>\n<li>\n<p><strong>Gorss'Raa</strong> (H avec couronne)</p>\n</li>\n</ul>\n</li>\n<li>\n<p>3 érudits/mages :</p>\n<ul>\n<li>\n<p><strong>Marjina</strong> (H avec Lance) -</p>\n</li>\n<li>\n<p><strong>Boëliaa</strong> (F avec menottes) -</p>\n</li>\n<li>\n<p><strong>Ealireth</strong> (F avec baton)</p>\n</li>\n</ul>\n</li>\n<li>3 shamans :\n<ul>\n<li><strong>Fannilias</strong> (H avec Arc) -</li>\n<li><strong>Iris Mea</strong> (H avec clef) -</li>\n<li><strong>Laajaan</strong> (F avec épée)</li>\n</ul>\n</li>\n</ul>\n<p>Pour ouvrir la salle secrète §, il faut remettre le bon objet sur chaque statues pour correspondre à l'histoire de la chute du \"faux dieu\" Izareaa. Le récit se trouve dans la bibliothèque du dortoir de la Shaman Salle H.</p>\n<p>Si un objet est mal positionné sur une statue, la statue du Faux Dieu Izareaa se réveil et attaque toute forme de vie dans la pièce en commençant par le plus proche. Lorsque la statue est détruite elle se recompose sur son support au bout de quelques minutes.</p>\n<p>\_</p>\n</div>\n<div class=\"salleplus\">\n<p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Plus :</span></strong></span></p>\n<p><strong>Trésors :</strong> Les blocs translucides se transforment en liquide et coulent au sol si on les sort du braséro. Ils n’ont aucune valeur.</p>\n<p>Toutes les statues sont fixées au sol et ne peuvent être détachées sans les briser.</p>\n</div>\n</div>\n</div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle F : La salle de prière</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Une très grande salle de 20m par 22m recouverte d'un carrelage de deux couleurs. Les carreaux blanc semblent lustrés et les bleu clair luisent d'une légère lueur dansante.
+              Quatre braséros disposés au centre de la salle sont remplies de blocs translucides qui ressemblent à de la gelée et qui brillent d'une couleur jaune ou violette. Tout autour
+              de la salle de nombreuses statues (13) sont toutes différentes et représentent des elfes sylvains. Certains semblent de grands guerriers, d'autres des nobles ou encore des
+              érudits ou des shamans. Une plaque est visible sur chaque socle sur lequel est inscrit le nom de chaque personne. Sur le mur Est une statue est plus imposante que les autres.
+              Elle représente un elfe sylvain richement habillée avec le visage déformé par un rictus de folie. L'avidité se sent dans son regard. Il porte une robe noble et une paire de
+              bracelets richement ouvragés aux poignets. En face, de cette statue on trouve un trône imposant construit dans un mélange de pierre et de tronc d'arbre.
+            </p>
+          </div>
+          <hr />
+
+          <h2>Notes pour le MJs :</h2>
+          <div class="sallemj">
+            <h3>Les Statues :</h3>
+            <ul>
+              <li>
+                <p class="paragraphe">3 Guerriers :</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe"><strong>Aboreth</strong> (H avec longue-vue)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Comissana</strong> (F avec baguette)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Diramfir</strong> (F avec cristal)</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="paragraphe">3 Nobles :</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe"><strong>Kanfireth</strong> (F avec livre)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Ramajissa</strong> (F avec sextant)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Gorss'Raa</strong> (H avec couronne)</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="paragraphe">3 érudits/mages :</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe"><strong>Marjina</strong> (H avec Lance)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Boëliaa</strong> (F avec menottes)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Ealireth</strong> (F avec baton)</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="paragraphe">3 shamans :</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe"><strong>Fannilias</strong> (H avec Arc)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Iris Mea</strong> (H avec clef)</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe"><strong>Laajaan</strong> (F avec épée)</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p class="paragraphe">
+              Pour ouvrir la salle secrète §, il faut remettre le bon objet sur chaque statues pour correspondre à l'histoire de la chute du "faux dieu" Izareaa. Le récit se trouve dans la
+              bibliothèque du dortoir de la Shaman Salle H.
+            </p>
+            <p class="paragraphe">
+              Si un objet est mal positionné sur une statue, la statue du Faux Dieu Izareaa se réveil et attaque toute forme de vie dans la pièce en commençant par le plus proche. Lorsque
+              la statue est détruite elle se recompose sur son support au bout de quelques minutes.
+            </p>
+          </div>
+          <hr />
+
+          <h2>Plus :</h2>
+          <div class="salleplus">
+            <p class="paragraphe"><strong>Trésors :</strong> Les blocs translucides se transforment en liquide et coulent au sol si on les sort du braséro. Ils n'ont aucune valeur.</p>
+            <hr />
+            <p class="paragraphe">Toutes les statues sont fixées au sol et ne peuvent être détachées sans les briser.</p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -351,7 +571,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257152576
-      modifiedTime: 1773257152576
+      modifiedTime: 1773266474348
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -381,41 +601,28 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: 1Dqc4KilAutcnFRE
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: >-
-        <div class="arran-mod">
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle G : Dortoir de la suivante</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Cette petite pièce est aménagée avec un coffre, un lit et un placard. Le lit est parfaitement fait. Dans le placard et le coffre, on retrouve des vêtements chauds et froids,
+              quelques bijoux simples et un pendentif en forme d'un symbole (montrer le symbole). Le pendentif est sculpté dans un bois très clair et les motifs sont coulés avec une espèce
+              de sève ou d'ambre.
+            </p>
+          </div>
+          <hr />
 
-        <div data-pm-slice="3 3
-        [&quot;div&quot;,{&quot;_preserve&quot;:{&quot;class&quot;:&quot;arran-mod&quot;}}]">
-
-        <div class="salledescr">
-
-        <p><strong>Description :</strong></p>
-
-        <p>Cette petite pièce est aménagée avec un coffre, un lit et un placard.
-        Le lit est parfaitement fait. Dans le placard et le coffre, on retrouve
-        des vêtements chauds et froids, quelques bijoux simples et un pendentif
-        en forme d’un symbole (montrer le symbole). Le pendentif est sculpté
-        dans un bois très clair et les motifs sont coulés avec une espèce de
-        sève ou d’ambre.</p>
-
-        </div>
-
-        <div class="sallemj">
-
-        <p><strong>Notes pour le MJs :</strong></p>
-
-        <p>Tout l’équipement coûte pas plus de 30pa. Le pendentif est très joli
-        et peut valoir entre 50 et 100pa en fonction de la négociation.</p>
-
-        </div>
-
-        </div>
-
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">Tout l'équipement coûte pas plus de 30pa. Le pendentif est très joli et peut valoir entre 50 et 100pa en fonction de la négociation.</p>
+          </div>
         </div>
     video:
       controls: true
@@ -432,7 +639,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257155692
-      modifiedTime: 1773257155692
+      modifiedTime: 1773266474390
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -462,12 +669,138 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: 89UUFu6rYJBjW1N9
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div><div class=\"salledescr\"><p><strong>Description :</strong></p><p>Vous rentrez dans une grande chambre en L. Elle est bien douillette avec un grand lit au carré, au pied duquel se trouve un tabouret rembourré. Dans l’angle se trouve un bain en bois élégant, un fauteuil, un coffre et une table basse recouverte d’une grande feuille de papier.</p><p>Dans le renfoncement de la chambre se trouve un espace bureau avec un très grand tapis au sol ouvragé. De chaque côté sont disposés des étagères remplies de livres de toutes tailles et épaisseurs. Contre le mur enfin est positionné un bureau en bois avec tout le matériel d’écriture et de lecture. Le fauteuil est gravé de nombreux motifs de branches et de feuilles d’arbre. Sur le bureau, vous voyez un livre ouvert et un autre fermé, une belle plume d’écriture et un encrier ainsi qu’un parchemin roulé et maintenu par une cordelette très fine.</p><ul><li><p><strong>Le bain :</strong> l’eau dans le bain est claire comme une source. Un fil d’eau coule depuis une fissure dans le mur et remplit le bain en continu.</p></li><li><p><strong>Le coffre :</strong> dans le coffre. Il y a aussi du savon, et quelques brosses, 3 belles tenues vertes magnifiquement ouvragées.</p></li><li><p><strong>La carte :</strong> sur la table basse se trouve une carte des Terres d’Arran. Beaucoup d'inscriptions sont présentes dessus. Des noms de villes anciennes et encore présentes, des zones grisées ou hachurées, des forêts, des montagnes, … Une zone dans les montagnes séparant l’Ogrie actuelle et les Rocs Exsangues est entourée d’une ligne rouge. Elle est presque circulaire et doit faire environ 50km de diamètre. Le nom écrit en dessous est “Esdavia”\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.iKHVHqU2fRGHSnwE]{Carte de Maniash'Onira}</p></li><li><p><strong>Les bibliothèques :</strong> de nombreux livres sur de nombreux sujets (religion, architecture, cuisine, médecine, rituel de prière, histoire et géographie des Terres d’Arran (avant -254)...). Il y a aussi une collection de 25 livres ressemblant à celui qui est ouvert sur le bureau.</p></li><li><p><strong>Le livre fermé :</strong> aux premières lectures vous y trouvez des listes et des tâches à faire. Une espèce d’agenda et d’organisation pour une douzaine de personnes (une gardienne, une suivante et 10 acolytes).</p></li><li><p><strong>Le livre ouvert :</strong> c’est un journal des événements recensé par la gardienne. Elle y inscrit chaque semaine ses émotions, sentiments, craintes… Le livre est noté du nombre 26. Sur la première ligne est noté “<strong>9019 après le grand schisme, troisième lune du printemps, douzième nuit</strong>”. Le livre est ouvert sur une page qui commence par “<strong>9048 après le grand Schisme, deuxième lune de l’hiver, huitième nuit. Les acolytes ont rejoint l’Arbre-Mère depuis trois jours, leur regard apaisé me donne confiance pour ce qui arrive. Shanivara, ma dernière suivante est sortie du Temple pour s’intégrer dans la tribu de sylvains. J’espère, par la sève de l’Arbre-mère, qu’elle saura insuffler les légendes que nous avons créées. Aurions dû sceller pour l’éternité ce temple afin que les mémoires s’effacent ? La peur me fait trembler comme une feuille vibrée par la brise. Plus de 780 cycles pour se faire oublier, des siècles pour disparaître. Une attente qui se termine demain lorsque je rejoindrai mes acolytes au cœur de l’Arbre-Mère. La Gardienne rejoint la sève et la terre. Le poème pour finir</strong>”.\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.NBhpJ6FUpOYjnJPK]{Compte rendu de Maniash'Onira}</p></li><li><p><strong>Le parchemin :</strong> Il est noté : “<strong>Si vous reprenez la place de Gardienne de la Relique de l’Union, c’est que le souvenir ne s’est pas envolé dans le noir de l’histoire. Votre rôle sera long et la patience votre plus grande alliée. Les fanatiques d’Esdavia ne doivent pas réapparaitre et les reliques doivent rester entre de bonnes mains. L’Arbre-Mère prendra soin de vous, de votre suivante et de vos acolytes. N’ayez crainte, il a fallu une quinzaine de cycles pour que la première trouve le Temple. Cette attente m’a valu de nombreuses nuits blanches mais tout est normal. Fiez-vous toujours aux merveilles de l’Arbre-Mère. Maniash’onira, première gardienne du Temple de l’Union des Elfes</strong>.\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.bL9cX8RiDi5m7Qgm]{Parchemin de Maniash'Onira}</p></li><li><p><strong>Le clef du Temple :</strong> sous le livre ouvert, il y a une magnifique clef ouvragée avec une belle décoréation en forme de feuille de chêne. Cette clef permet l'ouverture des pièces intérieures du Temple du Val Rouge.\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PxlepxGDzxFRxJH4]{Clef du Temple du Val Rouge}</p></li></ul></div><div class=\"sallemj\"><p><strong>Notes pour le MJs :</strong></p><p>Bibliothèque : après 1d4 heures de recherche et d’étude confère un bonus de +10 en INT <em>(culture générale)</em> (attention les faits historiques s’arrêtent en -254 du calendrier Athée et la géographie (ville, seigneurs, organisations…) ont beaucoup changés aussi)</p><div class=\"arran-mod\"><div class=\"sallemj\"><p><span style=\"font-family:Arial\"><strong>@Test[car:int|diff:15|comp:Culture générale]</strong></span><span class=\"jet\"><strong> : en feuilletant le compte-rendu de la gardienne vous découvrez un échange, une discussion entre la gardienne et un autre peuple vivant dans les montagnes d'Arkanov.</strong>\_\_</span></p></div></div><p><strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VsarcRUBqgxQ0pTY]{Échanges avec Hoani d'Arkanov}</strong></p><p>Après d'autres lectures et recherches dans le Temple ou à leur retour à la Cité d'Ispier, les PJ trouvent des informations :\_</p><ul><li><p>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.8VEgoMjsQatW6cbu]{Compte rendu 1 de Maniash'Onira},\_</p></li><li><p>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.uTKKH0vsa8ywiWps]{Compte rendu 2 de Maniash'Onira}.</p></li></ul><p><span class=\"imp\">Si les PJs ne recherchent pas dans les autres tomes, incitez les à fouiller, à embarquer les tomes de compte-rendu ou utilisez Manna pour les guider.</span></p></div><div class=\"salleplus\"><p><strong>Plus :</strong></p><p><strong>Infos supplémentaires :</strong> Abandon du temple par les gardiennes en -254 du calendrier Athée soit l’année 9048 après le grand schisme.</p></div></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle H : Dortoir de la Gardienne</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Vous rentrez dans une grande chambre en L. Elle est bien douillette avec un grand lit au carré, au pied duquel se trouve un tabouret rembourré. Dans l'angle se trouve un bain
+              en bois élégant, un fauteuil, un coffre et une table basse recouverte d'une grande feuille de papier.
+            </p>
+            <p class="paragraphe">
+              Dans le renfoncement de la chambre se trouve un espace bureau avec un très grand tapis au sol ouvragé. De chaque côté sont disposés des étagères remplies de livres de toutes
+              tailles et épaisseurs. Contre le mur enfin est positionné un bureau en bois avec tout le matériel d'écriture et de lecture. Le fauteuil est gravé de nombreux motifs de
+              branches et de feuilles d'arbre. Sur le bureau, vous voyez un livre ouvert et un autre fermé, une belle plume d'écriture et un encrier ainsi qu'un parchemin roulé et maintenu
+              par une cordelette très fine.
+            </p>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Le bain :</strong> l'eau dans le bain est claire comme une source. Un fil d'eau coule depuis une fissure dans le mur et remplit le bain en continu.
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe"><strong>Le coffre :</strong> dans le coffre. Il y a aussi du savon, et quelques brosses, 3 belles tenues vertes magnifiquement ouvragées.</p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>La carte :</strong> sur la table basse se trouve une carte des Terres d'Arran. Beaucoup d'inscriptions sont présentes dessus. Des noms de villes anciennes et
+                  encore présentes, des zones grisées ou hachurées, des forêts, des montagnes, … Une zone dans les montagnes séparant l'Ogrie actuelle et les Rocs Exsangues est entourée
+                  d'une ligne rouge. Elle est presque circulaire et doit faire environ 50km de diamètre. Le nom écrit en dessous est “Esdavia”
+                  @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.iKHVHqU2fRGHSnwE]{Carte de Maniash'Onira}
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>Les bibliothèques :</strong> de nombreux livres sur de nombreux sujets (religion, architecture, cuisine, médecine, rituel de prière, histoire et géographie des
+                  Terres d'Arran (avant -254)...). Il y a aussi une collection de 25 livres ressemblant à celui qui est ouvert sur le bureau.
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>Le livre fermé :</strong> aux premières lectures vous y trouvez des listes et des tâches à faire. Une espèce d'agenda et d'organisation pour une douzaine de
+                  personnes (une gardienne, une suivante et 10 acolytes).
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>Le livre ouvert :</strong> c'est un journal des événements recensé par la gardienne. Elle y inscrit chaque semaine ses émotions, sentiments, craintes… Le livre
+                  est noté du nombre 26. Sur la première ligne est noté “<strong>9019 après le grand schisme, troisième lune du printemps, douzième nuit</strong>”. Le livre est ouvert sur
+                  une page qui commence par “<strong>9048 après le grand Schisme, deuxième lune de l'hiver, huitième nuit. Les acolytes ont rejoint l'Arbre-Mère depuis trois jours, leur regard apaisé me donne confiance
+                    pour ce qui arrive. Shanivara, ma dernière suivante est sortie du Temple pour s'intégrer dans la tribu de sylvains. J'espère, par la sève de l'Arbre-mère, qu'elle saura
+                    insuffler les légendes que nous avons créées. Aurions dû sceller pour l'éternité ce temple afin que les mémoires s'effacent ? La peur me fait trembler comme une feuille
+                    vibrée par la brise. Plus de 780 cycles pour se faire oublier, des siècles pour disparaître. Une attente qui se termine demain lorsque je rejoindrai mes acolytes au
+                    cœur de l'Arbre-Mère. La Gardienne rejoint la sève et la terre. Le poème pour finir</strong>”. @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.NBhpJ6FUpOYjnJPK]{Compte rendu de Maniash'Onira}
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>Le parchemin :</strong> Il est noté : “<strong>Si vous reprenez la place de Gardienne de la Relique de l'Union, c'est que le souvenir ne s'est pas envolé dans le noir de l'histoire. Votre rôle sera long et la
+                    patience votre plus grande alliée. Les fanatiques d'Esdavia ne doivent pas réapparaitre et les reliques doivent rester entre de bonnes mains. L'Arbre-Mère prendra soin
+                    de vous, de votre suivante et de vos acolytes. N'ayez crainte, il a fallu une quinzaine de cycles pour que la première trouve le Temple. Cette attente m'a valu de
+                    nombreuses nuits blanches mais tout est normal. Fiez-vous toujours aux merveilles de l'Arbre-Mère. Maniash'onira, première gardienne du Temple de l'Union des
+                    Elfes</strong>. @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.bL9cX8RiDi5m7Qgm]{Parchemin de Maniash'Onira}
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe">
+                  <strong>Le clef du Temple :</strong> sous le livre ouvert, il y a une magnifique clef ouvragée avec une belle décoréation en forme de feuille de chêne. Cette clef permet
+                  l'ouverture des pièces intérieures du Temple du Val Rouge. @UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PxlepxGDzxFRxJH4]{Clef du Temple du Val Rouge}
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              Bibliothèque : après 1d4 heures de recherche et d'étude confère un bonus de +10 en INT <em>(culture générale)</em> (attention les faits historiques s'arrêtent en -254 du
+              calendrier Athée et la géographie (ville, seigneurs, organisations…) ont beaucoup changés aussi)
+            </p>
+            <hr />
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  @Test[car:int|diff:15|comp:Culture générale]<strong>
+                    : en feuilletant le compte-rendu de la gardienne vous découvrez un échange, une discussion entre la gardienne et un autre peuple vivant dans les montagnes
+                    d'Arkanov.</strong>
+                </p>
+              </li>
+              <ul>
+                <li>
+                  <p class="paragraphe"><strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VsarcRUBqgxQ0pTY]{Échanges avec Hoani d'Arkanov}</strong></p>
+                </li>
+              </ul>
+            </ul>
+            <hr />
+            <ul>
+              <li>
+                <p class="paragraphe">Après d'autres lectures et recherches dans le Temple ou à leur retour à la Cité d'Ispier, les PJ trouvent des informations :</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe">@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.8VEgoMjsQatW6cbu]{Compte rendu 1 de Maniash'Onira},</p>
+                  </li>
+                  <li>
+                    <p class="paragraphe">@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.uTKKH0vsa8ywiWps]{Compte rendu 2 de Maniash'Onira}.</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p class="paragraphe">
+              <span class="imp">Si les PJs ne recherchent pas dans les autres tomes, incitez les à fouiller, à embarquer les tomes de compte-rendu ou utilisez Manna pour les guider.</span>
+            </p>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe"><strong>Infos supplémentaires :</strong> Abandon du temple par les gardiennes en -254 du calendrier Athée soit l'année 9048 après le grand schisme.</p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -483,7 +816,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257160557
-      modifiedTime: 1773257160557
+      modifiedTime: 1773266474411
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -512,12 +845,39 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: 8P9z7YVMU0hgAm3u
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\">\n<div class=\"salledescr\">\n<p><strong>Description :</strong></p>\n<p>Vous rentrez dans une chambre rustique et sommaire composée d’un lit simple, d’un coffre en bois et d’une armoire fermée. Le lit est fait au carré d’un linge propre et frais.</p>\n<ul>\n<li>\n<p><strong>L’armoire :</strong>\_4 tenues identiques, des robes élégantes et confortables de couleur rouge sombre. Des sous-vêtements confortables. un jeu de deux serviettes et une pierre ponce. Un pendentif de la même forme que le médaillon de Laotissa mais sans aucune gravure dessus.</p>\n</li>\n<li>\n<p><strong>Coffre :</strong>\_quelques bijoux simples, un bloc de savon, un carnet vierge et un bâtonnet de charbon pour écrire.</p>\n</li>\n</ul>\n</div>\n<div class=\"sallemj\">\n<p><strong>Notes pour le MJs :</strong></p>\n<p>Toutes les chambres sont totalement identiques.</p>\n</div>\n</div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle I : les 10 dortoirs des acolytes</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Vous rentrez dans une chambre rustique et sommaire composée d'un lit simple, d'un coffre en bois et d'une armoire fermée. Le lit est fait au carré d'un linge propre et frais.
+            </p>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>L'armoire :</strong> 4 tenues identiques, des robes élégantes et confortables de couleur rouge sombre. Des sous-vêtements confortables. un jeu de deux serviettes
+                  et une pierre ponce. Un pendentif de la même forme que le médaillon de Laotissa mais sans aucune gravure dessus.
+                </p>
+              </li>
+              <hr />
+              <li>
+                <p class="paragraphe"><strong>Coffre :</strong> quelques bijoux simples, un bloc de savon, un carnet vierge et un bâtonnet de charbon pour écrire.</p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">Toutes les chambres sont totalement identiques.</p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -533,7 +893,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257163097
-      modifiedTime: 1773257163097
+      modifiedTime: 1773266474421
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -562,49 +922,61 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: k9OVETiVkiA6kZQR
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: >-
-        <div class="arran-mod"><div><div
-        class="salledescr"><p><strong>Description :</strong></p><p>La pièce de
-        4m de large par 14m de long est aménagée avec d' immenses étagères sur
-        le mur du fond et sur le mur à votre gauche. Sur la droite, des étagères
-        spécialement conçues pour des bouteilles. Les étagères montent jusqu’au
-        plafond à environ 6m de hauteur. Des échelles sont fixées sur des barres
-        coulissantes le long des étagères. La température de la pièce est
-        beaucoup plus froide que dans les autres pièces et de la buée sort de
-        votre bouche à chaque respiration. Sur les étagères et dans les casiers
-        à bouteilles, vous apercevez des victuailles nombreuses et variées.
-        Toutes semblent en parfait état de conservation. Des féculents, des
-        graines, des légumes racines, des bocaux divers, des sacs de sels, de
-        poivres et d’épices, des bouteilles de vinaigre, d’huiles et aromatiques
-        et plantes médicinales séchées.</p><ul><li><p><span
-        style="font-family:Arial"><strong>@Test[car:per|comp:Fouiller une
-        pièce]</strong></span></p><ul><li><p><span
-        style="font-family:Arial"><strong>10+</strong></span> : sur un sac de
-        tubercules, ressemblant à des topinambour, vous pouvez lire :
-        “Arbre-Mère, Arbre-sacré, âme de nos forêts, par cette offrande merci de
-        prendre soin de ma famille et apporte le bonheur dans le coeur de mon
-        nouveau-né”</p></li><li><p><span
-        style="font-family:Arial"><strong>15+</strong></span> : quatre runes
-        élémentaires sont gravées sur les quatre murs de la salle permettant de
-        maintenir une température faible et un bon taux d’humidité dans la
-        pièce.</p></li></ul></li></ul></div><div
-        class="sallemj"><p><strong>Notes pour le MJs :</strong></p><p>La porte
-        est fermée. <span
-        style="font-family:Arial"><strong>@Test[car:agi|diff:20|comp:Crocheter
-        une serrure]</strong></span> pour l’ouvrir ou <span
-        style="font-family:Arial"><strong>@Test[car:for|diff:20|comp:Défoncer
-        une porte]</strong></span> pour la forcer. PV 15 - Solidité RD4 -
-        immunisée au feu (la clef se trouve dans le bureau de la salle
-        H)</p></div><div class="salleplus"><p><strong>Plus
-        :</strong></p><p><strong>Infos supplémentaires :</strong> Grâce au
-        contenu de ce garde-manger, il y a de quoi préparer une bonne centaine
-        de repas copieux et bien plus si on devait
-        rationner.</p></div></div></div>
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle J : Garde manger</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              La pièce de 4m de large par 14m de long est aménagée avec d' immenses étagères sur le mur du fond et sur le mur à votre gauche. Sur la droite, des étagères spécialement
+              conçues pour des bouteilles. Les étagères montent jusqu'au plafond à environ 6m de hauteur. Des échelles sont fixées sur des barres coulissantes le long des étagères. La
+              température de la pièce est beaucoup plus froide que dans les autres pièces et de la buée sort de votre bouche à chaque respiration. Sur les étagères et dans les casiers à
+              bouteilles, vous apercevez des victuailles nombreuses et variées. Toutes semblent en parfait état de conservation. Des féculents, des graines, des légumes racines, des bocaux
+              divers, des sacs de sels, de poivres et d'épices, des bouteilles de vinaigre, d'huiles et aromatiques et plantes médicinales séchées.
+            </p>
+            <ul>
+              <li>
+                <p class="paragraphe">@Test[car:per|comp:Fouiller une pièce]</p>
+                <ul>
+                  <li>
+                    <p class="paragraphe">
+                      <span class="roll-result">10+</span> : sur un sac de tubercules, ressemblant à des topinambour, vous pouvez lire : “Arbre-Mère, Arbre-sacré, âme de nos forêts, par
+                      cette offrande merci de prendre soin de ma famille et apporte le bonheur dans le coeur de mon nouveau-né”
+                    </p>
+                  </li>
+                  <li>
+                    <p class="paragraphe">
+                      <span class="roll-result">15+</span> : quatre runes élémentaires sont gravées sur les quatre murs de la salle permettant de maintenir une température faible et un bon
+                      taux d'humidité dans la pièce.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              La porte est fermée. @Test[car:agi|diff:20|comp:Crocheter une serrure] pour l'ouvrir ou @Test[car:for|diff:20|comp:Défoncer une porte] pour la forcer. PV 15 - Solidité RD4 -
+              immunisée au feu (la clef se trouve dans le bureau de la salle H)
+            </p>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe">
+              <strong>Infos supplémentaires :</strong> Grâce au contenu de ce garde-manger, il y a de quoi préparer une bonne centaine de repas copieux et bien plus si on devait rationner.
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -620,7 +992,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257166742
-      modifiedTime: 1773257166742
+      modifiedTime: 1773266474461
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -649,42 +1021,30 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: 7Rp6kywolxN3UdYu
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: >-
-        <div class="arran-mod">
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle K : Les deux sanitaires</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Lorsque vous ouvrez la porte, vous sentez une légère odeur de fleurs. Une petite sensation de bien-être et de propreté. Vous distinguez de suite sur le mur d'en face, de
+              cette pièce de 6m par 4m, quatre runes élémentaires gravées. D'un côté du mur, vous apercevez un banc de latrines en bois poli et de l'autre côté un assez grand bassin rempli
+              d'une eau fraîche et limpide coulant d'une petite fissure au mur.
+            </p>
+          </div>
+          <hr />
 
-        <div data-pm-slice="3 3
-        [&quot;div&quot;,{&quot;_preserve&quot;:{&quot;class&quot;:&quot;arran-mod&quot;}}]">
-
-        <div class="salledescr">
-
-        <p><strong>Description :</strong></p>
-
-        <p>Lorsque vous ouvrez la porte, vous sentez une légère odeur de fleurs.
-        Une petite sensation de bien-être et de propreté. Vous distinguez de
-        suite sur le mur d’en face, de cette pièce de 6m par 4m, quatre runes
-        élémentaires gravées. D’un côté du mur, vous apercevez un banc de
-        latrines en bois poli et de l’autre côté un assez grand bassin rempli
-        d’une eau fraîche et limpide coulant d’une petite fissure au mur.</p>
-
-        </div>
-
-        <div class="sallemj">
-
-        <p><strong>Notes pour le MJs :</strong></p>
-
-        <p>Si le groupe regarde dans les latrines, ils voient une petit cours
-        d’eau passant à une trentaine de centimètre sous le sol et permettant
-        l’évacuation des déjections.</p>
-
-        </div>
-
-        </div>
-
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <p class="paragraphe">
+              Si le groupe regarde dans les latrines, ils voient une petit cours d'eau passant à une trentaine de centimètre sous le sol et permettant l'évacuation des déjections.
+            </p>
+          </div>
         </div>
     video:
       controls: true
@@ -701,7 +1061,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257170598
-      modifiedTime: 1773257170598
+      modifiedTime: 1773266474470
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -730,12 +1090,68 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: gpcbauQQ8TO3DiEB
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div><div class=\"salledescr\"><p><strong>Description :</strong></p><p>Vous entrez dans une immense pièce de 36m de large par 30m de long. Le plafond est à environ 10m de hauteur. Plusieurs choses sont remarquables dans cette pièce. Tout d’abord vous remarquez que le fond de la pièce est rempli de racines énormes couvertes de mousses et suintant d’humidité. Elles ont pénétré par les murs et envahissent une partie de cette salle.</p><p>Au sol se trouve gravé deux grands cercles, couleur ambre, avec des formes ésotériques qui sont placés de part et d’autre d’un bassin en pierre de taille positionné au centre de la pièce. L’eau du bassin est rougeâtre. De chaque côté du bassin se trouve deux immenses statues de pierre représentant un homme et une femme elfe agenouillés posant la pointe de leur lame sur le bord du bassin.</p><p>Le fond de la pièce est assez sombre mais vous distinguez que les lanternes au mur ainsi que des statues ont été cassées par les racines. Le long du mur de l’entrée il reste encore intact 9 statues et les lanternes. Chaque statue le long du mur de l’entrée sont identiques et représentent une guerrier elfe sylvain tandis que les statues sur le mur nord sont identiques entre elles mais représentent une guerrière elfe sylvaine.</p></div><div class=\"sallemj\"><p><strong>Notes pour le MJs :</strong></p><ul><li><p><span style=\"font-family:Arial\"><strong>@Test[car:per|diff:10|comp:Inspecter le bassin]</strong></span> : vous remarquez que le bassin est gravé de runes magiques.</p></li><li><p><span style=\"font-family:Arial\"><strong>@Test[car:int|diff:10|comp:Connaissance magique]</strong></span> : les runes sont de deux types différentes. La première série est composée de 4 Oghams : Organique, transformation, Néant et une source moyenne. La deuxième série est plus puissante : Air, Mouvement, conscience, Infini, Divination et une source puissante.</p></li><li><p><span style=\"font-family:Arial\"><strong>@Test[car:int|diff:15|comp:Connaissance magique]\_</strong></span>: La première formule permet de faire “disparaître” de la matière organique (lorsqu’une acolyte meure par exemple)</p></li><li><p><span style=\"font-family:Arial\"><strong>@Test[car:int|diff:20|comp:Connaissance magique]</strong></span> : la deuxième formule permet “d’appeler” partout de nouvelles recrues (acolyte ou suivante). En fonction de la “demande” de la gardienne, une jeune femme elfe venant de n’importe où sur les Terres d’Arran sentait le besoin impérieux (et joyeux) de rejoindre le temple du Val Rouge. Elle ne comprenait pas forcément son futur rôle mais elle le désirait de tout son cœur. Elle pouvait ainsi trouver une Arbre Mère dans une forêt s’y installer et elle disparaissait pour réapparaître quelque temps plus tard dans le bassin. Une autre utilité de cette formule permettait de faire “ressentir” aux elfes du Val Rouge leur envie de faire des offrandes à l’Arbre Sacré lorsque les denrées alimentaires venaient à manquer.</p></li></ul><section class=\"secret\" id=\"secret-atSOFidX5joBHE5j\"><p>Ce bassin servira de portail, bien plus tard dans la campagne, pour créer un pont entre le Village d'Arkanov, la Cité-état de Hyrr'Tarënn et le Temple du Val Rouge. Il mène également dans le Manoir Écarlate de Ramell à Kosland et dans la ville abandonnée des Peaux Vertes dans l'Ogrie.</p></section></div></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle L : La grande salle de l'Union</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <p class="paragraphe">
+              Vous entrez dans une immense pièce de 36m de large par 30m de long. Le plafond est à environ 10m de hauteur. Plusieurs choses sont remarquables dans cette pièce. Tout d'abord
+              vous remarquez que le fond de la pièce est rempli de racines énormes couvertes de mousses et suintant d'humidité. Elles ont pénétré par les murs et envahissent une partie de
+              cette salle.
+            </p>
+            <p class="paragraphe">
+              Au sol se trouve gravé deux grands cercles, couleur ambre, avec des formes ésotériques qui sont placés de part et d'autre d'un bassin en pierre de taille positionné au centre
+              de la pièce. L'eau du bassin est rougeâtre. De chaque côté du bassin se trouve deux immenses statues de pierre représentant un homme et une femme elfe agenouillés posant la
+              pointe de leur lame sur le bord du bassin.
+            </p>
+            <p class="paragraphe">
+              Le fond de la pièce est assez sombre mais vous distinguez que les lanternes au mur ainsi que des statues ont été cassées par les racines. Le long du mur de l'entrée il reste
+              encore intact 9 statues et les lanternes. Chaque statue le long du mur de l'entrée sont identiques et représentent une guerrier elfe sylvain tandis que les statues sur le mur
+              nord sont identiques entre elles mais représentent une guerrière elfe sylvaine.
+            </p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <ul>
+              <li>
+                <p class="paragraphe">@Test[car:per|diff:10|comp:Inspecter le bassin] : vous remarquez que le bassin est gravé de runes magiques.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  @Test[car:int|diff:10|comp:Connaissance magique] : les runes sont de deux types différentes. La première série est composée de 4 Oghams : Organique, transformation, Néant
+                  et une source moyenne. La deuxième série est plus puissante : Air, Mouvement, conscience, Infini, Divination et une source puissante.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  @Test[car:int|diff:15|comp:Connaissance magique] : La première formule permet de faire “disparaître” de la matière organique (lorsqu'une acolyte meure par exemple)
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  @Test[car:int|diff:20|comp:Connaissance magique] : la deuxième formule permet “d'appeler” partout de nouvelles recrues (acolyte ou suivante). En fonction de la “demande”
+                  de la gardienne, une jeune femme elfe venant de n'importe où sur les Terres d'Arran sentait le besoin impérieux (et joyeux) de rejoindre le temple du Val Rouge. Elle ne
+                  comprenait pas forcément son futur rôle mais elle le désirait de tout son cœur. Elle pouvait ainsi trouver une Arbre Mère dans une forêt s'y installer et elle
+                  disparaissait pour réapparaître quelque temps plus tard dans le bassin. Une autre utilité de cette formule permettait de faire “ressentir” aux elfes du Val Rouge leur
+                  envie de faire des offrandes à l'Arbre Sacré lorsque les denrées alimentaires venaient à manquer.
+                </p>
+              </li>
+            </ul>
+
+            <p class="paragraphe">
+              Ce bassin servira de portail, bien plus tard dans la campagne, pour créer un pont entre le Village d'Arkanov, la Cité-état de Hyrr'Tarënn et le Temple du Val Rouge. Il mène
+              également dans le Manoir Écarlate de Ramell à Kosland et dans la ville abandonnée des Peaux Vertes dans l'Ogrie.
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -751,7 +1167,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257173490
-      modifiedTime: 1773257173490
+      modifiedTime: 1773266474510
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -2003,12 +2419,58 @@ pages:
         img: modules/monks-enhanced-journal/assets/encounter.png
     _id: KtYYiqeXY1WAxSk1
     title:
-      show: true
+      show: false
       level: 1
     image: {}
     text:
       format: 1
-      content: "<div class=\"arran-mod\"><div class=\"salledescr\"><p><strong>Description :</strong></p><img src=\"modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/bracelet_de_l_union.webp\" width=\"100\" height=\"100\" /><p>Après avoir déposer le dernier objet dans la main de la bonne statue, une porte s'ouvre à droite du trône.</p><p>Une petite pièce contient 5 coffres.</p><p>Celui qui vous fait face est ouvert et vous y voyez un brassard magnifiquement ouvragé. il est impeccable sans aucune trace de poussière ou de rayures.<strong>\_</strong></p><p>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.5Uuj47G7huY5efth]{Brassard elfique}</p></div><div class=\"sallemj\"><p><strong>Notes pour le MJs :</strong></p><ul><li><p>Les autres coffres contiennent une multitude d'objets plus ou moins intéressants<strong>\_</strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.NmSmEWRYYB2ptNq9]{Salle secrète du Temple}</p></li><li><p></p><img src=\"modules/cof2ta_reliques_union/assets/ru_objets/divers/machine_du_val_rouge.webp\" width=\"100\" height=\"100\" /><p>L'un des coffre est très bizarre. Lorsque vous l'ouvrez vous voyez une machinerie complexe. Des trous, des manivelles, des boutons, des outils bien rangés dans des emplacements dédiés… Sur certaines pièces des runes complexes sont inscrites. Un carnet est glissé le long de la paroi de droite et contient de nombreuses images expliquant le fonctionnement de cette machine.<strong>\_</strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.al3lObh0ecGgElon]{Machine du Val Rouge}</p></li></ul></div><div><div class=\"salleplus\"><p><strong>Plus :</strong></p><p>Si une personne équipe les bracelets de l'Union :<strong>\_cof2ta_reliques_union.reliquesunion-journaux.JournalEntry.YMvNXs6462PccvNn]{Le Bracelet de l'Union}</strong></p></div></div></div>"
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Salle Secrète § : La salle de la relique</h1>
+          <div class="description">
+            <h2>Description :</h2>
+            <img src="modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/bracelet_de_l_union.webp" width="100" height="100" />
+            <p class="paragraphe">Après avoir déposer le dernier objet dans la main de la bonne statue, une porte s'ouvre à droite du trône.</p>
+            <p class="paragraphe">Une petite pièce contient 5 coffres.</p>
+            <p class="paragraphe">
+              Celui qui vous fait face est ouvert et vous y voyez un brassard magnifiquement ouvragé. il est impeccable sans aucune trace de poussière ou de rayures.<strong> </strong>
+            </p>
+            <p class="paragraphe">@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.5Uuj47G7huY5efth]{Brassard elfique}</p>
+          </div>
+          <hr />
+
+          <div class="sallemj">
+            <h2>Notes pour le MJs :</h2>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  Les autres coffres contiennent une multitude d'objets plus ou moins intéressants<strong> </strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.NmSmEWRYYB2ptNq9]{Salle secrète du Temple}
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <ul>
+              <li>
+                <p class="paragraphe"></p>
+                <img src="modules/cof2ta_reliques_union/assets/ru_objets/divers/machine_du_val_rouge.webp" width="100" height="100" />
+                <p class="paragraphe">
+                  L'un des coffre est très bizarre. Lorsque vous l'ouvrez vous voyez une machinerie complexe. Des trous, des manivelles, des boutons, des outils bien rangés dans des
+                  emplacements dédiés… Sur certaines pièces des runes complexes sont inscrites. Un carnet est glissé le long de la paroi de droite et contient de nombreuses images
+                  expliquant le fonctionnement de cette machine.<strong> </strong>@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.al3lObh0ecGgElon]{Machine du Val Rouge}
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="salleplus">
+            <h2>Plus :</h2>
+            <p class="paragraphe">
+              Si une personne équipe les bracelets de l'Union :<strong>
+                @UUID[Compendium.cof2ta_reliques_union.reliquesunion-journaux.JournalEntry.YMvNXs6462PccvNn]{Le Bracelet de l'Union}</strong>
+            </p>
+          </div>
+        </div>
     video:
       controls: true
       volume: 0.5
@@ -2024,7 +2486,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773257176444
-      modifiedTime: 1773257176444
+      modifiedTime: 1773266474516
       lastModifiedBy: MdLP35I2yaa8z7GV
     category: null
     ownership:
@@ -2040,12 +2502,12 @@ _stats:
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1772486937107
-  modifiedTime: 1773257194665
+  modifiedTime: 1773266551585
   lastModifiedBy: MdLP35I2yaa8z7GV
 categories: []
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: qNrZZ3CEkvn24VlV
-sort: 0
+sort: 300000
 _key: '!journal!qNrZZ3CEkvn24VlV'
