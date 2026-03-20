@@ -13,6 +13,20 @@ pages:
     image: {}
     text:
       format: 1
+      content: |-
+        <div class="journal-cof2ta-ru">
+          <h1>Introduction</h1>
+          <div class="description">
+            <p class="paragraphe"></p>
+          </div>
+        </div>
+
+        <hr />
+        <h3></h3>
+        <ul>
+          <li><p class="paragraphe">@Test[car:for|diff:15|comp:Dégagement d'urgence]</p></li>
+          <li><p class="paragraphe">@Test[car:per|diff:10|comp:Premiers secours]</p></li>
+        </ul>
     video:
       controls: true
       volume: 0.5
@@ -30,7 +44,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270315050
-      modifiedTime: 1773270315050
+      modifiedTime: 1773448592254
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.HOLFyZID5264SJ75'
   - sort: 200000
@@ -60,46 +74,50 @@ pages:
               permet de créer des liens et des moments de fraternité.
             </p>
             <ul>
-              <li><p class="paragraphe">FOR-ATHL pour miner, broyer, concasser…</p></li>
-              <li><p class="paragraphe">SAG-SURVI pour ranger, nettoyer, trier les caisses ou organiser les mines.</p></li>
+              <li><p class="paragraphe">@Test[car:for|comp:Athlétisme] pour miner, broyer, concasser…</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Organisation - Rangement] pour ranger, nettoyer, trier les caisses ou organiser les mines.</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Découverte Assommante :</h2>
+          <p class="paragraphe">
+            En arrivant pour travailler à la mine, le PJ trouve Itu au sol inconscient. Pendant son travail, un bout de plafond est tombé sur sa tête. Le Personnage peut lui venir
+            directement en aide ou aller chercher de l'aide. Itu sera très reconnaissant envers l'aventurier.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                En arrivant pour travailler à la mine, le PJ trouve Itu au sol inconscient. Pendant son travail, un bout de plafond est tombé sur sa tête. Le Personnage peut lui venir
-                directement en aide ou aller chercher de l'aide. Itu sera très reconnaissant envers l'aventurier.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Dégagement d'urgence]</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:10|comp:Premiers secours]</p></li>
           </ul>
           <hr />
 
           <h2>Ca Brille à la Mine :</h2>
-          <ul>
-            <li>
-              <p class="paragraphe">
-                Lors d'une journée de travail à miner les parois (avec un bon test ou une réussite critique), le Personnage va découvrir une pierre précieuse de belle taille. Si le mineur
-                retire la pierre et l'a montre à un centaure, une partie des habitants viendront voir la trouvaille et féliciter le Héros. Plusieurs jours plus tard, Kaiwhakairo montrera
-                au PJ la réalisation qu'il a fait avec la pierre. Il a sculpté un pendentif magnifique pour chacun des aventuriers. Chaque pendentif se connecte aux autres pour former une
-                belle rosace avec la pierre recomposée au centre.
-              </p>
-            </li>
-          </ul>
+          <p class="paragraphe">
+            Lors d'une journée de travail à miner les parois (avec un bon test ou une réussite critique), le Personnage va découvrir une pierre précieuse de belle taille. Si le mineur
+            retire la pierre et l'a montre à un centaure, une partie des habitants viendront voir la trouvaille et féliciter le Héros. Plusieurs jours plus tard, Kaiwhakairo montrera au PJ
+            la réalisation qu'il a fait avec la pierre. Il a sculpté un pendentif magnifique pour chacun des aventuriers. Chaque pendentif se connecte aux autres pour former une belle
+            rosace avec la pierre recomposée au centre.
+          </p>
           <hr />
 
           <h2>Infestation Inquiétante :</h2>
+          <p class="paragraphe">
+            En rangeant les caisses de la mine ou pendant qu'il recherche un outil ou un objet, le PJ découvre une colonie de petits insectes le long d'un mur. Il se nourrissent de bois et
+            souillent les caisses de nourriture. Les insectes sont arrivés par les conduits de ventilation positionnés au plafond. Dès que les centaures seront informés, il faudra
+            plusieurs jours pour déplacer, nettoyer et inspecter chaque partie de la grotte pour venir à bout de cette invasion.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                En rangeant les caisses de la mine ou pendant qu'il recherche un outil ou un objet, le PJ découvre une colonie de petits insectes le long d'un mur. Il se nourrissent de
-                bois et souillent les caisses de nourriture. Les insectes sont arrivés par les conduits de ventilation positionnés au plafond. Dès que les centaures seront informés, il
-                faudra plusieurs jours pour déplacer, nettoyer et inspecter chaque partie de la grotte pour venir à bout de cette invasion.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:per|diff:10|comp:Observation et comprehénsion de l'infestation]</p></li>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Connaissance biologique des insectes]</p></li>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Traitement de l'infestation] - 3 réussites par jour (bonus de +5 par test ci-dessus réussi)</p></li>
+            </ul>
+            <li><p class="paragraphe">@Test[car:con|comp:Rangement, nettoyage, débayage…]</p></li>
           </ul>
+          <p class="paragraphe">
+            Le ou les PJ ne sont pas les seuls à s'occuper du l'infestation. S'ils ne demandent pas d'aide, la difficulté est augmentée de +5 à +10 et le travail leur prend plusieurs de
+            nombreux jours. Par contre si le travail est bien fait, ils gagneront beaucoup de respect auprès des centaures.
+          </p>
         </div>
     video:
       controls: true
@@ -118,7 +136,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270335154
-      modifiedTime: 1773276308957
+      modifiedTime: 1773448592244
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.KaN8MUqbIPPsXoyQ'
   - sort: 300000
@@ -182,8 +200,8 @@ pages:
               le village et il ne faudrait pas la gâcher en tranchant l'arbre au mauvaise endroit ou de la mauvaise manière ni piétiner les jeunes pousses.
             </p>
             <ul>
-              <li><p class="paragraphe">FOR-ATHL pour couper, débiter, soulever, transporter…</p></li>
-              <li><p class="paragraphe">DEX-AGIL pour s'occuper de l'écorce, des racines, des brindilles et des feuilles.</p></li>
+              <li><p class="paragraphe">@Test[car:for|comp:Athlétisme] pour couper, débiter, soulever, transporter…</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision] pour s'occuper de l'écorce, des racines, des brindilles et des feuilles.</p></li>
             </ul>
             <p class="paragraphe">
               C'est un travail long, fastidieux et dangereux mais chaque journée de travail semble ravir tous les Centaures même les plus agressifs. Par contre, si le Personnage
@@ -193,30 +211,38 @@ pages:
               La présence fréquente, dans la Forêt Intérieure, de Kaha et ses deux fils, Te'Tipu et Kaihoko ne rend pas non plus le travail très sympathique. Dès les premières minutes de
               bûcheronnage, ils seront assez agressifs et désagréable avec ceux qu'ils considèrent comme des intrus et des menaces.
             </p>
+            <hr />
+            <h3>Couper, débiter, soulever, transporter… :</h3>
+            <ul>
+              <li>@Test[car:for|comp:Athlétisme]</li>
+            </ul>
+            <hr />
+            <h3>S'occuper de l'écorce, des racines, des brindilles et des feuilles :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre le travail - Patience]</p></li>
+            </ul>
           </div>
           <hr />
 
           <h2>Tension Accidentelle :</h2>
+          <p class="paragraphe">
+            Le ou les Personnages coupent des branches et récupèrent des feuilles dans la forêt intérieur non loin de Te'Tipu et Kaihoko qui s'occupent de couper un arbre sur pied.
+            L'ambiance est détestable et les deux centaures sont hargneux envers les intrus du village. Au moment de tomber, l'arbre dévie et se retrouve sur les pattes arrières de Kaihoko
+            bloqué. Le ou les PJs pourront aider Te'Tipu a soulever le tronc puis amener le blessé aux bons soins de Kara. Même si cet événement n'adoucira pas Te'Tipu, son frère sera
+            reconnaissant pour l'aide des Personnages.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le ou les Personnages coupent des branches et récupèrent des feuilles dans la forêt intérieur non loin de Te'Tipu et Kaihoko qui s'occupent de couper un arbre sur pied.
-                L'ambiance est détestable et les deux centaures sont hargneux envers les intrus du village. Au moment de tomber, l'arbre dévie et se retrouve sur les pattes arrières de
-                Kaihoko bloqué. Le ou les PJs pourront aider Te'Tipu a soulever le tronc puis amener le blessé aux bons soins de Kara. Même si cet événement n'adoucira pas Te'Tipu, son
-                frère sera reconnaissant pour l'aide des Personnages.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Dégagement d'urgence]</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:10|comp:Premiers secours]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Transport du centaure]</p></li>
           </ul>
           <hr />
           <h2>Impressionnant Travail :</h2>
-          <ul>
-            <li>
-              <p class="paragraphe">
-                Sur une réussite critique ou avec un test élevé, le PJ passe une journée au travail dans la forêt intérieur, soit à couper des arbres soit à s'occuper des branches,
-                écorces, feuilles… Il fait un boulot extraordinaire et la plupart des centaures en entendront parler rapidement.
-              </p>
-            </li>
-          </ul>
+          <p class="paragraphe">
+            Sur une réussite critique ou avec un test élevé, le PJ passe une journée au travail dans la forêt intérieur, soit à couper des arbres soit à s'occuper des branches, écorces,
+            feuilles… Il fait un boulot extraordinaire et la plupart des centaures en entendront parler rapidement.
+          </p>
         </div>
     video:
       controls: true
@@ -235,7 +261,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270349018
-      modifiedTime: 1773276308968
+      modifiedTime: 1773448592330
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.fh429wTzMRKO8X4G'
   - sort: 400000
@@ -273,53 +299,64 @@ pages:
               Désherber, planter, faucher, retourner la terre, récupérer des fleurs ou des graines, cueillir les légumes, nettoyer les allées et surtout s'occuper du compost et des
               crottins de Centaures, il y toujours de quoi faire.
             </p>
-            <p class="paragraphe"></p>
-            <p class="paragraphe">SAG-SURVI pour s'occuper des plantes</p>
-            <ul>
-              <li><p class="paragraphe">FOR-ATHL pour s'occuper du compost et des tâches physiques (désherbage, labour…)</p></li>
-            </ul>
             <p class="paragraphe">
               Quasiment tous les jours, en fin de matinée, les jeunes Centaures s'amusent et se chamaillent dans cette zone où il est facile d'engager un cache-cache ou profiter d'une
               baignade rafraîchissante. Vaiata n'hésite pas à faire des bêtises avec Taiohi et Peepi, les deux petits de Kaihoko et Hapunga.
             </p>
+            <hr />
+            <h3>S'occuper des plantes :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:per|comp:S'occuper des plantes : Botanique]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:S'occuper des plantes : Travail délicat]</p></li>
+            </ul>
+            <hr />
+            <h3>S'occuper du compost :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:for|comp:S'occuper du compost : Athlétisme]</p></li>
+            </ul>
+            <hr />
+            <h3>Travail de la terre :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:for|comp:Travail de la terre : Athlétisme]</p></li>
+            </ul>
           </div>
           <hr />
 
           <h2>Inspection Méprisante :</h2>
+          <p class="paragraphe">
+            Alors que le PJ travaille dans le jardin potager et le verger, Tumuaki, la cheffe du village, conjointe de Kiliko, arrive pour inspecter le travail de l'intrus. Avec son regard
+            froid, ses manières fermées et ses paroles incompréhensibles mais sans aucun doute méprisantes, Tumuaki fait passer un mauvais moment au Personnage. A voir comment ce dernier
+            réagira pour apaiser ou aggraver la situation.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Alors que le PJ travaille dans le jardin potager et le verger, Tumuaki, la cheffe du village, conjointe de Kiliko, arrive pour inspecter le travail de l'intrus. Avec son
-                regard froid, ses manières fermées et ses paroles incompréhensibles mais sans aucun doute méprisantes, Tumuaki fait passer un mauvais moment au Personnage. A voir comment
-                ce dernier réagira pour apaiser ou aggraver la situation.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Empathie - Patience - Diplomacie]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Autorité - S'imposer - Brusquer]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Jouer des coudes - Intimider]</p></li>
           </ul>
           <hr />
 
           <h2>Attaque Ludique :</h2>
+          <p class="paragraphe">
+            Le Personnage récolte quelques fruits dans les branches des arbres fruités du verger lorsque deux enfants centaures se mettent à courir dans sa direction en criant. Taiohi et
+            Peepi sont poursuivis par Vaiata qui porte un masque représentant une sorte de loup. Les deux enfants se cachent dans les hautes céréales de la petite parcelle de champs tandis
+            que Vaiata s'approche en imitant les grognements d'une bête sauvage, les deux bras levés et avec une démarche saccadée. Se retrouvant entre le «prédateur» et ses «proies», le
+            PJ va-t-il sauver les deux enfants dans cette partie de jeu ?
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le Personnage récolte quelques fruits dans les branches des arbres fruités du verger lorsque deux enfants centaures se mettent à courir dans sa direction en criant. Taiohi
-                et Peepi sont poursuivis par Vaiata qui porte un masque représentant une sorte de loup. Les deux enfants se cachent dans les hautes céréales de la petite parcelle de champs
-                tandis que Vaiata s'approche en imitant les grognements d'une bête sauvage, les deux bras levés et avec une démarche saccadée. Se retrouvant entre le «prédateur» et ses
-                «proies», le PJ va-t-il sauver les deux enfants dans cette partie de jeu ? CHA-FILOU DD10 pour participer à cette pièce de théâtre improvisée de façon naturelle.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Arts du spectacle]</p></li>
           </ul>
           <hr />
 
           <h2>Travaille d'Orfèvrerie Végétale :</h2>
+          <p class="paragraphe">
+            Le PJ est en train de désherber quelques rangées de légumes dans le potager lorsque Harikoa s'approche directement de lui avec une petit pot dans la main. La jeune centaure au
+            regard pétillant lui demande de l'aide. Le Personnage doit récolter de toutes petites graines au centre de belles fleurs orangées. Les graines sont minuscules et, après la
+            récolte, il faut les écraser délicatement entre ses doigts pour retirer la fine pellicule autour d'elle. Elle montre au PJ comment faire et lui indique qu'il doit remplir le
+            pot entièrement. Harikoa félicitera le PJ grandement quand il aura fini. DEX-AGIL DD15 pour faire du bon boulot.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le PJ est en train de désherber quelques rangées de légumes dans le potager lorsque Harikoa s'approche directement de lui avec une petit pot dans la main. La jeune centaure
-                au regard pétillant lui demande de l'aide. Le Personnage doit récolter de toutes petites graines au centre de belles fleurs orangées. Les graines sont minuscules et, après
-                la récolte, il faut les écraser délicatement entre ses doigts pour retirer la fine pellicule autour d'elle. Elle montre au PJ comment faire et lui indique qu'il doit
-                remplir le pot entièrement. Harikoa félicitera le PJ grandement quand il aura fini. DEX-AGIL DD15 pour faire du bon boulot.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Délicatesse - Précision] (3 tests)</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Patience] (3 tests - chaque échec ajoute +5 au test d'AGI)</p></li>
           </ul>
         </div>
     video:
@@ -339,7 +376,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270372960
-      modifiedTime: 1773276309018
+      modifiedTime: 1773448592351
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.13YUedrBxZY1CUBb'
   - sort: 500000
@@ -375,38 +412,61 @@ pages:
               organiser… toute les différentes denrées venant du Verger, Champs ou Potager.
             </p>
             <p class="paragraphe">Le travail n'est pas compliqué mais il faut souvent de la minutie, une grande rigueur et une hygiène impeccable.</p>
-            <ul>
-              <li><p class="paragraphe">DEX-AGIL pour s'occuper de la préparation des denrées alimentaires.</p></li>
-              <li><p class="paragraphe">INT-SURVI pour réaliser des opérations de conservation et utiliser les machines de ce bâtiment.</p></li>
-            </ul>
             <p class="paragraphe">
               Dans toute la partie du village servant à la culture de la nourriture, on croise le plus souvent Peka, une Centaure assez stressée, Kaihoroi toujours disponible pour rendre
               service ainsi que la lunatique Kahao.
             </p>
+            <hr />
+            <h3>S'occuper de la préparation des denrées alimentaires :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie]</p></li>
+            </ul>
+            <hr />
+            <h3>Opérations de conservation et utiliser les machines de ce bâtiment :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre des machines]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+            </ul>
           </div>
           <hr />
 
           <h2>Désespoir Ô Désespoir :</h2>
+          <p class="paragraphe">
+            En fin de journée, Peka se trouvera au deuxième étage du bâtiment en train de pleurer. Elle essayera d'expliquer à l'aventurier que son conjoint, Kahaki, a été kidnappé lors de
+            la dernière attaque des Atarangi Kino. Elle est triste, désespérée et en colère de l'inaction du village face a cette menace. Le personnage pourra essayé de la réconforter
+            et/ou en parler à Kara ou à un autre centaure.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                En fin de journée, Peka se trouvera au deuxième étage du bâtiment en train de pleurer. Elle essayera d'expliquer à l'aventurier que son conjoint, Kahaki, a été kidnappé
-                lors de la dernière attaque des Atarangi Kino. Elle est triste, désespérée et en colère de l'inaction du village face a cette menace. Le personnage pourra essayé de la
-                réconforter et/ou en parler à Kara ou à un autre centaure.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Empathie - Diplomacie]</p></li>
           </ul>
           <hr />
 
           <h2>Intéraction Tendue :</h2>
+          <p class="paragraphe">
+            Le PJ est en train de mettre en sachet des feuilles séchées sorties du séchoir solaire au RdC du bâtiment lorsque Kahao s'approche de lui et commence à lui expliquer quelque
+            chose de façon agressive. Elle essaye de se faire comprendre mais sa manière de communiquer est assez bloquante.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le PJ est en train de mettre en sachet des feuilles séchées sorties du séchoir solaire au RdC du bâtiment lorsque Kahao s'approche de lui et commence à lui expliquer
-                quelque chose de façon agressive. Elle essaye de se faire comprendre mais sa manière de communiquer est assez bloquante. CHA-PSY DD15 si réussi, Kahao se calme et arrive à
-                se faire comprendre. Si raté, Kahao s'énerve de plus en plus et deviendra véhémente envers le PJ. Elle le bouscule, le menace, se muni d'un bâton pour le faire sortir…
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Empathie - Diplomacie]</p></li>
+            <li><p class="paragraphe">@Test[car:int|diff:10|comp:Comprendre les demandes]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si les deux tests sont réussis : </strong>Kahao se calme et arrive à se faire comprendre plus ou moins bien.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si l'un des deux tests est raté :</strong> Kahao s'énerve de plus en plus et deviendra véhémente envers le PJ. Elle n'arrive pas à se faire comprendre ou elle a
+                  l'impression que le PJ n'en à rien à faire ou se moque d'elle.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si les deux tests sont ratés :</strong> en plus de s'énerver de plus en plus, elle prend la réaction du PJ comme une insulte volontaire. Elle le bouscule, le
+                  menace, se muni d'un bâton pour le faire sortir…
+                </p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -426,7 +486,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270413222
-      modifiedTime: 1773276309028
+      modifiedTime: 1773448592458
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.PKaXRrmLTYIoQkbS'
   - sort: 600000
@@ -481,51 +541,56 @@ pages:
               l'endroit où le linge est nettoyé et mis à sécher sur des étendoirs. Un petit groupe de centaures se retrouvent pour discuter, ragoter et chanter en lavant le linge du
               village.
             </p>
-            <p class="paragraphe"></p>
+            <hr />
+            <h3>Être aimable, se faire comprendre, nouer des liens… :</h3>
             <ul>
-              <li><p class="paragraphe">CHA-PSY pour essayer de discuter, être aimable, se faire comprendre, nouer des liens…</p></li>
-              <li><p class="paragraphe">CHA-FILOU pour faire rire les enfants, faire semblant, manipuler l'opinion…</p></li>
-              <li><p class="paragraphe">FOR-COMM pour rouler des mécaniques, montrer qu'on est pas n'importe qui, essayer d'en imposer, paraître fier…</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Empathie - Diplomacie]</p></li>
+            </ul>
+            <hr />
+            <h3>Faire rire les enfants, faire semblant, manipuler l'opinion… :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:cha|comp:Filouterie - Manipulation]</p></li>
+            </ul>
+            <hr />
+            <h3>Rouler des mécaniques, montrer qu'on est pas n'importe qui, essayer d'en imposer, paraître fier… :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:for|comp:Impressionner - Intimidation]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Crottins et Compost :</h2>
+          <p class="paragraphe">
+            En pleine balade dans les rues d'Arkanov, vous remarquez Kaihoroi est en train de ramasser, à l'aide d'une longue pelle plate, les crottins de la communauté. Il remplit une
+            brouette pour les amener au compost. Même si ce n'est pas naturel pour les PJs, le centaure, au caractère serviable, serait bien heureux et reconnaissant si on venait l'aider
+            dans cette tâche fastidieuse et répétitive.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                En pleine balade dans les rues d'Arkanov, vous remarquez Kaihoroi est en train de ramasser, à l'aide d'une longue pelle plate, les crottins de la communauté. Il remplit une
-                brouette pour les amener au compost. Même si ce n'est pas naturel pour les PJs, le centaure, au caractère serviable, serait bien heureux et reconnaissant si on venait
-                l'aider dans cette tâche fastidieuse et répétitive.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:for|diff:10|comp:Travail physique]</p></li>
+            <li><p class="paragraphe">@Test[car:con|diff:15|comp:Endurance]</p></li>
           </ul>
           <hr />
 
           <h2>Coiffure Insouciante :</h2>
+          <p class="paragraphe">
+            Après une bonne journée de travail, l'un des Personnages se dirige vers le lac pour une baignade décontractante. A moment de s'immerger, il voit le long du verger la très jeune
+            Hunga qui nage autour du lac tranquillement. Elle finit par s'approcher du ponton près du PJ, attrape une brosse à cheveux et attend passivement que le PJ sorte de l'eau en
+            l'observant. Lorsqu'il sort de l'eau, elle lui tend la brosse et lui fait comprendre qu'elle souhaiterait qu'il l'a coiffe. Si le PJ refuse, elle restera allongée sur le ponton
+            une bonne partie de la nuit les yeux dans le vide. Elle semble toute contente si l'aventurier accepte et elle parlera beaucoup durant le brossage. Des villageois regarderont la
+            scène avec ravissement car cette jeune centaure est très timide habituellement.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Après une bonne journée de travail, l'un des Personnages se dirige vers le lac pour une baignade décontractante. A moment de s'immerger, il voit le long du verger la très
-                jeune Hunga qui nage autour du lac tranquillement. Elle finit par s'approcher du ponton près du PJ, attrape une brosse à cheveux et attend passivement que le PJ sorte de
-                l'eau en l'observant. Lorsqu'il sort de l'eau, elle lui tend la brosse et lui fait comprendre qu'elle souhaiterait qu'il l'a coiffe. Si le PJ refuse, elle restera allongée
-                sur le ponton une bonne partie de la nuit les yeux dans le vide. Elle semble toute contente si l'aventurier accepte et elle parlera beaucoup durant le brossage. Des
-                villageois regarderont la scène avec ravissement car cette jeune centaure est très timide habituellement.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Empathie - Diplomacie - Écoute]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Faire l'idiot - Faire des blagues]</p></li>
           </ul>
           <hr />
 
           <h2>Plier pour la Communauté :</h2>
-          <ul>
-            <li>
-              <p class="paragraphe">
-                En ce dirigeant vers le lac pour récupérer son linge mise à séché, le Personnage remarque l'étendoir remplie de tissus et de linges totalement sec, prêt à être plié. Si le
-                PJ, sans incitation, entreprend de plier le linge de la communauté, il sera félicité par Te'Riri qui approchait pour s'en occuper. Conjointe de l'hostile Kaihoko, Te'Riri
-                saura valoriser l'intrus du village auprès de son conjoint conservateur.
-              </p>
-            </li>
-          </ul>
+          <p class="paragraphe">
+            En ce dirigeant vers le lac pour récupérer son linge mise à séché, le Personnage remarque l'étendoir remplie de tissus et de linges totalement sec, prêt à être plié. Si le PJ,
+            sans incitation, entreprend de plier le linge de la communauté, il sera félicité par Te'Riri qui approchait pour s'en occuper. Conjointe de l'hostile Kaihoko, Te'Riri saura
+            valoriser l'intrus du village auprès de son conjoint conservateur.
+          </p>
         </div>
     video:
       controls: true
@@ -544,7 +609,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270429377
-      modifiedTime: 1773276309108
+      modifiedTime: 1773448592474
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.uoJIun8wTNjIEhYY'
   - sort: 700000
@@ -581,56 +646,72 @@ pages:
               Toa.
             </p>
             <p class="paragraphe">Des cours particuliers seront proposés aux Personnages les plus attentif avec le Professeur Kaiako.</p>
-            <p class="paragraphe"></p>
+            <hr />
+            <h3>Apprendre et comprendre les enseignements :</h3>
             <ul>
-              <li><p class="paragraphe">INT-CULT.GÉ pour étudier avec les autres élèves, pour apprendre la langue…</p></li>
-              <li>
-                <p class="paragraphe">
-                  CHA-FILOU pour faire rigoler les élèves, pour les cours artistiques ou pour faire croire qu'on a compris alors qu'on a pas réviser son contrôle de grammaire.
-                </p>
-              </li>
-              <li><p class="paragraphe">CHA-PSYCHO pour les cours particuliers avec Kaiako ou Toa.</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Apprentissage théorique]</p></li>
+            </ul>
+            <hr />
+            <h3>Faire rigoler les élèves, pour les cours artistiques ou pour faire croire qu'on a compris… :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:cha|comp:Filouterie - Manipulation]</p></li>
+            </ul>
+            <hr />
+            <h3>Cours particuliers avec Kaiako ou Toa :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:cha|comp:Diplomacie - Empathie]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre des savoirs]</p></li>
             </ul>
           </div>
           <hr />
 
-          <h2>Raconte Nous une Histoire :</h2>
+          <h2>Raconte-nous une Histoire :</h2>
+          <p class="paragraphe">
+            Après quelques jours d'études dans l'école du village, Kaiako devant s'absenter quelques instants, les jeunes centaures présents se retournent vers le PJ. Ils ont pleins de
+            questions et de sollicitations pour lui. Ils lui demandent de se lever, ils l'observent, le font tourner… Le Personnage pourra réagir de la manière qui souhaite mais rien de
+            comblera plus les jeunes centaure qu'un récit d'aventure mimé et théâtralisé, même s'ils ne comprennent pas un seul mot du conteur improvisé.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Après quelques jours d'études dans l'école du village, Kaiako devant s'absenter quelques instants, les jeunes centaures présents se retournent vers le PJ. Ils ont pleins de
-                questions et de sollicitations pour lui. Ils lui demandent de se lever, ils l'observent, le font tourner… Le Personnage pourra réagir de la manière qui souhaite mais rien
-                de comblera plus les jeunes centaure qu'un récit d'aventure mimé et théâtralisé, même s'ils ne comprennent pas un seul mot du conteur improvisé.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Tenir un auditoire]</p></li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Réaliser des acrobaties]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Impressionner les jeunes]</p></li>
           </ul>
           <hr />
 
           <h2>Harcèlement Scolaire :</h2>
+          <p class="paragraphe">
+            Pendant une leçon de Kaiako devant la classe, le Personnage remarque une tension qui monte entre Taitamariki et Hunga. Ils commencent à se jeter des regards noirs, se lancent
+            discrètement des noms d'oiseau et s'énervent. Il semblerait que Taitamariki se moque de la chevelure de Hunga et qu'elle rentre dans son jeu. Si le PJ ne fait rien au bout de
+            quelques minutes la jeune Hunga se lève se met à crier sur le centaure moqueur et s'avance vers lui bien décidé à lui retourner une gifle ou pire. Le professeur est à l'autre
+            bout de la pièce. Comment le PJ va réagir pour éviter un conflit physique entre les deux jeunes ?
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Pendant une leçon de Kaiako devant la classe, le Personnage remarque une tension qui monte entre Taitamariki et Hunga. Ils commencent à se jeter des regards noirs, se
-                lancent discrètement des noms d'oiseau et s'énervent. Il semblerait que Taitamariki se moque de la chevelure de Hunga et qu'elle rentre dans son jeu. Si le PJ ne fait rien
-                au bout de quelques minutes la jeune Hunga se lève se met à crier sur le centaure moqueur et s'avance vers lui bien décidé à lui retourner une gifle ou pire. Le professeur
-                est à l'autre bout de la pièce. Comment le PJ va réagir pour éviter un conflit physique entre les deux jeunes ?
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Diplomacie - Apaiser un conflit]</p></li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Réflexes pour s'interposer]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Autorité - Intimidation]</p></li>
           </ul>
           <hr />
 
           <h2>Initiation aux Danses Martiales :</h2>
+          <p class="paragraphe">
+            Toutes les tables de l'école sont rangées, la pièce est entièrement dégagée et Toa, la maître d'arme s'apprête à commencer une leçon autour d'une danse martiale d'intimidation.
+            Elle commence les mouvements des bras pour que le ou les PJs puissent apprendre aussi.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Toutes les tables de l'école sont rangées, la pièce est entièrement dégagée et Toa, la maître d'arme s'apprête à commencer une leçon autour d'une danse martiale
-                d'intimidation. Elle commence les mouvements des bras pour que le ou les PJs puissent apprendre aussi. DEX-AGIL DD15 ou FOR-ATHL DD15 pour suivre correctement les
-                consignes. Si le test est réussi, Toa sera impressionnée par les techniques et l'expertise du ou des Personnages. En cas de réussite critique, les jeunes et la professeure
-                sont éblouis par le talent du PJ. Si le test est raté, les gestes approximatifs et les difficultés du ou des PJs déclencheront une hilarité bienveillante dans toute la
-                salle. Si le PJ le souhaite, il peut accentuer la drôlerie de la scène avec un CHA-FILOU DD10. En cas de réussite, les jeunes centaures raconteront cette histoire pendant
-                des décennies !
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Suivre la chorégraphie] (2 tests)</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si les tests sont réussis :</strong> Toa sera impressionnée par les techniques et l'expertise du ou des Personnages.</p>
+                <p class="paragraphe"><strong>En cas de réussite critique :</strong> les jeunes et la professeure sont éblouis par le talent du PJ.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le test est raté :</strong> les gestes approximatifs et les difficultés du ou des PJs déclencheront une hilarité bienveillante dans toute la salle. Si le PJ le
+                  souhaite, il peut accentuer la drôlerie de la scène avec un @Test[car:cha|diff:10|comp:Faire l'idiot].
+                </p>
+                <p class="paragraphe"><strong>En cas de réussite :</strong> les jeunes centaures raconteront cette histoire pendant des années !</p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -650,7 +731,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270440504
-      modifiedTime: 1773276309117
+      modifiedTime: 1773448592551
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.WB0bl6i0ApQZTpR3'
   - sort: 800000
@@ -690,51 +771,80 @@ pages:
               mangent dans leur coin ou dans leur atelier, il est plus fréquent que les Centaures s'installent sur la Place du Village, le long du lac, dans le verger ou même dans la salle
               commune au rez-de-chaussée ou à l'étage.
             </p>
+            <hr />
+            <h3>Préparer des repas :</h3>
             <ul>
-              <li><p class="paragraphe">SAG-/SURVI ou DEX-AGIL pour préparer des repas</p></li>
-              <li><p class="paragraphe">CHA-PSY ou CHA-FILOU pour apporter leur repas à certains Centaures.</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
             </ul>
+            <hr />
+            <h3>Apporter leur repas à certains Centaures :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:cha|comp:Diplomacie - Empathie]</p></li>
+            </ul>
+            <hr />
           </div>
-          <hr />
 
           <h2>Cuisine Diplomatique :</h2>
+          <p class="paragraphe">
+            Kaha, Te'Tipu et Kaihoko rentrent de la chasse avec un magnifique cerf qu'ils déposent dans la cuisine collective en bombant le torse quand il passe à côté du Personnage. Les
+            trois centaures repartent avec un grognement pour aller se laver et se reposer. Le PJ peut préparer le cerf avec la complexité que cela représente.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Kaha, Te'Tipu et Kaihoko rentrent de la chasse avec un magnifique cerf qu'ils déposent dans la cuisine collective en bombant le torse quand il passe à côté du Personnage.
-                Les trois centaures repartent avec un grognement pour aller se laver et se reposer. Le PJ peut préparer le cerf avec la complexité que cela représente. SAG-SURVI ou
-                DEX-AGIL DD20. Si le Personnage échoue, il sera lourdement réprimandé par Kaha et ses fils devant tout le village. Par contre, si le PJ réussi, les trois chasseurs seront
-                étonnés et ils auront un peu plus d'estime pour le Personnage. Lors du repas, Kaha fera même un signe de tête au PJ. Si la réussite est critique, les trois centaures, en
-                goûtant le repas, éclateront de rire, les yeux entre l'étonnement et la reconnaissance.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:10|comp:Délicatesse - Précision]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Force physique]</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:20|comp:Survie]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le Personnage échoue :</strong> il sera lourdement réprimandé par Kaha et ses fils devant tout le village.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Par contre, si le PJ réussi :</strong> les trois chasseurs seront étonnés et ils auront un peu plus d'estime pour le Personnage. Lors du repas, Kaha fera même un
+                  signe de tête au PJ.
+                </p>
+                <p class="paragraphe">
+                  <strong>Si la réussite est critique :</strong> les trois centaures, en goûtant le repas, éclateront de rire, les yeux entre l'étonnement et la reconnaissance.
+                </p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Douleurs Intenses :</h2>
+          <p class="paragraphe">
+            L'après-midi à préparer le repas est finie aux côtés de Maamaa et Kai qui ne sont pas avares de compliments. Ils tendent un large bol au PJ et lui demande d'aller l'apporter
+            dans la Salle Commune à Haputanga qui est enceinte. En entrant, le PJ entend des gémissements de douleur au fond de la pièce derrière le paravent. Il trouve Haputanga pliée en
+            deux par les douleurs de sa grossesse. Elle transpire à grosses gouttes et elle tend la main vers une serviette et une bouteille d'eau. L'aventurier peut l'aider directement ou
+            aller chercher son conjoint, Kaihoroi, ou un autre habitant. Dans tous les cas, Haputanga, Kaihoroi et la soigneuse Kara seront très reconnaissant envers le Héros d'Ispier pour
+            son aide ou son alerte.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                L'après-midi à préparer le repas est finie aux côtés de Maamaa et Kai qui ne sont pas avares de compliments. Ils tendent un large bol au PJ et lui demande d'aller
-                l'apporter dans la Salle Commune à Haputanga qui est enceinte. En entrant, le PJ entend des gémissements de douleur au fond de la pièce derrière le paravent. Il trouve
-                Haputanga pliée en deux par les douleurs de sa grossesse. Elle transpire à grosses gouttes et elle tend la main vers une serviette et une bouteille d'eau. L'aventurier peut
-                l'aider directement ou aller chercher son conjoint, Kaihoroi, ou un autre habitant. Dans tous les cas, Haputanga, Kaihoroi et la soigneuse Kara seront très reconnaissant
-                envers le Héros d'Ispier pour son aide ou son alerte.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:10|comp:Empathie - Réconfort]</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:15|comp:Premiers secours]</p></li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Délicatesse pour déplacer la future mère]</p></li>
           </ul>
           <hr />
 
           <h2>Apprenti Empoisonneur :</h2>
+          <p class="paragraphe">
+            Avant l'aube, tandis que le PJ entre dans la cuisine collective pour prendre un petit déjeuner, il tombe nez-à-nez avec le jeune Taitamariki qui semble effrayé par sa présence.
+            Il tient dans sa main une petite fiole contenant un liquide blanchâtre qu'il cache de suite dans son dos, l'air de rien. CHA-PSY DD20 pour discuter et questionner, CHA-FILOU
+            DD20 pour baratiner et manipuler ou FOR-COMM DD15 pour intimider et impressionner le jeune centaure. Si le test est réussi, Taitamariki donnera la fiole au PJ et le suppliera
+            de garder le silence. C'est une fiole de poison qu'il voulait utiliser pour tuer son père Te'Tipu.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Avant l'aube, tandis que le PJ entre dans la cuisine collective pour prendre un petit déjeuner, il tombe nez-à-nez avec le jeune Taitamariki qui semble effrayé par sa
-                présence. Il tient dans sa main une petite fiole contenant un liquide blanchâtre qu'il cache de suite dans son dos, l'air de rien. CHA-PSY DD20 pour discuter et
-                questionner, CHA-FILOU DD20 pour baratiner et manipuler ou FOR-COMM DD15 pour intimider et impressionner le jeune centaure. Si le test est réussi, Taitamariki donnera la
-                fiole au PJ et le suppliera de garder le silence. C'est une fiole de poison qu'il voulait utiliser pour tuer son père Te'Tipu.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Empathie - Discuter - Questionner]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Baratiner - Manipuler]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Intimider - Impressioner - Gronder]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong> le test est réussi :</strong> Taitamariki donnera la fiole au PJ et le suppliera de garder le silence. C'est une fiole de poison qu'il voulait utiliser pour tuer
+                  son père Te'Tipu.
+                </p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -754,7 +864,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270456321
-      modifiedTime: 1773276309203
+      modifiedTime: 1773448592623
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.QYs90mKhx9fHyy79'
   - sort: 900000
@@ -795,61 +905,64 @@ pages:
               environnantes. Les aventuriers qui passeront leurs nuits dans l'atelier de couture verront chaque nuit, un ou une Centaure monter dans la tour d'observation pour faire le
               guet.
             </p>
-            <p class="paragraphe"></p>
+            <hr />
+            <h3>Trouver le bon objet, le bon matériel ou le bon outil dans le stockage du RDC :</h3>
             <ul>
-              <li><p class="paragraphe">SAG-PERC pour trouver le bon objet, le bon matériel ou le bon outil dans le stockage du RDC.</p></li>
-              <li><p class="paragraphe">DEX-AGIL pour le travail de couture et du cuir.</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Fouille]</p></li>
+            </ul>
+            <hr />
+            <h3>Travail de couture et du cuir :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre les assemblages et les plans]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Une Aide Précieuse :</h2>
+          <p class="paragraphe">
+            Le PJ passe devant la porte du bâtiment de stockage de produits finis et des outils et il entend des bruits d'agitations et d'agacement par la porte. S'il regarde, il voit
+            Aroha énervée en train de déplacer des caisses et des cagettes en grognant. Elle fait signe au PJ. Elle souhaite de l'aide pour sortir un trio de grands tréteaux qui sont noyés
+            sous le bazar de la pièce. L'aide du PJ sera très appréciée par Aroha qui doit ensuite installer une grande place de travail pour travailler sur une partie importante de la
+            machine du village.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le PJ passe devant la porte du bâtiment de stockage de produits finis et des outils et il entend des bruits d'agitations et d'agacement par la porte. S'il regarde, il voit
-                Aroha énervée en train de déplacer des caisses et des cagettes en grognant. Elle fait signe au PJ. Elle souhaite de l'aide pour sortir un trio de grands tréteaux qui sont
-                noyés sous le bazar de la pièce. L'aide du PJ sera très appréciée par Aroha qui doit ensuite installer une grande place de travail pour travailler sur une partie importante
-                de la machine du village.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Diplomacie - Apaisement]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Travail physique]</p></li>
           </ul>
           <hr />
 
           <h2>Couture et Complicité :</h2>
-          <ul>
-            <li>
-              <p class="paragraphe">
-                Alors qu'un Personnage se dirige à l'étage du bâtiment, dans l'atelier de couture, il tombe sur Titiro qui a du passer plusieurs heures dans la pièce pour préparer des
-                costumes de spectacle. Elle demande au PJ ce qu'il veut et elle va lui proposer son aide pour fabriquer, rapiécer ou améliorer ses vêtements. Le PJ et la belle centaure
-                vont passer un long moment dans l'atelier. Souriante et complice, Titiro apportera une touche élégante à la réalisation et surtout, elle arrivera à ajuster le vêtement à la
-                perfection.
-              </p>
-            </li>
-          </ul>
+          <p class="paragraphe">
+            Alors qu'un Personnage se dirige à l'étage du bâtiment, dans l'atelier de couture, il tombe sur Titiro qui a du passer plusieurs heures dans la pièce pour préparer des costumes
+            de spectacle. Elle demande au PJ ce qu'il veut et elle va lui proposer son aide pour fabriquer, rapiécer ou améliorer ses vêtements. Le PJ et la belle centaure vont passer un
+            long moment dans l'atelier. Souriante et complice, Titiro apportera une touche élégante à la réalisation et surtout, elle arrivera à ajuster le vêtement à la perfection.
+          </p>
           <hr />
 
           <h2>Un Cadeau pour son Aimée :</h2>
+          <p class="paragraphe">
+            Un Personnage se trouve en plein travail dans l'atelier de couture, lorsque arrive Te'Whakama. L'adolescent explique qu'il veut faire un joli cadeau à Vaiata mais il ne sait
+            pas quoi. Il a pensé à une belle ceinture ou un haut ou … Il ne sait pas. Il demandera conseils au PJ et ce dernier pourra même l'aider à concevoir le vêtement.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Un Personnage se trouve en plein travail dans l'atelier de couture, lorsque arrive Te'Whakama. L'adolescent explique qu'il veut faire un joli cadeau à Vaiata mais il ne
-                sait pas quoi. Il a pensé à une belle ceinture ou un haut ou … Il ne sait pas. Il demandera conseils au PJ et ce dernier pourra même l'aider à concevoir le vêtement (<span>DEX-AGIL</span>
-                estimer la qualité de la réalisation en fonction du résultat).
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|comp:Travail artisanal délicat]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|comp:Sens artistique]</p></li>
+            <ul>
+              <li><p class="paragraphe">Estimer la qualité et l'originalité du cadeau en fonction des résultats des tests.</p></li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Une Étagère sur la Tête :</h2>
+          <p class="paragraphe">
+            Le PJ est parti chercher un outil au RdC du bâtiment et il entend un grand fracas à l'étage ainsi qu'une volée d'insultes en langue centaure. Une étagère remplie de boites et
+            de bobines de fils est tombée au sol répandant des milliers d'objets partout. Titiro est au sol légèrement assommée par l'étagère. Le PJ pourra amener la jeune centaure
+            enceinte voir Kara et s'il range la pièce, Titiro sera la plus heureuse des centaure lorsqu'elle découvrira son atelier réparé.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le PJ est parti chercher un outil au RdC du bâtiment et il entend un grand fracas à l'étage ainsi qu'une volée d'insultes en langue centaure. Une étagère remplie de boites
-                et de bobines de fils est tombée au sol répandant des milliers d'objets partout. Titiro est au sol légèrement assommée par l'étagère. Le PJ pourra amener la jeune centaure
-                enceinte voir Kara et s'il range la pièce, Titiro sera la plus heureuse des centaure lorsqu'elle découvrira son atelier réparé.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:per|diff:10|comp:Premiers secours]</p></li>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Rangement de l'atelier]</p></li>
           </ul>
         </div>
     video:
@@ -869,7 +982,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270476112
-      modifiedTime: 1773276309237
+      modifiedTime: 1773448592639
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.NDrkpxJE2qxi4A0X'
   - sort: 1000000
@@ -905,59 +1018,90 @@ pages:
               n'est pas très compliqué à part la délicatesse qu'il faut pour ne rien casser. Par contre la présence de Kite'Tihe compliquera la vie. Diplomatie et calme seront les
               meilleures armes pour ne pas se faire engueuler ou même frapper.
             </p>
+            <hr />
+            <h3>Réaliser des bougies :</h3>
             <ul>
-              <li><p class="paragraphe">DEX-AGIL pour réaliser des bougies</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Diplomacie - Empathie]</p></li>
             </ul>
+            <hr />
             <p class="paragraphe">
               A l'étage, on laisse la place à l'argile qui est récupéré et filtré depuis le fond du lac. Cette terre fine est utilisé pour réaliser des pots, des outils, de la vaisselle en
               poterie ou en faïence grâce au grand banc de tournage au bâton. Lorsque l'on s'installe sur le banc, à la dimension d'un centaure, on peut rester longtemps à façonner
               l'argile humide pour la réalisation de tous les équipements du quotidien. Malgré la complexité et l'énergie qu'il faudra pour utiliser le tour à bâton, si un PJ y parvient,
               cela impressionnera les centaures. La seule qui supporte assez Kite'Tihe est Ka'Huri qui aime passer du temps à l'atelier de poterie.
             </p>
+            <hr />
+            <h3>S'occuper du four :</h3>
             <ul>
-              <li><p class="paragraphe">CONSTIT : pour s'occuper du four</p></li>
-              <li><p class="paragraphe">FOR-ATHL pour utiliser le tour à bâton</p></li>
-              <li><p class="paragraphe">DEX-AGIL pour la poterie au colombin</p></li>
+              <li><p class="paragraphe">@Test[car:con|comp:Patience - Résister au sommeil]</p></li>
+            </ul>
+            <hr />
+            <h3>Utiliser le tour à bâton (très dur difficulté minimum 20) :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:for|comp:Athlétisme]</p></li>
+            </ul>
+            <hr />
+            <h3>Faire de la poterie au colombin :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Créativité - Sens artistique]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Une Vielle Aigrie :</h2>
+          <p class="paragraphe">
+            Il ne se passe pas souvent des événements à la fabrication de bougie de part la présence de Kite'Tihe. Assez insupportable, presque personne ne peut supporter sa présence trop
+            longtemps. Lors d'une grande journée de création de bougie avec la stressée et belliqueuse Ka'Huri, Kite'Tihe entre en furie dans l'atelier et commence a donner des coups de
+            bâton au PJ présent. Dans son énervement, elle casse du matériel et elle s'exprime avec beaucoup de colère et d'incohérence. Ka'Huri s'interpose mais, en fonction de la
+            réaction du Personnage, la situation peut vite dégénérer.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Il ne se passe pas souvent des événements à la fabrication de bougie de part la présence de Kite'Tihe. Assez insupportable, presque personne ne peut supporter sa présence
-                trop longtemps. Lors d'une grande journée de création de bougie avec la stressée et belliqueuse Ka'Huri, Kite'Tihe entre en furie dans l'atelier et commence a donner des
-                coups de bâton au PJ présent. Dans son énervement, elle casse du matériel et elle s'exprime avec beaucoup de colère et d'incohérence. Ka'Huri s'interpose mais, en fonction
-                de la réaction du Personnage, la situation peut vite dégénérer.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Diplomacie - Apaisement]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Manipuler - Se moquer]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Intimider - Menacer - Bousculer]</p></li>
           </ul>
           <hr />
 
           <h2>Cuisson Sous Surveillance :</h2>
+          <p class="paragraphe">
+            Teina, l'adolescente amie de Vaiata, a terminé tard son travail dans la poterie pour fabriquer des dizaines de tuiles pour les toitures. Elle est épuisée et interpelle un
+            Personnage dans la rue pour lui demander d'entretenir le foyer de cuisson toute la nuit. Elle semble désolée mais elle est a deux doigts de tomber de sommeil. Le PJ devra
+            rester réveillé toute la nuit pour surveiller le feu. Bien sur, l'aventurier pourra résister à la nuit en présence d'une autre personne.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Teina, l'adolescente amie de Vaiata, a terminé tard son travail dans la poterie pour fabriquer des dizaines de tuiles pour les toitures. Elle est épuisée et interpelle un
-                Personnage dans la rue pour lui demander d'entretenir le foyer de cuisson toute la nuit. Elle semble désolée mais elle est a deux doigts de tomber de sommeil. CONSTIT DD10
-                trois tests pour rester réveillé toute la nuit pour surveiller le feu. Si le Personnage réussi, Teina sera très reconnaissante et voudra aider le PJ en retour. Si le
-                personnage échoue, les tuiles sont fichues et Teina ainsi que le PJ se feront enguirlander par Ka'Huri. Bien sur, l'aventurier pourra résister à la nuit en présence d'une
-                autre personne.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:con|diff:10|comp:Résister au sommeil] (3 tests)</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le Personnage réussi :</strong> Teina sera très reconnaissante et voudra aider le PJ en retour.</p>
+              </li>
+              <li>
+                <p class="paragraphe"><strong>Si le personnage échoue :</strong> les tuiles sont fichues et Teina ainsi que le PJ se feront enguirlander par Ka'Huri.</p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Capable ou Pas ? :</h2>
+
+          <p class="paragraphe">
+            Ka'Huri arrive dans la poterie et trouve un PJ en train de réaliser des poteries au colombin. Elle sourit et commence à provoquer la fierté du Personnage sur son impossibilité
+            d'utiliser le tour à bâton car il est trop faible. FOR-ATHL DD20 trois tests.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Ka'Huri arrive dans la poterie et trouve un PJ en train de réaliser des poteries au colombin. Elle sourit et commence à provoquer la fierté du Personnage sur son
-                impossibilité d'utiliser le tour à bâton car il est trop faible. FOR-ATHL DD20 trois tests. Si le PJ réussit, Ka'Huri racontera et honorera le PJ lors de la prochaine
-                soirée dans la Salle Commune. Si le PJ échoue, Ka'Huri se moquera gentiment car elle avait raison mais, au final, ils auront passé un bon moment de complicité ensemble.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Travail de force - Athlétisme] (3 tests)</p></li>
+            <li><p class="paragraphe">@Test[car:con|diff:15|comp:Maintenir la cadence] pour estimer la durée de l'effort.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le PJ réussit :</strong> Ka'Huri racontera et honorera le PJ lors de la prochaine soirée dans la Salle Commune.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ échoue :</strong> Ka'Huri se moquera gentiment car elle avait raison mais, au final, ils auront passé un bon moment de complicité ensemble.
+                </p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -977,7 +1121,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270496278
-      modifiedTime: 1773276309269
+      modifiedTime: 1773448592702
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.3AL5tLVP6FLVPXw2'
   - sort: 1100000
@@ -1016,7 +1160,6 @@ pages:
               Par une des fenêtre du RdC et du premier étage, deux cordes permettent d'actionner des soufflets qui maintiennent la température des foyers grâce à l'énergie hydraulique de
               la cascade du village.
             </p>
-            <p class="paragraphe"></p>
             <p class="paragraphe">
               Au premier étage, le travail de finition commence avec un plus petit foyer enchanté aussi par une forte magie. A part la coupole de la forge du RdC qui prend une grosse
               partie du centre de la pièce, on peut trouver ici quelques enclumes et plans de travail pour réaliser des travaux de forge plus précis avec plus de calme mais aussi pour
@@ -1045,63 +1188,121 @@ pages:
               Ils seront continuellement sous la supervision de Whakarewa qui est une très bonne cheffe d'atelier et félicitera les aventuriers pour leurs belles réalisations ou leur
               motivation. Whakarewa et Kaipara montreront, au fil de jours, leur complicité malgré les différences de ce couple.
             </p>
-            <p class="paragraphe"></p>
+            <hr />
+            <h3>S'occuper de la forge :</h3>
             <ul>
-              <li><p class="paragraphe">FOR-ATHL pour s'occuper de la forge</p></li>
-              <li><p class="paragraphe">DEX-AGIL pour faire des réalisations de précision au RdC et dans les étages</p></li>
-              <li><p class="paragraphe">INT-ARCA pour s'essayer à la gravure des runes pour les PJs ayant la Voie de la magie runique.</p></li>
+              <li><p class="paragraphe">@Test[car:for|comp:Athlétisme]</p></li>
+              <li><p class="paragraphe">@Test[car:con|comp:Résistance à la chaleur]</p></li>
+            </ul>
+            <hr />
+            <h3>Faire des réalisations de précision au RdC et dans les étages :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+            </ul>
+            <hr />
+            <h3>Graver des runes pour les PJs ayant la Voie de la magie runique :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Connaissance magique]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Un Réflexe ou un Accident :</h2>
+          <p class="paragraphe">
+            La forge tourne à plein régime depuis quelques jours pour transformer du minerai en plusieurs lingots de fer ou d'alliage. Après avoir retirer les déchets à la surface du métal
+            fondu dans un grand creuset, le PJ entend un craquement grave. Un clignement d'œil plus tard, le creuset bascule du foyer entre Whakarewa et lui.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                La forge tourne à plein régime depuis quelques jours pour transformer du minerai en plusieurs lingots de fer ou d'alliage. Après avoir retirer les déchets à la surface du
-                métal fondu dans un grand creuset, le PJ entend un craquement grave. Un clignement d'œil plus tard, le creuset bascule du foyer entre Whakarewa et lui. DEX-AGIL DD15 ou
-                FOR-ATHL DD20. Si le PJ réussi, il attrape la longue poignée du creuset et le maintien en équilibre le temps que Whakarewa se retourne et l'aide. Si le PJ échoue au test,
-                le creuset tombe au sol, éclaboussant la zone de métal fondu. ATT-CONTACT vs DEF 14. Si réussi, le Personnage saute, l'épaule en avant pour bousculer Whakarewa et lui
-                éviter de terribles brûlures. Si le test échoue, Le PJ, en poussant Whakarewa, se retrouve dans la zone de projection des boulettes de métal fondues. Il reçoit 2d6+8 DM,
-                sera amené chez Kara pour quelques soins et gardera des cicatrices de ces brûlures sur les bras et la joue. Après la chute du creuset, il faudra passer quelques heures de
-                nettoyage et surtout fabriquer un nouveau creuset de forge.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Réflexes]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Maintenir une charge lourde]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ réussi :</strong> il attrape la longue poignée du creuset et le maintien en équilibre le temps que Whakarewa se retourne et l'aide.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ échoue aux tests :</strong> le creuset tombe au sol, éclaboussant la zone de métal fondu : @Test[car:agi|diff:15|comp:Réflexes|echdm:3d6+8]
+                </p>
+              </li>
+              <ul>
+                <li>
+                  <p class="paragraphe"><strong>Si réussi :</strong> le Personnage saute, l'épaule en avant pour bousculer Whakarewa et lui éviter de terribles brûlures.</p>
+                </li>
+                <li>
+                  <p class="paragraphe">
+                    <strong>Si le test échoue :</strong> Le PJ, en poussant Whakarewa, se retrouve dans la zone de projection des boulettes de métal fondues. Il reçoit 3d6+8 DM, sera amené
+                    chez Kara pour quelques soins et gardera des cicatrices de ces brûlures sur les bras et la joue.
+                  </p>
+                </li>
+              </ul>
+            </ul>
           </ul>
+          <p class="paragraphe">Après la chute du creuset, il faudra passer quelques heures de nettoyage et surtout fabriquer un nouveau creuset de forge.</p>
           <hr />
 
           <h2>Colère Juvénile :</h2>
+          <p class="paragraphe">
+            Les journées de travail à la forge sont agréables même si les efforts sont intenses et la chaleur étouffante. Kaipara, Whakarewa et Ka'Kata forme une bonne équipe pour guider
+            le Personnage dans le bâtiment. A part les blagues nulles du père de famille, l'ambiance est appréciable. Mataro, le jeune centaure, partage souvent la forge avec cette famille
+            et le Personnage malgré son air renfermé et sombre. Lorsqu'il est présent, le travail avance vite mais une tension s'installe et les coups de marteau passent d'harmonieux à
+            colériques. Alors que Kaipara et Whakarewa sont occupés à l'étage, Mataro, après une erreur bête et sans conséquence, entre dans une colère violente. Il jette sa pince dans le
+            foyer, donne un coup de sabot à une caisse de tige de fer et renverse le contenu d'une table. Il hurle des mots grossiers et des insultes dans le vide. Une vraie tornade proche
+            de Ka'Kata et le Personnage.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Les journées de travail à la forge sont agréables même si les efforts sont intenses et la chaleur étouffante. Kaipara, Whakarewa et Ka'Kata forme une bonne équipe pour
-                guider le Personnage dans le bâtiment. A part les blagues nulles du père de famille, l'ambiance est appréciable. Mataro, le jeune centaure, partage souvent la forge avec
-                cette famille et le Personnage malgré son air renfermé et sombre. Lorsqu'il est présent, le travail avance vite mais une tension s'installe et les coups de marteau passent
-                d'harmonieux à colériques. Alors que Kaipara et Whakarewa sont occupés à l'étage, Mataro, après une erreur bête et sans conséquence, entre dans une colère violente. Il
-                jette sa pince dans le foyer, donne un coup de sabot à une caisse de tige de fer et renverse le contenu d'une table. Il hurle des mots grossiers et des insultes dans le
-                vide. Une vraie tornade proche de Ka'Kata et le Personnage. CHA-PSY DD20 ou FOR-COMM DD15 pour réussir à calmer le jeune Mataro. Si le Personnage y parvient, Mataro sortira
-                de la forge, se dirigera vers les habitants à l'Est du bâtiment et commencera a expliquer son traumatisme face aux actes des Atarangi Kino dont il a été témoin, il y a 6
-                mois. Il a vu, par la fenêtre, sa grand-mère maternelle se faire massacrer et son grand-père se faire kidnapper par les Atarangi Kino alors qu'il était caché dans leur
-                maison. Il est totalement traumatisé par ces images et son quotidien balance entre colère et tristesse depuis.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Diplomacie - Apaisement] ou</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Autorité - Intimider]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le Personnage y parvient :</strong> Mataro sortira de la forge, se dirigera vers les habitants à l'Est du bâtiment et commencera a expliquer son traumatisme
+                  face aux actes des Atarangi Kino dont il a été témoin, il y a 6 mois. Il a vu, par la fenêtre, sa grand-mère maternelle se faire massacrer et son grand-père se faire
+                  kidnapper par les Atarangi Kino alors qu'il était caché dans leur maison. Il est totalement traumatisé par ces images et son quotidien balance entre colère et tristesse
+                  depuis.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ échoue :</strong> La colère de Mataro se transforme en tempête dans la forge. Il renverse des tables et jette des outils. Après quelques minutes, il sort
+                  en furie et se dirige vers les murailles pour taper sur des trucs dans la salle d'entrainement. En fonction de la réaction du PJ, il arrivera ou pas à faire parler Mataro
+                  sur son traumatisme.
+                </p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Une Maintenance Complexe :</h2>
+          <p class="paragraphe">
+            <strong>En fin de Phase 2 :</strong> si un PJ a passé quelques jours de travail dans la forge et qu'il est bien perçu par le Whakarewa, cette dernière demandera à Miihini
+            d'intégrer le Personnage dans une grande maintenance sur une pièce de la machine principale du village. Pendant trois jours, le Personnage va participer à de nombreuses visites
+            de la machine, étudier des plans et des procédures avec un groupe de 5 autres centaures (Kaipara, Ka'Kata, Aroha, Kai et Miihini). Chaque étape n'est pas des plus complexes
+            mais il va falloir enchaîner chorégraphie millimétrée pour démonter, transporter, installer et réparer cet engrenage énorme. Le PJ devra réussir trois tests différents, pas
+            très compliqués, pour être, à la fin des opérations considéré comme une aide et non comme un frein :
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                En fin de Phase 2, si un PJ a passé quelques jours de travail dans la forge et qu'il est bien perçu par le Whakarewa, cette dernière demandera à Miihini d'intégrer le
-                Personnage dans une grande maintenance sur une pièce de la machine principale du village. Pendant trois jours, le Personnage va participer à de nombreuses visites de la
-                machine, étudier des plans et des procédures avec un groupe de 5 autres centaures (Kaipara, Ka'Kata, Aroha, Kai et Miihini). Chaque étape n'est pas des plus complexes mais
-                il va falloir enchaîner chorégraphie millimétrée pour démonter, transporter, installer et réparer cet engrenage énorme. Le PJ devra réussir trois tests différents, pas très
-                compliqués, pour être, à la fin des opérations considéré comme une aide et non comme un frein : INT-CULT.GE DD10 puis FOR-ATHL DD10 et pour finir DEX-AGIL DD10. S'il réussi
-                tout le processus, Miihini fera monter sur la tribune le PJ le soir même devant tout le village réunit et lui confiera qu'il est digne de recevoir le tatouage des forgerons
-                d'Arkanov sur le pectoral gauche. L'émotion du village est palpable et le PJ ressentira l'honneur dans les mots et les émotions de Miihini. Ce travail devrait faire
-                basculer le PJ en Phase 3 sans problème.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Ingéniérie - Culture artisanale]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:10|comp:Travail de force]</p></li>
+            <li><p class="paragraphe">@Test[car:agi|diff:10|comp:Délicatesse - Précision]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>S'il réussi tout le processus :</strong> Miihini fera monter sur la tribune le PJ le soir même devant tout le village réunit et lui confiera qu'il est digne de
+                  recevoir le tatouage des forgerons d'Arkanov sur le pectoral gauche. L'émotion du village est palpable et le PJ ressentira l'honneur dans les mots et les émotions de
+                  Miihini. Ce travail devrait faire basculer le PJ en Phase 3 sans problème.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ échoue :</strong> Miihini remerciera au milieu de la procédure le PJ et lui dira gentillement de les laisser travailler. Dans le cas où le PJ se serait
+                  vanté de ses compétences avant le début du chantier, les centaures pourront le cermoner plus sévèrement sur les implications dramatiques que son incompétence aurait pu
+                  avoir sur le village.
+                </p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -1121,7 +1322,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270507111
-      modifiedTime: 1773276309301
+      modifiedTime: 1773448592742
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.w5pMCoYMA92Enjdp'
   - sort: 1200000
@@ -1155,54 +1356,78 @@ pages:
               Réparer certains meubles, faire du petit artisanat divers, fabriquer le charbon… Il y a toujours quelque chose à faire ici. Souvent seul, le Personnage pourra être «dérangé»
               par Kaiwhakairo qui vient réparer un tiroir ou un manche d'outil.
             </p>
-
+            <hr />
+            <h3>Réaliser des travaux utilitaires :</h3>
             <ul>
-              <li><p class="paragraphe">DEX-AGIL pour réaliser des travaux utilitaires</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre des plans]</p></li>
+              <li><p class="paragraphe">@Test[car:for|comp:Travail de force]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Assemblage Robuste :</h2>
+          <p class="paragraphe">
+            Khaiwakairo vient chercher un PJ de bon matin pour lui demander de l'aide. Il doit assembler un grand établi et remplacer la table centrale dans le bâtiment de production de
+            nourriture. L'établi est costaud, muni de nombreux tiroirs de différentes tailles et surtout, chaque partie a été sculptée avec soin par Khaiwakairo durant de longues nuits. Il
+            est tout simplement magnifique et cela fait des années que Kahao et Whakaaro demande l'installation d'un meuble plus fonctionnel. Toutes les pièces sont préparées devant ce
+            bâtiment. Le travail n'est pas extrêmement physique mais il faut emboîter chaque pièce dans le bon ordre avec soin et minutie. Il faudra surtout une bonne compréhension entre
+            Khaiwakairo et le Personnage pour ne pas s'emmêler les pinceaux.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Khaiwakairo vient chercher un PJ de bon matin pour lui demander de l'aide. Il doit assembler un grand établi et remplacer la table centrale dans le bâtiment de production
-                de nourriture. L'établi est costaud, muni de nombreux tiroirs de différentes tailles et surtout, chaque partie a été sculptée avec soin par Khaiwakairo durant de longues
-                nuits. Il est tout simplement magnifique et cela fait des années que Kahao et Whakaaro demande l'installation d'un meuble plus fonctionnel. Toutes les pièces sont préparées
-                devant ce bâtiment. Le travail n'est pas extrêmement physique mais il faut emboîter chaque pièce dans le bon ordre avec soin et minutie. Il faudra surtout une bonne
-                compréhension entre Khaiwakairo et le Personnage pour ne pas s'emmêler les pinceaux. DEX-AGIL DD15 et CHA-PSY DD20. Si échoué, le grand établi mais monté mais ça n'a pas
-                été une partie de plaisir pour se faire comprendre entre le centaure et le PJ. Si réussi, le Personnage et le centaure passe une excellente matinée à assembler cette belle
-                pièce de menuiserie, mange ensemble cordialement et installe l'établi à sa place définitive dans l'après-midi sous l'œil reconnaissant de Kahao et Whakaaro.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Rester concentré et précis]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Respecter les consignes - Compréhension - Anticipation]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> le Personnage et le centaure passe une excellente matinée à assembler cette belle pièce de menuiserie, mange ensemble cordialement et
+                  installe l'établi à sa place définitive dans l'après-midi sous l'œil reconnaissant de Kahao et Whakaaro.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si échoué :</strong> le grand établi mais monté mais ça n'a pas été une partie de plaisir pour se faire comprendre entre le centaure et le PJ.
+                </p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Inspection Surprise :</h2>
+          <p class="paragraphe">
+            Si un Personnage prend l'initiative d'une création artisanale dans ce bâtiment (fabrication d'un meuble, d'un objet, réparation d'une structure…), il se fait interrompre par
+            Kamura pendant son travail. Elle venait récupérer une petite enclume et elle commence à inspecter le travail du PJ et lui poser des questions sur ce qu'il fait. Elle semble
+            intriguée par cette initiative et elle montre des signes d'encouragement pour l'aventurier qui réalise ce travail.
+          </p>
           <ul>
             <li>
-              <p class="paragraphe">
-                Si un Personnage prend l'initiative d'une création artisanale dans ce bâtiment (fabrication d'un meuble, d'un objet, réparation d'une structure…), il se fait interrompre
-                par Kamura pendant son travail. Elle venait récupérer une petite enclume et elle commence à inspecter le travail du PJ et lui poser des questions sur ce qu'il fait. Elle
-                semble intriguée par cette initiative et elle montre des signes d'encouragement pour l'aventurier qui réalise ce travail. CHA-PSY DD15 pour convaincre Kamura du bien fait
-                de la réalisation ou CHA-FILOU DD20 pour embobiner Kamura.
-              </p>
+              <p class="paragraphe"><strong>Si le travail est pour la communauté :</strong> @Test[car:cha|diff:15|comp:Expliquer - Argumenter - Convaincre]</p>
+            </li>
+            <li>
+              <p class="paragraphe"><strong>Si le travail est uniquement pour le PJ ou ses compagnons :</strong> @Test[car:cha|diff:20|comp:Baratiner - Mentir - Embrouiller]</p>
             </li>
           </ul>
+
           <hr />
 
           <h2>Un Roupillon et de la Mauvaise Foi :</h2>
+          <p class="paragraphe">
+            Un PJ qui a besoin d'un outil, de réparer un objet ou simplement passant dans ce bâtiment pour affûter un outil, tombe face à Poauau, le vieux centaure, en train de dormir au
+            milieu de la pièce. Il se réveille en sursaut faisant tomber une caisse d'outils au sol. Il semble désorienté et lance un regard noir au Personnage. Avec beaucoup de mauvaise
+            fois, il pointe les outils au sol et commence à rouspéter l'aventurier pour sa maladresse.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Un PJ qui a besoin d'un outil, de réparer un objet ou simplement passant dans ce bâtiment pour affûter un outil, tombe face à Poauau, le vieux centaure, en train de dormir
-                au milieu de la pièce. Il se réveille en sursaut faisant tomber une caisse d'outils au sol. Il semble désorienté et lance un regard noir au Personnage. Avec beaucoup de
-                mauvaise fois, il pointe les outils au sol et commence à rouspéter l'aventurier pour sa maladresse. CHA-PSY DD20 pour faire entendre raison à Poauau, CHA-FILOU DD15 pour
-                jouer de la situation absurde face à Poauau ou FOR-COMM DD20 pour envoyer paître le centaure et le confronter face à sa responsabilité. Si le PJ réussi son test, Poauau
-                reconnaîtra sa tentative de manipulation et demandera au PJ de ne pas ébruiter l'histoire. Si le test échoue, Poauau s'empressera de raconter à tout le village comment il a
-                recadre un intrus après sa maladresse.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Diplomacie - Politesse - Empathie] pour calmer et apaiser Poauau.</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Bagou - Manipuler - Jouer de la situation] pour se moquer l'absurde situation.</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Intimider - Autorité] pour envoyer paître Poauau.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le PJ réussi son test :</strong> Poauau reconnaîtra sa tentative de manipulation et demandera au PJ de ne pas ébruiter l'histoire.</p>
+              </li>
+              <li>
+                <p class="paragraphe"><strong>Si le test échoue :</strong> Poauau s'empressera de raconter à tout le village comment il a recadre un intrus après sa maladresse.</p>
+              </li>
+            </ul>
           </ul>
         </div>
     video:
@@ -1222,7 +1447,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270523736
-      modifiedTime: 1773276309323
+      modifiedTime: 1773448592754
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.2CbnDSbhN5kjd8nt'
   - sort: 1300000
@@ -1255,86 +1480,150 @@ pages:
               et apprend les bases des danses de conflit les choses se compliquent. Les rythmes, les pas, les gestes sont d'une complexité phénoménale et d'une précision chirurgicale. Il
               faudrait plus d'une vie pour apprendre à maîtriser l'une des danses du conflit et surtout avoir 4 sabots à la place des bottes .<br />
             </p>
+            <hr />
+            <h3>Entraînements martiaux :</h3>
             <ul>
-              <li><p class="paragraphe">ATT-CONTACT ou ATT-DIST pour les entraînements martiaux</p></li>
-              <li><p class="paragraphe">FOR-ATHL pour les exercices physiques</p></li>
-              <li><p class="paragraphe">SAG-SURVI pour l'entretien des armes</p></li>
+              <li><p class="paragraphe">Le PJ réalise des tests d'attaque de contact ou à distance avec les armes qu'il souhaite utiliser.</p></li>
+            </ul>
+            <hr />
+            <h3>Exercices physiques :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:for|comp:Musculation]</p></li>
+              <li><p class="paragraphe">@Test[car:con|comp:Endurance]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Réflexe - Souplesse]</p></li>
+            </ul>
+            <hr />
+            <h3>Entretien des armes :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Entraînement Commun :</h2>
+          <p class="paragraphe">
+            Afin de renforcer sa musculature et sa résistance, le PJ s'entraîne au RdC d'une des tours de la muraille. Il enchaîne les manœuvres de puissance avec des exercices
+            d'assouplissement et continue par des frappes lourdes sur les mannequins d'entraînement. Il gravit de multiples fois les rampes pour monter dans les étages en courant et ne
+            fait des pauses que pour boire et essuyer la sueur de son visage. Après une heure d'entraînement, le Personnage est surpris par Maamaa qui l'observe dans l'encadrement de la
+            porte. Elle est là pour s'entraîner également et surtout sa souplesse comme à peu près tous les jours. Elle fait un signe de tête au PJ et attrape des gants matelassés, les
+            enfile, et se positionne devant l'aventurier les deux bras tendus, l'invitant à frapper dans les gants. Maamaa est d'une rare rapidité et souplesse et permet au PJ de
+            développer ses réflexes et son cardio.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Afin de renforcer sa musculature et sa résistance, le PJ s'entraîne au RdC d'une des tours de la muraille. Il enchaîne les manœuvres de puissance avec des exercices
-                d'assouplissement et continue par des frappes lourdes sur les mannequins d'entraînement. Il gravit de multiples fois les rampes pour monter dans les étages en courant et ne
-                fait des pauses que pour boire et essuyer la sueur de son visage. Après une heure d'entraînement, le Personnage est surpris par Maamaa qui l'observe dans l'encadrement de
-                la porte. Elle est là pour s'entraîner également et surtout sa souplesse comme à peu près tous les jours. Elle fait un signe d de tête au PJ et attrape des gants
-                matelassés, les enfile, et se positionne devant l'aventurier les deux bras tendus, l'invitant à frapper dans les gants. Maamaa est d'une rare rapidité et souplesse et
-                permet au PJ de développer ses réflexes et son cardio. ATT-CONTACT DD15 ou FOR-ATHL DD20. Si le PJ échoue, Maamaa lui fera comprendre qu'elle l'attendra tous les après-midi
-                après la distribution des repas pour poursuivre l'entraînement avec elle. Si le PJ réussi, elle est impressionnée et invitera le PJ pour d'autres séances d'entraînement
-                plus intensive dès le lendemain. Les phases d'entraînement avec Maamaa sont très agréable bien et les conversations viennent compléter la sueur et l'effort.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:for|diff:15|comp:Athlétisme]</p></li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Réflexes - Souplesse]</p></li>
+            <li><p class="paragraphe">@Test[car:con|diff:15|comp:Endurance]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ réussi plusieurs tests :</strong> elle est impressionnée et invitera le PJ pour d'autres séances d'entraînement plus intensive dès le lendemain. Les
+                  phases d'entraînement avec Maamaa sont très agréable bien et les conversations viennent compléter la sueur et l'effort. Elle racontera les séances d'entrainement souvent
+                  aux autres centaures.
+                </p>
+                <p class="paragraphe">
+                  Si le PJ est réellement accidue et compétent, elle demandera à Kiliko l'autorisation de lui offrir le tatouage du ??? pour récompenser ses talents. C'est un immense
+                  honneur pour le PJ et il doit bien le comprendre.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ échoue la plupart des tests :</strong> Maamaa lui fera comprendre qu'elle l'attendra tous les après-midi après la distribution des repas pour poursuivre
+                  l'entraînement avec elle. Maamaa est vraiment très gentille donc elle ne se moquera pas du PJ mais elle pourra être déçu s'il n'accepte pas sa proposition de l'aider à
+                  s'améliorer ou s'il abandonne rapidement.
+                </p>
+              </li>
+            </ul>
           </ul>
+
           <hr />
 
           <h2>La Danse du Chef :</h2>
+          <p class="paragraphe">
+            Un Personnage, voulant s'entraîner rapidement avant d'aller se coucher, entre dans les murailles et entend immédiatement des bruits rythmés de sabots au premier étage de la
+            tour Ouest. En montant la rampe, il voit Kiliko en train d'exécuter une danse de combat méditative au centre de la pièce, les yeux fermés. Il fait des gestes précis et rapides,
+            mêlant puissance dans l'impact et fluidité dans les enchaînements. Ce moment est comme sorti du temps tellement la danse est enivrante pour le PJ qui observe. A la fin de la
+            danse, au moment où Kiliko ouvre les yeux, il voit le PJ. En fonction de la réaction du Personnage, le chef du village proposera à l'aventurier de lui expliquer les gestes de
+            cette danse permettant de se concentrer et de décharger son stress.
+          </p>
           <ul>
+            <li><p class="paragraphe">@Test[car:agi|diff:20|comp:Souplesse - Chorégraphie]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le PJ réussi :</strong> il parvient à reproduire assez bien la danse et Kiliko le gratifie pour cette performance.</p>
+              </li>
+              <li>
+                <p class="paragraphe"><strong>Si le PJ échoue :</strong> Kiliko est amusé et incite le Personnage a continuer ses efforts pour la danse mais aussi au sein du village.</p>
+              </li>
+            </ul>
             <li>
               <p class="paragraphe">
-                Un Personnage, voulant s'entraîner rapidement avant d'aller se coucher, entre dans les murailles et entend immédiatement des bruits rythmés de sabots au premier étage de la
-                tour Ouest. En montant la rampe, il voit Kiliko en train d'exécuter une danse de combat méditative au centre de la pièce, les yeux fermés. Il fait des gestes précis et
-                rapides, mêlant puissance dans l'impact et fluidité dans les enchaînements. Ce moment est comme sorti du temps tellement la danse est enivrante pour le PJ qui observe. A la
-                fin de la danse, au moment où Kiliko ouvre les yeux, il voit le PJ. En fonction de la réaction du Personnage, le chef du village proposera à l'aventurier de lui expliquer
-                les gestes de cette danse permettant de se concentrer et de décharger son stress. DEX-AGIL DD20. Si le PJ réussi, il parvient à reproduire assez bien la danse et Kiliko le
-                gratifie pour cette performance. Si le PJ échoue, Kiliko est amusé et incite le Personnage a continuer ses efforts pour la danse mais aussi au sein du village. Dans tous
-                les cas Kiliko discutera quelques minutes avec le Personnage pour lui expliquer qu'il est déchiré entre son plaisir de découvrir de nouvelles têtes étrangères et sa
-                nécessité de protéger le village et de maintenir une cohésion du groupe.
+                Dans tous les cas Kiliko discutera quelques minutes avec le Personnage pour lui expliquer qu'il est déchiré entre son plaisir de découvrir de nouvelles têtes étrangères et
+                sa nécessité de protéger le village et de maintenir une cohésion du groupe.
               </p>
             </li>
           </ul>
+
           <hr />
 
           <h2>Concours de Tir à l'Arc :</h2>
+          <p class="paragraphe">
+            <strong>En fin de Phase 2 :</strong> pour les PJs à l'aise avec l'utilisation des arcs ou des arbalètes, Toa, la maître d'arme du village, vient les trouver un soir pour leur
+            proposer de participer à un concours de tir à l'arc organisé tous les ans. Les PJs qui acceptent sont attendu dans une semaine sur la place publique à l'aube. Le village ne
+            parle que de cet événement durant toute la semaine et on peut voir certains centaures s'entraîner ou fabriquer leurs propres flèches ou améliorer leur arc. Lorsque le concours
+            commence, les PJs sont en concurrence avec 7 centaures munis de leurs arcs et flèches.
+          </p>
+          <p class="paragraphe">
+            Le concours se déroule en plusieurs manches. Il faut réaliser un test d'Attaque à Distance avec son arme et chaque participants ayant atteint la difficulté recule de quelques
+            mètres et la difficulté augment de 5 points à chaque nouvelle manche.
+            <strong>le PJ ne peut utiliser qu'un seul Point de Chance durant toute la compétition (chaque centaure a aussi un PC a dépenser)</strong>. Le Personnage a deux essais par
+            manche. Le difficulté commence à 5 pour la première manche.
+          </p>
+          <p class="paragraphe">Le but du PJ tenir le plus de manche et si possible être le dernier archer dans le concours. , Si le personnage est premier, ,</p>
           <ul>
             <li>
+              <p class="paragraphe"><strong>Si le PJ est parvenu à une bonne place et que la Phase 2 est déjà bien engagée :</strong> ce concours lui ouvrira les portes de la Phase 3.</p>
+            </li>
+            <li>
               <p class="paragraphe">
-                En fin de Phase 2, pour les PJs à l'aise avec l'utilisation des arcs ou des arbalètes, Toa, la maître d'arme du village, vient les trouver un soir pour leur proposer de
-                participer à un concours de tir à l'arc organisé tous les ans. Les PJs qui acceptent sont attendu dans une semaine sur la place publique à l'aube. Le village ne parle que
-                de cet événement durant toute la semaine et on peut voir certains centaure s'entraîner ou fabriquer leur propres flèches ou améliorer leur arc. Lorsque le concours
-                commence, les PJs sont en concurrence avec 7 centaures munis de leurs arcs et flèches. Le concours se déroule en plusieurs manches et le PJ ne peut utiliser qu'un seul
-                Point de Chance durant toute la compétition. Le Personnage a deux essais par manche. Pour la première manche, ATT-DIST DD5. A chaque manche le Degré de Difficulté augmente
-                de 5 points. Les centaures lancent ATT-DIST deux fois par manche également. Le but du PJ tenir le plus de manche et si possible être le dernier archer dans le concours. Si
-                le Personnage atteint le podium, les habitants du village sont impressionnés. Si le personnage est premier, le village propose de tatouer le symbole du chasseur au
-                Personnage sur l'avant-bras droit. Un honneur immense pour leur culture. Si le PJ est parvenu à une bonne place, ce concours lui ouvrira les portes de la Phase 3.
+                <strong>Si le Personnage atteint le podium :</strong> les habitants du village sont impressionnés. le village propose de tatouer le symbole du chasseur au Personnage sur
+                l'avant-bras droit. Un honneur immense pour leur culture.
+              </p>
+            </li>
+            <li>
+              <p class="paragraphe">
+                <strong>Si le personnage est premier :</strong> en plus du tatouage du Chasseur et ce grand honneur, le PJ pourra recevoir un enchantement sculpté sur son arc réalisé par
+                Kaiwhakairo (envisagez un petit pouvoir ou un petit bonus).
               </p>
             </li>
           </ul>
-          <ul>
-            <li><p class="paragraphe">Participants :</p></li>
+          <section class="salleplus">
+            <h3>Participants :</h3>
             <ul>
-              <li><p class="paragraphe">Ka'Huri : ATT-DIST +14</p></li>
-              <li><p class="paragraphe">Kai : ATT-DIST +13</p></li>
-              <li><p class="paragraphe">Kamura : ATT-DIST +12</p></li>
-              <li><p class="paragraphe">Kaiputu : ATT-DIST +11</p></li>
-              <li><p class="paragraphe">Maamaa : ATT-DIST +10</p></li>
-              <li><p class="paragraphe">Te'Wikitoria : ATT-DIST +9</p></li>
-              <li><p class="paragraphe">Kaiako :ATT-DIST +8</p></li>
+              <li><p class="paragraphe">Ka'Huri : Attaque à Distance +14</p></li>
+              <li><p class="paragraphe">Kai : Attaque à Distance +14</p></li>
+              <li><p class="paragraphe">Kamura : Attaque à Distance +13</p></li>
+              <li><p class="paragraphe">Iti : Attaque à Distance +11</p></li>
+              <li><p class="paragraphe">Aroha : Attaque à Distance +9</p></li>
+              <li><p class="paragraphe">Te'Wikitoria : Attaque à Distance +9</p></li>
+              <li><p class="paragraphe">Kaiako :Attaque à Distance +8</p></li>
             </ul>
-          </ul>
+          </section>
           <hr />
 
           <h2>Combats Démonstratifs :</h2>
+          <p class="paragraphe">
+            Pendant qu'un PJ qui s'entraîne au combat au Corps à Corps, au premier étage d'une des tours de la muraille, De bon matin, il est interrompu par le couple Aroha et Wakaweti
+            venu, eux aussi, pour s'entraîner. Ils proposent au Personnage une séance de combats démonstratifs. Sans vouloir se blesser, les deux centaures souhaitent, tout de même, des
+            combats intenses, à un contre un. Il est possible de jouer le combat de façon classique en convertissant tous les dégâts létaux en non-létaux ou juste quelques test
+            d'ATT-CONTACT vs ATT-CONTACT de Wakaweti ou Aroha.
+          </p>
           <ul>
             <li>
+              <p class="paragraphe"><strong>Si le PJ emporte le combat :</strong> le centaure vaincu et son conjoint en parlera pendant de nombreux jours.</p>
+            </li>
+            <li>
               <p class="paragraphe">
-                Pendant qu'un PJ qui s'entraîne au combat au Corps à Corps, au premier étage d'une des tours de la muraille, De bon matin, il est interrompu par le couple Toa et Wakaweti
-                venu, eux aussi, pour s'entraîner. Ils proposent au Personnage une séance de combats démonstratifs. Sans vouloir se blesser, les deux centaures souhaitent, tout de même,
-                des combats intenses, à un contre un. Il est possible de jouer le combat de façon classique en convertissant tous les dégâts létaux en non-létaux ou juste quelques test
-                d'<span>ATT-CONTACT</span> vs ATT-CONTACT de Wakaweti ou Toa. Si le PJ emporte le combat, le centaure vaincu et son conjoint en parlera pendant de nombreux jours. Si le PJ
-                est battu, le couple de centaures rigolera avec le Personnage et ils lui proposeront de continuer des entraînements régulièrement.
+                <strong>Si le PJ est battu :</strong> le couple de centaures rigolera avec le PJ et ils lui proposeront de continuer des entraînements régulièrement.
               </p>
             </li>
           </ul>
@@ -1356,7 +1645,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270542570
-      modifiedTime: 1773276309382
+      modifiedTime: 1773448592811
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.fqQEw5YAUk6zHgZm'
   - sort: 1400000
@@ -1385,7 +1674,6 @@ pages:
               travaillées. Un système de poulies installé sur la hauteur du mur extérieur permet, grâce à une grande manivelle de soulever entièrement les trois lourdes portes pour ouvrir
               sur la cour. Il faut au moins deux centaures pour manipuler la manivelle et c'est un grand honneur. Ils respectent une danse très rythmique lorsqu'il soulèvent ces portes.
             </p>
-            <p class="paragraphe"></p>
             <p class="paragraphe">
               Au rez-de-chaussée, un espace au fond, partiellement sous la rampe, est «caché» par des paravents qui permettent à certains Centaures en famille ou entre amis de se retrouver
               plus au calme pendant les soirées. Dans la plupart des cas, c'est dans ce coin de la pièce que les femelles Centaure mettent bas.
@@ -1401,10 +1689,18 @@ pages:
               Dans la plupart des cérémonie ou soirées légères, les Centaures participent en tapant du sabot, en répétant ou en applaudissant, par exemple. Si les Héros de la Dame d'Ispier
               jouent le jeu avec les Centaures, ils ne seront jamais moqués mais, au contraire, même les plus conservateurs leur lanceront des regards approbateurs et/ou complices<br />
             </p>
+            <hr />
+            <h3>Participer aux cérémonies et soirées :</h3>
             <ul>
-              <li><p class="paragraphe">CHA-FILOU pour participer aux et soirées</p></li>
-              <li><p class="paragraphe">INT-CULT.GÉ pour comprendre un peu mieux les rites et coutumes du Village</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Arts du spectacle]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Acrobatie]</p></li>
             </ul>
+            <hr />
+            <h3>Comprendre les rites et coutumes du Village :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Empathie - Compréhension]</p></li>
+            </ul>
+            <hr />
             <ul>
               <li><p class="paragraphe">Premier Étage : Repos et convalescence</p></li>
             </ul>
@@ -1421,69 +1717,114 @@ pages:
               les bruits du village sont presque tous étouffés et l'ambiance permet de faire des séances de méditation très appréciables. Une petite clochette en métal permet à un Centaure
               de «réveiller» la personne qui médite.
             </p>
+            <hr />
+            <h3>Surveillance dans la tour :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:per|comp:Observation]</p></li>
+              <li><p class="paragraphe">@Test[car:con|comp:Résistance au sommeil]</p></li>
+            </ul>
           </div>
           <hr />
 
           <h2>Une Première Soirée Tendue :</h2>
+          <p class="paragraphe">
+            Lors de la première soirée des PJs dans la Salle Commune, Kupu a prévu un spectacle de contes traditionnels. Les Personnages connaissent assez bien la langue pour comprendre
+            les grandes lignes de la pièce. Les gestes et grimaces de Kupu permettent aussi de mieux interpréter les mots et expressions. Juste avant le début du spectacles lorsque Kaha,
+            Te'Tipu, Kaimoe et Peka entrent dans la pièce, ils semblent offusqués de la présence des intrus dans la salle. Ils commencent à s'énerver sur Kiliko et une dispute s'engage
+            devant les grandes portes. Une partie des centaures se mêlent à la joute verbale, certains du côté de Kiliko d'autres prenant le partie de Kaha et Te'Tipu. Le reste des
+            centaures semblent intimidés par cette situation et, après quelques hurlements, Peepi et Taiohi se mettent à pleurer. Si les aventuriers décident de quitter la pièce et de
+            donner raison à Kaha et son groupe, ses derniers marqueront des points auprès des habitants. Si les PJs restent calmes et soutiennent Kiliko, les centaures amicaux envers les
+            PJs seront renforcés par cette décision. Si les Personnages se mêlent en colère ou deviennent violent, ils perdront de la confiance auprès de tous les habitants du village.
+          </p>
           <ul>
             <li>
               <p class="paragraphe">
-                Lors de la première soirée des PJs dans la Salle Commune, Kupu a prévu un spectacle de contes traditionnels. Les Personnages connaissent assez bien la langue pour
-                comprendre les grandes lignes de la pièce. Les gestes et grimaces de Kupu permettent aussi de mieux interpréter les mots et expressions. Juste avant le début du spectacles
-                lorsque Kaha, Te'Tipu, Kaimoe et Peka entrent dans la pièce, ils semblent offusqués de la présence des intrus dans la salle. Ils commencent à s'énerver sur Kiliko et une
-                dispute s'engage devant les grandes portes. Une partie des centaures se mêlent à la joute verbale, certains du côté de Kiliko d'autres prenant le partie de Kaha et Te'Tipu.
-                Le reste des centaures semblent intimidés par cette situation et, après quelques hurlements, Peepi et Taiohi se mettent à pleurer. Si les aventuriers décident de quitter la
-                pièce et de donner raison à Kaha et son groupe, ses derniers marqueront des points auprès des habitants. Si les PJs restent calmes et soutiennent Kiliko, les centaures
-                amicaux envers les PJs seront renforcés par cette décision. Si les Personnages se mêlent en colère ou deviennent violent, ils perdront de la confiance auprès de tous les
-                habitants du village.
+                Il est possible de réaliser des tests de @Test[car:cha] pour faire de la diplomacie, de la manipulation/moquerie ou pour faire de l'intimidation mais il est aussi possible
+                de résoudre cette scène juste en discution.
               </p>
             </li>
           </ul>
           <hr />
 
           <h2>Héros et Comédiens :</h2>
+          <p class="paragraphe">
+            Après plusieurs soirées partagées dans la Salle Commune avec les villageois, les PJs auront l'honneur d'être interpellés par Kupu et Titiro pour leur proposer de jouer dans la
+            prochaine pièce de théâtre. Le couple aimerait mettre en scène les enfants et adolescents du village qui vivent des aventures avec les Héros d'Ispier. Ils partent ensemble dans
+            les montagnes pour découvrir les dangers du monde. Titiro a déjà des idées de costumes et Kupu explique en détail les scènes et les morales. Si les PJs acceptent, ils passeront
+            quelques jours avec le couple de centaures et les plus jeunes habitants pour faire des répétitions. INT-CULT.GÉ DD15 pour bien retenir le texte. Le soir de la représentation,
+            tous les habitants sont présents et, à part quelques centaures toujours hostiles, l'excitation est à son comble. CHA-FILOU DD15 ou CHA-PSY DD20.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Après plusieurs soirées partagées dans la Salle Commune avec les villageois, les PJs auront l'honneur d'être interpellés par Kupu et Titiro pour leur proposer de jouer dans
-                la prochaine pièce de théâtre. Le couple aimerait mettre en scène les enfants et adolescents du village qui vivent des aventures avec les Héros d'Ispier. Ils partent
-                ensemble dans les montagnes pour découvrir les dangers du monde. Titiro a déjà des idées de costumes et Kupu explique en détail les scènes et les morales. Si les PJs
-                acceptent, ils passeront quelques jours avec le couple de centaures, les plus jeunes habitants pour faire des répétitions. INT-CULT.GÉ DD15 pour bien retenir le texte. Le
-                soir de la représentation, tous les habitants sont présents et, à part quelques centaures toujours hostiles, l'excitation est à son comble. CHA-FILOU DD15 ou CHA-PSY DD20.
-                Si échoué, la pièce tourne à la comédie moqueuse envers le comédien improvisé. Si réussi, la pièce est un succès et la soirée se termine avec beaucoup de rigolades, de
-                gentillesse et de félicitation pour les PJs.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:int|diff:10|comp:Retenir son texte et les scènes] (3 tests pendant les répétitions)</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Jouer la comédie] (chaque réussite aux trois tests précédents donne un bonus de +3 à ce test)</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> la pièce est un succès et la soirée se termine avec beaucoup de rigolades, de gentillesse et de félicitation pour les PJs.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe"><strong>Si échoué :</strong> la pièce tourne à la comédie moqueuse envers le comédien improvisé.</p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Une Naissance Heureuse :</h2>
+          <p class="paragraphe">
+            Les Personnages qui ont développé leur relation avec Kahoroi, Haputanga, Vaiata, Peepi ou Taiohi seront invités à assister au poulinage d'Haputanga dans l'espace intimiste de
+            la Salla Commune. Ils seront aux côtés de Kara et Te'Wikitoria, les soigneuses, Kaihoroi, le conjoint, Taitamariki, le petit frère, les enfants Taiohi et Peepi, Kaimoe, la
+            maman et Harikoa pour donner des antidouleurs si nécessaire. Le moment est extrêmement touchant et joyeux. Des larmes coulent, des chants sont entonnés, des embrassades sont
+            faites et le poulain femelle semble en pleine forme. Si l'un des PJ a établit une bonne relation avec Haputanga, elle lui proposera de choisir le prénom du petit poulain mâle
+            fraîchement né sinon il s'appellera : Te'Ao (le monde).
+          </p>
           <ul>
             <li>
               <p class="paragraphe">
-                Les Personnages qui ont développé leur relation avec Kahoroi, Haputanga, Vaiata, Peepi ou Taiohi seront invités à assister au poulinage d'Haputanga dans l'espace intimiste
-                de la Salla Commune. Ils seront aux côtés de Kara et Te'Wikitoria, les soigneuses, Kaihoroi, le conjoint, Taitamariki, le petit frère, les enfants Taiohi et Peepi, Kaimoe,
-                la maman et Harikoa pour donner des antidouleurs si nécessaire. Le moment est extrêmement touchant et joyeux. Des larmes coulent, des chants sont entonnés, des embrassades
-                sont faites et le poulain femelle semble en pleine forme. Si l'un des PJ a établit une bonne relation avec Haputanga, elle lui proposera de choisir le prénom du petit
-                poulain mâle fraîchement né sinon il s'appellera : Te'Ao (le monde).
+                Scène sans jet. Pour le ou les PJ qui participent à ce moment, c'est un moment très touchant et important. Insistez bien sur le fait que ce n'est pas tous les jours qu'un
+                aventurier peut assister à la naissance d'un bébé centaure.
               </p>
             </li>
           </ul>
           <hr />
 
           <h2>Une Honorable Surveillance :</h2>
+          <p class="paragraphe">
+            <strong>A la fin de la Phase 2 :</strong> Kiliko, Wakaweti ou Toa proposera à un PJ très apprécié de monter la garde dans l'une des tours d'observation du village (dans la
+            Salle Commune ou dessus de l'atelier de couture). C'est un grand honneur mais surtout une grande responsabilité. Ils faut observer les hauteurs de la montagnes et avertir le
+            village si une menace approchent (Atarangi Kino, bête sauvage…).
+          </p>
           <ul>
             <li>
               <p class="paragraphe">
-                A la fin de la Phase 2, Kiliko proposera au PJ le plus apprécié par Kiliko, Wakaweti ou Toa de monter la garde dans l'une des tours d'observation du village (dans la Salle
-                Commune ou dessus de l'atelier de couture). C'est un grand honneur mais surtout une grande responsabilité. Ils faut observer les hauteurs de la montagnes et avertir le
-                village si une menace approchent (Atarangi Kino, bête sauvage…). CONSTIT DD10 puis CONSTIT DD12 puis CONSTIT DD15. Si les trois tests sont réussi le PJ reste réveillé, à
-                son poste et focalisé sur sa tâche. Si le Personnage échoue l'un des tests, il peut soit prévenir qu'il est trop fatigué, demander une relève ou essayé de résister à la
-                fatigue. CONSTIT DD20. S'il réussi, il ne s'endort pas de suite et poursuit la séquence des trois premiers tests. S'il échoue, il s'endort à son poste causant de lourdes
-                remontrances envers son manque de responsabilité envers le village.
+                @Test[car:con|diff:10|comp:Résister au sommeil] puis @Test[car:con|diff:15|comp:Résister au sommeil] puis @Test[car:con|diff:20|comp:Résister au sommeil]
               </p>
             </li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si les trois tests sont réussi :</strong> le PJ reste réveillé, à son poste et focalisé sur sa tâche.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le Personnage échoue l'un des tests :</strong> il peut soit prévenir qu'il est trop fatigué, demander une relève ou essayer de résister à la fatigue :
+                  @Test[car:con|diff:25|comp:Résister au sommeil].
+                </p>
+              </li>
+              <ul>
+                <li>
+                  <p class="paragraphe"><strong>S'il réussi :</strong> il ne s'endort pas de suite et poursuit la séquence des trois premiers tests.</p>
+                </li>
+                <li>
+                  <p class="paragraphe"><strong>S'il échoue :</strong> il s'endort à son poste causant de lourdes remontrances envers son manque de responsabilité envers le village.</p>
+                </li>
+              </ul>
+            </ul>
           </ul>
+          <p class="paragraphe">
+            Si le PJ est compétent et responsable pour cette tâche et qu'il souhaite prendre, de temps en temps, ce poste, la confiance en lui augmentera rapidement. Au bout d'un moment,
+            Kiliko lui proposera de recevoir le tatouage du Vigilant en remerciement. C'est un immense honneur très rare même chez les centaures. Une belle cérémonie sera organisée pour
+            célébrer l'implication du PJ et son rôle de protecteur du village.
+          </p>
         </div>
     video:
       controls: true
@@ -1502,7 +1843,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270557091
-      modifiedTime: 1773276309390
+      modifiedTime: 1773448592831
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.eCfT2xaJISkNtjSp'
   - sort: 1500000
@@ -1562,27 +1903,28 @@ pages:
               l'escalier se trouve un coffre très joli contenant deux marteaux quasiment identiques. Ils sont recouverts de runes magiques qui sont une bonne synthèse entre les runes
               Naines et les runes des Centaures.
             </p>
+            <hr />
+            <h3>Faire des recherches ou étudier des livres de la bibliothèque :</h3>
             <ul>
-              <li><p class="paragraphe">INT-CULT.GÉ pour faire des recherches ou étudier des livres de la bibliothèque.</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Recherches en bibliothèque]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Découvertes Intéressantes :</h2>
+          <p class="paragraphe">
+            Après plusieurs heures, voir jours, de recherche, le personnage trouve des informations intéressantes. Il tombe sur la description du Temple du Val Rouge et il reconnait le nom
+            de Maniash'Onira. Il arrive à traduire un texte faisant référence au symbole de l'Ordre de l'Union, comme le pendentif de Laotissa, et lit un passage sur l'importance de
+            préserver la sécurité du village pour protéger le monde entier. Le but réel d'Arkanov n'es pas clairement détaillé. Par contre, un passage très lyrique parle de cinq objets
+            protégés. Le premier à l'intérieur d'une statue d'Orc, le second dans un arbre géant, le troisième dans la botte d'un nain, le quatrième dans un cercueil immortel et le dernier
+            dans une montagne. ???
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Après plusieurs heures, voir jours, de recherche, le personnage trouve des informations intéressantes. Il tombe sur la description du Temple du Val Rouge et il reconnait le
-                nom de Maniash'Onira. Il arrive à traduire un texte faisant référence au symbole de l'Ordre de l'Union, comme le pendentif de Laotissa, et lit un passage sur l'importance
-                de préserver la sécurité du village pour protéger le monde entier. Le but réel d'Arkanov n'es pas clairement détaillé. Par contre, un passage très lyrique parle de cinq
-                objets protégés. Le premier à l'intérieur d'une statue d'Orc, le second dans un arbre géant, le troisième dans la botte d'un nain, le quatrième dans un cercueil immortel et
-                le dernier dans une montagne.
-              </p>
-            </li>
             <li>
               <p class="paragraphe">
                 De plus, il trouve un ouvrage sur un peuple d'elfes souterrains peu répandus dans les Terres d'Arran, les Elfes Exsangues. Aucune description physique mais quelques
                 paragraphes sur leurs villes souterraines, leur vie dans les ombres et la grande différence de personnalité entre les groupes car ils ne se côtoient pas les uns les autres.
+                ???
               </p>
             </li>
             <li>
@@ -1595,37 +1937,38 @@ pages:
           <hr />
 
           <h2>Conseils en Séduction :</h2>
+          <p class="paragraphe">
+            Pendant les heures de recherches d'un PJ dans la bibliothèque, Te'Whakama vient demander conseil au Personnage sur sa relation avec Vaiata. Le jeune centaure aimerait faire sa
+            demande à sa bien-aimée mais il ne sait pas comment s'y prendre. CHA-PSY DD15 ou CHA-FILOU DD20 pour donner de bons conseils à Te'Whakama.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Pendant les heures de recherches d'un PJ dans la bibliothèque, Te'Whakama vient demander conseil au Personnage sur sa relation avec Vaiata. Le jeune centaure aimerait faire
-                sa demande à sa bien-aimée mais il ne sait pas comment s'y prendre. CHA-PSY DD15 ou CHA-FILOU DD20 pour donner de bons conseils à Te'Whakama.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Conseils bienveillants]</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:20|comp:Conseils de dragueur]</p></li>
           </ul>
           <hr />
 
           <h2>Une Cloche de Silence :</h2>
+          <p class="paragraphe">
+            Wakaweti aborde le PJ le plus intégré au village. Il veut offrir au Personnage l'honneur de frapper la Cloche dans la tour. Si le PJ accepte, le fils du chef expliquera quel
+            rythme faire avec le duo de marteaux. A la vue des marteaux runiques, Wakaweti décrira les effets de ces objets fascinants qui permettent tous les trois jours de créer une
+            bulle de silence autour du village grâce à l'amplification de la cloche. A part étendre la rayon d'action des marteaux, la cloche ne fait pas partie de la magie des marteaux.
+          </p>
+
+          <h3>Duo de Marteaux de Silence</h3>
           <ul>
             <li>
-              <p class="paragraphe">
-                Wakaweti aborde le PJ le plus intégré au village. Il veut offrir au Personnage l'honneur de frapper la Cloche dans la tour. Si le PJ accepte, le fils du chef expliquera
-                quel rythme faire avec le duo de marteaux. A la vue des marteaux runiques, Wakaweti décrira les effets de ces objets fascinants qui permettent tous les trois jours de créer
-                une bulle de silence autour du village grâce à l'amplification de la cloche. A part étendre la rayon d'action des marteaux, la cloche ne fait pas partie de la magie des
-                marteaux.
-              </p>
+              <p class="paragraphe"><strong>ATTAQUE +3 | Dégâts 1d6+3 DM +1d6 DM</strong> de vibrations et La cible devient muet pendant un tour.</p>
             </li>
-            <li><p class="paragraphe">Duo de Marteaux de Silence : ATTAQUE +3 | Dégâts 1d6+3 DM +1d6 DM de vibrations et La cible devient muet pendant un tour.</p></li>
             <li>
               <p class="paragraphe">
-                Silence (L) : en frappant les deux marteaux sur une surface en faisant un rythme spécial, une zone de silence entoure la zone sur un rayon de 10m/tour pendant [5+Mod.INT]
-                tours.
+                <strong>Silence (L) :</strong> en frappant les deux marteaux sur une surface en faisant un rythme spécial, une zone de silence entoure la zone sur un rayon de 10m/tour
+                pendant [5+Mod.INT] tours.
               </p>
             </li>
             <li>
               <p class="paragraphe">
-                Appel des Centaures (Rituel 1min) : en frappant le plat du marteau avec la pointe du deuxième, en respectant un rythme précis, les marteaux envoient un signal d'alerte et
-                la localisation du point d'impact à tous les centaures des Terres d'Arran.
+                <strong>Appel des Centaures (Rituel 1min) :</strong> en frappant le plat du marteau avec la pointe du deuxième, en respectant un rythme précis, les marteaux envoient un
+                signal d'alerte et la localisation du point d'impact à tous les centaures des Terres d'Arran. Ce rituel n'a jamais été fait d'après Wakaweti.
               </p>
             </li>
           </ul>
@@ -1647,7 +1990,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270578056
-      modifiedTime: 1773276309469
+      modifiedTime: 1773448592889
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.trlohrGGHM0pfu6p'
   - sort: 1600000
@@ -1682,7 +2025,6 @@ pages:
               Un grand miroir sous l'escalier permet d'ausculter les blessés et deux grands tableaux représentent des Centaures en pleine forme, tous leurs muscles et articulations bien
               prononcées. Un tonneau est remplie d'une eau limpide permettant de nettoyer les outils, ses mains ou d'humidifier les bandages.
             </p>
-            <p class="paragraphe"></p>
             <p class="paragraphe">
               Cette pièce est utilisé par Kara comme espace de soins psychologiques et d'écoute pour les habitants du village. Kara est secondée par la rayonnante Te'Wikitoria qui apprend
               avec patience et attention.
@@ -1702,10 +2044,25 @@ pages:
               Les Personnages pourront être mise à contribution pour aider à soigner des blessés ou aider Kara à ranger ou nettoyer son cabinet. Ils pourront aider au premier étage à la
               préparation des potions, soins, baumes…
             </p>
-            <p class="paragraphe"></p>
+            <hr />
+            <h3>Soigner des blessés ou malades :</h3>
             <ul>
-              <li><p class="paragraphe">DEX-AGIL ou SAG-SURVI pour les tâches du RdC et de l'étage</p></li>
-              <li><p class="paragraphe">INT-ARCA pour analyser, comprendre et, même, utiliser l'Orbe Élémentaire</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Médecine]</p></li>
+              <li><p class="paragraphe">ou utilisation de sorts de soins</p></li>
+            </ul>
+            <hr />
+            <h3>Nettoyage et rangement du cabinet :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Organisation]</p></li>
+            </ul>
+            <hr />
+            <h3>Préparation de produits :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Préparation minutieuses]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Conaissances magiques]</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie - Connaissance des plantes]</p></li>
             </ul>
           </div>
           <hr />
@@ -1717,33 +2074,47 @@ pages:
             blessé à la main. En l'oscultant, Kara remarque les marques ressemblant à des scarifications sur les avants-bras du Porteur. Elle sera intriguée et posera beaucoup de
             questions. CHA-PSY DD15 pour être honnête ou CHA-FILOU DD20 pour mentir ou déformer la réalité.
           </p>
+          <ul>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Être honnête]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Mentir - Déformer la réalité]</p></li>
+          </ul>
           <hr />
 
           <h2>Alchimie amateur :</h2>
           <p class="paragraphe">
             Avec un PJ de confiance, Kara lui proposera d'aider Te'Wikitoria pour préparer des mixtures et des onguents. Positionné à l'étage, le PJ passera un bon moment avec l'assistante
-            de Kara en coupant, ciselant, écrasant, pesant ou encore mélangeant de nombreuses plantes pour fabriquer différentes recettes. DEX-AGIL DD15 ou SAG-SURVI DD15 pour réaliser les
-            préparations. Si l'aventurier possède une ou plusieurs Voies Mystiques, il devrait être intrigué par l'Orbe Élémentaire. INT-ARCA DD20 pour étudier l'Orbe Élémentaire. CHA-PSY
-            DD20 pour questionner Te'Wikitoria ou Kara sur l'Orbe Élémentaire.
+            de Kara en coupant, ciselant, écrasant, pesant ou encore mélangeant de nombreuses plantes pour fabriquer différentes recettes.
           </p>
+          <p class="paragraphe">
+            Si l'aventurier possède une ou plusieurs Voies Mystiques, il devrait être intrigué par l'Orbe Élémentaire. Il est possible d'étudier l'Orbe Élémentaire et/ou de questionner
+            Te'Wikitoria ou Kara sur l'Orbe Élémentaire. Au vu de la dangerosité de cet objet, les deux centaures ne donneront pas facilement des informations aux PJ sauf s'il est dékà
+            très bien intégré au village.
+          </p>
+          <ul>
+            <li><p class="paragraphe">@Test[car:int|diff:25|comp:Connaissances magiques]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|comp:Questionner - Interrogatoire] Difficulté variable en fonction de la confiance du PJ.</p></li>
+          </ul>
           <hr />
 
           <h2>Drogue sénior :</h2>
           <p class="paragraphe">
-            Poauau, l'ancien chef du village, père de Kiliko, propose, en fin de journée, à un ou plusieurs PJs, d'expérimenter le feuille de Mohio. Ce genre de tabac est une drogue
+            Poauau, l'ancien chef du village, père de Kiliko, propose, en fin de journée, à un ou plusieurs PJs, d'expérimenter la feuille de Mohio. Ce genre de tabac est une drogue
             permettant de se détendre et, si on en fume beaucoup, d'avoir des sensations étranges. Hallucinations féériques, impression de flotter ou de voler et, même, des rêves
             d'aventures plus vrais que nature, les centaures consomment de temps en temps cette substance et surtout les anciens du village, comme Poauau et Karekau. FOR-ATHL DD15 ou
             FOR-COMM DD20 pour garder ses esprits.
           </p>
+          <ul>
+            <li><p class="paragraphe">@Test[car:con|diff:20|comp:Résister aux effets - Garder ses esprits]</p></li>
+          </ul>
           <p class="paragraphe">
-            Kara voit la scène de «détente» du PJ et de Poauau et approche au trot pour sermonner le vieux centaure. Elle explique au PJ que les feuilles de Mohio sont addictive et qu'il
+            Kara voit la scène de «détente» du PJ et de Poauau et approche au trot pour sermonner le vieux centaure. Elle explique au PJ que les feuilles de Mohio sont addictives et qu'il
             doit, après chaque absorption mâcher un bout de racine de Kaora pour ne pas développer une addiction forte au Mohio. Elle part et revient rapidement avec un petit bout de bois
             craquelé qu'elle donne au Personnage pour qu'il le mâche.
           </p>
           <hr />
 
           <div>
-            <p class="paragraphe">l'Orbe Élémentaire</p>
+            <h3>l'Orbe Élémentaire</h3>
             <p class="paragraphe">
               Cette sphère, d'environ 30cm de diamètre, a été façonnée avec une sorte de cristal bleuâtre, striée de veines argentées. L'Orbe Éléméntaire est parcouru d'une lueur bleuté.
               On ressent les vibrations magique de l'objet sans aucune difficulté même si on n'est pas rompu aux Arcanes des Terres d'Arran.
@@ -1752,10 +2123,12 @@ pages:
               Lorsque l'on touche l'Orbe à certains endroits, il est possible de faire varier la température de la pièce, le dégrée d'humidité et la ventilation (runes de feu, d'air et
               d'eau).
             </p>
-            <p class="paragraphe">Portée des effets : de 0m à 250m (+10m /min)</p>
-            <p class="paragraphe">Température : de -60°C à +90°C (+/-20°C /min)</p>
-            <p class="paragraphe">Humidité dans l'air : de 0% à 100% (+/-20% /min)</p>
-            <p class="paragraphe">Ventilation : de 0km/h à 250km/h (+/-50km/h /min)</p>
+            <ul>
+              <li><p class="paragraphe">Portée des effets : de 0m à 250m (+10m /min)</p></li>
+              <li><p class="paragraphe">Température : de -60°C à +90°C (+/-20°C /min)</p></li>
+              <li><p class="paragraphe">Humidité dans l'air : de 0% à 100% (+/-20% /min)</p></li>
+              <li><p class="paragraphe">Ventilation : de 0km/h à 250km/h (+/-50km/h /min)</p></li>
+            </ul>
             <p class="paragraphe">
               L'utilisation de l'Orbe Élémentaire est très dangereuse quand on voit les plages de modification des éléments possible. Imaginez les dégâts que l'Orbe Élémentaire pourraient
               faire sur le village si elle était mal utilisée.
@@ -1766,8 +2139,10 @@ pages:
               mort de certains habitants (canicules, froid intense, tempête…).
             </p>
           </div>
+          <hr />
+
           <div>
-            <p class="paragraphe">Feuille de Mohio</p>
+            <h3>Feuille de Mohio</h3>
             <p class="paragraphe">Ce tabac à fumer est une drogue récréative ayant plusieurs effets en fonction de la quantité absorbée.</p>
             <p class="paragraphe">
               A faible dose, elle permet de se détendre, agit comme un déstressant. Certains centaures prétendent que fumer de petites quantité de Mohio leur permet d'être plus concentré
@@ -1787,7 +2162,9 @@ pages:
               faire et son esprit est brouillé par son envie de fumer des feuilles à nouveau. L'individu doit réussir cinq tests consécutifs pour se sevrer du Mohio. Il lance 1D100 par
               jour de sevrage et il a 1% de chance de réussir (+1% par jour de sevrage total). La consommation d'une seule dose de Mohio remet les chances de se sevrer à 0.
             </p>
-            <p class="paragraphe">Racine de Kaora</p>
+            <hr />
+
+            <h3>Racine de Kaora</h3>
             <p class="paragraphe">
               Le masticage de Racine de Kaora, récupérées sur les arbres de la Forêt Intérieure, permet de remettre à 0 le risque de dépendance. Si le consommateur est déjà dépendant au
               Mohio, le Kaora n'a pas d'effet. Si l'individu est en sevrage, le masticage quotidien de Racine de Kaora permet de tripler les pourcentages de chance de réussite.
@@ -1811,7 +2188,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270601328
-      modifiedTime: 1773276309486
+      modifiedTime: 1773448592897
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.5wcCUOCIIg6eaYVd'
   - sort: 1700000
@@ -1855,42 +2232,75 @@ pages:
               Au RdC, il est assez rare qu'on ai besoin des aventuriers mais on pourra leur demander d'aller vérifier des quantités, des dimensions ou des plans de fabrication. Ce qui est
               bien avec les documents techniques c'est que, même sans parler la langue, un travailleur sera reconnaitre un plan d'un autre.
             </p>
-            <ul>
-              <li><p class="paragraphe">INT-CULT.GÉ pour comprendre les plans et les quantités</p></li>
-            </ul>
             <p class="paragraphe">
               Dans l'atelier de Sculpture, les Personnages peuvent être amenés à décorer, ajuster, créer de petits objets, adapter un manche d'outils… Tout se travail nécessite agilité,
               patience et calme pour être réalisé.
             </p>
+            <hr />
+            <h3>Comprendre les plans, les quantités, l'organisation… :</h3>
             <ul>
-              <li><p class="paragraphe">DEX-AGIL pour les tâches de sculpture</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Connaissance artisanales]</p></li>
+            </ul>
+            <hr />
+            <h3>Travail de sculpture :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:agi|comp:Sculpture]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Sens artistique]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Multitâche :</h2>
+          <p class="paragraphe">
+            Si un Personnage ne sait pas quoi faire de ses dix doigts, il se fait aborder par Kamura. Elle l'amène au RdC de ce bâtiment et lui montre une liste. Elle demande au PJ de
+            s'occuper de ces multiples petites tâches à réaliser pour la communauté (réparer un tiroir, ranger les outils de la forge, nettoyer les tubes en verre de la fabrication de
+            bougies, faire l'inventaire des planches de la scierie, plier et rouler les tissus secs dans la tisseranderie…). DEX-AGIL DD15 + INT-CULT.GÉ DD15 + FOR-ATHL DD10.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Si un Personnage ne sait pas quoi faire de ses dix doigts, il se fait aborder par Kamura. Elle l'amène au RdC de ce bâtiment et lui montre une liste. Elle demande au PJ de
-                s'occuper de ces multiples petites tâches à réaliser pour la communauté (réparer un tiroir, ranger les outils de la forge, nettoyer les tubes en verre de la fabrication de
-                bougies, faire l'inventaire des planches de la scierie, plier et rouler les tissus secs dans la tisseranderie…). DEX-AGIL DD15 + INT-CULT.GÉ DD15 + FOR-ATHL DD10. Si le PJ
-                réussi les trois tests, il exécute les tâches correctement et obtiendra les remerciement de plusieurs villageois. Si le PJ rate certains tests, il n'est pas bien efficace
-                mais au bout de deux jours de travail, il arrive a venir péniblement à bout de cette liste.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Délicatesse - Précision]</p></li>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Organisation]</p></li>
+            <li><p class="paragraphe">@Test[car:con|diff:10|comp:Pateince - Endurance]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe"><strong>Si le PJ réussi les trois tests :</strong> il exécute les tâches correctement et obtiendra les remerciement de plusieurs villageois.</p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ rate le test d'AGI :</strong> Il casse plusieurs objets plus ou moins précieux et en abime d'autres. Même si les autres tests sont réussis, il se fera
+                  sermoner sur son implication et le respect qu'il a pour le village et le travail des autres.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ rate le test d'INT :</strong> il n'est pas bien efficace mais au bout de deux jours de travail, il arrive a venir péniblement à bout de cette liste.
+                  Plusieurs fois durant cette période, des centaures viendront s'enquérir de l'avancée de son travail car ils ont besoin des objets ou outils qu'il nettoie ou répare.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si le PJ rate de CON :</strong> Soit le PJ est pris de fatigue et on le verra faire de nombreuses pauses dans son travail. Soit le PJ perd patience face à la
+                  montagne de petites tâches à réaliser et des villageois le verront ou l'entendront pester dans le bâtiment et perdre son calme.
+                </p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Soirée légende familiale :</h2>
+          <p class="paragraphe">
+            Le Personnage a passé une bonne après-midi de travail dans l'atelier de sculpture. Il n'a pas fini son travail mais il entend monter la rampe plusieurs bruits de sabots.
+            Kaiwhakairo, Kara, Vaiata, Peepi et Taiohi arrivent, grands sourires, dans l'atelier. Après avoir saluer le PJ, Kara lui explique qu'ils veulent faire une soirée discussions,
+            contes et histoires tous ensemble. Ils semblent exités à l'idée que le PJ participe lui aussi. Si l'aventurier accepte, tous les centaures présents sont super contents. Pendant
+            toute la soirée, Kaiwhakairo sculptera de petits objets. Ce moment familiale et intimiste permet de nouer des liens forts avec ce groupe de centaures.
+          </p>
           <ul>
             <li>
               <p class="paragraphe">
-                Le Personnage a passer une bonne après-midi de travail dans l'atelier de sculpture. Il n'a pas fini son travail mais il entend monter la rampe plusieurs bruits de sabots.
-                Kaiwhakairo, Kara, Vaiata, Peepi et Taiohi arrivent, grands sourires, dans l'atelier. Après avoir saluer le PJ, Kara lui explique qu'ils veulent faire une soirée
-                discussions, contes et histoires tous ensemble. Ils semblent exités à l'idée que le PJ participe lui aussi. Si l'aventurier accepte, tous les centaures présents sont super
-                contents. CHA-PSY DD10 pour interagir avec la famille et CHA-FILOU DD15 pour raconter des histoires captivantes, humoristiques ou personnelles. Pendant toute la soirée,
-                Kaiwhakairo sculptera de petits objets. Ce moment familiale et intimiste permet de nouer des liens forts avec ce groupe de centaures.
+                Il est possible de réaliser des tests de @Test[car:cha] pour intéragir avec les centaures ou estimer la réussite d'une histoire captivante, humoristique ou personnelle
+                racontée par le PJ mais, dans la logique, il n'y a pas d'échec à cette scène prévue pour créer un lien fort avec cette famille.
+              </p>
+              <p class="paragraphe">
+                Par contre, si le PJ est dédaigneux et ne veut pas passer du temps avec cette famille, elle sera certainement déçue et légèrement plus méfiante envers le PJ.
               </p>
             </li>
           </ul>
@@ -1912,7 +2322,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270624858
-      modifiedTime: 1773276309536
+      modifiedTime: 1773448592960
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.vv6fVlGxk0YXLq8F'
   - sort: 1800000
@@ -2007,64 +2417,123 @@ pages:
               Si un héros fait du mauvais travail et surtout s'il bloque une machine, il recevra les remontrances de Tumuaki et de Kamura mais pourra recevoir le soutien de Miihini ou de
               Aroha.
             </p>
+            <hr />
+            <h3>Pour toutes les tâches artisanales :</h3>
             <ul>
-              <li><p class="paragraphe">FOR-ATHL pour utiliser les travaux physiques ou d'endurance</p></li>
-              <li><p class="paragraphe">DEX-AGIL pour utiliser les travaux de précision</p></li>
+              <li><p class="paragraphe">@Test[car:for|comp:Travaux physiques]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Travaux de précision]</p></li>
+              <li><p class="paragraphe">@Test[car:con|comp:Travaux d'endurance]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Connaissances artisanales]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre des plans et des consignes]</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Analyser la situation - Observation]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Sens artistique]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Diplomacie - Patience]</p></li>
             </ul>
           </div>
           <hr />
 
           <h2>Un engrenage qui casse :</h2>
+          <p class="paragraphe">
+            Dans la scierie, en voulant déplacer une longue planche de bois venant juste d'être débitée, le Personnage tape par mégarde dans les engrenages qui actionnent la machine. Un
+            terrible bruit mécanique se fait entendre et la machine s'arrête. Aroha, à l'étage, descend la rampe au galop et après un temps d'arrêt devant les dégâts, elle s'agite et
+            s'énerve. Dans tous les cas, le Personnage sera mis à contribution pour réparer la machine.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Dans la scierie, en voulant déplacer une longue planche de bois venant juste d'être débitée, le Personnage tape par mégarde dans les engrenages qui actionnent la machine.
-                Un terrible bruit mécanique se fait entendre et la machine s'arrête. Aroha, à l'étage, descend la rampe au galop et après un temps d'arrêt devant les dégâts, elle s'agite
-                et s'énerve. En fonction de la réaction du PJ, faites CHA-PSY DD15 pour expliquer calmement, CHA-FILOU DD15 pour raconter un bobard ou FOR-COMM DD20 pour imposer sa vision
-                de la situation à Aroha. Dans tous les cas, le Personnage sera mis à contribution pour réparer la machine mais s'il échoue, Aroha l'engueulera sans ménagement et en cas de
-                réussite, la situation s'apaise et Aroha comprendra les arguments de l'aventurier. Quelques instants plus tard, Miihini et Tumuaki arriveront dans la scierie. Le PJ aura le
-                soutien ou non d'Aroha et passera une bonne ou une horrible soirée face à cet incident.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Diplomacie - Apaisement - Explications calmes]</p></li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Mentir - Détourner les faits - Baratiner]</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:20|comp:Imposer sa vision des événements - Répondre avec autorité]</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>En cas de réussite :</strong> la situation s'apaise et Aroha comprendra les arguments de l'aventurier. Même si le test est réussi, si le PJ est vraiment de
+                  mauvaise fois, Aroha sera déçu du PJ et de son manque de responsabilité.
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>S'il échoue :</strong> Aroha l'engueulera sans ménagement et l'histoire fera rapidement le tour du village. Si le PJ a raté son test de FOR en s'énervant ou ne
+                  veut pas accepter sa responsabilité, la perte de confiance sera d'autant plus grande.
+                </p>
+              </li>
+            </ul>
           </ul>
+          <p class="paragraphe">
+            Quelques instants plus tard, Miihini et Tumuaki arriveront dans la scierie. Le PJ aura le soutien ou non d'Aroha et passera une bonne soirée ou une horrible semaine face à cet
+            incident.
+          </p>
           <hr />
 
           <h2>Des pleurs, un désespoir :</h2>
+          <p class="paragraphe">
+            Teina demande à un des Personnages s'il peut l'aider à plier les longues bandes de tissus de la tisseranderie. Maintenant qu'ils sont secs, être deux pour les plier et les
+            ranger ferait gagner énormément de temps. Si le PJ acceptent, Teina l'amènera dans le long couloir du premier étage du bâtiment. En arrivant en haut de la rampe, ils entendent
+            des sanglots au dessus d'eux. Teina semble bouleversée. Elle explique que c'est Kaimoe, la conjointe de Te'Tipu qui passe son temps dans la corderie. Personne ne sait vraiment
+            pourquoi elle est si triste et repliée sur elle-même. Teina se doute que c'est à cause de son agressif conjoint. Teina demande au PJ d'aller lui parler et la soutenir. Si le PJ
+            accepte, il découvrira Kaimoe positionnée sur le rouet à filer. Elle est surprise par la présence de l'aventurier. Elle est sur la défensive.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Teina demande à un des Personnages s'il peut l'aider à plier les longues bandes de tissus de la tisseranderie. Maintenant qu'ils sont secs être deux pour les plier et les
-                ranger ferait gagner énormément de temps. Si le PJ acceptent, Teina l'amènera dans le long couloir du premier étage du bâtiment. En arrivant en haut de la rampe, ils
-                entendent des sanglots au dessus d'eux. Teina semble bouleversée. Elle explique que c'est Kaimoe, la conjointe de Te'Tipu qui passe son temps dans la corderie. Personne ne
-                sait vraiment pourquoi elle est si triste et repliée sur elle-même. Teina se doute que c'est à cause de son agressif conjoint. Teina demande au PJ d'aller lui parler et la
-                soutenir. Si le PJ accepte, il découvrira Kaimoe positionnée sur le rouet à filer. Elle est surprise par la présence de l'aventurier. Elle est sur la défensive. CHA-PSY
-                DD20 pour essayé de l'apaiser et de comprendre pourquoi elle pleure. Si réussi, Kaimoe accordera sa confiance rapidement à cet intrus sans trop savoir pourquoi. Elle
-                expliquera que son conjoint est parfois violent avec elle. Elle est soutenue par sa fille Haputanga mais son fils, Taitamariki, est très perturbé par les agissements de son
-                père. Elle a peur de lui et de ses réactions. CHA-FILOU DD25 pour lui changer les esprits avec des «blagues» ou des phrases rassurantes. Si réussi, Kaimoe arrête de pleurer
-                et elle arrive même à sourire et rigoler des traits d'humour du PJ. FOR-COMM DD10 pour imposer son autorité et lui intimer de se calmer. Si réussi, Kaimoe arrêtera
-                rapidement de pleurer, se donnera une lourde gifle sur la joue et reprendra son travail dans le silence quelques larmes encore sur les joues. Kaimoe sera définitivement
-                fermée pour la plupart des PJs craignant leur autorité. Si le PJ arrive à calmer et à sympatiser avec Kaimoe, elle descendra avec lui et ils plieront, avec Teina, les
-                tissus dans une joyeuse ambiance.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Diplomcaie - Empathie - Écoute] pour essayé de l'apaiser et de comprendre pourquoi elle pleure.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> Kaimoe accordera sa confiance rapidement à cet intrus sans trop savoir pourquoi. Elle expliquera que son conjoint est parfois violent avec
+                  elle. Elle est soutenue par sa fille Haputanga mais son fils, Taitamariki, est très perturbé par les agissements de son père. Elle a peur de lui et de ses réactions.
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <ul>
+            <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Détendre l'atmosphère - Faire des blagues - Rigoler] pour lui changer les esprits.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> Kaimoe arrête de pleurer et elle arrive même à sourire et rigoler des traits d'humour du PJ. Elle remerciera le PJ sans forcément s'ouvrir
+                  sur la situation. Elle finira par lui dire qu'elle n'a pas d'importance et qu'il a surement d'autres choses plus importantes à faire.
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <section class="sallemj">
+            <p class="paragraphe">
+              Si le PJ arrive à calmer et à sympatiser avec Kaimoe, elle descendra avec lui et ils plieront, avec Teina, les tissus dans une joyeuse ambiance. Cet événement aura de grandes
+              conséquences par la suite. Si le PJ révèle la situation à d'autres centaures, Kiliko et Kara mèneront une enquète approfondie et questionneront entre autre le PJ. En fonction
+              de ses réponses, Te'Tipu et les centaures au courant de la situation seront accusés, jugés et surement punis. La confiance du ou des PJ avec Kaimoe aideront grandement cette
+              dernière à prendre la parole et à révéler les tourments qu'elle et ses enfants vivent depuis des années.
+            </p>
+          </section>
+          <ul>
+            <li><p class="paragraphe">@Test[car:for|diff:10|comp:Hausser le ton - Brusquer] pour imposer son autorité et lui intimer de se calmer.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi (c'est vraiment pas très compliqué d'initmider cette centaure soumise par la peur et la violence) :</strong> Kaimoe arrêtera rapidement de pleurer, se
+                  donnera une lourde gifle sur la joue et reprendra son travail dans le silence quelques larmes encore sur les joues. Kaimoe sera définitivement fermée pour la plupart des
+                  PJ craignant leur autorité. Si cet événement arrive aux oreilles d'Haputanga ou de certains centaures du village, le PJ sera prit violemment à partie pour qu'il explique
+                  pourquoi il a brusquer Kaimoe alors qu'elle est déjà traumatisée.
+                </p>
+              </li>
+            </ul>
           </ul>
           <hr />
 
           <h2>Joyeuse famille au pressoir :</h2>
+          <p class="paragraphe">
+            Le PJ est abordé par le professeur Kaiako en fin de journée. Toute sa famille s'occupe de la récolte des Waina le lendemain. Les fruits du Hewaina sont de petites grappes
+            sucrées et très rafraîchissantes qu'ils doivent récolter, nettoyer, transporter, presser et mettre en tonneau. C'est une tâche plutôt festive mais physique. Si le PJ accepte,
+            il se retrouvera au petit matin en compagnie de Kaiako, Toa, Teina, Harikoa, Te'Whakama ainsi que Vaiata venue aider ses amis.
+          </p>
           <ul>
-            <li>
-              <p class="paragraphe">
-                Le PJ est abordé par le professeur Kaiako en fin de journée. Toute sa famille s'occupe de la récolte des Waina le lendemain. Les fruits du Hewaina sont de petites grappes
-                sucrées et très rafraîchissantes qu'ils doivent récolter, nettoyer, transporter, presser et mettre en tonneau. C'est une tâche plutôt festive mais physique. Si le PJ
-                accepte, il se retrouvera au petit matin en compagnie de Kaiako, Toa, Teina, Harikoa, Te'Whakama ainsi que Vaiata venue aider ses amis. DEX-AGIL DD10 pour la récolte.
-                SAG-SURVI DD10 pour le nettoyage. FOR-ATHL DD15 pour le transport et le pressage. DEX-AGIL DD10 pour la mise en tonneau. La famille échange les tâche tout au long de la
-                journée afin de pouvoir discuter, rigoler, chanter et danser avec chaque centaure. L'ambiance est très agréable et à chaque fois que l'aventurier rate un test, des
-                moqueries sympathiques feront rire toute la famille. Il est bien tard quand la tâche est terminée. Tout le monde est épuisé et Toa sort une bouteille est terre cuite,
-                scellée à la cire et la débouche. Elle contient une délicieuse liqueur de Waina aromatisée aux herbes par Harikoa. La soirée est merveilleuse entourée par cette charmante
-                famille.
-              </p>
-            </li>
+            <li><p class="paragraphe">@Test[car:agi|diff:10|comp:Délicatesse - Précision] pour la récolte.</p></li>
+            <li><p class="paragraphe">@Test[car:per|diff:10|comp:Survie - Préparation] pour le nettoyage et la préparation des fruits.</p></li>
+            <li><p class="paragraphe">@Test[car:for|diff:10|comp:Tâches physiques] pour le transport et le pressage.</p></li>
+            <li><p class="paragraphe">@Test[car:con|diff:10|comp:Endurance - Résistance à la fatigue] pour le transport et le pressage.</p></li>
           </ul>
+          <p class="paragraphe">
+            La famille échange les tâches tout au long de la journée afin de pouvoir discuter, rigoler, chanter et danser avec chaque centaure. L'ambiance est très agréable et à chaque
+            fois que l'aventurier rate un test, des moqueries sympathiques feront rire toute la famille. Il est bien tard quand la tâche est terminée. Tout le monde est épuisé et Toa sort
+            une bouteille est terre cuite, scellée à la cire et la débouche. Elle contient une délicieuse liqueur de Waina aromatisée aux herbes par Harikoa. La soirée est merveilleuse
+            entourée par cette charmante famille.
+          </p>
         </div>
     video:
       controls: true
@@ -2083,7 +2552,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270657779
-      modifiedTime: 1773276309570
+      modifiedTime: 1773448592970
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.IeiOoPvxliVcuC3Y'
   - sort: 1900000
@@ -2120,8 +2589,19 @@ pages:
               A l'étage, on trouve tout le nécessaire pour préparer les plantes, champignons, racines et autres minéraux pour les préparations de breuvages, soins, huiles… L'ordre n'y est
               pas la priorité mais l'hygiène des outils et des récipients y est impeccable pour éviter de corrompre une préparation.
             </p>
-            <p class="paragraphe">INT-ARCA pour utiliser l'alambic</p>
-            <p class="paragraphe">SAG-SURVI pour préparer ingrédients et recettes</p>
+            <hr />
+            <h3>Comprendre et utiliser l'alambic :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Connaissances magiques]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Ressentir la machine]</p></li>
+            </ul>
+            <hr />
+            <h3>Préparer les ingrédients et les recettes :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie]</p></li>
+              <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+            </ul>
           </div>
           <hr />
 
@@ -2129,12 +2609,35 @@ pages:
           <p class="paragraphe">
             Harikoa est une jeune femelle centaure passionnée et très expressive. Si un PJ souhaite travailler dans ce bâtiment, elle commencera une visite détaillée de la grande machine
             incroyable qui occupe presque toute la pièce. Elle parle vite et montre quatre trucs et machins en même temps. Elle fait des démonstrations des effets de chaque levier,
-            poignée, cadran… Il est bien compliqué de tout comprendre mais, malgré cela, Harikoa arrive à captiver le Personnage. INT-CULT.GÉ DD20 pour comprendre les descriptions et
-            informations d'Harikoa. Si réussi, la jeune centaure sera très impressionnée par l'intelligence et la compréhension du PJ. Elle pourra lui demander de l'aide à l'avenir. Si le
-            Personnage a des connaissances dans une voie mystique ou en magie, INT-ARCANES DD20 (bonus de +5 au test si il a des capacités de la Voie de l'Alchimie). Si réussi,
-            l'aventurier comprend même comment fonctionne l'alambic. Les multiples runes magiques, finement gravées sur la machine, sont limpides et assez logiquement disposées. Harikoa
-            prendra le PJ comme assistant s'il le souhaite.
+            poignée, cadran… Il est bien compliqué de tout comprendre mais, malgré cela, Harikoa arrive à captiver le Personnage.
           </p>
+          <ul>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Culture générale - Connaissances mécaniques] pour comprendre les descriptions et informations d'Harikoa.</p></li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> la jeune centaure sera très impressionnée par l'intelligence et la compréhension du PJ. Elle pourra lui demander de l'aide à l'avenir.
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <p class="paragraphe"><strong></strong>Si le Personnage a des connaissances dans une voie mystique ou en magie :</p>
+          <ul>
+            <li><p class="paragraphe">@Test[car:int|diff:15|comp:Culture générale - Connaissances mécaniques]</p></li>
+            <li>
+              <p class="paragraphe">
+                @Test[car:int|diff:20|comp:Connaissances magiques] (bonus de +5 si le PJ à la Voie de l'Alchimie) pour comprendre les runes et les parties magiques de l'alambic.
+              </p>
+            </li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong></strong>Si réussi, l'aventurier comprend même comment fonctionne l'alambic. Les multiples runes magiques, finement gravées sur la machine, sont limpides et assez
+                  logiquement disposées. Harikoa prendra le PJ comme assistant s'il le souhaite.
+                </p>
+              </li>
+            </ul>
+          </ul>
           <hr />
 
           <h2>Cobaye Consentant :</h2>
@@ -2142,16 +2645,37 @@ pages:
             Hei Tunu, Harikoa et Kara viennent voir le Personnage. Les trois expertes en anatomie, soins et fabrication de médicaments souhaiteraient essayer des produits sur une autre
             espèce que les centaures. Il faut bien savoir si les produits utilisés pour soigner les habitants d'Arkanov fonctionnent sur les autres races des Terres d'Arran. Il y a peu de
             danger pour le PJ, assurent-elles ! Si le PJ accepte, il sera fortement remercié. Hei Tunu et Harikoa assemblent différents produits, préparent des mixtures. Elles demandent au
-            PJ de boire, d'appliquer le baume sur sa peau, respirer ou encore goûter plusieurs recettes. De son côté Kara observe, questionne et ausculte le Personnage. FOR-ATHLETISME DD15
-            pour résister aux effets quelques fois puissants (vertiges, aigreur d'estomac, sensations de brûlure…). Si raté, les trois centaure arrêteront rapidement les tests et
-            remercieront grandement le PJ en lui offrant une petite flasque en métal contenant un délicieux sirop d'une plante du village. Si réussi, les tests se répéteront plusieurs fois
-            avec des très bons résultats d'après les dires de Kara. Des effets intéressants seront trouvés (guérison rapide, constitution renforcée, perception visuelle aiguisée, somnifère
-            foudroyant…).
+            PJ de boire, d'appliquer le baume sur sa peau, respirer ou encore goûter plusieurs recettes. De son côté Kara observe, questionne et ausculte le Personnage.
           </p>
-          <p class="paragraphe">
-            Chaque MJ pourra créer des baumes, potions, huiles ou autres pouvant servir pour le reste de la campagne. Il est aussi possible de permettre au Joueurs de créer, avec l'aide et
-            l'accord du MJ, une mixture qu'il souhaite.
-          </p>
+          <ul>
+            <li>
+              <p class="paragraphe">
+                @Test[car:con|diff:15|comp:Résistance multiples] pour résister aux effets quelques fois puissants (vertiges, aigreur d'estomac, sensations de brûlure…).
+              </p>
+            </li>
+            <ul>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si réussi :</strong> les tests se répéteront plusieurs fois avec des très bons résultats d'après les dires de Kara. Des effets intéressants seront trouvés
+                  (guérison rapide, constitution renforcée, perception visuelle aiguisée, somnifère foudroyant…).
+                </p>
+              </li>
+              <li>
+                <p class="paragraphe">
+                  <strong>Si raté :</strong> les trois centaure arrêteront rapidement les tests et remercieront grandement le PJ en lui offrant une petite flasque en métal contenant un
+                  délicieux sirop d'une plante du village.
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <hr />
+
+          <section class="sallemj">
+            <p class="paragraphe">
+              Chaque MJ pourra créer des baumes, potions, huiles ou autres pouvant servir pour le reste de la campagne. Il est aussi possible de permettre au Joueurs de créer, avec l'aide
+              et l'accord du MJ, une mixture qu'il souhaite.
+            </p>
+          </section>
         </div>
     video:
       controls: true
@@ -2170,7 +2694,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270701418
-      modifiedTime: 1773276309588
+      modifiedTime: 1773448593037
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.obLqAf9asfalqU1K'
   - sort: 2000000
@@ -2207,6 +2731,19 @@ pages:
               Une chose que les aventuriers remarquent assez vite : les lampes qui éclairent la grotte de cérémonie sont exactement les mêmes que celle présentes dans le Temple du Val
               Rouge. Elles sont réglées pour s'allumer au moment où une personne rentre dans la grotte.
             </p>
+            <hr />
+            <h3>Comprendre les cérémonies :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Comprendre la situation]</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Observation des détails]</p></li>
+              <li><p class="paragraphe">@Test[car:cha|comp:Empathie]</p></li>
+            </ul>
+            <hr />
+            <h3>Particiaper à une cérémonie :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:cha|comp:Sens artistique (danse, musique…)]</p></li>
+              <li><p class="paragraphe">@Test[car:int|comp:Apprendre un texte, mémoire…]</p></li>
+            </ul>
           </div>
           <hr />
 
@@ -2267,7 +2804,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270714587
-      modifiedTime: 1773276309646
+      modifiedTime: 1773448593046
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.LBVEFbLnueNeTXNF'
   - sort: 2100000
@@ -2287,7 +2824,7 @@ pages:
           <div class="description">
             <h2>Description :</h2>
             <p class="paragraphe">
-              Ce grand bâtiment de deux étages est quasiment tout le temps fermé à clef. Toutes les femme aînées de chaque famille possèdent une clef pour cette zone de stockage. Lors de
+              Ce grand bâtiment de deux étages est quasiment tout le temps fermé à clef. Toutes les femmes aînées de chaque famille possèdent une clef pour cette zone de stockage. Lors de
               la première visite des Aventuriers, on leur explique que le contenu de ce bâtiment sert seulement dans le cas où une grande menace viendrait frapper le village. En rentrant
               des charrettes à l'intérieur, il leur sera possible de quitter rapidement Arkanov pour aller dans les montagnes.
             </p>
@@ -2297,10 +2834,20 @@ pages:
               Des fontes en cuir sont déjà remplies dans les étagères à l'étage et sur chacune on a soigneusement noté le nom de chaque centaure du village.
             </p>
             <p class="paragraphe">
-              A côté des fontes, chaque centaure a une caisse à son nom qui contient une tenue de voyage ainsi que de l'équipement ‘armure, arme, outil, livres…). En cas d'alerte, chaque
+              A côté des fontes, chaque centaure a une caisse à son nom qui contient une tenue de voyage ainsi que de l'équipement (armure, arme, outil, livres…). En cas d'alerte, chaque
               centaure sait ce qu'il doit faire pour évacuer le village de façon optimale. Des répétition sont réalisés tous les ans à différentes périodes de l'année. La gestion du stock
               et de l'organisation de cette procédure est à la charge de Miihini et Tumuaki.
             </p>
+            <p class="paragraphe">
+              Il est très rare qu'une autre personne aide à l'organisation, au trie ou à l'inventaire de ce lieu. Si un des PJ a obtenu une réelle confiance auprès de Miihini ou de
+              Tumuaki, ce serait un immense honneur qu'elle lui ferait de lui proposer de les aider dans cette tâche. Espérons que l'aventurier soit à la hauteur de cet honneur.
+            </p>
+            <hr />
+            <h3>Vérifier, ranger et faire un inventaire :</h3>
+            <ul>
+              <li><p class="paragraphe">@Test[car:int|comp:Organisation - Rigueur]</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Analyser la situation - Observation]</p></li>
+            </ul>
           </div>
           <hr />
 
@@ -2367,7 +2914,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270732982
-      modifiedTime: 1773276309659
+      modifiedTime: 1773448593110
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.qgMFfrTyDpZr0Jl1'
   - sort: 2200000
@@ -2405,6 +2952,12 @@ pages:
               C'est dernières années, des expéditions ont été faites pour suivre les traces des Atarangi Kino après des attaques sur le village. Toutes les empreintes se dirigeaient vers
               le nord mais, à chaque fois, Kiliko décidait de rebrousser chemin avant de découvrir quoi que ce soit.
             </p>
+            <hr />
+            <h3>Partir à la chasse :</h3>
+            <ul>
+              <li><p class="paragraphe">Réaliser des tests d'attaque de contact ou à distance avec l'arme choisie par le PJ pour estimer sa réussite ou son échec.</p></li>
+              <li><p class="paragraphe">@Test[car:per|comp:Survie en milieu naturel]</p></li>
+            </ul>
           </div>
           <hr />
 
@@ -2468,7 +3021,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270747682
-      modifiedTime: 1773276309724
+      modifiedTime: 1773448593155
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.6U8Fa6RAPPaQI8b4'
   - sort: 2300000
@@ -2516,7 +3069,7 @@ pages:
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1773270767688
-      modifiedTime: 1773276309758
+      modifiedTime: 1773448593164
       lastModifiedBy: MdLP35I2yaa8z7GV
     _key: '!journal.pages!R7B6DpkXXJwt9CxG.lBjEqL0gUfpOScrP'
 categories: []
