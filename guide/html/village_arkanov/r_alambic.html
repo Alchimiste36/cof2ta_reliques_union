@@ -20,8 +20,19 @@
       A l'étage, on trouve tout le nécessaire pour préparer les plantes, champignons, racines et autres minéraux pour les préparations de breuvages, soins, huiles… L'ordre n'y est
       pas la priorité mais l'hygiène des outils et des récipients y est impeccable pour éviter de corrompre une préparation.
     </p>
-    <p class="paragraphe">INT-ARCA pour utiliser l'alambic</p>
-    <p class="paragraphe">SAG-SURVI pour préparer ingrédients et recettes</p>
+    <hr />
+    <h3>Comprendre et utiliser l'alambic :</h3>
+    <ul>
+      <li><p class="paragraphe">@Test[car:int|comp:Connaissances magiques]</p></li>
+      <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+      <li><p class="paragraphe">@Test[car:cha|comp:Ressentir la machine]</p></li>
+    </ul>
+    <hr />
+    <h3>Préparer les ingrédients et les recettes :</h3>
+    <ul>
+      <li><p class="paragraphe">@Test[car:per|comp:Survie]</p></li>
+      <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+    </ul>
   </div>
   <hr />
 
@@ -29,12 +40,35 @@
   <p class="paragraphe">
     Harikoa est une jeune femelle centaure passionnée et très expressive. Si un PJ souhaite travailler dans ce bâtiment, elle commencera une visite détaillée de la grande machine
     incroyable qui occupe presque toute la pièce. Elle parle vite et montre quatre trucs et machins en même temps. Elle fait des démonstrations des effets de chaque levier,
-    poignée, cadran… Il est bien compliqué de tout comprendre mais, malgré cela, Harikoa arrive à captiver le Personnage. INT-CULT.GÉ DD20 pour comprendre les descriptions et
-    informations d'Harikoa. Si réussi, la jeune centaure sera très impressionnée par l'intelligence et la compréhension du PJ. Elle pourra lui demander de l'aide à l'avenir. Si le
-    Personnage a des connaissances dans une voie mystique ou en magie, INT-ARCANES DD20 (bonus de +5 au test si il a des capacités de la Voie de l'Alchimie). Si réussi,
-    l'aventurier comprend même comment fonctionne l'alambic. Les multiples runes magiques, finement gravées sur la machine, sont limpides et assez logiquement disposées. Harikoa
-    prendra le PJ comme assistant s'il le souhaite.
+    poignée, cadran… Il est bien compliqué de tout comprendre mais, malgré cela, Harikoa arrive à captiver le Personnage.
   </p>
+  <ul>
+    <li><p class="paragraphe">@Test[car:int|diff:15|comp:Culture générale - Connaissances mécaniques] pour comprendre les descriptions et informations d'Harikoa.</p></li>
+    <ul>
+      <li>
+        <p class="paragraphe">
+          <strong>Si réussi :</strong> la jeune centaure sera très impressionnée par l'intelligence et la compréhension du PJ. Elle pourra lui demander de l'aide à l'avenir.
+        </p>
+      </li>
+    </ul>
+  </ul>
+  <p class="paragraphe"><strong></strong>Si le Personnage a des connaissances dans une voie mystique ou en magie :</p>
+  <ul>
+    <li><p class="paragraphe">@Test[car:int|diff:15|comp:Culture générale - Connaissances mécaniques]</p></li>
+    <li>
+      <p class="paragraphe">
+        @Test[car:int|diff:20|comp:Connaissances magiques] (bonus de +5 si le PJ à la Voie de l'Alchimie) pour comprendre les runes et les parties magiques de l'alambic.
+      </p>
+    </li>
+    <ul>
+      <li>
+        <p class="paragraphe">
+          <strong></strong>Si réussi, l'aventurier comprend même comment fonctionne l'alambic. Les multiples runes magiques, finement gravées sur la machine, sont limpides et assez
+          logiquement disposées. Harikoa prendra le PJ comme assistant s'il le souhaite.
+        </p>
+      </li>
+    </ul>
+  </ul>
   <hr />
 
   <h2>Cobaye Consentant :</h2>
@@ -42,14 +76,35 @@
     Hei Tunu, Harikoa et Kara viennent voir le Personnage. Les trois expertes en anatomie, soins et fabrication de médicaments souhaiteraient essayer des produits sur une autre
     espèce que les centaures. Il faut bien savoir si les produits utilisés pour soigner les habitants d'Arkanov fonctionnent sur les autres races des Terres d'Arran. Il y a peu de
     danger pour le PJ, assurent-elles ! Si le PJ accepte, il sera fortement remercié. Hei Tunu et Harikoa assemblent différents produits, préparent des mixtures. Elles demandent au
-    PJ de boire, d'appliquer le baume sur sa peau, respirer ou encore goûter plusieurs recettes. De son côté Kara observe, questionne et ausculte le Personnage. FOR-ATHLETISME DD15
-    pour résister aux effets quelques fois puissants (vertiges, aigreur d'estomac, sensations de brûlure…). Si raté, les trois centaure arrêteront rapidement les tests et
-    remercieront grandement le PJ en lui offrant une petite flasque en métal contenant un délicieux sirop d'une plante du village. Si réussi, les tests se répéteront plusieurs fois
-    avec des très bons résultats d'après les dires de Kara. Des effets intéressants seront trouvés (guérison rapide, constitution renforcée, perception visuelle aiguisée, somnifère
-    foudroyant…).
+    PJ de boire, d'appliquer le baume sur sa peau, respirer ou encore goûter plusieurs recettes. De son côté Kara observe, questionne et ausculte le Personnage.
   </p>
-  <p class="paragraphe">
-    Chaque MJ pourra créer des baumes, potions, huiles ou autres pouvant servir pour le reste de la campagne. Il est aussi possible de permettre au Joueurs de créer, avec l'aide et
-    l'accord du MJ, une mixture qu'il souhaite.
-  </p>
+  <ul>
+    <li>
+      <p class="paragraphe">
+        @Test[car:con|diff:15|comp:Résistance multiples] pour résister aux effets quelques fois puissants (vertiges, aigreur d'estomac, sensations de brûlure…).
+      </p>
+    </li>
+    <ul>
+      <li>
+        <p class="paragraphe">
+          <strong>Si réussi :</strong> les tests se répéteront plusieurs fois avec des très bons résultats d'après les dires de Kara. Des effets intéressants seront trouvés
+          (guérison rapide, constitution renforcée, perception visuelle aiguisée, somnifère foudroyant…).
+        </p>
+      </li>
+      <li>
+        <p class="paragraphe">
+          <strong>Si raté :</strong> les trois centaure arrêteront rapidement les tests et remercieront grandement le PJ en lui offrant une petite flasque en métal contenant un
+          délicieux sirop d'une plante du village.
+        </p>
+      </li>
+    </ul>
+  </ul>
+  <hr />
+
+  <section class="sallemj">
+    <p class="paragraphe">
+      Chaque MJ pourra créer des baumes, potions, huiles ou autres pouvant servir pour le reste de la campagne. Il est aussi possible de permettre au Joueurs de créer, avec l'aide
+      et l'accord du MJ, une mixture qu'il souhaite.
+    </p>
+  </section>
 </div>

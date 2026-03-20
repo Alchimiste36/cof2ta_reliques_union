@@ -18,7 +18,6 @@
       Un grand miroir sous l'escalier permet d'ausculter les blessés et deux grands tableaux représentent des Centaures en pleine forme, tous leurs muscles et articulations bien
       prononcées. Un tonneau est remplie d'une eau limpide permettant de nettoyer les outils, ses mains ou d'humidifier les bandages.
     </p>
-    <p class="paragraphe"></p>
     <p class="paragraphe">
       Cette pièce est utilisé par Kara comme espace de soins psychologiques et d'écoute pour les habitants du village. Kara est secondée par la rayonnante Te'Wikitoria qui apprend
       avec patience et attention.
@@ -38,10 +37,25 @@
       Les Personnages pourront être mise à contribution pour aider à soigner des blessés ou aider Kara à ranger ou nettoyer son cabinet. Ils pourront aider au premier étage à la
       préparation des potions, soins, baumes…
     </p>
-    <p class="paragraphe"></p>
+    <hr />
+    <h3>Soigner des blessés ou malades :</h3>
     <ul>
-      <li><p class="paragraphe">DEX-AGIL ou SAG-SURVI pour les tâches du RdC et de l'étage</p></li>
-      <li><p class="paragraphe">INT-ARCA pour analyser, comprendre et, même, utiliser l'Orbe Élémentaire</p></li>
+      <li><p class="paragraphe">@Test[car:int|comp:Médecine]</p></li>
+      <li><p class="paragraphe">ou utilisation de sorts de soins</p></li>
+    </ul>
+    <hr />
+    <h3>Nettoyage et rangement du cabinet :</h3>
+    <ul>
+      <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+      <li><p class="paragraphe">@Test[car:int|comp:Organisation]</p></li>
+    </ul>
+    <hr />
+    <h3>Préparation de produits :</h3>
+    <ul>
+      <li><p class="paragraphe">@Test[car:int|comp:Préparation minutieuses]</p></li>
+      <li><p class="paragraphe">@Test[car:agi|comp:Délicatesse - Précision]</p></li>
+      <li><p class="paragraphe">@Test[car:int|comp:Conaissances magiques]</p></li>
+      <li><p class="paragraphe">@Test[car:per|comp:Survie - Connaissance des plantes]</p></li>
     </ul>
   </div>
   <hr />
@@ -53,33 +67,47 @@
     blessé à la main. En l'oscultant, Kara remarque les marques ressemblant à des scarifications sur les avants-bras du Porteur. Elle sera intriguée et posera beaucoup de
     questions. CHA-PSY DD15 pour être honnête ou CHA-FILOU DD20 pour mentir ou déformer la réalité.
   </p>
+  <ul>
+    <li><p class="paragraphe">@Test[car:cha|diff:15|comp:Être honnête]</p></li>
+    <li><p class="paragraphe">@Test[car:cha|diff:20|comp:Mentir - Déformer la réalité]</p></li>
+  </ul>
   <hr />
 
   <h2>Alchimie amateur :</h2>
   <p class="paragraphe">
     Avec un PJ de confiance, Kara lui proposera d'aider Te'Wikitoria pour préparer des mixtures et des onguents. Positionné à l'étage, le PJ passera un bon moment avec l'assistante
-    de Kara en coupant, ciselant, écrasant, pesant ou encore mélangeant de nombreuses plantes pour fabriquer différentes recettes. DEX-AGIL DD15 ou SAG-SURVI DD15 pour réaliser les
-    préparations. Si l'aventurier possède une ou plusieurs Voies Mystiques, il devrait être intrigué par l'Orbe Élémentaire. INT-ARCA DD20 pour étudier l'Orbe Élémentaire. CHA-PSY
-    DD20 pour questionner Te'Wikitoria ou Kara sur l'Orbe Élémentaire.
+    de Kara en coupant, ciselant, écrasant, pesant ou encore mélangeant de nombreuses plantes pour fabriquer différentes recettes.
   </p>
+  <p class="paragraphe">
+    Si l'aventurier possède une ou plusieurs Voies Mystiques, il devrait être intrigué par l'Orbe Élémentaire. Il est possible d'étudier l'Orbe Élémentaire et/ou de questionner
+    Te'Wikitoria ou Kara sur l'Orbe Élémentaire. Au vu de la dangerosité de cet objet, les deux centaures ne donneront pas facilement des informations aux PJ sauf s'il est dékà
+    très bien intégré au village.
+  </p>
+  <ul>
+    <li><p class="paragraphe">@Test[car:int|diff:25|comp:Connaissances magiques]</p></li>
+    <li><p class="paragraphe">@Test[car:cha|comp:Questionner - Interrogatoire] Difficulté variable en fonction de la confiance du PJ.</p></li>
+  </ul>
   <hr />
 
   <h2>Drogue sénior :</h2>
   <p class="paragraphe">
-    Poauau, l'ancien chef du village, père de Kiliko, propose, en fin de journée, à un ou plusieurs PJs, d'expérimenter le feuille de Mohio. Ce genre de tabac est une drogue
+    Poauau, l'ancien chef du village, père de Kiliko, propose, en fin de journée, à un ou plusieurs PJs, d'expérimenter la feuille de Mohio. Ce genre de tabac est une drogue
     permettant de se détendre et, si on en fume beaucoup, d'avoir des sensations étranges. Hallucinations féériques, impression de flotter ou de voler et, même, des rêves
     d'aventures plus vrais que nature, les centaures consomment de temps en temps cette substance et surtout les anciens du village, comme Poauau et Karekau. FOR-ATHL DD15 ou
     FOR-COMM DD20 pour garder ses esprits.
   </p>
+  <ul>
+    <li><p class="paragraphe">@Test[car:con|diff:20|comp:Résister aux effets - Garder ses esprits]</p></li>
+  </ul>
   <p class="paragraphe">
-    Kara voit la scène de «détente» du PJ et de Poauau et approche au trot pour sermonner le vieux centaure. Elle explique au PJ que les feuilles de Mohio sont addictive et qu'il
+    Kara voit la scène de «détente» du PJ et de Poauau et approche au trot pour sermonner le vieux centaure. Elle explique au PJ que les feuilles de Mohio sont addictives et qu'il
     doit, après chaque absorption mâcher un bout de racine de Kaora pour ne pas développer une addiction forte au Mohio. Elle part et revient rapidement avec un petit bout de bois
     craquelé qu'elle donne au Personnage pour qu'il le mâche.
   </p>
   <hr />
 
   <div>
-    <p class="paragraphe">l'Orbe Élémentaire</p>
+    <h3>l'Orbe Élémentaire</h3>
     <p class="paragraphe">
       Cette sphère, d'environ 30cm de diamètre, a été façonnée avec une sorte de cristal bleuâtre, striée de veines argentées. L'Orbe Éléméntaire est parcouru d'une lueur bleuté.
       On ressent les vibrations magique de l'objet sans aucune difficulté même si on n'est pas rompu aux Arcanes des Terres d'Arran.
@@ -88,10 +116,12 @@
       Lorsque l'on touche l'Orbe à certains endroits, il est possible de faire varier la température de la pièce, le dégrée d'humidité et la ventilation (runes de feu, d'air et
       d'eau).
     </p>
-    <p class="paragraphe">Portée des effets : de 0m à 250m (+10m /min)</p>
-    <p class="paragraphe">Température : de -60°C à +90°C (+/-20°C /min)</p>
-    <p class="paragraphe">Humidité dans l'air : de 0% à 100% (+/-20% /min)</p>
-    <p class="paragraphe">Ventilation : de 0km/h à 250km/h (+/-50km/h /min)</p>
+    <ul>
+      <li><p class="paragraphe">Portée des effets : de 0m à 250m (+10m /min)</p></li>
+      <li><p class="paragraphe">Température : de -60°C à +90°C (+/-20°C /min)</p></li>
+      <li><p class="paragraphe">Humidité dans l'air : de 0% à 100% (+/-20% /min)</p></li>
+      <li><p class="paragraphe">Ventilation : de 0km/h à 250km/h (+/-50km/h /min)</p></li>
+    </ul>
     <p class="paragraphe">
       L'utilisation de l'Orbe Élémentaire est très dangereuse quand on voit les plages de modification des éléments possible. Imaginez les dégâts que l'Orbe Élémentaire pourraient
       faire sur le village si elle était mal utilisée.
@@ -102,8 +132,10 @@
       mort de certains habitants (canicules, froid intense, tempête…).
     </p>
   </div>
+  <hr />
+
   <div>
-    <p class="paragraphe">Feuille de Mohio</p>
+    <h3>Feuille de Mohio</h3>
     <p class="paragraphe">Ce tabac à fumer est une drogue récréative ayant plusieurs effets en fonction de la quantité absorbée.</p>
     <p class="paragraphe">
       A faible dose, elle permet de se détendre, agit comme un déstressant. Certains centaures prétendent que fumer de petites quantité de Mohio leur permet d'être plus concentré
@@ -123,7 +155,9 @@
       faire et son esprit est brouillé par son envie de fumer des feuilles à nouveau. L'individu doit réussir cinq tests consécutifs pour se sevrer du Mohio. Il lance 1D100 par
       jour de sevrage et il a 1% de chance de réussir (+1% par jour de sevrage total). La consommation d'une seule dose de Mohio remet les chances de se sevrer à 0.
     </p>
-    <p class="paragraphe">Racine de Kaora</p>
+    <hr />
+
+    <h3>Racine de Kaora</h3>
     <p class="paragraphe">
       Le masticage de Racine de Kaora, récupérées sur les arbres de la Forêt Intérieure, permet de remettre à 0 le risque de dépendance. Si le consommateur est déjà dépendant au
       Mohio, le Kaora n'a pas d'effet. Si l'individu est en sevrage, le masticage quotidien de Racine de Kaora permet de tripler les pourcentages de chance de réussite.

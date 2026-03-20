@@ -27,42 +27,75 @@
       Au RdC, il est assez rare qu'on ai besoin des aventuriers mais on pourra leur demander d'aller vérifier des quantités, des dimensions ou des plans de fabrication. Ce qui est
       bien avec les documents techniques c'est que, même sans parler la langue, un travailleur sera reconnaitre un plan d'un autre.
     </p>
-    <ul>
-      <li><p class="paragraphe">INT-CULT.GÉ pour comprendre les plans et les quantités</p></li>
-    </ul>
     <p class="paragraphe">
       Dans l'atelier de Sculpture, les Personnages peuvent être amenés à décorer, ajuster, créer de petits objets, adapter un manche d'outils… Tout se travail nécessite agilité,
       patience et calme pour être réalisé.
     </p>
+    <hr />
+    <h3>Comprendre les plans, les quantités, l'organisation… :</h3>
     <ul>
-      <li><p class="paragraphe">DEX-AGIL pour les tâches de sculpture</p></li>
+      <li><p class="paragraphe">@Test[car:int|comp:Connaissance artisanales]</p></li>
+    </ul>
+    <hr />
+    <h3>Travail de sculpture :</h3>
+    <ul>
+      <li><p class="paragraphe">@Test[car:agi|comp:Sculpture]</p></li>
+      <li><p class="paragraphe">@Test[car:cha|comp:Sens artistique]</p></li>
     </ul>
   </div>
   <hr />
 
   <h2>Multitâche :</h2>
+  <p class="paragraphe">
+    Si un Personnage ne sait pas quoi faire de ses dix doigts, il se fait aborder par Kamura. Elle l'amène au RdC de ce bâtiment et lui montre une liste. Elle demande au PJ de
+    s'occuper de ces multiples petites tâches à réaliser pour la communauté (réparer un tiroir, ranger les outils de la forge, nettoyer les tubes en verre de la fabrication de
+    bougies, faire l'inventaire des planches de la scierie, plier et rouler les tissus secs dans la tisseranderie…). DEX-AGIL DD15 + INT-CULT.GÉ DD15 + FOR-ATHL DD10.
+  </p>
   <ul>
-    <li>
-      <p class="paragraphe">
-        Si un Personnage ne sait pas quoi faire de ses dix doigts, il se fait aborder par Kamura. Elle l'amène au RdC de ce bâtiment et lui montre une liste. Elle demande au PJ de
-        s'occuper de ces multiples petites tâches à réaliser pour la communauté (réparer un tiroir, ranger les outils de la forge, nettoyer les tubes en verre de la fabrication de
-        bougies, faire l'inventaire des planches de la scierie, plier et rouler les tissus secs dans la tisseranderie…). DEX-AGIL DD15 + INT-CULT.GÉ DD15 + FOR-ATHL DD10. Si le PJ
-        réussi les trois tests, il exécute les tâches correctement et obtiendra les remerciement de plusieurs villageois. Si le PJ rate certains tests, il n'est pas bien efficace
-        mais au bout de deux jours de travail, il arrive a venir péniblement à bout de cette liste.
-      </p>
-    </li>
+    <li><p class="paragraphe">@Test[car:agi|diff:15|comp:Délicatesse - Précision]</p></li>
+    <li><p class="paragraphe">@Test[car:int|diff:15|comp:Organisation]</p></li>
+    <li><p class="paragraphe">@Test[car:con|diff:10|comp:Pateince - Endurance]</p></li>
+    <ul>
+      <li>
+        <p class="paragraphe"><strong>Si le PJ réussi les trois tests :</strong> il exécute les tâches correctement et obtiendra les remerciement de plusieurs villageois.</p>
+      </li>
+      <li>
+        <p class="paragraphe">
+          <strong>Si le PJ rate le test d'AGI :</strong> Il casse plusieurs objets plus ou moins précieux et en abime d'autres. Même si les autres tests sont réussis, il se fera
+          sermoner sur son implication et le respect qu'il a pour le village et le travail des autres.
+        </p>
+      </li>
+      <li>
+        <p class="paragraphe">
+          <strong>Si le PJ rate le test d'INT :</strong> il n'est pas bien efficace mais au bout de deux jours de travail, il arrive a venir péniblement à bout de cette liste.
+          Plusieurs fois durant cette période, des centaures viendront s'enquérir de l'avancée de son travail car ils ont besoin des objets ou outils qu'il nettoie ou répare.
+        </p>
+      </li>
+      <li>
+        <p class="paragraphe">
+          <strong>Si le PJ rate de CON :</strong> Soit le PJ est pris de fatigue et on le verra faire de nombreuses pauses dans son travail. Soit le PJ perd patience face à la
+          montagne de petites tâches à réaliser et des villageois le verront ou l'entendront pester dans le bâtiment et perdre son calme.
+        </p>
+      </li>
+    </ul>
   </ul>
   <hr />
 
   <h2>Soirée légende familiale :</h2>
+  <p class="paragraphe">
+    Le Personnage a passé une bonne après-midi de travail dans l'atelier de sculpture. Il n'a pas fini son travail mais il entend monter la rampe plusieurs bruits de sabots.
+    Kaiwhakairo, Kara, Vaiata, Peepi et Taiohi arrivent, grands sourires, dans l'atelier. Après avoir saluer le PJ, Kara lui explique qu'ils veulent faire une soirée discussions,
+    contes et histoires tous ensemble. Ils semblent exités à l'idée que le PJ participe lui aussi. Si l'aventurier accepte, tous les centaures présents sont super contents. Pendant
+    toute la soirée, Kaiwhakairo sculptera de petits objets. Ce moment familiale et intimiste permet de nouer des liens forts avec ce groupe de centaures.
+  </p>
   <ul>
     <li>
       <p class="paragraphe">
-        Le Personnage a passer une bonne après-midi de travail dans l'atelier de sculpture. Il n'a pas fini son travail mais il entend monter la rampe plusieurs bruits de sabots.
-        Kaiwhakairo, Kara, Vaiata, Peepi et Taiohi arrivent, grands sourires, dans l'atelier. Après avoir saluer le PJ, Kara lui explique qu'ils veulent faire une soirée
-        discussions, contes et histoires tous ensemble. Ils semblent exités à l'idée que le PJ participe lui aussi. Si l'aventurier accepte, tous les centaures présents sont super
-        contents. CHA-PSY DD10 pour interagir avec la famille et CHA-FILOU DD15 pour raconter des histoires captivantes, humoristiques ou personnelles. Pendant toute la soirée,
-        Kaiwhakairo sculptera de petits objets. Ce moment familiale et intimiste permet de nouer des liens forts avec ce groupe de centaures.
+        Il est possible de réaliser des tests de @Test[car:cha] pour intéragir avec les centaures ou estimer la réussite d'une histoire captivante, humoristique ou personnelle
+        racontée par le PJ mais, dans la logique, il n'y a pas d'échec à cette scène prévue pour créer un lien fort avec cette famille.
+      </p>
+      <p class="paragraphe">
+        Par contre, si le PJ est dédaigneux et ne veut pas passer du temps avec cette famille, elle sera certainement déçue et légèrement plus méfiante envers le PJ.
       </p>
     </li>
   </ul>
