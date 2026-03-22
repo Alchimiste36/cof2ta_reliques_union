@@ -8,14 +8,16 @@ async function main() {
   const fileName_pageId = {
     a_synthese_chapitre: "KysmsRMKKwin3Yfy",
     b_rencontre_capture: "Lu7iwkosoHGmmYJt",
-    c_phase_1: "HLswdoxgMupXnqyB",
-    d_phase_2: "5K8HlubBvhYLNA9b",
-    e_phase_3: "ipoYoFzrR7Yz6Wi6",
-    f_attaque_atarangi_kino: "fhp62FM4hOHYzGas",
+    c_premiers_jours: "HLswdoxgMupXnqyB",
+    d_phase_1: "5K8HlubBvhYLNA9b",
+    e_phase_2: "ipoYoFzrR7Yz6Wi6",
+    f_phase_3: "fhp62FM4hOHYzGas",
+    g_activites_intermede: "Y1qOqBl9uKLcMxUR",
+    h_personnalites_arkanov: "P8neO9M6nd4MXBZK",
   }
 
   // Répertoire où se trouvent les fichiers html à partir du répertoire data
-  const folderRef = "modules/cof2ta_reliques_union/guide/html/chapitre4/"
+  const folderRef = "modules/cof2ta_reliques_union/guide/html/chapitre5/"
   const filesList = await foundry.applications.apps.FilePicker.implementation.browse("data", folderRef)
   console.log("Liste des fichiers", filesList)
 
