@@ -1,0 +1,732 @@
+folder: ChuAzsLAKPjeo4jX
+name: Ascension/Domination/Asservissement
+type: capacity
+img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
+_id: RjLqKMiJV0JaFOIU
+system:
+  description: >-
+    <p><strong>Le porteur libère toute la puissance de la Relique et impose sa
+    volonté à toutes les créatures capables de l’entendre.</strong> Il choisit
+    l’un des trois effets suivants :</p><ul><li><p><strong>Ascension =&gt;
+    renforce les alliés :</strong> les cibles bénéficient des effets
+    d’Inspiration (rang 2), d’Exaltation (rang 4), et récupèrent 5 PV par
+    tour.</p></li><li><p><strong>Domination =&gt; écrase les
+    adversaires</strong> : les cibles subissent les effets d’Intimidation (rang
+    2), d’Aliénation (rang 4), et perdent 5 PV par
+    tour.</p></li><li><p><strong>Asservissement =&gt; impose un contrôle total
+    :</strong> le porteur effectue une <strong>attaque magique opposée</strong>,
+    avec réussite automatique sur les cibles de NC 4 ou moins. <strong>En cas de
+    réussite, les cibles deviennent des esclaves soumis à sa
+    volonté.</strong></p></li></ul><p><strong>Chaque effet dure un jour lors de
+    la première utilisation sur une cible, puis deux jours, puis quatre jours,
+    puis huit jours, et ainsi de suite à chaque nouvelle utilisation de la
+    capacité sur cette même cible.</strong></p><p>Lorsque l’effet prend fin,
+    <strong>la cible reste affaiblie pendant une durée équivalente.</strong></p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: "<p>La première action permet d'activer la capacité et faire apparaitre les autres\_ actions.</p><p>Les 4 premières acions permettent de donner un Effet personnalisé sur les tokens ciblés avec les Bonus ou Malus en fonction du peuple des cibles. Ciblez les bons tokens et activer la bonne action pour donner les Bonus ou les Malus. Si la cible choisi d'avoir une action en plus ou en moins à son tour, elle DOIT retirer manuellement le Dé Bonus ou Malus pour les actions entreprisent.</p><p>La dernière action permet de réaliser une attaque magique opposée et d'affecter le statut Asservi sur les cibles qui ratent leur test.</p>"
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 5
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: 0
+  manaCost: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 0
+      label: Activer la capacité
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 1
+      label: Ascention sur Peuple associé
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: skill
+          target: all
+          value: '15'
+          apply: self
+          additionalInfos: Tous les Tests
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: melee
+          value: '15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: ranged
+          value: '15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: magic
+          value: '15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 100
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: heal
+            formula: '5'
+            elementType: ''
+            statuses: []
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 2
+      label: Ascension sur les autres peuples
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: skill
+          target: all
+          value: '5'
+          apply: self
+          additionalInfos: Tous les Tests
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: melee
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: ranged
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: magic
+          value: '5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: bonusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 100
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: heal
+            formula: '5'
+            elementType: ''
+            statuses: []
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 3
+      label: Domination sur Peuple associé
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: skill
+          target: all
+          value: '-15'
+          apply: self
+          additionalInfos: Tous les Tests
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: melee
+          value: '-15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: ranged
+          value: '-15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: magic
+          value: '-15'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 100
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: heal
+            formula: '5'
+            elementType: ''
+            statuses: []
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 4
+      label: Domination sur les autres peuples
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: skill
+          target: all
+          value: '-5'
+          apply: self
+          additionalInfos: Tous les Tests
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: melee
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: ranged
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: combat
+          target: magic
+          value: '-5'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+          subtype: malusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 100
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: heal
+            formula: '5'
+            elementType: ''
+            statuses: []
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RjLqKMiJV0JaFOIU
+      indice: 5
+      label: Asservissement - Attaque magique opposée
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: multiple
+            number: 100
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - enslaved
+            duration: '0'
+            unit: unlimited
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1775851782722
+  modifiedTime: 1775852665939
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: '!items!RjLqKMiJV0JaFOIU'

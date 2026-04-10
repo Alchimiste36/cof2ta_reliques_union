@@ -1,0 +1,64 @@
+folder: d3t5P9yrYQ2rORmO
+name: Porteur du Bracelet de l'Union
+type: feature
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/bracelet_de_l_union.webp
+_id: eJsKWNnNxzWtMR4r
+system:
+  description: >-
+    <p>Glissez-déposez ce Trait sur le personnage ayant activé le Bracelet de
+    l'Union.</p><p>Ce trait contient la Voie de la Relique ainsi que les
+    modificateurs aux jets de compétences de la relique.</p><p>Au moment de
+    donner ce Trait au personnage retirer "l'objet" de la Relique de sa feuille
+    car à partir de maintenant la relique est intégrée à son corps et ne peut
+    plus être retirée.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  subtype: trait
+  modifiers:
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '2'
+      additionalInfos: Interaction avec tout le monde
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '5'
+      additionalInfos: Interaction avec un elfe
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: int
+      value: '10'
+      additionalInfos: Culture générale sur les elfes
+      apply: self
+  paths:
+    - >-
+      Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.dRrPm5m9zmPc1RVr
+  capacities: []
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1775852717967
+  modifiedTime: 1775853756471
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: '!items!eJsKWNnNxzWtMR4r'

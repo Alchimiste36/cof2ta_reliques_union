@@ -1,0 +1,64 @@
+folder: d3t5P9yrYQ2rORmO
+name: Porteur de la Botte de l'Union
+type: feature
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/botte_de_l_union.webp
+system:
+  description: >-
+    <p>Glissez-déposez ce Trait sur le personnage ayant activé la Botte de
+    l'Union.</p><p>Ce trait contient la Voie de la Relique ainsi que les
+    modificateurs aux jets de compétences de la relique.</p><p>Au moment de
+    donner ce Trait au personnage retirer "l'objet" de la Relique de sa feuille
+    car à partir de maintenant la relique est intégrée à son corps et ne peut
+    plus être retirée.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  subtype: trait
+  modifiers:
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '2'
+      additionalInfos: Interaction avec tout le monde
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '5'
+      additionalInfos: Interaction avec un nain
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: int
+      value: '10'
+      additionalInfos: Culture générale sur les nains
+      apply: self
+  paths:
+    - >-
+      Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.79VvPLYCNBBAKN8L
+  capacities: []
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1775853682518
+  modifiedTime: 1775853753939
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: lNlipBFh2gzmLaH9
+sort: 100000
+_key: '!items!lNlipBFh2gzmLaH9'

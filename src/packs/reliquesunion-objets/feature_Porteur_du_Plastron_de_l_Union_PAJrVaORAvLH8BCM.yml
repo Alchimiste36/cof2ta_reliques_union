@@ -1,0 +1,64 @@
+folder: d3t5P9yrYQ2rORmO
+name: Porteur du Plastron de l'Union
+type: feature
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/objets_campagne/plastron_de_l_union.webp
+system:
+  description: >-
+    <p>Glissez-déposez ce Trait sur le personnage ayant activé le Plastron de
+    l'Union.</p><p>Ce trait contient la Voie de la Relique ainsi que les
+    modificateurs aux jets de compétences de la relique.</p><p>Au moment de
+    donner ce Trait au personnage retirer "l'objet" de la Relique de sa feuille
+    car à partir de maintenant la relique est intégrée à son corps et ne peut
+    plus être retirée.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  subtype: trait
+  modifiers:
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '2'
+      additionalInfos: Interaction avec tout le monde
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: cha
+      value: '5'
+      additionalInfos: Interaction avec une Peau Verte
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.eJsKWNnNxzWtMR4r
+      subtype: skill
+      target: int
+      value: '10'
+      additionalInfos: Culture générale sur les Peaux Vertes
+      apply: self
+  paths:
+    - >-
+      Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ShPqw9qmmahqFY8j
+  capacities: []
+effects: []
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1775853689994
+  modifiedTime: 1775853758873
+  lastModifiedBy: MdLP35I2yaa8z7GV
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: PAJrVaORAvLH8BCM
+sort: 400000
+_key: '!items!PAJrVaORAvLH8BCM'

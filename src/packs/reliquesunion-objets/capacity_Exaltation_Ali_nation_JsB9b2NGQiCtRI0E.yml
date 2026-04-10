@@ -1,0 +1,294 @@
+folder: ChuAzsLAKPjeo4jX
+name: Exaltation/Aliénation
+type: capacity
+img: icons/magic/lightning/fist-unarmed-strike-blue-green.webp
+_id: JsB9b2NGQiCtRI0E
+system:
+  description: >-
+    <p><strong>Le porteur exerce une influence mentale intense sur toutes les
+    créatures dans un rayon de 10 mètres par rang.</strong></p><p>Selon son
+    intention, <strong>cette influence renforce ses alliés</strong> (Exaltation)
+    ou <strong>affaiblit ses adversaires</strong> (Aliénation). </p><p>À chaque
+    tour, les cibles affectées obtiennent au choix :</p><p>soit un Dé Bonus à
+    leurs actions, </p><p>soit une action supplémentaire (Exaltation), ou
+    subissent soit un Dé Malus à leurs actions, soit une action en moins
+    (Aliénation).</p><p>L’effet dure une heure par rang pour le peuple associé à
+    la Relique et une minute par rang pour les autres peuples.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  inGame: >-
+    <p>La première action permet de donner un Effet personnalisé sur les tokens
+    ciblés offrant un Dé Bonus à toutes les actions. Si la cible choisi
+    d'obtenir une action supplémentaire à son tour, il DOIT retirer manuellement
+    le Dé Bonus pour les actions entreprisent. L'effet dure 1 minute par
+    rang.</p><p>La deuxième action est identique pour l'Aliénation avec un Effet
+    personnalisé qui donne un Dé Malus à tous les tests.</p>
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 4
+  frequency: none
+  charges: {}
+  properties:
+    spell: true
+  path: null
+  cost: 0
+  manaCost: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+      indice: 0
+      label: Exaltation
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: bonusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 10*@rang
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+      indice: 1
+      label: Aliénation
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: agi
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: con
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: for
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: per
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: cha
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: int
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: vol
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: melee
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: ranged
+          value: '0'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.JsB9b2NGQiCtRI0E
+          subtype: malusDice
+          target: magic
+          value: '0'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 10*@rang
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          hasAttackSuccessThreshold: false
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1775850453583
+  modifiedTime: 1775851755435
+  lastModifiedBy: MdLP35I2yaa8z7GV
+_key: '!items!JsB9b2NGQiCtRI0E'
