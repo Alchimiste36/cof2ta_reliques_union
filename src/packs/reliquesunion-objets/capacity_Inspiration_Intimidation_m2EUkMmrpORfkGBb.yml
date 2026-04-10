@@ -16,9 +16,9 @@ system:
     l’intention du porteur, cet effet accorde un bonus à tous les tests des
     alliés (Inspiration) ou impose un malus aux ennemis
     (Intimidation).</p><p><strong>L’effet dure 1H / Rang.</strong></p>
-  source: ''
-  origin: ''
-  slug: ''
+  source: ""
+  origin: ""
+  slug: ""
   inGame: >-
     <p>La première action, lorsqu'elle est activée, permet d'afficher les 4
     autres actions.</p><p>Les 4 actions suivantes permettent de donner les bonus
@@ -26,7 +26,7 @@ system:
     tokens en fonction de leur peuple et activer la bonne action qui donnera aux
     cibles un effet personnalisé qui faudra supprimer manuellement lorsque
     l'effet prendra fin.</p><p></p>
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   rank: 2
@@ -42,7 +42,7 @@ system:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
       indice: 0
       label: Activer la capacité
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: spell
       actionType: none
@@ -61,7 +61,7 @@ system:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
       indice: 1
       label: Inspiration sur le Peuple associé
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -75,40 +75,40 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       modifiers:
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: skill
           target: all
-          value: '@rang*3'
-          apply: other
+          value: "@rang*3"
+          apply: others
           additionalInfos: Tous les tests
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: melee
-          value: '@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "@rang*3"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: ranged
-          value: '@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "@rang*3"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: magic
-          value: '@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "@rang*3"
+          apply: others
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -119,11 +119,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -133,7 +133,7 @@ system:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
       indice: 2
       label: Inspiration sur les autres peuples
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -147,40 +147,40 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       modifiers:
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: skill
           target: all
-          value: '@rang'
-          apply: other
+          value: "@rang"
+          apply: others
           additionalInfos: Tous les tests
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: melee
-          value: '@rang'
-          apply: other
-          additionalInfos: ''
+          value: "@rang"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: ranged
-          value: '@rang'
-          apply: other
-          additionalInfos: ''
+          value: "@rang"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: magic
-          value: '@rang'
-          apply: other
-          additionalInfos: ''
+          value: "@rang"
+          apply: others
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -191,11 +191,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -205,7 +205,7 @@ system:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
       indice: 3
       label: Intimidation sur le peuple associé
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -219,40 +219,40 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       modifiers:
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: skill
           target: all
-          value: '-@rang*3'
-          apply: other
+          value: "-@rang*3"
+          apply: others
           additionalInfos: Malus à tous les tests
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: melee
-          value: '-@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang*3"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: ranged
-          value: '-@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang*3"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: magic
-          value: '-@rang*3'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang*3"
+          apply: others
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -263,11 +263,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -277,7 +277,7 @@ system:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
       indice: 4
       label: Intimidation sur les autres peuples
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: debuff
       actionType: none
@@ -291,40 +291,40 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: '0'
+          object: "0"
       modifiers:
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: skill
           target: all
-          value: '-@rang'
-          apply: other
+          value: "-@rang"
+          apply: others
           additionalInfos: Malus à tous les tests
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: melee
-          value: '-@rang'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: ranged
-          value: '-@rang'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang"
+          apply: others
+          additionalInfos: ""
         - type: capacity
           source: >-
             Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.m2EUkMmrpORfkGBb
           subtype: combat
           target: magic
-          value: '-@rang'
-          apply: other
-          additionalInfos: ''
+          value: "-@rang"
+          apply: others
+          additionalInfos: ""
       resolvers:
         - type: buffDebuff
           target:
@@ -335,11 +335,11 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
             unit: unlimited
-            duration: '0'
+            duration: "0"
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
@@ -358,10 +358,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: "13.351"
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: "#{VERSION}#"
   createdTime: 1775845468286
   modifiedTime: 1775846704986
   lastModifiedBy: MdLP35I2yaa8z7GV
-_key: '!items!m2EUkMmrpORfkGBb'
+_key: "!items!m2EUkMmrpORfkGBb"
