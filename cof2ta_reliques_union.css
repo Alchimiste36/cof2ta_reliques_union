@@ -105,6 +105,7 @@
   top: calc(80vh - 50px);
 }
 .journal-cof2ta-ru,
+.journal-entry-page,
 .merchant-description,
 .editor-enriched,
 .editor-content,
@@ -118,6 +119,7 @@
   --color-ru-roll: #001791;
 }
 .journal-cof2ta-ru .content-link,
+.journal-entry-page .content-link,
 .merchant-description .content-link,
 .editor-enriched .content-link,
 .editor-content .content-link,
@@ -131,6 +133,7 @@
   padding: 0;
 }
 .journal-cof2ta-ru .content-link i,
+.journal-entry-page .content-link i,
 .merchant-description .content-link i,
 .editor-enriched .content-link i,
 .editor-content .content-link i,
@@ -138,47 +141,58 @@
   text-indent: 0;
   color: var(--color-ru-lien);
 }
-.journal-cof2ta-ru {
+.journal-cof2ta-ru,
+.journal-page-content {
   font-family: "myriad cond";
 }
-.journal-cof2ta-ru .paragraphe {
+.journal-cof2ta-ru .paragraphe,
+.journal-page-content .paragraphe,
+.journal-cof2ta-ru p,
+.journal-page-content p {
   text-indent: 20px;
   font-size: var(--font-size-18);
   text-align: justify;
 }
-.journal-cof2ta-ru h1 {
+.journal-cof2ta-ru h1,
+.journal-page-content h1 {
   color: var(--color-ru-or);
   border-bottom: 1px solid var(--color-ru-or);
   border-width: 2px;
   font-family: "Matrix";
 }
-.journal-cof2ta-ru h2 {
+.journal-cof2ta-ru h2,
+.journal-page-content h2 {
   font-family: "Matrix";
   color: var(--color-ru-parcho);
   border: none;
   text-decoration: underline;
   margin: 5px 0 15px 0;
 }
-.journal-cof2ta-ru h2::before {
+.journal-cof2ta-ru h2::before,
+.journal-page-content h2::before {
   content: "\0027A5";
   margin-right: 4px;
   display: inline-block;
 }
-.journal-cof2ta-ru h3 {
+.journal-cof2ta-ru h3,
+.journal-page-content h3 {
   font-family: "myriad bold ital";
   color: var(--color-ru-violet);
   margin: 5px 0 15px 10px;
 }
-.journal-cof2ta-ru h3::before {
+.journal-cof2ta-ru h3::before,
+.journal-page-content h3::before {
   content: "\0027A7";
   margin-right: 2px;
 }
-.journal-cof2ta-ru hr {
+.journal-cof2ta-ru hr,
+.journal-page-content hr {
   background-image: linear-gradient(90deg, transparent 0%, var(--color-text-primary) 50%, transparent 100%);
   height: 1px;
   margin: 10px 0;
 }
-.journal-cof2ta-ru .description {
+.journal-cof2ta-ru .description,
+.journal-page-content .description {
   font-family: "myriad ital";
   color: var(--color-ru-violet);
   margin: 5px 10px;
@@ -190,49 +204,61 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.journal-cof2ta-ru .description hr {
+.journal-cof2ta-ru .description hr,
+.journal-page-content .description hr {
   background-image: linear-gradient(90deg, var(--color-ru-violet) 0%, transparent 30%, transparent 70%, var(--color-ru-violet) 100%);
   margin: 10px -10px;
 }
-.journal-cof2ta-ru .description ul hr {
+.journal-cof2ta-ru .description ul hr,
+.journal-page-content .description ul hr {
   margin-left: -40px;
 }
-.journal-cof2ta-ru .description p {
+.journal-cof2ta-ru .description p,
+.journal-page-content .description p {
   font-size: var(--font-size-16);
 }
-.journal-cof2ta-ru .description em {
+.journal-cof2ta-ru .description em,
+.journal-page-content .description em {
   font-family: "myriad cond";
   font-style: normal;
   font-size: var(--font-size-18);
 }
-.journal-cof2ta-ru span.description {
+.journal-cof2ta-ru span.description,
+.journal-page-content span.description {
   border: none;
   font-size: var(--font-size-16);
   margin: 0;
   padding: 0;
 }
-.journal-cof2ta-ru ul {
+.journal-cof2ta-ru ul,
+.journal-page-content ul {
   list-style: "\002B1F";
   margin: 0 0 0 10px;
   line-height: 1rem;
 }
-.journal-cof2ta-ru li {
+.journal-cof2ta-ru li,
+.journal-page-content li {
   padding-left: 5px;
 }
-.journal-cof2ta-ru li .paragraphe {
+.journal-cof2ta-ru li .paragraphe,
+.journal-page-content li .paragraphe {
   text-indent: 0px;
 }
-.journal-cof2ta-ru li::marker {
+.journal-cof2ta-ru li::marker,
+.journal-page-content li::marker {
   font-size: large;
 }
-.journal-cof2ta-ru ul ul {
+.journal-cof2ta-ru ul ul,
+.journal-page-content ul ul {
   list-style: "\002B54";
   margin: 0;
 }
-.journal-cof2ta-ru ul ul li::marker {
+.journal-cof2ta-ru ul ul li::marker,
+.journal-page-content ul ul li::marker {
   font-weight: 900;
 }
-.journal-cof2ta-ru img {
+.journal-cof2ta-ru img,
+.journal-page-content img {
   border: 1px solid var(--color-ru-or);
   border-radius: 10px;
   border-bottom: 3px solid var(--color-ru-or);
@@ -240,7 +266,8 @@
   float: right;
   margin: 0 -10px 5px 10px;
 }
-.journal-cof2ta-ru img.left {
+.journal-cof2ta-ru img.left,
+.journal-page-content img.left {
   border: 1px solid var(--color-ru-or);
   border-radius: 10px;
   border-bottom: 3px solid var(--color-ru-or);
@@ -248,7 +275,8 @@
   float: left;
   margin: 0 10px 5px 0px;
 }
-.journal-cof2ta-ru img.center {
+.journal-cof2ta-ru img.center,
+.journal-page-content img.center {
   border: 1px solid var(--color-ru-or);
   border-radius: 10px;
   border-bottom: 3px solid var(--color-ru-or);
@@ -257,7 +285,8 @@
   justify-self: center;
   margin: 0 0 5px 0;
 }
-.journal-cof2ta-ru .parcho {
+.journal-cof2ta-ru .parcho,
+.journal-page-content .parcho {
   border: 1px solid var(--color-ru-parcho);
   padding: 5px 15px;
   border-radius: 20px;
@@ -267,7 +296,8 @@
   margin: 5px 5px 15px 40px;
   font-size: var(--font-size-18);
 }
-.journal-cof2ta-ru .discussion {
+.journal-cof2ta-ru .discussion,
+.journal-page-content .discussion {
   font-family: "Hypatia";
   font-style: italic;
   font-size: var(--font-size-16);
@@ -281,33 +311,39 @@
   border-bottom-left-radius: 10px;
   color: var(--color-ru-discussion);
 }
-.journal-cof2ta-ru span.discussion {
+.journal-cof2ta-ru span.discussion,
+.journal-page-content span.discussion {
   border: none;
   padding: 0;
   margin: 0;
 }
-.journal-cof2ta-ru .discu-acteur {
+.journal-cof2ta-ru .discu-acteur,
+.journal-page-content .discu-acteur {
   text-decoration: underline;
   font-weight: 700;
   font-size: var(--font-size-18);
   font-family: "myriad bold ital";
 }
-.journal-cof2ta-ru .roll-check-enricher {
+.journal-cof2ta-ru .roll-check-enricher,
+.journal-page-content .roll-check-enricher {
   color: var(--color-ru-roll);
   text-indent: 0;
   font-weight: 700;
 }
-.journal-cof2ta-ru .roll-result {
+.journal-cof2ta-ru .roll-result,
+.journal-page-content .roll-result {
   color: var(--color-ru-parcho);
   font-weight: 900;
   font-family: "myriad cond bold ital";
   letter-spacing: 1px;
 }
-.journal-cof2ta-ru .imp {
+.journal-cof2ta-ru .imp,
+.journal-page-content .imp {
   background-color: #e6000029;
   font-weight: 900;
 }
-.journal-cof2ta-ru .intro {
+.journal-cof2ta-ru .intro,
+.journal-page-content .intro {
   font-family: "myriad cond ital";
   color: var(--color-ru-parcho);
   margin: 10px 15px;
@@ -317,7 +353,8 @@
   font-size: var(--font-size-20);
   text-align: center;
 }
-.journal-cof2ta-ru .levelup {
+.journal-cof2ta-ru .levelup,
+.journal-page-content .levelup {
   font-family: "myriad cond bold";
   color: var(--color-ru-lien);
   margin: 10px 15px;
@@ -327,20 +364,23 @@
   text-align: center;
   text-shadow: 1px 1px 1px var(--color-ru-violet);
 }
-.journal-cof2ta-ru .sallemj {
+.journal-cof2ta-ru .sallemj,
+.journal-page-content .sallemj {
   font-family: "myriad cond";
   margin: 15px 5px;
   border: 3px dashed red;
   border-radius: 15px;
   padding: 1px 10px;
 }
-.journal-cof2ta-ru .sallemj hr {
+.journal-cof2ta-ru .sallemj hr,
+.journal-page-content .sallemj hr {
   background-image: linear-gradient(90deg, red 0%, transparent 50%, red 100%);
   height: 1px;
   margin-right: -10px;
   margin-left: -10px;
 }
-.journal-cof2ta-ru .salleplus {
+.journal-cof2ta-ru .salleplus,
+.journal-page-content .salleplus {
   font-family: "myriad cond";
   margin: 15px 110px 15px 0px;
   padding: 5px 10px;
@@ -348,7 +388,8 @@
   border-right: 3px dotted var(--color-ru-or);
   border-left: 3px dotted var(--color-ru-or);
 }
-.journal-cof2ta-ru .salleplus hr {
+.journal-cof2ta-ru .salleplus hr,
+.journal-page-content .salleplus hr {
   background-image: linear-gradient(90deg, var(--color-ru-or) 0%, transparent 50%, var(--color-ru-or) 100%);
   height: 1px;
   margin-right: -10px;
