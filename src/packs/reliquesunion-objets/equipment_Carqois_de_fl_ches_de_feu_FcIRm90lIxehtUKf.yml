@@ -1,0 +1,97 @@
+folder: JaxbYmoiWn6tPjgX
+name: Carqois de flèches de feu
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_carquois_fleches_feu.webp
+_id: FcIRm90lIxehtUKf
+system:
+  description: >-
+    <p>Ce magnifique carquois elfique peut contenir 20 flèches. Les flèches dans
+    le carquois s'imprègnent de l'énergie magique du Carquois.
+    </p><p><strong>Chaque jour, une flèche normale placée dans le carquois
+    devient un flèche de feu qui inflige +1d4° DM de feu.</strong> La flèche
+    redevient normale après avoir été tirée.</p><p>L'utilisateur récupère au
+    chois une flèche normale ou une flèche de feu quand il se sert dans le
+    Carquois de flèches de feu.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Cailu</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+    current: null
+    max: 20
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2400
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.FcIRm90lIxehtUKf
+      indice: 0
+      label: Utilisation d'une flèche de feu
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.FcIRm90lIxehtUKf
+          subtype: combat
+          target: damRanged
+          value: +1d4°
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 3700000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790537902532
+  modifiedTime: 1790553122296
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!FcIRm90lIxehtUKf'

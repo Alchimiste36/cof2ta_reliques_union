@@ -1,0 +1,93 @@
+folder: JaxbYmoiWn6tPjgX
+name: Gants de Tireur
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/vetements/glanae_gants_tireur.webp
+_id: Lr3AqLuttZNbJASn
+system:
+  description: >-
+    <p>Cette paire de gants  est très élégante avec son style elfe sylvain
+    caractéristique.</p><p>Sur l'index et le majeur de chaque gant sont disposés
+    des petites pièces de cuirs plus sombres où on distingue de petites runes
+    elfiques dessus.</p><p>Le porteur <strong>gagne +1 en Attaque à
+    Distance</strong>.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Jurzok</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 750
+    unit: pa
+  rarity: precious
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Lr3AqLuttZNbJASn
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Lr3AqLuttZNbJASn
+          subtype: combat
+          target: ranged
+          value: '1'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 2000000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790544713569
+  modifiedTime: 1790553122293
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!Lr3AqLuttZNbJASn'

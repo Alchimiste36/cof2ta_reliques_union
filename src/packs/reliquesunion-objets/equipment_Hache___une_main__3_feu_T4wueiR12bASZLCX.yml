@@ -1,0 +1,114 @@
+folder: JaxbYmoiWn6tPjgX
+name: Hache à une main +3 feu
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_hache_3_feu.webp
+system:
+  description: >-
+    <p>Cette petite hache naine ne paye pas de mine à première vue mais c'est
+    une pure merveille d'équilibrage et de puissance. Les runes naines ciselées
+    sur la hache sont d'une finesse et d'une grande complexité.</p><p>Cette
+    hache donne <strong>un bonus de +3 en Attaque et aux DM</strong>. De plus,
+    elle <strong>inflige +1d4° DM de feu</strong>.</p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: hache
+  tags: []
+  subtype: weapon
+  martialCategory: axe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 12500
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +3'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 + @for +1d4° +3
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Thonur</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790548760925
+  modifiedTime: 1790553122290
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: T4wueiR12bASZLCX
+sort: 700000
+_key: '!items!T4wueiR12bASZLCX'

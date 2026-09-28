@@ -1,0 +1,191 @@
+folder: JaxbYmoiWn6tPjgX
+name: Arc long de Choc Electrique
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_arc_long_choc_electrique.webp
+system:
+  description: "<p>Cet arc long est une réalisation magnifique malgré son effet sadique.</p><p>C'est un arc long +1 en\_<strong>ATT et +1d4° DM d'électricité</strong>.\_</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Décharge (L) :</span></strong></span>\_En chargeant sa flèche, l'arc peut tirer une flèche redoutable. Si l'attaque touche, <strong>la cible subit +2d4° DM d'électricité </strong>et elle doit effectuer un <strong>test de CON (Résistance électrique) Diff.15.</strong> En cas d'échec, ses muscles se tétanisent pendant plusieurs secondes. La cible est <strong>ralentie pendant 1d4 rounds</strong>.</p><p>Nécessite d'avoir FOR +1 minimum</p>"
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: arc-long
+  tags: []
+  subtype: weapon
+  martialCategory: longBow
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: 20
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 3
+    unit: kg
+  price:
+    value: 6500
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 50
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.unffhvhlSSi3uMMD
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 +1d4°
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VK4dUfrYLnjRw9SV
+      indice: 1
+      label: Décharge
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 +3d4°
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VK4dUfrYLnjRw9SV
+      indice: 2
+      label: Si Décharge touche
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: f
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
+          target:
+            type: single
+            scope: all
+            number: '0'
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - slowed
+            duration: 1d4
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  gmNotes: ''
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790531504313
+  modifiedTime: 1790553122296
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: VK4dUfrYLnjRw9SV
+sort: 4000000
+_key: '!items!VK4dUfrYLnjRw9SV'

@@ -1,0 +1,94 @@
+name: Collier d'Explorateur
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/divers/collier_exploration.webp
+_id: XEzEs0PzY89RZ0Jc
+system:
+  description: >-
+    <p>Ce délicat collier, composé d'une chaine en argent sur laquelle est fixé
+    un pendentif en forme de lézard serti d'une belle pierre orangée, permet au
+    porteur d'être beaucoup plus stable sur les terrains
+    difficiles.</p><p><strong>Le porteur ne peut plus glisser ou tomber
+    lorsqu'il marche sur des surfaces glissantes ou instables</strong> (neige,
+    glace, huile, sable, boue, flaque d'eau...). <strong>Si le porteur court, il
+    gagne un bonus de +5 aux tests pour éviter de tomber ou
+    glisser.</strong></p><p>Cet effet ne s'applique pas pour tenir en équilibre
+    sur des cordes, des poutres, une corniche...</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Hooper</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2800
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: Item.XEzEs0PzY89RZ0Jc
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Item.XEzEs0PzY89RZ0Jc
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Courir sur une surface instable ou glissante
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+folder: JaxbYmoiWn6tPjgX
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790539317273
+  modifiedTime: 1790553122295
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+sort: 3400000
+_key: '!items!XEzEs0PzY89RZ0Jc'

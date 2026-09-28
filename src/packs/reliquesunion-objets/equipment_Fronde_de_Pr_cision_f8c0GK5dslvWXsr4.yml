@@ -1,0 +1,108 @@
+folder: JaxbYmoiWn6tPjgX
+name: Fronde de Précision
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_fronde_precision.webp
+_id: f8c0GK5dslvWXsr4
+system:
+  description: "<p>Cette jolie fronde est gravée de quelques runes sur le cuir ainsi que sur la bourse pour transporter les pierres.\_\_\_\_\_\_\_</p><p>Grâce à cette Fronde de Précision, l'utilisateur\_<strong>ajoute +PER aux DM</strong> car il arrive plus facilement à viser les points sensibles.</p><p>De plus, <strong>la plage de critique est augmentée de 1.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: fronde
+  tags: []
+  subtype: weapon
+  martialCategory: sling
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 20
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.f8c0GK5dslvWXsr4
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4 +@per
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  gmNotes: ''
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790543803215
+  modifiedTime: 1790553122292
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 1800000
+_key: '!items!f8c0GK5dslvWXsr4'

@@ -1,0 +1,112 @@
+folder: JaxbYmoiWn6tPjgX
+name: Hache à deux mains +1
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_hache_deux_mains_1.webp
+_id: 7NTfb6SYuy6wWx8o
+system:
+  description: >-
+    <p>Une belle hache runique orc +1. Elle donne un <strong>bonus de +1 en
+    Attaque et aux DM.</strong></p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: hache-a-deux-mains
+  tags: []
+  subtype: weapon
+  martialCategory: greatAxe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 3
+    unit: kg
+  price:
+    value: 1100
+    unit: pa
+  rarity: exotic
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d6 + @for +1
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Lukkor</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790548487070
+  modifiedTime: 1790553122293
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 2100000
+_key: '!items!7NTfb6SYuy6wWx8o'

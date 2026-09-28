@@ -1,0 +1,100 @@
+folder: JaxbYmoiWn6tPjgX
+name: Robe Exsangue de Défense
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/glanae_armure_exsangue_1.webp
+_id: AkaF6hw8bOIgt6ET
+system:
+  description: "<p>Portée par la Matrone Zarsa, cette robe de combat est particulièrement belle et ajustée.\_Une série de runes magiques est gravée à plusieurs endroits de la tenue pour la rendre plus souple et confortable sans perdre de sa résistance.\_Elle s'adapte à la personne qui l'équipe pour s'approcher du corps et devenir très souple dans les déplacements.</p><p>L'utilisateur obtient <strong>un bonus de +3 DEF magique</strong> qui n'influe pas sur l'encombrement et d'<strong>une RD de +1.</strong></p><p>La coupe de la tenue est tellement bien réalisée que l'utilisateur gagne <strong>un bonus de +5 aux tests de CHA pour toutes les interactions sociales.</strong></p>"
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: cuir-simple
+  tags: []
+  subtype: armor
+  martialCategory: leather
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 7500
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AkaF6hw8bOIgt6ET
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AkaF6hw8bOIgt6ET
+          subtype: skill
+          target: cha
+          value: '5'
+          apply: self
+          additionalInfos: Interactions sociales
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AkaF6hw8bOIgt6ET
+          subtype: combat
+          target: dr
+          value: '1'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: 1
+  range: null
+  magicalDefense: 3
+  gmNotes: >-
+    <p><em>La robe peut être adaptée pour paraitre moins sombre et s'ajuster aux
+    personnages masculins.</em></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790532643470
+  modifiedTime: 1790553122294
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 3100000
+_key: '!items!AkaF6hw8bOIgt6ET'

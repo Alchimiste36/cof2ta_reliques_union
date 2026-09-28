@@ -1,0 +1,199 @@
+folder: JaxbYmoiWn6tPjgX
+name: Epées Courtes de Douleur
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_epee_courte_douleur.webp
+_id: RURsbwc94MwZdww8
+system:
+  description: >-
+    <p>Ce duo d'épée courte est redoutable surtout si elles sont utilisées par
+    un combattant ambidextre. Les deux lames émettent une vibration malsaine
+    quand on les manipule.</p><p>Chaque épée courte de douleur <strong>inflige
+    1d4° DM supplémentaires</strong> et elle donne un <strong>bonus de +1en
+    Attaque et aux DM.</strong></p><p>A chaque fois qu'elle inflige des DM, la
+    cible doit faire un <strong>test de CON (Résistance douleur) Diff.16 ou elle
+    est affaiblie pendant 1 round</strong> à cause des terribles douleurs
+    qu'elle ressent.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: weapon
+  tags: []
+  martialCategory: shortSword
+  damagetype: slashing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2800
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RURsbwc94MwZdww8
+      indice: 0
+      label: Main Gauche
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +1d4° +1
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RURsbwc94MwZdww8
+      indice: 1
+      label: Main Droite
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +1d4° +1
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.RURsbwc94MwZdww8
+      indice: 2
+      label: Sur cible touchée
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '16'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
+          target:
+            type: single
+            scope: all
+            number: '0'
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - weakened
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 1400000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790542360073
+  modifiedTime: 1790633487291
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!RURsbwc94MwZdww8'

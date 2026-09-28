@@ -1,0 +1,146 @@
+folder: JaxbYmoiWn6tPjgX
+name: Biscuit de rage
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/consommables/biscuit_rage.webp
+_id: XgoDierl8rrNcHGI
+system:
+  description: "<p>Cette boule de biscuit farineuse est très dur et difficile à avaler tellement elle devient pâteuse quand on l'a mâche.\_La consommation de ce biscuit de Rage permet de devenir plus fort mais aussi plus agressif et susceptible.</p><p>Le consommateur gagne <strong>+4 FOR et CON et il perd -4 en INT, PER et CHA pendant 2d6+1 rounds</strong>.\_Le consommateur ne peut pas décider de lui-même de mettre fin à ses effets.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p>La consommation de Biscuit de rage a un faible risque de rendre le
+    consommateur fou. <strong>A chaque fois qu'il consomme un biscuit, il a 1%
+    de chance</strong> de frapper sans distinction les personnes et objets
+    autour de lui.</p>
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: true
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 150
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+          subtype: ability
+          target: for
+          value: '4'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+          subtype: ability
+          target: con
+          value: '4'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+          subtype: ability
+          target: per
+          value: '-4'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+          subtype: ability
+          target: cha
+          value: '-4'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XgoDierl8rrNcHGI
+          subtype: ability
+          target: int
+          value: '-4'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 2d6+1
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 3500000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790536561635
+  modifiedTime: 1790553122295
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!XgoDierl8rrNcHGI'

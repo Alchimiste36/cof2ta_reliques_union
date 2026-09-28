@@ -1,0 +1,91 @@
+folder: JaxbYmoiWn6tPjgX
+name: Demi-plaque Naine de Résistance
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/glanae_armure_demi_plaque_naine_2.webp
+system:
+  description: "<p>Cette magnifique armure naine a certainement été forgée pour un commandant de légion du Bouclier.</p><p>Elle octroi <strong>un bonus magique de +2 DEF et une RD de +2.</strong></p><p>Annule le bonus de\_DEX\_à la\_DEF.</p>"
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: armure-de-plaques
+  tags: []
+  subtype: armor
+  martialCategory: plateArmor
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 3500
+    unit: ''
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.BPMrsbHDRqmxKcN6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.BPMrsbHDRqmxKcN6
+          subtype: combat
+          target: dr
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: 6
+  range: null
+  magicalDefense: 2
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Thonur</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790541087796
+  modifiedTime: 1790553122294
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: BPMrsbHDRqmxKcN6
+sort: 2900000
+_key: '!items!BPMrsbHDRqmxKcN6'

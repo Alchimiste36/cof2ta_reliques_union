@@ -50,6 +50,7 @@ system:
           value: '-2'
           apply: others
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: combat
@@ -57,6 +58,7 @@ system:
           value: '-2'
           apply: others
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: combat
@@ -64,6 +66,7 @@ system:
           value: '-2'
           apply: others
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: skill
@@ -71,6 +74,7 @@ system:
           value: '-2'
           apply: others
           additionalInfos: ''
+          choiceGroup: 0
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -84,17 +88,18 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
+          hasAttackSuccessThreshold: false
           additionalEffect:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
+            formula: '1'
             elementType: ''
             statuses: []
             duration: 5 + @per
             unit: round
-          hasAttackSuccessThreshold: false
+          halfDmgOnSave: true
     - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
       indice: 1
       label: ''
@@ -117,6 +122,7 @@ system:
           value: '-3'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: combat
@@ -124,6 +130,7 @@ system:
           value: '-3'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: combat
@@ -131,6 +138,7 @@ system:
           value: '-3'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.ONyokb6wKpAaTlb1
           subtype: skill
@@ -138,6 +146,7 @@ system:
           value: '-3'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -151,17 +160,18 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
+          hasAttackSuccessThreshold: false
           additionalEffect:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
+            formula: '2'
             elementType: ''
             statuses: []
             duration: 5 + @per
             unit: round
-          hasAttackSuccessThreshold: false
+          halfDmgOnSave: true
       conditions: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -172,12 +182,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1769517536854
-  modifiedTime: 1769896831834
-  lastModifiedBy: oByx0z6HY26hEziz
+  modifiedTime: 1790461667171
+  lastModifiedBy: MdLP35I2yaa8z7GV
 _id: ONyokb6wKpAaTlb1
 ownership:
   default: 0

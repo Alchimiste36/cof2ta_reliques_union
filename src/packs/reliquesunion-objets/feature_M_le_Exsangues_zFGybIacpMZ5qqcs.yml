@@ -2,7 +2,7 @@ folder: cpwFYFL7c1QAGNtJ
 name: Mâle Exsangues
 type: feature
 img: >-
-  modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/champion1.webp
+  modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_lieutenant_2.webp
 _id: zFGybIacpMZ5qqcs
 system:
   description: "<p>Cette ville souterraine est régie par un système hiérarchique et violent à faire tourner les yeux à un ogre. Gouvernée par un groupe de femmes vicieuses et vivant dans la manipulation, le luxe et le plaisir de la torture et du sexe.</p><p>Les hommes de cette ville souterraine sont voué aux travaux forcés pour les plus faibles, au corps militaire pour les plus forts et aux draps des matronnes pour les mieux membrés.</p><p>L'entrainement physique, les combats et les blessures sont dans les habitudes pour chaque elfe mâle depuis leur plus jeune âge. Ils apprennent très vite à supporter la douleur et à sentir la réaction de chaque muscles de leur corps. Leur forte volonté et cette vie d'éxigence leur permet de se soigner juste par la force de leur détermination.</p><p>Ceux qui survivent deviennent des guerriers farouches soit dans un groupe de soldat soit dans des pugilats dénués de règles.\_</p><h2>Modificateurs des Elfes Exsangues</h2><p>Atout : <strong>+2 DEX et +2 CHA</strong><br />Faiblesse : <strong>-2 CON et -2 SAG</strong><br />Âge de départ à l’aventure : 50 ans et plus<br />Espérance de vie : théoriquement immortel<br />Taille : entre 1,65 m et 1,90 m<br />Poids : entre 50 kg et 80 kg<br />Trait des Elfes Exsangues :</p><ul><li><strong>Vision dans le Noir</strong> (15m)</li><li><strong>Récupération par la Volonté</strong> : chaque PR dépensé rend [DV + Niveau + Mod.CHA] PV</li></ul><p>\_</p>"
@@ -17,6 +17,7 @@ system:
       subtype: ability
       target: agi
       value: '2'
+      choiceGroup: 1
       additionalInfos: ''
       apply: self
     - type: feature
@@ -25,6 +26,7 @@ system:
       subtype: ability
       target: cha
       value: '2'
+      choiceGroup: 1
       additionalInfos: ''
       apply: self
     - type: feature
@@ -33,6 +35,7 @@ system:
       subtype: ability
       target: con
       value: '-2'
+      choiceGroup: 2
       additionalInfos: ''
       apply: self
     - type: feature
@@ -41,6 +44,16 @@ system:
       subtype: ability
       target: per
       value: '-2'
+      choiceGroup: 2
+      additionalInfos: ''
+      apply: self
+    - type: feature
+      source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.zFGybIacpMZ5qqcs
+      subtype: state
+      target: darkvision
+      value: '30'
+      choiceGroup: 0
       additionalInfos: ''
       apply: self
   paths:
@@ -59,11 +72,11 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1769993459159
-  modifiedTime: 1770779626661
+  modifiedTime: 1790457525145
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

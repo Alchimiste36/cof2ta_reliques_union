@@ -1,0 +1,111 @@
+folder: JaxbYmoiWn6tPjgX
+name: Hache à une main +2
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/GLANAE8HACHE82.webp
+_id: 9QwTmWqfAkPK5ITR
+system:
+  description: >-
+    <p>Une belle hache à une main runique +2. Elle donne <strong>un bonus de +2
+    en Attaque et aux DM.</strong></p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: hache
+  tags: []
+  subtype: weapon
+  martialCategory: axe
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 6
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 + @for +2
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Bramdan</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790548637026
+  modifiedTime: 1790553122290
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 600000
+_key: '!items!9QwTmWqfAkPK5ITR'

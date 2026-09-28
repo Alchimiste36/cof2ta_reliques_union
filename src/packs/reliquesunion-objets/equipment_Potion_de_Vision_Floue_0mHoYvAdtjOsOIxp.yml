@@ -1,0 +1,155 @@
+folder: JaxbYmoiWn6tPjgX
+name: Potion de Vision Floue
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/glanae_potion_vision_floue.webp
+_id: 0mHoYvAdtjOsOIxp
+system:
+  description: >-
+    <p>Cette potion est séparé en deux liquides l'un sur l'autre. Avant de
+    consommer la potion, il faut la secouer avec force (une <strong>Action de
+    Mouvement</strong> <strong>donc Action Limitée pour la secouer ET la
+    boire</strong>). Après l'ingestion, le consommateur et son équipement
+    deviennent légèrement flou à cause d'un effet ressemblant à une vibration
+    quand on le regarde. Ces vibrations rend plus difficile de le
+    distinguer.</p><p>Le consommateur <strong>gagne +2 DEF Magique et +5 aux
+    tests de Discrétion</strong>. Le <strong>bonus de Discrétion est doublé
+    (+10) si le consommateur ne bouge pas du tout</strong> (aucune action durant
+    son tour).</p><p>L'effet dure <strong>1d6+PER Minutes</strong>.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 450
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0mHoYvAdtjOsOIxp
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: m
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0mHoYvAdtjOsOIxp
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Discrétion
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0mHoYvAdtjOsOIxp
+          subtype: combat
+          target: def
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            duration: (1d6 +@per)*10
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0mHoYvAdtjOsOIxp
+      indice: 1
+      label: Si aucun mouvement (+5)
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0mHoYvAdtjOsOIxp
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Discrétion
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790623717918
+  modifiedTime: 1790624065934
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!0mHoYvAdtjOsOIxp'

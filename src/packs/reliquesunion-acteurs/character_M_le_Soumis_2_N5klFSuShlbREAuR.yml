@@ -1,0 +1,1783 @@
+name: Mâle Soumis 2
+type: character
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_soumis_2.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    level: 1
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 8
+      value: 5
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ''
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    def:
+      base: 11
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    melee:
+      base: 1
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    ranged:
+      base: 2
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    magic:
+      base: 1
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    crit:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    dr:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+  resources:
+    fortune:
+      base: 3
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 0
+    recovery:
+      base: -1
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: -1
+    mana:
+      base: 0
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: -1
+  details:
+    biography:
+      private: "<p>Les Soumis peuvent avoir deux réactions. Soit ils identifient une menace directement et ils peuvent se jeter sur\_les intrus sans arme ou avec leur outil de travail (couteau\_de cuisine, marteau, tournevis, casserole…) en espérant\_mourir vite ou bloquer les ennemis et être récompensé par un mâle exsangue. Soit ils ne comprennent pas la\_situation et ils baisseront la tête, se blottiront dans un coin\_ou continueront leur tâche actuelle.</p>"
+      public: "<p>Les Soumis n’ont rien à envier aux captifs. Ils\_sont légèrement mieux traités mais ils subissent au\_quotidien des tortures physiques ou psychologiques\_par les autres mâles ou les femelles exsangues. Ils\_s’occupent de toutes les tâches du quotidien (cuisine,\_nettoyage, travaux dans les ateliers…). Ils sont en\_permanence drogués et affaiblis par le manque de\_sommeil et les maltraitances qu’ils subissent. Cet\_état second leur permet de supporter un minimum\_leur vie mais chaque Soumis sait que, sans aucune\_raison, ils peuvent se faire tuer à n’importe quel\_moment même en pleine nuit.</p>"
+    appearance:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    size: medium
+    languages:
+      - ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+  oldDistanceView: 0
+  otherCapacitiesPointsSpent: 0
+  companions: []
+prototypeToken:
+  name: Mâle Soumis 2
+  displayName: 20
+  actorLink: true
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_soumis_2_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 1
+items:
+  - folder: OBPli02oRaBQq6Ee
+    name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: b7ns00nmE9BNuJ49
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.b7ns00nmE9BNuJ49
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373606
+      modifiedTime: 1790639373606
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.b7ns00nmE9BNuJ49'
+  - name: Aventurier
+    type: profile
+    img: icons/svg/upgrade.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      maxDefenseArmor: 0
+      modifiers:
+        - type: profile
+          source: Actor.N5klFSuShlbREAuR.Item.2Ny59ev6O3zjtYKx
+          subtype: resource
+          target: mp
+          value: '@niv+@per'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.N5klFSuShlbREAuR.Item.2Ny59ev6O3zjtYKx
+          subtype: combat
+          target: melee
+          value: '1'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.N5klFSuShlbREAuR.Item.2Ny59ev6O3zjtYKx
+          subtype: combat
+          target: ranged
+          value: '1'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: true
+        dagger: true
+        greatSword: false
+        bastardSword: false
+        shortSword: true
+        longSword: true
+        spear: false
+        flail: false
+        greatFlail: false
+        club: true
+        axe: true
+        greatAxe: false
+        lance: true
+        cavalryLance: true
+        hammer: true
+        mace: true
+        pike: true
+        rapier: true
+        stiletto: true
+        swiftblade: true
+        handCrossbow: false
+        lightCrossbow: false
+        heavyCrossbow: false
+        shortBow: true
+        longBow: true
+        throwingKnife: true
+        throwingDagger: true
+        sling: true
+        throwingAxe: false
+        javelin: false
+        throwingSpear: true
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: true
+        leather: true
+        studdedLeather: true
+        chainShirt: false
+        chainMail: false
+        plateArmor: false
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: true
+        largeShield: false
+      paths: []
+      proficiencies: []
+      mainProfile: true
+      family: aventurier
+      gmNotes: ''
+      equipment: []
+    effects: []
+    folder: VksZqOrZsyincZFJ
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373607
+      modifiedTime: 1790639373607
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 2Ny59ev6O3zjtYKx
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.2Ny59ev6O3zjtYKx'
+  - folder: OBPli02oRaBQq6Ee
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: dzdoauAoQPFnx639
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une arme "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.dzdoauAoQPFnx639
+          indice: 0
+          label: Contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.N5klFSuShlbREAuR.Item.dzdoauAoQPFnx639
+          indice: 1
+          label: Distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373607
+      modifiedTime: 1790639373607
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.dzdoauAoQPFnx639'
+  - folder: cpwFYFL7c1QAGNtJ
+    name: Mâle Exsangues
+    type: feature
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_lieutenant_2.webp
+    _id: OKhZH8oumXEhDB3m
+    system:
+      description: "<p>Cette ville souterraine est régie par un système hiérarchique et violent à faire tourner les yeux à un ogre. Gouvernée par un groupe de femmes vicieuses et vivant dans la manipulation, le luxe et le plaisir de la torture et du sexe.</p><p>Les hommes de cette ville souterraine sont voué aux travaux forcés pour les plus faibles, au corps militaire pour les plus forts et aux draps des matronnes pour les mieux membrés.</p><p>L'entrainement physique, les combats et les blessures sont dans les habitudes pour chaque elfe mâle depuis leur plus jeune âge. Ils apprennent très vite à supporter la douleur et à sentir la réaction de chaque muscles de leur corps. Leur forte volonté et cette vie d'éxigence leur permet de se soigner juste par la force de leur détermination.</p><p>Ceux qui survivent deviennent des guerriers farouches soit dans un groupe de soldat soit dans des pugilats dénués de règles.\_</p><h2>Modificateurs des Elfes Exsangues</h2><p>Atout : <strong>+2 DEX et +2 CHA</strong><br>Faiblesse : <strong>-2 CON et -2 SAG</strong><br>Âge de départ à l’aventure : 50 ans et plus<br>Espérance de vie : théoriquement immortel<br>Taille : entre 1,65 m et 1,90 m<br>Poids : entre 50 kg et 80 kg<br>Trait des Elfes Exsangues :</p><ul><li><strong>Vision dans le Noir</strong> (15m)</li><li><strong>Récupération par la Volonté</strong> : chaque PR dépensé rend [DV + Niveau + Mod.CHA] PV</li></ul><p>\_</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      subtype: people
+      modifiers:
+        - type: feature
+          source: Actor.N5klFSuShlbREAuR.Item.OKhZH8oumXEhDB3m
+          subtype: state
+          target: darkvision
+          value: '30'
+          choiceGroup: 0
+          additionalInfos: ''
+          apply: self
+        - type: feature
+          source: Actor.N5klFSuShlbREAuR.Item.OKhZH8oumXEhDB3m
+          subtype: ability
+          target: agi
+          value: '2'
+          choiceGroup: 0
+          additionalInfos: ''
+          apply: self
+        - type: feature
+          source: Actor.N5klFSuShlbREAuR.Item.OKhZH8oumXEhDB3m
+          subtype: ability
+          target: con
+          value: '-2'
+          choiceGroup: 0
+          additionalInfos: ''
+          apply: self
+      paths:
+        - Actor.N5klFSuShlbREAuR.Item.JvqLi70uLOTGarsR
+        - Actor.N5klFSuShlbREAuR.Item.vKk3pUS1sBAXiLib
+      capacities:
+        - Actor.N5klFSuShlbREAuR.Item.487E5ojXpsWkEmDm
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373608
+      modifiedTime: 1790639373608
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 400000
+    _key: '!actors.items!N5klFSuShlbREAuR.OKhZH8oumXEhDB3m'
+  - folder: oBczRWJocTMbLWNH
+    name: Voie du Peuple Exsangues
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_caporaux_1.webp
+    _id: JvqLi70uLOTGarsR
+    system:
+      description: >-
+        <p>Les Elfes Exsangues sont méconnus des autres peuples car ils vivent
+        essentiellement dans des souterrains et des cavernes perdues aux plus
+        profonds de hautes montagnes, dans des régions
+        inhospitalières.</p><p>Alors que certaines villes ou tribus sont
+        parfaitement comparables aux elfes, nains ou humains de la surface,
+        d'autres sont régie par un système matriarcale sévère et adepte de la
+        torture, du kidnapping et du travail forcé.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.N5klFSuShlbREAuR.Item.HmI1Diah7LztpwSx
+        - Actor.N5klFSuShlbREAuR.Item.YnWOUH3c9wdDNy1n
+        - Actor.N5klFSuShlbREAuR.Item.XtcbwiU8nKcDs3dx
+        - Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+        - Actor.N5klFSuShlbREAuR.Item.GpxPT0bf63X9necq
+      rank: 0
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373608
+      modifiedTime: 1790639373608
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 400000
+    _key: '!actors.items!N5klFSuShlbREAuR.JvqLi70uLOTGarsR'
+  - folder: wPnEIoBw8jAgPBDl
+    name: Une Vie dans les Tunnels
+    type: capacity
+    img: icons/magic/unholy/silhouette-robe-evil-glow.webp
+    _id: HmI1Diah7LztpwSx
+    system:
+      description: "<p>La perception des Elfes Exsangues est incroyable lorsqu'ils sont dans des souterrains. Ils perçoivent les échos, les vibrations et savent distinguer les craquements de la pierre et le bruits de pas d'un ennemi.</p><p>\_Ils gagnent un <strong>bonus de +5 aux test de SAG - PERCPETION</strong> lorsqu'ils sont dans des souterrains.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>Bonus permanent aux tests de PER.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.JvqLi70uLOTGarsR
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.HmI1Diah7LztpwSx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.HmI1Diah7LztpwSx
+              subtype: skill
+              target: per
+              value: '5'
+              apply: self
+              additionalInfos: dans les souterrains
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373608
+      modifiedTime: 1790639373608
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.HmI1Diah7LztpwSx'
+  - folder: wPnEIoBw8jAgPBDl
+    name: Renforcement Physique
+    type: capacity
+    img: icons/skills/melee/unarmed-punch-fist-yellow-red.webp
+    _id: YnWOUH3c9wdDNy1n
+    system:
+      description: "<p>Les tortures et les entrainements subis par les Mâles depuis leur plus tendre enfance les ont rendu bien plus résitant aux coups et aux blessures.</p><p>Les matrones apprennent à rester sur leur gardes tous les jours de la naissance à la mort sous peine de rapprocher cette dernière.</p><p>\_L'elfe Exsangues <strong>gagne +2 DEF</strong> de façon permanente.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>Bonus permanent en DEF.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.JvqLi70uLOTGarsR
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.YnWOUH3c9wdDNy1n
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.YnWOUH3c9wdDNy1n
+              subtype: combat
+              target: def
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373609
+      modifiedTime: 1790639373609
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.YnWOUH3c9wdDNy1n'
+  - folder: wPnEIoBw8jAgPBDl
+    name: Maîtrise des armes elfiques
+    type: capacity
+    img: icons/sundries/scrolls/scroll-bound-black-brown.webp
+    _id: XtcbwiU8nKcDs3dx
+    system:
+      description: >-
+        <p>Le PJ a appris à manier l’artisanat raffiné de son peuple. Il peut
+        porter et utiliser armes et armures de la tradition elfique, pour
+        lesquels il possède la formation martiale.</p><p>Voir à ce sujet la
+        marge <strong>Armes et armures traditionnelles</strong>.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.eYAzFgZmS3cKuEKh.Item.JvqLi70uLOTGarsR
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373609
+      modifiedTime: 1790639373609
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.XtcbwiU8nKcDs3dx'
+  - folder: wPnEIoBw8jAgPBDl
+    name: Faune et Flore des Souterrains
+    type: capacity
+    img: icons/environment/creatures/bug-centipede-brown.webp
+    _id: f38Zey8PcfD6bMa2
+    system:
+      description: "<p>Vivant dans les souterrains, les Elfes Exsangues connaissent toutes les créatures et les plantes qui s'y trouvent. Ils apprennent vite à manger ce qu'ils trouvent dans cette environnement éxigent.\_</p><p>\_Ils <strong>ne peuvent plus se perdre dans des souterrains</strong> naturels ou architecturaux.</p><p>Ils sont <strong>immunisés aux poisons</strong> et <strong>ne peuvent plus tomber malade</strong> à cause d'une substance venant d'une créature ou d'une plante des souterrains (vermines, goules...).</p><p>De plus, ils obtiennent <strong>+2 ATT et +1d6 DM contre les créatures des souterrains</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action donne les états de façon permanent.</p><p>La
+        deuxième action activable/désactivable permet d'obtenir les bonus à
+        l'attaque et aux DM.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.JvqLi70uLOTGarsR
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: state
+              target: poisonImmunity
+              value: '0'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: state
+              target: diseaseImmunity
+              value: '0'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+        - source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+          indice: 1
+          label: vs Créatures souterraines
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: melee
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: ranged
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: magic
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: damRanged
+              value: 1d6
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.f38Zey8PcfD6bMa2
+              subtype: combat
+              target: damMagic
+              value: 1d6
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373609
+      modifiedTime: 1790639373609
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.f38Zey8PcfD6bMa2'
+  - folder: wPnEIoBw8jAgPBDl
+    name: Métabolisme Extrême
+    type: capacity
+    img: icons/skills/wounds/injury-pain-body-orange.webp
+    _id: GpxPT0bf63X9necq
+    system:
+      description: "<p>S'ils survivent assez longtemps dans leurs souterrains, les Elfes Exsangues comprennent comment se renforcer physiquement grâce à leur forte volonté.</p><p>\_Ils obtiennent une <strong>régénération permanente de 2PV par tours et ils gagnent 3PR</strong>.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de se soigner de 2 PV.</p><p>La deuxième
+        action donne un bonus permanent de +3 DR.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.JvqLi70uLOTGarsR
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.GpxPT0bf63X9necq
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '2'
+              target:
+                type: self
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.N5klFSuShlbREAuR.Item.GpxPT0bf63X9necq
+          indice: 1
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.GpxPT0bf63X9necq
+              subtype: resource
+              target: rp
+              value: '3'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373610
+      modifiedTime: 1790639373610
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.GpxPT0bf63X9necq'
+  - folder: oBczRWJocTMbLWNH
+    name: Voie Culturelle des Mâles Exsangues
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_lieutenant_1.webp
+    _id: vKk3pUS1sBAXiLib
+    system:
+      description: "<p>Cette ville souterraine est régie par un système hiérarchique et violent à faire tourner les yeux à un ogre. Gouvernée par un groupe de femmes vicieuses et vivant dans la manipulation, le luxe et le plaisir de la torture et du sexe.</p><p>Les hommes de cette ville souterraine sont voué aux travaux forcés pour les plus faibles, au corps militaire pour les plus forts et aux draps des matronnes pour les mieux membrés.</p><p>L'entrainement physique, les combats et les blessures sont dans les habitudes pour chaque elfe mâle depuis leur plus jeune âge. Ils apprennent très vite à supporter la douleur et à sentir la réaction de chaque muscles de leur corps. Leur forte volonté et cette vie d'éxigence leur permet de se soigner juste par la force de leur détermination.</p><p>Ceux qui survivent deviennent des guerriers farouches soit dans un groupe de soldat soit dans des pugilats dénués de règles.\_</p><p></p>"
+      source: ''
+      origin: ''
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.N5klFSuShlbREAuR.Item.1I7h7oLFq4yyXoD2
+        - Actor.N5klFSuShlbREAuR.Item.A7SDi7leF1ypNqAt
+        - Actor.N5klFSuShlbREAuR.Item.DdA04B43tc5RRQeg
+        - Actor.N5klFSuShlbREAuR.Item.v6NM9LJUKXgAsbQb
+        - Actor.N5klFSuShlbREAuR.Item.gD6od1GcgDrvgq9d
+      rank: 0
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373610
+      modifiedTime: 1790639373610
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 200000
+    _key: '!actors.items!N5klFSuShlbREAuR.vKk3pUS1sBAXiLib'
+  - folder: lDxeo77mNAWMtUbR
+    name: Souffrances
+    type: capacity
+    img: icons/skills/wounds/injury-face-impact-orange.webp
+    _id: 1I7h7oLFq4yyXoD2
+    system:
+      description: >-
+        <p>Les Mâles Exsangues des Cavernes peuvent <strong>utliser leurs PR par
+        une action limitée</strong> plutôt qu'en attendant 5 minutes.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>Pas d'effet automatiques. Action prévue pour affichée la capacité
+        dans la liste des actions.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.vKk3pUS1sBAXiLib
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.1I7h7oLFq4yyXoD2
+          indice: 0
+          label: Récupération rapide en Limité
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373610
+      modifiedTime: 1790639373610
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.1I7h7oLFq4yyXoD2'
+  - folder: lDxeo77mNAWMtUbR
+    name: Brutalité Radicale
+    type: capacity
+    img: icons/skills/melee/strike-dagger-blood-red.webp
+    _id: A7SDi7leF1ypNqAt
+    system:
+      description: >-
+        <p>Les Mâles Exsangues des Cavernes peuvent choisir le Rangt 1 ou le
+        Rang 2 de la Voie du pugilat (Combattant) ou de la Voie de la férocité
+        (Combattant).</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
+        liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.eYAzFgZmS3cKuEKh.Item.vKk3pUS1sBAXiLib
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373610
+      modifiedTime: 1790639373610
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.A7SDi7leF1ypNqAt'
+  - folder: lDxeo77mNAWMtUbR
+    name: Traitre
+    type: capacity
+    img: icons/weapons/daggers/dagger-simple-blue.webp
+    _id: DdA04B43tc5RRQeg
+    system:
+      description: >-
+        <p>Par une <strong>action Limité</strong> lorsqu'il utilise <strong>une
+        arme de duel ou à mains nues au contact</strong>, le Mâle Exsangues des
+        Cavernes peut réaliser une attaque visant un point sensible de
+        l'adversaire.</p><p><strong>Il obtient +2 ATT et 2 PV de
+        saignement</strong> en plus des DM de l'arme.</p><p>Il perd <strong>- 2
+        DEF</strong> <strong>jusqu'à son prochain tour</strong>.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de réaliser une attaque en reprenant les
+        valeurs de la première arme équipée en ajoutant le bonus et l'effet de
+        saignement.</p><p>La deuxième action activable/désactivable permet
+        d'obtenir le malus à la DEF suite à l'attaque.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.vKk3pUS1sBAXiLib
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.DdA04B43tc5RRQeg
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@arme.skill +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '@arme.dmg'
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: '2'
+                elementType: ''
+                statuses:
+                  - bleeding
+                unit: combat
+                duration: '0'
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.N5klFSuShlbREAuR.Item.DdA04B43tc5RRQeg
+          indice: 1
+          label: DEF -2
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.DdA04B43tc5RRQeg
+              subtype: combat
+              target: def
+              value: '-2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373611
+      modifiedTime: 1790639373611
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.DdA04B43tc5RRQeg'
+  - folder: lDxeo77mNAWMtUbR
+    name: Soumission au Clan
+    type: capacity
+    img: icons/skills/melee/weapons-crossed-daggers-orange.webp
+    _id: v6NM9LJUKXgAsbQb
+    system:
+      description: >-
+        <p>La soumission et la perte de repère des Mâles Exsangues des Cavernes
+        les rendent particulièrement dangereux lorsqu'ils sont
+        enragés.</p><p><strong>Au prix d'une perte de 1d6 PV, le Mâle gagne +2
+        ATT de Contact et +1d6 DM.</strong></p><p>Par contre, <strong>il devra
+        attaquer dès qu'il le peut</strong> sur les ennemis, il se rue dans le
+        combat et <strong>ne pourra pas fuir.</strong></p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>La première action permet de s'infliger 1d6 DM
+        autoamtiquement.</p><p>La deuxième action activable/désactivable permet
+        d'obtenir les bonus à l'attaque et aux DM.</p><p>Lors de
+        l'apprentissage, cette capacité donne droit à une capacité liée pour
+        l'effet de la capacité de rang 2. Glissez-déposez la capacité choisie
+        sous cette capacité.</p><p></p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.vKk3pUS1sBAXiLib
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.v6NM9LJUKXgAsbQb
+          indice: 0
+          label: Blessure
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '-1d6'
+              target:
+                type: self
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.N5klFSuShlbREAuR.Item.v6NM9LJUKXgAsbQb
+          indice: 1
+          label: Bonus
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.v6NM9LJUKXgAsbQb
+              subtype: combat
+              target: melee
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.v6NM9LJUKXgAsbQb
+              subtype: combat
+              target: damMelee
+              value: 1d6
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373611
+      modifiedTime: 1790639373611
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.v6NM9LJUKXgAsbQb'
+  - folder: lDxeo77mNAWMtUbR
+    name: Mâle Exsangues Champion
+    type: capacity
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/elfes_exsangues/male_lieutenant_1.webp
+    _id: gD6od1GcgDrvgq9d
+    system:
+      description: >-
+        <p>A prix de tous leurs efforts et leurs souffrances, le Mâle Exsangues
+        des Cavernes devient une céritable machine à tuer.</p><p><strong>Il
+        gagne +2 DEX et +2 FOR</strong></p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: <p>Bonus permanent aux caractéristiques.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.N5klFSuShlbREAuR.Item.vKk3pUS1sBAXiLib
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.gD6od1GcgDrvgq9d
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.gD6od1GcgDrvgq9d
+              subtype: ability
+              target: agi
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.gD6od1GcgDrvgq9d
+              subtype: ability
+              target: for
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373611
+      modifiedTime: 1790639373611
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!N5klFSuShlbREAuR.gD6od1GcgDrvgq9d'
+  - folder: 2fYHgcURBFPPIemc
+    name: Récupération par la volonté
+    type: capacity
+    img: icons/magic/life/cross-embers-glow-yellow-purple.webp
+    _id: 487E5ojXpsWkEmDm
+    system:
+      description: <p>chaque PR dépensé rend [DV + Niveau + Mod.CHA] PV</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent à la Récupération rapide ajoutant (NIVEAU/2) + CHA
+        PV.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.N5klFSuShlbREAuR.Item.487E5ojXpsWkEmDm
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.N5klFSuShlbREAuR.Item.487E5ojXpsWkEmDm
+              subtype: attribute
+              target: recoveryFast
+              value: (@niv/2)+@cha
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790639373612
+      modifiedTime: 1790639373612
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 100000
+    _key: '!actors.items!N5klFSuShlbREAuR.487E5ojXpsWkEmDm'
+effects: []
+folder: nJory2g6bxvfhWwT
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790639373605
+  modifiedTime: 1790639373605
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: N5klFSuShlbREAuR
+sort: 1500000
+_key: '!actors!N5klFSuShlbREAuR'

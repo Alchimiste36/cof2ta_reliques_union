@@ -1,0 +1,151 @@
+folder: JaxbYmoiWn6tPjgX
+name: Rapière Brulante
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_rapiere_brulante.webp
+_id: gmQYsNnOnWEMWR6i
+system:
+  description: "<p>Cette lame est assez grossière et tout démontre qu'elle a été forgée par un gobelin. Malgré son aspect rustique, elle n'est pas moins redoutable.</p><p>Elle ajoute un <strong>bonus de +1 en Attaque et aux DM et elle inflige 1d4° DM de feu</strong>.</p><p><strong><span style=\"text-decoration:underline\">Feu Intense (L) :</span></strong>\_la Rapière Brulante <strong>gagne +1 en Attaque et +1d4° DM de feu supplémentaire.</strong></p><p>Critique sur 19-20</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Krakk</strong></p>
+  subtype: weapon
+  tags:
+    - legere
+  martialCategory: rapier
+  damagetype: slashing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 6400
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.gmQYsNnOnWEMWR6i
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +1d4° +1
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.gmQYsNnOnWEMWR6i
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +2d4° +2
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790624099893
+  modifiedTime: 1790625187795
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!gmQYsNnOnWEMWR6i'

@@ -1,0 +1,101 @@
+folder: JaxbYmoiWn6tPjgX
+name: Gantelet de Mandales Puissantes
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/vetements/glanae_gantelet_mandales_puissantes.webp
+_id: s65F9wJ8vYEJr74t
+system:
+  description: >-
+    <p>Ce gant renforcé par des plaques métalliques est gravé de runes
+    puissantes qui iradient la main du porteur. Le gant permet de parer quelques
+    attaques et augmente la force du porteur.</p><p>Il gagne <strong>un bonus de
+    +1 en DEF et de +2 FOR.</strong></p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Jasnar</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 8500
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.s65F9wJ8vYEJr74t
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.s65F9wJ8vYEJr74t
+          subtype: ability
+          target: for
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.s65F9wJ8vYEJr74t
+          subtype: combat
+          target: def
+          value: '1'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 1900000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790544239708
+  modifiedTime: 1790553122292
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!s65F9wJ8vYEJr74t'

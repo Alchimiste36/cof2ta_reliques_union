@@ -1,0 +1,114 @@
+folder: JaxbYmoiWn6tPjgX
+name: Arbalète de poing +1 Lill
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_arbalete_de_poing_lill.webp
+_id: vju1FKWPMsmLY6Un
+system:
+  description: >-
+    <p>Cette arbalète de poing est très ouvragée et décorée. Elle a une jumelle
+    parfaite.</p><p>En plus de son <strong>bonus de +1 ATT et DM</strong>, il
+    est possible de la rechargée avec une Action de Gratuite plutôt qu'une
+    Action de Mouvement.</p>
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: arbalete-de-poing
+  tags: []
+  subtype: weapon
+  martialCategory: handCrossbow
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: 20
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 208
+    unit: pa
+  rarity: precious
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vju1FKWPMsmLY6Un
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +1
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Trevin</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790530674389
+  modifiedTime: 1790553122297
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 4100000
+_key: '!items!vju1FKWPMsmLY6Un'

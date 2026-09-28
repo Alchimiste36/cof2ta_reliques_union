@@ -1,0 +1,159 @@
+folder: JaxbYmoiWn6tPjgX
+name: Extase des Matrones
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/glanae_extase_matrones.webp
+_id: GiHiykKuPCJC0EiF
+system:
+  description: >-
+    <p>Cette petite gélule bleue peut être ingérée. Elle a un goût très
+    désagréable qui reste plusieurs minutes en bouche et pique le
+    palet.</p><p>En plus de créer un forte érection incontrôlable chez les
+    consommateurs masculins et une lubrification vaginale pour les
+    consommatrices féminines, cette pilule donne un <strong>bonus de +5 à tous
+    les tests de CON pendant une heure.</strong> Les consommateurs <strong>ne
+    ressentent plus la fatigue</strong> et <strong>ne peuvent plus dormir
+    pendant tout le temps d'effet du sort</strong>.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p>A chaque ingestion le consommateur doit <strong>réussir un test de CON
+    Diff.5 au subir un arrêt cardiaque</strong>. La Difficulté augmente de +5
+    pour chaque dose supplémentaire consommée en moins de 24h après la première
+    dose.</p>
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 215
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.GiHiykKuPCJC0EiF
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: m
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.GiHiykKuPCJC0EiF
+          subtype: skill
+          target: con
+          value: '5'
+          apply: self
+          additionalInfos: Tous les tests
+          choiceGroup: 0
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.GiHiykKuPCJC0EiF
+      indice: 1
+      label: Sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '5'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - dead
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 1600000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790543138378
+  modifiedTime: 1790553122292
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!GiHiykKuPCJC0EiF'

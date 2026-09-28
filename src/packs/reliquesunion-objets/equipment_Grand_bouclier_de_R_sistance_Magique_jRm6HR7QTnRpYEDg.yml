@@ -1,0 +1,100 @@
+folder: JaxbYmoiWn6tPjgX
+name: Grand bouclier de Résistance Magique
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/glanae_grand_bouclier_resistance_magique.webp
+_id: jRm6HR7QTnRpYEDg
+system:
+  description: "<p>Ce grand bouclier de facture naine est gravé de plusieurs runes permettant de résister mieux aux effets magiques qui prennent pour cible le porteur.</p><p>Le porteur <strong>gagne +3 DEF contre les effets magiques</strong> et <strong>+3 en Attaque Magique pour résister aux sorts lancés contre lui.\_</strong></p><p>La\_DEF\_s'additionne à celle de l'armure.</p>"
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: grand-bouclier
+  tags: []
+  subtype: shield
+  martialCategory: largeShield
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 3500
+    unit: pa
+  rarity: exotic
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.jRm6HR7QTnRpYEDg
+      indice: 0
+      label: DEF et Att Magique vs Sorts
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.jRm6HR7QTnRpYEDg
+          subtype: combat
+          target: magic
+          value: '3'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.jRm6HR7QTnRpYEDg
+          subtype: combat
+          target: def
+          value: '3'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: 2
+  range: null
+  magicalDefense: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Jasnar</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790548295436
+  modifiedTime: 1790553122293
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 2200000
+_key: '!items!jRm6HR7QTnRpYEDg'

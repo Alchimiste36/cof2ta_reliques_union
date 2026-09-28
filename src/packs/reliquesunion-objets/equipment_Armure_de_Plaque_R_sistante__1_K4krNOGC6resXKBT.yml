@@ -1,0 +1,91 @@
+folder: JaxbYmoiWn6tPjgX
+name: Armure de Plaque Résistante +1
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/glanae_armure_de_plaque_naine_resistante%2B1.webp
+_id: K4krNOGC6resXKBT
+system:
+  description: "<p>Cette imposante armure de plaque naine est une splendeur. Totalement gravée et décorée, elle est en plus forte utile en combat.</p><p>Elle offre <strong>+1 DEF magique et +2 RD à son porteur.</strong></p><p>Annule le bonus de\_DEX\_à la\_DEF.</p><p>Fabriquée sur mesure, nécessite la capacité\_Armure lourde\_(voie du bastion) pour être portée.</p>"
+  source: ''
+  origin: Livre du Joueur p.160
+  slug: plaque-complete
+  tags: []
+  subtype: armor
+  martialCategory: fullPlate
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 200
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.K4krNOGC6resXKBT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.K4krNOGC6resXKBT
+          subtype: combat
+          target: dr
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: 7
+  range: null
+  magicalDefense: 1
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Urmdar</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790532393668
+  modifiedTime: 1790553122297
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 4300000
+_key: '!items!K4krNOGC6resXKBT'

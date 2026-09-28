@@ -1,21 +1,6 @@
 name: Attaque dans les Montagnes
 navigation: false
 navName: ''
-background:
-  src: >-
-    modules/cof2ta_reliques_union/assets/ru_scenes/autres/expedition_crocs_acier.webp
-  anchorX: 0
-  anchorY: 0
-  offsetX: 0
-  offsetY: 0
-  fit: fill
-  scaleX: 1
-  scaleY: 1
-  rotation: 0
-  tint: '#ffffff'
-  alphaThreshold: 0
-foreground: null
-foregroundElevation: 6
 thumb: worlds/les-reliques-de-lunion/assets/scenes/cpYJFSZ3DXPsBjhx-thumb.webp
 width: 736
 height: 1104
@@ -24,7 +9,6 @@ initial:
   x: null
   'y': null
   scale: 0.5
-backgroundColor: '#999999'
 grid:
   type: 1
   size: 20
@@ -36,11 +20,10 @@ grid:
   units: m
 tokenVision: true
 fog:
-  exploration: true
-  overlay: null
   colors:
     explored: null
     unexplored: null
+  mode: 1
 environment:
   darknessLevel: 0
   darknessLock: false
@@ -76,18 +59,14 @@ lights: []
 notes: []
 sounds: []
 regions: []
-templates: []
 tiles:
   - texture:
       src: modules\cof2ta_reliques_union\assets\ru_scenes\tuiles\trace_sang.webp
-      anchorX: 0.5
-      anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
+      anchorX: 0
+      anchorY: 0
       fit: fill
       scaleX: 1
       scaleY: 1
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
     x: 510
@@ -97,8 +76,8 @@ tiles:
     elevation: 0
     sort: 0
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     _id: FcE165aTIVPiQCQ4
     rotation: 0
     alpha: 1
@@ -112,28 +91,26 @@ tiles:
       autoplay: true
       volume: 0
     flags: {}
+    levels: []
     _key: '!scenes.tiles!cpYJFSZ3DXPsBjhx.FcE165aTIVPiQCQ4'
   - texture:
       src: modules\cof2ta_reliques_union\assets\ru_scenes\tuiles\trace_sang.webp
       anchorX: 0.5
       anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
       fit: fill
       scaleX: 1
       scaleY: 1
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
-    x: 520
-    'y': 430
+    x: 575
+    'y': 490
     width: 110
     height: 120
     elevation: 0
     sort: 0
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     rotation: 98
     alpha: 1
     hidden: false
@@ -198,6 +175,7 @@ tiles:
         isBasement: false
         allWallBlockSight: true
     _id: ktQOgiYKLAoxeSYS
+    levels: []
     _key: '!scenes.tiles!cpYJFSZ3DXPsBjhx.ktQOgiYKLAoxeSYS'
 walls:
   - light: 20
@@ -230,6 +208,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.AVWD9ATFyAXW1xsH'
   - light: 20
     sight: 20
@@ -261,6 +240,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.bxTFGawedBDGpneJ'
   - light: 20
     sight: 20
@@ -292,6 +272,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.JqvZWLYjGxIvuCIY'
   - light: 20
     sight: 20
@@ -323,6 +304,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.53KUWZAE2fBG9JHm'
   - light: 20
     sight: 20
@@ -354,6 +336,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.HOjWNq1ip6MbQiit'
   - light: 20
     sight: 20
@@ -385,6 +368,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.Qn7aE73WUUmP8be9'
   - light: 20
     sight: 20
@@ -416,6 +400,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.jNVmOtTownJGtlnB'
   - light: 20
     sight: 20
@@ -447,6 +432,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.4jr7akzCO7pyF1Fn'
   - light: 20
     sight: 20
@@ -478,6 +464,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.sRocuNfT0zLjl1n8'
   - light: 20
     sight: 20
@@ -509,6 +496,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.dfiLpPzx71UARPnN'
   - light: 20
     sight: 20
@@ -540,6 +528,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.uhdAxxu0Y0VLsboV'
   - light: 20
     sight: 20
@@ -571,6 +560,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.cXDdxrlxLMnc1276'
   - light: 20
     sight: 20
@@ -602,6 +592,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.QKjYKogkBNLaLwkg'
   - light: 20
     sight: 20
@@ -633,6 +624,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.vFytBOTPYfS2Ytb3'
   - light: 20
     sight: 20
@@ -664,6 +656,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.HXigxRqvMiCbYp5k'
   - light: 20
     sight: 20
@@ -695,6 +688,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.XbHUZ3BxguF9KkTd'
   - light: 20
     sight: 20
@@ -726,6 +720,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.cVGfdIgFyRJkJJEa'
   - light: 20
     sight: 20
@@ -757,6 +752,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.MCkjjdbv2a3PR2sW'
   - light: 20
     sight: 20
@@ -788,6 +784,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.lzEBVSxYrNhIpEYk'
   - light: 20
     sight: 20
@@ -819,6 +816,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.66IybNEgSjesIdFx'
   - light: 20
     sight: 20
@@ -850,6 +848,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.bLtq62YJxD1pBCpK'
   - light: 20
     sight: 20
@@ -881,6 +880,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.beXI5Is3uoN5auhP'
   - light: 20
     sight: 20
@@ -912,6 +912,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.rOR1bkgzcPlKzR1m'
   - light: 20
     sight: 20
@@ -943,6 +944,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.xzydw6PHcuILqdH8'
   - light: 20
     sight: 20
@@ -974,6 +976,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.LTplWq8R17Kb8Tyb'
   - light: 20
     sight: 20
@@ -1005,6 +1008,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.GVmzhnguV2IIPynE'
   - light: 20
     sight: 20
@@ -1036,6 +1040,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.E9R0d2u71stIUhFp'
   - light: 20
     sight: 20
@@ -1067,6 +1072,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.6v65c4Q4v5b19sjD'
   - light: 20
     sight: 20
@@ -1098,6 +1104,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.klkIU4j8242Nl4se'
   - light: 20
     sight: 20
@@ -1129,6 +1136,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.aoqVJpNmqsjL3OqM'
   - light: 20
     sight: 20
@@ -1160,6 +1168,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.TvXq8mCKCOnYQT6g'
   - light: 20
     sight: 20
@@ -1191,6 +1200,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.Tf8yAbOidQFznnyO'
   - light: 20
     sight: 20
@@ -1222,6 +1232,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.yaI1Wkz9fTKXDkt3'
   - light: 20
     sight: 20
@@ -1253,6 +1264,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.UcX7SZFL6fv6SquG'
   - light: 20
     sight: 20
@@ -1284,6 +1296,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.fD6bOgu9P52pyVki'
   - light: 20
     sight: 20
@@ -1315,6 +1328,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.iIL43SSKGceY6rfh'
   - light: 20
     sight: 20
@@ -1346,6 +1360,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.frNzZcuAGXyOwaXL'
   - light: 20
     sight: 20
@@ -1377,6 +1392,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.LGyship9IG1huB60'
   - light: 20
     sight: 20
@@ -1408,6 +1424,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.S9XN7cFoc1YR8BOs'
   - light: 20
     sight: 20
@@ -1439,6 +1456,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.VD7FSKBHCEtRvNJN'
   - light: 20
     sight: 20
@@ -1470,6 +1488,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.77rtZZ2zlar2bOo0'
   - light: 20
     sight: 20
@@ -1501,6 +1520,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.bmw2TWOD8UHV78p0'
   - light: 20
     sight: 20
@@ -1532,6 +1552,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.vNevtD7Kr7z334lE'
   - light: 20
     sight: 20
@@ -1563,6 +1584,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.CMTbSIRlG8VTbXD1'
   - light: 20
     sight: 20
@@ -1594,6 +1616,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.RGuGiDtBYFQszL7l'
   - light: 20
     sight: 20
@@ -1625,6 +1648,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.SuCrsTNVHmNv8Cfy'
   - light: 20
     sight: 20
@@ -1656,6 +1680,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.3PxKgmbUlW9cb1fY'
   - light: 20
     sight: 20
@@ -1687,6 +1712,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.hDIiptCCigq3WhMp'
   - light: 20
     sight: 20
@@ -1718,6 +1744,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.xjPD7ttNlQ5COuqm'
   - light: 20
     sight: 20
@@ -1749,6 +1776,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.kuCQPYNRgb0aVPib'
   - light: 20
     sight: 20
@@ -1780,6 +1808,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.HwCj5M53eBWFiBJR'
   - light: 20
     sight: 20
@@ -1811,6 +1840,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.dTnoZSYU0TYBvJZz'
   - light: 20
     sight: 20
@@ -1842,6 +1872,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.qmMRGEPQ40iUZT8o'
   - light: 20
     sight: 20
@@ -1873,6 +1904,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.71I56iwvJ2zHTIjm'
   - light: 20
     sight: 20
@@ -1904,6 +1936,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.CLFTdD9cSfATGAwg'
   - light: 20
     sight: 20
@@ -1935,6 +1968,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.F9B2ucrEg3T5nRwK'
   - light: 20
     sight: 20
@@ -1966,6 +2000,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.vBF7HZnBDA8NXr6x'
   - light: 20
     sight: 20
@@ -1997,6 +2032,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.hBSu4tjWfKZoWwsd'
   - light: 20
     sight: 20
@@ -2028,6 +2064,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.Ox8DRBiqJ5Tk80LH'
   - light: 20
     sight: 20
@@ -2059,6 +2096,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.2mZG8FARNbxI4kY3'
   - light: 20
     sight: 20
@@ -2090,6 +2128,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.65Pvb5g4cwy1No0x'
   - light: 20
     sight: 20
@@ -2121,6 +2160,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.BN7daJfM1MPryzHe'
   - light: 20
     sight: 20
@@ -2152,6 +2192,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.daR6nD1lOwsetPX6'
   - light: 20
     sight: 20
@@ -2183,6 +2224,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.cnRRep0I2I0ZMfSG'
   - light: 20
     sight: 20
@@ -2214,6 +2256,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.y5Qh2gspq7DgoEQC'
   - light: 20
     sight: 20
@@ -2245,6 +2288,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.HHb9frqp4MaVUh7f'
   - light: 20
     sight: 20
@@ -2276,6 +2320,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.RNqNCxWxzgxqprnM'
   - light: 20
     sight: 20
@@ -2307,6 +2352,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.a47RBfxmqALSdPK8'
   - light: 20
     sight: 20
@@ -2338,6 +2384,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.tnRaXNi8CyE7DoVu'
   - light: 20
     sight: 20
@@ -2369,6 +2416,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.LxiOyvE2CEvFIYKn'
   - light: 20
     sight: 20
@@ -2400,6 +2448,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.2iBpKPdLXuYJUrGR'
   - light: 20
     sight: 20
@@ -2431,6 +2480,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.gRhADqvXvVlmEwoR'
   - light: 20
     sight: 20
@@ -2462,6 +2512,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.x9NvY27v6vP8z3U2'
   - light: 20
     sight: 20
@@ -2493,6 +2544,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.QoOJHhzDje8Xxo56'
   - light: 20
     sight: 20
@@ -2524,6 +2576,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.CQC2gbYx3QxIOkEG'
   - light: 20
     sight: 20
@@ -2555,6 +2608,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.zROggyidBA3T5KiX'
   - light: 20
     sight: 20
@@ -2586,6 +2640,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.8IcHWDvqSr9RD77s'
   - light: 20
     sight: 20
@@ -2617,6 +2672,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.qXyRRkurjULbA64V'
   - light: 20
     sight: 20
@@ -2648,6 +2704,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.coYGnGNLnPrc1Fs6'
   - light: 20
     sight: 20
@@ -2679,6 +2736,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.ueRtkGGxaoXEKxmT'
   - light: 20
     sight: 20
@@ -2710,6 +2768,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.Oi9a66yHcOWbmZZC'
   - light: 20
     sight: 20
@@ -2741,6 +2800,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.WKt1OkAlSDOwcgdb'
   - light: 20
     sight: 20
@@ -2772,6 +2832,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.PgypbHF5JXrkRQzo'
   - light: 20
     sight: 20
@@ -2803,6 +2864,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.EKbUxxJxw9ttrUwF'
   - light: 20
     sight: 20
@@ -2834,6 +2896,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.z5qlAJaVVmBNgQv9'
   - light: 20
     sight: 20
@@ -2865,6 +2928,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.XSCP0G7yNVaWLd7N'
   - light: 20
     sight: 20
@@ -2896,6 +2960,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.Wey6hLJkMJUqGiuv'
   - light: 20
     sight: 20
@@ -2927,6 +2992,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!cpYJFSZ3DXPsBjhx.n3hsbdocSNUwuj4d'
 playlist: null
 playlistSound: null
@@ -2949,7 +3015,7 @@ _stats:
   compendiumSource: Compendium.world.reliquesunion-scenes.Scene.4dH6cN6zsfh0EO7n
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.365'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1773013731840
@@ -2962,4 +3028,14 @@ _id: cpYJFSZ3DXPsBjhx
 active: false
 navOrder: 0
 sort: 700000
+levels:
+  - defaultLevel0000
+shiftX: 0
+shiftY: 0
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
 _key: '!scenes!cpYJFSZ3DXPsBjhx'
+templates: []

@@ -1,0 +1,109 @@
+folder: JaxbYmoiWn6tPjgX
+name: Bottes d'attaque
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/vetements/glanae_botte_attaque.webp
+_id: WSdxA1czMij40cUA
+system:
+  description: >-
+    <p>Cette paire de bottes n'a rien de particulier au premier regard.</p><p>En
+    cuir, d'une facture minutieuse, ces bottes sont parcourues d'une série de
+    petites décorations dans lesquelles sont dissimulées des runes
+    magiques.</p><p>Le porteur obtient <strong>une Attaque de Contact de coup de
+    pied gratuite à son tour</strong>. Elle inflige <strong>1d4+FOR DM.
+    </strong>Si l'attaque est une<strong> réussite critique,</strong> la cible
+    est <strong>étourdie pendant 1 round.</strong></p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: "<p>\_<strong>Cité de Glarnae'Reth :</strong> équipement de <strong>Ghan</strong></p>"
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 1800
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.WSdxA1czMij40cUA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: f
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4 +@for
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 3600000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790536918700
+  modifiedTime: 1790553122295
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!WSdxA1czMij40cUA'

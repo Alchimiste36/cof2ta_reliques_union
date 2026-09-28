@@ -1,0 +1,152 @@
+folder: JaxbYmoiWn6tPjgX
+name: Bâton ferré de Repos
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_baton_ferre_repos.webp
+_id: w1n2zzLplJJ4BFmt
+system:
+  description: "<p>Ce magnifique bâton, renforcé par des pièces de métal, est ciselé avec soin de symboles en langue Centaure.\_Au niveau de sa poignée, sous les lanières de tissus, on peut trouver des runes magiques gravées dans une configuration très subtile.</p><p class=\"MsoNormal\"><strong>3 fois par jour</strong>, le porteur <strong>peut faire gagner 1 PR à une cible</strong> que la pointe du Bâton Ferré de Repos touche.</p><p class=\"MsoNormal\">A chaque fois que le Bâton ferré de repos blesse une cible<span style=\"text-decoration:underline\">,</span> en plus des DM de l'attaque, <strong>la cible doit réaliser un test de CON Diff.10 ou être affaibli jusqu'à sa prochaine récupération complète</strong>.</p>"
+  source: ''
+  origin: ''
+  slug: baton-ferre
+  tags:
+    - dmtemporairespossibles
+  subtype: weapon
+  martialCategory: ironStaff
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 8000
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.w1n2zzLplJJ4BFmt
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.w1n2zzLplJJ4BFmt
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '10'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
+          target:
+            type: single
+            scope: all
+            number: '0'
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - weakened
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: '<p>Cité de Glarnae''Reth : équipement de Wakamamae.</p>'
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790534934159
+  modifiedTime: 1790553122295
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 3200000
+_key: '!items!w1n2zzLplJJ4BFmt'

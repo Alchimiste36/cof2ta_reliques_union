@@ -1,0 +1,97 @@
+folder: JaxbYmoiWn6tPjgX
+name: Pantalon de Guérison
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/vetements/glanae_pantalon_guerison.webp
+_id: Ax5ktYafRf1SfRWk
+system:
+  description: "<p>Ce pantalon peut être porté sous ses vêtements normaux et heureusement quand on voit son style. Une pièce de tissu mal coupée et cousue, des ficelles élimées pour l'ajuster et une couleur grisâtre de mauvais goût.\_Pourtant, ce pantalon est très efficace pour des aventuriers.</p><p><strong>3 fois par jour</strong>, par une <strong>Action Gratuite</strong>, ce pantalon permet de <strong>soigner 1d4°+2 PV</strong> (une seule utilisation par Tour).</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Krakk</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 1750
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Ax5ktYafRf1SfRWk
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: heal
+          skill:
+            formula: 1d4°+2
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790621647143
+  modifiedTime: 1790621973253
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!Ax5ktYafRf1SfRWk'

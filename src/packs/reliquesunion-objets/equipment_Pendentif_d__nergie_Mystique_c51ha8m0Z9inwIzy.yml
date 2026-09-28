@@ -1,0 +1,109 @@
+folder: JaxbYmoiWn6tPjgX
+name: Pendentif d'Énergie Mystique
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/divers/glanae_pendentif_energie_mystique.webp
+_id: c51ha8m0Z9inwIzy
+system:
+  description: >-
+    <p>Ce joli pendentif elfique représente un papillon stylisé composé de
+    pierre verte claires entourées de fins contours d'or.</p><p>Le porteur
+    <strong>gagne +1 en Attaque Magique et +2 PM.</strong></p><p
+    class="MsoNormal">Le porteur peut, <strong>3 fois par jour</strong>,
+    lorsqu'il lance un sort, soit :</p><ul><li><p class="MsoNormal">Magie
+    Économe : <strong>dépenser 2 PM de moins que le coût du
+    sort</strong></p></li><li><p class="MsoNormal">Magie Étendue :
+    <strong>doubler la durée ou la portée du sort</strong></p></li><li><p
+    class="MsoNormal">Magie Puissante : <strong>augmenter le dé utilisé d'une
+    catégorie (d4 &gt; d6 &gt; d8 &gt; d10 &gt; d12)</strong></p></li></ul>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Tanila</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+    current: 3
+    max: 3
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2200
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.c51ha8m0Z9inwIzy
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.c51ha8m0Z9inwIzy
+          subtype: combat
+          target: ranged
+          value: '1'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.c51ha8m0Z9inwIzy
+          subtype: resource
+          target: mp
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790621993258
+  modifiedTime: 1790622573939
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!c51ha8m0Z9inwIzy'

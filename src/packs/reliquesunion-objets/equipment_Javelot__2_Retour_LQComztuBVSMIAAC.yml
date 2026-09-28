@@ -1,0 +1,151 @@
+folder: JaxbYmoiWn6tPjgX
+name: Javelot +2 Retour
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_javelot-retour.webp
+_id: LQComztuBVSMIAAC
+system:
+  description: >-
+    <p>Equipé par la Matrone Farti'Un, ce javelot magique <strong>revient dans
+    la main de sa maîtresse par une action Libre</strong>. Il donne <strong>un
+    bonus de +2 en Attaque et aux DM.</strong></p><p>Nécessite une action
+    limitée pour ajouter la FOR aux DM.</p>
+  source: ''
+  origin: Livre du Joueur p.158
+  slug: javelot
+  tags: []
+  subtype: weapon
+  martialCategory: javelin
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2400
+    unit: pa
+  rarity: exotic
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: m
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 20
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.LQComztuBVSMIAAC
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +2
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.LQComztuBVSMIAAC
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +2
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  gmNotes: ''
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790549248445
+  modifiedTime: 1790553122291
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 800000
+_key: '!items!LQComztuBVSMIAAC'

@@ -1,0 +1,99 @@
+folder: JaxbYmoiWn6tPjgX
+name: Bindi d'apprenti des Arts Mystiques
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/divers/bindi_mystique_base.webp
+_id: QXH70oprR58cNKJc
+system:
+  description: >-
+    <p>Cette fine pierre précieuse verte est gravée délicatement avec de
+    multiples runes a peine perceptibles. Elle se place au milieu du front et
+    semble se fondre légèrement dans la peau du porteur.</p><p>Ce bijou permet
+    de <strong>gagner +1 en Attaque Magique</strong> ainsi que <strong>+2
+    PM.</strong></p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 4000
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.QXH70oprR58cNKJc
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.QXH70oprR58cNKJc
+          subtype: combat
+          target: magic
+          value: '1'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.QXH70oprR58cNKJc
+          subtype: resource
+          target: mp
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 3300000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790536052547
+  modifiedTime: 1790553122295
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!QXH70oprR58cNKJc'

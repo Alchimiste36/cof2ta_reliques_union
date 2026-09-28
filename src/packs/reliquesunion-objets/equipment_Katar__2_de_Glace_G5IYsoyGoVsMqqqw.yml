@@ -1,0 +1,151 @@
+folder: JaxbYmoiWn6tPjgX
+name: Katar +2 de Glace
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_katar_glace.webp
+_id: G5IYsoyGoVsMqqqw
+system:
+  description: "<p>Ce duo de Katar est gravé de plusieurs séries de runes magiques sur la lame et la poignée. Quand on l'a prend un frisson glacé remonte autour des mains de l'utilisateur.</p><p>Chaque katar <strong>octroi +1d4° DM de glace et un bonus de +2 en Attaque et aux DM</strong>.</p><p><strong><span style=\"text-decoration:underline\">Eclats de Glace (L) :</span></strong>\_en frappant les deux Katar l'un contre l'autre, l'impacte projette une nuée d'aiguilles de glace sur un arc de 180° en face de l'utilisateur et sur une distance de 3 cases.\_Toutes les cibles situées dans la zone <strong>doivent réussir un\_test d'AGI (Esquive) Diff.16 ou subir 2d4° DM de glace et être Étourdie pendant 1 round</strong>. En cas de réussite, la cible subit la moitié des DM uniquement.</p>"
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: rapiere
+  tags:
+    - legere
+  subtype: weapon
+  martialCategory: rapier
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 6
+    unit: pa
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.G5IYsoyGoVsMqqqw
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +1d4° +2
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.G5IYsoyGoVsMqqqw
+      indice: 1
+      label: Éclats de glace
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '16'
+          dmg:
+            formula: 2d4°
+          halfDmgOnSave: true
+          target:
+            type: multiple
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: ''
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790549424606
+  modifiedTime: 1790553122291
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 1000000
+_key: '!items!G5IYsoyGoVsMqqqw'

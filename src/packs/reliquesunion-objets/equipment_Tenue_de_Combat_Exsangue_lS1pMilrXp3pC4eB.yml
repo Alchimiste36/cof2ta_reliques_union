@@ -1,0 +1,86 @@
+folder: JaxbYmoiWn6tPjgX
+name: Tenue de Combat Exsangue
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/glanae_tenue_combat_exsangue.webp
+_id: lS1pMilrXp3pC4eB
+system:
+  description: "<p>Cette tenue sombre est ajustée parfaitement au corps de l'utilisateur grâce à des cordes et des sangles. Son style est austaire et cette tenue est parfaite pour attirer l'attention des gardes ou des soldats d'un ville tant elle fait penser aux vêtements d'une voleuse ou d'une assassine.\_De petites runes elfiques sont marquées sur la face intérieur du vêtement.</p><p>Cette armure de cuir <strong>octroie un bonus de +2 en DEF Magique et une RD de 2.</strong></p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: armor
+  tags: []
+  martialCategory: leather
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 3100
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.lS1pMilrXp3pC4eB
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.lS1pMilrXp3pC4eB
+          subtype: combat
+          target: dr
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers: []
+  defense: 2
+  magicalDefense: 2
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790634966967
+  modifiedTime: 1790635241457
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!lS1pMilrXp3pC4eB'

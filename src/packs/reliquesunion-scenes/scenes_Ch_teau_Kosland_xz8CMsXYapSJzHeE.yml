@@ -1,20 +1,6 @@
 name: Château Kosland
 navigation: false
 navName: ''
-background:
-  src: modules/cof2ta_reliques_union/assets/ru_scenes/kosland/kosland_chateau.webp
-  anchorX: 0
-  anchorY: 0
-  offsetX: 5
-  offsetY: -7
-  fit: fill
-  scaleX: 1
-  scaleY: 1
-  rotation: 0
-  tint: '#ffffff'
-  alphaThreshold: 0
-foreground: null
-foregroundElevation: 6
 thumb: base64data/Scene/b5a216712292896e2bf37bd3bdd5ec02.webp
 width: 13632
 height: 17418
@@ -23,7 +9,6 @@ initial:
   x: null
   'y': null
   scale: 0.5
-backgroundColor: '#999999'
 grid:
   type: 1
   size: 50
@@ -35,11 +20,10 @@ grid:
   units: m
 tokenVision: true
 fog:
-  exploration: true
-  overlay: null
   colors:
     explored: null
     unexplored: null
+  mode: 1
 environment:
   darknessLevel: 0
   darknessLock: false
@@ -76,9 +60,6 @@ tokens:
         worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/PNJ/Kosland/Seigneur%20Gilduran%20token.png
       scaleX: 1
       scaleY: 1
-      offsetX: 0
-      offsetY: 0
-      rotation: 0
       tint: '#ffffff'
       anchorX: 0.5
       anchorY: 0.5
@@ -130,7 +111,7 @@ tokens:
       saturation: 0
       contrast: 0
       color: null
-    detectionModes: []
+    detectionModes: {}
     flags:
       monks-enhanced-journal:
         chatbubble: ''
@@ -199,25 +180,22 @@ tokens:
       effects:
         - name: Mort
           img: icons/svg/skull.svg
-          changes:
-            - key: data.attributes.hp.value
-              mode: 5
-              value: '0'
-              priority: null
           statuses:
             - dead
           _id: q650wjT1u9lOAEel
           type: base
-          system: {}
+          system:
+            changes:
+              - key: data.attributes.hp.value
+                value: 0
+                priority: null
+                type: override
           disabled: false
           duration:
-            startTime: 17028780
-            seconds: null
-            combat: null
-            rounds: null
-            turns: null
-            startRound: null
-            startTurn: null
+            value: null
+            units: seconds
+            expiry: null
+            expired: false
           description: ''
           origin: null
           tint: '#ffffff'
@@ -228,10 +206,21 @@ tokens:
             compendiumSource: null
             duplicateSource: null
             exportSource: null
-            coreVersion: '13.351'
+            coreVersion: '14.360'
             systemId: co2
             systemVersion: '#{VERSION}#'
             lastModifiedBy: null
+            createdTime: null
+            modifiedTime: null
+          showIcon: 2
+          start:
+            combat: null
+            round: null
+            time: 17028780
+            turn: null
+            combatant: null
+            initiative: null
+          folder: null
           _key: >-
             !scenes.tokens.delta.effects!xz8CMsXYapSJzHeE.E0zIx6mus17pbdCa.zit163ubH95VDEJ4.q650wjT1u9lOAEel
       flags: {}
@@ -253,15 +242,14 @@ tokens:
       disposition: false
     movementAction: null
     _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
     _key: '!scenes.tokens!xz8CMsXYapSJzHeE.E0zIx6mus17pbdCa'
   - texture:
       src: >-
         worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/PNJ/Kosland/Heita%20fille%20Gilduran%20token.jpg
       scaleX: 1
       scaleY: 1
-      offsetX: 0
-      offsetY: 0
-      rotation: 0
       tint: '#ffffff'
       anchorX: 0.5
       anchorY: 0.5
@@ -313,7 +301,7 @@ tokens:
       saturation: 0
       contrast: 0
       color: null
-    detectionModes: []
+    detectionModes: {}
     flags:
       monks-enhanced-journal:
         chatbubble: ''
@@ -398,6 +386,8 @@ tokens:
       disposition: false
     movementAction: null
     _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
     _key: '!scenes.tokens!xz8CMsXYapSJzHeE.XhKTpba0vXkouJ85'
   - name: TakTak
     displayName: 30
@@ -409,12 +399,9 @@ tokens:
         worlds/test-v10/Campagne%20LANA%27SIR/01.PERSONNAGES/JOUEURS/TOKEN-TakTak.png
       anchorX: 0.5
       anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
       fit: contain
       scaleX: 1
       scaleY: 1
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
     lockRotation: false
@@ -459,7 +446,7 @@ tokens:
       saturation: 0
       contrast: 0
     detectionModes:
-      - id: basicSight
+      basicSight:
         range: 1
         enabled: true
     occludable:
@@ -545,6 +532,8 @@ tokens:
       disposition: false
     movementAction: null
     _movementHistory: []
+    depth: 1
+    level: defaultLevel0000
     _key: '!scenes.tokens!xz8CMsXYapSJzHeE.oRjBQAT0oTafRFCB'
 lights:
   - _id: H50dJwU3HItMvpLc
@@ -580,6 +569,8 @@ lights:
     flags:
       levels:
         rangeTop: null
+    levels: []
+    locked: false
     _key: '!scenes.lights!xz8CMsXYapSJzHeE.H50dJwU3HItMvpLc'
   - _id: ifa0GvbFxoMNE43d
     x: 13450
@@ -612,6 +603,8 @@ lights:
         max: 1
     hidden: false
     flags: {}
+    levels: []
+    locked: false
     _key: '!scenes.lights!xz8CMsXYapSJzHeE.ifa0GvbFxoMNE43d'
   - _id: A5N1RdfCx4yK8UIA
     x: 13775
@@ -644,6 +637,8 @@ lights:
         max: 1
     hidden: false
     flags: {}
+    levels: []
+    locked: false
     _key: '!scenes.lights!xz8CMsXYapSJzHeE.A5N1RdfCx4yK8UIA'
   - _id: vchd6IChvtQuZoPd
     x: 7350
@@ -676,11 +671,12 @@ lights:
         max: 1
     hidden: false
     flags: {}
+    levels: []
+    locked: false
     _key: '!scenes.lights!xz8CMsXYapSJzHeE.vchd6IChvtQuZoPd'
 notes: []
 sounds: []
 regions: []
-templates: []
 tiles: []
 walls:
   - light: 20
@@ -703,6 +699,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4GQwiE26dSV329pj'
   - light: 20
     sight: 20
@@ -724,6 +721,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VvPKMgcs45eyGn16'
   - light: 20
     sight: 20
@@ -745,6 +743,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uMTxWWdEN5AQ70R4'
   - light: 20
     sight: 20
@@ -766,6 +765,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.H6sdPpM7KV3xjoAH'
   - light: 20
     sight: 20
@@ -787,6 +787,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DalVqBqtr3C23JtO'
   - light: 20
     sight: 20
@@ -808,6 +809,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pX4D486Rw71fx6v6'
   - light: 20
     sight: 20
@@ -829,6 +831,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OZgKNkATIVeJvslC'
   - light: 20
     sight: 0
@@ -860,6 +863,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.E04IFKHLQvagopcI'
   - light: 20
     sight: 20
@@ -881,6 +885,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Jw737d3v0DhQrb72'
   - light: 20
     sight: 0
@@ -912,6 +917,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1ibMwDKCRbyZStGz'
   - light: 20
     sight: 20
@@ -933,6 +939,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1bSzE4poVU39jYJb'
   - light: 20
     sight: 20
@@ -954,6 +961,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mPIFHLQyjcRbtZmV'
   - light: 20
     sight: 20
@@ -975,6 +983,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GZ4910irr5fExfrt'
   - light: 20
     sight: 0
@@ -1006,6 +1015,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.McIFTycHml1GHlKe'
   - light: 20
     sight: 20
@@ -1027,6 +1037,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rhx24ocmLmLtnN7q'
   - light: 20
     sight: 0
@@ -1058,6 +1069,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.W7xUsUeRRcgDAwoB'
   - light: 20
     sight: 20
@@ -1079,6 +1091,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wGCwdvDhd80at6ua'
   - light: 20
     sight: 0
@@ -1110,6 +1123,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GM78VXO4P9Bqce8Q'
   - light: 20
     sight: 20
@@ -1131,6 +1145,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.T2GlhNPZ4rZQ1ZBz'
   - light: 20
     sight: 0
@@ -1162,6 +1177,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.V31JEFa8m72GQDHh'
   - light: 20
     sight: 20
@@ -1183,6 +1199,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ySdYALAbb7D61wbZ'
   - light: 20
     sight: 0
@@ -1214,6 +1231,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.c3h1SmWC1RjYdwZG'
   - light: 20
     sight: 20
@@ -1235,6 +1253,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.j8EYM2WexdCvo6Ld'
   - light: 20
     sight: 20
@@ -1256,6 +1275,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qxCApe0lNXOXcgRc'
   - light: 20
     sight: 0
@@ -1287,6 +1307,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8E205a7q2ZNIJDbz'
   - light: 20
     sight: 20
@@ -1308,6 +1329,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WomemYNntvqvpkEf'
   - light: 20
     sight: 0
@@ -1339,6 +1361,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Fwzv9gRU5hwDOzc7'
   - light: 20
     sight: 20
@@ -1360,6 +1383,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JIo7ypTreR0Y20Kb'
   - light: 20
     sight: 0
@@ -1391,6 +1415,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.U5wfiod63Kw1BHQm'
   - light: 20
     sight: 20
@@ -1412,6 +1437,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KVuv0vcuNnuVZPhT'
   - light: 20
     sight: 0
@@ -1443,6 +1469,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.P78USwjO1gf1FqI4'
   - light: 20
     sight: 20
@@ -1464,6 +1491,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PSmO0ldBC8cOiCmW'
   - light: 20
     sight: 20
@@ -1485,6 +1513,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uZgt2mqRHiUCZAeQ'
   - light: 20
     sight: 20
@@ -1506,6 +1535,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EMTWaORpv4oRgj8s'
   - light: 20
     sight: 20
@@ -1527,6 +1557,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WZeh4OADBN3cMKyt'
   - light: 20
     sight: 20
@@ -1548,6 +1579,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ywuDFsavCJ7KaZk3'
   - light: 20
     sight: 20
@@ -1569,6 +1601,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dPIkFLZAofpQ3DDx'
   - light: 20
     sight: 0
@@ -1600,6 +1633,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.myY8lQeBOZPfI9xF'
   - light: 20
     sight: 20
@@ -1621,6 +1655,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.l4rFPV4z2TgeWcyf'
   - light: 20
     sight: 0
@@ -1652,6 +1687,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iGoITMHu1B4Mcymo'
   - light: 20
     sight: 20
@@ -1673,6 +1709,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FOaXlYx3BVT3DYWu'
   - light: 20
     sight: 0
@@ -1704,6 +1741,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wLcTnoFx0PKZGNr0'
   - light: 20
     sight: 20
@@ -1725,6 +1763,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qeXb0IHFLgbpFUnM'
   - light: 20
     sight: 0
@@ -1756,6 +1795,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iMgF3fSsh5VEwcPO'
   - light: 20
     sight: 20
@@ -1777,6 +1817,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.i65bfrMmeY1Fk98j'
   - light: 20
     sight: 0
@@ -1808,6 +1849,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XXdggEUHnbtvBHDX'
   - light: 20
     sight: 20
@@ -1829,6 +1871,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Tz051L6CWn8bOmc1'
   - light: 20
     sight: 20
@@ -1850,6 +1893,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JJ2YZCFzclyxL7j3'
   - light: 20
     sight: 20
@@ -1871,6 +1915,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rdH2IxnCZ7C6SEtN'
   - light: 20
     sight: 20
@@ -1892,6 +1937,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sq17LeS27Dzz9g9N'
   - light: 20
     sight: 20
@@ -1913,6 +1959,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OWkFIpfvzf6iKL90'
   - light: 20
     sight: 0
@@ -1944,6 +1991,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MJWAeF8sYRVAFMdc'
   - light: 20
     sight: 20
@@ -1965,6 +2013,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DxqRblCcsbDzWhXT'
   - light: 20
     sight: 0
@@ -1996,6 +2045,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MXTuK37CXWibQX2E'
   - light: 20
     sight: 20
@@ -2017,6 +2067,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.oT6RCzlNFZCDY8qY'
   - light: 20
     sight: 0
@@ -2048,6 +2099,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qgv4BGPedN52lXi1'
   - light: 20
     sight: 20
@@ -2069,6 +2121,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.59eUl87r6ZGa1RXH'
   - light: 20
     sight: 0
@@ -2100,6 +2153,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.saKEHHboHfpN0ap9'
   - light: 20
     sight: 20
@@ -2121,6 +2175,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VmnLyR4z9rpnSyKx'
   - light: 20
     sight: 20
@@ -2142,6 +2197,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LNvZq0bV8Gx0eWnL'
   - light: 20
     sight: 20
@@ -2163,6 +2219,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.97mQl5k3nZrH7NYT'
   - light: 20
     sight: 20
@@ -2184,6 +2241,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kwFnty2TpkIUX7Tp'
   - light: 20
     sight: 20
@@ -2205,6 +2263,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lwVddujAHSFY2oib'
   - light: 20
     sight: 20
@@ -2226,6 +2285,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xM2lWkvsfi88SiH0'
   - light: 20
     sight: 20
@@ -2247,6 +2307,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OfLhRnk30id8O1OO'
   - light: 20
     sight: 20
@@ -2268,6 +2329,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CI0fJmNXwrwzrMN0'
   - light: 20
     sight: 20
@@ -2289,6 +2351,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fKvui70gPM5Euznf'
   - light: 20
     sight: 20
@@ -2310,6 +2373,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6mVfwpu9tRw2pF8t'
   - light: 20
     sight: 20
@@ -2331,6 +2395,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KbsSDiMSmgF2axpv'
   - light: 20
     sight: 20
@@ -2352,6 +2417,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Sr0Yo9VyKMvNVLLx'
   - light: 20
     sight: 20
@@ -2373,6 +2439,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iHF1ZQSMaWORWr4P'
   - light: 20
     sight: 20
@@ -2394,6 +2461,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4QOnzFPS54bMGCWd'
   - light: 20
     sight: 20
@@ -2415,6 +2483,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kSQOl0O9VUILzb8M'
   - light: 20
     sight: 20
@@ -2436,6 +2505,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yJGyiuxNqSJMl22B'
   - light: 20
     sight: 20
@@ -2457,6 +2527,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qcE41ceoGhsRB4Up'
   - light: 20
     sight: 20
@@ -2478,6 +2549,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zrqaKc7py6XtjRAB'
   - light: 20
     sight: 20
@@ -2499,6 +2571,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dkiCGEm8BYTGHwSD'
   - light: 20
     sight: 20
@@ -2520,6 +2593,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ziu4w4EuzUIAV87R'
   - light: 20
     sight: 20
@@ -2541,6 +2615,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.tS5D9U06NfOLdS18'
   - light: 20
     sight: 20
@@ -2562,6 +2637,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.P6Hs6XwpsKZ1qL4E'
   - light: 20
     sight: 20
@@ -2583,6 +2659,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iGMRwHpm3KkPVtxq'
   - light: 20
     sight: 20
@@ -2604,6 +2681,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.b1gTW83QPqOx4TOT'
   - light: 20
     sight: 20
@@ -2625,6 +2703,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xsEc7Y85aclIdQz6'
   - light: 20
     sight: 20
@@ -2646,6 +2725,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Wsjdg1cLmB2IvdUo'
   - light: 20
     sight: 20
@@ -2667,6 +2747,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IPlG3AJNSnIfOIwf'
   - light: 20
     sight: 20
@@ -2699,6 +2780,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.t1V3mIg6Hh5vNd8R'
   - light: 20
     sight: 20
@@ -2720,6 +2802,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QEfYoAjDxxQ65Kwi'
   - light: 20
     sight: 20
@@ -2741,6 +2824,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KAL0jocZNGSAHHAR'
   - light: 20
     sight: 0
@@ -2772,6 +2856,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ocNjInaQMlBZmeBW'
   - light: 20
     sight: 20
@@ -2793,6 +2878,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IuwXcD0gdMRAwDBt'
   - light: 20
     sight: 0
@@ -2824,6 +2910,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vvL5cUfxmhHGjxOE'
   - light: 20
     sight: 20
@@ -2845,6 +2932,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WFm32oFqQTBFrlaV'
   - light: 20
     sight: 20
@@ -2866,6 +2954,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JKLgigVidYq2yccZ'
   - light: 20
     sight: 0
@@ -2897,6 +2986,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MsNiSwJzdYw1SJEV'
   - light: 20
     sight: 20
@@ -2918,6 +3008,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.opjeThNUf6ptH5yI'
   - light: 20
     sight: 20
@@ -2939,6 +3030,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sipwDrxUkeWnuHns'
   - light: 20
     sight: 20
@@ -2960,6 +3052,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Oa5h9cLxatA4o5LT'
   - light: 20
     sight: 20
@@ -2981,6 +3074,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zZETsoIgPk6iS49p'
   - light: 20
     sight: 0
@@ -3012,6 +3106,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.b7Jznww8w0s10uji'
   - light: 20
     sight: 20
@@ -3033,6 +3128,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1hEZ1jlUVJPeZrHG'
   - light: 20
     sight: 0
@@ -3064,6 +3160,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jiw0fSnRfnvCHedX'
   - light: 20
     sight: 20
@@ -3085,6 +3182,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.06LdDJNXIckf1JRs'
   - light: 20
     sight: 20
@@ -3106,6 +3204,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ACGN6CrREkiCm3x8'
   - light: 20
     sight: 20
@@ -3127,6 +3226,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DBNVsGUjOcVaH10g'
   - light: 20
     sight: 20
@@ -3159,6 +3259,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TTm96CbSJHAKStRa'
   - light: 20
     sight: 20
@@ -3180,6 +3281,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fQpNrkPV4g5gWMuT'
   - light: 20
     sight: 20
@@ -3201,6 +3303,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.0dEYhyPxtKQ5ArBS'
   - light: 20
     sight: 20
@@ -3222,6 +3325,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.5ibahT2YfU7brWOM'
   - light: 20
     sight: 20
@@ -3254,6 +3358,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xB2DGFlbpLOJujI6'
   - light: 20
     sight: 20
@@ -3275,6 +3380,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.drZJPLZr5H4DFmwE'
   - light: 20
     sight: 20
@@ -3296,6 +3402,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XYDOr5yFuIHIuPFE'
   - light: 20
     sight: 20
@@ -3317,6 +3424,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.J21iI4CwBBMhvXcv'
   - light: 20
     sight: 20
@@ -3338,6 +3446,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WPmp2jgj6vEwsQG1'
   - light: 20
     sight: 20
@@ -3359,6 +3468,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GkJls6fejsPKL7Bw'
   - light: 20
     sight: 20
@@ -3380,6 +3490,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UKNuewA14cBAmv3G'
   - light: 20
     sight: 20
@@ -3401,6 +3512,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jTCOLEeVcHO2PYKU'
   - light: 20
     sight: 20
@@ -3422,6 +3534,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wVjZtKt36R3eDVmm'
   - light: 20
     sight: 0
@@ -3453,6 +3566,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rzbxBgBFMC8UaW6C'
   - light: 20
     sight: 20
@@ -3474,6 +3588,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.n8RtoG7Dg53MdOym'
   - light: 20
     sight: 0
@@ -3505,6 +3620,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JUMPxpthhqEtL977'
   - light: 20
     sight: 20
@@ -3526,6 +3642,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zt430pj5rEMHRSJJ'
   - light: 20
     sight: 0
@@ -3557,6 +3674,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bKq64ZgRA6oqsxxm'
   - light: 20
     sight: 20
@@ -3578,6 +3696,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.45PQ3R8qRzWZxAyn'
   - light: 20
     sight: 20
@@ -3599,6 +3718,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RbAS6X1VgBrE6lTG'
   - light: 20
     sight: 20
@@ -3631,6 +3751,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8DFVfi1wZnmzmR6J'
   - light: 20
     sight: 20
@@ -3652,6 +3773,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8GCNiUIRSmtQNeSn'
   - light: 20
     sight: 20
@@ -3684,6 +3806,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4IyJ82bxayOMX6J0'
   - light: 20
     sight: 20
@@ -3705,6 +3828,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GCw60Z8iTKuFWJCd'
   - light: 20
     sight: 0
@@ -3736,6 +3860,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lKTXN1S6nOGWkiuO'
   - light: 20
     sight: 20
@@ -3757,6 +3882,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.r2ZVqDvsPUptEQZW'
   - light: 20
     sight: 20
@@ -3778,6 +3904,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zGjY87y0tZDprsrJ'
   - light: 20
     sight: 20
@@ -3799,6 +3926,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FEC2hNAURcBeScYJ'
   - light: 20
     sight: 20
@@ -3820,6 +3948,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZDbhtsI6LpkN7YF9'
   - light: 20
     sight: 20
@@ -3841,6 +3970,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LUfQXXu2YhlrrUkc'
   - light: 20
     sight: 20
@@ -3862,6 +3992,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rXybtrt4vKbRb5ci'
   - light: 20
     sight: 20
@@ -3883,6 +4014,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sKk2OwPZk58h9p0k'
   - light: 20
     sight: 20
@@ -3904,6 +4036,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3pIdXuFUgLI9aKc8'
   - light: 20
     sight: 20
@@ -3936,6 +4069,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4oOM9MB5cZ9epsL7'
   - light: 20
     sight: 20
@@ -3957,6 +4091,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Lu4wL9BmkSEi5f8X'
   - light: 20
     sight: 20
@@ -3978,6 +4113,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XuFYSXERJ9JjRbfe'
   - light: 20
     sight: 20
@@ -3999,6 +4135,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eZPNFnpPdHr7Lxwn'
   - light: 20
     sight: 20
@@ -4031,6 +4168,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hJFPGXJvn3U0sSmC'
   - light: 20
     sight: 20
@@ -4052,6 +4190,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4Xyplxs0EzIuLBeX'
   - light: 20
     sight: 20
@@ -4084,6 +4223,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yTj2SOaMGH95ZV6D'
   - light: 20
     sight: 20
@@ -4105,6 +4245,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VL3q2VxGYQEZLqo1'
   - light: 20
     sight: 20
@@ -4137,6 +4278,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pj4BkOBALAik9XM0'
   - light: 20
     sight: 20
@@ -4158,6 +4300,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ucgQWMkBFXlkx7hr'
   - light: 20
     sight: 20
@@ -4179,6 +4322,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sFXLTykJOcJRimmC'
   - light: 20
     sight: 20
@@ -4200,6 +4344,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GvdEoMBd9W54kYBa'
   - light: 20
     sight: 20
@@ -4221,6 +4366,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PXt9F1elhj3IZNHg'
   - light: 20
     sight: 20
@@ -4253,6 +4399,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.H7yMax6tCDnSzXH0'
   - light: 20
     sight: 20
@@ -4274,6 +4421,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sfFRGFjkuyHt3Vi4'
   - light: 20
     sight: 20
@@ -4295,6 +4443,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fdyt10dzQMXt84CH'
   - light: 20
     sight: 20
@@ -4327,6 +4476,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vxlSSgOo2ffQhyWU'
   - light: 20
     sight: 20
@@ -4348,6 +4498,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RK8vHniGbW7fbAIe'
   - light: 20
     sight: 20
@@ -4369,6 +4520,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kSndxMfQvCwDoUlZ'
   - light: 20
     sight: 20
@@ -4390,6 +4542,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fx05QJvrdFRS9vii'
   - light: 20
     sight: 20
@@ -4411,6 +4564,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kLS8g3UBN67EnnkZ'
   - light: 20
     sight: 20
@@ -4443,6 +4597,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.i4ehtQaGS4jHyHVg'
   - light: 20
     sight: 20
@@ -4464,6 +4619,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.AdTsVVKdljMraASI'
   - light: 20
     sight: 20
@@ -4485,6 +4641,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3TWD7Qc4QWeLcwHN'
   - light: 20
     sight: 20
@@ -4517,6 +4674,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zZGDKRKUq6dhv5Xq'
   - light: 20
     sight: 20
@@ -4538,6 +4696,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NyHwl67dzQpMonzz'
   - light: 20
     sight: 20
@@ -4559,6 +4718,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8upRh6V1z1uYD3EK'
   - light: 20
     sight: 20
@@ -4591,6 +4751,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ucJ62uNVsC2S2Tar'
   - light: 20
     sight: 20
@@ -4612,6 +4773,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.COzE7pQxmI78Y0gU'
   - light: 20
     sight: 20
@@ -4644,6 +4806,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mB1LSmWij0qiVhD6'
   - light: 20
     sight: 20
@@ -4665,6 +4828,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OOgJrx6ZcEgoXdF2'
   - light: 20
     sight: 20
@@ -4686,6 +4850,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9ncKJFoUWeWz231U'
   - light: 20
     sight: 0
@@ -4717,6 +4882,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mYASeEOMgMfkDnIM'
   - light: 20
     sight: 20
@@ -4738,6 +4904,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VLhaVjV7xtHreELn'
   - light: 20
     sight: 0
@@ -4769,6 +4936,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CgAsJYjDgBXuwDKp'
   - light: 20
     sight: 20
@@ -4790,6 +4958,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IbSwbZcKODnbcdea'
   - light: 20
     sight: 20
@@ -4811,6 +4980,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.95MGtEaGUr6jZmkb'
   - light: 20
     sight: 20
@@ -4832,6 +5002,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MlTL4mpo2vxmMOfl'
   - light: 20
     sight: 20
@@ -4864,6 +5035,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nLX1jJsDqvGOWvom'
   - light: 20
     sight: 20
@@ -4885,6 +5057,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.W5FOYuLGeJoPB1nr'
   - light: 20
     sight: 20
@@ -4906,6 +5079,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2sh1u1Iwzvat4aQd'
   - light: 20
     sight: 20
@@ -4927,6 +5101,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.O1EsN1VtXYzNvpuA'
   - light: 20
     sight: 20
@@ -4948,6 +5123,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Fmi86M5BTactICGO'
   - light: 20
     sight: 20
@@ -4969,6 +5145,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2uCaI1JQosAO7uvC'
   - light: 20
     sight: 20
@@ -4990,6 +5167,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WX4JLhpJX8QszbCf'
   - light: 20
     sight: 20
@@ -5011,6 +5189,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zq0fHDiIoCHBf1aS'
   - light: 20
     sight: 20
@@ -5032,6 +5211,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EIK750MMTL0xMGWX'
   - light: 20
     sight: 20
@@ -5064,6 +5244,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.w2yGutNveBFKuD03'
   - light: 20
     sight: 20
@@ -5085,6 +5266,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.G89Q6sDgwzZC7PZN'
   - light: 20
     sight: 20
@@ -5106,6 +5288,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.g9Jv0s4c1Am0t1ry'
   - light: 20
     sight: 20
@@ -5138,6 +5321,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9hBuJR8CmOEQ0Def'
   - light: 20
     sight: 20
@@ -5159,6 +5343,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PO9huEUDO8wUskpU'
   - light: 20
     sight: 20
@@ -5180,6 +5365,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LSfwBWOpU0rdpbZT'
   - light: 20
     sight: 20
@@ -5201,6 +5387,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WwiANtKBVcuRCWVO'
   - light: 20
     sight: 20
@@ -5233,6 +5420,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TsD7obasyXkz6icp'
   - light: 20
     sight: 20
@@ -5254,6 +5442,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nsFuAx2HUl6P7Nry'
   - light: 20
     sight: 20
@@ -5286,6 +5475,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1W2ouyD9oMfNzsYs'
   - light: 20
     sight: 20
@@ -5307,6 +5497,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.oleMDXcjoB4frQbs'
   - light: 20
     sight: 20
@@ -5328,6 +5519,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ez1oBbvBkN4j7Zw3'
   - light: 20
     sight: 20
@@ -5349,6 +5541,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eqdoK0h4VnwgJOt6'
   - light: 20
     sight: 20
@@ -5370,6 +5563,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2eQJADL71kWUbUGa'
   - light: 20
     sight: 20
@@ -5391,6 +5585,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1reaRri01O1eUCsz'
   - light: 20
     sight: 0
@@ -5422,6 +5617,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WLOG6KiDkyQggAcs'
   - light: 20
     sight: 20
@@ -5443,6 +5639,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ukdARaOhWqSjpicz'
   - light: 20
     sight: 0
@@ -5474,6 +5671,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bUzjcVbEdb27anz9'
   - light: 20
     sight: 20
@@ -5495,6 +5693,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.AtbiJxJcJ6W15Nxk'
   - light: 20
     sight: 20
@@ -5527,6 +5726,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FEwPRyawq4ekeTcj'
   - light: 20
     sight: 20
@@ -5548,6 +5748,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Jkr12pbJosQzkgD7'
   - light: 20
     sight: 20
@@ -5569,6 +5770,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Kx85TeN2VuyHJWAN'
   - light: 20
     sight: 0
@@ -5600,6 +5802,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DtUAgL1MhZcxqLHX'
   - light: 20
     sight: 20
@@ -5621,6 +5824,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QkKNwfwiLygXQkQF'
   - light: 20
     sight: 0
@@ -5652,6 +5856,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ztLb1g5u104SZPsK'
   - light: 20
     sight: 20
@@ -5673,6 +5878,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BqhWUOFPnuJbMK7K'
   - light: 20
     sight: 0
@@ -5704,6 +5910,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uI2BskE2lzHyaiMk'
   - light: 20
     sight: 20
@@ -5725,6 +5932,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JLHDblSwgMBgYReH'
   - light: 20
     sight: 20
@@ -5746,6 +5954,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Pq95VwRYXCXnhr1y'
   - light: 20
     sight: 20
@@ -5767,6 +5976,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9VucMlAkcuac2rIU'
   - light: 20
     sight: 20
@@ -5799,6 +6009,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zdb6lKQXTPNzPRa6'
   - light: 20
     sight: 20
@@ -5820,6 +6031,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KTtmC1RWpMPAnDIz'
   - light: 20
     sight: 20
@@ -5841,6 +6053,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8d8hG5fCIllTQPMi'
   - light: 20
     sight: 20
@@ -5873,6 +6086,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rTHIcQcoYQNKbr7L'
   - light: 20
     sight: 20
@@ -5894,6 +6108,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.l8Rmg9XoKVQ1Igkx'
   - light: 20
     sight: 20
@@ -5915,6 +6130,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xgUZh6cb9yUpXl1B'
   - light: 20
     sight: 20
@@ -5947,6 +6163,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.O7j4m2T6Pe7rKejR'
   - light: 20
     sight: 20
@@ -5968,6 +6185,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CTGtp6tslQOhFwdD'
   - light: 20
     sight: 20
@@ -5989,6 +6207,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7IUqlEUZlZqVzTB6'
   - light: 20
     sight: 20
@@ -6010,6 +6229,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TupgfN29eC5wWozn'
   - light: 20
     sight: 20
@@ -6031,6 +6251,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ekDrgQsvyP3zTh5M'
   - light: 20
     sight: 20
@@ -6052,6 +6273,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ANpCb3zDh4XtjeYx'
   - light: 20
     sight: 20
@@ -6073,6 +6295,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.p9bpV8TkK9mz7v94'
   - light: 20
     sight: 20
@@ -6105,6 +6328,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WcVhQJ36u88dW537'
   - light: 20
     sight: 20
@@ -6126,6 +6350,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wyFASDAIxxsph2F4'
   - light: 20
     sight: 20
@@ -6147,6 +6372,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.t17NJWwAAEKwFe8j'
   - light: 20
     sight: 20
@@ -6179,6 +6405,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EKvS32AXzU2wA3M1'
   - light: 20
     sight: 20
@@ -6200,6 +6427,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.b4Dt4l1RoRqdXX1z'
   - light: 20
     sight: 20
@@ -6221,6 +6449,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XS5hpAOUy21GMYwQ'
   - light: 20
     sight: 20
@@ -6242,6 +6471,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JkdGGaInox0hUsW6'
   - light: 20
     sight: 20
@@ -6263,6 +6493,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OAHxxf2vALzIC8oU'
   - light: 20
     sight: 20
@@ -6295,6 +6526,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UoWvIofwwaxHHzJE'
   - light: 20
     sight: 20
@@ -6316,6 +6548,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.C3j94NfIURygFfnV'
   - light: 20
     sight: 20
@@ -6337,6 +6570,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EVfEQqaikSNUp3vr'
   - light: 20
     sight: 20
@@ -6369,6 +6603,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6h1yzAxPOW8BWEQJ'
   - light: 20
     sight: 20
@@ -6390,6 +6625,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bTVZMpj8hDanport'
   - light: 20
     sight: 20
@@ -6411,6 +6647,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3Iqrs8YjRva9rdZ6'
   - light: 20
     sight: 20
@@ -6432,6 +6669,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QXX4WO8DMc4L2jXP'
   - light: 20
     sight: 20
@@ -6453,6 +6691,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m3wXxaGWEIyMRMhI'
   - light: 20
     sight: 20
@@ -6485,6 +6724,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bmULhvYrv5vk0263'
   - light: 20
     sight: 20
@@ -6506,6 +6746,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gHHsi28LNAStHYKt'
   - light: 20
     sight: 20
@@ -6527,6 +6768,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Anl9tXXp2sCGKOGc'
   - light: 20
     sight: 20
@@ -6559,6 +6801,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8kJ2ftkzOwYKwKeT'
   - light: 20
     sight: 20
@@ -6580,6 +6823,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lyZ3fegRrxit73mE'
   - light: 20
     sight: 20
@@ -6601,6 +6845,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jDUHzVgWo9W6cEAo'
   - light: 20
     sight: 20
@@ -6622,6 +6867,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.92Xz0Ka82HBKHpUz'
   - light: 20
     sight: 20
@@ -6654,6 +6900,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YoeHt4uHEodObspF'
   - light: 20
     sight: 20
@@ -6675,6 +6922,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nggxVb0d5lTkuVmK'
   - light: 20
     sight: 20
@@ -6696,6 +6944,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wWXaClnC4L1DdQWe'
   - light: 20
     sight: 20
@@ -6717,6 +6966,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fU6r1H9udlNRQrYW'
   - light: 20
     sight: 20
@@ -6749,6 +6999,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bLEqgO4vGHzpYGmg'
   - light: 20
     sight: 20
@@ -6770,6 +7021,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FqwkWhPgMxMT6tgy'
   - light: 20
     sight: 20
@@ -6791,6 +7043,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nWQbAXcLvb4BZKDe'
   - light: 20
     sight: 20
@@ -6812,6 +7065,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.A7c1J2nbwsWhQIvk'
   - light: 20
     sight: 20
@@ -6844,6 +7098,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.B6hwKLKL1hk19UFF'
   - light: 20
     sight: 20
@@ -6865,6 +7120,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3KCvbuyUS4AWcPt7'
   - light: 20
     sight: 20
@@ -6886,6 +7142,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.adArvNslkNvHObhb'
   - light: 20
     sight: 20
@@ -6907,6 +7164,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Kim4ovhcOByfwWDD'
   - light: 20
     sight: 20
@@ -6928,6 +7186,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MJfFLCrPeEXfMOqD'
   - light: 20
     sight: 20
@@ -6960,6 +7219,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FIcVKUOtHQdbLyfQ'
   - light: 20
     sight: 20
@@ -6981,6 +7241,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nF1DLBK3jnu85ryM'
   - light: 20
     sight: 20
@@ -7002,6 +7263,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PQTBlnUls01Y7BIt'
   - light: 20
     sight: 20
@@ -7023,6 +7285,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.chIgQeCbKcrJSrE2'
   - light: 20
     sight: 20
@@ -7055,6 +7318,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.U9FjyVhJyq1BfFs1'
   - light: 20
     sight: 20
@@ -7076,6 +7340,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZrwkByJekVFoewsg'
   - light: 20
     sight: 20
@@ -7097,6 +7362,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.97R0YjbnQrDH5mfd'
   - light: 20
     sight: 20
@@ -7118,6 +7384,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rJqxlwTIZHnpODWD'
   - light: 20
     sight: 20
@@ -7139,6 +7406,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kG6XYzLu31G9tP8i'
   - light: 20
     sight: 20
@@ -7171,6 +7439,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kISu2Zb9qoxyIqiG'
   - light: 20
     sight: 20
@@ -7192,6 +7461,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kOQCWaTnVvZ0rGpr'
   - light: 20
     sight: 20
@@ -7213,6 +7483,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bOfMG4nTA3qKSLKw'
   - light: 20
     sight: 20
@@ -7245,6 +7516,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Gz4A6PUU9VLZbvT6'
   - light: 20
     sight: 20
@@ -7266,6 +7538,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mtYHpC800CFDhbb8'
   - light: 20
     sight: 20
@@ -7287,6 +7560,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VlfyTwxriH2YLk0c'
   - light: 20
     sight: 20
@@ -7308,6 +7582,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.H1B0UA0FLfV47igZ'
   - light: 20
     sight: 20
@@ -7340,6 +7615,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CTPHAmIYXwRcTnFx'
   - light: 20
     sight: 20
@@ -7361,6 +7637,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QvP9XxpEDgLtcMIK'
   - light: 20
     sight: 20
@@ -7382,6 +7659,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.S5gsZ7M53iNX4BjW'
   - light: 20
     sight: 20
@@ -7403,6 +7681,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TEkLgYiPKRkx9zuL'
   - light: 20
     sight: 20
@@ -7435,6 +7714,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ig0HMx8vP9Kl0ztK'
   - light: 20
     sight: 20
@@ -7456,6 +7736,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fpSRvru5I6lxkYpo'
   - light: 20
     sight: 20
@@ -7477,6 +7758,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.njmj7g3sNBA0ywlB'
   - light: 20
     sight: 20
@@ -7498,6 +7780,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MYicC3sMbeBNMBHS'
   - light: 20
     sight: 20
@@ -7530,6 +7813,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SeZJuoEVMnyH1kUS'
   - light: 20
     sight: 20
@@ -7551,6 +7835,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YtqJsScLa0T6pWoa'
   - light: 20
     sight: 20
@@ -7572,6 +7857,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3yazqK4lj4vziIyr'
   - light: 20
     sight: 20
@@ -7593,6 +7879,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KacwyqknACZ2hzPX'
   - light: 20
     sight: 20
@@ -7614,6 +7901,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dzdHHz8A1NnXb8qv'
   - light: 20
     sight: 20
@@ -7646,6 +7934,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Om85bX30Rcxm23tw'
   - light: 20
     sight: 20
@@ -7667,6 +7956,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZDYyoSGt9sgz4gLC'
   - light: 20
     sight: 20
@@ -7688,6 +7978,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ri5Jo74VcZ6SW6Bw'
   - light: 20
     sight: 20
@@ -7709,6 +8000,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.czrkvysNLzd7Y3oB'
   - light: 20
     sight: 20
@@ -7741,6 +8033,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HldTTUvs9I30ZcUz'
   - light: 20
     sight: 20
@@ -7762,6 +8055,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.v6HxX01mHb1fcW4q'
   - light: 20
     sight: 20
@@ -7783,6 +8077,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.aZeVAbMYP6cZekoG'
   - light: 20
     sight: 20
@@ -7804,6 +8099,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gHkOcQxEQRjZStGZ'
   - light: 20
     sight: 20
@@ -7825,6 +8121,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.0EpiikMARfwQl9Js'
   - light: 20
     sight: 0
@@ -7856,6 +8153,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.I5z20lOtOytu6noC'
   - light: 20
     sight: 20
@@ -7877,6 +8175,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rEcu3rGI87HNrWU3'
   - light: 20
     sight: 0
@@ -7908,6 +8207,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rMm7eFe6xT1LDWdh'
   - light: 20
     sight: 20
@@ -7929,6 +8229,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9bRe4vIxCdi1P2yj'
   - light: 20
     sight: 0
@@ -7960,6 +8261,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.x7RBSmQ4nUBxpZPO'
   - light: 20
     sight: 20
@@ -7981,6 +8283,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vm47Rd2eywPv9sMS'
   - light: 20
     sight: 0
@@ -8012,6 +8315,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lRZRnJr9k8l7kf1Y'
   - light: 20
     sight: 20
@@ -8033,6 +8337,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.V76IATlNLOY6OWYK'
   - light: 20
     sight: 0
@@ -8064,6 +8369,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sTS7SgbR55AepQK4'
   - light: 20
     sight: 20
@@ -8085,6 +8391,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BQ530XRHTOt61BPK'
   - light: 20
     sight: 20
@@ -8106,6 +8413,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sxa0pnjDosP8yf5B'
   - light: 20
     sight: 20
@@ -8127,6 +8435,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pxpJQZjfI91P0W25'
   - light: 20
     sight: 20
@@ -8148,6 +8457,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mRLAa75zVGKhyxhg'
   - light: 20
     sight: 20
@@ -8169,6 +8479,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uYg7v7pxxmrzjLw5'
   - light: 20
     sight: 20
@@ -8201,6 +8512,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.J7F793U3C7avxTdu'
   - light: 20
     sight: 20
@@ -8222,6 +8534,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EVk6ZFjpUH2DLKqs'
   - light: 20
     sight: 20
@@ -8243,6 +8556,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ywJUGmyLmxHbEZCI'
   - light: 20
     sight: 20
@@ -8264,6 +8578,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GRKNsRURlWw5C6GA'
   - light: 20
     sight: 20
@@ -8285,6 +8600,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yaZO5maP91xrIDmJ'
   - light: 20
     sight: 20
@@ -8306,6 +8622,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MYE5ORdzHXnOdjcc'
   - light: 20
     sight: 20
@@ -8327,6 +8644,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Y909exoJrHdNv0TB'
   - light: 20
     sight: 20
@@ -8348,6 +8666,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EX8Tqx8iDLNK9ybT'
   - light: 20
     sight: 20
@@ -8369,6 +8688,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.A2hMBCvR495k0EGG'
   - light: 20
     sight: 0
@@ -8400,6 +8720,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.REAfuWxpl3xVWt1H'
   - light: 20
     sight: 20
@@ -8421,6 +8742,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.D4RhrnphdIA4HenE'
   - light: 20
     sight: 0
@@ -8452,6 +8774,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HbXSHWugKVim2sPd'
   - light: 20
     sight: 20
@@ -8473,6 +8796,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wQJfxJPDb9Z4f6ee'
   - light: 20
     sight: 0
@@ -8504,6 +8828,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sjHKNxrZpjFlaJsd'
   - light: 20
     sight: 20
@@ -8525,6 +8850,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nvuL02iKTLWB2O5F'
   - light: 20
     sight: 0
@@ -8556,6 +8882,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Cpcx5beisIrwsV6e'
   - light: 20
     sight: 20
@@ -8577,6 +8904,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GaAgq2GsIBFNoKk5'
   - light: 20
     sight: 0
@@ -8608,6 +8936,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KkJtZNLKNLsrGeUl'
   - light: 20
     sight: 20
@@ -8629,6 +8958,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OsdRDSNDwWgoeZPr'
   - light: 20
     sight: 20
@@ -8650,6 +8980,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ixf4xxQVGOCsICVd'
   - light: 20
     sight: 0
@@ -8681,6 +9012,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rDPxwDXhCckJz9Za'
   - light: 20
     sight: 20
@@ -8702,6 +9034,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2aXfbzq6ARoT9fTo'
   - light: 20
     sight: 0
@@ -8733,6 +9066,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iKmvEEmYAIO7RhYi'
   - light: 20
     sight: 20
@@ -8754,6 +9088,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HVOyG0dDLX8rDoO7'
   - light: 20
     sight: 0
@@ -8785,6 +9120,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wWl1HKSnGyiCsNHH'
   - light: 20
     sight: 20
@@ -8806,6 +9142,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZT5udFLNSMliWEtA'
   - light: 20
     sight: 0
@@ -8837,6 +9174,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NFLlOmmRNVMJaLoC'
   - light: 20
     sight: 20
@@ -8858,6 +9196,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Kjr1juDkrwInnNu0'
   - light: 20
     sight: 20
@@ -8879,6 +9218,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mgM2X8hNoonLJsWK'
   - light: 20
     sight: 20
@@ -8900,6 +9240,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9DXvDYQAmAjgkmZk'
   - light: 20
     sight: 20
@@ -8921,6 +9262,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uRouxJK9pQH1yjcX'
   - light: 20
     sight: 20
@@ -8942,6 +9284,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.o1WhyG3KfzdeSCdY'
   - light: 20
     sight: 20
@@ -8963,6 +9306,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gdKB96AjchLhwjW9'
   - light: 20
     sight: 20
@@ -8984,6 +9328,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UKAuwXwJ9LrCuMvA'
   - light: 20
     sight: 20
@@ -9005,6 +9350,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VM7CJ2x7HlwHrhhF'
   - light: 20
     sight: 20
@@ -9026,6 +9372,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.awLmBFlfnqnsUEVq'
   - light: 20
     sight: 20
@@ -9047,6 +9394,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hU8YgcDtJ2FVQhJV'
   - light: 20
     sight: 20
@@ -9068,6 +9416,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.df8fenoEkb8z8oCf'
   - light: 20
     sight: 20
@@ -9089,6 +9438,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PzaNXDdNLtzPC7N2'
   - light: 20
     sight: 20
@@ -9110,6 +9460,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rXF2aYNi42o2JbM3'
   - light: 20
     sight: 0
@@ -9141,6 +9492,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dk8Zrfv8i4vJHQY3'
   - light: 20
     sight: 20
@@ -9162,6 +9514,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Xjx159uLOW6B8sOA'
   - light: 20
     sight: 0
@@ -9194,6 +9547,7 @@ walls:
         secret: false
     doorSound: ''
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PIbTxDykbNRTDvdT'
   - light: 20
     sight: 20
@@ -9215,6 +9569,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.w25lfFC0Igbaw9wx'
   - light: 20
     sight: 0
@@ -9246,6 +9601,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GGa9vVIV57iCIufP'
   - light: 20
     sight: 20
@@ -9267,6 +9623,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CwClI8pdITRml0E7'
   - light: 20
     sight: 0
@@ -9298,6 +9655,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fCtSWSHz3JO0rJNl'
   - light: 20
     sight: 20
@@ -9319,6 +9677,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ISi6DsQnhiOpasSf'
   - light: 20
     sight: 0
@@ -9350,6 +9709,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ypQ5ix23U5W1m7fR'
   - light: 20
     sight: 20
@@ -9371,6 +9731,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jGs7KlUHgRMsvpmZ'
   - light: 20
     sight: 20
@@ -9392,6 +9753,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mZJioIhtcCL7XY2X'
   - light: 20
     sight: 20
@@ -9413,6 +9775,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TATTSo42jsDPPHEV'
   - light: 20
     sight: 0
@@ -9444,6 +9807,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HXuawKZ69f1GhAOF'
   - light: 20
     sight: 20
@@ -9465,6 +9829,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.htmvvtROslG9MqpI'
   - light: 20
     sight: 0
@@ -9496,6 +9861,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vsckNgJCGpWh2tgE'
   - light: 20
     sight: 20
@@ -9517,6 +9883,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PiONE8EED6wUMNKC'
   - light: 20
     sight: 20
@@ -9538,6 +9905,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Y5SC7zUi9WUTCjjF'
   - light: 20
     sight: 0
@@ -9569,6 +9937,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BnDriSnjIN0ylGla'
   - light: 20
     sight: 20
@@ -9590,6 +9959,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GGPmNEqCYPLsrKCw'
   - light: 20
     sight: 0
@@ -9621,6 +9991,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Uz7Tm7zmeqabRvl9'
   - light: 20
     sight: 20
@@ -9642,6 +10013,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TbHJyBVL9xRK38Pt'
   - light: 20
     sight: 0
@@ -9673,6 +10045,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FFnuDS348KrxahLQ'
   - light: 20
     sight: 20
@@ -9694,6 +10067,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dmXZx8U508knHzaM'
   - light: 20
     sight: 0
@@ -9725,6 +10099,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.To2EKgWFI7takKyF'
   - light: 20
     sight: 20
@@ -9746,6 +10121,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1jrUs34kZE4Qd2wa'
   - light: 20
     sight: 0
@@ -9777,6 +10153,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.e89rIeJUetnxKC9X'
   - light: 20
     sight: 20
@@ -9798,6 +10175,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hR410laDMKl7ri8W'
   - light: 20
     sight: 20
@@ -9819,6 +10197,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.phYxerxGBrwiLXqj'
   - light: 20
     sight: 0
@@ -9850,6 +10229,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pfZaAn22DAQKlP9i'
   - light: 20
     sight: 20
@@ -9871,6 +10251,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hw8vCbZVL9v3b8U2'
   - light: 20
     sight: 20
@@ -9892,6 +10273,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.aIlHnzBJdf7QpeI7'
   - light: 20
     sight: 20
@@ -9913,6 +10295,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MR7HdA0plFbaeuA2'
   - light: 20
     sight: 20
@@ -9934,6 +10317,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.tL3bsemH2ZScmXNL'
   - light: 20
     sight: 20
@@ -9955,6 +10339,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MsHIxxtXcsIkiXqQ'
   - light: 20
     sight: 20
@@ -9976,6 +10361,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ftvCgS5oZoQazZHF'
   - light: 20
     sight: 20
@@ -9997,6 +10383,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uc6VCWgk2U9yksV8'
   - light: 20
     sight: 20
@@ -10018,6 +10405,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8jPmkGrnm5yeY1PZ'
   - light: 20
     sight: 20
@@ -10050,6 +10438,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.84N4l7oe0ZcXlNwK'
   - light: 20
     sight: 20
@@ -10071,6 +10460,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.x8QYMhbAkQnKItdj'
   - light: 20
     sight: 20
@@ -10092,6 +10482,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7kQrjnLknRZL9Pcb'
   - light: 20
     sight: 20
@@ -10113,6 +10504,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.l3LqOmvkEagVQOxy'
   - light: 20
     sight: 20
@@ -10134,6 +10526,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.H2tBqC2vuMHHRZrZ'
   - light: 20
     sight: 20
@@ -10155,6 +10548,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QjT86lk5rpF2UCYZ'
   - light: 20
     sight: 20
@@ -10176,6 +10570,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mQghz4X1zopSUXbR'
   - light: 20
     sight: 20
@@ -10197,6 +10592,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XjigNz3Q0QaOAtBv'
   - light: 20
     sight: 0
@@ -10228,6 +10624,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6XBlgTsPoECG2PtL'
   - light: 20
     sight: 20
@@ -10249,6 +10646,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9xZFKasjQxAztczf'
   - light: 20
     sight: 20
@@ -10270,6 +10668,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SSs9rtOCf0uYOuEX'
   - light: 20
     sight: 0
@@ -10301,6 +10700,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mpL11aVmOrbOA2kf'
   - light: 20
     sight: 20
@@ -10322,6 +10722,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NyGYn7PjEr67koKu'
   - light: 20
     sight: 20
@@ -10343,6 +10744,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.aHwQnTvFcyCzxpKJ'
   - light: 20
     sight: 0
@@ -10374,6 +10776,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uc12xl2Zg85OdeV3'
   - light: 20
     sight: 20
@@ -10395,6 +10798,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.h6LApAamH9BZ2HYg'
   - light: 20
     sight: 20
@@ -10416,6 +10820,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bdaHGpGVYGgY9bzp'
   - light: 20
     sight: 0
@@ -10447,6 +10852,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BwjtghbMITt6lbsd'
   - light: 20
     sight: 20
@@ -10468,6 +10874,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Wc2mHAA7i5QKBB5i'
   - light: 20
     sight: 0
@@ -10499,6 +10906,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pErdnndO15QCx6ne'
   - light: 20
     sight: 20
@@ -10520,6 +10928,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Q2GLTqkxgZrFadfJ'
   - light: 20
     sight: 20
@@ -10541,6 +10950,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MrvQKVyBBGqJMtgd'
   - light: 20
     sight: 0
@@ -10572,6 +10982,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iN1aZMDRSMUESkzb'
   - light: 20
     sight: 20
@@ -10593,6 +11004,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mDui6mYRqsvNRoVw'
   - light: 20
     sight: 20
@@ -10614,6 +11026,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fdjCaKuEN6JC2d4A'
   - light: 20
     sight: 0
@@ -10645,6 +11058,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.d0H1CeXDuHuU1YTx'
   - light: 20
     sight: 20
@@ -10666,6 +11080,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TKGr4Dh9Yg1P6XyP'
   - light: 20
     sight: 0
@@ -10697,6 +11112,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rxVk00on2ZI3cXwV'
   - light: 20
     sight: 20
@@ -10718,6 +11134,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1oBtFSmKaYYRos2H'
   - light: 20
     sight: 20
@@ -10739,6 +11156,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.k3l2LBbnYV5L5JVj'
   - light: 20
     sight: 20
@@ -10760,6 +11178,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LaNaWpynWAEBdncj'
   - light: 20
     sight: 0
@@ -10791,6 +11210,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1XV8k2fBMVM11xg2'
   - light: 20
     sight: 20
@@ -10812,6 +11232,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EBIa2QdqSUFbyjQ8'
   - light: 20
     sight: 20
@@ -10833,6 +11254,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vXZcflN1FYPx7I0k'
   - light: 20
     sight: 0
@@ -10864,6 +11286,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6dgqSbQdyldSGYlw'
   - light: 20
     sight: 20
@@ -10885,6 +11308,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1R7vijQz5G1DpMfe'
   - light: 20
     sight: 20
@@ -10906,6 +11330,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ca2sS3Qf51SZ2cTo'
   - light: 20
     sight: 20
@@ -10927,6 +11352,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mqKU6xd22hH22TlL'
   - light: 20
     sight: 0
@@ -10958,6 +11384,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nneH9Vr4nWTA207B'
   - light: 20
     sight: 20
@@ -10979,6 +11406,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WocKopTWc3dVRk5W'
   - light: 20
     sight: 20
@@ -11011,6 +11439,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZvFbkslLI8dfay4A'
   - light: 20
     sight: 20
@@ -11032,6 +11461,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SWBwPoIQrR5RYWHp'
   - light: 20
     sight: 0
@@ -11063,6 +11493,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Dvz25GXxqvC20cZx'
   - light: 20
     sight: 20
@@ -11084,6 +11515,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.M67odCeu70EkrkXj'
   - light: 20
     sight: 20
@@ -11105,6 +11537,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mdsHIF5BJaw7472X'
   - light: 20
     sight: 20
@@ -11126,6 +11559,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ql4ClQwT6wdEiXx1'
   - light: 20
     sight: 0
@@ -11157,6 +11591,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m0iR7sbq5DXEnuZ0'
   - light: 20
     sight: 20
@@ -11178,6 +11613,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.90ByQDLrjgqNbQN6'
   - light: 20
     sight: 20
@@ -11199,6 +11635,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FFK8WJd0XvE9S2mc'
   - light: 20
     sight: 20
@@ -11220,6 +11657,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xMKD7OhVbT3i39yi'
   - light: 20
     sight: 0
@@ -11251,6 +11689,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7qAA1SW3ooZS51P9'
   - light: 20
     sight: 20
@@ -11272,6 +11711,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Oe1mmaakd3pea1aH'
   - light: 20
     sight: 20
@@ -11293,6 +11733,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2SumqUwUGgFCe7Te'
   - light: 20
     sight: 20
@@ -11314,6 +11755,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pSWwQioQqkb2ofcH'
   - light: 20
     sight: 0
@@ -11345,6 +11787,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uOPnstJFCCwf4lcr'
   - light: 20
     sight: 20
@@ -11366,6 +11809,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UOosolfUZ6kg1Oyz'
   - light: 20
     sight: 20
@@ -11387,6 +11831,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kh97WRVdsRo0ineC'
   - light: 20
     sight: 20
@@ -11408,6 +11853,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wA8vWZw5xU2WnsF4'
   - light: 20
     sight: 20
@@ -11429,6 +11875,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.X49HJYirSb8OVy9h'
   - light: 20
     sight: 20
@@ -11450,6 +11897,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.swsxR2ahPhaFtuzs'
   - light: 20
     sight: 20
@@ -11471,6 +11919,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4govTaKsLDGFs0sf'
   - light: 20
     sight: 20
@@ -11492,6 +11941,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UtVpIhUeksFpQXeV'
   - light: 20
     sight: 20
@@ -11513,6 +11963,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YaLh5ogca5UkXRV9'
   - light: 20
     sight: 20
@@ -11534,6 +11985,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.oFoDoL24743Bu2KV'
   - light: 20
     sight: 20
@@ -11566,6 +12018,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m7wEw9gb7gPyPuqP'
   - light: 20
     sight: 20
@@ -11587,6 +12040,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CVHNH0oKpYdQKmNh'
   - light: 20
     sight: 20
@@ -11608,6 +12062,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LrZdDuhsOACgP4HS'
   - light: 20
     sight: 20
@@ -11629,6 +12084,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eCEiV4Cd6iKzvyRh'
   - light: 20
     sight: 20
@@ -11661,6 +12117,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4BVQvb2uHSk43Yfj'
   - light: 20
     sight: 20
@@ -11682,6 +12139,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EhXZVwIznBxLhlFT'
   - light: 20
     sight: 20
@@ -11703,6 +12161,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.z2WK9c7YpCl3haib'
   - light: 20
     sight: 20
@@ -11724,6 +12183,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rMgm9Q316SUb3Fg4'
   - light: 20
     sight: 20
@@ -11756,6 +12216,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UPLRPoA4JatQyb7K'
   - light: 20
     sight: 20
@@ -11777,6 +12238,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Y1SI1K62sRD5Rwqn'
   - light: 20
     sight: 20
@@ -11798,6 +12260,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4gnqrvOuiP40gUOv'
   - light: 20
     sight: 20
@@ -11830,6 +12293,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kOSo3GJJK3nYkNHo'
   - light: 20
     sight: 20
@@ -11851,6 +12315,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ce1lmjUGzvtkmD0p'
   - light: 20
     sight: 20
@@ -11872,6 +12337,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Qnvpc8W5vdOlcPYb'
   - light: 20
     sight: 20
@@ -11904,6 +12370,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XttmGLYQYNWXerxa'
   - light: 20
     sight: 20
@@ -11925,6 +12392,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TmOjTkY92gvVSVz9'
   - light: 20
     sight: 20
@@ -11946,6 +12414,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.py7IT3Gupc6OxFlz'
   - light: 20
     sight: 20
@@ -11978,6 +12447,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.S1wAXAzbEhi6G7mM'
   - light: 20
     sight: 20
@@ -11999,6 +12469,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.L7x9SeDGHYZlbK1e'
   - light: 20
     sight: 20
@@ -12020,6 +12491,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.cTEyNUWYWN22RIJL'
   - light: 20
     sight: 20
@@ -12041,6 +12513,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qBKrWk9jQmnQq5XV'
   - light: 20
     sight: 20
@@ -12073,6 +12546,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.56SyswyBKrowClNu'
   - light: 20
     sight: 20
@@ -12094,6 +12568,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qAdNlZS2V8GmxHix'
   - light: 20
     sight: 20
@@ -12115,6 +12590,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.g8zcMqpkHWBqN533'
   - light: 20
     sight: 20
@@ -12136,6 +12612,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vFft4m1y2rLz6a16'
   - light: 20
     sight: 20
@@ -12168,6 +12645,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JK3eMLyFrBNQ7O8O'
   - light: 20
     sight: 20
@@ -12189,6 +12667,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.l0QL2z7UI4dysfJk'
   - light: 20
     sight: 20
@@ -12210,6 +12689,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JLgHRfUyzQGUIq49'
   - light: 20
     sight: 20
@@ -12242,6 +12722,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6mC7ND0GLq6hGFxm'
   - light: 20
     sight: 20
@@ -12263,6 +12744,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QTWtOGGlmINSCY1R'
   - light: 20
     sight: 20
@@ -12284,6 +12766,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jZhpld0OzCg0NMdc'
   - light: 20
     sight: 20
@@ -12316,6 +12799,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XNYQYEjyKeLY9sEZ'
   - light: 20
     sight: 20
@@ -12337,6 +12821,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KRFsvRteHEBIZRmQ'
   - light: 20
     sight: 20
@@ -12358,6 +12843,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.VFxiR2dmA5YG6AoK'
   - light: 20
     sight: 20
@@ -12390,6 +12876,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MDej0PtHQY27h1ks'
   - light: 20
     sight: 20
@@ -12411,6 +12898,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FL9aaztp49NMgmv9'
   - light: 20
     sight: 20
@@ -12432,6 +12920,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4DH1bJc8qw3DtMKW'
   - light: 20
     sight: 20
@@ -12464,6 +12953,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bF4a0qLh3IYGz9zD'
   - light: 20
     sight: 20
@@ -12485,6 +12975,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NhPUNgXjnAbNwT1G'
   - light: 20
     sight: 20
@@ -12506,6 +12997,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iMMkAhDuFHC7Ag3B'
   - light: 20
     sight: 20
@@ -12538,6 +13030,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KkXi7G02a0nnn5oc'
   - light: 20
     sight: 20
@@ -12559,6 +13052,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6G6rC1cobsYuLicl'
   - light: 20
     sight: 20
@@ -12580,6 +13074,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.exmwsgDzzG1LAL8x'
   - light: 20
     sight: 20
@@ -12612,6 +13107,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mzKBWV3Vpuprh2p5'
   - light: 20
     sight: 20
@@ -12633,6 +13129,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.AEnW5zZXndIffYco'
   - light: 20
     sight: 20
@@ -12654,6 +13151,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IdsUspnnG9NxyLwd'
   - light: 20
     sight: 20
@@ -12675,6 +13173,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m7Yt5yQtelxpUrLQ'
   - light: 20
     sight: 20
@@ -12696,6 +13195,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JTPa7V4xXDsvUCfv'
   - light: 20
     sight: 20
@@ -12717,6 +13217,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZZBr01NboeEknKnJ'
   - light: 20
     sight: 20
@@ -12738,6 +13239,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KQo6LWTRtlV0hZAf'
   - light: 20
     sight: 20
@@ -12759,6 +13261,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.o0sbeBnzuA99C0vy'
   - light: 20
     sight: 20
@@ -12791,6 +13294,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8Odm8QzFI0mwtgUx'
   - light: 20
     sight: 20
@@ -12812,6 +13316,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WecOzTWvAXTA6u90'
   - light: 20
     sight: 20
@@ -12833,6 +13338,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hxF5w2YV7iRRnoXm'
   - light: 20
     sight: 20
@@ -12854,6 +13360,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rJVld78Gx3xBSTGQ'
   - light: 20
     sight: 20
@@ -12875,6 +13382,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IeTgp1tbG5nVDDBh'
   - light: 20
     sight: 20
@@ -12896,6 +13404,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pmWNkgG2MtNYKK80'
   - light: 20
     sight: 20
@@ -12917,6 +13426,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CDbcV7PxGkr9RoYY'
   - light: 20
     sight: 20
@@ -12938,6 +13448,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YBEbtpietyzUwHjF'
   - light: 20
     sight: 20
@@ -12959,6 +13470,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.esJH48WJHmUC4BVE'
   - light: 20
     sight: 20
@@ -12980,6 +13492,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.U8gI9nNPA3CPk0U9'
   - light: 20
     sight: 20
@@ -13012,6 +13525,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZM4O91hKjgZVhJbD'
   - light: 20
     sight: 20
@@ -13033,6 +13547,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PxQbJOsX8C6cmHDG'
   - light: 20
     sight: 20
@@ -13065,6 +13580,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DrABRgEEEroa7ALg'
   - light: 20
     sight: 20
@@ -13086,6 +13602,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Iv0zihd5Kv5QzDvO'
   - light: 20
     sight: 20
@@ -13118,6 +13635,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MR89L90X3K0i9xqi'
   - light: 20
     sight: 20
@@ -13139,6 +13657,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eBzLtafZUGAl7U09'
   - light: 20
     sight: 20
@@ -13171,6 +13690,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QOOLtyDoZchwv8Vi'
   - light: 20
     sight: 20
@@ -13192,6 +13712,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GDnC7S1OkQAoyTM7'
   - light: 20
     sight: 20
@@ -13224,6 +13745,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2EeNuAyePGCNrMAy'
   - light: 20
     sight: 20
@@ -13245,6 +13767,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HTTa5DEcpM0gL94W'
   - light: 20
     sight: 20
@@ -13266,6 +13789,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iNXNBRXtEUSL9YNa'
   - light: 20
     sight: 20
@@ -13287,6 +13811,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.cqb8x2kHlGdeWPJ7'
   - light: 20
     sight: 20
@@ -13308,6 +13833,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mG98jJfMCHr8RYe1'
   - light: 20
     sight: 20
@@ -13329,6 +13855,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.M9GVqdPkoSZAg1SP'
   - light: 20
     sight: 20
@@ -13350,6 +13877,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Cmz8hx01nv5LHeJQ'
   - light: 20
     sight: 20
@@ -13371,6 +13899,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.AXxFZAxNVOTNxlFm'
   - light: 20
     sight: 20
@@ -13403,6 +13932,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zTHVJCQxfNvYSlBA'
   - light: 20
     sight: 20
@@ -13424,6 +13954,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1IGttzyD7DfxG3JT'
   - light: 20
     sight: 20
@@ -13445,6 +13976,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7t12Bnh2p4UXsW6b'
   - light: 20
     sight: 20
@@ -13466,6 +13998,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jzTVn15l7GhsRQnD'
   - light: 20
     sight: 20
@@ -13498,6 +14031,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nH0nlB2VIk3w9Cai'
   - light: 20
     sight: 20
@@ -13519,6 +14053,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KLQjy9l8eQcvQwvo'
   - light: 20
     sight: 20
@@ -13540,6 +14075,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RvQjDhKHlk10vD5D'
   - light: 20
     sight: 20
@@ -13561,6 +14097,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ubAyRQD7DuMayfKs'
   - light: 20
     sight: 20
@@ -13593,6 +14130,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SwRUuktwsjIHlYmj'
   - light: 20
     sight: 20
@@ -13614,6 +14152,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.v5gjg5JrZctADIa8'
   - light: 20
     sight: 20
@@ -13635,6 +14174,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lyjgnFi0veDQegH3'
   - light: 20
     sight: 20
@@ -13656,6 +14196,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ECpRhWamUGBLySVZ'
   - light: 20
     sight: 20
@@ -13688,6 +14229,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2ye2guo8dNl1dzXR'
   - light: 20
     sight: 20
@@ -13709,6 +14251,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7FcDayNslLMKJumW'
   - light: 20
     sight: 20
@@ -13730,6 +14273,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.b4HyIcxTv9zCb4LE'
   - light: 20
     sight: 20
@@ -13762,6 +14306,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OFpbCtiEj0zIhiay'
   - light: 20
     sight: 20
@@ -13783,6 +14328,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.idoYAzbU41fzQJpp'
   - light: 20
     sight: 20
@@ -13804,6 +14350,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XMmEEARGX5LniucH'
   - light: 20
     sight: 20
@@ -13825,6 +14372,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ALTShidvyqZtUuE4'
   - light: 20
     sight: 20
@@ -13857,6 +14405,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uBexjcXGOU8CrZi7'
   - light: 20
     sight: 20
@@ -13878,6 +14427,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bMPliVrkPXdSoukn'
   - light: 20
     sight: 20
@@ -13899,6 +14449,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wWlpo3XYaEdFHNzQ'
   - light: 20
     sight: 20
@@ -13931,6 +14482,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uyI4J1yg0CohcKWW'
   - light: 20
     sight: 20
@@ -13952,6 +14504,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.d5syFjnN9K1CBT8h'
   - light: 20
     sight: 20
@@ -13973,6 +14526,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.U6oIZLZXIMtHiHRy'
   - light: 20
     sight: 20
@@ -14005,6 +14559,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8yFJwar9POM1Vtm3'
   - light: 20
     sight: 20
@@ -14026,6 +14581,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4S5CpS5NZY00WZVt'
   - light: 20
     sight: 20
@@ -14047,6 +14603,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TKn5dsWY3sl9efTN'
   - light: 20
     sight: 20
@@ -14079,6 +14636,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FbWaBQDY1rqYZFhT'
   - light: 20
     sight: 20
@@ -14100,6 +14658,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bvddbrdoAaQC2V32'
   - light: 20
     sight: 20
@@ -14121,6 +14680,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Rvnuw3t7ypx8WjZ3'
   - light: 20
     sight: 20
@@ -14142,6 +14702,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xxbli6PBSGDafk7Z'
   - light: 20
     sight: 20
@@ -14174,6 +14735,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.puWJDc2vNDqKKqU7'
   - light: 20
     sight: 20
@@ -14195,6 +14757,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qb0j5uKndHfyN4en'
   - light: 20
     sight: 20
@@ -14216,6 +14779,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wIMyJVWqBf3PlIMv'
   - light: 20
     sight: 20
@@ -14248,6 +14812,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XRHwfRfpL5fywt0W'
   - light: 20
     sight: 20
@@ -14269,6 +14834,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ds0CPzrLTH2rAZNU'
   - light: 20
     sight: 20
@@ -14290,6 +14856,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.S6q9AqvErnnev40C'
   - light: 20
     sight: 20
@@ -14311,6 +14878,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BuYfPQs0oL6jmaPs'
   - light: 20
     sight: 20
@@ -14332,6 +14900,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pmo8tvdEbMs1J1qf'
   - light: 20
     sight: 20
@@ -14353,6 +14922,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EIIbF8acCo9saU5m'
   - light: 20
     sight: 20
@@ -14374,6 +14944,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3LuOH7aqqHmaBk0x'
   - light: 20
     sight: 20
@@ -14395,6 +14966,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vUTY2ng46ILZX86c'
   - light: 20
     sight: 20
@@ -14427,6 +14999,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4e1ucFzvLIHjPcpM'
   - light: 20
     sight: 20
@@ -14448,6 +15021,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.M7LAH6ykoC6ZtDw3'
   - light: 20
     sight: 20
@@ -14469,6 +15043,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.cOQIVIx8kyM7asBg'
   - light: 20
     sight: 20
@@ -14501,6 +15076,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m5WkpqCZhj1lf5jb'
   - light: 20
     sight: 20
@@ -14522,6 +15098,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Zly7PJAJh9OLKGPo'
   - light: 20
     sight: 20
@@ -14543,6 +15120,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.i9gwDW8YUSoEOKxP'
   - light: 20
     sight: 20
@@ -14564,6 +15142,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ayNn6IYY4r5tOGCS'
   - light: 20
     sight: 20
@@ -14585,6 +15164,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UsE2o3JPEev7codY'
   - light: 20
     sight: 20
@@ -14606,6 +15186,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ZCLqPkDxn4zTUmJr'
   - light: 20
     sight: 20
@@ -14638,6 +15219,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Mczv9QBoLQGGA7qK'
   - light: 20
     sight: 20
@@ -14659,6 +15241,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nzC4tLzrzPRLNcYr'
   - light: 20
     sight: 20
@@ -14680,6 +15263,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Xb8XAkdJbAlmItp1'
   - light: 20
     sight: 20
@@ -14712,6 +15296,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.itHMn3TTxM7IyOBU'
   - light: 20
     sight: 20
@@ -14733,6 +15318,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.H8p24QLKZ9oL9azY'
   - light: 20
     sight: 20
@@ -14765,6 +15351,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.opo97sHlzUrUt3La'
   - light: 20
     sight: 20
@@ -14786,6 +15373,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.E8pvdxi4nfiwRIts'
   - light: 20
     sight: 20
@@ -14807,6 +15395,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fMQIexTuVgva9BHb'
   - light: 20
     sight: 20
@@ -14828,6 +15417,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nIP6XnWQWpgS5rSS'
   - light: 20
     sight: 20
@@ -14860,6 +15450,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RyzhK6AsPEY19kQj'
   - light: 20
     sight: 20
@@ -14881,6 +15472,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.z7YutBpIxI1WwO0I'
   - light: 20
     sight: 20
@@ -14913,6 +15505,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.0UKsaTkY3XQdWJH6'
   - light: 20
     sight: 20
@@ -14934,6 +15527,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lhSHttk1dmlEjUad'
   - light: 20
     sight: 20
@@ -14955,6 +15549,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gh0okh5b0p15RIVD'
   - light: 20
     sight: 20
@@ -14976,6 +15571,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UpG9nConZt0Fiysw'
   - light: 20
     sight: 20
@@ -14997,6 +15593,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6I9uV1BSTbqxC7uo'
   - light: 20
     sight: 0
@@ -15028,6 +15625,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ku367LyJohEdQJik'
   - light: 20
     sight: 20
@@ -15049,6 +15647,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.whV0tf2W8ixEEh3p'
   - light: 20
     sight: 20
@@ -15070,6 +15669,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GmJHQTRu1Usy8jU0'
   - light: 20
     sight: 0
@@ -15101,6 +15701,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Yd4UOnjc6676ww2N'
   - light: 20
     sight: 20
@@ -15122,6 +15723,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4jFEqSVchsDmlCXO'
   - light: 20
     sight: 20
@@ -15143,6 +15745,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NPfp0betqsrxvWE8'
   - light: 20
     sight: 0
@@ -15174,6 +15777,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jpemfbYgUOesfdsb'
   - light: 20
     sight: 20
@@ -15195,6 +15799,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7OIyAkIQAn2dCdzi'
   - light: 20
     sight: 0
@@ -15226,6 +15831,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.961jvvhdZdD50lDY'
   - light: 20
     sight: 20
@@ -15247,6 +15853,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SZfSZHgwFrmO3xJs'
   - light: 20
     sight: 20
@@ -15268,6 +15875,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DJ0Qb66842yFYCBP'
   - light: 20
     sight: 0
@@ -15299,6 +15907,7 @@ walls:
         checklock: false
         secret: false
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kFvlwe9pKhCmIMh9'
   - light: 20
     sight: 20
@@ -15320,6 +15929,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.08rMgxDsldKpbOns'
   - light: 20
     sight: 20
@@ -15341,6 +15951,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.hPdbRzW7SIBtSl4m'
   - light: 20
     sight: 20
@@ -15362,6 +15973,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rJFZL68JFiUCPh8s'
   - light: 20
     sight: 20
@@ -15394,6 +16006,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ssuKXSELtr4C5uPG'
   - light: 20
     sight: 20
@@ -15415,6 +16028,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PAq3RSaJQibi5Xe4'
   - light: 20
     sight: 20
@@ -15436,6 +16050,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DOjsAJ1Ee9Q5OqY4'
   - light: 20
     sight: 20
@@ -15457,6 +16072,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.F0wV7XRB31W9m0bY'
   - light: 20
     sight: 20
@@ -15489,6 +16105,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KO4kkLJxMKw4my9K'
   - light: 20
     sight: 20
@@ -15510,6 +16127,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.UxjM3U90TO5Oknx4'
   - light: 20
     sight: 20
@@ -15542,6 +16160,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WLsTcUkEygCqDkyw'
   - light: 20
     sight: 20
@@ -15563,6 +16182,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vHyLLRsHj8zsy6E8'
   - light: 20
     sight: 20
@@ -15584,6 +16204,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.L3nheHp4ChEtlKV9'
   - light: 20
     sight: 20
@@ -15605,6 +16226,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lFHTtubb1AfCZp7P'
   - light: 20
     sight: 20
@@ -15637,6 +16259,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ui8sQ0MUU4dGD8Uc'
   - light: 20
     sight: 20
@@ -15658,6 +16281,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wJWimgHmL2uzd4RE'
   - light: 20
     sight: 20
@@ -15679,6 +16303,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.5M3tePGmMfREMoRD'
   - light: 20
     sight: 20
@@ -15700,6 +16325,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.htQVowByfjVscYZg'
   - light: 20
     sight: 20
@@ -15721,6 +16347,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.oBieP3AuTXaIQNVa'
   - light: 20
     sight: 20
@@ -15753,6 +16380,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Gah2u6KCHk5DBm1n'
   - light: 20
     sight: 20
@@ -15774,6 +16402,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.isKDB4PwEtlzWunr'
   - light: 20
     sight: 20
@@ -15795,6 +16424,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Xew8lHvcmFfiIchx'
   - light: 20
     sight: 20
@@ -15827,6 +16457,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iyxn7sonHcv4dNE1'
   - light: 20
     sight: 20
@@ -15848,6 +16479,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.S2SRL4jdZrSlUIdp'
   - light: 20
     sight: 20
@@ -15869,6 +16501,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.0NYKOwZkWuRmkJpI'
   - light: 20
     sight: 20
@@ -15890,6 +16523,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.pgoNqEja06T3NhYf'
   - light: 20
     sight: 20
@@ -15922,6 +16556,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.y0YFQ8xCkR98MeRJ'
   - light: 20
     sight: 20
@@ -15943,6 +16578,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Kyrf1YhUl8ZcgTmk'
   - light: 20
     sight: 20
@@ -15964,6 +16600,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.69yE2wDIvnDNVJMk'
   - light: 20
     sight: 20
@@ -15996,6 +16633,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9vQqWtQcySgprHAa'
   - light: 20
     sight: 20
@@ -16017,6 +16655,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.L9LKDCF6w6KupHj7'
   - light: 20
     sight: 20
@@ -16038,6 +16677,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ir9avKhPWvWybwsX'
   - light: 20
     sight: 20
@@ -16059,6 +16699,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8QimcS931yc5yMGT'
   - light: 20
     sight: 20
@@ -16091,6 +16732,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6Gpfmc75ojiaWtJw'
   - light: 20
     sight: 20
@@ -16112,6 +16754,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.m7xH7uyy29iwpMzu'
   - light: 20
     sight: 20
@@ -16133,6 +16776,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mnu3RCUdNayRxbPO'
   - light: 20
     sight: 20
@@ -16154,6 +16798,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.r1UT4wsR3hbFwd1K'
   - light: 20
     sight: 20
@@ -16186,6 +16831,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eJPNTqi1c9c3XtJh'
   - light: 20
     sight: 20
@@ -16207,6 +16853,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.R3Bu68vRVLzKNl6C'
   - light: 20
     sight: 20
@@ -16239,6 +16886,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mygpxKE5Evg2LUMm'
   - light: 20
     sight: 20
@@ -16260,6 +16908,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DJHHitpEMRfZ2u0c'
   - light: 20
     sight: 20
@@ -16281,6 +16930,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JH4J25S7122WLYeA'
   - light: 20
     sight: 20
@@ -16302,6 +16952,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jbcdxxldUbPXw6Wa'
   - light: 20
     sight: 20
@@ -16334,6 +16985,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LafENqcIDzv29bFN'
   - light: 20
     sight: 20
@@ -16355,6 +17007,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Q18RIDC0JIKYm6CU'
   - light: 20
     sight: 20
@@ -16376,6 +17029,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PAF0wL4WgQ99KXch'
   - light: 20
     sight: 20
@@ -16397,6 +17051,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FxJM2bC5yV9wTg7G'
   - light: 20
     sight: 20
@@ -16418,6 +17073,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Zc6yny60Y7ncYCqw'
   - light: 20
     sight: 20
@@ -16439,6 +17095,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yocu0cY4fuU24i2K'
   - light: 20
     sight: 20
@@ -16460,6 +17117,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yIRNkPhlCP8FR10P'
   - light: 20
     sight: 20
@@ -16481,6 +17139,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xXm5LbrIYTgnBZiL'
   - light: 20
     sight: 20
@@ -16513,6 +17172,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XqT6iJT9cM9KgtB4'
   - light: 20
     sight: 20
@@ -16534,6 +17194,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lW3WIprWOdK2316R'
   - light: 20
     sight: 20
@@ -16555,6 +17216,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RYlWN0nfGmlf5l0r'
   - light: 20
     sight: 20
@@ -16576,6 +17238,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bvtSY21KHHlvX3IR'
   - light: 20
     sight: 20
@@ -16597,6 +17260,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dGtWHvdrJpNcZTbg'
   - light: 20
     sight: 20
@@ -16618,6 +17282,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.E32f4nDruISOoALI'
   - light: 20
     sight: 20
@@ -16639,6 +17304,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Qn6aHfuLlem1aMKS'
   - light: 20
     sight: 20
@@ -16660,6 +17326,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uFqU7qfDcJgIOKqU'
   - light: 20
     sight: 20
@@ -16692,6 +17359,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sonGQJyyWKXYB0zC'
   - light: 20
     sight: 20
@@ -16713,6 +17381,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iunT5yp4U0CrN4qk'
   - light: 20
     sight: 20
@@ -16734,6 +17403,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7Wai9KXFRBm3qLbM'
   - light: 20
     sight: 20
@@ -16755,6 +17425,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.23cTBUe4ZuqyK04M'
   - light: 20
     sight: 20
@@ -16776,6 +17447,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.E9h17quINTTmzx5C'
   - light: 20
     sight: 20
@@ -16797,6 +17469,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.USoXgKQ2luJvwJ8C'
   - light: 20
     sight: 20
@@ -16818,6 +17491,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8PepPJcn4RHMZjYj'
   - light: 20
     sight: 20
@@ -16839,6 +17513,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DPXDYFkDq2usaZ4E'
   - light: 20
     sight: 20
@@ -16860,6 +17535,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vkgLyQpF33kLMuIb'
   - light: 20
     sight: 20
@@ -16881,6 +17557,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.W2tvH0qhGfIqiyeX'
   - light: 20
     sight: 20
@@ -16902,6 +17579,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KhHUQ7I63Vh54L2c'
   - light: 20
     sight: 20
@@ -16923,6 +17601,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ppswdqg9H3I35lZm'
   - light: 20
     sight: 20
@@ -16944,6 +17623,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xVzWeoM5Exw3n2IR'
   - light: 20
     sight: 20
@@ -16965,6 +17645,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YfnWk1s5ZMQN5Gw4'
   - light: 20
     sight: 20
@@ -16986,6 +17667,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Z5j3oDROvmySk8cc'
   - light: 20
     sight: 20
@@ -17007,6 +17689,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RQEBXASp0gea5Kjb'
   - light: 20
     sight: 20
@@ -17028,6 +17711,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.maEAGvPOVA9RCuNV'
   - light: 20
     sight: 20
@@ -17049,6 +17733,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ji0E5zuEbuvUSd64'
   - light: 20
     sight: 20
@@ -17070,6 +17755,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WbCsvxpvgAV0qRp5'
   - light: 20
     sight: 20
@@ -17091,6 +17777,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jPfjsBxlmjPvp7tT'
   - light: 20
     sight: 20
@@ -17112,6 +17799,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TYJRpCDjoPvVzA1s'
   - light: 20
     sight: 20
@@ -17133,6 +17821,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ADf0BAUcvtSihHGq'
   - light: 20
     sight: 20
@@ -17154,6 +17843,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4hzIHywXtIwagbcx'
   - light: 20
     sight: 20
@@ -17175,6 +17865,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OoMAxxCmzhMMusXX'
   - light: 20
     sight: 20
@@ -17196,6 +17887,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ferxRXsQp1uDfVM5'
   - light: 20
     sight: 20
@@ -17217,6 +17909,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uI6wdtXSMpdjxP3V'
   - light: 20
     sight: 20
@@ -17238,6 +17931,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.biiiezGqV6KoktPy'
   - light: 20
     sight: 20
@@ -17259,6 +17953,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dDnL5b3kwiw3JlUD'
   - light: 20
     sight: 20
@@ -17280,6 +17975,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8I7TEtfgNuWsxRQP'
   - light: 20
     sight: 20
@@ -17301,6 +17997,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dHAAx3Xtv1TfzlLB'
   - light: 20
     sight: 20
@@ -17322,6 +18019,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RWxNw4qEPaK6fE0p'
   - light: 20
     sight: 20
@@ -17343,6 +18041,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WlXwVodJMsDXWNvw'
   - light: 20
     sight: 20
@@ -17364,6 +18063,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1xedzbyoRBZkoLn9'
   - light: 20
     sight: 20
@@ -17385,6 +18085,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bhEPxe75pPkTFr5r'
   - light: 20
     sight: 20
@@ -17417,6 +18118,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xfnVByVCna4k07cM'
   - light: 20
     sight: 20
@@ -17438,6 +18140,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8m4tqZtDVnXXyUPp'
   - light: 20
     sight: 20
@@ -17459,6 +18162,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dhLNcQ94TEBXX8fY'
   - light: 20
     sight: 20
@@ -17480,6 +18184,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LB90M0yDG2pfVQ5U'
   - light: 20
     sight: 20
@@ -17512,6 +18217,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MAXbEXlxX6KN4IXM'
   - light: 20
     sight: 20
@@ -17533,6 +18239,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DeViFI8EqzxlUFjW'
   - light: 20
     sight: 20
@@ -17554,6 +18261,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YC0lZnsXJLm6ADAU'
   - light: 20
     sight: 20
@@ -17575,6 +18283,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kpSSqGugHC2bMsae'
   - light: 20
     sight: 20
@@ -17607,6 +18316,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.CE3lsBDEr6KExHT0'
   - light: 20
     sight: 20
@@ -17628,6 +18338,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WJr8imhooHyuApsQ'
   - light: 20
     sight: 20
@@ -17649,6 +18360,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.n8xoFWyNgu9sMivx'
   - light: 20
     sight: 20
@@ -17670,6 +18382,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.QJ8MWpi5gXbBeBMS'
   - light: 20
     sight: 20
@@ -17702,6 +18415,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.5SMZvCi7r3apDbDl'
   - light: 20
     sight: 20
@@ -17723,6 +18437,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.0ALXwmCasdyLm7bx'
   - light: 20
     sight: 20
@@ -17744,6 +18459,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ocy28Wpjjkg8xDlV'
   - light: 20
     sight: 20
@@ -17765,6 +18481,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WUutX7O4qxKCgE7E'
   - light: 20
     sight: 20
@@ -17786,6 +18503,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.AkIb2CgQXXmDSOvi'
   - light: 20
     sight: 20
@@ -17818,6 +18536,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zEdJIsEu8F96w5hJ'
   - light: 20
     sight: 20
@@ -17839,6 +18558,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.cdBEtGEPkCCWax5L'
   - light: 20
     sight: 20
@@ -17860,6 +18580,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wakTMnqfAAnEpxtQ'
   - light: 20
     sight: 20
@@ -17881,6 +18602,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YW2CbRpUHDXCSmuw'
   - light: 20
     sight: 20
@@ -17902,6 +18624,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MegYmzYqCwJISdcm'
   - light: 20
     sight: 20
@@ -17934,6 +18657,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HDyBnclF9P3FSO7r'
   - light: 20
     sight: 20
@@ -17955,6 +18679,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.qU2JZF3kxotHUcpS'
   - light: 20
     sight: 20
@@ -17976,6 +18701,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.utwe8hmp4Psa6sVE'
   - light: 20
     sight: 20
@@ -17997,6 +18723,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RT46mV54Uw5Thrni'
   - light: 20
     sight: 20
@@ -18018,6 +18745,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8c39w9IDJfKRZhYM'
   - light: 20
     sight: 20
@@ -18050,6 +18778,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2XoVXbPdsQaADJQw'
   - light: 20
     sight: 20
@@ -18071,6 +18800,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ItlQ1XqDpfxtRtI1'
   - light: 20
     sight: 20
@@ -18103,6 +18833,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.32O44NflA3HJWf1t'
   - light: 20
     sight: 20
@@ -18124,6 +18855,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.04cO9MMlBvT3ldpk'
   - light: 20
     sight: 20
@@ -18145,6 +18877,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IXrCZssluhbQbCG0'
   - light: 20
     sight: 20
@@ -18166,6 +18899,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XLobcc3Rky9BUpLo'
   - light: 20
     sight: 20
@@ -18198,6 +18932,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.eTQ03lt5h6OuSoiN'
   - light: 20
     sight: 20
@@ -18219,6 +18954,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.XF6XgpsHXZx6e8Ko'
   - light: 20
     sight: 20
@@ -18251,6 +18987,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.280pEBkkyy1unJXQ'
   - light: 20
     sight: 20
@@ -18272,6 +19009,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mJJv4sBxrlSdKEdx'
   - light: 20
     sight: 20
@@ -18293,6 +19031,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OuzuOKaElR1Qb3j6'
   - light: 20
     sight: 20
@@ -18325,6 +19064,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SYv91AGiXce9q1e3'
   - light: 20
     sight: 20
@@ -18346,6 +19086,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bpNCKsGfbE4tq4Ge'
   - light: 20
     sight: 20
@@ -18367,6 +19108,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OW6ncRXnoWVzIwAR'
   - light: 20
     sight: 20
@@ -18388,6 +19130,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jVjQ5tCGSvIdnTC9'
   - light: 20
     sight: 20
@@ -18409,6 +19152,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HWPLW35vbD8B3HsG'
   - light: 20
     sight: 20
@@ -18430,6 +19174,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iVdsnTCPLD8MZRlC'
   - light: 20
     sight: 20
@@ -18462,6 +19207,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ubh2YaWO4g8la7hA'
   - light: 20
     sight: 20
@@ -18483,6 +19229,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Upa5KtH3h60ZgXlg'
   - light: 20
     sight: 20
@@ -18504,6 +19251,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kbS9KMBbbLImwImc'
   - light: 20
     sight: 20
@@ -18536,6 +19284,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.PxauXaQcqvXRMQNq'
   - light: 20
     sight: 20
@@ -18557,6 +19306,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JZoVb1psz7w1lP7a'
   - light: 20
     sight: 20
@@ -18589,6 +19339,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Keyj66R0S31PGBJ7'
   - light: 20
     sight: 20
@@ -18610,6 +19361,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uYC4fbpiGhbtDvIV'
   - light: 20
     sight: 20
@@ -18631,6 +19383,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.sAMXZZH5bjeYFhha'
   - light: 20
     sight: 20
@@ -18652,6 +19405,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mqqKjgbpG8zNxINI'
   - light: 20
     sight: 20
@@ -18684,6 +19438,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Ejt87IoozQpNeptr'
   - light: 20
     sight: 20
@@ -18705,6 +19460,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HiJAbm3jCBTrUvmE'
   - light: 20
     sight: 20
@@ -18726,6 +19482,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rrQ7JWsqfJiAqyF3'
   - light: 20
     sight: 20
@@ -18758,6 +19515,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.G7CqeOnTyVr6bwPf'
   - light: 20
     sight: 20
@@ -18779,6 +19537,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.h52WemZz62CwOXa7'
   - light: 20
     sight: 20
@@ -18811,6 +19570,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ffJ29bQWOPCWn43r'
   - light: 20
     sight: 20
@@ -18832,6 +19592,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.44YMoSKcb6ET26C1'
   - light: 20
     sight: 20
@@ -18853,6 +19614,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.zWajwtUHPolrQLPZ'
   - light: 20
     sight: 20
@@ -18885,6 +19647,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4SdL1DwnP6fSMGru'
   - light: 20
     sight: 20
@@ -18906,6 +19669,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.x3JTLCBF0QFaAwnx'
   - light: 20
     sight: 20
@@ -18927,6 +19691,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3qpf9pAbrpvm9XvT'
   - light: 20
     sight: 20
@@ -18959,6 +19724,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.373pzNecpAa094vT'
   - light: 20
     sight: 20
@@ -18980,6 +19746,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HJG5YhrTyGVdDGev'
   - light: 20
     sight: 20
@@ -19001,6 +19768,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HU9u7Vjwg9cMe4Wm'
   - light: 20
     sight: 20
@@ -19022,6 +19790,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.6rRdKETZhEhC0nrd'
   - light: 20
     sight: 20
@@ -19043,6 +19812,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9OUq5W7Je0mGRfBF'
   - light: 20
     sight: 20
@@ -19075,6 +19845,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DXgpw30C7iueERHd'
   - light: 20
     sight: 20
@@ -19096,6 +19867,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ANLQGXEM2b2ahpyL'
   - light: 20
     sight: 20
@@ -19117,6 +19889,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JBoJo8HwHhjZRzus'
   - light: 20
     sight: 20
@@ -19138,6 +19911,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.GHsFiRv0VLgzx8Op'
   - light: 20
     sight: 20
@@ -19170,6 +19944,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uy9968n6a5tl0KwF'
   - light: 20
     sight: 20
@@ -19191,6 +19966,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.FdAyiPLHFfmuSI5a'
   - light: 20
     sight: 20
@@ -19212,6 +19988,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.kNEzG166fbkQZJVJ'
   - light: 20
     sight: 20
@@ -19244,6 +20021,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.b08O51T0TC0Mv5KK'
   - light: 20
     sight: 20
@@ -19265,6 +20043,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ceHRLtHkPSEz4TH6'
   - light: 20
     sight: 20
@@ -19297,6 +20076,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iTMJ5Mss4Fr9BQ11'
   - light: 20
     sight: 20
@@ -19318,6 +20098,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.K7AKafyHPPAn655D'
   - light: 20
     sight: 20
@@ -19339,6 +20120,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.00RlqCTVxLIfUf7g'
   - light: 20
     sight: 20
@@ -19371,6 +20153,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.NUPWa2KxngBiBL1o'
   - light: 20
     sight: 20
@@ -19392,6 +20175,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.fGOHkstRC6e1v1hj'
   - light: 20
     sight: 20
@@ -19413,6 +20197,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.3BL1b6HkXj49QLUv'
   - light: 20
     sight: 20
@@ -19445,6 +20230,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jeSPsaDzMmK5RvYx'
   - light: 20
     sight: 20
@@ -19466,6 +20252,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jx3XZ5kaxnpiHHAR'
   - light: 20
     sight: 20
@@ -19498,6 +20285,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jjeaZcZGO6yBsD4T'
   - light: 20
     sight: 20
@@ -19519,6 +20307,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Z8R1glxivnIv7s86'
   - light: 20
     sight: 20
@@ -19540,6 +20329,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.T9SiOGjksxDAgjEP'
   - light: 20
     sight: 20
@@ -19561,6 +20351,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.mFm1wtMdKkXE6O4T'
   - light: 20
     sight: 20
@@ -19582,6 +20373,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JbD1pvvon19nMEfg'
   - light: 20
     sight: 20
@@ -19603,6 +20395,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.axuE3bOoB8z1VNG2'
   - light: 20
     sight: 20
@@ -19635,6 +20428,7 @@ walls:
         secret: false
     doorSound: woodBasic
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wd1AwtRGLe1Zunrp'
   - light: 20
     sight: 20
@@ -19656,6 +20450,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.d28NC8ilrS6ngpce'
   - light: 20
     sight: 20
@@ -19677,6 +20472,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KdTbcQrBv4BLibSR'
   - light: 20
     sight: 20
@@ -19698,6 +20494,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JKKsU3xdKm4Nznxo'
   - light: 20
     sight: 20
@@ -19719,6 +20516,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.boAQJ0QFUAZNsfkl'
   - light: 20
     sight: 20
@@ -19740,6 +20538,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.iQBWvOXBGEy8Oe8d'
   - light: 20
     sight: 20
@@ -19761,6 +20560,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.btRugp9TLH5ek0bB'
   - light: 20
     sight: 20
@@ -19782,6 +20582,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.JfcmkElnGsPvHaGO'
   - light: 20
     sight: 20
@@ -19803,6 +20604,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HBp3sBYUSzIH20sL'
   - light: 20
     sight: 20
@@ -19835,6 +20637,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KWtzwGFTGMmhyosa'
   - light: 20
     sight: 20
@@ -19856,6 +20659,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.4D1ThktOiwzBgtug'
   - light: 20
     sight: 20
@@ -19877,6 +20681,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Mhxud7siQG6H1cIT'
   - light: 20
     sight: 20
@@ -19898,6 +20703,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.D9KLcxJ7BqlcOdYD'
   - light: 20
     sight: 20
@@ -19919,6 +20725,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9HNlHimoBaa7J2vy'
   - light: 20
     sight: 20
@@ -19940,6 +20747,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1kX6JXoRhjFpv9P2'
   - light: 20
     sight: 20
@@ -19961,6 +20769,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2uvOaQG9hsNc8L0o'
   - light: 20
     sight: 20
@@ -19982,6 +20791,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OxOg01QhhlKFF0yB'
   - light: 20
     sight: 20
@@ -20014,6 +20824,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8TTkD77i6hi2CkUz'
   - light: 20
     sight: 20
@@ -20035,6 +20846,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.2SMloKDsJ0MnW0Zx'
   - light: 20
     sight: 20
@@ -20056,6 +20868,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.dViT1Io00SNx9hyY'
   - light: 20
     sight: 20
@@ -20077,6 +20890,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SvoRMyC7jkt4qxnb'
   - light: 20
     sight: 20
@@ -20098,6 +20912,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.5yYKjdTLq5PuPsSS'
   - light: 20
     sight: 20
@@ -20119,6 +20934,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.uFxoHvqtVbCHhh6H'
   - light: 20
     sight: 20
@@ -20140,6 +20956,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.1PokNqeAIRxvxL6O'
   - light: 20
     sight: 20
@@ -20172,6 +20989,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BRQPdkRqGihdEUq6'
   - light: 20
     sight: 20
@@ -20193,6 +21011,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.YzxukHf1LYKXkEIm'
   - light: 20
     sight: 20
@@ -20225,6 +21044,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.lxjnauqJZL1wDzyX'
   - light: 20
     sight: 20
@@ -20246,6 +21066,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.BYy7DtMKip0V3V6T'
   - light: 20
     sight: 20
@@ -20278,6 +21099,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.DGJeBOBfVovmSdAo'
   - light: 20
     sight: 20
@@ -20299,6 +21121,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OWSObZMyUdfyfeFD'
   - light: 20
     sight: 20
@@ -20320,6 +21143,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.wNj1QmUzfFZjqbbk'
   - light: 20
     sight: 20
@@ -20341,6 +21165,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.HMTouUPXHBeVy6St'
   - light: 20
     sight: 20
@@ -20362,6 +21187,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.i7sgmNJlwF3vdlVi'
   - light: 20
     sight: 20
@@ -20383,6 +21209,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.TAFWofGfCucZLceA'
   - light: 20
     sight: 20
@@ -20404,6 +21231,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.9sG3YiGu399aWMwE'
   - light: 20
     sight: 20
@@ -20425,6 +21253,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rikIXzneRtMyKsSD'
   - light: 20
     sight: 20
@@ -20446,6 +21275,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WmXep8OJpxFRHZus'
   - light: 20
     sight: 20
@@ -20467,6 +21297,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MwDL6hQ7pJBbtdNA'
   - light: 20
     sight: 20
@@ -20488,6 +21319,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.xE0g0Nl05091pArJ'
   - light: 20
     sight: 20
@@ -20509,6 +21341,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gEs2pyWGJ03jplh5'
   - light: 20
     sight: 20
@@ -20530,6 +21363,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.btQ50UVlwW4pyD3D'
   - light: 20
     sight: 20
@@ -20551,6 +21385,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.rBMTMlf2nUXU9thI'
   - light: 20
     sight: 20
@@ -20572,6 +21407,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.E8WpfgElAPav9hYJ'
   - light: 20
     sight: 20
@@ -20593,6 +21429,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.IeDEVHLQgXgfv91e'
   - light: 20
     sight: 20
@@ -20614,6 +21451,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Bo7llvxHeqyelFRs'
   - light: 20
     sight: 20
@@ -20635,6 +21473,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MKtey0DK1j55yVL5'
   - light: 20
     sight: 20
@@ -20656,6 +21495,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.L32f3tTv78Z2FGhD'
   - light: 20
     sight: 20
@@ -20688,6 +21528,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gSuvhUODX93ZGhHy'
   - light: 20
     sight: 20
@@ -20709,6 +21550,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.G6v0SNifiPim8mBL'
   - light: 20
     sight: 20
@@ -20730,6 +21572,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gUsSa3G5OulbZz8S'
   - light: 20
     sight: 20
@@ -20751,6 +21594,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.RcQHKflexO6hF3nB'
   - light: 20
     sight: 20
@@ -20772,6 +21616,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.ssy0hl2xNS1avq3F'
   - light: 20
     sight: 20
@@ -20804,6 +21649,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.MnojsiGWogYxO2ms'
   - light: 20
     sight: 20
@@ -20825,6 +21671,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.j70LIWl78Ya20PPF'
   - light: 20
     sight: 20
@@ -20846,6 +21693,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.OVyWO33999trtq9M'
   - light: 20
     sight: 20
@@ -20878,6 +21726,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vSwEAZG68qZwzKHW'
   - light: 20
     sight: 20
@@ -20899,6 +21748,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.gsGbbXqzI5BJwsRl'
   - light: 20
     sight: 20
@@ -20920,6 +21770,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.F0FDDOeODU5hBWb6'
   - light: 20
     sight: 20
@@ -20941,6 +21792,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.nMC7OCqbhUlN0t6Q'
   - light: 20
     sight: 20
@@ -20973,6 +21825,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.7WOq1lZ7pqzfTOd8'
   - light: 20
     sight: 20
@@ -20994,6 +21847,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.vuF4WavJBUzJXJG2'
   - light: 20
     sight: 20
@@ -21015,6 +21869,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Td8qQnZHoOAeQ4GV'
   - light: 20
     sight: 20
@@ -21047,6 +21902,7 @@ walls:
         secret: false
     doorSound: woodHeavy
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.bDi6QeNglAe3uwJT'
   - light: 20
     sight: 20
@@ -21068,6 +21924,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WHacdg3gZLeqg5PT'
   - light: 20
     sight: 20
@@ -21089,6 +21946,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.SBG5eM1Fo02hCo98'
   - light: 20
     sight: 20
@@ -21110,6 +21968,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.EI9X9HIgvRgHzqMC'
   - light: 20
     sight: 20
@@ -21131,6 +21990,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.Of0U9dUL6CnrkbCj'
   - light: 20
     sight: 20
@@ -21152,6 +22012,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.KGJVr2GOnNf178pV'
   - light: 20
     sight: 20
@@ -21173,6 +22034,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.8vPa9g6VHxPFbWfn'
   - light: 20
     sight: 20
@@ -21194,6 +22056,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.jFnOOPEkO4YIECbu'
   - light: 20
     sight: 20
@@ -21215,6 +22078,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.LqgPccXYaHB61ljm'
   - light: 20
     sight: 20
@@ -21236,6 +22100,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.um6CCGoOo1ArMN8H'
   - light: 20
     sight: 20
@@ -21257,6 +22122,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.WscaFQ4vhp4FNOlu'
   - light: 20
     sight: 20
@@ -21278,6 +22144,7 @@ walls:
       attenuation: false
     flags: {}
     animation: null
+    levels: []
     _key: '!scenes.walls!xz8CMsXYapSJzHeE.yT4gZEU0hWrd2RrH'
 playlist: null
 playlistSound: null
@@ -21300,7 +22167,7 @@ _stats:
   compendiumSource: Compendium.world.reliquesunion-scenes.Scene.cpv45zbVTFLTaujU
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.365'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1773013763387
@@ -21313,4 +22180,14 @@ _id: xz8CMsXYapSJzHeE
 active: false
 navOrder: 0
 sort: 150000
+levels:
+  - defaultLevel0000
+shiftX: 5
+shiftY: -7
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
 _key: '!scenes!xz8CMsXYapSJzHeE'
+templates: []

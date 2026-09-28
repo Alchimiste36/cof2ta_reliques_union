@@ -1,0 +1,118 @@
+folder: JaxbYmoiWn6tPjgX
+name: Anneau de Vigueur du Combattant
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/divers/glanae_anneau_vigueur_combattant.webp
+_id: bSi2AuDma43KFLTu
+system:
+  description: >-
+    <p>Cette large chevalière en métal mat est sertie d'une pierre ambrée. A
+    l'intérieur, des runes naines magiques sont gravées avec
+    délicatesse.</p><p>Grâce à cet anneau, le porteur peut, <strong>une fois par
+    jour par une action de mouvement, obtenir (Niveau*3)+CON PV
+    temporaires</strong>. Ces Points de Vie temporaires sont les premiers à être
+    retranchés en cas de dégâts. <strong>Les PV temporaires s'estompent après
+    2d4 heures</strong> s'ils ne sont pas perdus.</p><p>Lorsqu'il perd les PV
+    temporaires, si le porteur tombe à 0 PV ou moins, il tombe inconscient ou
+    mort instantanément.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Thonur</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 3600
+    unit: pa
+  rarity: rare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.bSi2AuDma43KFLTu
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: m
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.bSi2AuDma43KFLTu
+          subtype: attribute
+          target: hp
+          value: '@niv*3 +@con'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 4900000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790530088629
+  modifiedTime: 1790553122298
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!bSi2AuDma43KFLTu'

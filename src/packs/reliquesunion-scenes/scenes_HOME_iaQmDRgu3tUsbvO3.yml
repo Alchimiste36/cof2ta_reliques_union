@@ -2,20 +2,6 @@ folder: null
 name: HOME
 navigation: false
 navOrder: 0
-background:
-  src: modules/cof2ta_reliques_union/assets/ru_scenes/home_page.webp
-  anchorX: 0
-  anchorY: 0
-  offsetX: 6
-  offsetY: 38
-  fit: fill
-  scaleX: 1
-  scaleY: 1
-  rotation: 0
-  tint: '#ffffff'
-  alphaThreshold: 0
-foreground: null
-foregroundElevation: null
 thumb: modules/cof2ta_reliques_union/assets/scenes/l9Vu1bh3Wn4ZaNS3-thumb.webp
 width: 5347
 height: 3019
@@ -23,8 +9,7 @@ padding: 0.15
 initial:
   x: 3945
   'y': 1917
-  scale: 0.2880838464266129
-backgroundColor: '#292929'
+  scale: 0.288
 grid:
   type: 2
   size: 60
@@ -36,11 +21,10 @@ grid:
   units: km
 tokenVision: false
 fog:
-  exploration: true
-  overlay: null
   colors:
     explored: null
     unexplored: null
+  mode: 1
 environment:
   darknessLevel: 0.17753536281214022
   darknessLock: false
@@ -81,12 +65,9 @@ tokens:
       src: worlds/test-v10/BlanchePaix/PJ/elarion_token.png
       anchorX: 0.5
       anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
       fit: contain
       scaleX: 1.2
       scaleY: 1.2
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
     lockRotation: true
@@ -130,7 +111,7 @@ tokens:
       brightness: 0
       saturation: 0
       contrast: 0
-    detectionModes: []
+    detectionModes: {}
     occludable:
       radius: 0
     ring:
@@ -180,6 +161,8 @@ tokens:
     locked: false
     _movementHistory: []
     _regions: []
+    depth: 1
+    level: defaultLevel0000
     _key: '!scenes.tokens!iaQmDRgu3tUsbvO3.MJNWwzLRSwqeRzm0'
 lights: []
 notes:
@@ -196,12 +179,9 @@ notes:
       src: icons/svg/book.svg
       anchorX: 0.5
       anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
       fit: contain
       scaleX: 1
       scaleY: 1
-      rotation: 0
       alphaThreshold: 0
     text: ''
     fontFamily: Signika
@@ -212,22 +192,21 @@ notes:
       levels:
         rangeTop: null
     _id: brOGd6IcsSue4P8R
+    author: null
+    levels: []
+    locked: false
     _key: '!scenes.notes!iaQmDRgu3tUsbvO3.brOGd6IcsSue4P8R'
 sounds: []
 regions: []
-templates: []
 tiles:
   - texture:
       src: >-
         modules\cof2ta_reliques_union\assets\ru_scenes\pings_notes\ping_violet.webp
-      anchorX: 0.5
-      anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
+      anchorX: 0
+      anchorY: 0
       fit: fill
       scaleX: 1
       scaleY: 1
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
     x: 3871
@@ -237,8 +216,8 @@ tiles:
     elevation: 0
     sort: 102
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     rotation: 0
     alpha: 1
     hidden: false
@@ -279,18 +258,16 @@ tiles:
         isBasement: false
         allWallBlockSight: true
     _id: BZRNJfuffNF6hfd6
+    levels: []
     _key: '!scenes.tiles!iaQmDRgu3tUsbvO3.BZRNJfuffNF6hfd6'
   - texture:
       src: >-
         modules\cof2ta_reliques_union\assets\ru_scenes\pings_notes\ping_bleu.webp
       scaleX: 1
       scaleY: 1
-      offsetX: 0
-      offsetY: 0
-      rotation: 0
       tint: '#ffffff'
-      anchorX: 0.5
-      anchorY: 0.5
+      anchorX: 0
+      anchorY: 0
       fit: fill
       alphaThreshold: 0.75
     x: 3990
@@ -302,8 +279,8 @@ tiles:
     hidden: false
     locked: false
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     video:
       loop: true
       autoplay: true
@@ -391,18 +368,16 @@ tiles:
       weather: false
     elevation: 0
     _id: V8z4fq8JLNxICtGJ
+    levels: []
     _key: '!scenes.tiles!iaQmDRgu3tUsbvO3.V8z4fq8JLNxICtGJ'
   - texture:
       src: >-
         modules\cof2ta_reliques_union\assets\ru_scenes\pings_notes\ping_rouge.webp
       scaleX: 1
       scaleY: 1
-      offsetX: 0
-      offsetY: 0
-      rotation: 0
       tint: '#ffffff'
-      anchorX: 0.5
-      anchorY: 0.5
+      anchorX: 0
+      anchorY: 0
       fit: fill
       alphaThreshold: 0.75
     x: 3660
@@ -414,8 +389,8 @@ tiles:
     hidden: true
     locked: false
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     video:
       loop: true
       autoplay: true
@@ -503,18 +478,16 @@ tiles:
       weather: false
     elevation: 0
     _id: EjHI05A6EWhJADLc
+    levels: []
     _key: '!scenes.tiles!iaQmDRgu3tUsbvO3.EjHI05A6EWhJADLc'
   - texture:
       src: >-
         modules\cof2ta_reliques_union\assets\ru_scenes\pings_notes\ping_jaune.webp
-      anchorX: 0.5
-      anchorY: 0.5
-      offsetX: 0
-      offsetY: 0
+      anchorX: 0
+      anchorY: 0
       fit: fill
       scaleX: 1
       scaleY: 1
-      rotation: 0
       tint: '#ffffff'
       alphaThreshold: 0.75
     x: 4038
@@ -524,8 +497,8 @@ tiles:
     elevation: 0
     sort: 101
     occlusion:
-      mode: 0
       alpha: 0
+      modes: []
     rotation: 0
     alpha: 1
     hidden: false
@@ -603,6 +576,7 @@ tiles:
         isBasement: false
         allWallBlockSight: true
     _id: Lc9bURwMuxaY1pvA
+    levels: []
     _key: '!scenes.tiles!iaQmDRgu3tUsbvO3.Lc9bURwMuxaY1pvA'
 walls: []
 playlist: null
@@ -626,7 +600,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.365'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1773006755645
@@ -636,4 +610,14 @@ navName: ''
 _id: iaQmDRgu3tUsbvO3
 active: false
 sort: 0
+levels:
+  - defaultLevel0000
+shiftX: 6
+shiftY: 38
+initialLevel: defaultLevel0000
+transition:
+  type: null
+  duration: 1500
+  activeOnly: false
 _key: '!scenes!iaQmDRgu3tUsbvO3'
+templates: []

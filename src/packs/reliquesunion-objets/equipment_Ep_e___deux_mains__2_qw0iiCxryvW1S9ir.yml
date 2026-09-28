@@ -1,0 +1,116 @@
+folder: JaxbYmoiWn6tPjgX
+name: Epée à deux mains +2
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_epee_deux_mains_2.webp
+_id: qw0iiCxryvW1S9ir
+system:
+  description: >-
+    <p>Une grande épée massive mais parfaitement équilibrée et gravée de
+    multiples runes simples mais efficaces. Elle donne un <strong>bonus de +2 en
+    Attaque et aux DM.</strong></p><p><strong>L'épée à deux mains</strong> est
+    une arme blanche à double tranchant (se distingue ainsi du sabre) constituée
+    des parties habituelles de l'épée européenne médiévale : pommeau, fusée,
+    garde, lame montée sur soie.</p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: epee-a-deux-mains
+  tags: []
+  subtype: weapon
+  martialCategory: greatSword
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 900
+    unit: pa
+  rarity: exotic
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d6 + @for +2
+          target:
+            type: single
+            number: '0'
+            scope: all
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  range:
+    unit: ''
+    value: null
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Orrick</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790541797415
+  modifiedTime: 1790553122294
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 2600000
+_key: '!items!qw0iiCxryvW1S9ir'

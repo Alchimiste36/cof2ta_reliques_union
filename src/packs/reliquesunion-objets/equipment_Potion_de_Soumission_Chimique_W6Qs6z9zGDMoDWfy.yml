@@ -1,0 +1,126 @@
+folder: JaxbYmoiWn6tPjgX
+name: Potion de Soumission Chimique
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/glanae_potion_soumission_chimique.webp
+_id: W6Qs6z9zGDMoDWfy
+system:
+  description: "<p>Cette petite fiole contient un liquide visqueux rosée. Son goût est piquant et assez mauvais pour la plupart des palets.\_Le consommateur perd une partie de sa faculté de jugement et de réflexion, le rendant plus facilement manipulable.</p><p>Le consommateur <strong>obtient un Dé Malus</strong> pour tous les tests qu'il effectue <strong>pour résister à une manipulation, une négociation, une intimidation, ...</strong> <strong>L'effet dure 1d4+1 Heure</strong>.</p><p>De plus, tous les sorts de la @UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.DnDhWcVc0TJuEqA8]{Voie de l'Envoutement} et le sort @UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.SBFxn79C8nPVk656]{Suggestion} de la @UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.YMshIWoU6Zfjs3lq]{Voie du Charme} ont <strong>une durée doublée</strong> et <strong>une Difficulté augmentée de +2 pour résister</strong> contre une personne ayant consommée une dose de Soumission Chimique.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: consumable
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+    max: null
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 360
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.W6Qs6z9zGDMoDWfy
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.W6Qs6z9zGDMoDWfy
+          subtype: malusDice
+          target: per
+          value: '0'
+          apply: others
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.W6Qs6z9zGDMoDWfy
+          subtype: malusDice
+          target: cha
+          value: '0'
+          apply: others
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.W6Qs6z9zGDMoDWfy
+          subtype: malusDice
+          target: int
+          value: '0'
+          apply: others
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: single
+            scope: all
+            number: '0'
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 4500000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790464382855
+  modifiedTime: 1790623678609
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!W6Qs6z9zGDMoDWfy'

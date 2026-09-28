@@ -1,0 +1,108 @@
+folder: JaxbYmoiWn6tPjgX
+name: Dague +1 de Brûlure
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_dague_1_brulure.webp
+_id: oZkrLzcYy3xZZN7j
+system:
+  description: "<p>Cette petite dague est très belle mais elle n'en est pas moins effrayante pour les ennemis.</p><p>Elle <strong>gagne\_+1 en Attaque et aux DM et inflige +1d4° DM de feu</strong> à la cible.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: weapon
+  tags: []
+  martialCategory: dagger
+  damagetype: slashing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 3200
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.oZkrLzcYy3xZZN7j
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4 +1 +1d4°
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 4600000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790464080720
+  modifiedTime: 1790553122298
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!oZkrLzcYy3xZZN7j'

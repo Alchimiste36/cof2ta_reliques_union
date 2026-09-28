@@ -1,0 +1,102 @@
+folder: JaxbYmoiWn6tPjgX
+name: Laisse Électrique
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/divers/glanae_laisse_electrique.webp
+_id: 42pqsr7k5WWsSsNI
+system:
+  description: >-
+    <p>Ce collier en cuir, parcouru de pièces métalliques, est relié à une fine
+    chaine terminée par une pierre gravée d'une série de runes
+    magiques.</p><p>Lorsque l'on installe le collier sur une partie du corps
+    (cou, tête, membre...), à même la peau, et qu'on frotte les runes avec les
+    doigts, une décharge électrique parcourt le porteur.</p><p>La décharge
+    <strong>inflige 2d4+2 DM d'électricité au porteur maximum 1
+    fois/round.</strong></p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 350
+    unit: pa
+  rarity: exotic
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.42pqsr7k5WWsSsNI
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 2d4+2
+          target:
+            type: single
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 1100000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790551583708
+  modifiedTime: 1790553122291
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!42pqsr7k5WWsSsNI'

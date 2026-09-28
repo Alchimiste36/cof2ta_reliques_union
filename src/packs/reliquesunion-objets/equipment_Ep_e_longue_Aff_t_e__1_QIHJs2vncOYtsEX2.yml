@@ -1,0 +1,117 @@
+folder: JaxbYmoiWn6tPjgX
+name: Epée longue Affûtée +1
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_epee_longue_affutee_1.webp
+_id: QIHJs2vncOYtsEX2
+system:
+  description: >-
+    <p>Cette belle épée longue est gravée de quelques runes simples.</p><p>Elle
+    donne un <strong>bonus de +1 en Attaque et aux DM</strong>. De plus, elle
+    permet <strong>d'augmenter la plage de critique de +1 et d'infliger +1d4° DM
+    en cas de réussite critique</strong>.</p>
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: epee-longue
+  tags: []
+  subtype: weapon
+  martialCategory: longSword
+  damagetype: slashing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 4200
+    unit: ''
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d8 + @for +1
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
+            statuses: []
+            duration: '0'
+            unit: instant
+          halfDmgOnSave: true
+      modifiers: []
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Edric</strong></p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790542832047
+  modifiedTime: 1790553122293
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+sort: 2300000
+_key: '!items!QIHJs2vncOYtsEX2'

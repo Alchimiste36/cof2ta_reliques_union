@@ -1,0 +1,193 @@
+folder: JaxbYmoiWn6tPjgX
+name: Chakram de Force
+type: equipment
+img: modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_chakram_force.webp
+_id: qyzUw3blEHTNKj1J
+system:
+  description: "<p>Cette arme de duel est gravée de runes magique.</p><p class=\"MsoNormal\">Elle ajoute\_<strong>+1d4° DM de force</strong>\_à chaque attaque et obtient <strong>un bonus de\_+2 ATT et DM</strong>.</p><ul><li><p class=\"MsoNormal\"><strong>Champs de Force (L) :</strong>\_l'utilisateur <strong>gagne +3 DEF pendant un tour</strong>.</p></li><li><p class=\"MsoNormal\"><strong>Percussion de force (L) :</strong>\_En percutant les deux chakram l'un contre l'autre, une onde de choc percute toutes les cibles situées <strong>sur un arc de 180°</strong> devant l'utilisateur sur une portée <strong>de 3 cases</strong>. Les cibles sont <strong>repoussées de 1d6 cases et subissent 1d4° DM de force</strong> (n'appliquer pas la RD). Une fois par combat.</p></li></ul>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: ''
+  subtype: weapon
+  tags:
+    - legere
+  martialCategory: swiftblade
+  damagetype: slashing
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 5000
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.qyzUw3blEHTNKj1J
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +1d4° +@for +2
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.qyzUw3blEHTNKj1J
+      indice: 1
+      label: Champs de Force
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.qyzUw3blEHTNKj1J
+          subtype: combat
+          target: def
+          value: '3'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.qyzUw3blEHTNKj1J
+      indice: 2
+      label: Percussion de force
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 1d4°
+          target:
+            type: multiple
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 4700000
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790529597498
+  modifiedTime: 1790553122298
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!qyzUw3blEHTNKj1J'

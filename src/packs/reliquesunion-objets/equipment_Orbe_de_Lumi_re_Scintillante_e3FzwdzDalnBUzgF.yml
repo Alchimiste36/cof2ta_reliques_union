@@ -1,0 +1,162 @@
+folder: JaxbYmoiWn6tPjgX
+name: Orbe de Lumière Scintillante
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/divers/glanae_orbe_scintillante.webp
+_id: e3FzwdzDalnBUzgF
+system:
+  description: "<p>Trouvé dans la cité de Glanae'Reth, cet orbe était posé dans la main d'une statue représentant une Matrone Elfe Exsangue.\_L'orbe projette, autour de lui, une lumière multicolore vibrante et bougeant en tout sens créant un effet optique assez joli mais hypnotisant.</p><p><strong>Lorsque l'on fixe pendant une minute</strong> la lumière de l'orbe, on ressent un sentiment de vide et de calme se traduisant par <strong>une perte temporaire de -6 en PER et INT.</strong> Ces points reviennent à raison de <strong>1 point de chaque caractéristique par heure</strong> après la fin de la vision de la lumière de l'orbe.</p><p>Si une cible est mise en contact avec la lumière de l'orbe pendant 6h minimum (enfermé dans une pièce baignée par la lumière de l'orbe, par exemple), <strong>elle perd les 6 points en PER et INT temporaire</strong> comme l'effet précédent mais, en plus, répondra à des ordres simples plus facilement <strong>comme s'il était soumis au sort\_@UUID[Compendium.cof2ta_reliques_union.cof2ta-objets.Item.RSEg3oO03Ok34Kwr]{Injonction}</strong>. L'effet dure <strong>3d4+1 heures</strong> à partir du moment où la cible n'est plus en contact avec la lumière de l'orbe.</p><p>La cible peut résister à cet effet en réussissant un test de <strong>INT (Arcanes) Diff.15</strong>. Il peut refaire un test tous les jours tant qu'il est sous l'effet de l'orbe.</p>"
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Les Caporaux, Lieutenants et les femelles de la Cité de
+    Glanae'Reth sont immunisés aux effets des Orbes de Lumière
+    Scintillantes.</strong></p>
+  subtype: misc
+  tags: []
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 25000
+    unit: pa
+  rarity: unique
+  equipped: false
+  container: null
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range: null
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.e3FzwdzDalnBUzgF
+      indice: 0
+      label: Sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: '16'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
+          target:
+            type: none
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.e3FzwdzDalnBUzgF
+      indice: 1
+      label: Appliquer les effets
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: debuff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.e3FzwdzDalnBUzgF
+          subtype: ability
+          target: per
+          value: '-6'
+          apply: others
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.e3FzwdzDalnBUzgF
+          subtype: ability
+          target: int
+          value: '-6'
+          apply: others
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790620823450
+  modifiedTime: 1790621625195
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!e3FzwdzDalnBUzgF'
