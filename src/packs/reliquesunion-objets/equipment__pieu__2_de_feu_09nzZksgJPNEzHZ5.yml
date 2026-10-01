@@ -1,4 +1,4 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Épieu +2 de feu
 type: equipment
 img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_feu.webp
@@ -75,7 +75,7 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -83,6 +83,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
     - source: Actor.fTbuMNahY2sBxbQd.Item.97EUctq97DYlnLUw
       indice: 1
@@ -108,6 +109,7 @@ system:
           value: '2'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
       resolvers: []
     - source: Actor.fTbuMNahY2sBxbQd.Item.97EUctq97DYlnLUw
       indice: 2
@@ -134,11 +136,11 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 3d6 +1d4° +2
+            formula: 3d6 +3d4° +2
           target:
             type: single
-            number: 0
             scope: all
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -146,6 +148,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
 effects: []
 flags: {}
@@ -153,15 +156,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1771890060484
-  modifiedTime: 1772924804461
+  modifiedTime: 1790717162743
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: 09nzZksgJPNEzHZ5
-sort: 1800000
+sort: -300000
 _key: '!items!09nzZksgJPNEzHZ5'

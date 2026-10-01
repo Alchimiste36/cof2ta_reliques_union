@@ -1,7 +1,8 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Bâton ferré d'apaisement
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_glace.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_apaisement.webp
 system:
   description: >-
     <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
@@ -75,7 +76,7 @@ system:
             formula: 1d6 + @for
           target:
             type: none
-            number: 0
+            number: '0'
             scope: all
           hasAttackSuccessThreshold: false
           additionalEffect:
@@ -84,6 +85,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
     - source: Actor.dEFsexceQ4AhgJf1.Item.2f0S63EL4o8ir34W
       indice: 1
@@ -105,10 +107,13 @@ system:
         - type: save
           saveAbility: con
           saveDifficulty: '15'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -122,7 +127,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
   range:
@@ -142,15 +146,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772219830152
-  modifiedTime: 1772924804461
+  modifiedTime: 1790717238256
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: ux2J1WLq4wgV0eGk
-sort: 3000000
+sort: -250000
 _key: '!items!ux2J1WLq4wgV0eGk'

@@ -170,7 +170,7 @@ system:
       max: null
       value: 6
     mana:
-      base: 2
+      base: 5
       ability: per
       bonuses:
         sheet: 0
@@ -197,7 +197,10 @@ system:
       public: <p>Mâle - 37 ans</p>
     appearance:
       private: ''
-      public: ''
+      public: >-
+        <img
+        src="modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/kakata_total.webp"
+        width="200" height="200">
     notes:
       private: ''
       public: ''
@@ -3153,7 +3156,130 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!0zLeG9iYDxAcg6Sk.XTIw9R5pMbXlfYBS'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Rapière de brumes +2
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_brumes.webp
+    system:
+      description: >-
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups
+        d'estoc.</p><p><strong>Arme légère, seuil de critique
+        19-20</strong></p><hr><p><strong>Arme magique de Centaure -
+        Ka'Kata</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM</p></li><li><p>sur un résultat de 15 à 20 sur le jet d'attaque, la
+        cible est aveuglée pendant 1d4 rounds.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 850
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk.Item.LWqqcx4YmQh9p2zk
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - blind
+                duration: 1d4
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7wNK0c1XqO9l5EsX
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790716769600
+      modifiedTime: 1790716769633
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: LWqqcx4YmQh9p2zk
+    sort: -50000
+    _key: '!actors.items!0zLeG9iYDxAcg6Sk.LWqqcx4YmQh9p2zk'
+  - folder: htrIbDAC1HkPdjMB
     name: Armure de cuir renforcé +1
     type: equipment
     img: >-
@@ -3196,6 +3322,8 @@ items:
       defense: 3
       range: null
       magicalDefense: 1
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3203,138 +3331,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9nqOtzrZHs3509dS
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924554145
-      modifiedTime: 1772924554145
+      systemVersion: 2.3.12
+      createdTime: 1790716797812
+      modifiedTime: 1790716797812
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: Clw1OudOqrtWeW2h
-    sort: 3900000
-    _key: '!actors.items!0zLeG9iYDxAcg6Sk.Clw1OudOqrtWeW2h'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Rapière de brumes +2
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_brumes.webp
-    system:
-      description: >-
-        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
-        à la lame flexible, destinée essentiellement aux coups
-        d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
-        Ka'Kata</strong></p><ul><li><p>Bonus de +2 en Attaque et
-        DM</p></li><li><p>sur un résultat de 15 à 20 sur le jet d'attaque, la
-        cible est aveuglée pendant 1d4 rounds.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: rapiere
-      tags:
-        - legere
-      subtype: weapon
-      martialCategory: rapier
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 850
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.0zLeG9iYDxAcg6Sk.Item.EDk4jFVklHi3u1FJ
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: true
-              attackSuccessThreshold: 15
-              additionalEffect:
-                active: true
-                applyOn: success
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses:
-                  - blind
-                duration: 1d4
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7wNK0c1XqO9l5EsX
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924562702
-      modifiedTime: 1772924562746
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: EDk4jFVklHi3u1FJ
-    sort: 3700000
-    _key: '!actors.items!0zLeG9iYDxAcg6Sk.EDk4jFVklHi3u1FJ'
+    _id: iwd0IY6mbbGKS0wX
+    sort: 25000
+    _key: '!actors.items!0zLeG9iYDxAcg6Sk.iwd0IY6mbbGKS0wX'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
@@ -3343,11 +3351,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.sKhBqPRt8ltRfoIj
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772924555491
+  modifiedTime: 1790719625616
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

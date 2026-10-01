@@ -1,6 +1,6 @@
 name: Te'Wikitoria
 type: character
-img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/tewhikitoria.webp
+img: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/tewikitoria.webp
 system:
   abilities:
     agi:
@@ -170,7 +170,7 @@ system:
       max: null
       value: 5
     mana:
-      base: 3
+      base: 6
       ability: per
       bonuses:
         sheet: 0
@@ -230,8 +230,7 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: >-
-      modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/tewhikitoria_token.webp
+    src: modules/cof2ta_reliques_union/assets/ru_acteurs/arkanov/tewikitoria.webp
     anchorX: 0.5
     anchorY: 0.5
     fit: contain
@@ -3350,15 +3349,16 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!HMpPEtlwshgIOybw.UQgyWKcOrBjnRE87'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Arc composite +2 de feu
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_30.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_composite_feu_2.webp
     system:
       description: >-
-        <p>Score minimum en FOR requis : 10.</p><hr /><p><strong>Arme magique de
-        Centaure - Te'Whikitoria</strong></p><ul><li><p>Bonus de +2 en Attaque
-        et DM.</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
+        <p>Score minimum en FOR requis : 10.</p><hr><p><strong>Arme magique de
+        Centaure - Te'Wikitoria</strong></p><ul><li><p>Bonus de +2 en Attaque et
+        DM.</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
       source: ''
       origin: Livre du Joueur p.158
       slug: arc-court
@@ -3402,7 +3402,7 @@ items:
         value: 50
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HMpPEtlwshgIOybw.Item.UULecjugjeb0M0cx
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HMpPEtlwshgIOybw.Item.u0ur4XFWCsAuygDh
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3431,7 +3431,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3439,7 +3439,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3447,19 +3450,19 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.44OoOPgueJGrPySv
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772923995612
-      modifiedTime: 1772924000876
+      systemVersion: 2.3.12
+      createdTime: 1790716308066
+      modifiedTime: 1790716337827
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: UULecjugjeb0M0cx
-    sort: 4600000
-    _key: '!actors.items!HMpPEtlwshgIOybw.UULecjugjeb0M0cx'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: u0ur4XFWCsAuygDh
+    sort: 350000
+    _key: '!actors.items!HMpPEtlwshgIOybw.u0ur4XFWCsAuygDh'
+  - folder: htrIbDAC1HkPdjMB
     name: Gambison +2
     type: equipment
     img: >-
@@ -3467,7 +3470,7 @@ items:
     system:
       description: >-
         <p><strong>Armure magique de Centaure -
-        Te'Whikitoria</strong></p><ul><li><p>Bonus de DEF magique
+        Te'Wikitoria</strong></p><ul><li><p>Bonus de DEF magique
         +2</p></li></ul>
       source: ''
       origin: Livre du Joueur p.160
@@ -3503,6 +3506,8 @@ items:
       defense: 1
       range: null
       magicalDefense: 2
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3510,18 +3515,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ZK5o8mI2xEEXyGrK
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924009150
-      modifiedTime: 1772924011642
+      systemVersion: 2.3.12
+      createdTime: 1790716351384
+      modifiedTime: 1790716364762
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: limQy1H3LoSkgItC
-    sort: 4000000
-    _key: '!actors.items!HMpPEtlwshgIOybw.limQy1H3LoSkgItC'
+    _id: N7y39NdUi0zjyy1L
+    sort: 300000
+    _key: '!actors.items!HMpPEtlwshgIOybw.N7y39NdUi0zjyy1L'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3530,11 +3535,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.eSGDofhCwvuGg4dS
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1790715521359
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

@@ -1,0 +1,203 @@
+folder: JB8Cj2PaJXDXQq8t
+name: Marteau de guerre affaiblissant +2
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_marteau_guerre_affaiblissant_2.webp
+system:
+  description: "<p>Ce marteau n'est pas bien long ni aussi impressionnant que les gros et lourds marteaux à deux mains de certains combattants nains. Il ressemble plus à un marteau de forge mais quand on sait l'utiliser, il devient incroyable dans un combat.</p><p>La marteu de guerre donne un bonus de +2 en Attaque et aux DM et il inflige +1d4° DM de poison.\_</p><h4>Pouvoirs d'Arme Traditionnelle naine :\_</h4><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Affaiblissement (coût : 1 PM - Action Limitée) :</span></strong></span> la prochaine attaque qui touche inflige le statut <strong>Affaibli sur la cible et 1d4° DM pendant 1d4+CON rounds</strong>. La cible peut réduire les DM de moitié et la durée à un seul round en <strong>réussissant un test de CON Diff.15</strong>.</p><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Immunité aux poisons (coût : 2 PM) :</span></strong></span> lorsqu'il active ce pouvoir, l'utilisateur reçoit une <strong>immunité totale aux poisons naturels et magiques pendant CON heures</strong>.</p>"
+  source: ''
+  origin: Livre du Joueur p.157
+  slug: marteau
+  tags: []
+  subtype: weapon
+  martialCategory: hammer
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 22000
+    unit: pa
+  rarity: unique
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.BxOAk452unZ7zWOG
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 + @for +1d4° +2
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.wggBjZ1rBVxQy452
+      indice: 1
+      label: Affaiblissement (1PM)
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: l
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          dmg:
+            formula: 1d4°
+          halfDmgOnSave: true
+          target:
+            type: single
+            scope: all
+            number: '0'
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 1d4°
+            elementType: poison
+            statuses:
+              - weakened
+            duration: 1d4 +@con
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          hasAttackSuccessThreshold: false
+      modifiers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.wggBjZ1rBVxQy452
+      indice: 2
+      label: Immunité aux poisons (2 PM)
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.wggBjZ1rBVxQy452
+          subtype: state
+          target: poisonImmunity
+          value: '0'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: self
+            number: '0'
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - other
+            duration: '0'
+            unit: unlimited
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          halfDmgOnSave: true
+          hasAttackSuccessThreshold: false
+  range:
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Jasnar</strong></p><p>C'est peut-être l'arme la plus puissante des
+    captifs de Glanae'Reth mais Jasnar ne s'en séparera pas facilement.</p>
+  container: null
+effects: []
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790802809264
+  modifiedTime: 1790803983966
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: wggBjZ1rBVxQy452
+sort: 0
+_key: '!items!wggBjZ1rBVxQy452'

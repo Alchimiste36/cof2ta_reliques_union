@@ -3546,23 +3546,23 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 400000
     _key: '!actors.items!G9TJ6YEFAnSIbNAM.jXwpP8HSmIUgrCyE'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Armure de cuir renforcé de résistance +1
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Hache affutée +2 de feu
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cuir_renforcee_resistance.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_affutee_feu.webp
     system:
       description: >-
-        <p><strong>Armure magique de Centaure - Toa</strong></p><ul><li><p>Offre
-        une résistance contre les types de DM physiques et élémentaires
-        (50%)</p></li><li><p>Bonus de DEF magique +1</p></li></ul>
+        <p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus
+        de +2 en Attaque et aux DM</p></li><li><p>Augmentation de la plage de
+        critique de 1</p></li><li><p>Bonus de +1d4° DM de feu.</p></li></ul>
       source: ''
-      origin: Livre du Joueur p.160
-      slug: cuir-renforce-broigne
+      origin: Livre du Joueur p.157
+      slug: hache
       tags: []
-      subtype: armor
-      martialCategory: studdedLeather
-      damagetype: ''
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
       quantity:
         current: 1
         max: 1
@@ -3572,50 +3572,217 @@ items:
         max: null
         destroyIfEmpty: false
       weight:
-        value: 0
+        value: 1
         unit: kg
       price:
-        value: 700
+        value: 2400
         unit: pa
-      rarity: rare
+      rarity: veryRare
       equipped: true
       properties:
         equipable: true
         reloadable: false
         stackable: false
       usage:
-        oneHand: false
+        oneHand: true
         twoHand: false
-      actions: []
-      defense: 3
-      range: null
-      magicalDefense: 1
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.4WDm2kqcVWXKRjQ5
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for +1d4° +2
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
       compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.A4ok8eDqg16kl5lD
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.TZRn40RM77Mz1rsG
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924765369
-      modifiedTime: 1772924768001
+      systemVersion: 2.3.12
+      createdTime: 1790716460917
+      modifiedTime: 1790716464744
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 465FUlzA3INhUBux
-    sort: 4200000
-    _key: '!actors.items!G9TJ6YEFAnSIbNAM.465FUlzA3INhUBux'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: 4WDm2kqcVWXKRjQ5
+    sort: 312500
+    _key: '!actors.items!G9TJ6YEFAnSIbNAM.4WDm2kqcVWXKRjQ5'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Hache affutée +2 de foudre
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_affutee_foudre_2.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus
+        de +2 en Attaque et aux DM</p></li><li><p>Augmentation de la plage de
+        critique de 1 et inflige +1d4° DM lors d'un
+        critique.</p></li><li><p>Bonus de +1d4° DM de foudre.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 2400
+        unit: pa
+      rarity: veryRare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.zlNEq9uh6n1uXbiM
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for +1d4° +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: critical
+                formulaType: damage
+                formula: +1d4°
+                elementType: ''
+                statuses: []
+                duration: '0'
+                unit: instant
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vIzvtNC07L34Z3Wp
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790716462894
+      modifiedTime: 1790716462933
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: zlNEq9uh6n1uXbiM
+    sort: 318750
+    _key: '!actors.items!G9TJ6YEFAnSIbNAM.zlNEq9uh6n1uXbiM'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Lance de parade +2
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_parade.webp
     system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus de +2 en DEF</p></li><li><p>Bonus de +2 en Attaque et aux DM</p></li></ul>"
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr><p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus de +2 en DEF</p></li><li><p>Bonus de +2 en Attaque et aux DM</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.157
       slug: lance
@@ -3659,7 +3826,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.KlolgaxJ3ZLnLsVE
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.l3CtB0fAvs59qXPH
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3688,7 +3855,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3696,9 +3863,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.KlolgaxJ3ZLnLsVE
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.l3CtB0fAvs59qXPH
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3727,7 +3895,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3735,9 +3903,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.KlolgaxJ3ZLnLsVE
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.l3CtB0fAvs59qXPH
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3766,7 +3935,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3774,9 +3943,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.KlolgaxJ3ZLnLsVE
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.l3CtB0fAvs59qXPH
           indice: 3
           label: ''
           chatFlavor: ''
@@ -3795,13 +3965,16 @@ items:
           modifiers:
             - type: equipment
               source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.KlolgaxJ3ZLnLsVE
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.l3CtB0fAvs59qXPH
               subtype: combat
               target: def
               value: '2'
               apply: self
               additionalInfos: ''
+              choiceGroup: 0
           resolvers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3809,35 +3982,35 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.1UoU0EskHYrk3gSW
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924775678
-      modifiedTime: 1772924776167
+      systemVersion: 2.3.12
+      createdTime: 1790716480719
+      modifiedTime: 1790716501883
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: KlolgaxJ3ZLnLsVE
-    sort: 4300000
-    _key: '!actors.items!G9TJ6YEFAnSIbNAM.KlolgaxJ3ZLnLsVE'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Hache affutée +2 de feu
+    _id: l3CtB0fAvs59qXPH
+    sort: 359375
+    _key: '!actors.items!G9TJ6YEFAnSIbNAM.l3CtB0fAvs59qXPH'
+  - folder: htrIbDAC1HkPdjMB
+    name: Armure de cuir renforcé de résistance +1
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_affutee_feu.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cuir_renforcee_resistance.webp
     system:
       description: >-
-        <p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus
-        de +2 en Attaque et aux DM</p></li><li><p>Augmentation de la plage de
-        critique de 1</p></li><li><p>Bonus de +1d4° DM de feu.</p></li></ul>
+        <p><strong>Armure magique de Centaure - Toa</strong></p><ul><li><p>Offre
+        une résistance contre les types de DM physiques et élémentaires
+        (50%)</p></li><li><p>Bonus de DEF magique +1</p></li></ul>
       source: ''
-      origin: Livre du Joueur p.157
-      slug: hache
+      origin: Livre du Joueur p.160
+      slug: cuir-renforce-broigne
       tags: []
-      subtype: weapon
-      martialCategory: axe
-      damagetype: slashing
+      subtype: armor
+      martialCategory: studdedLeather
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3847,199 +4020,45 @@ items:
         max: null
         destroyIfEmpty: false
       weight:
-        value: 1
+        value: 0
         unit: kg
       price:
-        value: 2400
+        value: 700
         unit: pa
-      rarity: veryRare
+      rarity: rare
       equipped: true
       properties:
         equipable: true
         reloadable: false
         stackable: false
       usage:
-        oneHand: true
+        oneHand: false
         twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.rh537luLcU5KsmxH
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 + @for +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      actions: []
+      defense: 3
+      range: null
+      magicalDefense: 1
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
       compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.TZRn40RM77Mz1rsG
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.A4ok8eDqg16kl5lD
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924798772
-      modifiedTime: 1772924861896
+      systemVersion: 2.3.12
+      createdTime: 1790716497404
+      modifiedTime: 1790716498704
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: rh537luLcU5KsmxH
-    sort: 4100000
-    _key: '!actors.items!G9TJ6YEFAnSIbNAM.rh537luLcU5KsmxH'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Hache affutée +2 de foudre
-    type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_hache_88.webp
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure - Toa</strong></p><ul><li><p>Bonus
-        de +2 en Attaque et aux DM</p></li><li><p>Augmentation de la plage de
-        critique de 1</p></li><li><p>Bonus de +1d4° DM de foudre.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: hache
-      tags: []
-      subtype: weapon
-      martialCategory: axe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 2400
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.G9TJ6YEFAnSIbNAM.Item.GL0MQDYeId2kyInW
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 + @for +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vIzvtNC07L34Z3Wp
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924857525
-      modifiedTime: 1772924857565
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: GL0MQDYeId2kyInW
-    sort: 400000
-    _key: '!actors.items!G9TJ6YEFAnSIbNAM.GL0MQDYeId2kyInW'
+    _id: DI1DoIGSyUzYcCG6
+    sort: 0
+    _key: '!actors.items!G9TJ6YEFAnSIbNAM.DI1DoIGSyUzYcCG6'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}

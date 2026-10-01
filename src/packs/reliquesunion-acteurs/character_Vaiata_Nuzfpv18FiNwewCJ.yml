@@ -3297,75 +3297,13 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!Nuzfpv18FiNwewCJ.VFoEBfmAJeV9jxZZ'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Targe de réception de projectiles
-    type: equipment
-    img: icons/equipment/shield/buckler-wooden-boss-brown.webp
-    _id: 9ZNtl2JOZJ58SRuw
-    system:
-      description: >-
-        <p><strong>Bouclier magique de Centaure -
-        Vaiata</strong></p><ul><li><p>Lorsque le porteur est la cible d'un
-        projectile, elle a droit à un test de PER difficulté 15 pour parer le
-        projectile avec le bouclier et ne subir aucun DM.</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: petit-bouclier
-      tags: []
-      subtype: shield
-      martialCategory: smallShield
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 2
-        unit: pa
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions: []
-      defense: 1
-      range: null
-      magicalDefense: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: Item.AFazTvARvVqVI4go
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!Nuzfpv18FiNwewCJ.9ZNtl2JOZJ58SRuw'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Couteau de lancer de retour
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_couteau_lancer_retour.webp
     system:
-      description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p><p>Lancer trois couteaux au titre d’un seul test d’attaque est possible. Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p><hr /><p><strong>Arme magique de Centaure - Vaiata</strong></p><ul><li><p>Le couteau revient en main par une action gratuite</p></li></ul>"
+      description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p><p>Lancer trois couteaux au titre d’un seul test d’attaque est possible. Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p><hr><p><strong>Arme magique de Centaure - Vaiata</strong></p><ul><li><p>Le couteau revient en main par une action gratuite</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.158
       slug: couteaux-de-lancer
@@ -3409,7 +3347,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.p4DhQTOiv9k7Atuj
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.dSdxF0vaHAYSXKpM
           indice: 0
           label: A distance
           chatFlavor: ''
@@ -3437,7 +3375,7 @@ items:
                 formula: 1d4
               target:
                 type: none
-                number: 0
+                number: '0'
                 scope: all
               additionalEffect:
                 active: false
@@ -3446,9 +3384,10 @@ items:
                 duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.p4DhQTOiv9k7Atuj
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.dSdxF0vaHAYSXKpM
           indice: 1
           label: Au contact
           chatFlavor: ''
@@ -3476,7 +3415,7 @@ items:
                 formula: 1d3
               target:
                 type: none
-                number: 0
+                number: '0'
                 scope: all
               additionalEffect:
                 active: false
@@ -3485,9 +3424,10 @@ items:
                 duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.p4DhQTOiv9k7Atuj
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.dSdxF0vaHAYSXKpM
           indice: 2
           label: 3 couteaux à distance
           chatFlavor: ''
@@ -3515,7 +3455,7 @@ items:
                 formula: 1d4 + @agi
               target:
                 type: none
-                number: 0
+                number: '0'
                 scope: all
               additionalEffect:
                 active: false
@@ -3524,7 +3464,10 @@ items:
                 duration: '0'
                 unit: round
               hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3532,19 +3475,19 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9cx9l663zI4TUx2m
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925034697
-      modifiedTime: 1772925034824
+      systemVersion: 2.3.12
+      createdTime: 1790716590418
+      modifiedTime: 1790716590522
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: p4DhQTOiv9k7Atuj
-    sort: 4200000
-    _key: '!actors.items!Nuzfpv18FiNwewCJ.p4DhQTOiv9k7Atuj'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: dSdxF0vaHAYSXKpM
+    sort: 184375
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.dSdxF0vaHAYSXKpM'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Rapière +2
     type: equipment
     img: >-
@@ -3554,7 +3497,7 @@ items:
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups
         d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
+        19-20</strong></p><hr><p><strong>Arme magique de Centaure -
         Vaiata</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
         DM</p></li></ul>
       source: ''
@@ -3590,7 +3533,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.or2pBdV5dK6SkAaP
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.u43UfrbWYz7o6dBw
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3618,7 +3561,7 @@ items:
                 formula: 1d6 + @for +2
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3627,6 +3570,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3639,6 +3583,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3646,18 +3592,122 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Ww7gypgLKVw5RxOx
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925042895
-      modifiedTime: 1772925042934
+      systemVersion: 2.3.12
+      createdTime: 1790716613043
+      modifiedTime: 1790716613087
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: or2pBdV5dK6SkAaP
-    sort: 4700000
-    _key: '!actors.items!Nuzfpv18FiNwewCJ.or2pBdV5dK6SkAaP'
+    _id: u43UfrbWYz7o6dBw
+    sort: 178125
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.u43UfrbWYz7o6dBw'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Targe de réception de projectiles
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_targe_reception_projectiles.webp
+    system:
+      description: >-
+        <p><strong>Bouclier magique de Centaure -
+        Vaiata</strong></p><ul><li><p>Lorsque le porteur est la cible d'un
+        projectile, elle a droit à un test de PER difficulté 15 pour parer le
+        projectile avec le bouclier et ne subir aucun DM.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: petit-bouclier
+      tags: []
+      subtype: shield
+      martialCategory: smallShield
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 2
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.Nuzfpv18FiNwewCJ.Item.2LPBBICD5q9uEfEs
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '15'
+              dmg:
+                formula: ''
+              halfDmgOnSave: true
+              target:
+                type: self
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          conditions: []
+          modifiers: []
+      defense: 1
+      range: null
+      magicalDefense: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.AIhfg0WiyjEvtzdT
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790716627061
+      modifiedTime: 1790716627097
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 2LPBBICD5q9uEfEs
+    sort: 4300000
+    _key: '!actors.items!Nuzfpv18FiNwewCJ.2LPBBICD5q9uEfEs'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}

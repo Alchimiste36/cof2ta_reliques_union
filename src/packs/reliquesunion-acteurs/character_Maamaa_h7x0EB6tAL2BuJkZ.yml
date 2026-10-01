@@ -3154,16 +3154,16 @@ items:
       compendiumSource: Item.bwFlCTHBg9Fqa0JI
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      createdTime: 1790716169264
+      modifiedTime: 1790716169264
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 550000
+    sort: 200000
     _key: '!actors.items!h7x0EB6tAL2BuJkZ.vs1t6s4xZ4sMfqZX'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir
@@ -3375,21 +3375,22 @@ items:
       compendiumSource: Item.bwUmODTqsTqPbRr9
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      createdTime: 1790716169264
+      modifiedTime: 1790716169264
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 375000
+    sort: 100000
     _key: '!actors.items!h7x0EB6tAL2BuJkZ.5vyBEMmujSI91QNP'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Arc court +2
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_117.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_court_2.webp
     system:
       description: >-
         <p><strong>Arme magique de Centaure -
@@ -3438,7 +3439,7 @@ items:
         value: 30
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.tkIy2CLOQdE8XqjF
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.orNcRWesMYEGOlLH
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3466,7 +3467,7 @@ items:
                 formula: 1d6 +2
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3475,7 +3476,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3483,20 +3487,20 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.CwUpZNp6vg2gAj5b
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924114397
-      modifiedTime: 1772924137882
+      systemVersion: 2.3.12
+      createdTime: 1790716126538
+      modifiedTime: 1790716174748
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: tkIy2CLOQdE8XqjF
-    sort: 2475000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.tkIy2CLOQdE8XqjF'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Rapière Aiguisée de feu
+    _id: orNcRWesMYEGOlLH
+    sort: 500000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.orNcRWesMYEGOlLH'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Rapière Affutée de feu
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_feu_aiguisee.webp
@@ -3505,10 +3509,10 @@ items:
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups
         d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
+        19-20</strong></p><hr><p><strong>Arme magique de Centaure -
         Maamaa</strong></p><ul><li><p>Bonus de +1d4° DM de
-        feu</p></li><li><p>Augmentation de la plage de critique de
-        1</p></li></ul>
+        feu</p></li><li><p>Augmentation de la plage de critique de 1 et inflige
+        +1d4° DM lors d'un critique.</p></li></ul>
       source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
@@ -3542,7 +3546,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.AcF7izPYJAmDGuKA
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.mAkgSPG02Eg1O3tD
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3571,14 +3575,18 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
-                active: false
-                applyOn: success
+                active: true
+                applyOn: critical
+                formulaType: damage
+                formula: +1d4°
+                elementType: ''
                 statuses: []
                 duration: '0'
-                unit: round
+                unit: instant
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3591,6 +3599,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3598,20 +3608,20 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.3yGwPPr5v4GQCsbb
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924124590
-      modifiedTime: 1772924134837
+      systemVersion: 2.3.12
+      createdTime: 1790716155352
+      modifiedTime: 1790716173821
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: AcF7izPYJAmDGuKA
-    sort: 5100000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.AcF7izPYJAmDGuKA'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Rapière Aiguisée de glace
+    _id: mAkgSPG02Eg1O3tD
+    sort: 300000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.mAkgSPG02Eg1O3tD'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Rapière Affutée de glace
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_glace_aiguisee.webp
@@ -3620,10 +3630,10 @@ items:
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups
         d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
+        19-20</strong></p><hr><p><strong>Arme magique de Centaure -
         Maamaa</strong></p><ul><li><p>Bonus de +1d4° DM de
-        glace</p></li><li><p>Augmentation de la plage de critique de
-        1</p></li></ul>
+        glace</p></li><li><p>Augmentation de la plage de critique de 1 et
+        inflige +1d4° DM lors d'un critique.</p></li></ul>
       source: ''
       origin: Livre du Joueur p.157
       slug: rapiere
@@ -3657,7 +3667,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.OiTeF69KRTqTCfBo
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.h7x0EB6tAL2BuJkZ.Item.U7BB0A22KZ71zDFC
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3686,14 +3696,18 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
-                active: false
-                applyOn: success
+                active: true
+                applyOn: critical
+                formulaType: damage
+                formula: +1d4°
+                elementType: ''
                 statuses: []
                 duration: '0'
-                unit: round
+                unit: instant
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3706,6 +3720,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3713,18 +3729,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9RQSi7ZhhezzkG1P
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924126589
-      modifiedTime: 1772924126633
+      systemVersion: 2.3.12
+      createdTime: 1790716166551
+      modifiedTime: 1790716169264
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: OiTeF69KRTqTCfBo
-    sort: 4400000
-    _key: '!actors.items!h7x0EB6tAL2BuJkZ.OiTeF69KRTqTCfBo'
+    _id: U7BB0A22KZ71zDFC
+    sort: 400000
+    _key: '!actors.items!h7x0EB6tAL2BuJkZ.U7BB0A22KZ71zDFC'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}

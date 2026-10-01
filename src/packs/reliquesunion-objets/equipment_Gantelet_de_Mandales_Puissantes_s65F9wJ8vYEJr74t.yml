@@ -1,4 +1,4 @@
-folder: JaxbYmoiWn6tPjgX
+folder: JB8Cj2PaJXDXQq8t
 name: Gantelet de Mandales Puissantes
 type: equipment
 img: >-
@@ -9,7 +9,10 @@ system:
     <p>Ce gant renforcé par des plaques métalliques est gravé de runes
     puissantes qui iradient la main du porteur. Le gant permet de parer quelques
     attaques et augmente la force du porteur.</p><p>Il gagne <strong>un bonus de
-    +1 en DEF et de +2 FOR.</strong></p>
+    +1 en DEF et de +2 FOR.</strong></p><p>Un coup de gantelet de mandales
+    puissantes <strong>donne +1 en Attaque et aux DM</strong> ainsi que
+    l'équivalent de <strong>Affuté</strong> (plage de critique +1 et +1d4° DM en
+    cas de critique).</p>
   source: ''
   origin: ''
   slug: ''
@@ -80,10 +83,53 @@ system:
           additionalInfos: ''
           choiceGroup: 0
       resolvers: []
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.s65F9wJ8vYEJr74t
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +1'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d6 +@for +1
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: +1d4°
+            elementType: ''
+            statuses: []
+            duration: '0'
+            unit: instant
+          halfDmgOnSave: true
+      modifiers: []
   defense: null
   magicalDefense: null
 effects: []
-sort: 1900000
+sort: 2000000
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
@@ -93,7 +139,7 @@ _stats:
   systemId: co2
   systemVersion: 2.3.12
   createdTime: 1790544239708
-  modifiedTime: 1790553122292
+  modifiedTime: 1790802794720
   lastModifiedBy: MdLP35I2yaa8z7GV
   compendiumSource: null
   duplicateSource: null

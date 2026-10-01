@@ -51,9 +51,12 @@ system:
         - type: save
           saveAbility: agi
           saveDifficulty: '20'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: multiple
-            number: 20
+            number: '20'
             scope: all
           additionalEffect:
             active: true
@@ -68,7 +71,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
 name: Bombe aveuglante
@@ -81,11 +83,11 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1770780504729
-  modifiedTime: 1772238224276
+  modifiedTime: 1790694246245
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

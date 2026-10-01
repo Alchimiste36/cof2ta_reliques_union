@@ -1,0 +1,2453 @@
+name: Arié
+type: character
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/captifs/humain_arie.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    level: 1
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 8
+      value: 8
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ''
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    def:
+      base: 11
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    melee:
+      base: 2
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    ranged:
+      base: 2
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    magic:
+      base: 2
+      ability: int
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    crit:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    dr:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+  resources:
+    fortune:
+      base: 5
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 5
+    recovery:
+      base: 2
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 2
+    mana:
+      base: 0
+      ability: int
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 1
+  details:
+    biography:
+      private: >-
+        <p>Si elle survit à Glanae'Reth, Arié et Trevin s'uniront officiellement
+        et Arié transformera ses traumatismes en un force de caractère
+        incroyable. Elle s'affirmera rapidement avec de bonnes idées et une
+        analyse précise des situtations et des personnes. En quelques semaines,
+        elle prendra une place importante dans la cité libérée, à la Vallée de
+        Novrak ou à l'endroit où elle serait utile.</p><p>Un jour, Arié pourrait
+        devenir une femme importante et une réelle meneuse.</p>
+      public: >-
+        <p>21 ans - Humain - Femelle - Captive depuis 5 mois</p><p>Femme d'un
+        commerçant d'un village du Venkor en couple avec Trevin depuis
+        l'emprisonnement. Elle est très timide et traumatisée. D'après ses dires
+        elle aime ranger et organiser.</p><p>Arié sursaute au moindre bruit et
+        elle a souvent des crises de panique. Aux côtés de Trevin, elle se sent
+        protégée mais les tortures et les intimidations des elfes exsangues ont
+        brisés le mental de cette jeune humain de Kosland tant qu'elle est
+        enfermée.</p>
+    appearance:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    size: medium
+    languages:
+      - ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+  oldDistanceView: 0
+  otherCapacitiesPointsSpent: 0
+  companions: []
+prototypeToken:
+  name: Arié
+  displayName: 20
+  actorLink: true
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/captifs/humain_arie_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 1
+items:
+  - folder: OBPli02oRaBQq6Ee
+    name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: uQGdPjy9lu7bQt5Q
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.uQGdPjy9lu7bQt5Q
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 1600000
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.uQGdPjy9lu7bQt5Q'
+  - folder: QZKWGWu8512Lhphc
+    name: Humain du Mitan
+    type: feature
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain_mitan_token.webp
+    system:
+      description: "<h2>Humains\_du Mitan</h2><p>Les peuples du Mitan regroupent le royaume de\_Léhon, les cités-États du Tarascon, la\_ Lombardie\_ainsi que les peuples de l’Ourann septentrional.\_</p><p>Plus civilisés et raffinés que les Nordiques, ces\_communautés ont bâti de prestigieuses cités\_portuaires, des flottes marchandes prospères\_et ont élevé au rang d’art le commerce et la\_politique.</p><p>Marchands, diplomates, corsaires, espions ou\_occasionnellement chevaliers – pour les cités les\_plus ancrées dans les anciennes traditions –, les\_peuples du Mitan comptent sur les accords, les\_complots et la puissance de l’or.</p><h2>Les Humains</h2><p>Les Humains constituent un peuple très\_hétéroclite et très commun sur les Terres\_d’Arran. Leur installation se fait souvent\_au détriment des autres peuples. Ils ont colonisé\_les steppes nordiques hostiles pour fonder la cité\_d’Aspen en Borduria et ont rendu habitables les\_terres arides aux marges de la Terre des Ogres\_pour bâtir l’immense empire Assanide. Les forêts\_de Duhann et de Daëdenn cèdent chaque année\_de plus en plus de terrain au développement\_des cités-États de Tarascon et il n’y a guère\_que les Nains cloîtrés dans leurs imprenables\_forteresses-États qui ne semblent pas menacés\_par cette expansion. Pas encore en tout cas.</p><p>Les Humains n’ont certes pas la longévité\_des Elfes ni la robustesse des Nains, mais\_ils compensent par leur incroyable capacité\_d’adaptation et une fécondité impressionnante.</p><p>Capables du meilleur comme du pire, les\_sociétés humaines sont variées et il est impossible\_de les réduire à une définition générale. Les\_peuples d’Arran victimes de leur xénophobie\_n’ont souvent connu que les mauvais côtés de\_certaines communautés humaines. Mais d’autres\_peuplades, quelques frontières plus loin, vivent\_en respectant des valeurs et des traditions tout\_à fait inverses.</p><h4>Modificateurs des Humains</h4><p>Atout: <strong>aucun</strong></p><p>Faiblesse: <strong>aucun</strong></p><p>Âge de départ à l’aventure: <strong>18 ans et plus</strong></p><p>Espérance de vie: <strong>70 ans</strong></p><p>Taille: <strong>entre 1,50 m et 2,00 m</strong></p><p>Poids : <strong>entre 40 kg et 120 kg</strong></p><p>Traits des Humains : <strong>aucun</strong></p><p><strong>Noms féminins:</strong> <em>Aethria, Aales, Ann, Aphra,\_Ashae, Ayfara, Bryde, Clymoni, Daeira, Dalleira, Dhesah, Elianora, Elise, Emelyne, Egelina,\_Gaynore, Helleori, Ianthe, Inle, Jehane, Jivete,\_Malie, Mareona, Mattie, Melisenda, Merily,\_Nota, Phaio, Ptelera, Rose, Ulshee, Ysabea.</em></p><p><strong>Noms masculins:</strong> <em>Alvan, Ancelm, Daue,\_Iohannes, Gallien, Geffery, Geoff, Gerald,\_Hamo, Herry, Herval, Joa, Joscell, Jun, Maina,\_Mauklom, Nicoll, Niel, Oenus, Raimn, Ran,\_Ranort, Robb, Roff, Rullo, Simm, Teebald,\_Tericio, Thomme, Vinlam, Yvoe.</em></p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      subtype: people
+      modifiers: []
+      paths:
+        - Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+        - Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      capacities: []
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 1vzsTdc76WYDdN6v
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.1vzsTdc76WYDdN6v'
+  - folder: LWfsjN0pv7aydAdr
+    name: Voie du Peuple Humain
+    type: path
+    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain2.webp
+    _id: 5s1DU2ybNxdfeFzF
+    system:
+      description: "<h2>Les Humains</h2><p>Les Humains constituent un peuple très\_hétéroclite et très commun sur les Terres\_d’Arran. Leur installation se fait souvent\_au détriment des autres peuples. Ils ont colonisé\_les steppes nordiques hostiles pour fonder la cité\_d’Aspen en Borduria et ont rendu habitables les\_terres arides aux marges de la Terre des Ogres\_pour bâtir l’immense empire Assanide. Les forêts\_de Duhann et de Daëdenn cèdent chaque année\_de plus en plus de terrain au développement\_des cités-États de Tarascon et il n’y a guère\_que les Nains cloîtrés dans leurs imprenables\_forteresses-États qui ne semblent pas menacés\_par cette expansion. Pas encore en tout cas.</p><p>Les Humains n’ont certes pas la longévité\_des Elfes ni la robustesse des Nains, mais\_ils compensent par leur incroyable capacité\_d’adaptation et une fécondité impressionnante.</p><p>Capables du meilleur comme du pire, les\_sociétés humaines sont variées et il est impossible\_de les réduire à une définition générale. Les\_peuples d’Arran victimes de leur xénophobie\_n’ont souvent connu que les mauvais côtés de\_certaines communautés humaines. Mais d’autres\_peuplades, quelques frontières plus loin, vivent\_en respectant des valeurs et des traditions tout\_à fait inverses.</p><h4>Modificateurs des Humains</h4><p>Atout: <strong>aucun</strong></p><p>Faiblesse: <strong>aucun</strong></p><p>Âge de départ à l’aventure: <strong>18 ans et plus</strong></p><p>Espérance de vie: <strong>70 ans</strong></p><p>Taille: <strong>entre 1,50 m et 2,00 m</strong></p><p>Poids : <strong>entre 40 kg et 120 kg</strong></p><p>Traits des Humains : <strong>aucun</strong></p><p><strong>Noms féminins:</strong> <em>Aethria, Aales, Ann, Aphra,\_Ashae, Ayfara, Bryde, Clymoni, Daeira, Dalleira, Dhesah, Elianora, Elise, Emelyne, Egelina,\_Gaynore, Helleori, Ianthe, Inle, Jehane, Jivete,\_Malie, Mareona, Mattie, Melisenda, Merily,\_Nota, Phaio, Ptelera, Rose, Ulshee, Ysabea.</em></p><p><strong>Noms masculins:</strong> <em>Alvan, Ancelm, Daue,\_Iohannes, Gallien, Geffery, Geoff, Gerald,\_Hamo, Herry, Herval, Joa, Joscell, Jun, Maina,\_Mauklom, Nicoll, Niel, Oenus, Raimn, Ran,\_Ranort, Robb, Roff, Rullo, Simm, Teebald,\_Tericio, Thomme, Vinlam, Yvoe.</em></p>"
+      source: ''
+      origin: Livre des Joueurs page 87
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+        - Actor.UlLAEIMnc6Vcd1vb.Item.TLfHrNYfBjhYsvUu
+        - Actor.UlLAEIMnc6Vcd1vb.Item.tmGldUdWlem2LCie
+        - Actor.UlLAEIMnc6Vcd1vb.Item.c2HdTPnGzSgWkI84
+        - Actor.UlLAEIMnc6Vcd1vb.Item.2qaZ1AZ69DOTzQR6
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.5s1DU2ybNxdfeFzF'
+  - folder: TM2vZsQjVMSGf4wH
+    name: Adaptable
+    type: capacity
+    img: icons/skills/social/wave-halt-stop.webp
+    _id: KWkTSB5KqrwEWn8T
+    system:
+      description: "<p><strong><span style=\"text-decoration:underline\">Après avoir raté un test de Carac.</span></strong>, le PJ obtient\_un bonus de <strong>+5 au prochain test</strong> pour retenter\_la même action au prochain tour.</p>"
+      source: ''
+      origin: Livre des Joueurs page 87
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent aux tests de compétences. A activer seulement après
+        un test raté.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: con
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: for
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: per
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: cha
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.KWkTSB5KqrwEWn8T
+              subtype: skill
+              target: int
+              value: '5'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.KWkTSB5KqrwEWn8T'
+  - folder: TM2vZsQjVMSGf4wH
+    name: Loup parmi les loups
+    type: capacity
+    img: icons/skills/melee/hand-grip-sword-orange.webp
+    system:
+      description: "<p>Le PJ gagne <strong>+1 aux DM lorsqu’il combat un\_adversaire humanoïde</strong>. Ce bonus passe à <strong>+2 au\_rang 4</strong> de cette voie.</p>"
+      source: ''
+      origin: Livre du Joueur p.87
+      slug: ''
+      inGame: >-
+        <p>L'action est activable lorsque le personnage combat un adversaire
+        humanoïde.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.TLfHrNYfBjhYsvUu
+          indice: 0
+          label: Contre un humanoïde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.TLfHrNYfBjhYsvUu
+              subtype: combat
+              target: damMelee
+              value: '@rang[0,1,1,2,2]'
+              apply: self
+              additionalInfos: Après un test raté
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.TLfHrNYfBjhYsvUu
+              subtype: combat
+              target: damRanged
+              value: '@rang[0,1,1,2,2]'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.TLfHrNYfBjhYsvUu
+              subtype: combat
+              target: damMagic
+              value: '@rang[0,1,1,2,2]'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: TLfHrNYfBjhYsvUu
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.TLfHrNYfBjhYsvUu'
+  - folder: TM2vZsQjVMSGf4wH
+    name: Enseignement exotique
+    type: capacity
+    img: icons/weapons/daggers/dagger-magical-glowing-blue.webp
+    system:
+      description: "<p>Le PJ choisit l’une des formations martiales\_maîtrisées par son personnage ainsi qu’une\_tradition d’un des peuples des Terres d’Arran :\_le PJ peut porter et utiliser uniquement\_ les\_armes ou armures qu’il maîtrise, forgées dans\_cette tradition.</p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.87
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: tmGldUdWlem2LCie
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.tmGldUdWlem2LCie'
+  - folder: TM2vZsQjVMSGf4wH
+    name: Versatile
+    type: capacity
+    img: icons/sundries/documents/blueprint-axe.webp
+    system:
+      description: "<p>Le PJ choisit <strong>une capacité de rang 1 ou 2 de\_n’importe quelle voie de profil</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.87
+      slug: ''
+      inGame: >-
+        <p>La capacité autorise une capacité liée. Au moment d'apprendre
+        Versatile, glissez-déposez une capacité dans la zone prévue.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: c2HdTPnGzSgWkI84
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.c2HdTPnGzSgWkI84'
+  - folder: TM2vZsQjVMSGf4wH
+    name: Dépassement
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    system:
+      description: "<p>Le PJ augmente la valeur d’<strong>une Carac. au choix\_de +2</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.87
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent configuré de base en AGI. Au moment d'apprendre cette
+        capacité, le joueur doit modifier la Caractéristique choisie dans le
+        Sous-type du Modificateur de l'action.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.5s1DU2ybNxdfeFzF
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.2qaZ1AZ69DOTzQR6
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.2qaZ1AZ69DOTzQR6
+              subtype: ability
+              target: agi
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 2qaZ1AZ69DOTzQR6
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.2qaZ1AZ69DOTzQR6'
+  - folder: LWfsjN0pv7aydAdr
+    name: Voie Culturelle du Mitan
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_humain_mitan2.webp
+    system:
+      description: "<h2>Humains\_du Mitan</h2><p>Les peuples du Mitan regroupent le royaume de\_Léhon, les cités-États du Tarascon, la\_ Lombardie\_ainsi que les peuples de l’Ourann septentrional.\_</p><p>Plus civilisés et raffinés que les Nordiques, ces\_communautés ont bâti de prestigieuses cités\_portuaires, des flottes marchandes prospères\_et ont élevé au rang d’art le commerce et la\_politique.</p><p>Marchands, diplomates, corsaires, espions ou\_occasionnellement chevaliers – pour les cités les\_plus ancrées dans les anciennes traditions –, les\_peuples du Mitan comptent sur les accords, les\_complots et la puissance de l’or.</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.UlLAEIMnc6Vcd1vb.Item.HZQrg2BzUwujMHHT
+        - Actor.UlLAEIMnc6Vcd1vb.Item.3yxg08NlZgogyAXA
+        - Actor.UlLAEIMnc6Vcd1vb.Item.jznEADS2rXrvDrMd
+        - Actor.UlLAEIMnc6Vcd1vb.Item.1UJbwlgfPyfGj7HC
+        - Actor.UlLAEIMnc6Vcd1vb.Item.IYq6Kg9cVKQscsGR
+      rank: 0
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 4KkGNAz08Ufd7rTX
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.4KkGNAz08Ufd7rTX'
+  - folder: EGF4yuGWkbpzMatB
+    name: Homme des cités
+    type: capacity
+    img: icons/environment/settlement/watchtower-city.webp
+    _id: HZQrg2BzUwujMHHT
+    system:
+      description: "<p>Le PJ est à l’aise dans les foules et les cités\_bondées. </p><p>Il gagne un bonus de <strong>+5 pour tous les\_tests liés à la perception dans une foule</strong>, ainsi\_que pour <strong>trouver l’adresse d’une personne</strong> ou\_<strong>l’emplacement d’un lieu précis</strong> en zone urbaine.</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      inGame: <p>Bonus permanent aux test de PER et de CHA.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.HZQrg2BzUwujMHHT
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.HZQrg2BzUwujMHHT
+              subtype: skill
+              target: per
+              value: '5'
+              apply: self
+              additionalInfos: Dans une foule / Trouver individu ou adresse
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.HZQrg2BzUwujMHHT
+              subtype: skill
+              target: cha
+              value: '0'
+              apply: self
+              additionalInfos: Trouver individu ou adresse
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.HZQrg2BzUwujMHHT'
+  - folder: EGF4yuGWkbpzMatB
+    name: Entre tradition et progrès
+    type: capacity
+    img: icons/environment/creatures/horses.webp
+    system:
+      description: "<p>Le PJ choisit une capacité de <strong>rang 1 ou 2 de\_la voie du combat monté</strong> ou de la <strong>voie de\_l’arbalétrie</strong>. </p><p>Au rang 4 de cette voie, il gagne <strong>une\_capacité supplémentaire de rang 1 ou 2</strong> de la voie\_du combat monté ou de la voie de l'arbalétrie.</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      inGame: >-
+        <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
+        liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 3yxg08NlZgogyAXA
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.3yxg08NlZgogyAXA'
+  - folder: EGF4yuGWkbpzMatB
+    name: Modernisme
+    type: capacity
+    img: icons/weapons/crossbows/crossbow-loaded-black.webp
+    system:
+      description: "<p>Le PJ gagne un bonus de <strong>+1 en attaque et aux\_DM</strong> lorsqu’il manie une arbalète. </p><p>De plus, il\_gagne <strong>la maîtrise des armes de tir</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      inGame: >-
+        <p>L'action activable donne les bonus aux attaques et DM.</p><p>Pour la
+        formation martiale, au moment d'apprendre cette capacité, ouvrez le
+        profil du personnage depuis l'onglet "Biographie" et cochez les cases
+        Arbalète de poing, Arbalète légère et Arbalète lourde.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.jznEADS2rXrvDrMd
+          indice: 0
+          label: Utilisation d'une Arbalète
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.jznEADS2rXrvDrMd
+              subtype: combat
+              target: ranged
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.jznEADS2rXrvDrMd
+              subtype: combat
+              target: damRanged
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: jznEADS2rXrvDrMd
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.jznEADS2rXrvDrMd'
+  - folder: EGF4yuGWkbpzMatB
+    name: Conspirateur
+    type: capacity
+    img: icons/sundries/documents/document-sealed-red-tan.webp
+    system:
+      description: "<p>Le PJ connaît beaucoup de monde dans les\_Terres d’Arran. </p><p><strong><span style=\"text-decoration:underline\">Une fois par aventure</span></strong>, il peut\_<strong>faire appel à un ami ou contact pour en obtenir\_un service, une information ou sceller une\_alliance</strong>. </p><p>Pour cela, il doit réussir <strong>un test de CHA\_difficulté 10</strong> si le service est du domaine de la\_routine, <strong>de 15</strong> si le service est difficile à rendre\_ou s’il peut présenter un risque pour le contact,\_et <strong>de 20</strong> si le service fait appel à une information\_secrète ou s’il met ouvertement l’allié en danger. </p><p>En cas d’échec, l’ami peut malgré tout accorder\_son aide, mais elle ne sera pas gratuite...</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      inGame: "<p>L'action permet de réaliser le test de CHA configuré pour un Difficulté de 10. Lors du test, le Joueur peut modifier la difficulté ou le MJ pourra interpréter le résultat unqiuement.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.fVvCRjg2ifau57Bl]{Entre tradition et progrès}</p>"
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.1UJbwlgfPyfGj7HC
+          indice: 0
+          label: Appel à un ami
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@cha'
+                crit: ''
+                difficulty: '10'
+              dmg:
+                formula: ''
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 1UJbwlgfPyfGj7HC
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.1UJbwlgfPyfGj7HC'
+  - folder: EGF4yuGWkbpzMatB
+    name: Maître marchand
+    type: capacity
+    img: icons/skills/social/trading-justice-scale-gold.webp
+    system:
+      description: "<p>Le PJ augmente ses valeurs d’<strong>INT et CHA\_de +2</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.89
+      slug: ''
+      inGame: <p>Bonus permanent en INT et CHA.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.4KkGNAz08Ufd7rTX
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.IYq6Kg9cVKQscsGR
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.IYq6Kg9cVKQscsGR
+              subtype: ability
+              target: cha
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.IYq6Kg9cVKQscsGR
+              subtype: ability
+              target: int
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: IYq6Kg9cVKQscsGR
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.IYq6Kg9cVKQscsGR'
+  - folder: GgISwHTqrwC4liIs
+    name: Voie des plaines
+    type: path
+    img: icons/environment/creatures/horses.webp
+    _id: rbIhD2zQY6nEpnHi
+    system:
+      description: "<h5>Les voies d’origine géographique mettent l’accent sur le lieu où le personnage a été élevé.</h5><h6>Humain : </h6><p><strong>Le\_bonus de la voie d’origine géographique remplace le bonus du même nom de\_la voie de l’humain</strong>. En\_échange, <strong>l’humain reçoit\_un seul bonus, mais de +5</strong> au lieu de +3, <strong>dans\_la profession ou le hobby de son choix</strong>. Si\_le PJ\_dispose d’une voie professionnelle, ce choix doit\_être en accord avec celle-ci (si vous êtes érudit,\_vous n’êtes probablement pas charpentier…).\_</p><h6>Elfe sylvain : </h6><p>Avec cette option, <strong>l’elfe sylvain\_devient un spécialiste de la survie</strong> dans son milieu\_d’origine (correspondant à la voie d’origine géographique choisie) et vous pouvez le rebaptiser\_elfe sauvage. Ce\_faisant, <strong>la capacité de premier\_rang de la voie de l’elfe sylvain est modifiée</strong> :\_à\_la place d’un bonus de survie en forêt, l’elfe\_sauvage bénéficie d’un bonus de survie dans\_le milieu correspondant à son origine géographique, et <strong>le bonus passe de +3 à +5</strong> grâce à la\_capacité de rang 1 de la voie d’origine géographique. <span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Attention :</span></strong></span><strong> la\_voie des cités et la voie\_des campagnes sont interdites à ce peuple.</strong></p><blockquote><p><strong>Par exemple</strong> : un\_elfe sauvage avec la capacité\_Habitant des marais (voie des marais) possède un\_bonus de +5 aux tests de survie et de discrétion\_dans les marécages (au lieu de +3). Cette bonification lui est conférée par le rang 1 de sa voie de\_peuple, Lumière des étoiles, et remplace le bonus\_de +3 en survie en forêt.</p></blockquote>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p174
+      slug: ''
+      subtype: encounter
+      capacities:
+        - Actor.UlLAEIMnc6Vcd1vb.Item.qcl2IddIdsxAzlM5
+        - Actor.UlLAEIMnc6Vcd1vb.Item.N0bD2mIaj7Roda35
+        - Actor.UlLAEIMnc6Vcd1vb.Item.JAMjMuTThOzZCjua
+        - Actor.UlLAEIMnc6Vcd1vb.Item.0oDgmZtrJoYNTxWn
+        - Actor.UlLAEIMnc6Vcd1vb.Item.ygDNxlrqHJn6mDy8
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 181250
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.rbIhD2zQY6nEpnHi'
+  - folder: P05BJNw3dpDQlWjD
+    name: Habitant des plaines
+    type: capacity
+    img: icons/environment/settlement/scarecrow.webp
+    _id: qcl2IddIdsxAzlM5
+    system:
+      description: "<p>Le personnage obtient un bonus de <strong>+3 aux\_tests d’équitation et de survie en plaines</strong>.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p174
+      slug: ''
+      inGame: <p>Bonus aux jets de compétences.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.rbIhD2zQY6nEpnHi
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.qcl2IddIdsxAzlM5
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.qcl2IddIdsxAzlM5
+              subtype: skill
+              target: agi
+              value: '3'
+              apply: self
+              additionalInfos: Équitation
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.qcl2IddIdsxAzlM5
+              subtype: skill
+              target: con
+              value: '3'
+              apply: self
+              additionalInfos: Survie en plaines
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.qcl2IddIdsxAzlM5'
+  - folder: P05BJNw3dpDQlWjD
+    name: Cavalier
+    type: capacity
+    img: icons/environment/creatures/horse-tan.webp
+    _id: N0bD2mIaj7Roda35
+    system:
+      description: "<p>Le personnage gagne un bonus de <strong>+1 en\_attaque lorsqu’il est monté</strong>. </p><p><strong>Monter et descendre\_de selle devient une action gratuite</strong>.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ''
+      inGame: <p>Action activable/désactivable pour obtenir le bonus en attaque.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.rbIhD2zQY6nEpnHi
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.N0bD2mIaj7Roda35
+          indice: 0
+          label: En selle
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.N0bD2mIaj7Roda35
+              subtype: combat
+              target: melee
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.N0bD2mIaj7Roda35
+              subtype: combat
+              target: ranged
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.N0bD2mIaj7Roda35
+              subtype: combat
+              target: magic
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.N0bD2mIaj7Roda35'
+  - folder: P05BJNw3dpDQlWjD
+    name: "Œil\_de faucon"
+    type: capacity
+    img: icons/creatures/eyes/humanoid-single-blue.webp
+    _id: JAMjMuTThOzZCjua
+    system:
+      description: "<p>Le personnage possède une vue qui porte\_loin, il gagne un bonus d<strong>e +5 sur tous les tests\_d’observation et de détection qui concernent\_des détails lointains</strong> (au moins 100 m de distance)\_et <strong>+10 m à la portée de ses attaques à distance</strong>.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ''
+      inGame: >-
+        <p>Bonus aux jets de compétences.</p><p>Le bonus à la portée doit être
+        changé manuellement dans les Détails des armes à distance.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.rbIhD2zQY6nEpnHi
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.JAMjMuTThOzZCjua
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.JAMjMuTThOzZCjua
+              subtype: skill
+              target: per
+              value: '5'
+              apply: self
+              additionalInfos: Observation et détection lointaines (+100m)
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.JAMjMuTThOzZCjua'
+  - folder: P05BJNw3dpDQlWjD
+    name: Engagement
+    type: capacity
+    img: icons/skills/ranged/arrows-flying-salvo-blue.webp
+    _id: 0oDgmZtrJoYNTxWn
+    system:
+      description: "<p>Dans la plaine on peut toujours attaquer à distance avant d’engager un corps à corps.</p><p> <strong>Au\_premier round</strong> de combat, le personnage <strong>peut réaliser une attaque à distance gratuite</strong> (lancer ou\_tir) s’il utilise son tour pour se rapprocher et/ou\_porter une attaque au contact.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ''
+      inGame: >-
+        <p>Pas d'effet automatique. L'action sert uniquement à afficher la
+        capacité dans la liste des actions.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.rbIhD2zQY6nEpnHi
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.0oDgmZtrJoYNTxWn
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.0oDgmZtrJoYNTxWn'
+  - folder: P05BJNw3dpDQlWjD
+    name: Adversaire des plaines
+    type: capacity
+    img: icons/skills/ranged/arrows-flying-salvo-blue-light.webp
+    _id: ygDNxlrqHJn6mDy8
+    system:
+      description: "<p>Le personnage inflige <strong>+1d4°\_ DM aux créatures volantes</strong>.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p175
+      slug: ''
+      inGame: <p>Action activable/désactivable pour obtenir le bonus aux DM.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.rbIhD2zQY6nEpnHi
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.ygDNxlrqHJn6mDy8
+          indice: 0
+          label: vs Créatures volantes
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.ygDNxlrqHJn6mDy8
+              subtype: combat
+              target: damMelee
+              value: 1d4°
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.ygDNxlrqHJn6mDy8
+              subtype: combat
+              target: damRanged
+              value: 1d4°
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.ygDNxlrqHJn6mDy8
+              subtype: combat
+              target: damMagic
+              value: 1d4°
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.ygDNxlrqHJn6mDy8'
+  - folder: fWmjCA560DEw5LaH
+    name: Voie de l'homme du peuple
+    type: path
+    img: icons/environment/people/group.webp
+    _id: 6i01eWsjvlanAFtD
+    system:
+      description: "<p>Cette voie est réservée aux <strong>gens ordinaires</strong>,\_ces personnes que l’on juge parfois à tort insignifiantes et qui <strong>peuvent toujours compter sur\_leur solide bon sens</strong>.</p><hr><p>Une voie professionnelle correspond généralement à l’éducation du PJ avant qu’il ne\_parte à l’aventure. Un\_PJ peut choisir une voie\_professionnelle au niveau 1 et plus rarement au\_cours de sa carrière de héros.</p><p>Si vous utilisez la règle optionnelle de l’âge\_de départ variable, le MJ pourrait rendre obligatoire d’investir dans une voie professionnelle\_les points de capacité acquis par ce biais.\_</p><p>Une voie professionnelle peut aussi être\_acquise à la suite d’une pause dans une vie\_d’aventures (par exemple, les héros repartent\_à l’aventure après s’être posé pendant dix ans.\_Le\_MJ accorde à chacun quelques rangs dans la\_voie professionnelle de leur choix).\_</p><p><strong>Bonus communautaire.</strong> Tous les personnages qui possèdent une voie professionnelle\_obtiennent un bonus de +3 aux tests d’interaction sociale (généralement CHA) avec un autre\_membre de leur communauté.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      subtype: encounter
+      capacities:
+        - Actor.UlLAEIMnc6Vcd1vb.Item.weUXb8pwavUVxXQC
+        - Actor.UlLAEIMnc6Vcd1vb.Item.X793I6uQ8YfQfsRW
+        - Actor.UlLAEIMnc6Vcd1vb.Item.0FACwtu2smJ9Zj5N
+        - Actor.UlLAEIMnc6Vcd1vb.Item.ftXCE9Wl0jxh08oV
+        - Actor.UlLAEIMnc6Vcd1vb.Item.wJMu33WtIljhPYxV
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.6i01eWsjvlanAFtD'
+  - folder: ExucDfoNSZyOeonR
+    name: "La\_vie est dure"
+    type: capacity
+    img: icons/skills/trades/woodcutting-logging-axe-stump.webp
+    _id: weUXb8pwavUVxXQC
+    system:
+      description: "<p>Le personnage gagne un bonus de <strong>+3 pour\_tous les tests concernant la résistance physique et l’endurance</strong>.</p><p><strong>Au\_rang 4, il gagne 1\_DR</strong>\_supplémentaire.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      inGame: <p>Bonus permanent aux jets de compétences.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.6i01eWsjvlanAFtD
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.weUXb8pwavUVxXQC
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.weUXb8pwavUVxXQC
+              subtype: skill
+              target: con
+              value: '3'
+              apply: self
+              additionalInfos: Résistance physique / Endurance
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.weUXb8pwavUVxXQC'
+  - folder: ExucDfoNSZyOeonR
+    name: J’ai un ami qui m’a dit…
+    type: capacity
+    img: icons/skills/social/wave-halt-stop.webp
+    _id: X793I6uQ8YfQfsRW
+    system:
+      description: "<p>Attentif aux ragots, le personnage peut ajouter\_un bonus égal à <strong>rang +\_2 pour ses tests d’INT\_visant à se souvenir d’une rumeur ou à connaître\_des détails sur une personne</strong> ou une personnalité.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      inGame: <p>Bonus permanent aux jets de compétences.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.6i01eWsjvlanAFtD
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.X793I6uQ8YfQfsRW
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.X793I6uQ8YfQfsRW
+              subtype: skill
+              target: int
+              value: 2 + @rang
+              apply: self
+              additionalInfos: "Se souvenir d’une rumeur / Connaître\_des détails d'une personne"
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.X793I6uQ8YfQfsRW'
+  - folder: ExucDfoNSZyOeonR
+    name: "On\_m’la fait pas à moi !"
+    type: capacity
+    img: icons/magic/control/silhouette-aura-energy.webp
+    _id: 0FACwtu2smJ9Zj5N
+    system:
+      description: "<p>L’homme du peuple est méfiant et il est difficile de lui embrouiller l’esprit ou de le baratiner.</p><p>Il\_gagne un bonus de <strong>+5 à tous les tests effectués\_pour résister à une illusion, au baratin, à une\_négociation ou à tout autre moyen d’influencer\_l’esprit</strong> (qu’il soit magique ou non).</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      inGame: <p>Bonus permanent aux jets de compétences.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.6i01eWsjvlanAFtD
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.0FACwtu2smJ9Zj5N
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.0FACwtu2smJ9Zj5N
+              subtype: skill
+              target: cha
+              value: '5'
+              apply: self
+              additionalInfos: résister à une illusion ou à l'influence
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.0FACwtu2smJ9Zj5N
+              subtype: skill
+              target: per
+              value: '5'
+              apply: self
+              additionalInfos: résister à une illusion
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.0FACwtu2smJ9Zj5N'
+  - folder: ExucDfoNSZyOeonR
+    name: "Ni\_vu ni connu"
+    type: capacity
+    img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
+    _id: ftXCE9Wl0jxh08oV
+    system:
+      description: "<p>L’homme du peuple se fond dans la foule sans\_aucun souci. </p><p>En\_effectuant un <strong>test de CHA difficulté 10</strong>, il <strong>disparaît dans la foule</strong> et ne peut plus\_être retrouvé, sauf capacité particulière.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde.</p><p>La deuxième
+        action donne le DR de la capacité de rang 2.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.6i01eWsjvlanAFtD
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.ftXCE9Wl0jxh08oV
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: cha
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.ftXCE9Wl0jxh08oV
+          indice: 1
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.ftXCE9Wl0jxh08oV
+              subtype: resource
+              target: rp
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.ftXCE9Wl0jxh08oV'
+  - folder: ExucDfoNSZyOeonR
+    name: Résistance naturelle
+    type: capacity
+    img: icons/magic/defensive/armor-stone-skin.webp
+    _id: wJMu33WtIljhPYxV
+    system:
+      description: "<p>Le personnage augmente sa valeur\_de CON de +1.</p>"
+      source: ''
+      origin: Atlas d'Osgild et Règles Optionnelles p178
+      slug: ''
+      inGame: <p>Bonus permanent à la CON.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.UlLAEIMnc6Vcd1vb.Item.6i01eWsjvlanAFtD
+      cost: 1
+      manaCost: -1
+      actions:
+        - source: Actor.UlLAEIMnc6Vcd1vb.Item.wJMu33WtIljhPYxV
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.UlLAEIMnc6Vcd1vb.Item.wJMu33WtIljhPYxV
+              subtype: ability
+              target: con
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.wJMu33WtIljhPYxV'
+  - name: Aventurier
+    type: profile
+    img: icons/svg/upgrade.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      maxDefenseArmor: 0
+      modifiers:
+        - type: profile
+          source: Actor.UlLAEIMnc6Vcd1vb.Item.Pz5puGuDCVAUuH0J
+          subtype: resource
+          target: mp
+          value: '@niv+@per'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.UlLAEIMnc6Vcd1vb.Item.Pz5puGuDCVAUuH0J
+          subtype: combat
+          target: melee
+          value: '1'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.UlLAEIMnc6Vcd1vb.Item.Pz5puGuDCVAUuH0J
+          subtype: combat
+          target: ranged
+          value: '1'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: true
+        dagger: true
+        greatSword: false
+        bastardSword: false
+        shortSword: true
+        longSword: true
+        spear: false
+        flail: false
+        greatFlail: false
+        club: true
+        axe: true
+        greatAxe: false
+        lance: true
+        cavalryLance: true
+        hammer: true
+        mace: true
+        pike: true
+        rapier: true
+        stiletto: true
+        swiftblade: true
+        handCrossbow: false
+        lightCrossbow: false
+        heavyCrossbow: false
+        shortBow: true
+        longBow: true
+        throwingKnife: true
+        throwingDagger: true
+        sling: true
+        throwingAxe: false
+        javelin: false
+        throwingSpear: true
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: true
+        leather: true
+        studdedLeather: true
+        chainShirt: false
+        chainMail: false
+        plateArmor: false
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: true
+        largeShield: false
+      paths: []
+      proficiencies: []
+      mainProfile: true
+      family: aventurier
+      gmNotes: ''
+      equipment: []
+    effects: []
+    folder: VksZqOrZsyincZFJ
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: Pz5puGuDCVAUuH0J
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.Pz5puGuDCVAUuH0J'
+  - name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: bwUmODTqsTqPbRr9
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: ''
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9
+      duplicateSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co2
+        systemVersion: 12.331.0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    folder: null
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.bwUmODTqsTqPbRr9'
+  - name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: 0PawJrcH7daQ8RoJ
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+              halfDmgOnSave: true
+              hasAttackSuccessThreshold: false
+          actionType: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853181882
+      modifiedTime: 1790853181882
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    folder: null
+    sort: 0
+    _key: '!actors.items!UlLAEIMnc6Vcd1vb.0PawJrcH7daQ8RoJ'
+effects: []
+folder: WTbka3SMgKItVqYw
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790853181882
+  modifiedTime: 1790853204526
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: UlLAEIMnc6Vcd1vb
+sort: 1700000
+_key: '!actors!UlLAEIMnc6Vcd1vb'

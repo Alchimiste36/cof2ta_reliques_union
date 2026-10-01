@@ -1,7 +1,8 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Bâton ferré +2
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_baton_156.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_ferre_2.webp
 system:
   description: >-
     <p>Tous les personnages qui savent manier le bâton ferré savent aussi manier
@@ -50,12 +51,12 @@ system:
       type: melee
       actionType: a
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
-        noManaCost: false
         noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
       conditions:
         - predicate: isEquipped
       resolvers:
@@ -63,22 +64,23 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
+            formula: '@atc +2'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d6 + @for
+            formula: 1d6 + @for +2
           target:
             type: none
-            number: 0
+            number: '0'
             scope: all
+          hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
             applyOn: success
             statuses: []
             duration: '0'
             unit: round
-          hasAttackSuccessThreshold: false
+          halfDmgOnSave: true
       modifiers: []
   range:
     unit: ''
@@ -97,15 +99,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772925515622
-  modifiedTime: 1772925532544
+  modifiedTime: 1790716198373
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: DPsJCIVWFvy4kvkm
-sort: 0
+sort: 190625
 _key: '!items!DPsJCIVWFvy4kvkm'

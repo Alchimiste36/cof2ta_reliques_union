@@ -171,7 +171,7 @@ system:
       value: 6
     mana:
       base: 0
-      ability: per
+      ability: int
       bonuses:
         sheet: 0
         effects: 0
@@ -3521,14 +3521,132 @@ items:
     sort: 0
     _key: '!actors.items!btvS9qEFveBlGv7J.gHGOA8SX3JFm8G7U'
   - folder: fkaQ5zi2WGOp22kb
-    name: Arc long de critique +3
+    name: Rapière +2
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_40.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_22.webp
     system:
       description: >-
-        <p>Nécessite d'avoir FOR +1 minimum</p><hr /><p><strong>Arme magique
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups
+        d'estoc.</p><p><strong>Arme légère, seuil de critique
+        19-20</strong></p><hr><p><strong>Arme magique des Centaure -
+        Aroha</strong></p><p>Bonus de +2 en Attaque et aux DM.</p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 600
+        unit: pa
+      rarity: rare
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.haSXU89NonjZOn3I
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.zO6UBxW2txzDjpCh
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790715562917
+      modifiedTime: 1790715562960
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: haSXU89NonjZOn3I
+    sort: 6800000
+    _key: '!actors.items!btvS9qEFveBlGv7J.haSXU89NonjZOn3I'
+  - folder: fkaQ5zi2WGOp22kb
+    name: Arc long de critique +3
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_long_critique_3.webp
+    system:
+      description: >-
+        <p>Nécessite d'avoir FOR +1 minimum</p><hr><p><strong>Arme magique
         centaure - Aroha</strong></p><ul><li><p>Augmente la plage de critique de
-        1</p></li><li><p>Bonus de +3 en Attaque et DM.</p></li></ul>
+        1</p></li><li><p>+1d4° DM en cas de critique</p></li><li><p>Bonus de +3
+        en Attaque et DM.</p></li></ul>
       source: ''
       origin: Livre du Joueur p.158
       slug: arc-long
@@ -3572,7 +3690,7 @@ items:
         value: 50
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.HbLbQMNBh9m6QarL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.ONGYYLfu7lAdeaU2
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3580,12 +3698,12 @@ items:
           type: ranged
           actionType: a
           properties:
-            visible: true
-            enabled: false
             activable: true
             temporary: false
-            noManaCost: false
             noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
           conditions:
             - predicate: isEquipped
           resolvers:
@@ -3593,23 +3711,29 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '@atd'
-                crit: ''
+                formula: '@atd +3'
+                crit: '19'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d8
+                formula: 1d8 +3
               target:
-                type: none
-                number: 0
+                type: single
                 scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
+                number: '0'
               hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: true
+                applyOn: critical
+                formulaType: damage
+                formula: +1d4°
+                elementType: ''
+                statuses: []
+                unit: instant
+                duration: '0'
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3617,131 +3741,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XcoS5rbSgWjfL6B0
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924376888
-      modifiedTime: 1772924381252
+      systemVersion: 2.3.12
+      createdTime: 1790715575373
+      modifiedTime: 1790715582333
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: HbLbQMNBh9m6QarL
-    sort: 5700000
-    _key: '!actors.items!btvS9qEFveBlGv7J.HbLbQMNBh9m6QarL'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Rapière +2
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_22.webp
-    system:
-      description: >-
-        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
-        à la lame flexible, destinée essentiellement aux coups
-        d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique des Centaure -
-        Aroha</strong></p><p>Bonus de +2</p>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: rapiere
-      tags:
-        - legere
-      subtype: weapon
-      martialCategory: rapier
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 600
-        unit: pa
-      rarity: rare
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.btvS9qEFveBlGv7J.Item.JLkcLIuvoNYNHN72
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.zO6UBxW2txzDjpCh
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924400398
-      modifiedTime: 1772924400444
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: JLkcLIuvoNYNHN72
-    sort: 5600000
-    _key: '!actors.items!btvS9qEFveBlGv7J.JLkcLIuvoNYNHN72'
+    _id: ONGYYLfu7lAdeaU2
+    sort: 6900000
+    _key: '!actors.items!btvS9qEFveBlGv7J.ONGYYLfu7lAdeaU2'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3750,11 +3761,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.BQvEXdnPDfoBuIr0
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1790715596586
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

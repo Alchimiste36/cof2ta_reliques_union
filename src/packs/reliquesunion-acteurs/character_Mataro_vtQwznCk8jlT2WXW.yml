@@ -170,7 +170,7 @@ system:
       max: null
       value: 5
     mana:
-      base: 2
+      base: 4
       ability: per
       bonuses:
         sheet: 0
@@ -3167,7 +3167,233 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!vtQwznCk8jlT2WXW.KG0qeWFzcNWrpsnW'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Marteau de guerre +1 de feu
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_marteau_guerre_feu_1.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Mataro</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
+        DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: marteau
+      tags: []
+      subtype: weapon
+      martialCategory: hammer
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 650
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW.Item.lOw8SJkeF5PCBndE
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +1
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vl5aiCFkJa0W41NU
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717418963
+      modifiedTime: 1790717435824
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: lOw8SJkeF5PCBndE
+    sort: -25000
+    _key: '!actors.items!vtQwznCk8jlT2WXW.lOw8SJkeF5PCBndE'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Marteau de guerre +1 de feu
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_marteau_guerre_feu_1.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Mataro</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
+        DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: marteau
+      tags: []
+      subtype: weapon
+      martialCategory: hammer
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 650
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW.Item.lYZKmvWlpYRtZelj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +1
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vl5aiCFkJa0W41NU
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717432750
+      modifiedTime: 1790717435168
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: lYZKmvWlpYRtZelj
+    sort: -25000
+    _key: '!actors.items!vtQwznCk8jlT2WXW.lYZKmvWlpYRtZelj'
+  - folder: htrIbDAC1HkPdjMB
     name: Armure de cuir renforcé de résistance au feu
     type: equipment
     img: >-
@@ -3199,7 +3425,7 @@ items:
         value: 550
         unit: pa
       rarity: rare
-      equipped: true
+      equipped: false
       properties:
         equipable: true
         reloadable: false
@@ -3211,6 +3437,8 @@ items:
       defense: 3
       range: null
       magicalDefense: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3218,238 +3446,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0xPXKyNEmpNLWi9Z
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924879168
-      modifiedTime: 1772924881996
+      systemVersion: 2.3.12
+      createdTime: 1790717445610
+      modifiedTime: 1790717445610
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: gDXxbn4DwP7SeZa7
-    sort: 100000
-    _key: '!actors.items!vtQwznCk8jlT2WXW.gDXxbn4DwP7SeZa7'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Marteau de guerre +1 de feu
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_marteau_118.webp
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Mataro</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
-        DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: marteau
-      tags: []
-      subtype: weapon
-      martialCategory: hammer
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 650
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW.Item.Zp35xftNNOoUoNpA
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +1
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vl5aiCFkJa0W41NU
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924899125
-      modifiedTime: 1772924904808
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: Zp35xftNNOoUoNpA
-    sort: 1100000
-    _key: '!actors.items!vtQwznCk8jlT2WXW.Zp35xftNNOoUoNpA'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Marteau de guerre +1 de feu
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_marteau_118.webp
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Mataro</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
-        DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: marteau
-      tags: []
-      subtype: weapon
-      martialCategory: hammer
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 650
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.vtQwznCk8jlT2WXW.Item.3ixmPpVcK8igw1f7
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +1
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vl5aiCFkJa0W41NU
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924901695
-      modifiedTime: 1772924905369
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: 3ixmPpVcK8igw1f7
-    sort: 1100000
-    _key: '!actors.items!vtQwznCk8jlT2WXW.3ixmPpVcK8igw1f7'
+    _id: R60z1Z4z4lxZYEYT
+    sort: -200000
+    _key: '!actors.items!vtQwznCk8jlT2WXW.R60z1Z4z4lxZYEYT'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
@@ -3458,11 +3466,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.mmAaWJQJDLTjYPKl
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772924880826
+  modifiedTime: 1790717452108
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

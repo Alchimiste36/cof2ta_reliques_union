@@ -1,7 +1,8 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Arc long +2 d'affaiblissement
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_118.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_long_affaiblissement.webp
 system:
   description: >-
     <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p><strong>Arme magique de
@@ -80,7 +81,7 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -88,6 +89,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
     - source: Actor.vU8X9FHu74kiJtcM.Item.pc4BqqnLiwUwdfeR
       indice: 1
@@ -109,10 +111,13 @@ system:
         - type: save
           saveAbility: con
           saveDifficulty: '15'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -121,12 +126,11 @@ system:
             elementType: ''
             statuses:
               - weakened
-            duration: 2d6*10
+            duration: 1d6*10
             unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
 effects: []
@@ -135,15 +139,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1771884502775
-  modifiedTime: 1772924804461
+  modifiedTime: 1790716897385
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: sNU2ikdzihu5nFt7
-sort: 3500000
+sort: 315235
 _key: '!items!sNU2ikdzihu5nFt7'

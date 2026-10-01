@@ -170,7 +170,7 @@ system:
       max: null
       value: 4
     mana:
-      base: 8
+      base: 14
       ability: int
       bonuses:
         sheet: 0
@@ -3949,18 +3949,18 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!HhfWAaUYHXKxHMFj.TefxD0advm3NZKtD'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Bâton ferré de glace +2
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_glace.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_ferre_glace_2.webp
     system:
       description: >-
         <p>Tous les personnages qui savent manier le bâton ferré savent aussi
         manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
         est adapté au combat, plus lourd et généralement couvert de métal aux
         extrémités (bien que les druides utilisent des bâtons de bois noueux
-        avec le même effet).</p><hr /><p><strong>Arme magique de centaure - Hei
+        avec le même effet).</p><hr><p><strong>Arme magique de centaure - Hei
         Tunu</strong></p><ul><li><p>Bonus de +2 en attaque et
         DM</p></li><li><p>+1d4° DM de glace</p></li></ul>
       source: ''
@@ -3986,7 +3986,7 @@ items:
         value: 900
         unit: pa
       rarity: rare
-      equipped: true
+      equipped: false
       properties:
         equipable: true
         reloadable: false
@@ -3996,7 +3996,7 @@ items:
         twoHand: true
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HhfWAaUYHXKxHMFj.Item.XNpFD7BbCDO1xUuu
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.HhfWAaUYHXKxHMFj.Item.N8s97qNsuwH3dppF
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4007,7 +4007,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -4025,7 +4025,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -4033,6 +4033,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -4045,6 +4046,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -4052,18 +4055,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.UyPjIYgLIy9eqFf6
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924932195
-      modifiedTime: 1772924935821
+      systemVersion: 2.3.12
+      createdTime: 1790715828699
+      modifiedTime: 1790715828770
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: XNpFD7BbCDO1xUuu
-    sort: 6600000
-    _key: '!actors.items!HhfWAaUYHXKxHMFj.XNpFD7BbCDO1xUuu'
+    _id: N8s97qNsuwH3dppF
+    sort: 500000
+    _key: '!actors.items!HhfWAaUYHXKxHMFj.N8s97qNsuwH3dppF'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -4072,11 +4075,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.kHadmZ0V3DnyPm4Y
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1790715841401
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

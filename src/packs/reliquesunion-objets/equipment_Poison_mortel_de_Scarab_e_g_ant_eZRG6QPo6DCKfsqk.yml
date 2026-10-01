@@ -1,7 +1,8 @@
 folder: c09r9qSLIbCuC7NV
 name: Poison mortel de Scarabée géant
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/consommables/potion_22.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/consommables/scarabee_des_crocs_d_acier_dose_poison_mortel.webp
 _id: eZRG6QPo6DCKfsqk
 system:
   description: >-
@@ -63,7 +64,7 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: always
@@ -76,6 +77,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
+          halfDmgOnSave: true
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Item.eZRG6QPo6DCKfsqk
@@ -98,10 +100,13 @@ system:
         - type: save
           saveAbility: con
           saveDifficulty: '10'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: saveSuccess
@@ -114,7 +119,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
   defense: null
@@ -129,10 +133,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772482139644
-  modifiedTime: 1772926969163
+  modifiedTime: 1790694206411
   lastModifiedBy: MdLP35I2yaa8z7GV
 _key: '!items!eZRG6QPo6DCKfsqk'

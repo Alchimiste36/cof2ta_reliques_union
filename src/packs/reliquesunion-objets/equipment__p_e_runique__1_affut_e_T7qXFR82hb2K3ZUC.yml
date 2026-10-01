@@ -2,10 +2,15 @@ folder: 5ojbyXZoovvJFBF8
 name: Épée runique +1 affutée
 type: equipment
 img: >-
-  modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_epee_courte_123.webp
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/ourann_epee_affutee_aine.webp
 _id: T7qXFR82hb2K3ZUC
 system:
-  description: "<p>Épée de\_Kaspirionuratanokali, l'Aîné de la tribu des Mangeurs des Plaines.</p>"
+  description: >-
+    <p>Cette épée courte a un style étrange quand on la compare avec des épées
+    plus classiques. Elle est particulièrement bien équilibrée.</p><p>Cette épée
+    confère un <strong>bonus de +1 en Attaque et aux DM</strong>. Deplus elle
+    est <em><strong>Affutée</strong></em> (plage de <strong>critique augmentée
+    de +1 et +1d4° DM en cas de critique</strong>).</p>
   source: ''
   origin: ''
   slug: ''
@@ -66,18 +71,23 @@ system:
             formula: 1d6 +@for +1
           target:
             type: single
-            number: 0
             scope: all
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
-            active: false
-            applyOn: success
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
             statuses: []
             duration: '0'
-            unit: round
+            unit: instant
+          halfDmgOnSave: true
       modifiers: []
   defense: null
   magicalDefense: null
+  gmNotes: "<p>Épée de\_Kaspirionuratanokali, l'Aîné de la tribu des Mangeurs des Plaines.</p>"
 effects: []
 sort: 0
 ownership:
@@ -88,10 +98,10 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1770341829256
-  modifiedTime: 1772926585818
+  modifiedTime: 1790694001807
   lastModifiedBy: MdLP35I2yaa8z7GV
 _key: '!items!T7qXFR82hb2K3ZUC'

@@ -170,7 +170,7 @@ system:
       max: null
       value: 6
     mana:
-      base: 7
+      base: 11
       ability: per
       bonuses:
         sheet: 0
@@ -3309,12 +3309,13 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!3FZtGR85wvyjSJ4b.mSysZ4lTCzjB50nC'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Lance de foudre étourdissante
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/epieu_122.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_foudre_etourdissante.webp
     system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Titiro</strong></p><ul><li><p>Bonus de +1d6 DM de foudre</p></li><li><p>A chaque fois que la Lance de foudre étourdissante inflige des DM, la cible doit réaliser un test de CON difficulté (10+CHA) ou être étourdi pendant 1d4 rounds.</p></li></ul>"
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr><p><strong>Arme magique de Centaure - Titiro</strong></p><ul><li><p>Bonus de +1d4° DM de foudre</p></li><li><p>A chaque fois que la Lance de foudre étourdissante inflige des DM, la cible doit réaliser un test de CON difficulté (10+CHA) ou être étourdi pendant 1d4 rounds.</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.157
       slug: lance
@@ -3358,7 +3359,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.UrzXDIRCrTyapyiL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.LM63NTCDfONOGuUO
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3383,11 +3384,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 + @for +1d6
+                formula: 1d6 + @for +1d4°
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3395,9 +3396,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.UrzXDIRCrTyapyiL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.LM63NTCDfONOGuUO
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3422,11 +3424,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d10 + @for +1d6
+                formula: 1d10 + @for +1d4°
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3434,9 +3436,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.UrzXDIRCrTyapyiL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.LM63NTCDfONOGuUO
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3461,11 +3464,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 +1d6
+                formula: 1d6 +1d4°
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3473,9 +3476,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.UrzXDIRCrTyapyiL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.3FZtGR85wvyjSJ4b.Item.LM63NTCDfONOGuUO
           indice: 3
           label: Sauvegarde si touché
           chatFlavor: ''
@@ -3495,10 +3499,13 @@ items:
             - type: save
               saveAbility: con
               saveDifficulty: 10+@cha
+              dmg:
+                formula: ''
+              halfDmgOnSave: true
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               additionalEffect:
                 active: true
                 applyOn: saveFailure
@@ -3512,9 +3519,10 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
-              dmg: {}
               hasAttackSuccessThreshold: false
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3522,22 +3530,23 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.b6l2O2GNkbohTyj9
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925640090
-      modifiedTime: 1772925640298
+      systemVersion: 2.3.12
+      createdTime: 1790716393772
+      modifiedTime: 1790716394043
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: UrzXDIRCrTyapyiL
-    sort: 0
-    _key: '!actors.items!3FZtGR85wvyjSJ4b.UrzXDIRCrTyapyiL'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: LM63NTCDfONOGuUO
+    sort: 325000
+    _key: '!actors.items!3FZtGR85wvyjSJ4b.LM63NTCDfONOGuUO'
+  - folder: htrIbDAC1HkPdjMB
     name: Gambison +1
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armures/brigantine3.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_gambison_1.webp
     system:
       description: >-
         <p><strong>Armure magique de Centaure -
@@ -3576,6 +3585,8 @@ items:
       defense: 1
       range: null
       magicalDefense: 1
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3583,18 +3594,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.NsmYDXbhH4xHB8De
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925690671
-      modifiedTime: 1772925690671
+      systemVersion: 2.3.12
+      createdTime: 1790716413625
+      modifiedTime: 1790716413625
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: LwdmcNrnDzKLzpio
-    sort: 0
-    _key: '!actors.items!3FZtGR85wvyjSJ4b.LwdmcNrnDzKLzpio'
+    _id: e1URwCMs6Mz2ZI5g
+    sort: 150000
+    _key: '!actors.items!3FZtGR85wvyjSJ4b.e1URwCMs6Mz2ZI5g'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3603,11 +3614,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.7YLgQMsyaWE2zic8
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772925645666
+  modifiedTime: 1790716418768
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

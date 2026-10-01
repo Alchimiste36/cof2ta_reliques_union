@@ -1,0 +1,125 @@
+folder: JB8Cj2PaJXDXQq8t
+name: Brise-machoire de foudre +2
+type: equipment
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/glanae_brise_machoire_electrique_2.webp
+_id: aNok4r8BazuUwCi0
+system:
+  description: >-
+    <p>Cette arme redoutable est de fabrication orc. L'arme permet de dédoubler
+    la puissance du coup de poing avec en plus de rustiques mais efficaces runes
+    magiques gravées sur le devant rendant le Brise-machoire très
+    dévastateur.</p><p>Le Brise-machoire donne un <strong>bonus de +2 en Attaque
+    et aux DM et inflige +1d4° DM d'électricité</strong>. <strong>La cible est
+    étourdi pendant 1 round à chaque fois</strong> qu'elle reçoit des DM de
+    l'attaque.</p><p><strong>La plage de critique des Brises-machoire sont
+    augmentés de 1</strong> (19 à 20).</p>
+  source: ''
+  origin: ''
+  slug: ''
+  gmNotes: >-
+    <p><strong>Cité de Glarnae'Reth :</strong> équipement de
+    <strong>Ghan</strong></p><p>DM de base du Brise-machoire : 1d6 + FOR
+    (configuré ici pour un utilisateur de la Voie du Pugilat - Poings de
+    fer).</p>
+  subtype: weapon
+  tags:
+    - legere
+  martialCategory: unarmed
+  damagetype: impact
+  quantity:
+    current: 1
+    destroyIfEmpty: false
+  charges:
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2400
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  container: null
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  range:
+    value: null
+    unit: ''
+    base: 0
+    ability: null
+    details: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+  actions:
+    - source: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.aNok4r8BazuUwCi0
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc +2'
+            crit: '19'
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[1d6,1d6,1d8,1d8,1d10] +@for +1d4° +2'
+          target:
+            type: single
+            scope: all
+            number: '0'
+          hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+          halfDmgOnSave: true
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790788559172
+  modifiedTime: 1790788995553
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!aNok4r8BazuUwCi0'

@@ -3511,97 +3511,11 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!A0N0QlLLdB170Ccf.qUZBs87Po8TQ9t0Z'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Demi-plaque +1 RD 2
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armures/armure_demi_plaque_143.webp
-    system:
-      description: "<p>Encombrantes, ces armures annulent le bonus\_de DEX à la DEF.</p><hr /><p><strong>Armure magique de Centaure - Te'Tipu</strong></p><ul><li><p>Bonus de DEF magique +2</p></li><li><p>Bonus de Résistance au Dommages de 2</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: armure-de-plaques
-      tags: []
-      subtype: armor
-      martialCategory: plateArmor
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 700
-        unit: ''
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.32fk9k1XShVR4mqt
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: false
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.32fk9k1XShVR4mqt
-              subtype: combat
-              target: dr
-              value: '2'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-      defense: 6
-      range: null
-      magicalDefense: 2
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.EcHFqsjra5TdEVdC
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925104807
-      modifiedTime: 1772925104848
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: 32fk9k1XShVR4mqt
-    sort: 500000
-    _key: '!actors.items!A0N0QlLLdB170Ccf.32fk9k1XShVR4mqt'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Hache +3 de feu intense
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_hache_48.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_feu_intense_3.webp
     system:
       description: >-
         <p><strong>Arme magique de Centaure -
@@ -3639,7 +3553,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.SrE9SGq9MZ0KVSlL
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.du53sWP9m95bBs2x
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3667,7 +3581,7 @@ items:
                 formula: 1d8 + @for +2d4° +3
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3676,6 +3590,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3688,6 +3603,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3695,24 +3612,115 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.jCode6n2dsMyas11
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925114846
-      modifiedTime: 1772925114883
+      systemVersion: 2.3.12
+      createdTime: 1790717551955
+      modifiedTime: 1790717551991
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: SrE9SGq9MZ0KVSlL
-    sort: 800000
-    _key: '!actors.items!A0N0QlLLdB170Ccf.SrE9SGq9MZ0KVSlL'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: du53sWP9m95bBs2x
+    sort: -31250
+    _key: '!actors.items!A0N0QlLLdB170Ccf.du53sWP9m95bBs2x'
+  - folder: htrIbDAC1HkPdjMB
+    name: Demi-plaque +1 RD 2
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_armure_demi_plaque_1.webp
+    system:
+      description: "<p>Encombrantes, ces armures annulent le bonus\_de DEX à la DEF.</p><hr><p><strong>Armure magique de Centaure - Te'Tipu</strong></p><ul><li><p>Bonus de DEF magique +2</p></li><li><p>Bonus de Résistance au Dommages de 2</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: armure-de-plaques
+      tags: []
+      subtype: armor
+      martialCategory: plateArmor
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 700
+        unit: ''
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.KL96NHbHsZBCCQLl
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.KL96NHbHsZBCCQLl
+              subtype: combat
+              target: dr
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      defense: 6
+      range: null
+      magicalDefense: 2
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.EcHFqsjra5TdEVdC
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717565524
+      modifiedTime: 1790717565565
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: KL96NHbHsZBCCQLl
+    sort: -150000
+    _key: '!actors.items!A0N0QlLLdB170Ccf.KL96NHbHsZBCCQLl'
+  - folder: htrIbDAC1HkPdjMB
     name: Grand bouclier étourdissant
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armures/bouclier_29.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_grand_bouclier_etourdissant.webp
     system:
-      description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
+      description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, <strong>un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds</strong> à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.160
       slug: grand-bouclier
@@ -3745,7 +3753,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.zM1ogmibPMjCbpDB
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.A0N0QlLLdB170Ccf.Item.XiWAQ1t8i2IUnqjH
           indice: 0
           label: Lors d'une charge
           chatFlavor: ''
@@ -3765,10 +3773,13 @@ items:
             - type: save
               saveAbility: int
               saveDifficulty: '10'
+              dmg:
+                formula: ''
+              halfDmgOnSave: true
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               additionalEffect:
                 active: true
                 applyOn: saveFailure
@@ -3782,12 +3793,13 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
-              dmg: {}
               hasAttackSuccessThreshold: false
           modifiers: []
       defense: 2
       range: null
       magicalDefense: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3795,18 +3807,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.9HPrWNhwFmqBnKZ6
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925128269
-      modifiedTime: 1772925128313
+      systemVersion: 2.3.12
+      createdTime: 1790717575115
+      modifiedTime: 1790717575164
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: zM1ogmibPMjCbpDB
-    sort: 200000
-    _key: '!actors.items!A0N0QlLLdB170Ccf.zM1ogmibPMjCbpDB'
+    _id: XiWAQ1t8i2IUnqjH
+    sort: 43750
+    _key: '!actors.items!A0N0QlLLdB170Ccf.XiWAQ1t8i2IUnqjH'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}

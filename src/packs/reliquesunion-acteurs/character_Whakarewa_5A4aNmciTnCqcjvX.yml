@@ -170,7 +170,7 @@ system:
       max: null
       value: 9
     mana:
-      base: 3
+      base: 6
       ability: per
       bonuses:
         sheet: 0
@@ -3642,20 +3642,23 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!5A4aNmciTnCqcjvX.0x53LlJMrpWSrn4C'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Grand bouclier de Whakarewa
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Marteau à deux mains +2 de tonnerre grondant
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_bouclier_whakarewa.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_marteau_2_mains_tonnerre.webp
     system:
-      description: "<p><strong>Bouclier magique de Centaure - Whakarewa</strong></p><ul><li><p>Ce grand bouclier, réalisé d'un main de maître par Kaipara, est parcouru de runes complexes et subtiles. Un emplacement permet d'y accrocher la\_@UUID[Item.i6WqMCbamwN00PGD]{Masse d'arme +2 de glace}.</p><p>Par une action gratuite, le bouclier apparait dans la main gauche de l'utilisateur, si ses mains sont libres, qui peut attraper directement la masse d'arme.</p></li><li><p>Bonus de DEF magique +2</p></li></ul>"
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +2d4° aux DM de foudre</p></li></ul>
       source: ''
-      origin: Livre du Joueur p.160
-      slug: grand-bouclier
+      origin: Livre du Joueur p.157
+      slug: fleau-a-deux-mains
       tags: []
-      subtype: shield
-      martialCategory: largeShield
-      damagetype: ''
+      subtype: weapon
+      martialCategory: greatFlail
+      damagetype: impact
       quantity:
         current: 1
         max: 1
@@ -3665,44 +3668,207 @@ items:
         max: null
         destroyIfEmpty: false
       weight:
-        value: 0
+        value: 3
         unit: kg
       price:
-        value: 1350
+        value: 2400
         unit: pa
       rarity: veryRare
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
         stackable: false
       usage:
         oneHand: false
-        twoHand: false
-      actions: []
-      defense: 2
-      range: null
-      magicalDefense: 2
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.0ftdJzSGLtXU71bL
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 3d4 + @for +2d4° +2
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
       compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.iGvNTSNwuoOzkfKq
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.6OkKzSlypxTBqVEV
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925216130
-      modifiedTime: 1772925216130
+      systemVersion: 2.3.12
+      createdTime: 1790716655250
+      modifiedTime: 1790716655294
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: evZKu9F7iNvU6zl2
-    sort: 5000000
-    _key: '!actors.items!5A4aNmciTnCqcjvX.evZKu9F7iNvU6zl2'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: 0ftdJzSGLtXU71bL
+    sort: -200000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.0ftdJzSGLtXU71bL'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Masse d'arme +2 de glace
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_masse_glace.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
+        DM</p></li><li><p>Bonus de +1d4° aux DM de froid</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: masse
+      tags: []
+      subtype: weapon
+      martialCategory: mace
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 900
+        unit: pa
+      rarity: rare
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.LnC7Ow3AHNRaPGsj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +2
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.i6WqMCbamwN00PGD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790716670000
+      modifiedTime: 1790716672665
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: LnC7Ow3AHNRaPGsj
+    sort: -50000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.LnC7Ow3AHNRaPGsj'
+  - folder: htrIbDAC1HkPdjMB
     name: Chemise de mailles +2
     type: equipment
     img: >-
@@ -3745,6 +3911,8 @@ items:
       defense: 4
       range: null
       magicalDefense: 2
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3752,35 +3920,32 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.PT8bOrxZTdlUEh4a
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925265346
-      modifiedTime: 1772925265346
+      systemVersion: 2.3.12
+      createdTime: 1790716690970
+      modifiedTime: 1790716690970
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: gVOIQLniG1kgevJ6
-    sort: 4500000
-    _key: '!actors.items!5A4aNmciTnCqcjvX.gVOIQLniG1kgevJ6'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Masse d'arme +2 de glace
+    _id: OktGZOzPtaA1emhN
+    sort: 187500
+    _key: '!actors.items!5A4aNmciTnCqcjvX.OktGZOzPtaA1emhN'
+  - folder: htrIbDAC1HkPdjMB
+    name: Grand bouclier de Whakarewa
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_masse_glace.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_bouclier_whakarewa.webp
     system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +1d4° aux DM de froid</p></li></ul>
+      description: "<p><strong>Bouclier magique de Centaure - Whakarewa</strong></p><ul><li><p>Ce grand bouclier, réalisé d'un main de maître par Kaipara, est parcouru de runes complexes et subtiles. Un emplacement permet d'y accrocher la\_@UUID[Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.i6WqMCbamwN00PGD]{Masse d'arme +2 de glace}.</p><p>Par une <strong>action gratuite</strong>, le bouclier <strong>apparait dans la main gauche de l'utilisateur, si ses mains sont libres, qui peut attraper directement la masse d'arme</strong>.</p></li><li><p>Bonus de DEF magique +2</p></li></ul>"
       source: ''
-      origin: Livre du Joueur p.157
-      slug: masse
+      origin: Livre du Joueur p.160
+      slug: grand-bouclier
       tags: []
-      subtype: weapon
-      martialCategory: mace
-      damagetype: impact
+      subtype: shield
+      martialCategory: largeShield
+      damagetype: ''
       quantity:
         current: 1
         max: 1
@@ -3790,200 +3955,45 @@ items:
         max: null
         destroyIfEmpty: false
       weight:
-        value: 2
+        value: 0
         unit: kg
       price:
-        value: 900
+        value: 1350
         unit: pa
-      rarity: rare
+      rarity: veryRare
       equipped: false
       properties:
         equipable: true
         reloadable: false
         stackable: false
       usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.kzlnPIH3HZMtipVr
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.i6WqMCbamwN00PGD
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925279907
-      modifiedTime: 1772925279959
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: kzlnPIH3HZMtipVr
-    sort: 4800000
-    _key: '!actors.items!5A4aNmciTnCqcjvX.kzlnPIH3HZMtipVr'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Marteau à deux mains +2 de tonnerre grondant
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_marteau_2_mains_tonnerre.webp
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Whakarewa</strong></p><ul><li><p>Bonus de +2 à l'Attaque et aux
-        DM</p></li><li><p>Bonus de +2d4° aux DM de foudre</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: fleau-a-deux-mains
-      tags: []
-      subtype: weapon
-      martialCategory: greatFlail
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 3
-        unit: kg
-      price:
-        value: 2400
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
         oneHand: false
-        twoHand: true
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.5A4aNmciTnCqcjvX.Item.jHNhvNVjhLFj7Pvx
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 3d4 + @for +2d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+      magicalDefense: 2
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
       compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.6OkKzSlypxTBqVEV
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.iGvNTSNwuoOzkfKq
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925288051
-      modifiedTime: 1772925288130
+      systemVersion: 2.3.12
+      createdTime: 1790716704161
+      modifiedTime: 1790716704161
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: jHNhvNVjhLFj7Pvx
-    sort: 4100000
-    _key: '!actors.items!5A4aNmciTnCqcjvX.jHNhvNVjhLFj7Pvx'
+    _id: OQWf359B3Y8S7ikl
+    sort: 125000
+    _key: '!actors.items!5A4aNmciTnCqcjvX.OQWf359B3Y8S7ikl'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3992,11 +4002,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.PCoXZeY1iFNBwn9V
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772925212457
+  modifiedTime: 1790716713164
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

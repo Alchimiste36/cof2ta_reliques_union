@@ -1,15 +1,18 @@
-folder: fkaQ5zi2WGOp22kb
+folder: htrIbDAC1HkPdjMB
 name: Petit bouclier de projection glaciale
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armures/bouclier_27.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_petit_bouclier_projection_glaciale.webp
 system:
   description: >-
     <p><strong>Bouclier magique de Centaure - Kiliko</strong></p><ul><li><p>Par
-    une action de mouvement, une fois par combat, le porteur peut frapper sur le
-    dessus du bouclier et projeter un cône de glace et de neige sur une distance
-    de 10m. Toutes les créatures dans la zone doivent réussir un test de FOR
-    difficulté 15 ou être renversé et subir 2d4° DM de froid. En cas de
-    réussite, la cible ne subit aucun DM.</p></li></ul>
+    une <strong>action de mouvement</strong>, <strong>une fois par
+    combat</strong>, le porteur peut frapper sur le dessus du bouclier et
+    projeter un cône de glace et de neige sur une <strong>distance de
+    10m</strong>. Toutes les créatures dans la zone doivent <strong>réussir un
+    test de FOR difficulté 15 ou être renversé et subir 2d4° DM de
+    froid</strong>. En cas de réussite, la cible ne subit aucun
+    DM.</p></li></ul>
   source: ''
   origin: Livre du Joueur p.160
   slug: petit-bouclier
@@ -61,9 +64,12 @@ system:
         - type: save
           saveAbility: for
           saveDifficulty: '15'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: multiple
-            number: 20
+            number: '20'
             scope: all
           additionalEffect:
             active: true
@@ -78,7 +84,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
   defense: 1
@@ -90,15 +95,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772223021529
-  modifiedTime: 1772924804461
+  modifiedTime: 1790717349299
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: TSUTalBUKozuebPc
-sort: 1700000
+sort: -100000
 _key: '!items!TSUTalBUKozuebPc'

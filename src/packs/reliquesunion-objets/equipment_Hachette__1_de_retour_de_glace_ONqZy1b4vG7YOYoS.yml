@@ -1,4 +1,4 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Hachette +1 de retour de glace
 type: equipment
 img: >-
@@ -76,7 +76,7 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -84,6 +84,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
     - source: Actor.V9ITbgWBBsUeixHA.Item.6b2GBGVdJngM9G1n
       indice: 1
@@ -110,11 +111,11 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d6 + @for +1
+            formula: 1d6 + @for +1d4° +1
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -122,6 +123,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
 effects: []
 flags: {}
@@ -129,15 +131,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1771886959493
-  modifiedTime: 1772924804461
+  modifiedTime: 1790717038699
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: ONqZy1b4vG7YOYoS
-sort: 2200000
+sort: 314649
 _key: '!items!ONqZy1b4vG7YOYoS'

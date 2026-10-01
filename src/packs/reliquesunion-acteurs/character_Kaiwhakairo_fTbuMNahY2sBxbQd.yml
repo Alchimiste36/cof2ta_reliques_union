@@ -3100,7 +3100,475 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 100000
     _key: '!actors.items!fTbuMNahY2sBxbQd.bI3jwHqglqQVQbtt'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Épieu +2 de feu
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_feu.webp
+    system:
+      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr><p><strong>Arme magique de Centaure - Kaiwhakairo</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: epieu
+      tags: []
+      subtype: weapon
+      martialCategory: spear
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 1100
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.1tYMrKRMkKmIOoOG
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.1tYMrKRMkKmIOoOG
+          indice: 1
+          label: vs Arme naturelle
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.1tYMrKRMkKmIOoOG
+              subtype: combat
+              target: def
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.1tYMrKRMkKmIOoOG
+          indice: 2
+          label: vs Cible sans armure
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 3d6 +3d4° +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.09nzZksgJPNEzHZ5
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717179492
+      modifiedTime: 1790717183631
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 1tYMrKRMkKmIOoOG
+    sort: -300000
+    _key: '!actors.items!fTbuMNahY2sBxbQd.1tYMrKRMkKmIOoOG'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Épieu +2 de glace
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_glace.webp
+    system:
+      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr><p><strong>Arme magique de Centaure - Kaiwhakairo</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de froid</p></li></ul>"
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: epieu
+      tags: []
+      subtype: weapon
+      martialCategory: spear
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 1100
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.mkRoo56hTy7QwBIx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +1d4° +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.mkRoo56hTy7QwBIx
+          indice: 1
+          label: vs Arme naturelle
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.mkRoo56hTy7QwBIx
+              subtype: combat
+              target: def
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.mkRoo56hTy7QwBIx
+          indice: 2
+          label: vs Cible sans armure
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +2'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 3d6 +3d4° +2
+              target:
+                type: single
+                scope: all
+                number: '0'
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.T3tO7Yp0McjMNA71
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717181083
+      modifiedTime: 1790717184188
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: mkRoo56hTy7QwBIx
+    sort: -100000
+    _key: '!actors.items!fTbuMNahY2sBxbQd.mkRoo56hTy7QwBIx'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Hache +1
+    type: equipment
+    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_1.webp
+    system:
+      description: >-
+        <p><strong>Arme magique de Centaure -
+        Kaiwhakairo</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
+        DM</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 450
+        unit: pa
+      rarity: precious
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.2WJINWhp7xRkRiGO
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc +1'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for +1
+              target:
+                type: single
+                number: '0'
+                scope: all
+              hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DEPxj2hyy4BpgdYH
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717201088
+      modifiedTime: 1790717204079
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 2WJINWhp7xRkRiGO
+    sort: 0
+    _key: '!actors.items!fTbuMNahY2sBxbQd.2WJINWhp7xRkRiGO'
+  - folder: htrIbDAC1HkPdjMB
     name: Armure de cuir renforcé +1
     type: equipment
     img: >-
@@ -3143,6 +3611,8 @@ items:
       defense: 3
       range: null
       magicalDefense: 1
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3150,473 +3620,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.7XooPlP5slEU0JyP
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924505843
-      modifiedTime: 1772924505843
+      systemVersion: 2.3.12
+      createdTime: 1790717220087
+      modifiedTime: 1790717220087
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 0ff5fRL61WfAaGec
-    sort: 600000
-    _key: '!actors.items!fTbuMNahY2sBxbQd.0ff5fRL61WfAaGec'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Hache +1
-    type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_1.webp
-    system:
-      description: >-
-        <p><strong>Arme magique de Centaure -
-        Kaiwhakairo</strong></p><ul><li><p>Bonus de +1 en Attaque et aux
-        DM</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: hache
-      tags: []
-      subtype: weapon
-      martialCategory: axe
-      damagetype: slashing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 450
-        unit: pa
-      rarity: precious
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.VsKeq0RHNH7tQM9b
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +1'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d8 + @for +1
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DEPxj2hyy4BpgdYH
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924516635
-      modifiedTime: 1772924535845
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: VsKeq0RHNH7tQM9b
-    sort: 800000
-    _key: '!actors.items!fTbuMNahY2sBxbQd.VsKeq0RHNH7tQM9b'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Épieu +2 de glace
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_glace.webp
-    system:
-      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Kaiwhakairo</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de froid</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: epieu
-      tags: []
-      subtype: weapon
-      martialCategory: spear
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 1100
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 10
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.6w0fSyFz1MgOyTU6
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.6w0fSyFz1MgOyTU6
-          indice: 1
-          label: vs Arme naturelle
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: true
-            temporary: true
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.6w0fSyFz1MgOyTU6
-              subtype: combat
-              target: def
-              value: '2'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.6w0fSyFz1MgOyTU6
-          indice: 2
-          label: vs Cible sans armure
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 3d6 +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.T3tO7Yp0McjMNA71
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924526671
-      modifiedTime: 1772924533727
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: 6w0fSyFz1MgOyTU6
-    sort: 1100000
-    _key: '!actors.items!fTbuMNahY2sBxbQd.6w0fSyFz1MgOyTU6'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Épieu +2 de feu
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epieu_feu.webp
-    system:
-      description: "<p>Arme formée d'un bâton d'environ un mètre et demi de long, muni d'un fer large et pointu.</p><p>L’épieu est une lance courte (1,50 m environ)\_et massive, formidable pour la chasse. Elle offre\_un bonus de +2 en DEF contre les créatures\_seulement dotées d’armes naturelles et inflige\_2d6 DM contre celles qui ne portent pas\_d’armure manufacturée.</p><hr /><p><strong>Arme magique de Centaure - Kaiwhakairo</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de feu</p></li></ul>"
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: epieu
-      tags: []
-      subtype: weapon
-      martialCategory: spear
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 1100
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: m
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: 10
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.bKv282lLuBymtWzU
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +1d4° +2
-              target:
-                type: single
-                scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.bKv282lLuBymtWzU
-          indice: 1
-          label: vs Arme naturelle
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: true
-            temporary: true
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.bKv282lLuBymtWzU
-              subtype: combat
-              target: def
-              value: '2'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.fTbuMNahY2sBxbQd.Item.bKv282lLuBymtWzU
-          indice: 2
-          label: vs Cible sans armure
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +2'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 3d6 +1d4° +2
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.09nzZksgJPNEzHZ5
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924531272
-      modifiedTime: 1772924534570
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: bKv282lLuBymtWzU
-    sort: 500000
-    _key: '!actors.items!fTbuMNahY2sBxbQd.bKv282lLuBymtWzU'
+    _id: ChY1tATlatcxAMOu
+    sort: 112500
+    _key: '!actors.items!fTbuMNahY2sBxbQd.ChY1tATlatcxAMOu'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}

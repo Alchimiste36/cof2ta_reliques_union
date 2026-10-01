@@ -11,7 +11,7 @@ system:
   subtype: ''
   actionType: l
   learned: false
-  rank: 0
+  rank: 4
   frequency: none
   charges: {}
   properties:
@@ -35,7 +35,7 @@ system:
         enabled: false
         noManaCost: false
       conditions:
-        - predicate: isOwned
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof2ta_reliques_union.cof2ta-objets.Item.q3rEJPxF7HbEOTnD
@@ -44,6 +44,7 @@ system:
           value: '0'
           apply: self
           additionalInfos: ''
+          choiceGroup: 0
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -54,12 +55,12 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1769517536854
-  modifiedTime: 1769896831834
-  lastModifiedBy: oByx0z6HY26hEziz
+  modifiedTime: 1790770273915
+  lastModifiedBy: MdLP35I2yaa8z7GV
 _id: OiYxYWNfOhjCsH0T
 ownership:
   default: 0

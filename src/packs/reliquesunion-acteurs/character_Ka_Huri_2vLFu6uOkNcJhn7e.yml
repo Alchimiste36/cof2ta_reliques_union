@@ -4031,15 +4031,16 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!2vLFu6uOkNcJhn7e.UZWxDlVWkAdIg6nd'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Arc composite de feu +1
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_109.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_composite_feu_1.webp
     system:
       description: >-
-        <p>Score minimum en FOR requis : 12.</p><hr /><p><strong>Arme magique de
+        <p>Score minimum en FOR requis : 12.</p><hr><p><strong>Arme magique de
         Centaure - Ka'Huri</strong></p><ul><li><p>Bonus de +1 en attaque et
-        DM</p></li><li><p>+1d6 DM de feu</p></li></ul>
+        DM</p></li><li><p>+1d4° DM de feu</p></li></ul>
       source: ''
       origin: Livre du Joueur p.158
       slug: arc-court
@@ -4083,7 +4084,7 @@ items:
         value: 50
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.b75CTFa9qQunjjsr
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.znuApgKqyw3x9kyV
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4108,11 +4109,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 + @for +1d6 +1
+                formula: 1d6 + @for +1d4° +1
               target:
                 type: single
-                number: 0
                 scope: all
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -4120,7 +4121,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -4128,27 +4132,27 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.yEIKrAj3Yzgxg9Si
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925367646
-      modifiedTime: 1772925367740
+      systemVersion: 2.3.12
+      createdTime: 1790715863146
+      modifiedTime: 1790715863184
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: b75CTFa9qQunjjsr
-    sort: 0
-    _key: '!actors.items!2vLFu6uOkNcJhn7e.b75CTFa9qQunjjsr'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Epée longue de feu
+    _id: znuApgKqyw3x9kyV
+    sort: 150000
+    _key: '!actors.items!2vLFu6uOkNcJhn7e.znuApgKqyw3x9kyV'
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Epée longue de feu +1
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_epee_longue_145.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_epee_longue_feu_1.webp
     system:
       description: >-
-        <hr /><p><strong>Arme magique de Centaure -
-        Ka'Huri</strong></p><ul><li><p>+1d6 DM de feu</p></li></ul>
+        <hr><p><strong>Arme magique de Centaure -
+        Ka'Huri</strong></p><ul><li><p>+1d4° DM de feu</p></li></ul>
       source: ''
       origin: Livre du Joueur p.157
       slug: epee-longue
@@ -4181,7 +4185,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.W36nUKGtPZcdrIdx
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.2vLFu6uOkNcJhn7e.Item.1OamWs0EfVccLhiF
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4206,11 +4210,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d8 + @for +1d6
+                formula: 1d8 + @for +1d4°
               target:
                 type: single
-                number: 0
                 scope: all
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -4218,6 +4222,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -4230,6 +4235,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -4237,18 +4244,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.uMX3TYz84qLMtWP1
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925425848
-      modifiedTime: 1772925425900
+      systemVersion: 2.3.12
+      createdTime: 1790715882283
+      modifiedTime: 1790715882322
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: W36nUKGtPZcdrIdx
-    sort: 0
-    _key: '!actors.items!2vLFu6uOkNcJhn7e.W36nUKGtPZcdrIdx'
+    _id: 1OamWs0EfVccLhiF
+    sort: 175000
+    _key: '!actors.items!2vLFu6uOkNcJhn7e.1OamWs0EfVccLhiF'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}

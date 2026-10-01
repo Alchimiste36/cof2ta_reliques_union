@@ -1,12 +1,14 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Arc long de critique +3
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_40.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_long_critique_3.webp
 system:
   description: >-
-    <p>Nécessite d'avoir FOR +1 minimum</p><hr /><p><strong>Arme magique
-    centaure - Aroha</strong></p><ul><li><p>Augmente la plage de critique de
-    1</p></li><li><p>Bonus de +3 en Attaque et DM.</p></li></ul>
+    <p>Nécessite d'avoir FOR +1 minimum</p><hr><p><strong>Arme magique centaure
+    - Aroha</strong></p><ul><li><p>Augmente la plage de critique de
+    1</p></li><li><p>+1d4° DM en cas de critique</p></li><li><p>Bonus de +3 en
+    Attaque et DM.</p></li></ul>
   source: ''
   origin: Livre du Joueur p.158
   slug: arc-long
@@ -57,12 +59,12 @@ system:
       type: ranged
       actionType: a
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
-        noManaCost: false
         noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
       conditions:
         - predicate: isEquipped
       resolvers:
@@ -70,22 +72,26 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atd'
-            crit: ''
+            formula: '@atd +3'
+            crit: '19'
             difficulty: '@cible.def'
           dmg:
-            formula: 1d8
+            formula: 1d8 +3
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            statuses: []
-            duration: '0'
-            unit: round
+            number: '0'
           hasAttackSuccessThreshold: false
+          additionalEffect:
+            active: true
+            applyOn: critical
+            formulaType: damage
+            formula: +1d4°
+            elementType: ''
+            statuses: []
+            unit: instant
+            duration: '0'
+          halfDmgOnSave: true
       modifiers: []
 effects: []
 flags: {}
@@ -93,15 +99,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1771451569182
-  modifiedTime: 1772924804461
+  modifiedTime: 1790715669256
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: XcoS5rbSgWjfL6B0
-sort: 6900000
+sort: 200000
 _key: '!items!XcoS5rbSgWjfL6B0'

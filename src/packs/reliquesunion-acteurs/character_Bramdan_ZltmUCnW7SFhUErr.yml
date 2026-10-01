@@ -1,0 +1,2833 @@
+name: Bramdan
+type: character
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/captifs/nain_brandam.webp
+system:
+  abilities:
+    agi:
+      superior: false
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  currentEffects: []
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+    level: 4
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 25
+      value: 44
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ''
+    tempDm: 0
+  combat:
+    init:
+      base: 11
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    def:
+      base: 7
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    melee:
+      base: 8
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    ranged:
+      base: 1
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    magic:
+      base: 4
+      ability: int
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    crit:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+    dr:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+  resources:
+    fortune:
+      base: 2
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 2
+    recovery:
+      base: 6
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 6
+    mana:
+      base: 0
+      ability: int
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 5
+  details:
+    biography:
+      private: >-
+        <p>Si Bramdan survit à Glanae'Reth, il retournera à la Porte des Grav et
+        il pourra avoir une grande influence pour convaincre son commandant
+        d'envoyer une partie des forces du Bouclier face aux armées d'Amanori
+        Bellara.</p>
+      public: >-
+        <p>184 ans - Nain - Mâle - Captif depuis 3 ans</p><p>Soldat du bouclier
+        de la Porte des Grav, Bramdan aimerait retrouver son barraquement et ses
+        compagnons à la forteresse. Il ne parle pas beaucoup mais, le soir venu,
+        il chante de magnifiques chansons de combats, d'aventures et
+        d'honneur.</p><p>Bramdan est un pur soldat du Bouclier. Obéïssant, calme
+        et respectueux de la hiérarchie, Bramdan est toujours partant pour
+        prendre sa place dans le rang face à un ennemi. Depuis sa capture par
+        les elfes exsangues, Bramdan est plutôt stoïque. Il ne cherche pas à
+        s'échapper, il fait ses tâches et il reste passif face aux violences. Le
+        seul moment où il perd son calme arrive lorsqu'un captif sans défense
+        reçoit des violences non loin de Bramdan. Dans cette situation, le
+        soldat n'hésite pas à s'interposer pour recevoir la correction à la
+        place de la victime initiale.</p>
+    appearance:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    size: medium
+    languages:
+      - ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 0
+    cp:
+      value: 0
+  oldDistanceView: 0
+  otherCapacitiesPointsSpent: 0
+  companions: []
+prototypeToken:
+  name: Bramdan
+  displayName: 20
+  actorLink: true
+  width: 1
+  height: 1
+  texture:
+    src: >-
+      modules/cof2ta_reliques_union/assets/ru_acteurs/glanae_reth/captifs/nain_brandam_token.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: true
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: {}
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+  depth: 1
+items:
+  - folder: QZKWGWu8512Lhphc
+    name: Nain du Bouclier
+    type: feature
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_nain_bouclier_token.webp
+    system:
+      description: "<h2>L’ordre du Bouclier</h2><p>Si chaque ordre possède ses propres guerriers,\_le Bouclier constitue l’armée du peuple nain.\_Assurant la sécurité aux frontières du royaume\_contre les invasions ogres, envoyé par-delà pour\_satisfaire les volontés expansionnistes de leur\_roi ou maintenant la cohésion et la loi au sein\_même des forteresses-États, l’ordre représente\_à la fois le glaive et le bouclier: sanguinaire\_et protecteur. En plus des soldats, le Bouclier\_compte dans ses rangs des éclaireurs, forestiers,\_guetteurs ou encore des prévôts.\_</p><p>Le Bouclier n’intervient normalement pas dans\_les conflits qui opposent entre eux les autres\_ ordres nains, à moins que l’unité de la société\_ne soit menacée. Il ne peut choisir le roi mais,\_grâce à la charge prestigieuse de Veilleur du\_roi, le Bouclier a la responsabilité de s’assurer\_que la couronne œuvre pour le bien de toute\_la communauté et non pour le seul bénéfice de\_l’ordre dont il est issu.</p><p>Enfin, l’individu qui porte le titre de Seigneur\_de guerre, le champion de la couronne, est\_traditionnellement issu de cet ordre.</p><h2>Les Nains</h2><p>Les Nains sont petits mais musclés et\_dotés d’une constitution à toute épreuve.\_Peuple guerrier par excellence, ce sont\_également des artisans, architectes, médecins\_et savants d’exception. Leur empire éclaté,\_majoritairement situé au nord et au sud de\_l'Ourann, est organisé en ordres rigoureusement\_cloisonnés et chargés de maintenir la cohésion\_de forteresses-États. Le plus grand malheur\_d’un Nain est d’être déchu de son ordre et de\_devenir un Errant.</p><p>Une fois atteint l’âge de raison, la plupart\_des individus masculins arborent une barbe\_dense, soigneusement coiffée ou tressée et\_parfois agrémentée d’anneaux en métal. Seules\_exceptions, notables, les savants et ingénieurs\_arborent souvent un visage glabre ‒ tantôt par\_volonté de se démarquer des valeurs guerrières\_de leurs semblables, tantôt simplement pour\_des questions pratiques, la pilosité développée\_pouvant interférer avec l’exercice de leur métier.</p><p>Les individus féminins sont tout aussi robustes\_et vifs d’esprit que leurs homologues masculins\_mais doivent généralement se faire une place en\_faisant preuve de caractère dans ces communautés dominées par des traditions patriarcales. La\_nouvelle génération est en train de bousculer\_cette construction sociale et, désormais, aucun\_parcours n’est impossible à une Naine qui\_voudrait vraiment s’y engager.</p><p>En dehors des forteresses-États, les Nains sont\_rares mais on les retrouve ponctuellement auprès\_de ceux capables de se payer leurs services en\_tant que guerrier, architecte ou ingénieur</p><h4>Modificateurs des Nains</h4><ul><li><p>Atout: <strong>+2 CON</strong></p></li><li><p>Faiblesse: <strong>-2 DEX</strong></p></li><li><p>Âge de départ à l’aventure: <strong>40 ans et plus</strong></p><p>Espérance de vie: <strong>250 ans</strong></p><p>Taille: <strong>entre 1,25 m et 1,45 m</strong></p><p>Poids : <strong>entre 50 kg et 100 kg</strong></p><p>Trait des Nains : <strong>Instinct de survie</strong></p><p></p></li></ul><p><strong>Noms féminins:</strong> <em>Allya, Aravug, Axeel, Damanel, Dey, Dhoki, Dhran, Druseel, Elka, Hazura,\_Hilde, Hulda, Juvaan, Kimeen, Luzy, Lynn, Lyv,\_Makrell, Marrea, Meel, Mudd, Oolra, Sapphir,\_Skodae, Sweel, Thaniss, Tyreen, Uminn, Uriss,\_Yvren, Zae.</em></p><p><strong>Noms masculins:</strong> <em>Alfoldrul, Barikk, Bokhil,\_Brann, Brarberlug, Damoth, Delver, Caven,\_Granroc, Flintmaul, Folonor, Grim, Grorroun,\_Grurrig, Horngut, Komn, Krosseac, Loddoic,\_Mumdoc, Nalmod, Saggad, Sivras, Thabral,\_Thunfrak, Warbane</em></p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      subtype: people
+      modifiers:
+        - type: feature
+          source: Actor.ZltmUCnW7SFhUErr.Item.N1QNYG8y2cEmjknu
+          subtype: ability
+          target: con
+          value: '2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+        - type: feature
+          source: Actor.ZltmUCnW7SFhUErr.Item.N1QNYG8y2cEmjknu
+          subtype: ability
+          target: agi
+          value: '-2'
+          apply: self
+          additionalInfos: ''
+          choiceGroup: 0
+      paths:
+        - Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+        - Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.4BZlDeptlcoKy7Xi
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: N1QNYG8y2cEmjknu
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.N1QNYG8y2cEmjknu'
+  - folder: Int0t6v1ZMCZd7Mw
+    name: Voie du Peuple Nain
+    type: path
+    img: modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_nain2.webp
+    _id: gma8NZfswIpR91Dm
+    system:
+      description: "<h2>Les Nains</h2><p>Les Nains sont petits mais musclés et\_dotés d’une constitution à toute épreuve.\_Peuple guerrier par excellence, ce sont\_également des artisans, architectes, médecins\_et savants d’exception. Leur empire éclaté,\_majoritairement situé au nord et au sud de\_l'Ourann, est organisé en ordres rigoureusement\_cloisonnés et chargés de maintenir la cohésion\_de forteresses-États. Le plus grand malheur\_d’un Nain est d’être déchu de son ordre et de\_devenir un Errant.</p><p>Une fois atteint l’âge de raison, la plupart\_des individus masculins arborent une barbe\_dense, soigneusement coiffée ou tressée et\_parfois agrémentée d’anneaux en métal. Seules\_exceptions, notables, les savants et ingénieurs\_arborent souvent un visage glabre ‒ tantôt par\_volonté de se démarquer des valeurs guerrières\_de leurs semblables, tantôt simplement pour\_des questions pratiques, la pilosité développée\_pouvant interférer avec l’exercice de leur métier.</p><p>Les individus féminins sont tout aussi robustes\_et vifs d’esprit que leurs homologues masculins\_mais doivent généralement se faire une place en\_faisant preuve de caractère dans ces communautés dominées par des traditions patriarcales. La\_nouvelle génération est en train de bousculer\_cette construction sociale et, désormais, aucun\_parcours n’est impossible à une Naine qui\_voudrait vraiment s’y engager.</p><p>En dehors des forteresses-États, les Nains sont\_rares mais on les retrouve ponctuellement auprès\_de ceux capables de se payer leurs services en\_tant que guerrier, architecte ou ingénieur</p><h4>Modificateurs des Nains</h4><ul><li><p>Atout: <strong>+2 CON</strong></p></li><li><p>Faiblesse: <strong>-2 DEX</strong></p></li><li><p>Âge de départ à l’aventure: <strong>40 ans et plus</strong></p><p>Espérance de vie: <strong>250 ans</strong></p><p>Taille: <strong>entre 1,25 m et 1,45 m</strong></p><p>Poids : <strong>entre 50 kg et 100 kg</strong></p><p>Trait des Nains : <strong>Instinct de survie</strong></p><p></p></li></ul><p><strong>Noms féminins:</strong> <em>Allya, Aravug, Axeel, Damanel, Dey, Dhoki, Dhran, Druseel, Elka, Hazura,\_Hilde, Hulda, Juvaan, Kimeen, Luzy, Lynn, Lyv,\_Makrell, Marrea, Meel, Mudd, Oolra, Sapphir,\_Skodae, Sweel, Thaniss, Tyreen, Uminn, Uriss,\_Yvren, Zae.</em></p><p><strong>Noms masculins:</strong> <em>Alfoldrul, Barikk, Bokhil,\_Brann, Brarberlug, Damoth, Delver, Caven,\_Granroc, Flintmaul, Folonor, Grim, Grorroun,\_Grurrig, Horngut, Komn, Krosseac, Loddoic,\_Mumdoc, Nalmod, Saggad, Sivras, Thabral,\_Thunfrak, Warbane</em></p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.s5eK1QU2LgxXl8sP
+        - Actor.ZltmUCnW7SFhUErr.Item.zurkA5JuA8rq18MW
+        - Actor.ZltmUCnW7SFhUErr.Item.85LrcE8s0H7Id9dI
+        - Actor.ZltmUCnW7SFhUErr.Item.qgNYbfjCHlPYMEue
+        - Actor.ZltmUCnW7SFhUErr.Item.niqAoLX7LPMy1US7
+      rank: 3
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.gma8NZfswIpR91Dm'
+  - folder: xsJFndR7inLiaMJ7
+    name: Résistance
+    type: capacity
+    img: icons/equipment/shield/heater-crystal-blue.webp
+    _id: s5eK1QU2LgxXl8sP
+    system:
+      description: "<p>Le PJ gagne un bonus de <strong>+5 à tous les tests de\_CON</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: <p>Bonus permanent pour les test de CON.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.s5eK1QU2LgxXl8sP
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.s5eK1QU2LgxXl8sP
+              subtype: skill
+              target: con
+              value: '5'
+              apply: self
+              additionalInfos: Toujours
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      oByx0z6HY26hEziz: 3
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.s5eK1QU2LgxXl8sP'
+  - folder: xsJFndR7inLiaMJ7
+    name: Solide comme un roc
+    type: capacity
+    img: icons/magic/earth/strike-fist-stone.webp
+    system:
+      description: "<p><strong>Le PJ réduit tous les DM subis de 1 point</strong> (mais\_il subit toujours au moins 1 point de DM par\_attaque reçue). Ce <strong>bonus est cumulable</strong> avec\_d’autres sources de réduction des DM.</p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: <p>Bonus permanent ajoutant une RD 1.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.zurkA5JuA8rq18MW
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.zurkA5JuA8rq18MW
+              subtype: combat
+              target: dr
+              value: '1'
+              apply: self
+              additionalInfos: Toujours
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: zurkA5JuA8rq18MW
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.zurkA5JuA8rq18MW'
+  - folder: xsJFndR7inLiaMJ7
+    name: Maîtrise des armes runiques
+    type: capacity
+    img: icons/weapons/axes/axe-broad-energy-pink.webp
+    system:
+      description: "<p>Le PJ a appris à tirer parti de la puissance des\_runes gravées par les artisans de l’ordre de la\_Forge. Il peut porter et utiliser les armes et\_armures de la tradition naine pour lesquelles il\_possède la formation martiale.\_</p><blockquote><h4><em><strong>Armes et armures\_traditionnelles</strong></em></h4><p><em>Les objets issus du savoirfaire d’une tradition\_ethnique constituent un\_ensemble de techniques\_de tissage, de confection\_et de forge transmis de\_génération en génération\_entre les artisans des\_différents peuples d’Arran.\_</em></p><p><em>Au final, ces objets\_dépassent le strict cadre\_de l’artisanat. Les objets\_créés en respectant ces\_processus renferment\_des pouvoirs étranges et\_puissants. Ils nécessitent\_un apprentissage long\_pour les maîtriser.\_ Les voies de peuple\_ouvrent toutes au rang\_3 à la maîtrise\_d’une tradition.\_En tant que joueur,\_le moment venu et\_en accord avec votre\_MJ, vous aurez accès\_à certaines de ces\_informations, décrites\_au chapitre «Objets de\_traditions et de légendes»\_du Livre du meneur.</em></p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: <p>Pas d'action automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 85LrcE8s0H7Id9dI
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.85LrcE8s0H7Id9dI'
+  - folder: xsJFndR7inLiaMJ7
+    name: Résistance à la magie
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-red.webp
+    system:
+      description: "<p>Chaque fois que le PJ est la cible d’un sort (à\_l’exception d’un sort de zone), le <strong>joueur lance\_1d4 : sur un résultat supérieur au rang du sort,\_il peut en ignorer les effets.</strong></p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: "<p>Utiliser la table aléatoire :\_@UUID[RollTable.Sbk7VnPr6dn2pmzk]{Nain : Résistance à la magie} pour effectuer le test de 1d4 et connaitre le résultat.</p>"
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: qgNYbfjCHlPYMEue
+    ownership:
+      default: 0
+      oByx0z6HY26hEziz: 3
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.qgNYbfjCHlPYMEue'
+  - folder: xsJFndR7inLiaMJ7
+    name: Ténacité naine
+    type: capacity
+    img: icons/commodities/treasure/statue-bust-stone-grey.webp
+    system:
+      description: "<p>Une fois par jour, <strong><span style=\"text-decoration:underline\">lorsque le PJ tombe à 0 PV</span></strong>,\_il peut <strong>immédiatement consommer 1 PR</strong> et\_en appliquer les effets.</p><p>De plus, il augmente sa\_valeur de <strong>SAG de +2</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent à la PER de +2.</p><p>La consommation du PR est à
+        gérer manuellement.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.gma8NZfswIpR91Dm
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.niqAoLX7LPMy1US7
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.niqAoLX7LPMy1US7
+              subtype: ability
+              target: per
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: niqAoLX7LPMy1US7
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.niqAoLX7LPMy1US7'
+  - folder: Int0t6v1ZMCZd7Mw
+    name: Voie Culturelle du Bouclier
+    type: path
+    img: >-
+      modules/cof2ta_reliques_union/assets/cof2ta_icones/cof2ta_nain_bouclier2.webp
+    system:
+      description: "<h2>L’ordre du Bouclier</h2><p>Si chaque ordre possède ses propres guerriers,\_le Bouclier constitue l’armée du peuple nain.\_Assurant la sécurité aux frontières du royaume\_contre les invasions ogres, envoyé par-delà pour\_satisfaire les volontés expansionnistes de leur\_roi ou maintenant la cohésion et la loi au sein\_même des forteresses-États, l’ordre représente\_à la fois le glaive et le bouclier: sanguinaire\_et protecteur. En plus des soldats, le Bouclier\_compte dans ses rangs des éclaireurs, forestiers,\_guetteurs ou encore des prévôts.\_</p><p>Le Bouclier n’intervient normalement pas dans\_les conflits qui opposent entre eux les autres\_ ordres nains, à moins que l’unité de la société\_ne soit menacée. Il ne peut choisir le roi mais,\_grâce à la charge prestigieuse de Veilleur du\_roi, le Bouclier a la responsabilité de s’assurer\_que la couronne œuvre pour le bien de toute\_la communauté et non pour le seul bénéfice de\_l’ordre dont il est issu.</p><p>Enfin, l’individu qui porte le titre de Seigneur\_de guerre, le champion de la couronne, est\_traditionnellement issu de cet ordre.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      subtype: people
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+        - Actor.ZltmUCnW7SFhUErr.Item.AdsQq8QtLhRyMUtL
+        - Actor.ZltmUCnW7SFhUErr.Item.Bxkl0yZpYFEZtqdm
+        - Actor.ZltmUCnW7SFhUErr.Item.4tKhfQ448Ap3NXRB
+        - Actor.ZltmUCnW7SFhUErr.Item.RTSuFlY8INpEEpZR
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: q1Yl1xFL7FRZRec8
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.q1Yl1xFL7FRZRec8'
+  - folder: 6HF7owjLUBud6H1A
+    name: Combat en phalange
+    type: capacity
+    img: icons/environment/people/infantry-army.webp
+    _id: LJmIlpp7fpVYtIKO
+    system:
+      description: "<p><strong><span style=\"text-decoration:underline\">Lorsque le PJ combat la même créature qu’un\_allié</span></strong>, il gagne <strong>+1 en attaque et en DEF par allié</strong>\_au contact avec lui et avec la créature.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      inGame: >-
+        <p>L'action activable ajoute un bonus aux Attaques et en DEF. Le bonus
+        est configuré à +1 de base. Le joueur devra le modifier en fonction du
+        nombre d'alliés au contact qui visent la même créature.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+          indice: 0
+          label: Si combat commun
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: true
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+              subtype: combat
+              target: melee
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+              subtype: combat
+              target: ranged
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+              subtype: combat
+              target: magic
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.LJmIlpp7fpVYtIKO
+              subtype: combat
+              target: def
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.LJmIlpp7fpVYtIKO'
+  - folder: 6HF7owjLUBud6H1A
+    name: Formation militaire
+    type: capacity
+    img: icons/environment/people/cavalry-heavy.webp
+    system:
+      description: "<p>Le PJ choisit une capacité de <strong>rang 1 ou 2 de\_la voie du bastion</strong> ou de la <strong>voie du\_ commandement</strong>. </p><p>Au rang 4 de cette voie, il gagne <strong>une\_capacité supplémentaire de rang 1 ou 2</strong> de la voie\_du bastion ou de la voie du commandement.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      inGame: >-
+        <p>Lors de l'apprentissage, cette capacité donne droit à une capacité
+        liée. Glissez-déposez la capacité choisie sous cette capacité.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: AdsQq8QtLhRyMUtL
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.AdsQq8QtLhRyMUtL'
+  - folder: 6HF7owjLUBud6H1A
+    name: Capitaine du Bouclier
+    type: capacity
+    img: icons/equipment/shield/heater-steel-crystal-red.webp
+    system:
+      description: "<p>Lorsque le PJ manie un bouclier, ce dernier\_confère un bonus supplémentaire de <strong>+1 en DEF</strong>.\_</p><p>De plus, <strong>une fois par tour</strong>, le PJ peut <strong>dévier un\_projectile</strong> (flèche, javelot…) et par conséquent\_ignorer totalement une attaque à distance qui\_aurait normalement dû le toucher, sauf si le test\_d’attaque est un critique.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      inGame: <p>L'action activable donne le bonus de DEF.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.Bxkl0yZpYFEZtqdm
+          indice: 0
+          label: Utilisation d'un bouclier
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.Bxkl0yZpYFEZtqdm
+              subtype: combat
+              target: def
+              value: '1'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Bxkl0yZpYFEZtqdm
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.Bxkl0yZpYFEZtqdm'
+  - folder: 6HF7owjLUBud6H1A
+    name: Fuite interdite
+    type: capacity
+    img: icons/skills/melee/shield-block-fire-orange.webp
+    system:
+      description: "<p>Le PJ tient toujours sa position, jusqu’à la mort. </p><p>Lorsqu’un adversaire à son contact utilise une\_action de mouvement pour s’éloigner de lui,\_il peut <strong>immédiatement lui porter une attaque\_de contact</strong> en tant qu’<strong>action gratuite</strong>. En cas de\_réussite, l’attaque n’inflige aucun DM mais le\_déplacement de l’adversaire est annulé.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      inGame: "<p>L'action permet d'effectuer une attaque avec les valeur de la première arme équipée.</p><p>Cette capacité permet de lier une autre capacité pour le choix de la capacité de rang 2\_@UUID[Item.mthcCGkxTseVG7td]{Formation militaire}</p>"
+      subtype: ''
+      actionType: f
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.4tKhfQ448Ap3NXRB
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@arme.skill'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      allowLinkedCapacity: true
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 4tKhfQ448Ap3NXRB
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.4tKhfQ448Ap3NXRB'
+  - folder: 6HF7owjLUBud6H1A
+    name: Veilleur du roi
+    type: capacity
+    img: icons/equipment/shield/heater-wooden-sword-green.webp
+    system:
+      description: "<p>Le PJ augmente ses valeurs de <strong>FOR et CHA\_de +2</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.83
+      slug: ''
+      inGame: <p>Bonus permanent en FOR et CHA.</p>
+      subtype: ''
+      actionType: f
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.q1Yl1xFL7FRZRec8
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.RTSuFlY8INpEEpZR
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.RTSuFlY8INpEEpZR
+              subtype: ability
+              target: for
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.RTSuFlY8INpEEpZR
+              subtype: ability
+              target: cha
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: RTSuFlY8INpEEpZR
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.RTSuFlY8INpEEpZR'
+  - folder: xsJFndR7inLiaMJ7
+    name: 'Trait : Instinct de Survie'
+    type: capacity
+    img: icons/creatures/abilities/mouth-teeth-human.webp
+    system:
+      description: "<p>Lorsqu’une attaque devrait amener le Nain <strong>à 0\_PV, les DM qu’elle inflige sont divisés par deux</strong>\_(minimum 1).</p>"
+      source: ''
+      origin: Livre du Joueur p.79
+      slug: ''
+      inGame: >-
+        <p>A gérer manuellement, en utilisant le bon bouton d'application des DM
+        dans le message du tchat.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 4BZlDeptlcoKy7Xi
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.4BZlDeptlcoKy7Xi'
+  - folder: 0fLy1zc3wnE791eb
+    name: Porte-bouclier
+    type: profile
+    img: icons/equipment/shield/heater-steel-gold.webp
+    system:
+      description: "<p><strong>Peuple privilégié :</strong> Nain de l’ordre du Bouclier</p><p>Le porte-bouclier est un titre qui désigne\_traditionnellement les guerriers nains chargés\_de défendre les frontières des cités-forteresses.\_Lourdement armés, ils gardent la ligne de front\_et ne reculent devant rien.</p>"
+      source: ''
+      origin: Livre du Joueur p.56
+      slug: ''
+      maxDefenseArmor: 0
+      modifiers:
+        - type: profile
+          source: Actor.ZltmUCnW7SFhUErr.Item.KYnwB3LDuGSg5OTM
+          subtype: resource
+          target: mp
+          value: '@niv+@per'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.ZltmUCnW7SFhUErr.Item.KYnwB3LDuGSg5OTM
+          subtype: combat
+          target: melee
+          value: '2'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+        - type: profile
+          source: Actor.ZltmUCnW7SFhUErr.Item.KYnwB3LDuGSg5OTM
+          subtype: combat
+          target: ranged
+          value: '2'
+          additionalInfos: ''
+          apply: self
+          choiceGroup: 0
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: true
+        dagger: true
+        greatSword: true
+        bastardSword: true
+        shortSword: false
+        longSword: true
+        spear: false
+        flail: true
+        greatFlail: true
+        club: true
+        axe: true
+        greatAxe: true
+        lance: false
+        cavalryLance: false
+        hammer: true
+        mace: true
+        pike: false
+        rapier: false
+        stiletto: false
+        swiftblade: false
+        handCrossbow: false
+        lightCrossbow: false
+        heavyCrossbow: false
+        shortBow: false
+        longBow: false
+        throwingKnife: false
+        throwingDagger: true
+        sling: true
+        throwingAxe: false
+        javelin: false
+        throwingSpear: false
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: false
+        leather: false
+        studdedLeather: false
+        chainShirt: true
+        chainMail: true
+        plateArmor: true
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: false
+        largeShield: true
+      paths:
+        - Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+        - Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+        - Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      proficiencies: []
+      mainProfile: true
+      family: combattant
+      gmNotes: ''
+      equipment: []
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: KYnwB3LDuGSg5OTM
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.KYnwB3LDuGSg5OTM'
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie du Bastion
+    type: path
+    img: icons/equipment/shield/heater-steel-crystal-red.webp
+    _id: whdSvkEzCiOHuExe
+    system:
+      description: "<p>Pour utiliser les capacités suivantes, <strong><span style=\"text-decoration:underline\">le PJ doit\_obligatoirement manier un bouclier.</span></strong></p>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      subtype: profile
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.3i4Frn2UwfOeZG0j
+        - Actor.ZltmUCnW7SFhUErr.Item.RpXPXWUARWbn5FrB
+        - Actor.ZltmUCnW7SFhUErr.Item.VpL3egjq5HPChqTA
+        - Actor.ZltmUCnW7SFhUErr.Item.PCa9yskD4KapIGpL
+        - Actor.ZltmUCnW7SFhUErr.Item.Bl0diIY0GBxIdkWD
+      rank: 2
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.whdSvkEzCiOHuExe'
+  - folder: se1EEoFGNDmypq01
+    name: Protéger un allié
+    type: capacity
+    img: icons/skills/melee/shield-block-bash-yellow.webp
+    _id: 3i4Frn2UwfOeZG0j
+    system:
+      description: "<p>Le PJ <strong>accorde le Mod. de DEF de son bouclier\_à un compagnon de son choix</strong> qui se trouve\_juste à côté de lui (il conserve ce bonus pour\_lui-même aussi). Il peut changer de compagnon\_à chaque tour durant sa phase d’initiative. <strong>C’est\_une action gratuite</strong>.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong> le PJ peut protéger deux\_compagnons en même temps, à condition que\_les deux soient juste à côté de lui.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      inGame: >-
+        <p>L'action permet de donner à une cible le bonus à la DEF.</p><p>Le PJ
+        doit ajuster la valeur du Modificateur en fonction du bonus de DEF de
+        son bouclier.</p><p>Il sélectionne la ou les cibles et active l'action
+        pour mettre un effet supplémentaire qui dure un round sur eux.</p>
+      subtype: ''
+      actionType: f
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.3i4Frn2UwfOeZG0j
+          indice: 0
+          label: DEF pour allié
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: true
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.3i4Frn2UwfOeZG0j
+              subtype: combat
+              target: def
+              value: '1'
+              apply: others
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.3i4Frn2UwfOeZG0j'
+  - folder: se1EEoFGNDmypq01
+    name: Absorber un coup
+    type: capacity
+    img: icons/skills/melee/shield-block-gray-yellow.webp
+    system:
+      description: "<p>Lors de son tour, le PJ fait seulement une action\_d’attaque ou de déplacement. </p><p>Par la suite, à\_tout moment avant son prochain tour, le PJ\_peut effectuer <strong>un test d’attaque au contact en\_opposition à un test réussi d’attaque au contact\_ou à distance</strong> d’un adversaire. En cas de réussite,\_<strong>l’attaque adverse est bloquée</strong> par le bouclier.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée\_:</span></strong></span> le test pour bloquer l’attaque\_bénéficie d’un bonus de +2.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      inGame: >-
+        <p>La première action permet d'effectuer le test en opposition contre
+        une attaque de Contact et la deuxième action contre une attaque à
+        Distance.</p><p><strong>Si le PJ obtient la capacité avancée</strong>,
+        remplacer "@atc" dans le champs "Formule de compétence" par "@atc +2"
+        dans la Résolution des deux actions.</p>
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.RpXPXWUARWbn5FrB
+          indice: 0
+          label: Test contre Contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: true
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@oppose.atc'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+        - source: Actor.ZltmUCnW7SFhUErr.Item.RpXPXWUARWbn5FrB
+          indice: 1
+          label: Test contre Distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: true
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@oppose.atd'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: RpXPXWUARWbn5FrB
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.RpXPXWUARWbn5FrB'
+  - folder: se1EEoFGNDmypq01
+    name: Coup de bouclier
+    type: capacity
+    img: icons/equipment/shield/heater-wooden-steel-boss.webp
+    system:
+      description: "<p>Le PJ peut effectuer à <strong>chaque tour une attaque\_au bouclier</strong> avec un d12 au lieu du d20 (action\_gratuite) qui <strong>inflige [1d4 + Mod. de FOR] DM</strong>.</p>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser une attaque avec le bouclier avec un dé
+        malus (au lieu du d12).</p>
+      subtype: ''
+      actionType: f
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.VpL3egjq5HPChqTA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: true
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 +@for
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: VpL3egjq5HPChqTA
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.VpL3egjq5HPChqTA'
+  - folder: se1EEoFGNDmypq01
+    name: Absorber un sort
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
+    system:
+      description: "<p>Lors de son tour, le PJ fait seulement une action\_d’attaque ou de déplacement. </p><p>Par la suite, à tout\_moment avant son prochain tour, le PJ <strong>peut\_effectuer un test d’attaque magique (Mod. d’INT)\_en opposition à un test d’attaque magique</strong> qui le\_visait. En cas de réussite, le <strong>sort est absorbé</strong> par le\_bouclier et n’a aucun effet sur le PJ.</p>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      inGame: <p>L'action permet de réaliser le test opposé d'attaque Magique.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.PCa9yskD4KapIGpL
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: true
+              skill:
+                formula: '@atm'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: PCa9yskD4KapIGpL
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.PCa9yskD4KapIGpL'
+  - folder: se1EEoFGNDmypq01
+    name: Armure lourde
+    type: capacity
+    img: icons/equipment/chest/breastplate-banded-simple-leather-brown.webp
+    system:
+      description: "<p>Le PJ <strong>peut porter une armure de plaques</strong>.</p><p>Celle-ci lui confère <strong>une DEF de +7</strong> et <strong>le protège des\_attaques critiques</strong> (il subit sur un critique des\_DM normaux au lieu des DM doublés).</p><blockquote><h5>Conflit\_de capacités</h5><p>La capacité \"Armure\_lourde\" (voie du bastion)\_prime sur\_les capacités améliorant\_l'efficacité des coups\_critiques (Coup brutal\_de la voie de l'Orc) ou\_octroyant des coups\_critiques automatiques\_(Botte secrète\_de la voie de l'assassinat) :\_le PJ subit des DM qui\_ne sont pas multipliés.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.120
+      slug: ''
+      inGame: >-
+        <p>Sur la feuille de Profil du Personnage (ouvrable depuis l'onglet
+        "Biographie"), cocher la case Plaque complète.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.whdSvkEzCiOHuExe
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: Bl0diIY0GBxIdkWD
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.Bl0diIY0GBxIdkWD'
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie de la Bravoure
+    type: path
+    img: icons/commodities/treasure/medal-ribbon-striped-gold-red.webp
+    system:
+      description: ''
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      subtype: profile
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.46uS0OVp5f43QKpw
+        - Actor.ZltmUCnW7SFhUErr.Item.zpTNk123ohbFVSPz
+        - Actor.ZltmUCnW7SFhUErr.Item.3cf87nkZ2oAudDyq
+        - Actor.ZltmUCnW7SFhUErr.Item.xQmXaZiD6sHDw2hc
+        - Actor.ZltmUCnW7SFhUErr.Item.a505Ze2aw8UFHOMQ
+      rank: 2
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: B8YLwWPXl3puokXN
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.B8YLwWPXl3puokXN'
+  - folder: WkEB3SwBwmId1w26
+    name: Robustesse
+    type: capacity
+    img: icons/magic/control/buff-strength-muscle-damage.webp
+    system:
+      description: "<p>En prenant cette capacité, le PJ gagne 3 PV\_supplémentaires au rang 1, puis 3 PV de plus\_au rang 3 atteint dans cette voie et, enfin, 3\_PV au rang 5.</p><blockquote><p><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong> le bonus de PV passe à 4.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent aux PV.</p><p>Si le PJ obtient la capacité avancée,
+        remplacer la valeur du Modificateur par @rang[4,4,8,8,12].</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.46uS0OVp5f43QKpw
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.46uS0OVp5f43QKpw
+              subtype: attribute
+              target: hp
+              value: '@rang[3,3,6,6,9]'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 46uS0OVp5f43QKpw
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.46uS0OVp5f43QKpw'
+  - folder: WkEB3SwBwmId1w26
+    name: Armure naturelle
+    type: capacity
+    img: icons/magic/defensive/armor-stone-skin.webp
+    system:
+      description: "<p>Le PJ a endurci son corps. Il bénéficie d’un\_bonus de <strong>+2 à la DEF.</strong></p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus de DEF augmente\_de +1.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      inGame: >-
+        <p>Bonus permanent à la DEF.</p><p>Si le PJ obtient la capacité avancée,
+        remplacer la valeur du Modificateur par 3.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.zpTNk123ohbFVSPz
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: true
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.zpTNk123ohbFVSPz
+              subtype: combat
+              target: def
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: zpTNk123ohbFVSPz
+    ownership:
+      default: 0
+      oByx0z6HY26hEziz: 3
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.zpTNk123ohbFVSPz'
+  - folder: WkEB3SwBwmId1w26
+    name: Prouesse
+    type: capacity
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    system:
+      description: "<p>Le PJ réussit souvent des exploits physiques hors\_norme. </p><p><strong>Une fois par tour</strong>, vous pouvez <strong>sacrifier\_1d4 PV pour obtenir +5 sur un test de Caracs</strong>\_(voir définition en marge) <strong>de FOR ou\_de DEX</strong>. Vous pouvez annoncer l’utilisation de\_cette capacité après avoir pris connaissance du\_résultat du test de caractéristique.</p>"
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      inGame: >-
+        <p>L'action activable permet de jeter le jet de DM et tant qu'elle reste
+        activée, les bonus aux tests de compétences sont disponibles.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.3cf87nkZ2oAudDyq
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.3cf87nkZ2oAudDyq
+              subtype: skill
+              target: for
+              value: '5'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.3cf87nkZ2oAudDyq
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d4
+              target:
+                type: self
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 3cf87nkZ2oAudDyq
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.3cf87nkZ2oAudDyq'
+  - folder: WkEB3SwBwmId1w26
+    name: Dernier rempart
+    type: capacity
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
+    system:
+      description: "<p>Le PJ effectue uniquement une attaque au\_contact durant ce tour. </p><p>En contrepartie, il\_bénéficie d’<strong>une attaque supplémentaire contre\_tout ennemi qui se déplace pour venir à son\_contact</strong>. Un adversaire blessé par cette attaque\_voit son déplacement stoppé.</p>"
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: xQmXaZiD6sHDw2hc
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.xQmXaZiD6sHDw2hc'
+  - folder: WkEB3SwBwmId1w26
+    name: Constitution héroïque
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    system:
+      description: "<p>Le PJ augmente son score de <strong>CON de +2</strong> et\_peut désormais <strong>lancer deux d20</strong> à chaque fois\_qu’un test de CON lui est demandé et conserver\_le meilleur résultat.</p>"
+      source: ''
+      origin: Livre du Joueur p.121
+      slug: ''
+      inGame: <p>Bonus permanent et Dé Bonus en CON.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 5
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.B8YLwWPXl3puokXN
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.a505Ze2aw8UFHOMQ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.a505Ze2aw8UFHOMQ
+              subtype: ability
+              target: con
+              value: '2'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.a505Ze2aw8UFHOMQ
+              subtype: bonusDice
+              target: con
+              value: '0'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: a505Ze2aw8UFHOMQ
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.a505Ze2aw8UFHOMQ'
+  - folder: qHR1W8IIN4msKM5x
+    name: Voie du Commandement
+    type: path
+    img: icons/tools/instruments/megaphone.webp
+    _id: sPSRE3GvIHL0rmSd
+    system:
+      description: ''
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      subtype: profile
+      capacities:
+        - Actor.ZltmUCnW7SFhUErr.Item.4SJlYYdJ77ObiGTy
+        - Actor.ZltmUCnW7SFhUErr.Item.QaPDzXlYEPOlJbYA
+        - Actor.ZltmUCnW7SFhUErr.Item.dxdbIhMvn6kBLfFU
+        - Actor.ZltmUCnW7SFhUErr.Item.JpTOYjl2s3vVoiBI
+        - Actor.ZltmUCnW7SFhUErr.Item.9xnU6TnjxbuzbHwN
+      rank: 0
+      maxDefenseArmor: 0
+      pvByLevel: 0
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.sPSRE3GvIHL0rmSd'
+  - folder: GCybkIpk4R1AYEDO
+    name: Action concertée
+    type: capacity
+    img: icons/magic/time/arrows-circling-pink.webp
+    system:
+      description: "<p>Une fois par tour, le PJ peut <strong>échanger son\_initiative avec un autre PJ volontaire</strong>. </p><p><strong>S’il cède\_son initiative à un PJ plus lent</strong>, il gagne un bonus\_de <strong>+1 sur ses tests d’attaque</strong> à ce tour. Ce bonus\_passe à <strong>+2 au rang 4</strong> de la voie.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> le bonus aux tests d’attaque\_est augmenté de +1.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      inGame: >-
+        <p>L'action activable permet d'obtenir le bonus en Attaque.</p><p>Si le
+        PJ obtient la capacité avancée, remplacer la valeur du Modificateur par
+        @rang[2,2,2,3,3].</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 1
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.4SJlYYdJ77ObiGTy
+          indice: 0
+          label: Échanger avec PJ plus lent
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.4SJlYYdJ77ObiGTy
+              subtype: combat
+              target: melee
+              value: '@rang[1,1,1,2,2]'
+              apply: self
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 4SJlYYdJ77ObiGTy
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.4SJlYYdJ77ObiGTy'
+  - folder: GCybkIpk4R1AYEDO
+    name: À couvert
+    type: capacity
+    img: icons/equipment/shield/Scutum-steel-worn.webp
+    system:
+      description: "<p>Jusqu’à son prochain tour, le PJ <strong>divise par deux\_les DM dus aux attaques à distance et de zone</strong>\_qu’il reçoit, et peut se <strong>déplacer de 20 mètres</strong>.\_Un compagnon du PJ peut profiter de cette\_aptitude s’il a son accord et reste à son contact.</p><blockquote><p><span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Capacité avancée :</span></strong></span> jusqu’à [Mod. de CHA]\_compagnons (minimum 1) du PJ peuvent\_profiter de cette aptitude s’ils ont son accord\_et restent à moins de 10 mètres de lui.</p></blockquote>"
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      inGame: >-
+        <p>Pas d'effet automatique. A gérer avec les boutons d'application de
+        Dommages du message du tchat.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 2
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: QaPDzXlYEPOlJbYA
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.QaPDzXlYEPOlJbYA'
+  - folder: GCybkIpk4R1AYEDO
+    name: Exemplaire
+    type: capacity
+    img: icons/magic/control/buff-luck-fortune-green-gold.webp
+    system:
+      description: "<p>Une fois par tour, le PJ <strong>permet à un allié qui\_combat le même adversaire que lui de relancer\_le d20 d’un test d’attaque</strong> s’il s’agissait d’un\_d’échec.</p>"
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 3
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: dxdbIhMvn6kBLfFU
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.dxdbIhMvn6kBLfFU'
+  - folder: GCybkIpk4R1AYEDO
+    name: Ordre de bataille
+    type: capacity
+    img: icons/sundries/flags/banner-flag-red-white.webp
+    system:
+      description: "<p>Le PJ donne des ordres tactiques pertinents au\_cœur de la bataille. </p><p>Une fois par tour, il <strong>octroie\_une action supplémentaire gratuite à un allié en\_vue</strong> (une action de mouvement ou une action\_d’attaque, mais pas une action limitée).</p>"
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      inGame: <p>Pas d'effet automatique.</p>
+      subtype: ''
+      actionType: none
+      learned: false
+      rank: 4
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: JpTOYjl2s3vVoiBI
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.JpTOYjl2s3vVoiBI'
+  - folder: GCybkIpk4R1AYEDO
+    name: Charge fantastique
+    type: capacity
+    img: icons/creatures/abilities/tail-strike-bone-orange.webp
+    system:
+      description: "<p>Une fois par combat, à l’initiative du PJ,\_<strong>lui-même et tous ses alliés en vue bénéficient\_immédiatement d’un déplacement</strong> d’un maximum de 20 m en ligne droite, <strong>suivi d’une action\_d’attaque</strong> avec un bonus de <strong>+3 au test de réussite\_et +1d6 aux dégâts</strong>.</p><p>Résolvez d’abord tous les déplacements en commençant par le PJ, puis par ordre d’initiative.\_Ensuite, effectuez toutes les attaques dans le\_même ordre</p>"
+      source: ''
+      origin: Livre du Joueur p.123
+      slug: ''
+      inGame: >-
+        <p>L'action permet d'obtenir et de donner le bonus à l'attaque et aux DM
+        au PJ et aux cibles sélectionnées. Il faut effectuer une récupération
+        rapide pour pouvoir utiliser à nouveau cette capacité.</p><p>Fonctionne
+        uniquement en Mode Combat.</p>
+      subtype: ''
+      actionType: l
+      learned: false
+      rank: 5
+      frequency: combat
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.ZltmUCnW7SFhUErr.Item.sPSRE3GvIHL0rmSd
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.9xnU6TnjxbuzbHwN
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            visible: false
+            enabled: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.9xnU6TnjxbuzbHwN
+              subtype: combat
+              target: melee
+              value: '3'
+              apply: both
+              additionalInfos: ''
+              choiceGroup: 0
+            - type: capacity
+              source: Actor.ZltmUCnW7SFhUErr.Item.9xnU6TnjxbuzbHwN
+              subtype: combat
+              target: damMelee
+              value: +1d6
+              apply: both
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: '10'
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    _id: 9xnU6TnjxbuzbHwN
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.9xnU6TnjxbuzbHwN'
+  - folder: OBPli02oRaBQq6Ee
+    name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: YntLs1URiJ4KVyas
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: Livre du Joueur p.157
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Actor.ZltmUCnW7SFhUErr.Item.YntLs1URiJ4KVyas
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    sort: 1600000
+    _key: '!actors.items!ZltmUCnW7SFhUErr.YntLs1URiJ4KVyas'
+  - name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: bwUmODTqsTqPbRr9
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: ''
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: '0'
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9
+      duplicateSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co2
+        systemVersion: 12.331.0
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    folder: null
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.bwUmODTqsTqPbRr9'
+  - name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: 0PawJrcH7daQ8RoJ
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+            noChargesUsed: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+              choiceGroup: 0
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: '0'
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+              halfDmgOnSave: true
+              hasAttackSuccessThreshold: false
+          actionType: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+      gmNotes: ''
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790853187868
+      modifiedTime: 1790853187868
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      exportSource: null
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    folder: null
+    sort: 0
+    _key: '!actors.items!ZltmUCnW7SFhUErr.0PawJrcH7daQ8RoJ'
+effects: []
+folder: WTbka3SMgKItVqYw
+flags: {}
+_stats:
+  coreVersion: '14.368'
+  systemId: co2
+  systemVersion: 2.3.12
+  createdTime: 1790853187868
+  modifiedTime: 1790853204473
+  lastModifiedBy: MdLP35I2yaa8z7GV
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+  MdLP35I2yaa8z7GV: 3
+_id: ZltmUCnW7SFhUErr
+sort: 400000
+_key: '!actors!ZltmUCnW7SFhUErr'

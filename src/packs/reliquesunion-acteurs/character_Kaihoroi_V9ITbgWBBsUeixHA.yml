@@ -3014,16 +3014,16 @@ items:
       compendiumSource: Item.bwUmODTqsTqPbRr9
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      createdTime: 1790717057597
+      modifiedTime: 1790717057597
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
+    sort: 414649
     _key: '!actors.items!V9ITbgWBBsUeixHA.FzrxQlf7LDuH2EiS'
   - folder: GUKbDXrNXlTgfaW0
     name: Armure de cuir renforcé
@@ -3161,13 +3161,13 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!V9ITbgWBBsUeixHA.ceEoZky0jQc9Ma96'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Hachette +1 de retour acérée
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_retour_aceree.webp
     system:
-      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Augmentation de la plage de critique de +1</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
+      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Augmentation de la plage de critique de +1</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.158
       slug: hachette
@@ -3190,7 +3190,7 @@ items:
         value: 2
         unit: pa
       rarity: common
-      equipped: true
+      equipped: false
       properties:
         equipable: true
         reloadable: false
@@ -3211,7 +3211,7 @@ items:
         value: 5
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.VbDxtj2cRxgM4rvG
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.rgHIVL6I61JZEAQN
           indice: 0
           label: Distance
           chatFlavor: ''
@@ -3222,7 +3222,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3240,7 +3240,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3248,9 +3248,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.VbDxtj2cRxgM4rvG
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.rgHIVL6I61JZEAQN
           indice: 1
           label: Contact
           chatFlavor: ''
@@ -3261,7 +3262,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3279,7 +3280,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3287,7 +3288,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3295,25 +3299,25 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.VkY1PitR9jMH0jZQ
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925733346
-      modifiedTime: 1772925742512
+      systemVersion: 2.3.12
+      createdTime: 1790717047291
+      modifiedTime: 1790717047364
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: VbDxtj2cRxgM4rvG
-    sort: 2500000
-    _key: '!actors.items!V9ITbgWBBsUeixHA.VbDxtj2cRxgM4rvG'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: rgHIVL6I61JZEAQN
+    sort: 250000
+    _key: '!actors.items!V9ITbgWBBsUeixHA.rgHIVL6I61JZEAQN'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Hachette +1 de retour de glace
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_hache_retour_glace.webp
     system:
-      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr /><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
+      description: "<p>Nécessite une action limitée pour ajouter le\_Mod. de Carac. aux DM.</p><hr><p><strong>Arme magique de Centaure - Kaihoroi</strong></p><ul><li><p>Bonus de +1 à l'Attaque et aux DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li><li><p>Revient dans la main de l'utilisateur par une action gratuite</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.158
       slug: hachette
@@ -3357,7 +3361,7 @@ items:
         value: 5
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.FjttW0L5oXqdBHdA
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.kNwcA4ZUuq2aNMdS
           indice: 0
           label: Distance
           chatFlavor: ''
@@ -3386,7 +3390,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3394,9 +3398,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.FjttW0L5oXqdBHdA
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.V9ITbgWBBsUeixHA.Item.kNwcA4ZUuq2aNMdS
           indice: 1
           label: Contact
           chatFlavor: ''
@@ -3421,11 +3426,11 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 + @for +1
+                formula: 1d6 + @for +1d4° +1
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3433,7 +3438,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3441,18 +3449,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.ONqZy1b4vG7YOYoS
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925735342
-      modifiedTime: 1772925735434
+      systemVersion: 2.3.12
+      createdTime: 1790717048464
+      modifiedTime: 1790717048538
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: FjttW0L5oXqdBHdA
-    sort: 2200000
-    _key: '!actors.items!V9ITbgWBBsUeixHA.FjttW0L5oXqdBHdA'
+    _id: kNwcA4ZUuq2aNMdS
+    sort: 314649
+    _key: '!actors.items!V9ITbgWBBsUeixHA.kNwcA4ZUuq2aNMdS'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}

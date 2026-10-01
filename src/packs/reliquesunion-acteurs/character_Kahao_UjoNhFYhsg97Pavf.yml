@@ -3265,13 +3265,13 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!UjoNhFYhsg97Pavf.I6xpQivChoWQYb0U'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Lance de tonnerre +1
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Lance de peur +1
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_tonnerre.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_peur.webp
     system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Miihini</strong></p><ul><li><p>Bonus de +1 en Attaque et DM.</p></li><li><p>L'attaque inflige +2d4° DM de foudre. La cible réalise un test de CON difficulté 15 ou être étourdi pendant 1d4+1 rounds.</p></li></ul>"
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr><p><strong>Arme magique de Centaure - Kahao</strong></p><ul><li><p>Bonus de +1 en attaque et DM</p></li><li><p><strong>Aura de peur :</strong> Lorsque le dé d'attaque fait 15 à 20, la cible subit 1d4° DM suplémentaire et est étourdi pendant 1 round, ressentant une peur intense et courte.</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.157
       slug: lance
@@ -3291,10 +3291,10 @@ items:
         value: 3
         unit: kg
       price:
-        value: 6
+        value: 700
         unit: ''
-      rarity: common
-      equipped: true
+      rarity: veryRare
+      equipped: false
       properties:
         equipable: true
         reloadable: false
@@ -3315,7 +3315,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.jaYC6Owwl6NVnEU9
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.xnzYttTSJ2mK0q8e
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3326,7 +3326,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3340,21 +3340,27 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 + @for +2d4° +1
+                formula: 1d6 + @for +1
               target:
                 type: single
                 scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
+                number: '0'
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
               additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
+                active: true
+                applyOn: attackSuccessTreshold
+                formulaType: damage
+                formula: 1d4°
+                elementType: ''
+                statuses:
+                  - stun
+                duration: '1'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.jaYC6Owwl6NVnEU9
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.xnzYttTSJ2mK0q8e
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3365,7 +3371,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3379,21 +3385,27 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d10 + @for +2d4° +1
+                formula: 1d10 + @for +1
               target:
                 type: single
                 scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
+                number: '0'
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
               additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
+                active: true
+                applyOn: attackSuccessTreshold
+                formulaType: damage
+                formula: 1d4°
+                elementType: ''
+                statuses:
+                  - stun
+                duration: '1'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.jaYC6Owwl6NVnEU9
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.xnzYttTSJ2mK0q8e
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3404,7 +3416,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3418,79 +3430,46 @@ items:
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 +2d4° +1
+                formula: 1d6 +1
               target:
                 type: single
                 scope: all
-                number: 0
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.UjoNhFYhsg97Pavf.Item.jaYC6Owwl6NVnEU9
-          indice: 3
-          label: Sauvegarde
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: spell
-          actionType: none
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: save
-              saveAbility: con
-              saveDifficulty: '15'
-              target:
-                type: single
-                scope: all
-                number: 0
+                number: '0'
+              hasAttackSuccessThreshold: true
+              attackSuccessThreshold: 15
               additionalEffect:
                 active: true
-                applyOn: saveFailure
+                applyOn: attackSuccessTreshold
                 formulaType: damage
-                formula: ''
+                formula: 1d4°
                 elementType: ''
                 statuses:
                   - stun
-                duration: 1d4+1
+                duration: '1'
                 unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-              dmg: {}
-              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
       compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.r3Rq4yizmLR6hhYv
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.vndkuKZKRv8SsZp4
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925455969
-      modifiedTime: 1772925460457
+      systemVersion: 2.3.12
+      createdTime: 1790715945772
+      modifiedTime: 1790715946000
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: jaYC6Owwl6NVnEU9
-    sort: 6100000
-    _key: '!actors.items!UjoNhFYhsg97Pavf.jaYC6Owwl6NVnEU9'
+    _id: xnzYttTSJ2mK0q8e
+    sort: 0
+    _key: '!actors.items!UjoNhFYhsg97Pavf.xnzYttTSJ2mK0q8e'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}

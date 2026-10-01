@@ -2958,16 +2958,16 @@ items:
       compendiumSource: Item.bwUmODTqsTqPbRr9
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
+      lastModifiedBy: MdLP35I2yaa8z7GV
+      createdTime: 1790717361649
+      modifiedTime: 1790717361649
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
+    sort: 362500
     _key: '!actors.items!elGCQN2rjOxAynF3.RTTCkdym1TzovApp'
   - folder: enmgHDhLNrOCtOl5
     name: Arme de prédilection
@@ -3147,27 +3147,27 @@ items:
       MdLP35I2yaa8z7GV: 3
     sort: 0
     _key: '!actors.items!elGCQN2rjOxAynF3.pN6FpctfFNFr6EH8'
-  - folder: GUKbDXrNXlTgfaW0
-    name: Petit bouclier de projection glaciale
+  - folder: 8rYwqlwdh61RZ1mT
+    name: Rapière +3 de glace intense
     type: equipment
-    img: icons/equipment/shield/buckler-wooden-boss-brown.webp
-    _id: nvm961VaZe7pPHp0
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_rapiere_glace_intense_3.webp
     system:
       description: >-
-        <p><strong>Bouclier magique de Centaure -
-        Kiliko</strong></p><ul><li><p>Par une action de mouvement, une fois par
-        combat, le porteur peut frapper sur le dessus du bouclier et projeter un
-        cône de glace et de neige sur une distance de 10m. Toutes les créatures
-        dans la zone doivent réussir un test de FOR difficulté 15 ou être
-        renversé et subir 2d4° DM de froid. En cas de réussite, la cible ne
-        subit aucun DM.</p></li></ul>
+        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
+        à la lame flexible, destinée essentiellement aux coups
+        d'estoc.</p><p><strong>Arme légère, seuil de critique
+        19-20</strong></p><hr><p><strong>Arme magique de Centaure -
+        Kiliko</strong></p><ul><li><p>Bonus de +3 en Attaque et aux
+        DM</p></li><li><p>Bonus de +2d4° DM de glace</p></li></ul>
       source: ''
-      origin: Livre du Joueur p.160
-      slug: petit-bouclier
-      tags: []
-      subtype: shield
-      martialCategory: smallShield
-      damagetype: ''
+      origin: Livre du Joueur p.157
+      slug: rapiere
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: rapier
+      damagetype: piercing
       quantity:
         current: 1
         max: 1
@@ -3177,10 +3177,10 @@ items:
         max: null
         destroyIfEmpty: false
       weight:
-        value: 0
+        value: 1
         unit: kg
       price:
-        value: 850
+        value: 1850
         unit: pa
       rarity: veryRare
       equipped: true
@@ -3192,13 +3192,14 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.elGCQN2rjOxAynF3.Item.nvm961VaZe7pPHp0
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.JFnrVNEyMSt0o2Nu
           indice: 0
           label: ''
           chatFlavor: ''
           img: icons/svg/d20-highlight.svg
-          type: spell
-          actionType: m
+          type: melee
+          actionType: a
           properties:
             activable: true
             temporary: false
@@ -3209,56 +3210,68 @@ items:
           conditions:
             - predicate: isEquipped
           resolvers:
-            - type: save
-              saveAbility: for
-              saveDifficulty: '15'
-              target:
-                type: multiple
-                number: 20
-                scope: all
-              additionalEffect:
-                active: true
-                applyOn: saveFailure
-                formulaType: damage
-                formula: 2d4°
-                elementType: ice
-                statuses:
-                  - overturned
-                duration: '1'
-                unit: round
+            - type: attack
               bonusDiceAdd: false
               malusDiceAdd: false
-              skill: {}
-              dmg: {}
+              skill:
+                formula: '@atc +3'
+                crit: '19'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for +2d4° +3
+              target:
+                type: single
+                number: '0'
+                scope: all
               hasAttackSuccessThreshold: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              halfDmgOnSave: true
           modifiers: []
-      defense: 1
-      range: null
-      magicalDefense: null
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
-      compendiumSource: Item.AFazTvARvVqVI4go
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.CKdvbI7bGYPiimTL
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      lastModifiedBy: null
-      createdTime: null
-      modifiedTime: null
+      systemVersion: 2.3.12
+      createdTime: 1790717307434
+      modifiedTime: 1790717362900
+      lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
-    _key: '!actors.items!elGCQN2rjOxAynF3.nvm961VaZe7pPHp0'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: JFnrVNEyMSt0o2Nu
+    sort: 156250
+    _key: '!actors.items!elGCQN2rjOxAynF3.JFnrVNEyMSt0o2Nu'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Arc long +2 de glace
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_15.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_long_glace_2_2.webp
     system:
       description: >-
-        <p>Nécessite d'avoir FOR +0 minimum</p><hr /><p><strong>Arme magique de
+        <p>Nécessite d'avoir FOR +0 minimum</p><hr><p><strong>Arme magique de
         Centaure - Kiliko</strong></p><ul><li><p>Bonus de +2 en Attaque et aux
         DM</p></li><li><p>Bonus de +1d4° DM de glace</p></li></ul>
       source: ''
@@ -3304,7 +3317,7 @@ items:
         value: 50
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.3mN0o2mw9JFN20gz
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.zxXcRqWU2Tqu0Qj4
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3332,7 +3345,7 @@ items:
                 formula: 1d8 +1d4° +2
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3341,7 +3354,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3349,137 +3365,23 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.lzdNjrX9R9bCagsy
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924334587
-      modifiedTime: 1772924334628
+      systemVersion: 2.3.12
+      createdTime: 1790717324555
+      modifiedTime: 1790717324619
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 3mN0o2mw9JFN20gz
-    sort: 300000
-    _key: '!actors.items!elGCQN2rjOxAynF3.3mN0o2mw9JFN20gz'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Rapière +3 de glace intense
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_epee_cimeterre_12.webp
-    system:
-      description: >-
-        <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
-        à la lame flexible, destinée essentiellement aux coups
-        d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique de Centaure -
-        Kiliko</strong></p><ul><li><p>Bonus de +3 en Attaque et aux
-        DM</p></li><li><p>Bonus de +2d4° DM de glace</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.157
-      slug: rapiere
-      tags:
-        - legere
-      subtype: weapon
-      martialCategory: rapier
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 1850
-        unit: pa
-      rarity: veryRare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.kKu8buT6Ht367M5N
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: a
-          properties:
-            activable: true
-            temporary: false
-            noChargesUsed: false
-            visible: true
-            enabled: false
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@atc +3'
-                crit: '19'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for +2d4° +3
-              target:
-                type: single
-                number: 0
-                scope: all
-              hasAttackSuccessThreshold: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.CKdvbI7bGYPiimTL
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924349435
-      modifiedTime: 1772924351388
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: kKu8buT6Ht367M5N
-    sort: 100000
-    _key: '!actors.items!elGCQN2rjOxAynF3.kKu8buT6Ht367M5N'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: zxXcRqWU2Tqu0Qj4
+    sort: 256250
+    _key: '!actors.items!elGCQN2rjOxAynF3.zxXcRqWU2Tqu0Qj4'
+  - folder: htrIbDAC1HkPdjMB
     name: Armure de cuir renforcé +2 d'Arkanov
     type: equipment
     img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armures/armure_cuir_renforcee_75.webp
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_armure_cuir_renforcee_arkanov.webp
     system:
       description: "<p><strong>Armure magique de Centaure - Kiliko</strong></p><ul><li><p>Bonus de +2 en DEF magique</p></li><li><p>Le porteur gagne un bonus de +4 au test d'intimidation lorsqu'il effectue une\_@UUID[Item.av7pkiDQ1oXsbvsm]{Danse de Combat}.</p></li><li><p>Le porteur gagne un bonus de +3 aux tests de CHA lorsqu'il interagit avec un centaure d'Arkanov.</p></li></ul><p></p><p></p>"
       source: ''
@@ -3514,7 +3416,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.grRTyVJppycnegd3
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.8ExRCpZPyrh2WjiT
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3533,16 +3435,19 @@ items:
           modifiers:
             - type: equipment
               source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.grRTyVJppycnegd3
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.8ExRCpZPyrh2WjiT
               subtype: skill
               target: cha
               value: '3'
               apply: self
               additionalInfos: Interaction avec un centaure d'Arkanov
+              choiceGroup: 0
           resolvers: []
       defense: 3
       range: null
       magicalDefense: 2
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3550,18 +3455,131 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.XMRmrEmqg4GsKD73
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924360285
-      modifiedTime: 1772924360328
+      systemVersion: 2.3.12
+      createdTime: 1790717335767
+      modifiedTime: 1790717335805
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: grRTyVJppycnegd3
-    sort: 200000
-    _key: '!actors.items!elGCQN2rjOxAynF3.grRTyVJppycnegd3'
+    _id: 8ExRCpZPyrh2WjiT
+    sort: 275000
+    _key: '!actors.items!elGCQN2rjOxAynF3.8ExRCpZPyrh2WjiT'
+  - folder: htrIbDAC1HkPdjMB
+    name: Petit bouclier de projection glaciale
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_petit_bouclier_projection_glaciale.webp
+    system:
+      description: >-
+        <p><strong>Bouclier magique de Centaure -
+        Kiliko</strong></p><ul><li><p>Par une <strong>action de
+        mouvement</strong>, <strong>une fois par combat</strong>, le porteur
+        peut frapper sur le dessus du bouclier et projeter un cône de glace et
+        de neige sur une <strong>distance de 10m</strong>. Toutes les créatures
+        dans la zone doivent <strong>réussir un test de FOR difficulté 15 ou
+        être renversé et subir 2d4° DM de froid</strong>. En cas de réussite, la
+        cible ne subit aucun DM.</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: petit-bouclier
+      tags: []
+      subtype: shield
+      martialCategory: smallShield
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 850
+        unit: pa
+      rarity: veryRare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.elGCQN2rjOxAynF3.Item.FpNR3EOTlCeB4l0Z
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: m
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: true
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '15'
+              dmg:
+                formula: ''
+              halfDmgOnSave: true
+              target:
+                type: multiple
+                number: '20'
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 2d4°
+                elementType: ice
+                statuses:
+                  - overturned
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              hasAttackSuccessThreshold: false
+          modifiers: []
+      defense: 1
+      range: null
+      magicalDefense: null
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.TSUTalBUKozuebPc
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790717353069
+      modifiedTime: 1790717357915
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: FpNR3EOTlCeB4l0Z
+    sort: -100000
+    _key: '!actors.items!elGCQN2rjOxAynF3.FpNR3EOTlCeB4l0Z'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}

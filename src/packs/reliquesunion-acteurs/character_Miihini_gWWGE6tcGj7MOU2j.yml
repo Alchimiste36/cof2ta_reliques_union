@@ -170,7 +170,7 @@ system:
       max: null
       value: 4
     mana:
-      base: 6
+      base: 9
       ability: per
       bonuses:
         sheet: 0
@@ -179,7 +179,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 32
+      value: 35
   details:
     biography:
       private: >-
@@ -3296,17 +3296,18 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!gWWGE6tcGj7MOU2j.wGzJf3DAmIMQLrZF'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Bâton ferré +2
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/armes_baton_156.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_baton_ferre_2.webp
     system:
       description: >-
         <p>Tous les personnages qui savent manier le bâton ferré savent aussi
         manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
         est adapté au combat, plus lourd et généralement couvert de métal aux
         extrémités (bien que les druides utilisent des bâtons de bois noueux
-        avec le même effet).</p><hr /><p><strong>Arme magique de Centaure -
+        avec le même effet).</p><hr><p><strong>Arme magique de Centaure -
         Miihini</strong></p><ul><li><p>Bonus de +2 en Attaque et
         DM.</p></li></ul>
       source: ''
@@ -3342,7 +3343,7 @@ items:
         twoHand: true
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.GwwZ6gVr9Sr6wwJD
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.qNQbmOWPKs6dClK1
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3350,12 +3351,12 @@ items:
           type: melee
           actionType: a
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
-            noManaCost: false
             noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
           conditions:
             - predicate: isEquipped
           resolvers:
@@ -3363,22 +3364,23 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '@atc'
+                formula: '@atc +2'
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d6 + @for
+                formula: 1d6 + @for +2
               target:
                 type: none
-                number: 0
+                number: '0'
                 scope: all
+              hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
                 applyOn: success
                 statuses: []
                 duration: '0'
                 unit: round
-              hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3391,6 +3393,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3398,25 +3402,25 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.DPsJCIVWFvy4kvkm
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925537590
-      modifiedTime: 1772925564503
+      systemVersion: 2.3.12
+      createdTime: 1790716200428
+      modifiedTime: 1790716200465
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: GwwZ6gVr9Sr6wwJD
-    sort: 0
-    _key: '!actors.items!gWWGE6tcGj7MOU2j.GwwZ6gVr9Sr6wwJD'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: qNQbmOWPKs6dClK1
+    sort: 190625
+    _key: '!actors.items!gWWGE6tcGj7MOU2j.qNQbmOWPKs6dClK1'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Lance de tonnerre +1
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_tonnerre.webp
     system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Miihini</strong></p><ul><li><p>Bonus de +1 en Attaque et DM.</p></li><li><p>L'attaque inflige +2d4° DM de foudre. La cible réalise un test de CON difficulté 15 ou être étourdi pendant 1d4+1 rounds.</p></li></ul>"
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr><p><strong>Arme magique de Centaure - Miihini</strong></p><ul><li><p>Bonus de +1 en Attaque et DM.</p></li><li><p>L'attaque inflige +2d4° DM de foudre. La cible réalise un test de CON difficulté 15 ou être étourdi pendant 1d4+1 rounds.</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.157
       slug: lance
@@ -3460,7 +3464,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.5T9cIzPDXLg3i9ha
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3489,7 +3493,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3497,9 +3501,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.5T9cIzPDXLg3i9ha
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3528,7 +3533,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3536,9 +3541,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.5T9cIzPDXLg3i9ha
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3567,7 +3573,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3575,9 +3581,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.XHqMcVLrwTXE2jkI
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gWWGE6tcGj7MOU2j.Item.5T9cIzPDXLg3i9ha
           indice: 3
           label: Sauvegarde
           chatFlavor: ''
@@ -3600,7 +3607,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               additionalEffect:
                 active: true
                 applyOn: saveFailure
@@ -3616,7 +3623,10 @@ items:
               skill: {}
               dmg: {}
               hasAttackSuccessThreshold: false
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3624,18 +3634,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.r3Rq4yizmLR6hhYv
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925558643
-      modifiedTime: 1772925564159
+      systemVersion: 2.3.12
+      createdTime: 1790716218723
+      modifiedTime: 1790716220670
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: XHqMcVLrwTXE2jkI
-    sort: 6100000
-    _key: '!actors.items!gWWGE6tcGj7MOU2j.XHqMcVLrwTXE2jkI'
+    _id: 5T9cIzPDXLg3i9ha
+    sort: 181250
+    _key: '!actors.items!gWWGE6tcGj7MOU2j.5T9cIzPDXLg3i9ha'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3644,11 +3654,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.nVnugxCfNlRY7EyL
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1790716228002
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

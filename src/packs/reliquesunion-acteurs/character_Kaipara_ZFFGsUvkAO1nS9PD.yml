@@ -170,7 +170,7 @@ system:
       max: null
       value: 8
     mana:
-      base: 7
+      base: 9
       ability: per
       bonuses:
         sheet: 0
@@ -3147,16 +3147,16 @@ items:
       compendiumSource: Item.bwUmODTqsTqPbRr9
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
       systemVersion: '#{VERSION}#'
       lastModifiedBy: MdLP35I2yaa8z7GV
-      modifiedTime: 1772925793604
-      createdTime: null
+      modifiedTime: 1790717084317
+      createdTime: 1790717081867
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    sort: 0
+    sort: 276563
     _key: '!actors.items!ZFFGsUvkAO1nS9PD.vucWJgxblSuoHGNc'
   - name: zBiographie
     type: capacity
@@ -3239,7 +3239,7 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!ZFFGsUvkAO1nS9PD.fzFQyh1gjspU73qi'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Marteau +3 de tonnerre rapide
     type: equipment
     img: >-
@@ -3272,7 +3272,7 @@ items:
         value: 3700
         unit: pa
       rarity: unique
-      equipped: true
+      equipped: false
       properties:
         equipable: true
         reloadable: false
@@ -3282,7 +3282,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD.Item.IYtHbHc9lLkJfb31
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.ZFFGsUvkAO1nS9PD.Item.gIE5lBMzB9vGCWSQ
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3293,7 +3293,7 @@ items:
             activable: true
             temporary: false
             noChargesUsed: false
-            visible: true
+            visible: false
             enabled: false
             noManaCost: false
           conditions:
@@ -3310,7 +3310,7 @@ items:
                 formula: 1d6 + @for +2d4° +3
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3319,6 +3319,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3331,6 +3332,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3338,18 +3341,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.mLeXbvhjm9qilW6k
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772925782614
-      modifiedTime: 1772925791401
+      systemVersion: 2.3.12
+      createdTime: 1790717076729
+      modifiedTime: 1790717076765
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: IYtHbHc9lLkJfb31
-    sort: 2800000
-    _key: '!actors.items!ZFFGsUvkAO1nS9PD.IYtHbHc9lLkJfb31'
+    _id: gIE5lBMzB9vGCWSQ
+    sort: 176563
+    _key: '!actors.items!ZFFGsUvkAO1nS9PD.gIE5lBMzB9vGCWSQ'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}
@@ -3358,11 +3361,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.gwSrhtEW8lmej4dY
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772925784469
+  modifiedTime: 1790717088766
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

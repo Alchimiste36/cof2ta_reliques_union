@@ -53,7 +53,7 @@ system:
             formula: 2D6 +2
           target:
             type: multiple
-            number: 10
+            number: '10'
             scope: all
           additionalEffect:
             active: false
@@ -64,6 +64,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
+          halfDmgOnSave: true
           hasAttackSuccessThreshold: false
       modifiers: []
     - source: Actor.FJMtWtydebKWXYF0.Item.wVXuxHDH0RKIstzI
@@ -86,9 +87,12 @@ system:
         - type: save
           saveAbility: agi
           saveDifficulty: '15'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: multiple
-            number: 10
+            number: '10'
             scope: all
           additionalEffect:
             active: false
@@ -99,7 +103,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
 name: Bombe explosive
@@ -112,11 +115,11 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1770780658735
-  modifiedTime: 1772238262662
+  modifiedTime: 1790694259169
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

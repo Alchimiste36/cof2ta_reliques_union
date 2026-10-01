@@ -3373,9 +3373,10 @@ items:
   - folder: fkaQ5zi2WGOp22kb
     name: Arc composite de poussières +2
     type: equipment
-    img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_21.webp
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_composite_poussieres_2.webp
     system:
-      description: "<p>Score minimum en FOR requis : 12.</p><hr /><p><strong>Arme magique centaure - Haputanga</strong></p><p>L'arc composite de Haputanga est une merveille qu'elle maitrise avec brio.</p><p>Le manche de l'arc est sculpté à la main de l'archère et certains petits gestes des doigts permettent de rendre cette arc effroyable pour les ennemis.</p><ul><li><p>Bonus de +2 en attaque et DM.</p></li><li><p>\_<span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Flèches Poussières (L) :\_</span></strong></span>si l'attaque touche la cible, elle la désoriente en créant un nuage de poussière autour d'elle. La cible gagne le statut Etourdi pendant 1 tour. Si l'attaque est un critique, la cible est aveuglée 1d4 tour</p></li></ul>"
+      description: "<p>Score minimum en FOR requis : 12.</p><hr><p><strong>Arme magique centaure - Haputanga</strong></p><p>L'arc composite de Haputanga est une merveille qu'elle maitrise avec brio.</p><p>Le manche de l'arc est sculpté à la main de l'archère et certains petits gestes des doigts permettent de rendre cette arc effroyable pour les ennemis.</p><ul><li><p>Bonus de +2 en attaque et DM.</p></li><li><p>\_<span style=\"text-decoration:underline\"><strong><span style=\"text-decoration:underline\">Flèches Poussières (L) :\_</span></strong></span>si l'attaque touche la cible, elle la désoriente en créant un nuage de poussière autour d'elle. La cible gagne le statut Etourdi pendant 1 tour. Si l'attaque est un critique, la cible est aveuglée 1d4 tour</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.158
       slug: arc-court
@@ -3419,7 +3420,7 @@ items:
         value: 50
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.fs2XszAPHdG3sZE7
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.utxRannjgSas4oFJ
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3448,7 +3449,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3456,9 +3457,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.fs2XszAPHdG3sZE7
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.utxRannjgSas4oFJ
           indice: 1
           label: Flèche Poussière
           chatFlavor: ''
@@ -3487,7 +3489,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: true
@@ -3499,7 +3501,10 @@ items:
                   - stun
                 duration: '1'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3507,19 +3512,19 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0clOpLRTBqXKC51J
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924076275
-      modifiedTime: 1772924076367
+      systemVersion: 2.3.12
+      createdTime: 1790715621790
+      modifiedTime: 1790715621873
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: fs2XszAPHdG3sZE7
-    sort: 5900000
-    _key: '!actors.items!RD6SRAYZuC4Wypgi.fs2XszAPHdG3sZE7'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: utxRannjgSas4oFJ
+    sort: 7100000
+    _key: '!actors.items!RD6SRAYZuC4Wypgi.utxRannjgSas4oFJ'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Rapière de critique
     type: equipment
     img: >-
@@ -3529,7 +3534,7 @@ items:
         <p>La <em>rapière</em> est une épée longue et fine, à la garde élaborée,
         à la lame flexible, destinée essentiellement aux coups
         d'estoc.</p><p><strong>Arme légère, seuil de critique
-        19-20</strong></p><hr /><p><strong>Arme magique centaure -
+        19-20</strong></p><hr><p><strong>Arme magique centaure -
         Haputanga</strong></p><ul><li><p>Augmente la plage de critique de
         1</p></li></ul>
       source: ''
@@ -3565,7 +3570,7 @@ items:
         twoHand: false
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.6LnEfCuzbxYWCP5n
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.RD6SRAYZuC4Wypgi.Item.W1BZlkdJEM1HYpNg
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3593,7 +3598,7 @@ items:
                 formula: 1d6 + @for
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3602,6 +3607,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3614,6 +3620,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3621,18 +3629,18 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.qUHRDa8RAfyk5p2B
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924089316
-      modifiedTime: 1772924089364
+      systemVersion: 2.3.12
+      createdTime: 1790715704970
+      modifiedTime: 1790715705008
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 6LnEfCuzbxYWCP5n
-    sort: 5800000
-    _key: '!actors.items!RD6SRAYZuC4Wypgi.6LnEfCuzbxYWCP5n'
+    _id: W1BZlkdJEM1HYpNg
+    sort: 400000
+    _key: '!actors.items!RD6SRAYZuC4Wypgi.W1BZlkdJEM1HYpNg'
 effects: []
 folder: ORybHknhk6MF5HIt
 flags: {}
@@ -3641,11 +3649,11 @@ _stats:
     Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.mQp0nSZ1glywyxyt
   duplicateSource: null
   exportSource: null
-  coreVersion: '14.360'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772486821104
-  modifiedTime: 1772486821104
+  modifiedTime: 1790715714503
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0

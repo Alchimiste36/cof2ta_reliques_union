@@ -1,7 +1,8 @@
-folder: fkaQ5zi2WGOp22kb
+folder: 8rYwqlwdh61RZ1mT
 name: Arc court d'alarme +2
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armes/arc_114.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_arc_court_alarme_2.webp
 system:
   description: >-
     <p><strong>Arme magique de Centaure - Tumuaki</strong></p><ul><li><p>Bonus
@@ -81,7 +82,7 @@ system:
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           hasAttackSuccessThreshold: false
           additionalEffect:
             active: false
@@ -89,6 +90,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+          halfDmgOnSave: true
       modifiers: []
     - source: Actor.EhKag5p5a4F31dar.Item.MNKgnEAZW7ahgHhA
       indice: 1
@@ -110,9 +112,12 @@ system:
         - type: save
           saveAbility: per
           saveDifficulty: '10'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: multiple
-            number: 20
+            number: '20'
             scope: all
           additionalEffect:
             active: true
@@ -127,7 +132,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
 effects: []
@@ -136,15 +140,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1771708804274
-  modifiedTime: 1772924804461
+  modifiedTime: 1790716544968
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: V7aWVtZc61jWS7IG
-sort: 4600000
+sort: 700000
 _key: '!items!V7aWVtZc61jWS7IG'

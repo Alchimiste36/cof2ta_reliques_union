@@ -3487,98 +3487,7 @@ items:
       createdTime: null
       modifiedTime: null
     _key: '!actors.items!AUMVOCux3piDen0C.xDYQuBWlDFXoO57K'
-  - folder: fkaQ5zi2WGOp22kb
-    name: Cotte de mailles de discrétion forestière +1
-    type: equipment
-    img: >-
-      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cotte_mailles_discretion_forestiere.webp
-    system:
-      description: >-
-        <p><strong>Armure magique de Centaure -
-        Kaha</strong></p><ul><li><p>Bonus de DEF magique de +1</p></li><li><p>Le
-        porteur optient un bonus aux tests de discrétion lorqu'il est en
-        forêt</p></li></ul>
-      source: ''
-      origin: Livre du Joueur p.160
-      slug: cotte-de-mailles
-      tags: []
-      subtype: armor
-      martialCategory: chainMail
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 750
-        unit: pa
-      rarity: rare
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.ZOgxR3EeyRniSR5Z
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            activable: false
-            temporary: false
-            noChargesUsed: false
-            visible: false
-            enabled: true
-            noManaCost: false
-          conditions:
-            - predicate: isEquipped
-          modifiers:
-            - type: equipment
-              source: >-
-                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.ZOgxR3EeyRniSR5Z
-              subtype: skill
-              target: agi
-              value: '5'
-              apply: self
-              additionalInfos: Discrétion en forêt
-          resolvers: []
-      defense: 5
-      range: null
-      magicalDefense: 1
-    effects: []
-    flags: {}
-    _stats:
-      compendiumSource: >-
-        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Wv1vLYMXp6nFyigd
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '14.360'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924963390
-      modifiedTime: 1772924963433
-      lastModifiedBy: MdLP35I2yaa8z7GV
-    ownership:
-      default: 0
-      MdLP35I2yaa8z7GV: 3
-    _id: ZOgxR3EeyRniSR5Z
-    sort: 3400000
-    _key: '!actors.items!AUMVOCux3piDen0C.ZOgxR3EeyRniSR5Z'
-  - folder: fkaQ5zi2WGOp22kb
+  - folder: 8rYwqlwdh61RZ1mT
     name: Hache à deux mains sanglante +3
     type: equipment
     img: >-
@@ -3622,7 +3531,7 @@ items:
         twoHand: true
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.1E03xLWrpmC4kYVl
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.hC3FGeKnBuhQwuIE
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3651,7 +3560,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: true
@@ -3663,6 +3572,7 @@ items:
                   - bleeding
                 duration: 2d4
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
       range:
         unit: ''
@@ -3675,6 +3585,8 @@ items:
           sheet: 0
           effects: 0
         value: null
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3682,25 +3594,25 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.X5eh3URauOSQqqHE
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924974843
-      modifiedTime: 1772924974891
+      systemVersion: 2.3.12
+      createdTime: 1790716824718
+      modifiedTime: 1790716826131
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 1E03xLWrpmC4kYVl
-    sort: 3800000
-    _key: '!actors.items!AUMVOCux3piDen0C.1E03xLWrpmC4kYVl'
-  - folder: fkaQ5zi2WGOp22kb
+    _id: hC3FGeKnBuhQwuIE
+    sort: -100000
+    _key: '!actors.items!AUMVOCux3piDen0C.hC3FGeKnBuhQwuIE'
+  - folder: 8rYwqlwdh61RZ1mT
     name: Lance perçante +2 de retour
     type: equipment
     img: >-
       modules/cof2ta_reliques_union/assets/ru_objets/armes/arkanov_lance_percante_retour.webp
     system:
-      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr /><p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM.</p></li><li><p>L'arme revient en main de son utilisateur par une action gratuite</p></li><li><p>La plage de critique est augmentée de 1</p></li></ul>"
+      description: "<p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p><p>La lance est une arme intermédiaire entre un\_épieu et une pique. Prévue pour un usage à deux\_mains, elle est suffisamment légère pour être\_maniée à une seule main, permettant le port\_d’un bouclier par exemple. Ses DM passent alors\_à 1d6.</p><p>Enfin, il est possible de l’utiliser comme\_une arme de jet mortelle à courte portée, mais\_utilisée dans ces conditions, elle impose un\_malus au test d’attaque à distance de -3.</p><hr><p><strong>Arme magique de Centaure - Kaha</strong></p><ul><li><p>Bonus de +2 en Attaque et aux DM.</p></li><li><p>L'arme revient en main de son utilisateur par une action gratuite</p></li><li><p>La plage de critique est augmentée de 1</p></li></ul>"
       source: ''
       origin: Livre du Joueur p.157
       slug: lance
@@ -3744,7 +3656,7 @@ items:
         value: 10
       actions:
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.BKqWNGoPeWIqEMVe
           indice: 0
           label: 1 main
           chatFlavor: ''
@@ -3773,7 +3685,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3781,9 +3693,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.BKqWNGoPeWIqEMVe
           indice: 1
           label: 2 mains
           chatFlavor: ''
@@ -3812,7 +3725,7 @@ items:
               target:
                 type: single
                 scope: all
-                number: 0
+                number: '0'
               hasAttackSuccessThreshold: false
               additionalEffect:
                 active: false
@@ -3820,9 +3733,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
         - source: >-
-            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.7VWoZJjZnmXD4rFv
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.BKqWNGoPeWIqEMVe
           indice: 2
           label: A distance
           chatFlavor: ''
@@ -3850,7 +3764,7 @@ items:
                 formula: 1d6 +2
               target:
                 type: single
-                number: 0
+                number: '0'
                 scope: all
               hasAttackSuccessThreshold: false
               additionalEffect:
@@ -3859,7 +3773,10 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              halfDmgOnSave: true
           modifiers: []
+      gmNotes: ''
+      container: null
     effects: []
     flags: {}
     _stats:
@@ -3867,18 +3784,112 @@ items:
         Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.0BcKibRSobGeNIk7
       duplicateSource: null
       exportSource: null
-      coreVersion: '14.360'
+      coreVersion: '14.368'
       systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1772924982207
-      modifiedTime: 1772924982328
+      systemVersion: 2.3.12
+      createdTime: 1790716843602
+      modifiedTime: 1790716847154
       lastModifiedBy: MdLP35I2yaa8z7GV
     ownership:
       default: 0
       MdLP35I2yaa8z7GV: 3
-    _id: 7VWoZJjZnmXD4rFv
-    sort: 3900000
-    _key: '!actors.items!AUMVOCux3piDen0C.7VWoZJjZnmXD4rFv'
+    _id: BKqWNGoPeWIqEMVe
+    sort: -50000
+    _key: '!actors.items!AUMVOCux3piDen0C.BKqWNGoPeWIqEMVe'
+  - folder: htrIbDAC1HkPdjMB
+    name: Cotte de mailles de discrétion forestière +1
+    type: equipment
+    img: >-
+      modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_cotte_mailles_discretion_forestiere.webp
+    system:
+      description: >-
+        <p><strong>Armure magique de Centaure -
+        Kaha</strong></p><ul><li><p>Bonus de DEF magique de +1</p></li><li><p>Le
+        porteur optient un bonus de +5 aux tests de discrétion lorqu'il est en
+        forêt</p></li></ul>
+      source: ''
+      origin: Livre du Joueur p.160
+      slug: cotte-de-mailles
+      tags: []
+      subtype: armor
+      martialCategory: chainMail
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 750
+        unit: pa
+      rarity: rare
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.5nKBIrRTRO3fp4xB
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof2ta_reliques_union.reliquesunion-acteurs.Actor.AUMVOCux3piDen0C.Item.5nKBIrRTRO3fp4xB
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion en forêt
+              choiceGroup: 0
+          resolvers: []
+      defense: 5
+      range: null
+      magicalDefense: 1
+      gmNotes: ''
+      container: null
+    effects: []
+    flags: {}
+    _stats:
+      compendiumSource: >-
+        Compendium.cof2ta_reliques_union.reliquesunion-objets.Item.Wv1vLYMXp6nFyigd
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '14.368'
+      systemId: co2
+      systemVersion: 2.3.12
+      createdTime: 1790716859831
+      modifiedTime: 1790716859869
+      lastModifiedBy: MdLP35I2yaa8z7GV
+    ownership:
+      default: 0
+      MdLP35I2yaa8z7GV: 3
+    _id: 5nKBIrRTRO3fp4xB
+    sort: 137500
+    _key: '!actors.items!AUMVOCux3piDen0C.5nKBIrRTRO3fp4xB'
 effects: []
 folder: ZXjaxgZh0gOJCdD9
 flags: {}

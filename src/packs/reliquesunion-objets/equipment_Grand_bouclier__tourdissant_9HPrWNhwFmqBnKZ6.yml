@@ -1,9 +1,10 @@
-folder: fkaQ5zi2WGOp22kb
+folder: htrIbDAC1HkPdjMB
 name: Grand bouclier étourdissant
 type: equipment
-img: modules/cof2ta_reliques_union/assets/ru_objets/armures/bouclier_29.webp
+img: >-
+  modules/cof2ta_reliques_union/assets/ru_objets/armures/arkanov_grand_bouclier_etourdissant.webp
 system:
-  description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
+  description: "<p><strong>Bouclier magique de Centaure - Te'Tipu</strong></p><ul><li><p>Lors d'une charge, l'utilisateur fait bouger le bouclier dans une danse hypnotique. La cible de la charge doit réaliser, avant de subir l'attaque de la charge, <strong>un test de INT difficulté 10 ou être étourdi pendant 1d4+1 rounds</strong> à cause de l'illusion d'optique créée par les mouvements du bouclier.\_\_</p></li></ul>"
   source: ''
   origin: Livre du Joueur p.160
   slug: grand-bouclier
@@ -55,10 +56,13 @@ system:
         - type: save
           saveAbility: int
           saveDifficulty: '10'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -72,7 +76,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
   defense: 2
@@ -84,15 +87,15 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1772232136223
-  modifiedTime: 1772924804461
+  modifiedTime: 1790717573586
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
   MdLP35I2yaa8z7GV: 3
 _id: 9HPrWNhwFmqBnKZ6
-sort: 200000
+sort: 43750
 _key: '!items!9HPrWNhwFmqBnKZ6'

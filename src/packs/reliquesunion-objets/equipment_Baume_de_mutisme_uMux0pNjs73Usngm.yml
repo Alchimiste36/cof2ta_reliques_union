@@ -51,10 +51,13 @@ system:
         - type: save
           saveAbility: con
           saveDifficulty: '20'
+          dmg:
+            formula: ''
+          halfDmgOnSave: true
           target:
             type: single
             scope: all
-            number: 0
+            number: '0'
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -68,7 +71,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
-          dmg: {}
           hasAttackSuccessThreshold: false
       modifiers: []
 name: Baume de mutisme
@@ -81,11 +83,11 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.368'
   systemId: co2
-  systemVersion: '#{VERSION}#'
+  systemVersion: 2.3.12
   createdTime: 1770775579053
-  modifiedTime: 1772238209679
+  modifiedTime: 1790694236462
   lastModifiedBy: MdLP35I2yaa8z7GV
 ownership:
   default: 0
