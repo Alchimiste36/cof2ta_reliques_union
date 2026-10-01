@@ -1,3 +1,10 @@
+# 0.6.3
+
+- organisation des dossiers des acteurs et des items
+- organisation des assets et changement de certaines images
+- ajout de plusieurs PNJ Glanae'Reth
+- formatage des chapitre (chapitre 6 en cours)
+
 # 0.5.1
 
 - Modification des fichiers de la release
