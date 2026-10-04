@@ -1,3 +1,9 @@
+# 0.6.4
+
+- Optimisation d'images avec une compression des toutes les images du dossiers asset
+- retrait de quelques images
+- rename de certaines images
+
 # 0.6.3
 
 - organisation des dossiers des acteurs et des items
